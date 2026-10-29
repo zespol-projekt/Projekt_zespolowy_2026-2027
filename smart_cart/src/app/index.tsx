@@ -31,13 +31,10 @@ export default function Index() {
       showsVerticalScrollIndicator={false}
     >
       <View style={styles.shortcutGrid}>
-        {shortcuts.map((shortcut, index) => (
+        {shortcuts.map((shortcut) => (
           <View
             key={shortcut.title}
-            style={[
-              styles.shortcut,
-              index % 2 === 0 ? styles.leftShortcut : styles.rightShortcut,
-            ]}
+            style={styles.shortcut}
           >
             <Text style={styles.shortcutTitle}>{shortcut.title}</Text>
             <Text style={styles.shortcutDescription}>
@@ -69,10 +66,14 @@ const styles = StyleSheet.create({
   shortcutGrid: {
     flexDirection: "row",
     flexWrap: "wrap",
+    justifyContent: "space-between",
+    columnGap: 12,
     rowGap: 12,
+    marginHorizontal: 0,
+    paddingHorizontal: 6,
   },
   shortcut: {
-    flexBasis: "50%",
+    flexBasis: "47%",
     minHeight: 164,
     justifyContent: "space-between",
     padding: 14,
@@ -85,12 +86,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 8,
     elevation: 3,
-  },
-  leftShortcut: {
-    paddingRight: 9,
-  },
-  rightShortcut: {
-    paddingLeft: 9,
   },
   shortcutTitle: {
     fontSize: 21,
