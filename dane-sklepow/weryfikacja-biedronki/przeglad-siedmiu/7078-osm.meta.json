@@ -1,0 +1,11 @@
+{
+  "key": "7078-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/1264104158/full.json",
+  "retrieved_at": "2026-11-02T18:31:13.185Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/1264104158/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/7078-osm.json",
+  "sha256": "4839c21f3966b0631fb048fe87620a3311f651801dd69763ff3403bf76d0e2ff",
+  "bytes": 1382
+}

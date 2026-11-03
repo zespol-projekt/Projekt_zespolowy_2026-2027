@@ -1,0 +1,11 @@
+{
+  "key": "3647-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zarzecze%2C+Ksi%C4%99dza+Stanis%C5%82awa+Gajeckiego+19&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:43.397Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zarzecze%2C+Ksi%C4%99dza+Stanis%C5%82awa+Gajeckiego+19&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/3647-gugik-osm.json",
+  "sha256": "0f8cc4a4493f7a3311fb0b81f7363f6421943331c757e6502ffba0375e741ba4",
+  "bytes": 615
+}

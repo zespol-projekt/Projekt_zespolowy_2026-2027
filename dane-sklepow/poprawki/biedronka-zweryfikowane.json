@@ -1,0 +1,3631 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-02T19:11:18.325Z",
+  "baseline_input_fingerprint": "c57e8b7e4ab4c5c3c6dd57649d7d65d87ead9bb8a96b8014119d9c21bdab2d78",
+  "scope": "Poprawki przyjęte po osobnym przeglądzie propozycji; w pełni odtwarzalne z zapisanych dowodów.",
+  "evidence_files": [
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/wybor.json",
+      "sha256": "90ff144cc051a6c38a9186d2029160e679b8a8ac15606de97cb46c5615042fb6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/manifest.json",
+      "sha256": "3009767edde1605a02350ecbd9d481ddd6565078cf729fe25ed9088393044da6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-oficjalna.html",
+      "sha256": "0f483775f5f1e91def39d4abfc7b0932ac0bd5318da6f3972461459199bb9c40"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-osm.json",
+      "sha256": "3e1e0ff61440cb6ab6ef468057029f7ab40079ab87f7351198123ee663818d3f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-gugik-reverse.json",
+      "sha256": "59e4f3acf5e7ded61ec29e4257f6176af83d98ca22066027d8ac839151c000d6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-gugik-pierwotny.json",
+      "sha256": "e1a082df5d27120e6551ecf220bb22ceab8779c6eb1c387c651b751722f0a8a0"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-gugik-osm.json",
+      "sha256": "bc90ea18b1fec1deabff5f98913467b5860d833913d71d810b89e72384648a36"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2220-oficjalna.html",
+      "sha256": "5714e81b944c2c54b479aacb526a5280d59ebd7670a1edfa93847c5c086e41a2"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2220-osm.json",
+      "sha256": "6567d4c69249756c6c715d4271b9f2b51e178f920fba0c13871a02e02b273ef8"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2220-gugik-reverse.json",
+      "sha256": "533f2258d24a0b708277b4165025c7f7c1ef702fbc0b731a1393155fd6a3dd53"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3370-oficjalna.html",
+      "sha256": "4b85cb8b1acaf2ecd384c0018f050d0ea51c4490f27153ecbda262bf34de33fc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3370-osm.json",
+      "sha256": "fdc6039ba262943c5f47b867488466cfca588b8e3ab1a6e620f2b7c1a7fcf916"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3370-gugik-reverse.json",
+      "sha256": "85a956a55c6f42e3f5c4d2460f68d65a70d728246df0c6aaa39e1cf50c709d3e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3484-oficjalna.html",
+      "sha256": "815d659f6c397886789e9fdb3fd1a94ecaa9c28acbdf9f39849e6b5d0285077f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3484-osm.json",
+      "sha256": "4bf20e2a322d4c64602909992e011d40ca8d1cb5970ecb2594848c710c16f3c7"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3484-gugik-reverse.json",
+      "sha256": "ef2068498c35ba5148d83dff342004e0ac5adc8388b3f19ddeb115bc8c76659e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-oficjalna.html",
+      "sha256": "2f114bb692de0a5c84057737fc0eafc661fa76244458dbbc4d25a87681fa1f9c"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-osm.json",
+      "sha256": "3d29fb786edcef88ee8e41c139945fcc9bb86f90352a7a441834659843b8bc97"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-gugik-reverse.json",
+      "sha256": "178e57fdecc7584739af5a5fc7a17a21aaeb4427093d05f968fb24f866ec121e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-gugik-pierwotny.json",
+      "sha256": "854ba0a9bb299de735e860ba15b3134d00cfc03002e6895aab08f0e41e7b95fa"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-gugik-osm.json",
+      "sha256": "cc7702953766cf735a68fc84f556703f0558686ac4b2c227a858af48402ad79a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3768-oficjalna.html",
+      "sha256": "f71224dc8853a7266b882efe9aaa543c53f57c28d2dcf6ab32d18c09a224be33"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3768-osm.json",
+      "sha256": "5fe8a974a5cd8e04230b3155666c55e259dce34c1383a429d43f91afb562fc98"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3768-gugik-reverse.json",
+      "sha256": "a74f5ff8f67a17c01edb34ccff688199a949ab6bd26c9c5f8cda85d2ee059668"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3768-gugik-pierwotny.json",
+      "sha256": "226a1726d5d1f500fa941f7796402a53b65a31aa30a7da573d8b0c38cc96681f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3768-gugik-osm.json",
+      "sha256": "bdcbe35d98ebd0d5fc4f0dc2dc6df3f21daf9dc54c3740cdd359c8f04b84a605"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-oficjalna.html",
+      "sha256": "475093e4b74137aa8d41437ce67947b204225189e3442955ba3843d301798dc3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-osm.json",
+      "sha256": "30868fc8bd7042bf550e63742a76369942088292f347cfc87c605706c7278ab3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-gugik-reverse.json",
+      "sha256": "62906ea7c714eea6091a64bf0c994f346ac5c35de86d46b55c80ce356e277b48"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-gugik-pierwotny.json",
+      "sha256": "36a79d0dc35cc4fa346f2565b443697345b36ad2204775acfeb7a6be5cab854b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/7026-oficjalna.html",
+      "sha256": "a6523aace86e0fe89e9f0d754eae6cea4f17d7fdc5b5f7e45010d5931c0c361b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/7026-osm.json",
+      "sha256": "cb5888c87a30d3cf96252b6f8fe105e2eeb80f8f7c55ff9da7552309ac2eaa33"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/7026-gugik-reverse.json",
+      "sha256": "eb3de3f87348b65a18cb70a68c4ed4092ec3e11ebdbbd8b414f5671c72b44436"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1573-oficjalna.html",
+      "sha256": "1223d77b07fdf9371cbfd72ed0ada9a4136743a2d94d3ca69afee8fcfa5605b0"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1573-osm.json",
+      "sha256": "454974c097dfb17eca1ff0efbc08506c6d3dcffc3f96069d35f928952ce9c6d5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1573-gugik-reverse.json",
+      "sha256": "fa507a8ffc1ab8db0c0c08b648ed19d7ff3359c4537cc0c6cae98c3f0d016b70"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1573-gugik-pierwotny.json",
+      "sha256": "4a826e0307361ffc0ef549952f96e0407325fc3628bd4b14557a6836d394462a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1573-gugik-osm.json",
+      "sha256": "5d6158584c69d490b92f35a852efae476962134c67598ad33c1e23a1b45aba1f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1838-oficjalna.html",
+      "sha256": "e00a5ecf0054482bd276d7980fd445f24e60de92e7ad0c4f339225e106d04c0e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1838-osm.json",
+      "sha256": "d18d9c9b85f34c551a0f749eeaa9a6a1a341c8f375fb00f0cede997ff1a27a15"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1838-gugik-reverse.json",
+      "sha256": "648017b4963582fad4d44651445432de3363bd3eed4889ef88d22ed59ba825c9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1838-gugik-pierwotny.json",
+      "sha256": "736c496d51ede1b3bf5656106f19480953e7aceb208cc162bb86f689a10e7d57"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1838-gugik-osm.json",
+      "sha256": "d2b29fe30e52dccdba8aedb17008c7da7143216f523872de2f0a44fe61a15033"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2466-oficjalna.html",
+      "sha256": "aeefc1c22acaabc79ee19dc5596b273c5604ab0c851e52ee7327b39c9a07b3d3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2466-osm.json",
+      "sha256": "cb93530d3d36d85b1ac1ac85d667042bbcc3e728187bc66ec23103d44ecef444"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2466-gugik-reverse.json",
+      "sha256": "2d6918504eb2535f9f0681e190a332fb8f56caaa345ab8c8b7b9897684e9725a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2466-gugik-pierwotny.json",
+      "sha256": "aad325d69003b0fa87262cc8dd1f1c8c8595b457ba16fa94f48eeb10d381d65e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2466-gugik-osm.json",
+      "sha256": "062311903eb917e3b64a0a900e9d13c8397e516522cfe7f56f46334fe417ea03"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3033-oficjalna.html",
+      "sha256": "76cc73c1f713277d167dfdbe97dba5580c0dd2ec027948426b3152431241edce"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3033-osm.json",
+      "sha256": "34c912873585d155cdb5f9dcefd5fca8534241f473761a6cbbe9f63ce239d63f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3033-gugik-reverse.json",
+      "sha256": "0d558d43c4aa29f776ad9db6d421bd016be9adb578da84e0a729312cffe63906"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3033-gugik-pierwotny.json",
+      "sha256": "dab6dbe16aeca1477ff3cac4ed89d2eaddf23fea194f16a380a09b3eac4aac03"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3033-gugik-osm.json",
+      "sha256": "e805e91a6a6c62c85f1c109af473534645eefe69091b62e27a4a1bf5a79bccb5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3454-oficjalna.html",
+      "sha256": "8dd8972eb14e359fccbc900940b36b7317f2e8afa953c3799ab4e387950032c1"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3454-osm.json",
+      "sha256": "3b345beba0dfbd1bcd8549337f171d7a664c9aa7808617e90c7d584684879298"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3454-gugik-reverse.json",
+      "sha256": "44b92f4387a7aaf629d419205aa841c6da46eb92d85b4d4c47fd417b07c268ec"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3454-gugik-pierwotny.json",
+      "sha256": "88c95375927b654af8ce8aec3ea2a2c699e810e365adad59fe918e968fa9ab17"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3454-gugik-osm.json",
+      "sha256": "801c1f83a981a0451e06c692dca7605dd7de732bb323d2e008eaabc3cf0d3add"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1203-oficjalna.html",
+      "sha256": "a411cdb1dc2cef6879ca78f4adf868c7d1c98ead3784d1162402aac32c0ec22d"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1203-osm.json",
+      "sha256": "2a372550173ee742af380aed95dc944c27662aab3be330372a098198dc724fe3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1203-gugik-reverse.json",
+      "sha256": "c116c9e577918919937ed5fb511b02ef15fbb3640e36c88542eb7bdec44ceade"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1203-gugik-pierwotny.json",
+      "sha256": "b6e2aed00e02030b12a731737b6c29c339c7cf97dbb36cafa42f2c83c5d20972"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1203-gugik-osm.json",
+      "sha256": "d018a244463110c9a42884861ff2bd05bfe4836214776f69cc830978a0111e63"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1216-oficjalna.html",
+      "sha256": "631ef06000011e88b59b78f450c23ebf975af1b7b9e959d5de72e3a83ab7e8a3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1216-osm.json",
+      "sha256": "8f5a6d25b95c93a3c3230f258ecfca4dc185bc76b39417a425e180694065b675"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1216-gugik-reverse.json",
+      "sha256": "0bfdfa04cf9972dd1204f85a8462980954ad23dddb77ba011d4f1947d166f58d"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1216-gugik-pierwotny.json",
+      "sha256": "27911dcb2ec17f9ec7993077cdbb7f8dbc4839d94639c90f2a09096173aa1ded"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1216-gugik-osm.json",
+      "sha256": "5fbe078a8ef8ba64e7cbf10fd3ac28fd7e008dc96fd4de4452baee652dc122fc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1649-oficjalna.html",
+      "sha256": "f05205fb451505ce0cf8c1416223e08086ec7de4a7d133ce2bfc3112feb590de"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1649-osm.json",
+      "sha256": "7ace0a552cb89fd547290ae857997d64816bd148aa1144eecc23afe92fa4a8a7"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1649-gugik-reverse.json",
+      "sha256": "eff9c2b8aab4293c75084ae53a68fb1f8c4320f1d19b5746ca7054ee6e38bcd3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1649-gugik-pierwotny.json",
+      "sha256": "5904d8c62a9298fec7776aa1afdd8ae6a549b879f57bc7aca0979a6219a375fd"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1649-gugik-osm.json",
+      "sha256": "d8e1733054d148c7f523702fd31d56e75118ecadc5171f7522567a502408257f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1666-oficjalna.html",
+      "sha256": "7cb0b3361e13a9f91c00372865152d2c146399c44e6ffa2dcfa1b405470522d0"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1666-osm.json",
+      "sha256": "037a58a4ee4e9803b37066f9fea9a468f80195751f1f2f24347ca502ce4b8b20"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1666-gugik-reverse.json",
+      "sha256": "287ecea19f6750dd70b7f898b73d71f63890c1161248379da4c5685accdd8940"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1666-gugik-pierwotny.json",
+      "sha256": "5da34ffb5de80dce6b89375464f21778ae9f18fed21c0f1fea8989e59908d6c9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1666-gugik-osm.json",
+      "sha256": "fa7a99294abac0103a6301b68837ea2ba13d93c7148fbbc85ad3e0b8eafacbaf"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1782-oficjalna.html",
+      "sha256": "3419e8b47a513c44f0d8ec97d06ca0b7b6f456be20c2caa2e76d0d6466541194"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1782-osm.json",
+      "sha256": "f3717df3be5f0799f8f54cfaec39d82a9a28d4cd4f39479e78d4344f8033258b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1782-gugik-reverse.json",
+      "sha256": "afc64b14ba09ebc0e70964369fae4708173ca53cad165d26f4b011f1fa75427f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1782-gugik-pierwotny.json",
+      "sha256": "fb60d9c87839f2fb29352abf6c9a1adc92f0a2296c77d0000448cfdedf477e39"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1782-gugik-osm.json",
+      "sha256": "72db701fd3978fce96208f4a9f8db829762aa3f379058e851ae0420a958e14a8"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1825-oficjalna.html",
+      "sha256": "b37ef5e7e08ce7a7a0323476cc27c31528257d6634a148570e4de319e7192972"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1825-osm.json",
+      "sha256": "47a7c089ebcde95406a788d1fd74754d5fa7432fc249a095a81a00529e2f3085"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1825-gugik-reverse.json",
+      "sha256": "0e0d3d38266af6c1f933929127ec33cf29891c5c9b7b0bbef37c63faf188df47"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1825-gugik-pierwotny.json",
+      "sha256": "e02e0070c2170f764c08d7706f32dc766da5459c0ecee47fe46da877fa2e8d8b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1825-gugik-osm.json",
+      "sha256": "ad0180af0497799cffcb1172b64f0a650ecfcea577b223e24f8069343e6a4524"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1968-oficjalna.html",
+      "sha256": "ed26106793a562a8dfea858748c039a84bf3a8aba48c1ff6ecfe159734b443a6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1968-osm.json",
+      "sha256": "2885273d9c4b191f0287cce981c08ea5a80c1506344d3ddf11ea9a9959d03347"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1968-gugik-reverse.json",
+      "sha256": "6f70153b91fb9a6f20e07addb453aadc44478402ebe8f5ff5f595dd02943ae94"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1968-gugik-pierwotny.json",
+      "sha256": "4e6c47f35ad212c7b53ba8656eab6fb333b1568c6edfe445f20d9490d89ff278"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1968-gugik-osm.json",
+      "sha256": "431882eb627a5530acc456e945131cb30fb393abe187a0bed998401b05753210"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-targeo.html",
+      "sha256": "efd30dea4458c5ce5f0b587328b9fc870ede9ad576dc2aeb1c6f2a4efcecd64b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2220-targeo.html",
+      "sha256": "a4029110bd0623f8846cfd23d06a9d7164d981adb34e18c16e9b959957d661b2"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3370-targeo.html",
+      "sha256": "b767a1cd51185566ee1843e9fb817d6ccee8cd0a0c87fb9d5531027086f0406e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3484-targeo.html",
+      "sha256": "1cacf8fe072092e83059e1cb3605703ba54ecceb3c6ce8ccd28428930b0a40ad"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-targeo.html",
+      "sha256": "dcf860e9ba700c46ecde9d351a24817f29e114474c56c4427420d5a5eb9d6343"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/7026-targeo.html",
+      "sha256": "384b422e54627e7aa0e043f7c832f61d5a99ad0bfa08c34ff5c213e91edd2955"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/oficjalna-lista-adresow.pdf",
+      "sha256": "d3c1b13ef16d88c8133aef1851178a76b0d7934e37e63dfb673f3ac31a01d055"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-oficjalny-komunikat.html",
+      "sha256": "ea3067c8592d961fbc2d0a6cc98c5093046ca28f33163765e77f101fa1b33060"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-oficjalny-komunikat.html",
+      "sha256": "bbef0ee8cdf12dcbe8dadd1adedc12aef336bd1e79269bdd80d1ed8ead917766"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2220-gugik-sprawdzony.json",
+      "sha256": "68ad57a53896d8f237b9a2b190d6c30bf654a1cf82e4482b733d186f0122dc72"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3370-gugik-sprawdzony.json",
+      "sha256": "2d6eee6e3e5a3218da6b6a8f3e3d11131034a5d07fc9f6e6c794bddeea46b7b2"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3484-gugik-sprawdzony.json",
+      "sha256": "b1bf23dd4c6cd477458a822a454eff0c1112401ff2b498ebc7f24acbf2a5bc39"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/7026-gugik-sprawdzony.json",
+      "sha256": "3ba5b68cdb4ff91ea3818a9c8fa28adaea49f9c77fdf35f0a862bcf74cb05312"
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+      "sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/oficjalna-lista-adresow.txt",
+      "sha256": "ab51375e683d68e5b42b2c86e6ee5b44489dfc1de13abf4089c12230ed3b9f62"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/wyciag-dokumentu.json",
+      "sha256": "7f41bec1e60368b4075a5a10f3d189b7605a3db0efec2924281233a6f9c587c6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/wybor.json",
+      "sha256": "f184170717e0fe67d5de0ee938410dfa79a557a51f81559c42a339b35a94e97f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/manifest.json",
+      "sha256": "31c499a0f40ac03933be4c600238a66f758ebc988d3a05f5e320dc49f969f91a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2276-oficjalna.html",
+      "sha256": "d4c93df0c4b9190b522c3c0fdb0c62c9925c366678fa235107da30c9bde62425"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2276-osm.json",
+      "sha256": "0483228ef2aef057cce186c82c977ab7e1d3ab9bab6093710ef76f6eb21c2951"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2276-gugik-reverse.json",
+      "sha256": "bbeb4af2abbb891de5fead1fcc0706a1bdca153ece4541893bc74db1c528c8e6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2276-gugik-pierwotny.json",
+      "sha256": "1c635b6914cef5a8fd66b224d8013719c1d815c992225138c037064dd04b926b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2276-gugik-osm.json",
+      "sha256": "a735895a327c803de4445c8bc057096b13ac637b6d5e1c2b36180af8a5229326"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-oficjalna.html",
+      "sha256": "3112f46cfaf22a7495264a3031508fd7477186f5a7b73e45e3153c383840d9a9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-osm.json",
+      "sha256": "4cdea51c8e7ef2c2e7f76aad3f47f4c204d7872b62802893670b39a83926cfba"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-gugik-reverse.json",
+      "sha256": "f37d149cd7799032b085190f0165869979669351c5604e95a16aa94c1ddce8dd"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-gugik-pierwotny.json",
+      "sha256": "5021e3a4f9ec5ff9d486ea06119fd5886303b3cd15af951d2fa99bc173b9a0bc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-gugik-osm.json",
+      "sha256": "8dde1865a8f531f5f045495aa361ec2527efca584f5384cf9b7f3b815d553fb5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2782-oficjalna.html",
+      "sha256": "e0dc16a251958e8019ecfb443bfa2ae88260887f54dcfa3318eed5c51549dd92"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2782-osm.json",
+      "sha256": "f3e034eed5413436f91607afa01afa82f741fa01a2108abf4650f1a67ca201fb"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2782-gugik-reverse.json",
+      "sha256": "f1f22d94a095edc186275383e30400a05e160508e14bf0843aafa6411b075e50"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2782-gugik-pierwotny.json",
+      "sha256": "323dc67e3e501f40a6dc42c3f5d5edb948a9ba404cd85b7d117f15ad3d487bbc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2782-gugik-osm.json",
+      "sha256": "e50d3860a79d423da1906075f2f53cb1acdeb33d12cae5677746efa759bdada1"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2869-oficjalna.html",
+      "sha256": "d2ab2ca1ce66af0844efe9a572098e68c0d272e7311935fb6e6abe12d33dc5ec"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2869-osm.json",
+      "sha256": "375b06fecfc866d9321c3f9b825df00c981645b158d959189eb4002ab1048e5c"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2869-gugik-reverse.json",
+      "sha256": "e79fcbe43f3da31ec81ec55eb3b126c015330a4076407c8e7ceb9a36ef622fc1"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2869-gugik-pierwotny.json",
+      "sha256": "ae74b403326d6486116674b22494b63aae4ccdab059c7d0abc94d1447c1217b3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2869-gugik-osm.json",
+      "sha256": "267d296d814ccc0ac735a8d468e6371ef5f272a11ccf7773f8aed613af41bd8c"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3601-oficjalna.html",
+      "sha256": "876f2a3bfafcea2424719a9c7b276f4454f9a61397d08960a7fe5a9374103566"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3601-osm.json",
+      "sha256": "840b9b5a84fccecf8f8004322198ec45228c25ef9f7a089d14430583f062f798"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3601-gugik-reverse.json",
+      "sha256": "791c2f9d0d89a05341441ecf7a853410c9278e8dc5587167784725282035c513"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3601-gugik-pierwotny.json",
+      "sha256": "a5dc489c8d7e103f451ff77196104e505fd96dbef2b27c260de5b0911c54ed9d"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3601-gugik-osm.json",
+      "sha256": "b2ef14461579d648ed631a66f2a50818ef8128bcb40d4ea36826303563198917"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3647-oficjalna.html",
+      "sha256": "c6598244df3ea74ee153a3834886560dc3bb2b84eb17a85906dad1d7e1cbdbc8"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3647-osm.json",
+      "sha256": "af4738092395cbe5cd6ca30ea04824e948d7f5d659804ae97602b5d7c9a5f1ef"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3647-gugik-reverse.json",
+      "sha256": "2a31dce02416a75c0270dbf04926feee2fce50d12edec79b70ad839bc5a135c1"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3647-gugik-pierwotny.json",
+      "sha256": "b7c9cfbff4c4f63fc62b02086c7f437157367f6a8766ec88cc491c4523d2b421"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3647-gugik-osm.json",
+      "sha256": "0f8cc4a4493f7a3311fb0b81f7363f6421943331c757e6502ffba0375e741ba4"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/7333-oficjalna.html",
+      "sha256": "bf996c03697aae3a98d28194c8f20c9864ec5724f093e257495a527b15bd1683"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/7333-osm.json",
+      "sha256": "268d180da5e4d9e8c9dfc06dc6643a1cff4ed975bf12741e3121ef3f36d6e50a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/7333-gugik-reverse.json",
+      "sha256": "abdea0f4414b536b3a137aab7a293e8fd7da39f9e4754e25f4e94d96f96e99fa"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/7333-gugik-pierwotny.json",
+      "sha256": "0f86efc1d3a1cb3d7fb9746149d24ae1fa8ad00fe3d52a7ca7b42ae2953f0ea9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/7333-gugik-osm.json",
+      "sha256": "fab959f720bcc38de5b25a197adf9b40b97d3bb89e27599a0386cd81aa96344a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1872-oficjalna.html",
+      "sha256": "ae53e29bf9e17f3bbba868b234cb9761056ff37828ffad03df9c68ca5e7cbf91"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1872-osm.json",
+      "sha256": "56550946aaf875b047a4a96ab900ab2a533e8cf3583061fbcacc5a845c2f90a7"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1872-gugik-reverse.json",
+      "sha256": "8d12ac45c73dcc3490434c0c9bbb70984a911808de667c28503ead0a58bb2275"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1872-gugik-pierwotny.json",
+      "sha256": "83de83f42413e25fd5278d73cd16b4bfdc511d177f9f45f3de3ef2b79a91db61"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1872-gugik-osm.json",
+      "sha256": "1509a337914118b7618c6ac32cc2a0d7ead595ce0a7a72e1378e2a7a52fc7a79"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1164-oficjalna.html",
+      "sha256": "4c9f80b1552391ae28459a28a53650c7443e18f4b654a4da2af666f48136eb07"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1164-osm.json",
+      "sha256": "d7b014933d67a19953d70c2f9bc730e44905a669202e75d673b5a05643c0ec20"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1164-gugik-reverse.json",
+      "sha256": "6825b3fe35c81343f3f4c432d26296eefb427252a06fb5b34157c4558f2dd2dd"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1164-gugik-pierwotny.json",
+      "sha256": "f9aadcf2f0ed13222774fc2fbb437b933d2a432c366836748ab2c77273458591"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1164-gugik-osm.json",
+      "sha256": "29f12abfdd5c138b74c69886b5248c11e75803c4109e124248c5e63f6c90aded"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1192-oficjalna.html",
+      "sha256": "ad49e33dbb7082ddc1022672317c2c087314b5e4161b07a09b93acf1a9acf3f8"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1192-osm.json",
+      "sha256": "077dfcc4617957953278d2ab94271dc41542e58421ebfef013f561adad829ca3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1192-gugik-reverse.json",
+      "sha256": "728990360ebc89ca9d5d8af8f7bcff7afbf7facdb901af73843229197191586f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1192-gugik-pierwotny.json",
+      "sha256": "34626fed8edec177a50b0d0280af0e6d87ec62745bc8086795d9ddb97f924ff9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1192-gugik-osm.json",
+      "sha256": "458f8b159e211107a2cf5c98b2fc0d7bd2b358b5ac8f941bd01d20312e1cbe9a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1226-oficjalna.html",
+      "sha256": "ddde064685799926eb8fcf0250030321921a65cd410dec7ae43bf365ed46d166"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1226-osm.json",
+      "sha256": "a1295839e288815737533d8197ded5a9f05ff8fdfcafe3b91e71c5c5bafaeea0"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1226-gugik-reverse.json",
+      "sha256": "40bfe03584121fa5d0e30ffc3a39518feb31ef2e588c1ee997349133fe8b3ccc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1226-gugik-pierwotny.json",
+      "sha256": "024d6f42dd05aceefec0a42aa578259031abc4fae051e646449b4329e202975f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1226-gugik-osm.json",
+      "sha256": "7f0d52fc604156b7e27e284900474abfce55fdec2b27e74e9731802035b37400"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1328-oficjalna.html",
+      "sha256": "5603b99cef28449d17d778db86270979d3d19cfdfee04706741bd401ba7febbf"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1328-osm.json",
+      "sha256": "f15f3bd90d0fe33cd727885d62179b8fdfc7f0274f788adffaba55cb98174ecd"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1328-gugik-reverse.json",
+      "sha256": "1b9e4511c5151e71ddc29f8548b78345d6d5c482ddce3d31a5e0178217799465"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1328-gugik-pierwotny.json",
+      "sha256": "98a8beeb428117e1f1894cfde458f940b6f7837b752479b364815a57e4ab65bc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1328-gugik-osm.json",
+      "sha256": "2fad12178aaede7a94a5b16f3afaf281416d38dabdebc7e9201aabfc88bd4348"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1344-oficjalna.html",
+      "sha256": "896431fd7369193569b2bea644192da6d1238ea1ce3a1b14a5c7f18a8e5400e5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1344-osm.json",
+      "sha256": "50fc5962bb358aa88bc8855291879715f5636f03eb3f2608710401fc77078e5b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1344-gugik-reverse.json",
+      "sha256": "c3243ccd2ca97330db2d20e97319f2cc64f457f53797aeaf6a1faf42648ba764"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1344-gugik-pierwotny.json",
+      "sha256": "7b0bae3dd68de0a8b436b31fdbcb3db2959ecbca7dcce48fe49663112c7fe197"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1344-gugik-osm.json",
+      "sha256": "ee4ff57943e0e4d68d3de8c1fbc36c764b6daca47ff9bddf6addf7b4d400622d"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1371-oficjalna.html",
+      "sha256": "f31927b82de11ed0fd987acef2204280b4f3703447754e37bb0019495cf925b8"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1371-osm.json",
+      "sha256": "0468d620c0038f17ec1dfeb19408a6889a88b907acc4aafcb9e1ec73a2b04613"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1371-gugik-reverse.json",
+      "sha256": "93444312af46db5b4dd6226e7f93a603f1b2059efdeedca26cbd8a18cd731eaf"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1371-gugik-pierwotny.json",
+      "sha256": "8912ee9862b496ed6cf3fe84ac8621721d3baf3e169d973ac36cc2261b0fbdaf"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1371-gugik-osm.json",
+      "sha256": "d77a17b02f40e044de1715df202ad5abbb811c527bf5e6f9798dac868961e8ee"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1387-oficjalna.html",
+      "sha256": "f076bb04531ab8772700f1be0a24a6e5790a649d8b3bed8f85e23149a6dbc629"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1387-osm.json",
+      "sha256": "0674c5a7824027478dc1d53740eb20a03a3fc1da1450945c72ab5abeaedada73"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1387-gugik-reverse.json",
+      "sha256": "cf7a1f18379a2fe6cb74539ae99e71a7696c2a972f34309e827b07d383a6dd3e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1387-gugik-pierwotny.json",
+      "sha256": "ce725bc6f0852bf78c3664581f5d6cc743a9f951a76dcdce355925568e605074"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1387-gugik-osm.json",
+      "sha256": "efd35303a7a7b769daeefc4e911554937e26e9d92072f65a88f7dcbc11f5d5c3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-oficjalna.html",
+      "sha256": "9a5573284ffb7cc1963949b61d5790e7b3a9f4ba2ab3851a2333641ba33d2b8b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-osm.json",
+      "sha256": "da9677d9e739c3e8bc4de7ab29c4b5425988cee8c5ae057bcdf904f35c3a5fb1"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-gugik-reverse.json",
+      "sha256": "2c6ed6990c3934aee49a0c12380ba269b8aec18281005770e2a69e3f06032239"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-gugik-pierwotny.json",
+      "sha256": "86c1d3a9dc36cb3b4c41b6af88415857ac67ff7eb702e6efced3da1c29b79015"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-gugik-osm.json",
+      "sha256": "45b212f6e7a04fe0cbbdeb1c2039844f38024fd1ecac460e1133c055f3ceba02"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-oficjalna.html",
+      "sha256": "2238da5819e9d4965a9a670176133d58ebbfc9fbe55bbcc025aaabe0a0391b80"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-osm.json",
+      "sha256": "bb5559cf17d100ea8fa5cb1fb170f5bf52611a66bee9e097eb6bde7c31010de5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-gugik-reverse.json",
+      "sha256": "af399fbe160d1a247650b527cb97a963c7e38a60318fa220ad3cf18ef45527ea"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-gugik-pierwotny.json",
+      "sha256": "022aafd83914fa050b291205f44c12ce570825920d9f4fae0691dc0ccaf76625"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-gugik-osm.json",
+      "sha256": "5b4ce74c3e31e61322b7113f1db649c6d8bf1fd41ddda753d54afb31cb7ac2f7"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1459-oficjalna.html",
+      "sha256": "565e4aa9d581cc73fb5b38e80042ec4c57bf2d298467cc6480516eabb9429c23"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1459-osm.json",
+      "sha256": "eccf8b334def5d073bab56264d3ff707e6d6604c680c68812904d99ba1c914fe"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1459-gugik-reverse.json",
+      "sha256": "2185633c972400970e56214000c3da4790a68ce8b63f36c9225c785c18e4da41"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1459-gugik-pierwotny.json",
+      "sha256": "c36edec3b5731085662feac9e134b7796dd7f00cd8e6041cf48e8972699942c5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1459-gugik-osm.json",
+      "sha256": "4d9ea4f55d25d2df123f96cef85200408530b2709e5dfd5bc26fe58457f674f9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1503-oficjalna.html",
+      "sha256": "d0fcd0737e5ef6458aa98915372ea0ba9bfeb7f2a2938a9e023ab2a3d04411d6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1503-osm.json",
+      "sha256": "df060727de84c6d844473e489f59ac4e8f310be50d80ab46a3cd04e447065a14"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1503-gugik-reverse.json",
+      "sha256": "358719dfa9f3a4f6bb668fb71ff5985e17ba875ece33d4a33a0d6df4ee5b8b03"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1503-gugik-pierwotny.json",
+      "sha256": "a5e02b4ba553bb95805df6f234c92d5b2fecc2a556c1e170b16f968f4f2180cd"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1503-gugik-osm.json",
+      "sha256": "138e499373d4c779cceefd5c14487fb826797131f83efdc797250396ac51f107"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1520-oficjalna.html",
+      "sha256": "532328cfb6022acfbb468a9d593ce9c9aade87abdf77885515985a66a4ac9b44"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1520-osm.json",
+      "sha256": "861a977d23dbfab6c1f6570e0a4483986cad0c8fe184f36e48f5203dedc42090"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1520-gugik-reverse.json",
+      "sha256": "3ed4da2da08b2cf2ebed91dffe1669fb508e158af7c9260df5c68fd283f97662"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1520-gugik-pierwotny.json",
+      "sha256": "388d34f8397855bdc5209866cbd35cfb045ca29704e45f3d538786d8de90563e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1520-gugik-osm.json",
+      "sha256": "a2f169a94340835620e119b49bba55e12609bfc2a4ed5a6f6ed2112758a14a93"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-targeo.html",
+      "sha256": "e5ec8287a3cf711a3cae2a6b97a79f2a38c5921b7f2d65fd1879b083bf0bef60"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-targeo.html",
+      "sha256": "31c0be1754ab2d8ffb65c30810fedc9a0eeaac8c80c37640db28a303fc97c7cb"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-targeo.html",
+      "sha256": "bf9fcfa683625d712fcdc4dbd742ae0d831d9be7526427fd92f21f321b2560f4"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+    }
+  ],
+  "corrections": [
+    {
+      "id": "biedronka:1400",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "św. M. Kolbego 58, 85-433 Bydgoszcz",
+          "street_address": "św. M. Kolbego 58",
+          "street": "św. M. Kolbego",
+          "house_number": "58",
+          "city": "Bydgoszcz",
+          "postal_code": "85-433",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 53.1589408,
+          "longitude": 17.912213
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/144883963",
+        "element_type": "way",
+        "element_id": 144883963,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_id_and_second_map",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Bydgoszcz",
+          "addr:housenumber": "58",
+          "addr:postcode": "85-435",
+          "addr:street": "Świętego Maksymiliana Kolbego",
+          "air_conditioning": "yes",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "building:levels": "2",
+          "currency:CHF": "yes",
+          "currency:CZK": "yes",
+          "currency:EUR": "yes",
+          "currency:GBP": "yes",
+          "currency:PLN": "yes",
+          "currency:UAH": "yes",
+          "currency:USD": "yes",
+          "diet:dairy": "yes",
+          "diet:egg_free": "yes",
+          "diet:fruitarian": "yes",
+          "diet:gluten_free": "yes",
+          "diet:lacto_vegetarian": "yes",
+          "diet:lactose_free": "yes",
+          "diet:local": "yes",
+          "diet:meat": "yes",
+          "diet:non-vegetarian": "yes",
+          "diet:organic": "yes",
+          "diet:ovo_vegetarian": "yes",
+          "diet:plant-based": "yes",
+          "diet:raw": "yes",
+          "diet:soy_free": "yes",
+          "diet:vegan": "yes",
+          "diet:vegetarian": "yes",
+          "internet_access": "no",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-23:30",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "organic": "yes",
+          "payment:american_express": "yes",
+          "payment:cards": "yes",
+          "payment:cash": "yes",
+          "payment:coins": "yes",
+          "payment:contactless": "yes",
+          "payment:credit_cards": "yes",
+          "payment:debit_cards": "yes",
+          "payment:discover_card": "yes",
+          "payment:maestro": "yes",
+          "payment:mastercard": "yes",
+          "payment:mastercard_electronic": "yes",
+          "payment:visa": "yes",
+          "shop": "supermarket",
+          "source": "Bing",
+          "stroller": "yes",
+          "website": "https://www.biedronka.pl/pl/shop,id,1400,title,bydgoszcz-swietego-maksymiliana-kolbego-58",
+          "wheelchair": "yes"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:53:19.109Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:3370",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": {
+          "latitude": 50.4359437,
+          "longitude": 20.9384134
+        },
+        "address": {
+          "formatted": "28-130 Stopnica",
+          "street_address": null,
+          "street": null,
+          "house_number": null,
+          "city": "Stopnica",
+          "postal_code": "28-130",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "address": {
+          "formatted": "Dr Piotrowskiego 27, 28-130 Stopnica",
+          "street_address": "Dr Piotrowskiego 27",
+          "street": "Dr Piotrowskiego",
+          "house_number": "27",
+          "city": "Stopnica",
+          "postal_code": "28-130",
+          "country": "PL"
+        }
+      },
+      "resolves": [
+        "missing_street_address"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/702098752",
+        "element_type": "way",
+        "element_id": 702098752,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_id_and_registry_address",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:street": "Doktora Jana Piotrowskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "yes",
+          "name": "Biedronka",
+          "opening_hours": "Mo,We-Sa 06:00-23:30",
+          "operator": "Biedronka",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl/pl/shop,id,3370"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:53:25.437Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "address_source": {
+          "provider": "gugik",
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/3370-gugik-sprawdzony.json",
+          "dataset_sha256": "2d6eee6e3e5a3218da6b6a8f3e3d11131034a5d07fc9f6e6c794bddeea46b7b2",
+          "record_key": "1"
+        },
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:3484",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": {
+          "latitude": 50.1671678,
+          "longitude": 23.0495287
+        },
+        "address": {
+          "formatted": "37-630 Oleszyce",
+          "street_address": null,
+          "street": null,
+          "house_number": null,
+          "city": "Oleszyce",
+          "postal_code": "37-630",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "address": {
+          "formatted": "Sapiehy 12, 37-630 Oleszyce",
+          "street_address": "Sapiehy 12",
+          "street": "Sapiehy",
+          "house_number": "12",
+          "city": "Oleszyce",
+          "postal_code": "37-630",
+          "country": "PL"
+        }
+      },
+      "resolves": [
+        "missing_street_address"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/778842815",
+        "element_type": "way",
+        "element_id": 778842815,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_id_and_registry_address",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "building:levels": "1",
+          "check_date": "2023-06-03",
+          "internet_access": "no",
+          "name": "Biedronka",
+          "name:pl": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-22:00",
+          "payment:blik": "yes",
+          "payment:cash": "yes",
+          "payment:contactless": "yes",
+          "payment:credit_cards": "yes",
+          "payment:debit_cards": "yes",
+          "roof:levels": "0",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl/pl/shop,id,3484",
+          "wheelchair": "yes"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:53:27.648Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "address_source": {
+          "provider": "gugik",
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/3484-gugik-sprawdzony.json",
+          "dataset_sha256": "b1bf23dd4c6cd477458a822a454eff0c1112401ff2b498ebc7f24acbf2a5bc39",
+          "record_key": "1"
+        },
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:3572",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Morska 17, 82-340 Tolkmicko",
+          "street_address": "Morska 17",
+          "street": "Morska",
+          "house_number": "17",
+          "city": "Tolkmicko",
+          "postal_code": "82-340",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 54.3191486,
+          "longitude": 19.5225722
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1029157057",
+        "element_type": "way",
+        "element_id": 1029157057,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_id_and_conflicting_osm_number",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Tolkmicko",
+          "addr:housenumber": "13",
+          "addr:postcode": "82-340",
+          "addr:street": "Morska",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "yes",
+          "building:levels": "1",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-22:00",
+          "panoramax": "44a9ec8c-39ec-40dc-9e4c-d33592b91cb7",
+          "payment:cards": "yes",
+          "payment:cash": "yes",
+          "payment:qr_code": "no",
+          "shop": "supermarket",
+          "source": "www.geoportal.gov.pl;https://www.biedronka.pl/pl/shop;id;3572",
+          "website": "https://www.biedronka.pl/pl/shop,id,3572"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:53:29.898Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:3768",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Piasecka 8, 21-040 Świdnik",
+          "street_address": "Piasecka 8",
+          "street": "Piasecka",
+          "house_number": "8",
+          "city": "Świdnik",
+          "postal_code": "21-040",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.213343,
+          "longitude": 22.6436979
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1074047543",
+        "element_type": "way",
+        "element_id": 1074047543,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_id_and_conflicting_osm_number",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Świdnik",
+          "addr:housenumber": "10",
+          "addr:postcode": "21-040",
+          "addr:street": "Piasecka",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "retail",
+          "name": "Biedronka",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl/pl/shop,id,3768"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:53:33.946Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:3772",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Wolności 4e, 17-100 Mrągowo",
+          "street_address": "Wolności 4e",
+          "street": "Wolności",
+          "house_number": "4e",
+          "city": "Mrągowo",
+          "postal_code": "17-100",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 53.8791037,
+          "longitude": 21.3081482
+        },
+        "address": {
+          "formatted": "Wolności 4e, 11-700 Mrągowo",
+          "street_address": "Wolności 4e",
+          "street": "Wolności",
+          "house_number": "4e",
+          "city": "Mrągowo",
+          "postal_code": "11-700",
+          "country": "PL"
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/10016978767",
+        "element_type": "node",
+        "element_id": 10016978767,
+        "position_kind": "node",
+        "match_rule": "reviewed_official_id_and_official_postcode",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Th 06:00-22:00; Fr-Sa 06:00-23:30",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl/pl/shop,id,3772"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:53:37.828Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "address_source": {
+          "provider": "official_pdf",
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/oficjalna-lista-adresow.pdf",
+          "dataset_sha256": "d3c1b13ef16d88c8133aef1851178a76b0d7934e37e63dfb673f3ac31a01d055",
+          "text_file": "weryfikacja-biedronki/propozycje-01/oficjalna-lista-adresow.txt",
+          "text_sha256": "ab51375e683d68e5b42b2c86e6ee5b44489dfc1de13abf4089c12230ed3b9f62",
+          "excerpt": "Mrągowo 11-700 ul. Wolności 4e"
+        },
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:7026",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": {
+          "latitude": 50.8059135,
+          "longitude": 21.4295448
+        },
+        "address": {
+          "formatted": "27-500 Opatów",
+          "street_address": null,
+          "street": null,
+          "house_number": null,
+          "city": "Opatów",
+          "postal_code": "27-500",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "address": {
+          "formatted": "1 Maja 48, 27-500 Opatów",
+          "street_address": "1 Maja 48",
+          "street": "1 Maja",
+          "house_number": "48",
+          "city": "Opatów",
+          "postal_code": "27-500",
+          "country": "PL"
+        }
+      },
+      "resolves": [
+        "missing_street_address"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1153973134",
+        "element_type": "way",
+        "element_id": 1153973134,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_id_and_registry_address",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "retail",
+          "name": "Biedronka",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl/pl/shop,id,7026"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:53:40.900Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "address_source": {
+          "provider": "gugik",
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/7026-gugik-sprawdzony.json",
+          "dataset_sha256": "3ba5b68cdb4ff91ea3818a9c8fa28adaea49f9c77fdf35f0a862bcf74cb05312",
+          "record_key": "1"
+        },
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1573",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Marii Curie-Skłodowskiej 45, 32-300 Olkusz",
+          "street_address": "Marii Curie-Skłodowskiej 45",
+          "street": "Marii Curie-Skłodowskiej",
+          "house_number": "45",
+          "city": "Olkusz",
+          "postal_code": "32-300",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 50.2707047,
+          "longitude": 19.5736016
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/133633782",
+        "element_type": "way",
+        "element_id": 133633782,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Olkusz",
+          "addr:city:simc": "0941777",
+          "addr:housenumber": "45",
+          "addr:postcode": "32-300",
+          "addr:street": "Marii Skłodowskiej-Curie",
+          "addr:street:sym_ul": "3148",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "yes",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-23:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "source:addr": "emuia.gugik.gov.pl",
+          "website": "https://www.biedronka.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:53:43.151Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1838",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Pułku Strzelców Konnych 8, 19-200 Grajewo",
+          "street_address": "Pułku Strzelców Konnych 8",
+          "street": "Pułku Strzelców Konnych",
+          "house_number": "8",
+          "city": "Grajewo",
+          "postal_code": "19-200",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 53.6409034,
+          "longitude": 22.4691691
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/213910638",
+        "element_type": "way",
+        "element_id": 213910638,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Grajewo",
+          "addr:city:simc": "0957376",
+          "addr:housenumber": "8",
+          "addr:postcode": "19-200",
+          "addr:street": "9 Pułku Strzelców Konnych",
+          "addr:street:sym_ul": "21370",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Fr 06:00-24:00; Sa 06:00-23:30",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "payment:blik": "yes",
+          "payment:cash": "yes",
+          "payment:mastercard": "yes",
+          "payment:visa": "yes",
+          "shop": "supermarket",
+          "source:addr": "mgrajewo.e-mapa.net"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:53:47.180Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:2466",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "al. Szajnowicza-Iwanowa 17, 25-636 Kielce",
+          "street_address": "al. Szajnowicza-Iwanowa 17",
+          "street": "al. Szajnowicza-Iwanowa",
+          "house_number": "17",
+          "city": "Kielce",
+          "postal_code": "25-636",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 50.8809416,
+          "longitude": 20.5827786
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/3402713690",
+        "element_type": "node",
+        "element_id": 3402713690,
+        "position_kind": "node",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Kielce",
+          "addr:housenumber": "17",
+          "addr:postcode": "25-636",
+          "addr:street": "Aleja Jerzego Szajnowicza-Iwanowa",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "opening_hours": "Mo-Sa 05:00-23:30; Su 09:00-20:00 \"niedziele handlowe\"",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:53:51.219Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:3033",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Pułkownika Iranka-Osmeckiego 25, 35-506 Rzeszów",
+          "street_address": "Pułkownika Iranka-Osmeckiego 25",
+          "street": "Pułkownika Iranka-Osmeckiego",
+          "house_number": "25",
+          "city": "Rzeszów",
+          "postal_code": "35-506",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 50.0601219,
+          "longitude": 21.985065
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/225026413",
+        "element_type": "way",
+        "element_id": 225026413,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Rzeszów",
+          "addr:housenumber": "25",
+          "addr:street": "Pułkownika Kazimierza Iranka-Osmeckiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "name": "Biedronka",
+          "shop": "supermarket",
+          "source:addr": "UMRzeszow",
+          "source:building": "EGiB"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:53:56.701Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:3454",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Al. Marsz. Józefa Piłsudskiego 200a, 05-270 Marki",
+          "street_address": "Al. Marsz. Józefa Piłsudskiego 200a",
+          "street": "Al. Marsz. Józefa Piłsudskiego",
+          "house_number": "200a",
+          "city": "Marki",
+          "postal_code": "05-270",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 52.3444754,
+          "longitude": 21.1237507
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/4351698767",
+        "element_type": "node",
+        "element_id": 4351698767,
+        "position_kind": "node",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Marki",
+          "addr:housenumber": "200A",
+          "addr:postcode": "05-270",
+          "addr:street": "Aleja Marszałka Józefa Piłsudskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "check_date": "2025-07-07",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Th 06:30-22:00; Fr 06:30-23:00; Su[-1] 08:00-21:00",
+          "shop": "supermarket",
+          "source": "https://tubamarek.pl/aktualnosci/czytaj/6460-kolejna-biedronka-w-markach",
+          "wheelchair": "yes"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:54:01.284Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1203",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Wojska Polskiego 11, 05-800 Pruszków",
+          "street_address": "Wojska Polskiego 11",
+          "street": "Wojska Polskiego",
+          "house_number": "11",
+          "city": "Pruszków",
+          "postal_code": "05-800",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 52.166093,
+          "longitude": 20.8065846
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/1137307512",
+        "element_type": "node",
+        "element_id": 1137307512,
+        "position_kind": "node",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Pruszków",
+          "addr:city:simc": "0921510",
+          "addr:housenumber": "11",
+          "addr:postcode": "05-800",
+          "addr:street": "Aleja Wojska Polskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:54:05.834Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1216",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "al. J. Piłsudskiego 102, 05-070 Sulejówek",
+          "street_address": "al. J. Piłsudskiego 102",
+          "street": "al. J. Piłsudskiego",
+          "house_number": "102",
+          "city": "Sulejówek",
+          "postal_code": "05-070",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 52.2363035,
+          "longitude": 21.2548445
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/441519780",
+        "element_type": "way",
+        "element_id": 441519780,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:housenumber": "102",
+          "addr:postcode": "05-070",
+          "addr:street": "Aleja Józefa Piłsudskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "supermarket",
+          "building:levels": "1",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "source:building": "BDOT",
+          "source:geometry": "EGiB",
+          "website": "https://www.biedronka.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:54:10.992Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1649",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Jana III Sobieskiego 22, 19-230 Szczuczyn",
+          "street_address": "Jana III Sobieskiego 22",
+          "street": "Jana III Sobieskiego",
+          "house_number": "22",
+          "city": "Szczuczyn",
+          "postal_code": "19-230",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 53.5600516,
+          "longitude": 22.2879638
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/12787533835",
+        "element_type": "node",
+        "element_id": 12787533835,
+        "position_kind": "node",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Szczuczyn",
+          "addr:housenumber": "22",
+          "addr:postcode": "19-230",
+          "addr:street": "Jana Sobieskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "name": "Biedronka",
+          "shop": "supermarket"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:54:15.332Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1666",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Planty Kowalskiego 1, 41-709 Ruda Śląska",
+          "street_address": "Planty Kowalskiego 1",
+          "street": "Planty Kowalskiego",
+          "house_number": "1",
+          "city": "Ruda Śląska",
+          "postal_code": "41-709",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 50.2892054,
+          "longitude": 18.8757226
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/167066584",
+        "element_type": "way",
+        "element_id": 167066584,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Ruda Śląska",
+          "addr:city:simc": "0942630",
+          "addr:housenumber": "1",
+          "addr:postcode": "41-709",
+          "addr:street": "Planty Antoniego Kowalskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Biedronka",
+          "shop": "supermarket",
+          "source": "OSM Tracker, knowledge",
+          "source:addr": "gugik.gov.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:54:19.847Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1782",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Armii Krajowej 3, 27-300 Lipsko",
+          "street_address": "Armii Krajowej 3",
+          "street": "Armii Krajowej",
+          "house_number": "3",
+          "city": "Lipsko",
+          "postal_code": "27-300",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.1547885,
+          "longitude": 21.65385
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/235209443",
+        "element_type": "way",
+        "element_id": 235209443,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Lipsko",
+          "addr:city:simc": "0973613",
+          "addr:housenumber": "3",
+          "addr:postcode": "27-300",
+          "addr:street": "Aleja Armii Krajowej",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "en:Biedronka",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-22:00",
+          "payment:cash": "yes",
+          "payment:contactless": "yes",
+          "payment:credit_cards": "yes",
+          "shop": "supermarket",
+          "source:addr": "gugik.gov.pl",
+          "source:building": "BDOT"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:54:24.344Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1825",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "600-lecia 40, 96-500 Sochaczew",
+          "street_address": "600-lecia 40",
+          "street": "600-lecia",
+          "house_number": "40",
+          "city": "Sochaczew",
+          "postal_code": "96-500",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 52.2335009,
+          "longitude": 20.2477466
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/203263680",
+        "element_type": "way",
+        "element_id": 203263680,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Sochaczew",
+          "addr:city:simc": "0977120",
+          "addr:housenumber": "40",
+          "addr:postcode": "96-500",
+          "addr:street": "Aleja 600-lecia",
+          "addr:street:sym_ul": "45673",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Biedronka",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "roof:shape": "flat",
+          "shop": "supermarket",
+          "source:addr": "msochaczew.e-mapa.net"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:54:28.587Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1968",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Armii Krajowej 13, 22-100 Chełm",
+          "street_address": "Armii Krajowej 13",
+          "street": "Armii Krajowej",
+          "house_number": "13",
+          "city": "Chełm",
+          "postal_code": "22-100",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.1310661,
+          "longitude": 23.4645126
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/301048060",
+        "element_type": "way",
+        "element_id": 301048060,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Chełm",
+          "addr:city:simc": "0929902",
+          "addr:housenumber": "13",
+          "addr:postcode": "22-100",
+          "addr:street": "Aleja Armii Krajowej",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-23:30",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "source:addr": "gugik.gov.pl",
+          "website": "https://www.biedronka.pl/pl/sklepy/shop,id,1968"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T18:54:32.685Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+        }
+      }
+    },
+    {
+      "id": "biedronka:2276",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Gen. Władysława Andersa 19, 67-200 Głogów",
+          "street_address": "Gen. Władysława Andersa 19",
+          "street": "Gen. Władysława Andersa",
+          "house_number": "19",
+          "city": "Głogów",
+          "postal_code": "67-200",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.6557227,
+          "longitude": 16.0606167
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/368770292",
+        "element_type": "way",
+        "element_id": 368770292,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Głogów",
+          "addr:housenumber": "19",
+          "addr:postcode": "67-200",
+          "addr:street": "Generała Władysława Andersa",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 07:00-21:00, Su: 09:00-20:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:05:19.636Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:2390",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Lecha Kaczyńskiego 5, 80-374 Gdańsk",
+          "street_address": "Lecha Kaczyńskiego 5",
+          "street": "Lecha Kaczyńskiego",
+          "house_number": "5",
+          "city": "Gdańsk",
+          "postal_code": "80-374",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 54.4164324,
+          "longitude": 18.597031
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/101959792",
+        "element_type": "way",
+        "element_id": 101959792,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_second_map",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Gdańsk",
+          "addr:country": "PL",
+          "addr:housenumber": "5",
+          "addr:postcode": "80-374",
+          "addr:street": "Prezydenta Lecha Kaczyńskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "old_addr:street": "Dąbrowszczaków",
+          "opening_hours": "Mo-Sa 06:00-22:00; Su 08:00-22:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "payment:blik": "yes",
+          "payment:cash": "yes",
+          "payment:contactless": "yes",
+          "payment:diners_club": "yes",
+          "payment:maestro": "yes",
+          "payment:mastercard": "yes",
+          "payment:sodexo": "yes",
+          "payment:v_pay": "yes",
+          "payment:visa": "yes",
+          "payment:visa_debit": "yes",
+          "payment:visa_electron": "yes",
+          "phone": "+48 22 205 33 00",
+          "shop": "supermarket",
+          "source:addr": "Urząd Miasta Gdańsk",
+          "website": "https://www.biedronka.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:05:24.056Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:2782",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Al. Solidarności 115, 00-140 Warszawa",
+          "street_address": "Al. Solidarności 115",
+          "street": "Al. Solidarności",
+          "house_number": "115",
+          "city": "Warszawa",
+          "postal_code": "00-140",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 52.2419502,
+          "longitude": 20.9945227
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/4574038921",
+        "element_type": "node",
+        "element_id": 4574038921,
+        "position_kind": "node",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Warszawa",
+          "addr:housenumber": "115",
+          "addr:street": "Aleja „Solidarności”",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "check_date": "2022-08-06",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "opening_hours": "Mo-Sa 06:00-23:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl",
+          "wheelchair": "yes"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:05:28.453Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:2869",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Armii Krajowej 20, 97-300 Piotrków Trybunalski",
+          "street_address": "Armii Krajowej 20",
+          "street": "Armii Krajowej",
+          "house_number": "20",
+          "city": "Piotrków Trybunalski",
+          "postal_code": "97-300",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.4090094,
+          "longitude": 19.6771393
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/610874787",
+        "element_type": "way",
+        "element_id": 610874787,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Piotrków Trybunalski",
+          "addr:city:simc": "0967430",
+          "addr:housenumber": "20",
+          "addr:postcode": "97-300",
+          "addr:street": "Aleje Armii Krajowej",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "yes",
+          "name": "Biedronka",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "source:addr": "gugik.gov.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:05:32.435Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:3601",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Ludwika Piechoczka 4, 44-335 Jastrzębie-Zdrój",
+          "street_address": "Ludwika Piechoczka 4",
+          "street": "Ludwika Piechoczka",
+          "house_number": "4",
+          "city": "Jastrzębie-Zdrój",
+          "postal_code": "44-335",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 49.9544753,
+          "longitude": 18.6160868
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1072694723",
+        "element_type": "way",
+        "element_id": 1072694723,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Jastrzębie-Zdrój",
+          "addr:city:simc": "0940163",
+          "addr:housenumber": "4",
+          "addr:postcode": "44-335",
+          "addr:street": "Aleja Ludwika Piechoczka",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "yes",
+          "name": "Biedronka",
+          "shop": "supermarket",
+          "source:addr": "gugik.gov.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:05:36.551Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:3647",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Księdza Gajeckiego 19, 37-205 Zarzecze",
+          "street_address": "Księdza Gajeckiego 19",
+          "street": "Księdza Gajeckiego",
+          "house_number": "19",
+          "city": "Zarzecze",
+          "postal_code": "37-205",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 49.98592,
+          "longitude": 22.5449748
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1082272339",
+        "element_type": "way",
+        "element_id": 1082272339,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Zarzecze",
+          "addr:city:simc": "0613524",
+          "addr:housenumber": "19",
+          "addr:postcode": "37-205",
+          "addr:street": "Księdza Stanisława Gajeckiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "yes",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "payment:blik": "yes",
+          "payment:cash": "yes",
+          "payment:contactless": "yes",
+          "payment:diners_club": "yes",
+          "payment:maestro": "yes",
+          "payment:mastercard": "yes",
+          "payment:sodexo": "yes",
+          "payment:v_pay": "yes",
+          "payment:visa": "yes",
+          "payment:visa_debit": "yes",
+          "payment:visa_electron": "yes",
+          "phone": "+48 22 205 33 00",
+          "shop": "supermarket",
+          "source:addr": "gugik.gov.pl",
+          "website": "https://www.biedronka.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:05:40.880Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:7333",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "ks. Jana Hanowskiego 66, 11-042 Jonkowo",
+          "street_address": "ks. Jana Hanowskiego 66",
+          "street": "ks. Jana Hanowskiego",
+          "house_number": "66",
+          "city": "Jonkowo",
+          "postal_code": "11-042",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 53.8248467,
+          "longitude": 20.3036945
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1327065948",
+        "element_type": "way",
+        "element_id": 1327065948,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Jonkowo",
+          "addr:city:simc": "0477080",
+          "addr:housenumber": "66",
+          "addr:street": "Księdza Jana Hanowskiego",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-22:30",
+          "roof:shape": "gabled",
+          "shop": "supermarket",
+          "source:building": "EGiB"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:05:45.494Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1872",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "al. Jana Pawła II 20, 27-200 Starachowice",
+          "street_address": "al. Jana Pawła II 20",
+          "street": "al. Jana Pawła II",
+          "house_number": "20",
+          "city": "Starachowice",
+          "postal_code": "27-200",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.0365329,
+          "longitude": 21.0619494
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/261499557",
+        "element_type": "way",
+        "element_id": 261499557,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Starachowice",
+          "addr:housenumber": "20",
+          "addr:postcode": "27-200",
+          "addr:street": "Aleja Świętego Jana Pawła II",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Biedronka",
+          "roof:shape": "gabled",
+          "shop": "supermarket"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:05:50.019Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1164",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Marcellego Bacciarellego 56, 51-649 Wrocław",
+          "street_address": "Marcellego Bacciarellego 56",
+          "street": "Marcellego Bacciarellego",
+          "house_number": "56",
+          "city": "Wrocław",
+          "postal_code": "51-649",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.1023339,
+          "longitude": 17.1177399
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/12148540411",
+        "element_type": "node",
+        "element_id": 12148540411,
+        "position_kind": "node",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Wrocław",
+          "addr:housenumber": "56",
+          "addr:postcode": "51-649",
+          "addr:street": "Marcelego Bacciarellego",
+          "air_conditioning": "yes",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "changing_table": "no",
+          "level": "0",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-23:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "payment:blik": "yes",
+          "payment:cash": "yes",
+          "payment:contactless": "yes",
+          "payment:mastercard": "yes",
+          "payment:visa": "yes",
+          "shop": "supermarket",
+          "stroller": "yes",
+          "wheelchair": "yes"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:05:54.697Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1192",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Batorego 32, 05-400 Otwock",
+          "street_address": "Batorego 32",
+          "street": "Batorego",
+          "house_number": "32",
+          "city": "Otwock",
+          "postal_code": "05-400",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 52.0999089,
+          "longitude": 21.2545276
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/132576387",
+        "element_type": "way",
+        "element_id": 132576387,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Otwock",
+          "addr:housenumber": "32",
+          "addr:postcode": "05-400",
+          "addr:street": "Stefana Batorego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-23:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "source:addr": "gugik.gov.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:05:58.732Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1226",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Korotyńskiego 23, 02-123 Warszawa",
+          "street_address": "Korotyńskiego 23",
+          "street": "Korotyńskiego",
+          "house_number": "23",
+          "city": "Warszawa",
+          "postal_code": "02-123",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 52.2035953,
+          "longitude": 20.9646146
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/1493537025",
+        "element_type": "node",
+        "element_id": 1493537025,
+        "position_kind": "node",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Warszawa",
+          "addr:housenumber": "23",
+          "addr:postcode": "02-123",
+          "addr:street": "Władysława Korotyńskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "check_date:opening_hours": "2026-08-23",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "opening_hours": "Mo-Sa 06:00-23:30",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl/pl/sklepy/shop,id,1226",
+          "wheelchair": "yes"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:06:02.601Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1328",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Szymanowskiego 27a, 68-200 Żary",
+          "street_address": "Szymanowskiego 27a",
+          "street": "Szymanowskiego",
+          "house_number": "27a",
+          "city": "Żary",
+          "postal_code": "68-200",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.6429917,
+          "longitude": 15.1263489
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/5611475917",
+        "element_type": "node",
+        "element_id": 5611475917,
+        "position_kind": "node",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Żary",
+          "addr:housenumber": "27A",
+          "addr:postcode": "68-200",
+          "addr:street": "Karola Szymanowskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "payment:blik": "yes",
+          "payment:cash": "yes",
+          "payment:contactless": "yes",
+          "payment:diners_club": "yes",
+          "payment:maestro": "yes",
+          "payment:mastercard": "yes",
+          "payment:sodexo": "yes",
+          "payment:v_pay": "yes",
+          "payment:visa": "yes",
+          "payment:visa_debit": "yes",
+          "payment:visa_electron": "yes",
+          "phone": "+48 22 205 33 00",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:06:07.171Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1344",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Porębskiego 8, 80-180 Gdańsk",
+          "street_address": "Porębskiego 8",
+          "street": "Porębskiego",
+          "house_number": "8",
+          "city": "Gdańsk",
+          "postal_code": "80-180",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 54.3190715,
+          "longitude": 18.582426
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/111648825",
+        "element_type": "way",
+        "element_id": 111648825,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Gdańsk",
+          "addr:country": "PL",
+          "addr:housenumber": "8",
+          "addr:postcode": "80-180",
+          "addr:street": "Kazimierza Porębskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "supermarket",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-23:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "source:addr": "Urząd Miasta Gdańsk",
+          "source:building": "EGiB"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:06:11.546Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1371",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Chałubińskiego 27, 80-807 Gdańsk",
+          "street_address": "Chałubińskiego 27",
+          "street": "Chałubińskiego",
+          "house_number": "27",
+          "city": "Gdańsk",
+          "postal_code": "80-807",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 54.340827,
+          "longitude": 18.6192515
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/105308553",
+        "element_type": "way",
+        "element_id": 105308553,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Gdańsk",
+          "addr:country": "PL",
+          "addr:housenumber": "27",
+          "addr:postcode": "80-807",
+          "addr:street": "Tytusa Chałubińskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+          "shop": "supermarket",
+          "source:addr": "Urząd Miasta Gdańsk",
+          "source:building": "BDOT",
+          "source:geometry": "EGiB"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:06:15.836Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1387",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Jagiełły 1, 11-400 Kętrzyn",
+          "street_address": "Jagiełły 1",
+          "street": "Jagiełły",
+          "house_number": "1",
+          "city": "Kętrzyn",
+          "postal_code": "11-400",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 54.0847824,
+          "longitude": 21.3724044
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/174998647",
+        "element_type": "way",
+        "element_id": 174998647,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Kętrzyn",
+          "addr:city:simc": "0964710",
+          "addr:housenumber": "1",
+          "addr:street": "Władysława Jagiełły",
+          "addr:street:sym_ul": "24494",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "building:levels": "1",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "payment:blik": "yes",
+          "payment:cash": "yes",
+          "payment:contactless": "yes",
+          "payment:diners_club": "yes",
+          "payment:maestro": "yes",
+          "payment:mastercard": "yes",
+          "payment:sodexo": "yes",
+          "payment:v_pay": "yes",
+          "payment:visa": "yes",
+          "payment:visa_debit": "yes",
+          "payment:visa_electron": "yes",
+          "phone": "+48 22 205 33 00",
+          "shop": "supermarket",
+          "source": "estimated, kosmosnimki.ru",
+          "source:addr": "emuia.gugik.gov.pl",
+          "source:building": "BDOT",
+          "website": "https://www.biedronka.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:06:21.350Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1444",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Witosa 4, 44-190 Knurów",
+          "street_address": "Witosa 4",
+          "street": "Witosa",
+          "house_number": "4",
+          "city": "Knurów",
+          "postal_code": "44-190",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 50.2368496,
+          "longitude": 18.6586714
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/152329236",
+        "element_type": "way",
+        "element_id": 152329236,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Knurów",
+          "addr:housenumber": "4",
+          "addr:street": "Wincentego Witosa",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Biedronka",
+          "opening_hours": "Tu,We,Sa 00:00-23:30; Mo,Th 05:00-24:00; PH,Su off; Fr 00:00-24:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "roof:shape": "flat",
+          "shop": "supermarket",
+          "source": "Bing; knowledge",
+          "wheelchair": "yes"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:06:25.552Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1449",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Sienkiewicza 53, 07-412 Ostrołęka",
+          "street_address": "Sienkiewicza 53",
+          "street": "Sienkiewicza",
+          "house_number": "53",
+          "city": "Ostrołęka",
+          "postal_code": "07-412",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 53.0736297,
+          "longitude": 21.5641501
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/114995405",
+        "element_type": "way",
+        "element_id": 114995405,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Ostrołęka",
+          "addr:housenumber": "53",
+          "addr:street": "Henryka Sienkiewicza",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "retail",
+          "name": "Biedronka",
+          "opening_hours": "Mo,Tu 06:00-22:00; We 06:00-23:00; Th,Fr 06:00-23:30; Sa 06:00-13:30; Su,PH off",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "source:addr": "EMUiA UM Ostrołęka"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:06:29.534Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1459",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Grota Roweckiego 18a, 95-200 Pabianice",
+          "street_address": "Grota Roweckiego 18a",
+          "street": "Grota Roweckiego",
+          "house_number": "18a",
+          "city": "Pabianice",
+          "postal_code": "95-200",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.6570322,
+          "longitude": 19.3703695
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/140237132",
+        "element_type": "way",
+        "element_id": 140237132,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "3dr:type": "1.0",
+          "addr:city": "Pabianice",
+          "addr:housenumber": "18A",
+          "addr:street": "Generała Stefana \"Grota\" Roweckiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "supermarket",
+          "building:levels": "1",
+          "name": "Biedronka",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "source": "bing",
+          "source:addr": "EMUiA (emuia.gugik.gov.pl)"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:06:33.887Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1503",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Konopnickiej 2, 85-124 Bydgoszcz",
+          "street_address": "Konopnickiej 2",
+          "street": "Konopnickiej",
+          "house_number": "2",
+          "city": "Bydgoszcz",
+          "postal_code": "85-124",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 53.1117481,
+          "longitude": 18.0074684
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/589805243",
+        "element_type": "node",
+        "element_id": 589805243,
+        "position_kind": "node",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Bydgoszcz",
+          "addr:housenumber": "2",
+          "addr:street": "Marii Konopnickiej",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "phone": "+48523704900",
+          "shop": "supermarket",
+          "source": "http://ump.waw.pl/ retrieved 11:19:07 11/17/09 (UMP-Torun/src/POI-BYDGOSZCZ.punkty.pnt-converted.txt)",
+          "website": "https://www.biedronka.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:06:38.530Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    },
+    {
+      "id": "biedronka:1520",
+      "status": "accepted_after_source_review",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Os. Wybickiego 3b, 83-300 Kartuzy",
+          "street_address": "Os. Wybickiego 3b",
+          "street": "Os. Wybickiego",
+          "house_number": "3b",
+          "city": "Kartuzy",
+          "postal_code": "83-300",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 54.3262535,
+          "longitude": 18.1957607
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/364636085",
+        "element_type": "way",
+        "element_id": 364636085,
+        "position_kind": "overpass_center",
+        "match_rule": "reviewed_official_address_and_registry_point",
+        "matched_on": [
+          "source_review",
+          "official_store_card",
+          "saved_osm",
+          "independent_address_or_map"
+        ],
+        "matched_tags": {
+          "addr:city": "Kartuzy",
+          "addr:city:simc": "0934547",
+          "addr:housenumber": "3b",
+          "addr:postcode": "83-300",
+          "addr:street": "Osiedle Generała Józefa Wybickiego",
+          "addr:street:sym_ul": "24905",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "retail",
+          "name": "Biedronka",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "source:addr": "kartuzy.e-mapa.net"
+        },
+        "dataset_file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+        "dataset_sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+        "osm_timestamp": "2026-11-02T18:14:35Z",
+        "retrieved_at": "2026-11-02T19:06:42.885Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright",
+        "review_report": {
+          "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+        }
+      }
+    }
+  ]
+}

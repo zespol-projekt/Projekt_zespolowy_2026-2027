@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jordanow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:23.832Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jordanow-a497f732.json",
+  "sha256": "4955a1fed4f1fa04feb96c1171823aad81855fc7f0fd90538dfc7dada41ebd75",
+  "usable": true,
+  "items": 1
+}

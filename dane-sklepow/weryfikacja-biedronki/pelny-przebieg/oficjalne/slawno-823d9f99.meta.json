@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=slawno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:08.386Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/slawno-823d9f99.json",
+  "sha256": "907142123ea0e3b9028c2af7c08b2da88a7e5d44bac06dc5cfc2078a5215e012",
+  "usable": true,
+  "items": 2
+}

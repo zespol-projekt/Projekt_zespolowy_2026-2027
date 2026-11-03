@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=blonie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:04.305Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/blonie-aea2b8fb.json",
+  "sha256": "a60c2f5f91d78cfd923652867924b691e0604118d36c37bc5facf56745908448",
+  "usable": true,
+  "items": 3
+}

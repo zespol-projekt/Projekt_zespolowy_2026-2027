@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=oleszyce",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:59.885Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/oleszyce-ba3b0612.json",
+  "sha256": "043464e44be028ff905d06fc40daf0927a547457c25719e5d02957bc7721e542",
+  "usable": true,
+  "items": 1
+}

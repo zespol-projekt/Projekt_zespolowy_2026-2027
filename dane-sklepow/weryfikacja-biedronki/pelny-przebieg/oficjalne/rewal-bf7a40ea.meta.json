@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rewal",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:45.684Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rewal-bf7a40ea.json",
+  "sha256": "5748dea7fc562e14eae9bdbbd5fa20d4b05899ac88c4946f53b21358c1afb0bd",
+  "usable": true,
+  "items": 1
+}

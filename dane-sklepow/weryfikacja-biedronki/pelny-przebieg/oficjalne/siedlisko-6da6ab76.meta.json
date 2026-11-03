@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=siedlisko",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:01.446Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/siedlisko-6da6ab76.json",
+  "sha256": "c52404dde52592d3e035901f399f6617d49a37fc2acab7c4840685382e825111",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kurow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:58.386Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kurow-c347c9a0.json",
+  "sha256": "bcfdbf4b8d6cbe349c66a824f9344a5a5f1474c99dc8e93aa36dd1202e89ae1d",
+  "usable": true,
+  "items": 1
+}

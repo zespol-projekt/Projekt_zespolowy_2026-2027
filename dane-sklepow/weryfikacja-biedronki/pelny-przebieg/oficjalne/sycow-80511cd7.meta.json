@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sycow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:35.668Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sycow-80511cd7.json",
+  "sha256": "d5e49cf9d0780fa38415462ee966cd323de88b749329b661dca276380f28dfb8",
+  "usable": true,
+  "items": 2
+}

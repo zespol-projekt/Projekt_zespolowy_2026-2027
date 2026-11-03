@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zabkowice-slaskie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:14.462Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zabkowice-slaskie-87b0fde0.json",
+  "sha256": "453b10ef27e460e9ee3d4284a87242f450a756551ed8e0fb54ec2f691816de50",
+  "usable": true,
+  "items": 4
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=radgoszcz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:36.386Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/radgoszcz-091668b4.json",
+  "sha256": "d6e755e25a452f745389bd55235660ed5c931bc4b1eba7d40a008df38650edbb",
+  "usable": true,
+  "items": 1
+}

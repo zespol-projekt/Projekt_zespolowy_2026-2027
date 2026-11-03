@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=czarnkow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:29.585Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/czarnkow-db625079.json",
+  "sha256": "6e5afddc617373c45e2f34eb9a2dac976ee719402ecfa9a29ba1be0c0cde802c",
+  "usable": true,
+  "items": 2
+}

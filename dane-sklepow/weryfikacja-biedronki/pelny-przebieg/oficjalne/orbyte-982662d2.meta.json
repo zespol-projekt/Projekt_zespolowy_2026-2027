@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=orbyte",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:03.202Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/orbyte-982662d2.json",
+  "sha256": "eb201512803ec43e18134a25b7cf3064b496d7eb440fa3597a0a940d15cbc31d",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,11 @@
+{
+  "key": "7026-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-1-maja-48-27-500-opatow~23310608/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:55:23.518Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-1-maja-48-27-500-opatow~23310608/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-01/7026-targeo.html",
+  "sha256": "384b422e54627e7aa0e043f7c832f61d5a99ad0bfa08c34ff5c213e91edd2955",
+  "bytes": 42516
+}

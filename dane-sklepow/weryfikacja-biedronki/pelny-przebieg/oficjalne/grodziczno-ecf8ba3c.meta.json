@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=grodziczno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:05.748Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/grodziczno-ecf8ba3c.json",
+  "sha256": "f7a5cd6d746b79db0ca228832794e36f9010184f2d4044254c14c541d5cfad89",
+  "usable": true,
+  "items": 1
+}

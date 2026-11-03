@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bialystok",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:59.424Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bialystok-5d94da55.json",
+  "sha256": "212c793846f8268b9550e88a165e6c5b87d2fa36b00ebc39d0ac7a764357bf00",
+  "usable": true,
+  "items": 35
+}

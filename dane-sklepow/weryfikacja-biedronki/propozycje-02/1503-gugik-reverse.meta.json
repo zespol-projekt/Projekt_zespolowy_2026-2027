@@ -1,0 +1,11 @@
+{
+  "key": "1503-gugik-reverse",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddressReverse&location=POINT%2818.0074684+53.1117481%29&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:39.337Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddressReverse&location=POINT%2818.0074684+53.1117481%29&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1503-gugik-reverse.json",
+  "sha256": "358719dfa9f3a4f6bb668fb71ff5985e17ba875ece33d4a33a0d6df4ee5b8b03",
+  "bytes": 498
+}

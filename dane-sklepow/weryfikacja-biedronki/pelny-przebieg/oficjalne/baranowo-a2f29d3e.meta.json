@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=baranowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:56.059Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/baranowo-a2f29d3e.json",
+  "sha256": "d0709dad0b43613e8910d63532fee397b614f92629fc4484d64bf124d756e8c6",
+  "usable": true,
+  "items": 2
+}

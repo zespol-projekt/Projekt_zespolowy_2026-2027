@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krapkowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:50.716Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/krapkowice-ba187ab6.json",
+  "sha256": "5311c4c5470ff34f5557cf79b0b0d12a2c5e6422fbecf0ec91d220bec2d15812",
+  "usable": true,
+  "items": 3
+}

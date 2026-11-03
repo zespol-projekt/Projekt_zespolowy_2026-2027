@@ -1,0 +1,1 @@
+[out:json][timeout:90];area["ISO3166-1"="PL"]["admin_level"="2"]->.pl;(nwr["shop"]["brand"="Biedronka"](area.pl);nwr["shop"]["name"~"^Biedronka$",i](area.pl););out center tags;

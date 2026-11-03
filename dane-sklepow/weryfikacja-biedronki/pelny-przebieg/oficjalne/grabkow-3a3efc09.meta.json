@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=grabkow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:04.684Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/grabkow-3a3efc09.json",
+  "sha256": "1d8a202ab8a5c234a80ea5c4c6f8a734b094b6b9829c1480fc85530b7f860112",
+  "usable": true,
+  "items": 1
+}

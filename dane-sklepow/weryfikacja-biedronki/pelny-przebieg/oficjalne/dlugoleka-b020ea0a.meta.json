@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dlugoleka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:40.465Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dlugoleka-b020ea0a.json",
+  "sha256": "5f4be5e3cce5881221bf20497e824dc24ca5c269369edac11b9e710a6156eafb",
+  "usable": true,
+  "items": 1
+}

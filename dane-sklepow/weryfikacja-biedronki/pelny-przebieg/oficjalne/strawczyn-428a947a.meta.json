@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=strawczyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:25.328Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/strawczyn-428a947a.json",
+  "sha256": "91461d2452355f1e064534f23dbcc69cca5498e28672aa600bae0f304b6eea7b",
+  "usable": true,
+  "items": 1
+}

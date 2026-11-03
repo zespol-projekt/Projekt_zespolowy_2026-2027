@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=olszyna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:00.967Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/olszyna-3d766795.json",
+  "sha256": "03e501d4e125087ca08b299f3b51d3f3b061c6141cff3ac436b26a9ecddc66f2",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=swiecie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:34.086Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/swiecie-27a7c28b.json",
+  "sha256": "585bcd6ba36ce56a89fc72e133eda1bb5d7c4ac6f4c7ec115ee29497d3ae9a23",
+  "usable": true,
+  "items": 5
+}

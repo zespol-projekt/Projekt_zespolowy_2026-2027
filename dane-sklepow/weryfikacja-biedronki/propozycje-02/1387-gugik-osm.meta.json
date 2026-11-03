@@ -1,0 +1,11 @@
+{
+  "key": "1387-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=K%C4%99trzyn%2C+W%C5%82adys%C5%82awa+Jagie%C5%82%C5%82y+1&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:23.746Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=K%C4%99trzyn%2C+W%C5%82adys%C5%82awa+Jagie%C5%82%C5%82y+1&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1387-gugik-osm.json",
+  "sha256": "efd35303a7a7b769daeefc4e911554937e26e9d92072f65a88f7dcbc11f5d5c3",
+  "bytes": 644
+}

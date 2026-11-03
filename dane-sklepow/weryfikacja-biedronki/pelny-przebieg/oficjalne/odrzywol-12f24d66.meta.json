@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=odrzywol",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:56.586Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/odrzywol-12f24d66.json",
+  "sha256": "a3633eb76fe212b752a79d1819d75a58b3bd4592ecfb3142bdf76179f1c304d6",
+  "usable": true,
+  "items": 1
+}

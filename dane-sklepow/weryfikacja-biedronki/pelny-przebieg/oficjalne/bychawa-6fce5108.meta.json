@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bychawa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:17.004Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bychawa-6fce5108.json",
+  "sha256": "4b7fdecf935f0532cd5940efa05d6e7e0e3d3212cd9720eb1e8ea3230c0acd06",
+  "usable": true,
+  "items": 2
+}

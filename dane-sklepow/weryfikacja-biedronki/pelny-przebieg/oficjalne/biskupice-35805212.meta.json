@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=biskupice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:03.251Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/biskupice-35805212.json",
+  "sha256": "531ed9ca9901a8077f3fc6da1efc349c6382f6a694cfd6d57f3f732684d64f12",
+  "usable": true,
+  "items": 2
+}

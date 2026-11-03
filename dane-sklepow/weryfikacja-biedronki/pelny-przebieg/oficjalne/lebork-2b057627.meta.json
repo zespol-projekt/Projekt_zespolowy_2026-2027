@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lebork",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:08.113Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lebork-2b057627.json",
+  "sha256": "0a8f0794f944efc4d7af1f6f61408d4edf64aa893313a47c416fdd8745cc89ee",
+  "usable": true,
+  "items": 7
+}

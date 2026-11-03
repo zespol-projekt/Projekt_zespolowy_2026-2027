@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bojanowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:06.003Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bojanowo-c4300f69.json",
+  "sha256": "05f276db76c9b218e4e45962ed1cc4acd9768db766dd6c8ba360a37998d724d6",
+  "usable": true,
+  "items": 1
+}

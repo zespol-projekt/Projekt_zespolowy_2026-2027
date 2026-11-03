@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=piastow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:13.669Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/piastow-5b63bec4.json",
+  "sha256": "6e2fdd102304c8ae8e66940dc9ee724c17dfa31cb86a1341fbe69b439a933a98",
+  "usable": true,
+  "items": 3
+}

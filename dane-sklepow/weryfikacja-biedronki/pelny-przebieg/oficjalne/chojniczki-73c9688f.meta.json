@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=chojniczki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:23.566Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/chojniczki-73c9688f.json",
+  "sha256": "2b0ca0bc2762a284aba2e7d8dfb0c3afb094b4e74996f2791c1fa68096e9aada",
+  "usable": true,
+  "items": 1
+}

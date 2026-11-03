@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ustron",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:54.168Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ustron-39f43e69.json",
+  "sha256": "f57f49df3e7fd9ba137420e6be2ab5c34ec8e64130809402a62188fd66a17e79",
+  "usable": true,
+  "items": 2
+}

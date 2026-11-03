@@ -1,0 +1,11 @@
+{
+  "key": "7815-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/node/13456804467.json",
+  "retrieved_at": "2026-11-02T18:41:47.462Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/node/13456804467.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/proba-20/7815-osm.json",
+  "sha256": "fb9fe543d43ced2d6443218170d116aa1e4441dd8120a2e382e435d9a314226f",
+  "bytes": 755
+}

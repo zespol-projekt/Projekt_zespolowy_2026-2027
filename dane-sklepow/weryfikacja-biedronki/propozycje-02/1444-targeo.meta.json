@@ -1,0 +1,11 @@
+{
+  "key": "1444-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-witosa-4-knurow~4481391/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T19:08:06.583Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-witosa-4-knurow~4481391/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-02/1444-targeo.html",
+  "sha256": "31c0be1754ab2d8ffb65c30810fedc9a0eeaac8c80c37640db28a303fc97c7cb",
+  "bytes": 41487
+}

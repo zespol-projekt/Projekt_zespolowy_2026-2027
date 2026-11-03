@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=brzesko",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:14.257Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/brzesko-ca415dfd.json",
+  "sha256": "d95381308280826f8236e562d20d714b01a8261bbb659a5874339a940658666c",
+  "usable": true,
+  "items": 3
+}

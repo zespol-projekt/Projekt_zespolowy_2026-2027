@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=goszczanow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:04.017Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/goszczanow-13b5c14c.json",
+  "sha256": "74d8044947518a574b90fb19d8ce62edd722c8fa96d16d3ca01c7abb5ecc9872",
+  "usable": true,
+  "items": 1
+}

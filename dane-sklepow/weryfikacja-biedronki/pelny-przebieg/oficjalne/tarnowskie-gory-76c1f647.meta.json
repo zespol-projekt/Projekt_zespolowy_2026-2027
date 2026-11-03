@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=tarnowskie-gory",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:43.383Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/tarnowskie-gory-76c1f647.json",
+  "sha256": "7ccd0a5616aff60e3178edc8e913ed94aa7b7496c017760b9caf9b2e45332825",
+  "usable": true,
+  "items": 7
+}

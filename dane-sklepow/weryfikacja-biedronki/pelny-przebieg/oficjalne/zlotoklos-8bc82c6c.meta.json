@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zlotoklos",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:29.652Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zlotoklos-8bc82c6c.json",
+  "sha256": "b3ec9e6492dd7b8f2f091ef19251bb8016210e8f5f179fcd098d96ecec7fd64d",
+  "usable": true,
+  "items": 1
+}

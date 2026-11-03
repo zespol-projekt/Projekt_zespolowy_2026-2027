@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stepnica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:22.653Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/stepnica-914e1ffd.json",
+  "sha256": "a551a53fd3fe8e4f8bef02cf8a67893041661b333f783c46946ec3e51c1dc7a5",
+  "usable": true,
+  "items": 1
+}

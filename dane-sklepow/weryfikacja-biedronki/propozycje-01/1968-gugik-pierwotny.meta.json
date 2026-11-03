@@ -1,0 +1,11 @@
+{
+  "key": "1968-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Che%C5%82m%2C+Armii+Krajowej+13&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:34.469Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Che%C5%82m%2C+Armii+Krajowej+13&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1968-gugik-pierwotny.json",
+  "sha256": "4e6c47f35ad212c7b53ba8656eab6fb333b1568c6edfe445f20d9490d89ff278",
+  "bytes": 608
+}

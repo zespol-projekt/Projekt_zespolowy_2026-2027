@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=suwalki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:30.819Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/suwalki-401a9221.json",
+  "sha256": "83ed8ca6c7db62007c24057f5cdbbe00409ed129f0b5ff89f7d5c3769eb5affc",
+  "usable": true,
+  "items": 12
+}

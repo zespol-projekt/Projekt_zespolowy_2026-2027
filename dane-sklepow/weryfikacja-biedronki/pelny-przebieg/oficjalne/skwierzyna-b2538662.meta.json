@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=skwierzyna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:07.866Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/skwierzyna-b2538662.json",
+  "sha256": "a9c516b4b5b5d11302c63f8e07955c7e0303b09630ef709588f2911d9e5028b3",
+  "usable": true,
+  "items": 2
+}

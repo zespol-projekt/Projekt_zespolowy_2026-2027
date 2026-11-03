@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kielce",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:32.114Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kielce-f91915ed.json",
+  "sha256": "6fd04ef6b13af7f926433325e17602efbc1fa98200c945a66b5e86ccf412c76b",
+  "usable": true,
+  "items": 17
+}

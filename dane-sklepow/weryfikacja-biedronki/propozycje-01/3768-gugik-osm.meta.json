@@ -1,0 +1,11 @@
+{
+  "key": "3768-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%9Awidnik%2C+Piasecka+10&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:36.201Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%9Awidnik%2C+Piasecka+10&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/3768-gugik-osm.json",
+  "sha256": "bdcbe35d98ebd0d5fc4f0dc2dc6df3f21daf9dc54c3740cdd359c8f04b84a605",
+  "bytes": 593
+}

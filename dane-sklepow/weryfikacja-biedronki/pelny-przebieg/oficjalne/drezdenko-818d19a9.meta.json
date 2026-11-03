@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=drezdenko",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:43.233Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/drezdenko-818d19a9.json",
+  "sha256": "722db0258c01cbfe0bf15845f477948d5de88dfece498420b4585c005694a807",
+  "usable": true,
+  "items": 1
+}

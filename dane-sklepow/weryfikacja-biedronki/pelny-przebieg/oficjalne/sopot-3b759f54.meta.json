@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sopot",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:14.364Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sopot-3b759f54.json",
+  "sha256": "c8249547089d8e15111f83384406829e3fa7deecb091a85ccfb5a9e99aca11f3",
+  "usable": true,
+  "items": 3
+}

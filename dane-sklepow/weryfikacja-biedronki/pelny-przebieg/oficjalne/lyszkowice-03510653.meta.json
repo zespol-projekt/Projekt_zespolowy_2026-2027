@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lyszkowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:23.434Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lyszkowice-03510653.json",
+  "sha256": "2555d508586a675dca34a6209ced19ad78fbaaa3984834a9be80153c0ad867e1",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bobolice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:04.932Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bobolice-fe883617.json",
+  "sha256": "8aed33fbe806bc4cf4bed55fe216059847b5f1468161c05d77c95bc9f10f5636",
+  "usable": true,
+  "items": 1
+}

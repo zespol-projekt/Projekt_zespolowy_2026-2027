@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=olesno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:58.820Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/olesno-d715f6ab.json",
+  "sha256": "e33adc810056af25363219c5c5e76f7b489c960ed9c176d094ad70bb49dcf6f3",
+  "usable": true,
+  "items": 2
+}

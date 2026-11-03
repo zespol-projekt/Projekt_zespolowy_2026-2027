@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=brwinow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:13.188Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/brwinow-7b85ac0a.json",
+  "sha256": "6cf4aa9c73a747d2406e4b11b2d25a7e9bb75c95aa1a6537c8df18e30a218ea1",
+  "usable": true,
+  "items": 1
+}

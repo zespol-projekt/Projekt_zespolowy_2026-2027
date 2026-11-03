@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mscice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:42.511Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/mscice-c8ff2eb8.json",
+  "sha256": "9a1a82ce689824db7ffcf98734651a96207061cdd79d60f7885a3bec48efc33d",
+  "usable": true,
+  "items": 1
+}

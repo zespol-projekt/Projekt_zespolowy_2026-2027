@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=przasnysz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:26.138Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/przasnysz-18bd58d2.json",
+  "sha256": "4511e83a700b33fb55af0b26006115035da2ddbad9841cafd38206ed0a7f609a",
+  "usable": true,
+  "items": 3
+}

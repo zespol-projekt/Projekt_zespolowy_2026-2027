@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bilgoraj",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:02.720Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bilgoraj-38dfe139.json",
+  "sha256": "4e057afec0128d9c9618bb43bf7cf9d0393086a6517b1f7a97d02b96bcfd445b",
+  "usable": true,
+  "items": 3
+}

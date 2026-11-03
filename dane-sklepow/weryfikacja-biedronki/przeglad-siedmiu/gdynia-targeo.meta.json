@@ -1,0 +1,11 @@
+{
+  "key": "gdynia-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-rdestowa-160-gdynia~23164627/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:31:20.267Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-rdestowa-160-gdynia~23164627/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/gdynia-targeo.html",
+  "sha256": "2fb32c786cde2ee4f12cc1800569d79c9e47747edaabe55dc802e8aad307750f",
+  "bytes": 40056
+}

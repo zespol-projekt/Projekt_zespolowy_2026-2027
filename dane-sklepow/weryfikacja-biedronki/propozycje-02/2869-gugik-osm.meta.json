@@ -1,0 +1,11 @@
+{
+  "key": "2869-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Piotrk%C3%B3w+Trybunalski%2C+Aleje+Armii+Krajowej+20&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:34.862Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Piotrk%C3%B3w+Trybunalski%2C+Aleje+Armii+Krajowej+20&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/2869-gugik-osm.json",
+  "sha256": "267d296d814ccc0ac735a8d468e6371ef5f272a11ccf7773f8aed613af41bd8c",
+  "bytes": 677
+}

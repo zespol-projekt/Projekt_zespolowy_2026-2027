@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zieleniec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:27.415Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zieleniec-b4d2b876.json",
+  "sha256": "dbda3671dc444d35cf44f58203beae8f3e556186cc6c486c456601f6a02f1d29",
+  "usable": true,
+  "items": 1
+}

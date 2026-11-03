@@ -1,0 +1,11 @@
+{
+  "key": "7333-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jonkowo%2C+ks.+Jana+Hanowskiego+66&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:47.048Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jonkowo%2C+ks.+Jana+Hanowskiego+66&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/7333-gugik-pierwotny.json",
+  "sha256": "0f86efc1d3a1cb3d7fb9746149d24ae1fa8ad00fe3d52a7ca7b42ae2953f0ea9",
+  "bytes": 611
+}

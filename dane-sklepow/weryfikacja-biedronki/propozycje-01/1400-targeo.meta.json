@@ -1,0 +1,11 @@
+{
+  "key": "1400-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-sw-m-kolbego-58-bydgoszcz~4533683/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:55:19.854Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-sw-m-kolbego-58-bydgoszcz~4533683/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-01/1400-targeo.html",
+  "sha256": "efd30dea4458c5ce5f0b587328b9fc870ede9ad576dc2aeb1c6f2a4efcecd64b",
+  "bytes": 42470
+}

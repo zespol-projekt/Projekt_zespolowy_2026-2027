@@ -1,0 +1,11 @@
+{
+  "key": "6953-gugik-wgs84",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81ysomice%2C+Warszawska+40D&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:47:01.493Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81ysomice%2C+Warszawska+40D&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/6953-gugik-wgs84.json",
+  "sha256": "6922e6450ab248a6c0999bfd969b4b301ffc34c9d53626f4e2b0742f59c0a3da",
+  "bytes": 606
+}

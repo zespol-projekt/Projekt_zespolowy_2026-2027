@@ -1,0 +1,11 @@
+{
+  "key": "1872-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Starachowice%2C+Aleja+%C5%9Awi%C4%99tego+Jana+Paw%C5%82a+II+20&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:52.696Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Starachowice%2C+Aleja+%C5%9Awi%C4%99tego+Jana+Paw%C5%82a+II+20&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1872-gugik-osm.json",
+  "sha256": "1509a337914118b7618c6ac32cc2a0d7ead595ce0a7a72e1378e2a7a52fc7a79",
+  "bytes": 638
+}

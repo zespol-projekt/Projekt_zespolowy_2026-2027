@@ -1,0 +1,11 @@
+{
+  "key": "1782-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lipsko%2C+Aleja+Armii+Krajowej+3&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:26.770Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lipsko%2C+Aleja+Armii+Krajowej+3&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1782-gugik-osm.json",
+  "sha256": "72db701fd3978fce96208f4a9f8db829762aa3f379058e851ae0420a958e14a8",
+  "bytes": 586
+}

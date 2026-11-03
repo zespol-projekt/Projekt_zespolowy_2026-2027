@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rejowiec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:45.157Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rejowiec-468f5b0b.json",
+  "sha256": "a5415c39680f090d38402af7ea0e07267fcb77b6b5412fc039df36346604edb0",
+  "usable": true,
+  "items": 1
+}

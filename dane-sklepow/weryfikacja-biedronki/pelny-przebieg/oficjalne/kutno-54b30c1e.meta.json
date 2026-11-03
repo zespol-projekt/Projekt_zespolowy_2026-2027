@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kutno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:59.454Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kutno-54b30c1e.json",
+  "sha256": "3ad663486367f58c0d2ee9a8a3c2deede203f3815844c1885581d9915de0111b",
+  "usable": true,
+  "items": 6
+}

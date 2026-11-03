@@ -1,0 +1,11 @@
+{
+  "key": "1203-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pruszk%C3%B3w%2C+Wojska+Polskiego+11&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:07.418Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pruszk%C3%B3w%2C+Wojska+Polskiego+11&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1203-gugik-pierwotny.json",
+  "sha256": "b6e2aed00e02030b12a731737b6c29c339c7cf97dbb36cafa42f2c83c5d20972",
+  "bytes": 1916
+}

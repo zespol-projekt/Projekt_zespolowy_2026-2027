@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=maciejowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:24.049Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/maciejowice-7cd3bee6.json",
+  "sha256": "69ce8241837e4ced99c8a5a6e9b9e6bb1886374ccf5176ef91c0835a05df9307",
+  "usable": true,
+  "items": 1
+}

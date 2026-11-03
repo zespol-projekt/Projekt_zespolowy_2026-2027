@@ -1,0 +1,11 @@
+{
+  "key": "maciejowice-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-lubelska-73a-08-480-maciejowice~23072534/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:31:17.264Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-lubelska-73a-08-480-maciejowice~23072534/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/maciejowice-targeo.html",
+  "sha256": "9f9392324ef98a46f49a35ee53e4e3524e5ccd7b6e1757224811c4c9d5c90d84",
+  "bytes": 38058
+}

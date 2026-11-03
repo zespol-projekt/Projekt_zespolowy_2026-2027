@@ -1,0 +1,67 @@
+[
+  {
+    "key": "1400-targeo",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-sw-m-kolbego-58-bydgoszcz~4533683/biedronka-supermarket/adres",
+    "extension": "html"
+  },
+  {
+    "key": "2220-targeo",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-plater-emilii-9-68-100-zagan~23072540/biedronka-supermarket/adres",
+    "extension": "html"
+  },
+  {
+    "key": "3370-targeo",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-piotrowskiego-dr-27-28-130-stopnica~23072548/biedronka-supermarket/adres",
+    "extension": "html"
+  },
+  {
+    "key": "3484-targeo",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-sapiehy-jozefa-12-37-630-oleszyce~23072553/biedronka-supermarket/adres",
+    "extension": "html"
+  },
+  {
+    "key": "3772-targeo",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-wolnosci-4e-mragowo~22484712/biedronka-supermarket/adres",
+    "extension": "html"
+  },
+  {
+    "key": "7026-targeo",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-1-maja-48-27-500-opatow~23310608/biedronka-supermarket/adres",
+    "extension": "html"
+  },
+  {
+    "key": "oficjalna-lista-adresow",
+    "url": "https://cdn.biedronka.pl/__2024/T29A/lista_sklepow/Lista_sklepow_obslugujacych_usluge.pdf",
+    "extension": "pdf"
+  },
+  {
+    "key": "3572-oficjalny-komunikat",
+    "url": "https://media.biedronka.pl/150661-biedronka-ulatwia-ekologiczna-edukacje-dzieci-smieciarka-miecia-ponownie-w-trasie",
+    "extension": "html"
+  },
+  {
+    "key": "3772-oficjalny-komunikat",
+    "url": "https://media.biedronka.pl/171665-biedronka-zamyka-2021-rok-otwarciem-50-nowych-sklepow",
+    "extension": "html"
+  },
+  {
+    "key": "2220-gugik-sprawdzony",
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%BBaga%C5%84%2C+Plater+9&exact_number=1&srid=4326",
+    "extension": "json"
+  },
+  {
+    "key": "3370-gugik-sprawdzony",
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Stopnica%2C+Dr+Piotrowskiego+27&exact_number=1&srid=4326",
+    "extension": "json"
+  },
+  {
+    "key": "3484-gugik-sprawdzony",
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Oleszyce%2C+Sapiehy+12&exact_number=1&srid=4326",
+    "extension": "json"
+  },
+  {
+    "key": "7026-gugik-sprawdzony",
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Opat%C3%B3w%2C+1+Maja+48&exact_number=1&srid=4326",
+    "extension": "json"
+  }
+]

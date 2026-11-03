@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=radom",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:38.084Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/radom-af52f7a6.json",
+  "sha256": "9ec7726a0c102b6db1d2de92c4a69fd6c5997f56d0e1289e9b749efbf4b46353",
+  "usable": true,
+  "items": 21
+}

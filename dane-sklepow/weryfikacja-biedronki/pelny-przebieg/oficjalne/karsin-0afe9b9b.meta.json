@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=karsin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:28.787Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/karsin-0afe9b9b.json",
+  "sha256": "47e4610e1e5e96d68ccef5f20ed1589c03569b060738083d0c80593f9242d778",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ostrow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:05.418Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ostrow-25e0e344.json",
+  "sha256": "42a66bc5079983c58af58e518a616c9149bda84128e2fc24bc7856db92523564",
+  "usable": true,
+  "items": 1
+}

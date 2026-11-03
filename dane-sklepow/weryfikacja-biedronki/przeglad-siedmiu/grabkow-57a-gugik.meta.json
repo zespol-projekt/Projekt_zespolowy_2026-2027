@@ -1,0 +1,11 @@
+{
+  "key": "grabkow-57a-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gr%C4%85bk%C3%B3w+57A&exact_number=1",
+  "retrieved_at": "2026-11-02T18:33:10.703Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gr%C4%85bk%C3%B3w+57A&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/grabkow-57a-gugik.json",
+  "sha256": "1b087248930bc25be97af4a202ae7356d1096a8ccb8093af90b9d7ca8d00363c",
+  "bytes": 511
+}

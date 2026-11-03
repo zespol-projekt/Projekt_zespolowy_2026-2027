@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=skoroszow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:06.240Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/skoroszow-fd574467.json",
+  "sha256": "0b100fc7a411d916e133ab8390e65d9bc15abdeca035e2da555b2a0e3d855177",
+  "usable": true,
+  "items": 1
+}

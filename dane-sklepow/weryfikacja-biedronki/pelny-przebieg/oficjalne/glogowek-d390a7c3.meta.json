@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=glogowek",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:54.305Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/glogowek-d390a7c3.json",
+  "sha256": "7e271f6f49d236ecd553cb5c6e17539fb89eb22a6033e7136b5422ecf6956314",
+  "usable": true,
+  "items": 2
+}

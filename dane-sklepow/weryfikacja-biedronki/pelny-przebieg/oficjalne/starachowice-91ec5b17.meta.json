@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=starachowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:19.394Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/starachowice-91ec5b17.json",
+  "sha256": "e6015c1319b2bf89cf05f88cb102424602eee38c332a7fe2bc32910dd062b3b9",
+  "usable": true,
+  "items": 7
+}

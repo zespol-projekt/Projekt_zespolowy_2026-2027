@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-11-02T18:16:17.112Z",
+  "requested_regions": 8,
+  "responses": [
+    {
+      "bbox": [
+        48.9,
+        14,
+        49.95,
+        15.75
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C14%2C49.95%2C15.75%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C14%2C49.95%2C15.75%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C14%2C49.95%2C15.75%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:14:45.509Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-1.json",
+      "sha256": "03a42c87ee23c197ae4abc95c60e42ebfa643e3e5e48044ca2dee27d8fddb8b6",
+      "elements": 0,
+      "remark": null
+    },
+    {
+      "bbox": [
+        48.9,
+        15.75,
+        49.95,
+        17.5
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C15.75%2C49.95%2C17.5%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C15.75%2C49.95%2C17.5%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C15.75%2C49.95%2C17.5%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:14:55.562Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-2.json",
+      "sha256": "03a42c87ee23c197ae4abc95c60e42ebfa643e3e5e48044ca2dee27d8fddb8b6",
+      "elements": 0,
+      "remark": null
+    },
+    {
+      "bbox": [
+        49.95,
+        14,
+        51,
+        15.75
+      ],
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2849.95%2C14%2C51%2C15.75%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2849.95%2C14%2C51%2C15.75%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2849.95%2C14%2C51%2C15.75%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:15:12.313Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-3.json",
+      "sha256": "c866ffd7235f63372587daa934f414cbe0d68622a02f4351d15157ab4b1a68ce",
+      "elements": 19,
+      "remark": null
+    },
+    {
+      "bbox": [
+        49.95,
+        15.75,
+        51,
+        17.5
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2849.95%2C15.75%2C51%2C17.5%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2849.95%2C15.75%2C51%2C17.5%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2849.95%2C15.75%2C51%2C17.5%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:15:19.958Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-4.json",
+      "sha256": "dacfabfca958443250d5802dc2b76494851d71ac457c07ef971cb36288e2f2f0",
+      "elements": 121,
+      "remark": null
+    },
+    {
+      "bbox": [
+        48.9,
+        17.5,
+        49.95,
+        19.25
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C17.5%2C49.95%2C19.25%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C17.5%2C49.95%2C19.25%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C17.5%2C49.95%2C19.25%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:15:30.157Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-1.json",
+      "sha256": "e8b0fb81801f120d41858088fc007412afe102cde933db72b3f7f6ee3eaa1919",
+      "elements": 70,
+      "remark": null
+    },
+    {
+      "bbox": [
+        48.9,
+        19.25,
+        49.95,
+        21
+      ],
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C19.25%2C49.95%2C21%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C19.25%2C49.95%2C21%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C19.25%2C49.95%2C21%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:15:51.101Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-2.json",
+      "sha256": "114804f4ba84f187557a831ad15e1b65b50ca59cd71d87d3022e10cb13e5fa49",
+      "elements": 94,
+      "remark": null
+    },
+    {
+      "bbox": [
+        49.95,
+        17.5,
+        51,
+        19.25
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2849.95%2C17.5%2C51%2C19.25%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2849.95%2C17.5%2C51%2C19.25%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2849.95%2C17.5%2C51%2C19.25%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:16:06.786Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-3.json",
+      "sha256": "65ef11c0916c2b04f565e48dbc54aa17225318a31f637cb9f4ed6af04f72d9ed",
+      "elements": 427,
+      "remark": null
+    },
+    {
+      "bbox": [
+        49.95,
+        19.25,
+        51,
+        21
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2849.95%2C19.25%2C51%2C21%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2849.95%2C19.25%2C51%2C21%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2849.95%2C19.25%2C51%2C21%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:16:17.105Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-4.json",
+      "sha256": "efe51eeb5d2dd4b009636888cbed26f817e31e00f292b3043424374532aa7db1",
+      "elements": 248,
+      "remark": null
+    }
+  ]
+}

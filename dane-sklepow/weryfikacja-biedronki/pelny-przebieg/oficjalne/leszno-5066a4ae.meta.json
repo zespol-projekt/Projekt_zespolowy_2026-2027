@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=leszno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:10.319Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/leszno-5066a4ae.json",
+  "sha256": "2c582afe5776559794eddff35d042b6abdf0f25c93259d1fb0e6541cb9d02a3a",
+  "usable": true,
+  "items": 11
+}

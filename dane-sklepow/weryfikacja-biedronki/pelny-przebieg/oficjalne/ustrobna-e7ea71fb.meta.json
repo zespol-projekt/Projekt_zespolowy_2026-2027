@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ustrobna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:52.546Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ustrobna-e7ea71fb.json",
+  "sha256": "391db14b2f7599519dfa485e895e4447fc575c18778b01f3cd851b29bf55f614",
+  "usable": true,
+  "items": 1
+}

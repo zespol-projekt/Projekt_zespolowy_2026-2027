@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zlotow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:30.176Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zlotow-ca31f941.json",
+  "sha256": "d84b84968af9c6ac581c2c229c7725c7b88a332d6a14dbcc0fc5c34f991eda79",
+  "usable": true,
+  "items": 3
+}

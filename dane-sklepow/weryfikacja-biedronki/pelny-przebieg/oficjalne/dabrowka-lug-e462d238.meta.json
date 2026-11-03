@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dabrowka-lug",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:36.151Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dabrowka-lug-e462d238.json",
+  "sha256": "c50e4e2b3cb0f138e576c4ac9fbb6b59f3f180bd7ea4dc194e37fedb6ca9a465",
+  "usable": true,
+  "items": 1
+}

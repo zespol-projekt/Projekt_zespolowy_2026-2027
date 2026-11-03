@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=urzedow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:51.495Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/urzedow-d28bf81f.json",
+  "sha256": "369229bf88dd343fb7263f42803e3f94247a8d713021c3546beef5d425854cd1",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://overpass-api.de/api/interpreter",
+  "method": "POST",
+  "status": 502,
+  "retrieved_at": "2026-11-02T17:46:38.245Z",
+  "file": "osm-proba.json",
+  "query_file": "osm-proba.overpassql",
+  "sha256": "8084e21e11df846a2e41bb93ddaf66961aa2ef71e9a9fc1f46debc960b303042"
+}

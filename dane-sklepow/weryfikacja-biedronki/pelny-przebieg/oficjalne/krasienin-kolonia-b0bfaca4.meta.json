@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krasienin-kolonia",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:51.245Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/krasienin-kolonia-b0bfaca4.json",
+  "sha256": "e21d2526ea595abde052bc0a9cc5966ab638caf1c54d9ecdb878c50868a79f2f",
+  "usable": true,
+  "items": 1
+}

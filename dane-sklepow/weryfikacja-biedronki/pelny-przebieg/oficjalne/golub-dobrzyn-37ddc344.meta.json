@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=golub-dobrzyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:59.155Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/golub-dobrzyn-37ddc344.json",
+  "sha256": "7636890e609e5cc56662a677818bad0338e85dc4286d9703122a6f4b34a456ec",
+  "usable": true,
+  "items": 2
+}

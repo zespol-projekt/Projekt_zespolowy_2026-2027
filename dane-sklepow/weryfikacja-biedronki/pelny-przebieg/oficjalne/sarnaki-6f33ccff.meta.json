@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sarnaki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:58.162Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sarnaki-6f33ccff.json",
+  "sha256": "4da9e52edbaa4a8c744a6a10e7e08221491cca03e84c209eeefc1ee36f357f6b",
+  "usable": true,
+  "items": 1
+}

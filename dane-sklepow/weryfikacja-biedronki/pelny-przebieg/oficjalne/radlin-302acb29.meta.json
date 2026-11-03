@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=radlin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:37.015Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/radlin-302acb29.json",
+  "sha256": "5c53fc6b76963447ea4ea5a6ede485344146b3c9369d3bf1d21f7781fe218d7a",
+  "usable": true,
+  "items": 2
+}

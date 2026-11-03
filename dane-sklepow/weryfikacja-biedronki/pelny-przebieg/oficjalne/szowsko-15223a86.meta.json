@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=szowsko",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:38.902Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/szowsko-15223a86.json",
+  "sha256": "0c8ca4262706f7c9e161d5dec5e39475754f47090b87a15ccb28136951ab089c",
+  "usable": true,
+  "items": 1
+}

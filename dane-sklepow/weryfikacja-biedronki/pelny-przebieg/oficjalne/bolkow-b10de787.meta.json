@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bolkow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:07.691Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bolkow-b10de787.json",
+  "sha256": "711ffd36f0fa0960ad235936735a1877aa7ed27b34d915d723c8762361dec690",
+  "usable": true,
+  "items": 1
+}

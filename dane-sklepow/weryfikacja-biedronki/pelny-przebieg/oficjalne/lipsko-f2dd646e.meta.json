@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lipsko",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:13.064Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lipsko-f2dd646e.json",
+  "sha256": "c4ba188260054cb39dbfabc53ef79eac40b8cd191c2be2ae29f1e39288ca02f9",
+  "usable": true,
+  "items": 1
+}

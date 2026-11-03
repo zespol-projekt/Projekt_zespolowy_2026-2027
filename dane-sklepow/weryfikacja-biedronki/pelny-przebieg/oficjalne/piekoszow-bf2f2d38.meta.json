@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=piekoszow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:14.730Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/piekoszow-bf2f2d38.json",
+  "sha256": "68dce172cfefc8e67c3f1d524ce02b95a739a5280c00c11a443af122f6b0d01f",
+  "usable": true,
+  "items": 1
+}

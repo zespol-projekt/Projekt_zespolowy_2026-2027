@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=hrubieszow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:11.281Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/hrubieszow-3f345b83.json",
+  "sha256": "0bc28439b987b60138ad63e048523ac2107702ed2fe3a2fbf967644f03c1a3e2",
+  "usable": true,
+  "items": 2
+}

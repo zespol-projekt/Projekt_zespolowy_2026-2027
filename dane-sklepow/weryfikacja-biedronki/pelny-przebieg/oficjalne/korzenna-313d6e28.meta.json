@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=korzenna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:44.054Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/korzenna-313d6e28.json",
+  "sha256": "433cdc88ddad392d205ff8b314b8a20e5eaf7a6799ff6b6ffd04f2ca6af05223",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sulechow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:29.663Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sulechow-15e6f062.json",
+  "sha256": "498487e53800f8cc300c54dc3478aebb928425d9b8f4d4e913b9c07606f447a4",
+  "usable": true,
+  "items": 3
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dobra",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:41.522Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dobra-27a406bb.json",
+  "sha256": "053c3dffe130de62c79bfbb7f35557e917b618912cb36c0bebcbc26df89bdd21",
+  "usable": true,
+  "items": 2
+}

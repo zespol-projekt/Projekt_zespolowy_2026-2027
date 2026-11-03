@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mokrsko",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:40.304Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/mokrsko-f9f6bd7d.json",
+  "sha256": "6950c66a47099401a396e2b5bc4d710acd93908bd0bec4af5bbc268429a1463f",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wronki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:12.754Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wronki-68d5ad13.json",
+  "sha256": "d7a507865bda7c5cead0315af35d8b494111b18f318e0641a46d829d30d686ec",
+  "usable": true,
+  "items": 1
+}

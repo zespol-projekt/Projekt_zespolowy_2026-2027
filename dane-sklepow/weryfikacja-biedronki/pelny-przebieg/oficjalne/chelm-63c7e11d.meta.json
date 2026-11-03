@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=chelm",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:20.836Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/chelm-63c7e11d.json",
+  "sha256": "0b47e269a5c24e6c1ab8c3d50c6a9ead0f065c0fa12b196f23eaafb564e26547",
+  "usable": true,
+  "items": 10
+}

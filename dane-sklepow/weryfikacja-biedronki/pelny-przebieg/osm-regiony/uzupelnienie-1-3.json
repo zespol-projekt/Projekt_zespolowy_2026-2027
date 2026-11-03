@@ -1,0 +1,553 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-02T18:12:33Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 4087939829,
+  "lat": 50.8761789,
+  "lon": 14.8268665,
+  "tags": {
+    "addr:city": "Porajów",
+    "addr:housenumber": "7",
+    "addr:street": "Aleja Trzech Państw",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1082"
+  }
+},
+{
+  "type": "node",
+  "id": 8592616833,
+  "lat": 50.9112787,
+  "lon": 15.3409397,
+  "tags": {
+    "addr:city": "Świeradów-Zdrój",
+    "addr:city:simc": "0936457",
+    "addr:housenumber": "26",
+    "addr:postcode": "59-850",
+    "addr:street": "11 Listopada",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "check_date": "2025-08-09",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "old_name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2731"
+  }
+},
+{
+  "type": "node",
+  "id": 13764752216,
+  "lat": 50.9097722,
+  "lon": 14.9699707,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 144985858,
+  "center": {
+    "lat": 50.8630984,
+    "lon": 15.6592986
+  },
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:city:simc": "0935802",
+    "addr:housenumber": "17",
+    "addr:postcode": "58-560",
+    "addr:street": "Wita Stwosza",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "supermarket",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-22:00; Su off",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "self_checkout": "yes",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl",
+    "website": "https://www.biedronka.pl/pl/shop,id,352"
+  }
+},
+{
+  "type": "way",
+  "id": 176068032,
+  "center": {
+    "lat": 50.8207251,
+    "lon": 15.5279999
+  },
+  "tags": {
+    "addr:city": "Szklarska Poręba",
+    "addr:housenumber": "11",
+    "addr:postcode": "58-580",
+    "addr:street": "Jana Kilińskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "szklarskaporeba.e-mapa.net",
+    "website": "https://www.biedronka.pl/pl/shop,id,70"
+  }
+},
+{
+  "type": "way",
+  "id": 202203508,
+  "center": {
+    "lat": 50.8885598,
+    "lon": 15.7355341
+  },
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:city:simc": "0935802",
+    "addr:housenumber": "1",
+    "addr:postcode": "58-500",
+    "addr:street": "Bartosza Głowackiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl",
+    "source:geometry": "geoportal.gov.pl, GPS",
+    "website": "https://www.biedronka.pl/pl/shop,id,2110"
+  }
+},
+{
+  "type": "way",
+  "id": 204022654,
+  "center": {
+    "lat": 50.8990168,
+    "lon": 15.7318741
+  },
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:city:simc": "0935802",
+    "addr:housenumber": "25A",
+    "addr:postcode": "58-500",
+    "addr:street": "Wolności",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl",
+    "source:geometry": "geoportal.gov.pl, GPS",
+    "website": "https://www.biedronka.pl/pl/shop,id,798"
+  }
+},
+{
+  "type": "way",
+  "id": 204067181,
+  "center": {
+    "lat": 50.9038544,
+    "lon": 15.7290400
+  },
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:city:simc": "0935802",
+    "addr:housenumber": "58",
+    "addr:postcode": "58-500",
+    "addr:street": "Jana Sobieskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "website": "https://www.biedronka.pl/pl/shop,id,2805"
+  }
+},
+{
+  "type": "way",
+  "id": 212841184,
+  "center": {
+    "lat": 50.9018420,
+    "lon": 14.9611305
+  },
+  "tags": {
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:building": "BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 232245679,
+  "center": {
+    "lat": 50.9037050,
+    "lon": 14.9574220
+  },
+  "tags": {
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "website": "https://www.biedronka.pl/pl/shop,id,1650"
+  }
+},
+{
+  "type": "way",
+  "id": 240037102,
+  "center": {
+    "lat": 50.9141470,
+    "lon": 15.7467163
+  },
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:city:simc": "0935802",
+    "addr:housenumber": "31A",
+    "addr:postcode": "58-506",
+    "addr:street": "Aleja Jana Pawła II",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-23:30",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl",
+    "source:geometry": "geoportal.jeleniagora.pl budynki",
+    "website": "https://www.biedronka.pl/pl/shop,id,914"
+  }
+},
+{
+  "type": "way",
+  "id": 254499074,
+  "center": {
+    "lat": 50.8639274,
+    "lon": 15.6905348
+  },
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:city:simc": "0935802",
+    "addr:housenumber": "1B",
+    "addr:postcode": "58-560",
+    "addr:street": "Krośnieńska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "2",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-23:30",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl",
+    "source:geometry": "geoportal.gov.pl, GPS",
+    "website": "https://www.biedronka.pl/pl/shop,id,1802"
+  }
+},
+{
+  "type": "way",
+  "id": 262941550,
+  "center": {
+    "lat": 50.8527252,
+    "lon": 15.5931774
+  },
+  "tags": {
+    "addr:city": "Piechowice",
+    "addr:country": "PL",
+    "addr:housenumber": "1",
+    "addr:postcode": "58-573",
+    "addr:street": "Cmentarna",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "check_date": "2025-09-27",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Th 06:00-22:00;Fr,Sa 06:00-23:30;PH off",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "supermarket",
+    "source:geometry": "geoportal.gov.pl,GPS",
+    "toilets:wheelchair": "no",
+    "website": "https://www.biedronka.pl/pl/shop,id,674",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 293455046,
+  "center": {
+    "lat": 50.8338739,
+    "lon": 15.6826435
+  },
+  "tags": {
+    "addr:city": "Podgórzyn",
+    "addr:housenumber": "5",
+    "addr:street": "Bojki",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su off",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "podgorzyn.e-mapa.net",
+    "website": "https://www.biedronka.pl/pl/shop,id,1093"
+  }
+},
+{
+  "type": "way",
+  "id": 311568386,
+  "center": {
+    "lat": 50.9037024,
+    "lon": 15.7454896
+  },
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:housenumber": "49",
+    "addr:postcode": "58-500",
+    "addr:street": "1 Maja",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "supermarket",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,890"
+  }
+},
+{
+  "type": "way",
+  "id": 329098966,
+  "center": {
+    "lat": 50.9028035,
+    "lon": 14.9686280
+  },
+  "tags": {
+    "addr:city": "Bogatynia",
+    "addr:housenumber": "64",
+    "addr:postcode": "59-920",
+    "addr:street": "Jana Matejki",
+    "building": "supermarket",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:building": "EGiB",
+    "website": "https://www.biedronka.pl/pl/shop,id,2107"
+  }
+},
+{
+  "type": "way",
+  "id": 397439462,
+  "center": {
+    "lat": 50.9713796,
+    "lon": 15.3814299
+  },
+  "tags": {
+    "addr:city": "Mirsk",
+    "addr:city:simc": "0936233",
+    "addr:housenumber": "1",
+    "addr:postcode": "59-630",
+    "addr:street": "Generała Władysława Sikorskiego",
+    "building": "retail",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "emuia.gugik.gov.pl",
+    "source:geometry": "geoportal.gov.pl, GPS"
+  }
+},
+{
+  "type": "way",
+  "id": 405319236,
+  "center": {
+    "lat": 50.8473390,
+    "lon": 15.6431408
+  },
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:housenumber": "217",
+    "addr:postcode": "58-560",
+    "addr:street": "Cieplicka",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "yes",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Fr 06:00-22:00; Sa 06:00-23:30; Su off",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1894"
+  }
+},
+{
+  "type": "way",
+  "id": 607819011,
+  "center": {
+    "lat": 50.8962090,
+    "lon": 15.7431405
+  },
+  "tags": {
+    "addr:city": "Jelenia Góra",
+    "addr:city:simc": "0935802",
+    "addr:housenumber": "42B",
+    "addr:postcode": "58-500",
+    "addr:street": "Sudecka",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "email": "bok@biedronka.eu",
+    "image": "https://photos.app.goo.gl/Y2DisVAnQiFxAH3X9",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-23:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "url": "https://fotopolska.eu/188454,obiekt.html?map_z=17",
+    "url:0": "https://polska-org.pl/5746938,Jelenia_Gora,Market_Biedronka_ul_Sudecka.html",
+    "website": "https://www.biedronka.pl/pl/shop,id,2714",
+    "wheelchair": "yes"
+  }
+}
+
+  ]
+}

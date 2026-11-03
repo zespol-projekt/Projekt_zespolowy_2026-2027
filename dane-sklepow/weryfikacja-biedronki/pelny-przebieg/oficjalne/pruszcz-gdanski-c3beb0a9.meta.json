@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pruszcz-gdanski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:25.087Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pruszcz-gdanski-c3beb0a9.json",
+  "sha256": "3a5acafdb08f7d216b91953ce394acf788b4cf10743a3c08bb4369a7e7b4e457",
+  "usable": true,
+  "items": 4
+}

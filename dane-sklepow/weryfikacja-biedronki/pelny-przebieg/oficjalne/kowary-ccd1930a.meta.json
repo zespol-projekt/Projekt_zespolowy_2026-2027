@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kowary",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:47.318Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kowary-ccd1930a.json",
+  "sha256": "58188256ffa432c67fe48e830c66da379cbcee3c05ee807f21a03565471f3545",
+  "usable": true,
+  "items": 1
+}

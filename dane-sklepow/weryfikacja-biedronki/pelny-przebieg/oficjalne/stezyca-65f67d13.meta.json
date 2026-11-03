@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stezyca",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:23.180Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/stezyca-65f67d13.json",
+  "sha256": "b7db6a8137cafb75108c5f370eae940ccca217b6714b2a55111a343911d71502",
+  "usable": true,
+  "items": 1
+}

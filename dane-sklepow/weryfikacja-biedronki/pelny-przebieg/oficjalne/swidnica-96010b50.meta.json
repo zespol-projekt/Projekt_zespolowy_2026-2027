@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=swidnica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:32.396Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/swidnica-96010b50.json",
+  "sha256": "a840f18b771a78d5bbaaf08f259d1cbdd524d8a4c75c66fa25428c2abbe2e0c2",
+  "usable": true,
+  "items": 8
+}

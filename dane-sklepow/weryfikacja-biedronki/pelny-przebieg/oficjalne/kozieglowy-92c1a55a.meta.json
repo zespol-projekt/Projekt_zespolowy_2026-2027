@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kozieglowy",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:47.854Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kozieglowy-92c1a55a.json",
+  "sha256": "d237dc63d7b00dcc2d8e7689a073a650a5d6c60e55369a2f9cca25f911d35d56",
+  "usable": true,
+  "items": 3
+}

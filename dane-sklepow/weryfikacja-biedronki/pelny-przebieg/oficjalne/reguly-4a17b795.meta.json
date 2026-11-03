@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=reguly",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:44.636Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/reguly-4a17b795.json",
+  "sha256": "5ad12a2bc40b7d1247cda24cc9a0b5368f6434abc1e34a9a8389b72713691c76",
+  "usable": true,
+  "items": 1
+}

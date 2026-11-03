@@ -1,0 +1,11 @@
+{
+  "key": "1649-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szczuczyn%2C+Jana+III+Sobieskiego+22&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:16.867Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szczuczyn%2C+Jana+III+Sobieskiego+22&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1649-gugik-pierwotny.json",
+  "sha256": "5904d8c62a9298fec7776aa1afdd8ae6a549b879f57bc7aca0979a6219a375fd",
+  "bytes": 1026
+}

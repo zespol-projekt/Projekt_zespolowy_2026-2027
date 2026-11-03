@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jasionka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:17.247Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jasionka-fc9325b8.json",
+  "sha256": "6f1fb51192d24de846c84b28806eb7efc191baf8520dea29b4c392b0775b4d17",
+  "usable": true,
+  "items": 1
+}

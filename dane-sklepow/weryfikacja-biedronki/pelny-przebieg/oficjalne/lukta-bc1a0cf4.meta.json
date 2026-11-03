@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lukta",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:22.370Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lukta-bc1a0cf4.json",
+  "sha256": "c7502789fd7ad7cc3d25c3ecd1ace69707e8e57ec558f3c541a259631991eba7",
+  "usable": true,
+  "items": 1
+}

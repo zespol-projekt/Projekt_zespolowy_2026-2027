@@ -1,0 +1,11 @@
+{
+  "key": "1459-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pabianice%2C+Genera%C5%82a+Stefana+%22Grota%22+Roweckiego+18A&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:36.496Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pabianice%2C+Genera%C5%82a+Stefana+%22Grota%22+Roweckiego+18A&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1459-gugik-osm.json",
+  "sha256": "4d9ea4f55d25d2df123f96cef85200408530b2709e5dfd5bc26fe58457f674f9",
+  "bytes": 637
+}

@@ -1,0 +1,11 @@
+{
+  "key": "7092-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gdynia%2C+Rdestowa+160&exact_number=1",
+  "retrieved_at": "2026-11-02T18:33:09.173Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gdynia%2C+Rdestowa+160&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/7092-gugik.json",
+  "sha256": "f545944a781edb383f9a4f5688264fbe5038a4a67a5ec54e37b4e13af2c8e546",
+  "bytes": 546
+}

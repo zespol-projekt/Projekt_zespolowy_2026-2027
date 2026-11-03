@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=barciany",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:56.684Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/barciany-26439e4d.json",
+  "sha256": "a0af6fcd44a61a66d0e76eba7a0d9a664c8e279172b5f2c4bbec85a25bf2fe10",
+  "usable": true,
+  "items": 1
+}

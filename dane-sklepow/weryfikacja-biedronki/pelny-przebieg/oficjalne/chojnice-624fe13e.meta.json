@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=chojnice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:23.029Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/chojnice-624fe13e.json",
+  "sha256": "1238e14bf5a6f335cea53c75cc18a3711ef06e4666002052d800b2ff577a2602",
+  "usable": true,
+  "items": 7
+}

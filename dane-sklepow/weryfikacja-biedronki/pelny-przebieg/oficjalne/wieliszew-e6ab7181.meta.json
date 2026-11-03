@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wieliszew",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:02.885Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wieliszew-e6ab7181.json",
+  "sha256": "af576025c3613081d2b922a405e993b108c23be4634d16a0f8990f1d2def0d39",
+  "usable": true,
+  "items": 1
+}

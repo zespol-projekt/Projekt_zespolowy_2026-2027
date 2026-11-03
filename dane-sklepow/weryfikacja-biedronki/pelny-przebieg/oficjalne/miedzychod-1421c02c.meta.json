@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=miedzychod",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:32.116Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/miedzychod-1421c02c.json",
+  "sha256": "7d2b2634a32aed6e4b0e81875116d3ceddabd76a29d5bd9cf298df2c3bf45ed8",
+  "usable": true,
+  "items": 3
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ryglice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:51.164Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ryglice-fafdb012.json",
+  "sha256": "52c180ef0603726904834313a1cfb5b2a6b0af3151f2e92351130fd3e2fb2a22",
+  "usable": true,
+  "items": 1
+}

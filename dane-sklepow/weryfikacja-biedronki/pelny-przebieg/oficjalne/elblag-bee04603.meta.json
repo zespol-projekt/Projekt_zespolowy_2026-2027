@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=elblag",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:45.521Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/elblag-bee04603.json",
+  "sha256": "1a6fc0936e624f552c1509422a4a7c9bfe279386fd3adfa8c07803857479ab8e",
+  "usable": true,
+  "items": 16
+}

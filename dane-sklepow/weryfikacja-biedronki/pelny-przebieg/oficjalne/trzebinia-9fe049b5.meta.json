@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=trzebinia",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:47.748Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/trzebinia-9fe049b5.json",
+  "sha256": "9a59a9c16c91aefaf329df8bbaf408eb0292201abc02079ada2835e0ca389cf7",
+  "usable": true,
+  "items": 2
+}

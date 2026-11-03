@@ -1,0 +1,11 @@
+{
+  "key": "2869-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Piotrk%C3%B3w+Trybunalski%2C+Armii+Krajowej+20&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:33.896Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Piotrk%C3%B3w+Trybunalski%2C+Armii+Krajowej+20&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/2869-gugik-pierwotny.json",
+  "sha256": "ae74b403326d6486116674b22494b63aae4ccdab059c7d0abc94d1447c1217b3",
+  "bytes": 670
+}

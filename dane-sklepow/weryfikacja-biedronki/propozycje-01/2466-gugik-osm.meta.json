@@ -1,0 +1,11 @@
+{
+  "key": "2466-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kielce%2C+Aleja+Jerzego+Szajnowicza-Iwanowa+17&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:53.660Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kielce%2C+Aleja+Jerzego+Szajnowicza-Iwanowa+17&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/2466-gugik-osm.json",
+  "sha256": "062311903eb917e3b64a0a900e9d13c8397e516522cfe7f56f46334fe417ea03",
+  "bytes": 613
+}

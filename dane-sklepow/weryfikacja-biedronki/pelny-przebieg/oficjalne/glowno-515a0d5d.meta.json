@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=glowno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:54.830Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/glowno-515a0d5d.json",
+  "sha256": "df96b56f0f93bef359f9db73e446dca0a8c7a8aab53e41b337361a9e3626e1af",
+  "usable": true,
+  "items": 2
+}

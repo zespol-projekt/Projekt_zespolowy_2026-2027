@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=biesiekierz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:02.184Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/biesiekierz-53f02acf.json",
+  "sha256": "17b829c4755237b0ad831248618451efdb3b7e7805e1541cf50934bf45d466f4",
+  "usable": true,
+  "items": 1
+}

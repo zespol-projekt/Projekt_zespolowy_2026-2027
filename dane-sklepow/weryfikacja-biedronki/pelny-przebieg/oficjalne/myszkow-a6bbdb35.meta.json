@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=myszkow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:46.226Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/myszkow-a6bbdb35.json",
+  "sha256": "cf447eb20aed972cc5b3f856e590201adf6e0a3d6fb378bce8949eedd7219d28",
+  "usable": true,
+  "items": 4
+}

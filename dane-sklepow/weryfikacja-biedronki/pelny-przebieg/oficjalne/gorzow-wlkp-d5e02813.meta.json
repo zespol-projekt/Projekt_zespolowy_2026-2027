@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gorzow-wlkp",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:01.287Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gorzow-wlkp-d5e02813.json",
+  "sha256": "c6ec6ffaf84b79748ff554adbcd3881bd92297083f8a2fcd39f262419c4155e1",
+  "usable": true,
+  "items": 9
+}

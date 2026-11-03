@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ketrzyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:31.585Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ketrzyn-d421a153.json",
+  "sha256": "a4a15a478a9c5441c19decbdf323c1a945658c0735f3d2334d8cc7aebe861a53",
+  "usable": true,
+  "items": 2
+}

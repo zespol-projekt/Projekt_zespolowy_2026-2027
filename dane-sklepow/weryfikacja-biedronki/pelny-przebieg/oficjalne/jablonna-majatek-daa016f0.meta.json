@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jablonna-majatek",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:13.950Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jablonna-majatek-daa016f0.json",
+  "sha256": "f8e6d91aea1a81141cc6aa20ccd9e65fd3d61b8ec9e31b1a74f3386751202120",
+  "usable": true,
+  "items": 1
+}

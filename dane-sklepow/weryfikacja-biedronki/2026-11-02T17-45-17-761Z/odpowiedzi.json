@@ -1,0 +1,79 @@
+[
+  {
+    "label": "shippingcenter",
+    "url": "https://www.biedronka.pl/api/shop/shippingcenter",
+    "final_url": "https://www.biedronka.pl/api/shop/shippingcenter",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 119465,
+    "retrieved_at": "2026-11-02T17:45:18.084Z",
+    "file": "shippingcenter.json",
+    "sha256": "aecfe41dd59e32905bc4ce0735ce9748387b983eb13e3517623ec9f6bc9ac01a"
+  },
+  {
+    "label": "czaplinek",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=czaplinek",
+    "final_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=czaplinek",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 1648,
+    "retrieved_at": "2026-11-02T17:45:18.227Z",
+    "file": "czaplinek.json",
+    "sha256": "ba8c5b341b4df19ca3e12e9c57a2c11a63a505207e3847932528f03c35f2fa9e"
+  },
+  {
+    "label": "sklep-7350",
+    "url": "https://www.biedronka.pl/pl/shop,id,7350",
+    "final_url": "https://www.biedronka.pl/pl/shop,id,7350",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 97097,
+    "retrieved_at": "2026-11-02T17:45:18.316Z",
+    "file": "sklep-7350.html",
+    "sha256": "d67e3d73f3e04ef1ecef9640a996adb3eda88de5d4ddd68699ca566df9829109"
+  },
+  {
+    "label": "lublin",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lublin",
+    "final_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lublin",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 28415,
+    "retrieved_at": "2026-11-02T17:45:54.294Z",
+    "file": "lublin.json",
+    "sha256": "dc3ee8851a51d9e9cc54d2ead274295e20d628e814fcff3d38ea15a70a722b70"
+  },
+  {
+    "label": "gdynia",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gdynia",
+    "final_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gdynia",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 23141,
+    "retrieved_at": "2026-11-02T17:45:54.482Z",
+    "file": "gdynia.json",
+    "sha256": "6a403cabfca52523e0d90a9486fe3eba475063dc084160c24a176ef64c01c9f7"
+  },
+  {
+    "label": "lazy",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lazy",
+    "final_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lazy",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 2374,
+    "retrieved_at": "2026-11-02T17:45:54.549Z",
+    "file": "lazy.json",
+    "sha256": "a2027b2ba76fc364f7286e55be997a2e4e5842d55fac51ed1e1232abd23a8a5b"
+  },
+  {
+    "label": "zagan",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zagan",
+    "final_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zagan",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 2423,
+    "retrieved_at": "2026-11-02T17:45:54.618Z",
+    "file": "zagan.json",
+    "sha256": "9663b4134895357d68c35c6506d6bcef5f533e970da9c0753e0358b9b78dad74"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zwolen",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:31.859Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zwolen-604ade68.json",
+  "sha256": "01cd15b725f5fa93fd58020d254ca29974825552c7f3a5530b2b32b17cd1acd1",
+  "usable": true,
+  "items": 2
+}

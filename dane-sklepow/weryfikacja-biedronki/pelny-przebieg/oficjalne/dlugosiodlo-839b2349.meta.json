@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dlugosiodlo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:40.994Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dlugosiodlo-839b2349.json",
+  "sha256": "6d73b6182bbb5292fb2d0acafad0179c225722e99a51fc459309487312a01c95",
+  "usable": true,
+  "items": 1
+}

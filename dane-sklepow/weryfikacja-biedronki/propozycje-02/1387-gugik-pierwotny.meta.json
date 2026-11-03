@@ -1,0 +1,11 @@
+{
+  "key": "1387-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=K%C4%99trzyn%2C+Jagie%C5%82%C5%82y+1&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:22.916Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=K%C4%99trzyn%2C+Jagie%C5%82%C5%82y+1&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1387-gugik-pierwotny.json",
+  "sha256": "ce725bc6f0852bf78c3664581f5d6cc743a9f951a76dcdce355925568e605074",
+  "bytes": 661
+}

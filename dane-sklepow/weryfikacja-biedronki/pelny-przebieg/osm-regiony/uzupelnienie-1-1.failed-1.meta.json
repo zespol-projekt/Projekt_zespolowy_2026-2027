@@ -1,0 +1,15 @@
+{
+  "bbox": [
+    48.9,
+    14,
+    49.95,
+    15.75
+  ],
+  "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C14%2C49.95%2C15.75%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C14%2C49.95%2C15.75%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C14%2C49.95%2C15.75%29%3B%29%3Bout+center+tags%3B",
+  "status": 504,
+  "retrieved_at": "2026-11-02T18:14:37.553Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-1.json",
+  "sha256": "c9c89d274726b86306e1c97d80360f820bce86042c34c9bb2487aac4ada6d606",
+  "elements": 0,
+  "remark": null
+}

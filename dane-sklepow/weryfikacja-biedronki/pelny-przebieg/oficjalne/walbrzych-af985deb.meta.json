@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=walbrzych",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:55.769Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/walbrzych-af985deb.json",
+  "sha256": "2cdca5a8c52303a4b01da76a65261207463d3783ec37d1d5326fe275266260e3",
+  "usable": true,
+  "items": 11
+}

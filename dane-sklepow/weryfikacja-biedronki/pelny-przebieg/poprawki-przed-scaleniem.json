@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-02T17:57:37.444Z",
+  "baseline_input_fingerprint": "c57e8b7e4ab4c5c3c6dd57649d7d65d87ead9bb8a96b8014119d9c21bdab2d78",
+  "scope": "Próbka pięciu okolic: Czaplinek, Lublin, Gdynia, Żagań i Łazy. Zapytania ogólnopolskie nie powiodły się; wynik nie jest kompletną listą OSM.",
+  "evidence_files": [
+    {
+      "file": "weryfikacja-biedronki/2026-11-02T17-45-17-761Z/osm-proba-get.json",
+      "sha256": "9125cee3b1c391210943cf53f91f8a47c9d0b352ec23e17b5c0127cefc7a28c8"
+    },
+    {
+      "file": "weryfikacja-biedronki/2026-11-02T17-45-17-761Z/osm-proba-get-meta.json",
+      "sha256": "f79f9c0767547c2079ae63b8d4c3c36ae2c79cc9844524eb238f39cdfded07b3"
+    }
+  ],
+  "corrections": [
+    {
+      "id": "biedronka:3775",
+      "status": "accepted_automatic",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Koziorożca 38, 80-299 Gdańsk",
+          "street_address": "Koziorożca 38",
+          "street": "Koziorożca",
+          "house_number": "38",
+          "city": "Gdańsk",
+          "postal_code": "80-299",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 54.4194269,
+          "longitude": 18.4694767
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/9424052788",
+        "element_type": "node",
+        "element_id": 9424052788,
+        "position_kind": "node",
+        "match_rule": "exact_address",
+        "matched_on": [
+          "brand",
+          "street",
+          "house_number",
+          "city"
+        ],
+        "matched_tags": {
+          "addr:city": "Gdańsk",
+          "addr:housenumber": "38",
+          "addr:postcode": "80-299",
+          "addr:street": "Koziorożca",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "check_date": "2024-10-21",
+          "name": "Biedronka",
+          "operator": "Jeronimo",
+          "shop": "supermarket"
+        },
+        "dataset_file": "weryfikacja-biedronki/2026-11-02T17-45-17-761Z/osm-proba-get.json",
+        "dataset_sha256": "9125cee3b1c391210943cf53f91f8a47c9d0b352ec23e17b5c0127cefc7a28c8",
+        "osm_timestamp": "2026-11-02T17:46:11Z",
+        "retrieved_at": "2026-11-02T17:47:34.329Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright"
+      }
+    },
+    {
+      "id": "biedronka:7092",
+      "status": "accepted_automatic",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": {
+          "latitude": 51.919438,
+          "longitude": 19.1011907
+        },
+        "address": {
+          "formatted": "Rdestowa 160, 81-577 Gdynia",
+          "street_address": "Rdestowa 160",
+          "street": "Rdestowa",
+          "house_number": "160",
+          "city": "Gdynia",
+          "postal_code": "81-577",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 54.4615125,
+          "longitude": 18.4504777
+        }
+      },
+      "resolves": [
+        "shared_coordinates_different_cities"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/node/12099723269",
+        "element_type": "node",
+        "element_id": 12099723269,
+        "position_kind": "node",
+        "match_rule": "exact_address",
+        "matched_on": [
+          "brand",
+          "street",
+          "house_number",
+          "city"
+        ],
+        "matched_tags": {
+          "addr:city": "Gdynia",
+          "addr:housenumber": "160",
+          "addr:postcode": "81-577",
+          "addr:street": "Rdestowa",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "name": "Biedronka",
+          "shop": "supermarket"
+        },
+        "dataset_file": "weryfikacja-biedronki/2026-11-02T17-45-17-761Z/osm-proba-get.json",
+        "dataset_sha256": "9125cee3b1c391210943cf53f91f8a47c9d0b352ec23e17b5c0127cefc7a28c8",
+        "osm_timestamp": "2026-11-02T17:46:11Z",
+        "retrieved_at": "2026-11-02T17:47:34.329Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright"
+      }
+    },
+    {
+      "id": "biedronka:7294",
+      "status": "accepted_automatic",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Stasin 104E, 21-030 Stasin",
+          "street_address": "Stasin 104E",
+          "street": "Stasin",
+          "house_number": "104E",
+          "city": "Stasin",
+          "postal_code": "21-030",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.2119612,
+          "longitude": 22.4535194
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1194265868",
+        "element_type": "way",
+        "element_id": 1194265868,
+        "position_kind": "overpass_center",
+        "match_rule": "exact_address",
+        "matched_on": [
+          "brand",
+          "street",
+          "house_number",
+          "city"
+        ],
+        "matched_tags": {
+          "addr:city:simc": "0383544",
+          "addr:housenumber": "104E",
+          "addr:place": "Stasin",
+          "addr:postcode": "21-030",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "yes",
+          "name": "Biedronka",
+          "shop": "supermarket",
+          "source:addr": "gugik.gov.pl"
+        },
+        "dataset_file": "weryfikacja-biedronki/2026-11-02T17-45-17-761Z/osm-proba-get.json",
+        "dataset_sha256": "9125cee3b1c391210943cf53f91f8a47c9d0b352ec23e17b5c0127cefc7a28c8",
+        "osm_timestamp": "2026-11-02T17:46:11Z",
+        "retrieved_at": "2026-11-02T17:47:34.329Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright"
+      }
+    },
+    {
+      "id": "biedronka:7407",
+      "status": "accepted_automatic",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Jałowcowa 4, 42-400 Zawiercie",
+          "street_address": "Jałowcowa 4",
+          "street": "Jałowcowa",
+          "house_number": "4",
+          "city": "Zawiercie",
+          "postal_code": "42-400",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 50.485534,
+          "longitude": 19.3986879
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1234705225",
+        "element_type": "way",
+        "element_id": 1234705225,
+        "position_kind": "overpass_center",
+        "match_rule": "exact_address",
+        "matched_on": [
+          "brand",
+          "street",
+          "house_number",
+          "city"
+        ],
+        "matched_tags": {
+          "addr:city": "Zawiercie",
+          "addr:housenumber": "4",
+          "addr:postcode": "42-400",
+          "addr:street": "Jałowcowa",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "yes",
+          "name": "Biedronka",
+          "shop": "supermarket"
+        },
+        "dataset_file": "weryfikacja-biedronki/2026-11-02T17-45-17-761Z/osm-proba-get.json",
+        "dataset_sha256": "9125cee3b1c391210943cf53f91f8a47c9d0b352ec23e17b5c0127cefc7a28c8",
+        "osm_timestamp": "2026-11-02T17:46:11Z",
+        "retrieved_at": "2026-11-02T17:47:34.329Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright"
+      }
+    },
+    {
+      "id": "biedronka:7510",
+      "status": "accepted_automatic",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Głuska 26, 20-380 Lublin",
+          "street_address": "Głuska 26",
+          "street": "Głuska",
+          "house_number": "26",
+          "city": "Lublin",
+          "postal_code": "20-380",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.205477,
+          "longitude": 22.597958
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1301335833",
+        "element_type": "way",
+        "element_id": 1301335833,
+        "position_kind": "overpass_center",
+        "match_rule": "exact_address",
+        "matched_on": [
+          "brand",
+          "street",
+          "house_number",
+          "city"
+        ],
+        "matched_tags": {
+          "addr:city": "Lublin",
+          "addr:housenumber": "26",
+          "addr:postcode": "20-380",
+          "addr:street": "Głuska",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "retail",
+          "name": "Biedronka",
+          "opening_hours": "Mo 06:00-23:00; Tu-Fr 06:00-23:30",
+          "shop": "supermarket"
+        },
+        "dataset_file": "weryfikacja-biedronki/2026-11-02T17-45-17-761Z/osm-proba-get.json",
+        "dataset_sha256": "9125cee3b1c391210943cf53f91f8a47c9d0b352ec23e17b5c0127cefc7a28c8",
+        "osm_timestamp": "2026-11-02T17:46:11Z",
+        "retrieved_at": "2026-11-02T17:47:34.329Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright"
+      }
+    },
+    {
+      "id": "biedronka:7817",
+      "status": "accepted_automatic",
+      "expected": {
+        "source_sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+        "location": null,
+        "address": {
+          "formatted": "Krężnicka 17A, 20-518 Lublin",
+          "street_address": "Krężnicka 17A",
+          "street": "Krężnicka",
+          "house_number": "17A",
+          "city": "Lublin",
+          "postal_code": "20-518",
+          "country": "PL"
+        }
+      },
+      "replacement": {
+        "location": {
+          "latitude": 51.1890712,
+          "longitude": 22.524435
+        }
+      },
+      "resolves": [
+        "missing_geometry"
+      ],
+      "evidence": {
+        "provider": "openstreetmap",
+        "url": "https://www.openstreetmap.org/way/1423264598",
+        "element_type": "way",
+        "element_id": 1423264598,
+        "position_kind": "overpass_center",
+        "match_rule": "exact_address",
+        "matched_on": [
+          "brand",
+          "street",
+          "house_number",
+          "city"
+        ],
+        "matched_tags": {
+          "addr:city": "Lublin",
+          "addr:housenumber": "17a",
+          "addr:postcode": "20-518",
+          "addr:street": "Krężnicka",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "supermarket",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-23:00",
+          "phone": "+48800080010",
+          "shop": "supermarket"
+        },
+        "dataset_file": "weryfikacja-biedronki/2026-11-02T17-45-17-761Z/osm-proba-get.json",
+        "dataset_sha256": "9125cee3b1c391210943cf53f91f8a47c9d0b352ec23e17b5c0127cefc7a28c8",
+        "osm_timestamp": "2026-11-02T17:46:11Z",
+        "retrieved_at": "2026-11-02T17:47:34.329Z",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "license_url": "https://www.openstreetmap.org/copyright"
+      }
+    }
+  ]
+}

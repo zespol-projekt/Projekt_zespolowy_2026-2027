@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=slupca",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:09.433Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/slupca-b782ba64.json",
+  "sha256": "3724981e7e7da6381e2852e59af36f63b9268c2d3bee0b74463b173946e0ebec",
+  "usable": true,
+  "items": 2
+}

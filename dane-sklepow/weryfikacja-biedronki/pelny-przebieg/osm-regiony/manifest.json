@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-11-02T18:11:24.909Z",
+  "requested_regions": 9,
+  "responses": [
+    {
+      "bbox": [
+        48.9,
+        14,
+        51,
+        17.5
+      ],
+      "usable": false
+    },
+    {
+      "bbox": [
+        48.9,
+        17.5,
+        51,
+        21
+      ],
+      "usable": false
+    },
+    {
+      "bbox": [
+        48.9,
+        21,
+        51,
+        24.3
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C21%2C51%2C24.3%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C21%2C51%2C24.3%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C21%2C51%2C24.3%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:10:21.991Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-3.json",
+      "sha256": "d6e663c42b250782c0b7d446c0f567e6ee20c5c32717863b50b151a2982a5225",
+      "elements": 295,
+      "remark": null
+    },
+    {
+      "bbox": [
+        51,
+        14,
+        53,
+        17.5
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2851%2C14%2C53%2C17.5%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2851%2C14%2C53%2C17.5%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2851%2C14%2C53%2C17.5%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:10:33.082Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-4.json",
+      "sha256": "6a08ff05969c59f05b24936b9c64448c9139f8fab3a300f8eaf5a056ab8ed79c",
+      "elements": 574,
+      "remark": null
+    },
+    {
+      "bbox": [
+        51,
+        17.5,
+        53,
+        21
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2851%2C17.5%2C53%2C21%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2851%2C17.5%2C53%2C21%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2851%2C17.5%2C53%2C21%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:10:47.735Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-5.json",
+      "sha256": "2ecb81279888e6f239e484e020799103c5bb43a2fe8192630666df59a22c652f",
+      "elements": 626,
+      "remark": null
+    },
+    {
+      "bbox": [
+        51,
+        21,
+        53,
+        24.3
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2851%2C21%2C53%2C24.3%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2851%2C21%2C53%2C24.3%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2851%2C21%2C53%2C24.3%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:11:00.389Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-6.json",
+      "sha256": "24b5305560057e18994f4270770bf0785b3c91a39d3880c0ef8c7d67d283814c",
+      "elements": 436,
+      "remark": null
+    },
+    {
+      "bbox": [
+        53,
+        14,
+        55,
+        17.5
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2853%2C14%2C55%2C17.5%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2853%2C14%2C55%2C17.5%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2853%2C14%2C55%2C17.5%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:11:07.479Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-7.json",
+      "sha256": "68332fb60015a045d9dff1457362d3ddcfa098a1d11413c0124bcee8afd80a03",
+      "elements": 265,
+      "remark": null
+    },
+    {
+      "bbox": [
+        53,
+        17.5,
+        55,
+        21
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2853%2C17.5%2C55%2C21%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2853%2C17.5%2C55%2C21%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2853%2C17.5%2C55%2C21%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:11:18.648Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-8.json",
+      "sha256": "092225a42a77ed8d7bea675167dda55d4f307c2c685a03220f0091135625789b",
+      "elements": 516,
+      "remark": null
+    },
+    {
+      "bbox": [
+        53,
+        21,
+        55,
+        24.3
+      ],
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2853%2C21%2C55%2C24.3%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2853%2C21%2C55%2C24.3%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2853%2C21%2C55%2C24.3%29%3B%29%3Bout+center+tags%3B",
+      "status": 200,
+      "retrieved_at": "2026-11-02T18:11:24.902Z",
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-9.json",
+      "sha256": "af8dc404ada63eae96c03d9ac8db96158024a093c3dc55d836248caacb6d3e84",
+      "elements": 176,
+      "remark": null
+    }
+  ]
+}

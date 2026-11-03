@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=czestochowa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:32.857Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/czestochowa-b3f0686c.json",
+  "sha256": "56c87b53db374167848ac3967ad1045021f0559f48777c2161d105dc91137f07",
+  "usable": true,
+  "items": 24
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wola-rakowa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:11.605Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wola-rakowa-36481056.json",
+  "sha256": "52ba21d093e3b3af0cdf202687b27947cf32f7726b2ccaf6edad023d2541266e",
+  "usable": true,
+  "items": 1
+}

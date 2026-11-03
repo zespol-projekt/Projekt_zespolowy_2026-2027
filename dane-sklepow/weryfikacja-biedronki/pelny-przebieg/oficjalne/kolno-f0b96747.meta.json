@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kolno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:38.639Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kolno-f0b96747.json",
+  "sha256": "01231dc16c5d881e1732063d58de2d32abe9d6260e4cbd9d38d5b54d5d1b2a7d",
+  "usable": true,
+  "items": 3
+}

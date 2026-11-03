@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=myszyniec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:46.747Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/myszyniec-312f6613.json",
+  "sha256": "05c2af5f944eaf5a5e7b1df9a982f74dfd4c4f76a526d8dbb4ae3471c8e6f042",
+  "usable": true,
+  "items": 1
+}

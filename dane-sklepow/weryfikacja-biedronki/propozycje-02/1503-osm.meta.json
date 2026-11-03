@@ -1,0 +1,11 @@
+{
+  "key": "1503-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/node/589805243.json",
+  "retrieved_at": "2026-11-02T19:06:38.530Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/node/589805243.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-02/1503-osm.json",
+  "sha256": "df060727de84c6d844473e489f59ac4e8f310be50d80ab46a3cd04e447065a14",
+  "bytes": 942
+}

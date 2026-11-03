@@ -1,0 +1,11 @@
+{
+  "key": "starsza-lista-biedronka",
+  "url": "https://cdn.biedronka.pl/__2024/T09A/promocja_lista/T09A_lista_promo.pdf",
+  "retrieved_at": "2026-11-02T18:31:20.910Z",
+  "status": 200,
+  "final_url": "https://cdn.biedronka.pl/__2024/T09A/promocja_lista/T09A_lista_promo.pdf",
+  "content_type": "application/pdf",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/starsza-lista-biedronka.pdf",
+  "sha256": "11e24145de05304ec1eaac9ba4e5ebfb5a000d3ff308bb3e664bb7e493b987c9",
+  "bytes": 1106672
+}

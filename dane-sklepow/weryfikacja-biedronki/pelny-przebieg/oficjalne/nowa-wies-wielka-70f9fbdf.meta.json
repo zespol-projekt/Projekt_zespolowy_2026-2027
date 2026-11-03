@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nowa-wies-wielka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:49.455Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/nowa-wies-wielka-70f9fbdf.json",
+  "sha256": "11a45ed7f3296b5b8eb4d76411f0de2cd4cab66fd8255f233ccd28e0f7dd8b3e",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,11 @@
+{
+  "key": "krolewiec-mojagazetka",
+  "url": "https://mojagazetka.com/lokalizacje-sklepow/krolewiec/biedronka",
+  "retrieved_at": "2026-11-02T18:31:18.766Z",
+  "status": 200,
+  "final_url": "https://mojagazetka.com/lokalizacje-sklepow/krolewiec/biedronka",
+  "content_type": "text/html; charset=utf-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/krolewiec-mojagazetka.html",
+  "sha256": "118836d45dfce1ab9d4d5d34f13bcbdfdace349769bef8cb31c374afce906a63",
+  "bytes": 452857
+}

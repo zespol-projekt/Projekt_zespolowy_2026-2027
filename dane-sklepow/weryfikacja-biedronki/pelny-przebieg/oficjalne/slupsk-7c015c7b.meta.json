@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=slupsk",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:09.962Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/slupsk-7c015c7b.json",
+  "sha256": "27f7ab342135585ef7f1913214e4cc5f974d9672fd5d2bf1d4e6b8f028359f89",
+  "usable": true,
+  "items": 15
+}

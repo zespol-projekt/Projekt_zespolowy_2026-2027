@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=strzalkow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:26.382Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/strzalkow-59744567.json",
+  "sha256": "230201731ad543ef5b2403d8d111ef5af197f9e3c951cb30fd16e04be4c1eddd",
+  "usable": true,
+  "items": 1
+}

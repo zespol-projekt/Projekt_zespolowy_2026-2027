@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=piaseczno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:12.038Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/piaseczno-e1afd478.json",
+  "sha256": "3fce0772240bac78069c5bba7ff1162b1d0093198c2b56d0e944440b80ec782d",
+  "usable": true,
+  "items": 4
+}

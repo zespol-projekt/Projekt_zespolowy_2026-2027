@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=balin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:55.522Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/balin-457a5ef3.json",
+  "sha256": "ec7e8643b0c566a77473a76a1792558f4cd6de840db6059c18c75df10c543af0",
+  "usable": true,
+  "items": 1
+}

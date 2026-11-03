@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wiskitki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:05.612Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wiskitki-6b56f923.json",
+  "sha256": "22db3fb95b4f4807291f0074631752b0379584fd34ce7a9c6f781e53312f344a",
+  "usable": true,
+  "items": 1
+}

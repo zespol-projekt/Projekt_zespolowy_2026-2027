@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=opole",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:02.633Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/opole-d4cb07f9.json",
+  "sha256": "f12637d8313c2faf41f9462d505a77eb2d3d21ad6c9527d2a11415c9079d015d",
+  "usable": true,
+  "items": 15
+}

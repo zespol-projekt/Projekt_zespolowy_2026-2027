@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=koscierzyna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:45.113Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/koscierzyna-e29135bf.json",
+  "sha256": "0ea11926fa6e97e1b9753ee59243ad4c663fb67dd74d6e737cc71cc047bf3f85",
+  "usable": true,
+  "items": 4
+}

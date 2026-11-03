@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zakopane",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:17.730Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zakopane-60c8ce13.json",
+  "sha256": "b10115d6080d7c8198dc846fb655390b7d8a759e25e602ffa0d691454adb1173",
+  "usable": true,
+  "items": 5
+}

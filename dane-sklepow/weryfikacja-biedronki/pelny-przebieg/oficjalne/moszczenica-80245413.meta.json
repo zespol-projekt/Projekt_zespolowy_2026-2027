@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=moszczenica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:41.453Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/moszczenica-80245413.json",
+  "sha256": "263853c8d40fd5660915ae952d9886fef0d2435e57dce8d6b6c967bd9a5ffc1c",
+  "usable": true,
+  "items": 2
+}

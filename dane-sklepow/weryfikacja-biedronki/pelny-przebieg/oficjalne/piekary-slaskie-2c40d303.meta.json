@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=piekary-slaskie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:14.197Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/piekary-slaskie-2c40d303.json",
+  "sha256": "0311b013fbc551ba87c5d04a685ce47b31c8f7ef7f8395909f7553fccf6a20b4",
+  "usable": true,
+  "items": 4
+}

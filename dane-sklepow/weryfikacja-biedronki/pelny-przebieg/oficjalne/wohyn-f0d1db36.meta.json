@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wohyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:07.854Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wohyn-f0d1db36.json",
+  "sha256": "dd67450acbe50560d9d2b06f38a4f326e213e6774898388ca1abab7b7fd8d771",
+  "usable": true,
+  "items": 1
+}

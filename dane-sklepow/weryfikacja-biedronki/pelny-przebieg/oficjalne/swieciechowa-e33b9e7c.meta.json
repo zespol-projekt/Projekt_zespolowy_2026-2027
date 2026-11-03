@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=swieciechowa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:34.618Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/swieciechowa-e33b9e7c.json",
+  "sha256": "7968af1e1ceaa3bf26d8470da895149b2e4326704cbbc2ed6163c27d422ae0b1",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bardo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:57.221Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bardo-6603c314.json",
+  "sha256": "bc29f0bdd138d3e396340a1c47eb1f49701707d1f4994965549c92181561ff32",
+  "usable": true,
+  "items": 1
+}

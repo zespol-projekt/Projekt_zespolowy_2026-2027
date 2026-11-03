@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krosno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:53.985Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/krosno-a0793568.json",
+  "sha256": "81a1790270915a2bf71c3b3ec984d031a8012ca681b9c440508b5ccd9c9c90a6",
+  "usable": true,
+  "items": 7
+}

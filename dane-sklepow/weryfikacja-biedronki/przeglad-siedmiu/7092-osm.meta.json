@@ -1,0 +1,11 @@
+{
+  "key": "7092-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/node/12099723269.json",
+  "retrieved_at": "2026-11-02T18:31:14.599Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/node/12099723269.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/7092-osm.json",
+  "sha256": "e6f15199840a28ed488e1f65b1ba3a4161e55a3fe5b9b169b18db3bce29467ef",
+  "bytes": 632
+}

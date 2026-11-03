@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=opatow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:01.579Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/opatow-7bac235b.json",
+  "sha256": "7a00c3ccfa08744c97ba0e740e7572f60ee9c00aedb46e7ac91f7cfb502efa56",
+  "usable": true,
+  "items": 2
+}

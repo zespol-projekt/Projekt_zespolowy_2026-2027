@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=szczecin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:37.818Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/szczecin-b8e8d4bc.json",
+  "sha256": "4fab0099aecb3eeb4dbbbad52ee4ab2de22d63be558595d477461d88b23264bc",
+  "usable": true,
+  "items": 42
+}

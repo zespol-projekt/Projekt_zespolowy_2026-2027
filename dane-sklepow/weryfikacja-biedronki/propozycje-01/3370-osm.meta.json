@@ -1,0 +1,11 @@
+{
+  "key": "3370-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/702098752/full.json",
+  "retrieved_at": "2026-11-02T18:53:25.437Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/702098752/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-01/3370-osm.json",
+  "sha256": "fdc6039ba262943c5f47b867488466cfca588b8e3ab1a6e620f2b7c1a7fcf916",
+  "bytes": 1890
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=udanin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:50.434Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/udanin-c134f7c7.json",
+  "sha256": "ae57cde660d64d043caf64d5cf2b3e0c3d9fa050e942601c33f56831d660b176",
+  "usable": true,
+  "items": 1
+}

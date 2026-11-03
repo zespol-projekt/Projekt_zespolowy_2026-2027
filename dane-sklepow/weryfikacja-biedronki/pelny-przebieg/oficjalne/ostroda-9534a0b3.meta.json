@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ostroda",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:04.352Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ostroda-9534a0b3.json",
+  "sha256": "8e3160f103f6d3482423d8cd07a977b8267c84497438b94ed62639140b92a0a1",
+  "usable": true,
+  "items": 6
+}

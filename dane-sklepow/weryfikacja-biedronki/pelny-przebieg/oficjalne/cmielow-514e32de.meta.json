@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=cmielow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:27.355Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/cmielow-514e32de.json",
+  "sha256": "7a416ddaa80117b78b1e2380f3e4929f25e3f0b7ee30ed3fbb14953700b09897",
+  "usable": true,
+  "items": 1
+}

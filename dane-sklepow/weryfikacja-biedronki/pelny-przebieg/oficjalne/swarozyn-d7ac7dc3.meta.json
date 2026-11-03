@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=swarozyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:31.352Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/swarozyn-d7ac7dc3.json",
+  "sha256": "1f8c1b6f336dae87fedc449371237a683c6933dbf13d4623319adf767a9c73fa",
+  "usable": true,
+  "items": 1
+}

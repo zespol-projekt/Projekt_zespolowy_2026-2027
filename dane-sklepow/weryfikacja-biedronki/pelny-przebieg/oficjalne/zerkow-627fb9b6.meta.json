@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zerkow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:25.816Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zerkow-627fb9b6.json",
+  "sha256": "0772ecfac6cef927a77a748ad538afbb9bc6431fdfc049771d1140e1d13c611d",
+  "usable": true,
+  "items": 1
+}

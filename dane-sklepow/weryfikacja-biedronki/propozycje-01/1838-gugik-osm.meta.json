@@ -1,0 +1,11 @@
+{
+  "key": "1838-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grajewo%2C+9+Pu%C5%82ku+Strzelc%C3%B3w+Konnych+8&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:49.451Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grajewo%2C+9+Pu%C5%82ku+Strzelc%C3%B3w+Konnych+8&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1838-gugik-osm.json",
+  "sha256": "d2b29fe30e52dccdba8aedb17008c7da7143216f523872de2f0a44fe61a15033",
+  "bytes": 627
+}

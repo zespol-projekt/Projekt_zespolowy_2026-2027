@@ -1,0 +1,11 @@
+{
+  "key": "1216-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sulej%C3%B3wek%2C+Aleja+J%C3%B3zefa+Pi%C5%82sudskiego+102&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:13.400Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sulej%C3%B3wek%2C+Aleja+J%C3%B3zefa+Pi%C5%82sudskiego+102&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1216-gugik-osm.json",
+  "sha256": "5fbe078a8ef8ba64e7cbf10fd3ac28fd7e008dc96fd4de4452baee652dc122fc",
+  "bytes": 632
+}

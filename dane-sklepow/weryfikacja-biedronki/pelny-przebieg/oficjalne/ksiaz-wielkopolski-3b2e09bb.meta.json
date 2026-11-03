@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ksiaz-wielkopolski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:57.855Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ksiaz-wielkopolski-3b2e09bb.json",
+  "sha256": "2642ba028f54a738f7737c438c94257784a9007864f62ac8d5668fab8e0beff9",
+  "usable": true,
+  "items": 1
+}

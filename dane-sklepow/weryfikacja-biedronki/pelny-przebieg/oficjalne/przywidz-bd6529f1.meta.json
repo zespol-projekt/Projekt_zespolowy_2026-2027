@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=przywidz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:29.897Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/przywidz-bd6529f1.json",
+  "sha256": "8cee5e5cacbc8cabce7c7db6d496e59eaf0cfb4daa0d025f78da404f8098df53",
+  "usable": true,
+  "items": 1
+}

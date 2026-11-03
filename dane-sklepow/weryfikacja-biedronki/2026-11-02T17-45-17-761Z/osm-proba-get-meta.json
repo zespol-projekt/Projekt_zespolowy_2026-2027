@@ -1,0 +1,9 @@
+{
+  "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A40%5D%3B%28nwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%2853.45%2C16.08%2C53.65%2C16.4%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%7E%22Biedronka%22%2Ci%5D%2853.45%2C16.08%2C53.65%2C16.4%29%3Bnwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%2851.15%2C22.4%2C51.35%2C22.7%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%7E%22Biedronka%22%2Ci%5D%2851.15%2C22.4%2C51.35%2C22.7%29%3Bnwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%2854.4%2C18.3%2C54.65%2C18.65%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%7E%22Biedronka%22%2Ci%5D%2854.4%2C18.3%2C54.65%2C18.65%29%3Bnwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%2851.55%2C15.2%2C51.7%2C15.45%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%7E%22Biedronka%22%2Ci%5D%2851.55%2C15.2%2C51.7%2C15.45%29%3Bnwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%2850.35%2C19.3%2C50.5%2C19.5%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%7E%22Biedronka%22%2Ci%5D%2850.35%2C19.3%2C50.5%2C19.5%29%3B%29%3Bout+center+tags%3B",
+  "method": "GET",
+  "status": 200,
+  "retrieved_at": "2026-11-02T17:47:34.329Z",
+  "file": "osm-proba-get.json",
+  "query_file": "osm-proba.overpassql",
+  "sha256": "9125cee3b1c391210943cf53f91f8a47c9d0b352ec23e17b5c0127cefc7a28c8"
+}

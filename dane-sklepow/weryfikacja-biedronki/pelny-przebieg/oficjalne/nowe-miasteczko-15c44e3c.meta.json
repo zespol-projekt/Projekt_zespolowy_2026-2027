@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nowe-miasteczko",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:49.985Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/nowe-miasteczko-15c44e3c.json",
+  "sha256": "567ca3ccc13713f4bf3a80468e3974dde8da58a1518aea79e5640f01d480d094",
+  "usable": true,
+  "items": 1
+}

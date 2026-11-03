@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=grzybowa-gora",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:09.085Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/grzybowa-gora-b5bd2d1b.json",
+  "sha256": "461f37bd87df4aa5032e5483fddc1cbe75d2e269fdf9a74449f6cb48e3868e98",
+  "usable": true,
+  "items": 1
+}

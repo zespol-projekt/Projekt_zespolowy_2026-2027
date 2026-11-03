@@ -1,0 +1,11 @@
+{
+  "key": "3772-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Mr%C4%85gowo%2C+Wolno%C5%9Bci+4e&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:39.283Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Mr%C4%85gowo%2C+Wolno%C5%9Bci+4e&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/3772-gugik-pierwotny.json",
+  "sha256": "36a79d0dc35cc4fa346f2565b443697345b36ad2204775acfeb7a6be5cab854b",
+  "bytes": 197
+}

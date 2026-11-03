@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=miloszyce",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:36.529Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/miloszyce-247fccad.json",
+  "sha256": "45d41d51a6065b54ff6feb363df83486934198f7fe78c632f096965753b18961",
+  "usable": true,
+  "items": 1
+}

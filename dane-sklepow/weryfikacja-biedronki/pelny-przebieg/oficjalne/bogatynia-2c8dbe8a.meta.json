@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bogatynia",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:05.469Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bogatynia-2c8dbe8a.json",
+  "sha256": "d55f179abd0622c15b890601851cbe6e90133f49535e1fe5b7717355aec82f4e",
+  "usable": true,
+  "items": 3
+}

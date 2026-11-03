@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=makow-podhalanski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:25.104Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/makow-podhalanski-661a783a.json",
+  "sha256": "3e32e0e5b3ead602e25250d5260b05687319a28accc4bd5f421f4bfdd30aa9e5",
+  "usable": true,
+  "items": 2
+}

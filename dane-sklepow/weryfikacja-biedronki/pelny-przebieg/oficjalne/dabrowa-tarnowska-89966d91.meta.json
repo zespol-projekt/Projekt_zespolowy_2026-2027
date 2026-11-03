@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dabrowa-tarnowska",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:35.624Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dabrowa-tarnowska-89966d91.json",
+  "sha256": "df802cff4f8d886614afd054ce71e7b4e22fc6fb9ef7a6dbf0c6da7c157205ed",
+  "usable": true,
+  "items": 2
+}

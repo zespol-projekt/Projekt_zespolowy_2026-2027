@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=miejska-gorka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:33.790Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/miejska-gorka-834a9128.json",
+  "sha256": "314b5449ca809976a5fbda5c7ac4b73d21989e7d06712dfd5a86204d92691fbc",
+  "usable": true,
+  "items": 1
+}

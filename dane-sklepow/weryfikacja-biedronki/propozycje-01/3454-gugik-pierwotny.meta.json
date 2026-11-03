@@ -1,0 +1,11 @@
+{
+  "key": "3454-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Marki%2C+Al.+Marsz.+J%C3%B3zefa+Pi%C5%82sudskiego+200a&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:02.830Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Marki%2C+Al.+Marsz.+J%C3%B3zefa+Pi%C5%82sudskiego+200a&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/3454-gugik-pierwotny.json",
+  "sha256": "88c95375927b654af8ce8aec3ea2a2c699e810e365adad59fe918e968fa9ab17",
+  "bytes": 649
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kruszwica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:55.121Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kruszwica-4075d553.json",
+  "sha256": "b8f24e9bcaae735651ca37e8b893d461fa38c3f89baf7ea31b43c616f941b321",
+  "usable": true,
+  "items": 1
+}

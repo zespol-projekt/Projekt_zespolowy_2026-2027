@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=miastkowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:28.900Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/miastkowo-71839905.json",
+  "sha256": "a2f80fb965ea026fa59a3f83a56cda099be843a9d753623cdefcc0017820acd0",
+  "usable": true,
+  "items": 1
+}

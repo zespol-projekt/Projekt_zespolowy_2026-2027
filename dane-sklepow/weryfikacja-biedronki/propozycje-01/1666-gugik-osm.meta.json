@@ -1,0 +1,11 @@
+{
+  "key": "1666-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ruda+%C5%9Al%C4%85ska%2C+Planty+Antoniego+Kowalskiego+1&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:22.403Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ruda+%C5%9Al%C4%85ska%2C+Planty+Antoniego+Kowalskiego+1&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1666-gugik-osm.json",
+  "sha256": "fa7a99294abac0103a6301b68837ea2ba13d93c7148fbbc85ad3e0b8eafacbaf",
+  "bytes": 2544
+}

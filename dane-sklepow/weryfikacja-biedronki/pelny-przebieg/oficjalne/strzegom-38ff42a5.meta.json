@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=strzegom",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:27.457Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/strzegom-38ff42a5.json",
+  "sha256": "93f1f4af60e901af6c26be710ae74642197cdc12f4962c3ace21d8065a27d335",
+  "usable": true,
+  "items": 3
+}

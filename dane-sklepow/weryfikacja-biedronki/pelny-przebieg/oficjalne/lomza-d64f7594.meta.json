@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lomza",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:16.388Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lomza-d64f7594.json",
+  "sha256": "3b80b7f9edfb632d0127a4d1e0f2090f92ff862d399c1cd64636755d3f09f8f2",
+  "usable": true,
+  "items": 9
+}

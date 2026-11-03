@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krajenka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:49.018Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/krajenka-d35a58d5.json",
+  "sha256": "d216012e8796ca0a9cfe1aec92a7610b93f1d1ed6aab8c32ccc12789cabcef6e",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bratian",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:11.501Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bratian-f661e173.json",
+  "sha256": "edb87ce9acf00c364a2ee9e49f106de227c34c40add8712c8e73480161bc31ed",
+  "usable": true,
+  "items": 1
+}

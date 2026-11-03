@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=brodnica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:12.039Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/brodnica-52a4d14d.json",
+  "sha256": "19b10e11e4073ae4c303e1acb5640f3daaba694c2bdb27ddfbcb956ce7a3b877",
+  "usable": true,
+  "items": 6
+}

@@ -1,0 +1,11 @@
+{
+  "key": "2782-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Al.+Solidarno%C5%9Bci+115&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:30.020Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Al.+Solidarno%C5%9Bci+115&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/2782-gugik-pierwotny.json",
+  "sha256": "323dc67e3e501f40a6dc42c3f5d5edb948a9ba404cd85b7d117f15ad3d487bbc",
+  "bytes": 624
+}

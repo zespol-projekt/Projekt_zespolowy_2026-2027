@@ -1,0 +1,64 @@
+{
+  "archived_at": "2026-11-02T17:31:24.851Z",
+  "description": "Oryginalne pliki pobrane do analizy 2 listopada 2026; projekt aplikacji nie importuje tych danych.",
+  "filters": {
+    "country": "PL",
+    "auchan_allowed_brands": [
+      "Auchan Super",
+      "Auchan Hiper"
+    ]
+  },
+  "sources": [
+    {
+      "chain": "lidl",
+      "url": "https://data.alltheplaces.xyz/runs/latest/output/lidl.geojson",
+      "file": "surowe/lidl.geojson",
+      "bytes": 8457652,
+      "sha256": "f5ef632852a4c7282a05344e4f95b20a51ad51b8ed3b50e9bdc77923a39398f0",
+      "dataset_attributes": {
+        "@spider": "lidl",
+        "spider:collection_time": "2026-10-27T10:57:47.971059",
+        "spider:lineage": "S_ATP_BRANDS"
+      }
+    },
+    {
+      "chain": "biedronka",
+      "url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+      "file": "surowe/biedronka_pl.geojson",
+      "bytes": 2412067,
+      "sha256": "7c29aa2762092552e302e28ff1ee01c3f2c2cb43262af6f17582f57792eb1aec",
+      "dataset_attributes": {
+        "@spider": "biedronka_pl",
+        "spider:collection_time": "2026-10-25T01:43:12.935156",
+        "spider:lineage": "S_ATP_BRANDS"
+      }
+    },
+    {
+      "chain": "dino",
+      "url": "https://data.alltheplaces.xyz/runs/latest/output/dino_pl.geojson",
+      "file": "surowe/dino_pl.geojson",
+      "bytes": 1637132,
+      "sha256": "ef30464440ff96872c9a5be7fe0a88bb111fd008245459c4fb0c737e8ed24b39",
+      "dataset_attributes": {
+        "@spider": "dino_pl",
+        "spider:collection_time": "2026-10-25T19:24:54.138734",
+        "spider:lineage": "S_ATP_BRANDS",
+        "spider:robots_txt": "ignored"
+      }
+    },
+    {
+      "chain": "auchan",
+      "url": "https://alltheplaces-data.openaddresses.io/runs/2026-10-24-13-32-37/output/auchan_pl.geojson",
+      "file": "surowe/auchan_pl.geojson",
+      "bytes": 199808,
+      "sha256": "afe90af795a759204b5378a025451a5f81a20577171f6841170a50d9ce82c462",
+      "dataset_attributes": {
+        "@spider": "auchan_pl",
+        "api": "woosmap.com",
+        "source": "api",
+        "spider:collection_time": "2026-10-24T23:05:06.047811",
+        "spider:lineage": "S_ATP_BRANDS"
+      }
+    }
+  ]
+}

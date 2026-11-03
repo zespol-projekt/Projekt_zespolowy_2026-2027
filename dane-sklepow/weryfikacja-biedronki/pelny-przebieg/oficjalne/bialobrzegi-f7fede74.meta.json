@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bialobrzegi",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:58.284Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bialobrzegi-f7fede74.json",
+  "sha256": "e69a6c190ffcf06e037feaeb2c56194778a2da8c33b4c72b9e095a8a5ad75a7d",
+  "usable": true,
+  "items": 2
+}

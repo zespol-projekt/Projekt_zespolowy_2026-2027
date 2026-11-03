@@ -1,0 +1,322 @@
+{
+  "status": 200,
+  "url": "urn:smartcart:merged-osm-cache",
+  "retrieved_at": "2026-11-02T18:16:46.778Z",
+  "file": "osm-polaczone.json",
+  "sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97",
+  "elements": 3867,
+  "scope": "Dane OSM z prostokąta obejmującego Polskę: pełne odpowiedzi dla 9/9 obszarów bazowych, 16 zapisanych odpowiedzi. Nie jest to potwierdzenie kompletności placówek.",
+  "coverage": [
+    {
+      "region": 1,
+      "bbox": [
+        48.9,
+        14,
+        51,
+        17.5
+      ],
+      "complete": true
+    },
+    {
+      "region": 2,
+      "bbox": [
+        48.9,
+        17.5,
+        51,
+        21
+      ],
+      "complete": true
+    },
+    {
+      "region": 3,
+      "bbox": [
+        48.9,
+        21,
+        51,
+        24.3
+      ],
+      "complete": true
+    },
+    {
+      "region": 4,
+      "bbox": [
+        51,
+        14,
+        53,
+        17.5
+      ],
+      "complete": true
+    },
+    {
+      "region": 5,
+      "bbox": [
+        51,
+        17.5,
+        53,
+        21
+      ],
+      "complete": true
+    },
+    {
+      "region": 6,
+      "bbox": [
+        51,
+        21,
+        53,
+        24.3
+      ],
+      "complete": true
+    },
+    {
+      "region": 7,
+      "bbox": [
+        53,
+        14,
+        55,
+        17.5
+      ],
+      "complete": true
+    },
+    {
+      "region": 8,
+      "bbox": [
+        53,
+        17.5,
+        55,
+        21
+      ],
+      "complete": true
+    },
+    {
+      "region": 9,
+      "bbox": [
+        53,
+        21,
+        55,
+        24.3
+      ],
+      "complete": true
+    }
+  ],
+  "source_files": [
+    {
+      "file": "weryfikacja-biedronki/2026-11-02T17-45-17-761Z/osm-proba-get.json",
+      "sha256": "9125cee3b1c391210943cf53f91f8a47c9d0b352ec23e17b5c0127cefc7a28c8",
+      "metadata_file": "weryfikacja-biedronki/2026-11-02T17-45-17-761Z/osm-proba-get-meta.json",
+      "metadata_sha256": "f79f9c0767547c2079ae63b8d4c3c36ae2c79cc9844524eb238f39cdfded07b3",
+      "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A40%5D%3B%28nwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%2853.45%2C16.08%2C53.65%2C16.4%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%7E%22Biedronka%22%2Ci%5D%2853.45%2C16.08%2C53.65%2C16.4%29%3Bnwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%2851.15%2C22.4%2C51.35%2C22.7%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%7E%22Biedronka%22%2Ci%5D%2851.15%2C22.4%2C51.35%2C22.7%29%3Bnwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%2854.4%2C18.3%2C54.65%2C18.65%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%7E%22Biedronka%22%2Ci%5D%2854.4%2C18.3%2C54.65%2C18.65%29%3Bnwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%2851.55%2C15.2%2C51.7%2C15.45%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%7E%22Biedronka%22%2Ci%5D%2851.55%2C15.2%2C51.7%2C15.45%29%3Bnwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%2850.35%2C19.3%2C50.5%2C19.5%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%7E%22Biedronka%22%2Ci%5D%2850.35%2C19.3%2C50.5%2C19.5%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-02T17:46:11Z",
+      "bbox": null
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-3.json",
+      "sha256": "d6e663c42b250782c0b7d446c0f567e6ee20c5c32717863b50b151a2982a5225",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-3.meta.json",
+      "metadata_sha256": "695565036124383dee45bcbc4774ee3c20134a2825db256e1e82a5e20771417b",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C21%2C51%2C24.3%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C21%2C51%2C24.3%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C21%2C51%2C24.3%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        48.9,
+        21,
+        51,
+        24.3
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-4.json",
+      "sha256": "6a08ff05969c59f05b24936b9c64448c9139f8fab3a300f8eaf5a056ab8ed79c",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-4.meta.json",
+      "metadata_sha256": "4d569494314644cd4fa98d89692f813d6ccf89ea4d54233a28af07d6db434673",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2851%2C14%2C53%2C17.5%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2851%2C14%2C53%2C17.5%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2851%2C14%2C53%2C17.5%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        51,
+        14,
+        53,
+        17.5
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-5.json",
+      "sha256": "2ecb81279888e6f239e484e020799103c5bb43a2fe8192630666df59a22c652f",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-5.meta.json",
+      "metadata_sha256": "3b855e1463b6938163836dd66ef62cfcacea5cf3bb46bf05681df41ec0f6a8e6",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2851%2C17.5%2C53%2C21%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2851%2C17.5%2C53%2C21%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2851%2C17.5%2C53%2C21%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        51,
+        17.5,
+        53,
+        21
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-6.json",
+      "sha256": "24b5305560057e18994f4270770bf0785b3c91a39d3880c0ef8c7d67d283814c",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-6.meta.json",
+      "metadata_sha256": "e37dd048afda4f5ecee9a4a3ca8547c7d21520e88f24edc12c14a5fc345bf415",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2851%2C21%2C53%2C24.3%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2851%2C21%2C53%2C24.3%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2851%2C21%2C53%2C24.3%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        51,
+        21,
+        53,
+        24.3
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-7.json",
+      "sha256": "68332fb60015a045d9dff1457362d3ddcfa098a1d11413c0124bcee8afd80a03",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-7.meta.json",
+      "metadata_sha256": "b4cf17f51b76cdf2ae1e2fbc1337a4ea4e1ec0ca3ce777c4d467b7c10fc0e79a",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2853%2C14%2C55%2C17.5%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2853%2C14%2C55%2C17.5%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2853%2C14%2C55%2C17.5%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        53,
+        14,
+        55,
+        17.5
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-8.json",
+      "sha256": "092225a42a77ed8d7bea675167dda55d4f307c2c685a03220f0091135625789b",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-8.meta.json",
+      "metadata_sha256": "ec28979d7de46aa7f05bcf2529716f20a5bcf6c412b9f99ea68c5ed0be7ab6e7",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2853%2C17.5%2C55%2C21%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2853%2C17.5%2C55%2C21%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2853%2C17.5%2C55%2C21%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        53,
+        17.5,
+        55,
+        21
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-9.json",
+      "sha256": "af8dc404ada63eae96c03d9ac8db96158024a093c3dc55d836248caacb6d3e84",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-9.meta.json",
+      "metadata_sha256": "a5aae23c667ec67e99e570ec1234cb5155d861afedefe855b1d7379dea96d63a",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2853%2C21%2C55%2C24.3%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2853%2C21%2C55%2C24.3%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2853%2C21%2C55%2C24.3%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        53,
+        21,
+        55,
+        24.3
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-1.json",
+      "sha256": "03a42c87ee23c197ae4abc95c60e42ebfa643e3e5e48044ca2dee27d8fddb8b6",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-1.meta.json",
+      "metadata_sha256": "0ae9c8e4d776078db18ac8314cba13a5495f5723f2ce18e0ff4252570d564231",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C14%2C49.95%2C15.75%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C14%2C49.95%2C15.75%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C14%2C49.95%2C15.75%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        48.9,
+        14,
+        49.95,
+        15.75
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-2.json",
+      "sha256": "03a42c87ee23c197ae4abc95c60e42ebfa643e3e5e48044ca2dee27d8fddb8b6",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-2.meta.json",
+      "metadata_sha256": "a35e9c613ce76f4f93d6a25b27b1fd08e6fec17c5d53455c027c780d3900eabd",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C15.75%2C49.95%2C17.5%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C15.75%2C49.95%2C17.5%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C15.75%2C49.95%2C17.5%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        48.9,
+        15.75,
+        49.95,
+        17.5
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-3.json",
+      "sha256": "c866ffd7235f63372587daa934f414cbe0d68622a02f4351d15157ab4b1a68ce",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-3.meta.json",
+      "metadata_sha256": "eeab9d16a74526994e314378beb9d099290349eb0ac5535b0fefe7f4f7fff88d",
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2849.95%2C14%2C51%2C15.75%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2849.95%2C14%2C51%2C15.75%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2849.95%2C14%2C51%2C15.75%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-02T18:12:33Z",
+      "bbox": [
+        49.95,
+        14,
+        51,
+        15.75
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-4.json",
+      "sha256": "dacfabfca958443250d5802dc2b76494851d71ac457c07ef971cb36288e2f2f0",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-1-4.meta.json",
+      "metadata_sha256": "2e66e4f8fad8363238a44540039c087d1d460bd78de2ab6552b42c8bc8cf23be",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2849.95%2C15.75%2C51%2C17.5%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2849.95%2C15.75%2C51%2C17.5%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2849.95%2C15.75%2C51%2C17.5%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        49.95,
+        15.75,
+        51,
+        17.5
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-1.json",
+      "sha256": "e8b0fb81801f120d41858088fc007412afe102cde933db72b3f7f6ee3eaa1919",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-1.meta.json",
+      "metadata_sha256": "e7966f868324840d27634367883eef704c131c24d3bd9c9557e975d8b1cb0920",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C17.5%2C49.95%2C19.25%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C17.5%2C49.95%2C19.25%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C17.5%2C49.95%2C19.25%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        48.9,
+        17.5,
+        49.95,
+        19.25
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-2.json",
+      "sha256": "114804f4ba84f187557a831ad15e1b65b50ca59cd71d87d3022e10cb13e5fa49",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-2.meta.json",
+      "metadata_sha256": "f5ae349f2147cdaaef39052c9e379fb90256120a76ee4c2103b3eadfcdcef6b9",
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C19.25%2C49.95%2C21%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C19.25%2C49.95%2C21%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C19.25%2C49.95%2C21%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-02T18:14:35Z",
+      "bbox": [
+        48.9,
+        19.25,
+        49.95,
+        21
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-3.json",
+      "sha256": "65ef11c0916c2b04f565e48dbc54aa17225318a31f637cb9f4ed6af04f72d9ed",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-3.meta.json",
+      "metadata_sha256": "3fcf5dbb90af2474ffbcb7092037d62972ef5d57bc660cc915b44a3ea33c4081",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2849.95%2C17.5%2C51%2C19.25%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2849.95%2C17.5%2C51%2C19.25%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2849.95%2C17.5%2C51%2C19.25%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        49.95,
+        17.5,
+        51,
+        19.25
+      ]
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-4.json",
+      "sha256": "efe51eeb5d2dd4b009636888cbed26f817e31e00f292b3043424374532aa7db1",
+      "metadata_file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/uzupelnienie-2-4.meta.json",
+      "metadata_sha256": "cf3519535e207909feb873df9ebb39ef95ae401fc3ac5300579150942864b818",
+      "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2849.95%2C19.25%2C51%2C21%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2849.95%2C19.25%2C51%2C21%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2849.95%2C19.25%2C51%2C21%29%3B%29%3Bout+center+tags%3B",
+      "timestamp": "2026-11-01T21:21:36Z",
+      "bbox": [
+        49.95,
+        19.25,
+        51,
+        21
+      ]
+    }
+  ]
+}

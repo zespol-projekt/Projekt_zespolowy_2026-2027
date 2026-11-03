@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zory",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:31.335Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zory-0394a6ae.json",
+  "sha256": "3521d16784140ea437e4f3595b6da686a9be003d1a39174076b30954a81e587e",
+  "usable": true,
+  "items": 8
+}

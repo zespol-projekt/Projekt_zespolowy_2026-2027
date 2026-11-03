@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rymanow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:52.221Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rymanow-bd7da9ca.json",
+  "sha256": "f519eed19e6f0c4628725ff47d81eb59382faf29824324ff257a7b9202dd1d26",
+  "usable": true,
+  "items": 1
+}

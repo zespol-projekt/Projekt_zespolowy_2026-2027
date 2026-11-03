@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=branice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:10.440Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/branice-8f48e7b4.json",
+  "sha256": "021faee40376fe8f4fa88b4988d1a38b035653e7230222a4b1ae5571e305f428",
+  "usable": true,
+  "items": 2
+}

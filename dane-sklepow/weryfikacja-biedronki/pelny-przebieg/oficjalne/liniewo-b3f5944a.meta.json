@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=liniewo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:11.389Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/liniewo-b3f5944a.json",
+  "sha256": "bbcfe7a88f33cee23ef91c0f2ce6418f6ab1c60a68f2a55517e0258e06dbe236",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zgierz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:26.885Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zgierz-3d567c67.json",
+  "sha256": "2852ee96f86ea14ecfa1d2a78e8edb1e2060a40edc20d5d2c988ed43b85c6fff",
+  "usable": true,
+  "items": 7
+}

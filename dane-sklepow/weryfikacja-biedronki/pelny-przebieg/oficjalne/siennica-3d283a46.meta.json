@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=siennica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:04.127Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/siennica-3d283a46.json",
+  "sha256": "d1995ceedf83b365da54f7efa754bf66f210c1fcab4e30a7f0d119ea51985a50",
+  "usable": true,
+  "items": 1
+}

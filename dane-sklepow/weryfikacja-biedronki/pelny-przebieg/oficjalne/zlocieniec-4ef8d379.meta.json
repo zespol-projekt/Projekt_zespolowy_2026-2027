@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zlocieniec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:28.599Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zlocieniec-4ef8d379.json",
+  "sha256": "1cd2859211f7db59347de11f2fef7171765ee2aae9d0c417a14571d1c89afc75",
+  "usable": true,
+  "items": 2
+}

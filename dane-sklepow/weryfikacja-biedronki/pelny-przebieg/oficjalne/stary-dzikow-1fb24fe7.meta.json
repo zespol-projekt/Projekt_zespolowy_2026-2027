@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stary-dzikow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:20.969Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/stary-dzikow-1fb24fe7.json",
+  "sha256": "385dc035543c71a2d6297ad34ef32c93533d6bb2291f36d84c1bee9c8deb0e45",
+  "usable": true,
+  "items": 1
+}

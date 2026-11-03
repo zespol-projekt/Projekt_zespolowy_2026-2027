@@ -1,0 +1,11 @@
+{
+  "key": "1226-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,1226",
+  "retrieved_at": "2026-11-02T19:06:01.819Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,1226",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-02/1226-oficjalna.html",
+  "sha256": "ddde064685799926eb8fcf0250030321921a65cd410dec7ae43bf365ed46d166",
+  "bytes": 96935
+}

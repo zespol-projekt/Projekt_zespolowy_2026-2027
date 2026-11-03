@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jezowe",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:22.770Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jezowe-61792114.json",
+  "sha256": "f3f5512981d281ef606475dfe108aff41235fc77d04a66eea7c8b5f6ce03fbdf",
+  "usable": true,
+  "items": 1
+}

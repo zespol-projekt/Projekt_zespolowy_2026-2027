@@ -1,0 +1,11 @@
+{
+  "key": "3572-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Tolkmicko%2C+Morska+13&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:32.215Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Tolkmicko%2C+Morska+13&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/3572-gugik-osm.json",
+  "sha256": "cc7702953766cf735a68fc84f556703f0558686ac4b2c227a858af48402ad79a",
+  "bytes": 618
+}

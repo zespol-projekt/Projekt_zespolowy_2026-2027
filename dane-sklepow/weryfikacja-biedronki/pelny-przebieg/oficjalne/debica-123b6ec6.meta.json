@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=debica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:37.769Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/debica-123b6ec6.json",
+  "sha256": "f748f4b5fab003cd131f51de49a28c6a2fb266e4ccbc98ae73cc9faf4d07d401",
+  "usable": true,
+  "items": 6
+}

@@ -1,0 +1,11 @@
+{
+  "key": "2390-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gda%C5%84sk%2C+Prezydenta+Lecha+Kaczy%C5%84skiego+5&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:26.600Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gda%C5%84sk%2C+Prezydenta+Lecha+Kaczy%C5%84skiego+5&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/2390-gugik-osm.json",
+  "sha256": "8dde1865a8f531f5f045495aa361ec2527efca584f5384cf9b7f3b815d553fb5",
+  "bytes": 196
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kraczkowa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:48.384Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kraczkowa-5e50975c.json",
+  "sha256": "0e48cf20ebd3f8537758ec252d33178b29a3106ad9ce006895fb24b5ff60118c",
+  "usable": true,
+  "items": 1
+}

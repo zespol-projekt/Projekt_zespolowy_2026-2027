@@ -1,49 +1,75 @@
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { Link } from "expo-router";
+import { useState } from "react";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+
+const CARD_GAP = 12;
+const MIN_CARD_WIDTH = 144;
 
 const shortcuts = [
   {
     title: "Listy zakupów",
     description: "Planuj zakupy w jednym miejscu",
-    action: "Stwórz nową",
+    action: "Otwórz koszyk",
+    href: "/cart",
   },
   {
     title: "Ulubione",
     description: "Produkty, które lubisz",
     action: "Zobacz ulubione",
+    href: "/favorites",
   },
   {
     title: "Sklepy i mapa",
     description: "Znajdź sklep w okolicy",
     action: "Zobacz sklepy",
+    href: "/stores",
   },
   {
     title: "Gazetki i promocje",
     description: "Sprawdź aktualne produkty",
     action: "Przeglądaj",
+    href: "/products",
   },
 ] as const;
 
 export default function Index() {
+  const [gridWidth, setGridWidth] = useState(0);
+  const cardWidth =
+    gridWidth >= MIN_CARD_WIDTH * 2 + CARD_GAP
+      ? (gridWidth - CARD_GAP) / 2
+      : "100%";
+
   return (
     <ScrollView
       style={styles.screen}
       contentContainerStyle={styles.content}
       showsVerticalScrollIndicator={false}
     >
-      <View style={styles.shortcutGrid}>
+      <View
+        style={styles.shortcutGrid}
+        onLayout={(event) => setGridWidth(event.nativeEvent.layout.width)}
+      >
         {shortcuts.map((shortcut) => (
-          <View
+          <Link
             key={shortcut.title}
-            style={styles.shortcut}
+            href={shortcut.href}
+            style={[styles.shortcut, { width: cardWidth }]}
+            asChild
           >
-            <Text style={styles.shortcutTitle}>{shortcut.title}</Text>
-            <Text style={styles.shortcutDescription}>
-              {shortcut.description}
-            </Text>
-            <View style={styles.shortcutAction}>
-              <Text style={styles.shortcutActionText}>{shortcut.action}</Text>
-            </View>
-          </View>
+            <Pressable
+              accessibilityRole="link"
+              accessibilityLabel={`${shortcut.title}: ${shortcut.action}`}
+              android_ripple={{ color: "#E5E8E2" }}
+            >
+              <Text style={styles.shortcutTitle}>{shortcut.title}</Text>
+              <Text style={styles.shortcutDescription}>
+                {shortcut.description}
+              </Text>
+              <View style={styles.shortcutAction}>
+                <Text style={styles.shortcutActionText}>{shortcut.action}</Text>
+              </View>
+            </Pressable>
+          </Link>
         ))}
       </View>
 
@@ -59,7 +85,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-    paddingHorizontal: 12,
+    paddingHorizontal: 18,
     paddingTop: 12,
     paddingBottom: 4,
   },
@@ -67,13 +93,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-between",
-    columnGap: 12,
-    rowGap: 12,
-    marginHorizontal: 0,
-    paddingHorizontal: 6,
+    gap: CARD_GAP,
   },
   shortcut: {
-    flexBasis: "47%",
     minHeight: 164,
     justifyContent: "space-between",
     padding: 14,

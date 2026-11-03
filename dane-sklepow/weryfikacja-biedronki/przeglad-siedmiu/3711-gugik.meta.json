@@ -1,0 +1,11 @@
+{
+  "key": "3711-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kr%C3%B3lewiec+100B&exact_number=1",
+  "retrieved_at": "2026-11-02T18:33:07.763Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kr%C3%B3lewiec+100B&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/3711-gugik.json",
+  "sha256": "1334979dbaacc60c9ffeed51a5d063d9c04f77f39fa7292d4f2b670f3324ca76",
+  "bytes": 518
+}

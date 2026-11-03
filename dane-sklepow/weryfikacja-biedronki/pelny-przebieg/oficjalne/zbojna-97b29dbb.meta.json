@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zbojna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:23.629Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zbojna-97b29dbb.json",
+  "sha256": "22eb7956e14c63e7feef2ae407c4f131f219217a55dcbf4fe80906472035a17b",
+  "usable": true,
+  "items": 1
+}

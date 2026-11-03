@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=czaplinek",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:28.490Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/czaplinek-5b3b0a4e.json",
+  "sha256": "ba8c5b341b4df19ca3e12e9c57a2c11a63a505207e3847932528f03c35f2fa9e",
+  "usable": true,
+  "items": 2
+}

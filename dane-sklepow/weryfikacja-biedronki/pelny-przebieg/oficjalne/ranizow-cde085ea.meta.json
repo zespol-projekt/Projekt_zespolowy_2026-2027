@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ranizow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:42.403Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ranizow-cde085ea.json",
+  "sha256": "85c793851906992b6fd58543756a038dc2e8890f82688a9951cc8d491e3784af",
+  "usable": true,
+  "items": 1
+}

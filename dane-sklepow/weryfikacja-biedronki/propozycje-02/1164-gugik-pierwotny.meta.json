@@ -1,0 +1,11 @@
+{
+  "key": "1164-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wroc%C5%82aw%2C+Marcellego+Bacciarellego+56&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:56.235Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wroc%C5%82aw%2C+Marcellego+Bacciarellego+56&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1164-gugik-pierwotny.json",
+  "sha256": "f9aadcf2f0ed13222774fc2fbb437b933d2a432c366836748ab2c77273458591",
+  "bytes": 638
+}

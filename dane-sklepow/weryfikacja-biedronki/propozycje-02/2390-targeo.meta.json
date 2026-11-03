@@ -1,0 +1,11 @@
+{
+  "key": "2390-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-lecha-kaczynskiego-5-gdansk~10441563/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T19:08:05.695Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-lecha-kaczynskiego-5-gdansk~10441563/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-02/2390-targeo.html",
+  "sha256": "e5ec8287a3cf711a3cae2a6b97a79f2a38c5921b7f2d65fd1879b083bf0bef60",
+  "bytes": 43769
+}

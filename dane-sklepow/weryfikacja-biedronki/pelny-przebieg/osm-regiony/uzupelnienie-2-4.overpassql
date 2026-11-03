@@ -1,0 +1,1 @@
+[out:json][timeout:20];(nwr["brand:wikidata"="Q857182"](49.95,19.25,51,21);nwr["brand"="Biedronka"](49.95,19.25,51,21);nwr["shop"]["name"="Biedronka"](49.95,19.25,51,21););out center tags;

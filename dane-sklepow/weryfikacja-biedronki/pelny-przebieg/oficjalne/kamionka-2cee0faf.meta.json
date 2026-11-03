@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kamionka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:26.579Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kamionka-2cee0faf.json",
+  "sha256": "a45459fd0a92909d19e0b8273aa45a08d4363c8620255fcb3688a57464a09535",
+  "usable": true,
+  "items": 1
+}

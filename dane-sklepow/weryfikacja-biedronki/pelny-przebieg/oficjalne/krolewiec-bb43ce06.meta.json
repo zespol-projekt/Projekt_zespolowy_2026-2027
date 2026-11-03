@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krolewiec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:52.916Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/krolewiec-bb43ce06.json",
+  "sha256": "bc4e54c3a21875eb2749469bceb34500f61f63c3abc1ec2db183b5cb109ff1f4",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ciazen",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:25.232Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ciazen-502fab8e.json",
+  "sha256": "5c21e702b35af9f28f624cdaf6614f9b49d208f5a3e1408edb258179d5ed818c",
+  "usable": true,
+  "items": 1
+}

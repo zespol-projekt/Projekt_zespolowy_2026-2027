@@ -1,0 +1,2 @@
+# Zachowaj bajty źródeł i dowodów: ich sumy SHA-256 są częścią kontroli danych.
+dane-sklepow/** -text

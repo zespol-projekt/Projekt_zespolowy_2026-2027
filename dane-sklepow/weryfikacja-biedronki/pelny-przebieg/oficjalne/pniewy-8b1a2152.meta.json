@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pniewy",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:19.587Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pniewy-8b1a2152.json",
+  "sha256": "595e1bfe0f04f6d49cee043efa78d917c5065f4d533c12fc7a1cb034f305f30d",
+  "usable": true,
+  "items": 3
+}

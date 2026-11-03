@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ciche",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:25.775Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ciche-420cf44a.json",
+  "sha256": "6793261f3fda345b28af87cfb8cf10021d06dcd3e240ac6b8ce0282d95894987",
+  "usable": true,
+  "items": 1
+}

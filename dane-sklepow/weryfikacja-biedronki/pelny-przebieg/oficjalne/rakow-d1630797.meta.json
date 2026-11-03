@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rakow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:41.880Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rakow-d1630797.json",
+  "sha256": "911ea7cfdaefaabbee2f40af6599ef54107ac9326d06ef36658a1ca34040a47d",
+  "usable": true,
+  "items": 1
+}

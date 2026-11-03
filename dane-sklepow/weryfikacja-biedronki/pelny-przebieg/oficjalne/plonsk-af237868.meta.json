@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=plonsk",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:19.054Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/plonsk-af237868.json",
+  "sha256": "3034a69a29ac1bacb75a019ebf98283675aadd34f43758db15b44bfca250b004",
+  "usable": true,
+  "items": 6
+}

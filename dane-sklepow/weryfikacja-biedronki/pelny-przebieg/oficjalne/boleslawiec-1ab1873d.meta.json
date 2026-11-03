@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=boleslawiec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:07.071Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/boleslawiec-1ab1873d.json",
+  "sha256": "11dff887c27f96da0cd3266d0b099e4664847131d51f2a6335192c065767ed90",
+  "usable": true,
+  "items": 7
+}

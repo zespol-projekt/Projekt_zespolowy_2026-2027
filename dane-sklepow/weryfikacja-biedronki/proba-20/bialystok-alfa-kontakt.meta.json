@@ -1,0 +1,11 @@
+{
+  "key": "bialystok-alfa-kontakt",
+  "url": "https://www.alfacentrum.com.pl/kontakt",
+  "retrieved_at": "2026-11-02T18:43:41.608Z",
+  "status": 200,
+  "final_url": "https://www.alfacentrum.com.pl/kontakt",
+  "content_type": "text/html; charset=utf-8",
+  "file": "weryfikacja-biedronki/proba-20/bialystok-alfa-kontakt.html",
+  "sha256": "af2bf311c29d083f9efdd373447c9df0a18bad2079fdb85b1b2fadafbd43802c",
+  "bytes": 127201
+}

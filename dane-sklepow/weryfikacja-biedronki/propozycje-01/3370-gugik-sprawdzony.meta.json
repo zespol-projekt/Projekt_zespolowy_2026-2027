@@ -1,0 +1,11 @@
+{
+  "key": "3370-gugik-sprawdzony",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Stopnica%2C+Dr+Piotrowskiego+27&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:55:28.351Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Stopnica%2C+Dr+Piotrowskiego+27&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/3370-gugik-sprawdzony.json",
+  "sha256": "2d6eee6e3e5a3218da6b6a8f3e3d11131034a5d07fc9f6e6c794bddeea46b7b2",
+  "bytes": 598
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=chechlo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:20.305Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/chechlo-7dbc7490.json",
+  "sha256": "5dc0c28685b80059b12dcda4c820126436210f9dc7f4460134ea3f400c3dde5c",
+  "usable": true,
+  "items": 1
+}

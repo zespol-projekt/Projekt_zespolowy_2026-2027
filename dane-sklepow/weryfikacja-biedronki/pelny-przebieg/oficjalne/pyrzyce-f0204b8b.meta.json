@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pyrzyce",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:33.653Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pyrzyce-f0204b8b.json",
+  "sha256": "c12ee0dcbbb1aa494144c949cf13d72fcb6c86e2baf06ff3e505b8bd26cb424e",
+  "usable": true,
+  "items": 2
+}

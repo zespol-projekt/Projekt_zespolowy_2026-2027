@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=redzikowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:44.104Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/redzikowo-9afc3ab5.json",
+  "sha256": "542162464a24c4fd01bb797961c64b75945e85c880f35b4acc3ddc83056b188f",
+  "usable": true,
+  "items": 1
+}

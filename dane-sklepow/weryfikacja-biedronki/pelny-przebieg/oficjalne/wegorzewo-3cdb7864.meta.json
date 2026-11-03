@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wegorzewo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:58.090Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wegorzewo-3cdb7864.json",
+  "sha256": "d9d1cb2312ea8ec1dc90b0d19d07b7d69ea29de7a06cd6f6402a9b0d9e43ecec",
+  "usable": true,
+  "items": 2
+}

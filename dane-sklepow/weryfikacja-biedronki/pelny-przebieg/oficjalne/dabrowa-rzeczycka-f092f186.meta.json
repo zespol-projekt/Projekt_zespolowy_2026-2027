@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dabrowa-rzeczycka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:34.002Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dabrowa-rzeczycka-f092f186.json",
+  "sha256": "28c9808ecc3ef58b351015a3ab2bcaa799e4dcff2f7cee4d9cd5ef95017b79b5",
+  "usable": true,
+  "items": 1
+}

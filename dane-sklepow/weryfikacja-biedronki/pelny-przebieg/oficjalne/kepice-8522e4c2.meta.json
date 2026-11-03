@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kepice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:31.064Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kepice-8522e4c2.json",
+  "sha256": "d550a8e7fb62892b499314edc73c65c7dae81259014e89ca15e8b9eec5760c9e",
+  "usable": true,
+  "items": 1
+}

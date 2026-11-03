@@ -1,0 +1,11 @@
+{
+  "key": "3397-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zaklik%C3%B3w%2C+Lubelska+39&exact_number=1",
+  "retrieved_at": "2026-11-02T18:33:05.319Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zaklik%C3%B3w%2C+Lubelska+39&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/3397-gugik.json",
+  "sha256": "d319d3b3fad34c64b2428ad1b23c713fe784c1a95f0a4e90d717d0777e66a384",
+  "bytes": 567
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=brzeg",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:13.721Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/brzeg-ffd7ee79.json",
+  "sha256": "a6377a06e4bed0cfc5c02f9f2874105e7d71f569d86602b207d75fe5296c6be7",
+  "usable": true,
+  "items": 4
+}

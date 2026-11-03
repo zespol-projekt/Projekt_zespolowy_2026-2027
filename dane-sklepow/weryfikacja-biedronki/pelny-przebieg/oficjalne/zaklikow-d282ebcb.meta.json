@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zaklikow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:16.101Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zaklikow-d282ebcb.json",
+  "sha256": "652ba05c4d9d7dafbcb0c5f601dcbd53b3564025ddef53a15930f37fb719f4ab",
+  "usable": true,
+  "items": 1
+}

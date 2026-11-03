@@ -1,0 +1,11 @@
+{
+  "key": "3608-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Drawno%2C+Kolejowa+2A&exact_number=1",
+  "retrieved_at": "2026-11-02T18:33:06.937Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Drawno%2C+Kolejowa+2A&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/3608-gugik.json",
+  "sha256": "3df774568bc331d4e8f5d6d65a402677d4b921719f96ef0d20efb1039503ea74",
+  "bytes": 565
+}

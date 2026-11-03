@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=swiebodzin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:33.549Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/swiebodzin-6a4d455a.json",
+  "sha256": "b6943beb51d4403d0e481c951537d640a54b7ab903be96103a7ee7661e3feba6",
+  "usable": true,
+  "items": 4
+}

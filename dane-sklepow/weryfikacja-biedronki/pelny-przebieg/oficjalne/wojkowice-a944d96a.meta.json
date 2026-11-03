@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wojkowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:08.919Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wojkowice-a944d96a.json",
+  "sha256": "39a753c853f455272b89eb10390099525419e01395e9880915135ffc820e4feb",
+  "usable": true,
+  "items": 2
+}

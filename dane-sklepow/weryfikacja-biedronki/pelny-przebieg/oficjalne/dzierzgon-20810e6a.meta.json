@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dzierzgon",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:44.916Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dzierzgon-20810e6a.json",
+  "sha256": "697e0fa92b7fd0626e3c1a77073e63adc8d0a4452077fce0428a331e2df7e890",
+  "usable": true,
+  "items": 2
+}

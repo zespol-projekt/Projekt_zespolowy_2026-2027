@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bukowiec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:15.939Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bukowiec-e8f50280.json",
+  "sha256": "ff545609c7e03216ced2517362037ff4302773b2505243704fe5259176e154fd",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rogozno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:47.302Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rogozno-aa3f9e07.json",
+  "sha256": "563707fda556bb159d3244940ff3d7c40ff6db3aa987e44c58a2092986463686",
+  "usable": true,
+  "items": 2
+}

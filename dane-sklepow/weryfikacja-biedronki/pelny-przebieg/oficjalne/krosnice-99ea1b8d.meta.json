@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krosnice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:53.453Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/krosnice-99ea1b8d.json",
+  "sha256": "5357c983c0f6cf04b3ebffdcda14cf81b7c82f56b0096448973b5ddb424973f8",
+  "usable": true,
+  "items": 1
+}

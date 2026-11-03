@@ -1,0 +1,7 @@
+{
+  "source_file": "weryfikacja-biedronki/propozycje-01/oficjalna-lista-adresow.pdf",
+  "source_sha256": "d3c1b13ef16d88c8133aef1851178a76b0d7934e37e63dfb673f3ac31a01d055",
+  "text_file": "weryfikacja-biedronki/propozycje-01/oficjalna-lista-adresow.txt",
+  "text_sha256": "ab51375e683d68e5b42b2c86e6ee5b44489dfc1de13abf4089c12230ed3b9f62",
+  "method": "pypdf.PdfReader, extract_text, wszystkie strony; wyciąg zapisany przed decyzjami."
+}

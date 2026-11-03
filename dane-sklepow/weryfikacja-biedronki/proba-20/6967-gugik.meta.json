@@ -1,0 +1,11 @@
+{
+  "key": "6967-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bychawa%2C+Henryka+Sienkiewicza+94b&exact_number=1",
+  "retrieved_at": "2026-11-02T18:41:31.946Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bychawa%2C+Henryka+Sienkiewicza+94b&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/6967-gugik.json",
+  "sha256": "eb87d03ff98e6251cb0bd74f9d61251ff50e68408033eef61fd25deb8781ca81",
+  "bytes": 562
+}

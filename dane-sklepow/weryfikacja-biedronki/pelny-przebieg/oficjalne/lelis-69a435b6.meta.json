@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lelis",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:09.706Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lelis-69a435b6.json",
+  "sha256": "be339e942210e244fd1542004fc96e9e8f1f60298c6288cf3807b263afde2988",
+  "usable": true,
+  "items": 1
+}

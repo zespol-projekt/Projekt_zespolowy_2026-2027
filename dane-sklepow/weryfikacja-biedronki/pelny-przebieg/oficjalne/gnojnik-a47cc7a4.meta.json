@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gnojnik",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:57.014Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gnojnik-a47cc7a4.json",
+  "sha256": "3e2498f4493cfb7fdc93d1b057d1fe0e6fb8dba0f7b4c0891be462e70791c6bf",
+  "usable": true,
+  "items": 1
+}

@@ -1,4 +1,4 @@
-import { router } from "expo-router";
+import { Link, router, usePathname } from "expo-router";
 import { Tabs } from "expo-router/js-tabs";
 import { StatusBar } from "expo-status-bar";
 import { SymbolView } from "expo-symbols";
@@ -16,18 +16,25 @@ import BottomBar from "@/components/navigation/BottomBar";
 
 export default function RootLayout() {
   const isWeb = Platform.OS === "web";
+  const isStores = usePathname().startsWith('/stores');
 
   return (
     <SafeAreaView style={styles.screen}>
       <StatusBar style="dark" />
 
       <View style={isWeb ? styles.webLayout : styles.mobileLayout}>
-        {isWeb && <View style={styles.webGutter} />}
-
         <View style={isWeb ? styles.webMain : styles.mobileMain}>
           {/* Wspólny nagłówek */}
           <View style={styles.header}>
-            <Text style={styles.logo}>SMARTCART</Text>
+            <Link href="/" asChild>
+              <Pressable
+                accessibilityRole="link"
+                accessibilityLabel="SMARTCART — ekran startowy"
+                style={styles.homeButton}
+              >
+                <Text style={styles.logo}>SMARTCART</Text>
+              </Pressable>
+            </Link>
 
             <Pressable
               style={styles.settingsButton}
@@ -48,7 +55,7 @@ export default function RootLayout() {
           </View>
 
           {/* Wspólne pole wyszukiwania */}
-          <View style={styles.searchBar}>
+          {!isStores && <View style={styles.searchBar}>
             <SymbolView
               name={{
                 ios: "magnifyingglass",
@@ -69,7 +76,7 @@ export default function RootLayout() {
               returnKeyType="search"
               underlineColorAndroid="transparent"
             />
-          </View>
+          </View>}
 
           {/* Ekrany i ich wspólny dolny pasek */}
           <View style={styles.content}>
@@ -91,8 +98,6 @@ export default function RootLayout() {
             </Tabs>
           </View>
         </View>
-
-        {isWeb && <View style={styles.webGutter} />}
       </View>
     </SafeAreaView>
   );
@@ -105,16 +110,15 @@ const styles = StyleSheet.create({
   },
   webLayout: {
     flex: 1,
-    flexDirection: "row",
+    alignItems: "center",
   },
   mobileLayout: {
     flex: 1,
   },
-  webGutter: {
-    flex: 2,
-  },
   webMain: {
-    flex: 4,
+    flex: 1,
+    width: "100%",
+    maxWidth: 760,
     paddingVertical: 16,
   },
   mobileMain: {
@@ -132,6 +136,11 @@ const styles = StyleSheet.create({
     fontWeight: "800",
     letterSpacing: 0.5,
     color: "#252B30",
+  },
+  homeButton: {
+    minHeight: 44,
+    justifyContent: "center",
+    flexShrink: 1,
   },
   settingsButton: {
     width: 44,

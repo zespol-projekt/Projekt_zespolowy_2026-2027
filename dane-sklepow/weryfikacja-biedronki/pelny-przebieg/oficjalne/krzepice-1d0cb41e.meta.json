@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krzepice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:56.186Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/krzepice-1d0cb41e.json",
+  "sha256": "118ef3cb6c27227d14728afc663160fb0e61d191435b8a4360d964fdcd7b4f06",
+  "usable": true,
+  "items": 2
+}

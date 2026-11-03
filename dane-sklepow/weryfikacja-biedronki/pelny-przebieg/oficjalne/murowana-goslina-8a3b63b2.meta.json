@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=murowana-goslina",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:45.168Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/murowana-goslina-8a3b63b2.json",
+  "sha256": "fb438216cf5013029f7d7812df04d770621707a1b0a55d20f7de47253569e7bb",
+  "usable": true,
+  "items": 2
+}

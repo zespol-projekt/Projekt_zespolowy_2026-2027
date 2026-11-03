@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=tuchow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:48.280Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/tuchow-85ecb7b7.json",
+  "sha256": "be6312437706422675db8661ec84105b0c130d54a4336f0a8c69544d7713a733",
+  "usable": true,
+  "items": 2
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kartuzy",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:29.354Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kartuzy-8b35cf93.json",
+  "sha256": "82e1a415619f1fe05dafbef4f9b892b503c284ef021d9c4cb033407306da69b1",
+  "usable": true,
+  "items": 3
+}

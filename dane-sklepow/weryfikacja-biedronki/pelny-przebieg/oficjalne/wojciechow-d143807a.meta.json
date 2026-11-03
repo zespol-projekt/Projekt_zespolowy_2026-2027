@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wojciechow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:08.385Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wojciechow-d143807a.json",
+  "sha256": "fb28620c24efdde234f24f07131510e1f41f0bc41c816fb25cbe4b170bbb9834",
+  "usable": true,
+  "items": 1
+}

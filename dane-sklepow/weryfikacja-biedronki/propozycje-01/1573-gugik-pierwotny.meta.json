@@ -1,0 +1,11 @@
+{
+  "key": "1573-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Olkusz%2C+Marii+Curie-Sk%C5%82odowskiej+45&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:44.585Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Olkusz%2C+Marii+Curie-Sk%C5%82odowskiej+45&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1573-gugik-pierwotny.json",
+  "sha256": "4a826e0307361ffc0ef549952f96e0407325fc3628bd4b14557a6836d394462a",
+  "bytes": 602
+}

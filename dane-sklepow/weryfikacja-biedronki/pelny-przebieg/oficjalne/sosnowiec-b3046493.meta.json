@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sosnowiec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:15.427Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sosnowiec-b3046493.json",
+  "sha256": "1fc67779358218fea7420bb1f8105047c031d137a7c688ec198f5e0cf2b58d0d",
+  "usable": true,
+  "items": 23
+}

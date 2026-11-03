@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ujazd",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:50.968Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ujazd-a63f16ac.json",
+  "sha256": "fbe916c291fab2511b18203b7239ea9cddc67d509a33495d5ca56a577a8911b7",
+  "usable": true,
+  "items": 2
+}

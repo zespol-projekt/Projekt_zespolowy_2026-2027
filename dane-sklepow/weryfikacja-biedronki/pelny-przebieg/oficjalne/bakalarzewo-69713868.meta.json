@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bakalarzewo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:54.460Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bakalarzewo-69713868.json",
+  "sha256": "1cb0033bbd12581117d604a93c708f2f5adb45c275386e6cc3c04272a3134540",
+  "usable": true,
+  "items": 1
+}

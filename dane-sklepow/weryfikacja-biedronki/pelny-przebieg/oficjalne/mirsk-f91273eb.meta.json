@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mirsk",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:37.053Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/mirsk-f91273eb.json",
+  "sha256": "bebee4d67f39662f23403ec27b1b2a97c419cc77cee28968585e2e2a3f1e8e34",
+  "usable": true,
+  "items": 1
+}

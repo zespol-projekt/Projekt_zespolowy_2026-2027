@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rynarzewo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:53.846Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rynarzewo-81d81ce1.json",
+  "sha256": "031dbb937ea50ac654a23853ff882985c0fc2556be60fa901898e19adf94caed",
+  "usable": true,
+  "items": 1
+}

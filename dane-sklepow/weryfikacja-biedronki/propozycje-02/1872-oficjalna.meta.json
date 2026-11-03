@@ -1,0 +1,11 @@
+{
+  "key": "1872-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,1872",
+  "retrieved_at": "2026-11-02T19:05:49.148Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,1872",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-02/1872-oficjalna.html",
+  "sha256": "ae53e29bf9e17f3bbba868b234cb9761056ff37828ffad03df9c68ca5e7cbf91",
+  "bytes": 97043
+}

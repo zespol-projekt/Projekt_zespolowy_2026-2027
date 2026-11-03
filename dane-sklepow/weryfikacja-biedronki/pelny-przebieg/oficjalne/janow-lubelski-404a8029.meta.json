@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=janow-lubelski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:15.012Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/janow-lubelski-404a8029.json",
+  "sha256": "d2b4d5404cace10e7fba535fd8d7ba95efdc406e36f887e3236d1fd91792826b",
+  "usable": true,
+  "items": 3
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=budzow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:15.308Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/budzow-1872bc04.json",
+  "sha256": "bf7b115b9a0b9e740a949136b74fb4303d9a8db19c0032ca468affc3c6b26604",
+  "usable": true,
+  "items": 1
+}

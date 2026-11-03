@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=insko",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:12.328Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/insko-57a4026e.json",
+  "sha256": "5e8b3d7fb5e7282b792c6b0f9f8ced60afd259d1ace7254d54ddee9855699384",
+  "usable": true,
+  "items": 1
+}

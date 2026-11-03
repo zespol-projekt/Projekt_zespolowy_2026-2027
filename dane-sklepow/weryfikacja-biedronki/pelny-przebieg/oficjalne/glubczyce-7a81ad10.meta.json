@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=glubczyce",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:55.448Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/glubczyce-7a81ad10.json",
+  "sha256": "3f95ecffb34cea2c40f03a50dfe32942b09416f3fd05142b38af4e19899099b4",
+  "usable": true,
+  "items": 3
+}

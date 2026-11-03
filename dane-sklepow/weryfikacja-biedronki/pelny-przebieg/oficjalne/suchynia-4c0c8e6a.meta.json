@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=suchynia",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:29.143Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/suchynia-4c0c8e6a.json",
+  "sha256": "63d896997f991dbaaab2f02a2e472be8189f5f182eaf7574c72d197fc1acf909",
+  "usable": true,
+  "items": 1
+}

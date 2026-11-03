@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bielsk-podlaski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:00.515Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bielsk-podlaski-f7c451b5.json",
+  "sha256": "44eed0bb20609e14bf2c1060af554dad51137216bfb546a1ffcfa680aeb0af7e",
+  "usable": true,
+  "items": 4
+}

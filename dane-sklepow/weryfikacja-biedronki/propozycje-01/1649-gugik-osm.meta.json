@@ -1,0 +1,11 @@
+{
+  "key": "1649-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szczuczyn%2C+Jana+Sobieskiego+22&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:17.928Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szczuczyn%2C+Jana+Sobieskiego+22&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1649-gugik-osm.json",
+  "sha256": "d8e1733054d148c7f523702fd31d56e75118ecadc5171f7522567a502408257f",
+  "bytes": 1008
+}

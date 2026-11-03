@@ -1,0 +1,11 @@
+{
+  "key": "2698-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Trzebinia%2C+M%C5%82oszowska+47&exact_number=1",
+  "retrieved_at": "2026-11-02T18:33:04.486Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Trzebinia%2C+M%C5%82oszowska+47&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/2698-gugik.json",
+  "sha256": "d982c64d27c4531551aeb155419c6a27b5c05ab55cec99dbaa7bd199c217d192",
+  "bytes": 197
+}

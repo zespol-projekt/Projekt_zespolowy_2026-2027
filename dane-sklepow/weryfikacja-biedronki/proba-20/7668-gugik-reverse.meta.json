@@ -1,0 +1,11 @@
+{
+  "key": "7668-gugik-reverse",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddressReverse&location=POINT%2823.1662404+51.9098601%29&srid=4326",
+  "retrieved_at": "2026-11-02T18:42:13.897Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddressReverse&location=POINT%2823.1662404+51.9098601%29&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/7668-gugik-reverse.json",
+  "sha256": "e546ecacc611b4ce79c0baad379565b8b8c11358c1afef2dee9c8c23a1d8404a",
+  "bytes": 498
+}

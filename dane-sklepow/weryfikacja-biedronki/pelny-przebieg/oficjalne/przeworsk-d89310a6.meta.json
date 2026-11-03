@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=przeworsk",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:28.315Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/przeworsk-d89310a6.json",
+  "sha256": "d98bbfec971afb4e5638b8a72db3e087b28e9b43cae0cbd4b761a8e6264b5fce",
+  "usable": true,
+  "items": 4
+}

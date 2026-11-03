@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gdynia",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:50.487Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gdynia-adbdb14a.json",
+  "sha256": "6a403cabfca52523e0d90a9486fe3eba475063dc084160c24a176ef64c01c9f7",
+  "usable": true,
+  "items": 29
+}

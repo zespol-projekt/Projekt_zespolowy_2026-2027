@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=oborniki-wielkopolskie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:54.913Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/oborniki-wielkopolskie-69f7d963.json",
+  "sha256": "e6bed8424ae519b4708914052cff5fe89eb05e455087cbf2f1f9464ed6789024",
+  "usable": true,
+  "items": 3
+}

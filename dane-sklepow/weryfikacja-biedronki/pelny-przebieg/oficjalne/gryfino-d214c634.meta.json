@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gryfino",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:08.544Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gryfino-d214c634.json",
+  "sha256": "62f60e2993f6eb0127d0993fb4666c0030d3cd948fed9e0a7ecb60684ed6eecc",
+  "usable": true,
+  "items": 3
+}

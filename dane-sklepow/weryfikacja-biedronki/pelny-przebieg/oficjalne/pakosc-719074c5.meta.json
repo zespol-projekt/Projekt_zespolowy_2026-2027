@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pakosc",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:09.253Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pakosc-719074c5.json",
+  "sha256": "7d2f82ae37dfd3574266204b04f30494d0bde534d26053d3c6408c3c97c5050e",
+  "usable": true,
+  "items": 2
+}

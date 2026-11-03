@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=koszalin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:45.648Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/koszalin-0c20276b.json",
+  "sha256": "9fc6b690ffa06e943ec5f2e11bd2037acb21dbce4ca086a0a5ab388adb43bb37",
+  "usable": true,
+  "items": 16
+}

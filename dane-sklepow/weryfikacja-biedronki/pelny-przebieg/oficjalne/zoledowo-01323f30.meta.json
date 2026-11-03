@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zoledowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:30.796Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zoledowo-01323f30.json",
+  "sha256": "80254dd55680dda909d3a7a44bb50d33fcda6964d836d4ee71d8a1e6aa75d820",
+  "usable": true,
+  "items": 1
+}

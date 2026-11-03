@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=debowiec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:39.939Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/debowiec-b997afab.json",
+  "sha256": "ffeb8ae63594556492b0db04529e86106eb6dff2a11731da025229076aaa6a1f",
+  "usable": true,
+  "items": 2
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dawidy-bankowe",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:37.234Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dawidy-bankowe-fcf73fde.json",
+  "sha256": "0f0d7ab8be5e5992d4f3a1dbaca5d52ca2db772d7bbbc27df2a6770a388f488f",
+  "usable": true,
+  "items": 1
+}

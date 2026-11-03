@@ -1,0 +1,11 @@
+{
+  "key": "1573-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Olkusz%2C+Marii+Sk%C5%82odowskiej-Curie+45&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:45.484Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Olkusz%2C+Marii+Sk%C5%82odowskiej-Curie+45&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1573-gugik-osm.json",
+  "sha256": "5d6158584c69d490b92f35a852efae476962134c67598ad33c1e23a1b45aba1f",
+  "bytes": 602
+}

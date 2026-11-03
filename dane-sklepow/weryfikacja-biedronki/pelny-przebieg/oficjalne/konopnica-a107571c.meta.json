@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=konopnica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:41.898Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/konopnica-a107571c.json",
+  "sha256": "e61f2b71077d2aeee02cac9683a0623767d672ff5743693f8a123e12a40836c6",
+  "usable": true,
+  "items": 1
+}

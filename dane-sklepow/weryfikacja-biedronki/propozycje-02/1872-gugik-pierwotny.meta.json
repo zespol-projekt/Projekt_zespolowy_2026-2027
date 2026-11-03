@@ -1,0 +1,11 @@
+{
+  "key": "1872-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Starachowice%2C+al.+Jana+Paw%C5%82a+II+20&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:51.629Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Starachowice%2C+al.+Jana+Paw%C5%82a+II+20&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1872-gugik-pierwotny.json",
+  "sha256": "83de83f42413e25fd5278d73cd16b4bfdc511d177f9f45f3de3ef2b79a91db61",
+  "bytes": 658
+}

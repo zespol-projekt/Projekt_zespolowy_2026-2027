@@ -1,0 +1,11 @@
+{
+  "key": "2220-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/396748904/full.json",
+  "retrieved_at": "2026-11-02T18:53:23.200Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/396748904/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-01/2220-osm.json",
+  "sha256": "6567d4c69249756c6c715d4271b9f2b51e178f920fba0c13871a02e02b273ef8",
+  "bytes": 1788
+}

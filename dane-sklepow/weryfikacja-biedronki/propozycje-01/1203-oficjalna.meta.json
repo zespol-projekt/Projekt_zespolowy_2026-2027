@@ -1,0 +1,11 @@
+{
+  "key": "1203-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,1203",
+  "retrieved_at": "2026-11-02T18:54:04.968Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,1203",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-01/1203-oficjalna.html",
+  "sha256": "a411cdb1dc2cef6879ca78f4adf868c7d1c98ead3784d1162402aac32c0ec22d",
+  "bytes": 97028
+}

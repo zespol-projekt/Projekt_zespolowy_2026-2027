@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dzialoszyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:44.299Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dzialoszyn-6f531921.json",
+  "sha256": "952e1399a1c8b13ad8b7130dd5c4090f34f4bd1e8e7c501fb7ade3717726d690",
+  "usable": true,
+  "items": 1
+}

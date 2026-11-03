@@ -1,0 +1,11 @@
+{
+  "key": "3733-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,3733",
+  "retrieved_at": "2026-11-02T18:41:49.813Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,3733",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/3733-oficjalna.html",
+  "sha256": "e17788b9b8baccafdb63be7b2d93687a0a0e724940181fd65ed115b42cdffd72",
+  "bytes": 97091
+}

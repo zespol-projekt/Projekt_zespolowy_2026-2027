@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ciechanow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:26.299Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ciechanow-7c74b172.json",
+  "sha256": "457aeb28bef1a47cd65158073b7a497694579c8413d365e554f3b0d3e46efc25",
+  "usable": true,
+  "items": 5
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bytom",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:18.098Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bytom-18b0cb37.json",
+  "sha256": "e0724668a7db7d4dfb7c6977ac701129ffed78f0708ae05c56b204f71ad6e9bf",
+  "usable": true,
+  "items": 16
+}

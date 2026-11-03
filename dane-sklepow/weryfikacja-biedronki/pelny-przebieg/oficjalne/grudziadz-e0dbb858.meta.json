@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=grudziadz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:07.438Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/grudziadz-e0dbb858.json",
+  "sha256": "5cc7a75998995790fa7272bc80b89c5ba13d72c1d2e264a500d6a1191c3aab5f",
+  "usable": true,
+  "items": 14
+}

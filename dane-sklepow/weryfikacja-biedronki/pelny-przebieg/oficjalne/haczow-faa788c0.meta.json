@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=haczow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:09.621Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/haczow-faa788c0.json",
+  "sha256": "429216eb7884997a231d5fd8e5f5302113f667bd0ed39edd26cbc4139b612d2c",
+  "usable": true,
+  "items": 1
+}

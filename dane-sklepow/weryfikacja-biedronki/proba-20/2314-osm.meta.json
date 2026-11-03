@@ -1,0 +1,11 @@
+{
+  "key": "2314-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/100351421/full.json",
+  "retrieved_at": "2026-11-02T18:42:18.576Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/100351421/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/proba-20/2314-osm.json",
+  "sha256": "bd67209f7281a55f6e2e314860b8ba6d4a67b49115b5782525c10a5848d34e7a",
+  "bytes": 3095
+}

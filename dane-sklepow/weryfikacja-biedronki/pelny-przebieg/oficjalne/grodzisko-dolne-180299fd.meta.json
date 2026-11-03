@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=grodzisko-dolne",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:06.815Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/grodzisko-dolne-180299fd.json",
+  "sha256": "3142d637c00c8215f2d73b62cf053443fb6a640f436e62e62ce65f008aa39068",
+  "usable": true,
+  "items": 1
+}

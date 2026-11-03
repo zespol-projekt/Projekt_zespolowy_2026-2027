@@ -1,0 +1,11 @@
+{
+  "key": "3711-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/1454183471/full.json",
+  "retrieved_at": "2026-11-02T18:31:11.671Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/1454183471/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/3711-osm.json",
+  "sha256": "58f4db23b587284fd6a700a7d654cc39269184c61e9ce59dd17741e4adc869ff",
+  "bytes": 3053
+}

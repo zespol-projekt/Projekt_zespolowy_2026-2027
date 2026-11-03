@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=garwolin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:49.355Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/garwolin-130ac080.json",
+  "sha256": "6e537384582399c9baceb409231de6c7884cc12100830923ef293e2e3208cf3d",
+  "usable": true,
+  "items": 4
+}

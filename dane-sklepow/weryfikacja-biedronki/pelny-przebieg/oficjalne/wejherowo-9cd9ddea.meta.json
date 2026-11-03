@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wejherowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:59.146Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wejherowo-9cd9ddea.json",
+  "sha256": "77832c9c36047407eec36ad3e82074692fac2c9398088c1661515389bf2dda56",
+  "usable": true,
+  "items": 7
+}

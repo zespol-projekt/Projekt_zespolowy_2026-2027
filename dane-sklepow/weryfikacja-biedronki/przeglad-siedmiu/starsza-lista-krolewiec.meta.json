@@ -1,0 +1,11 @@
+{
+  "key": "starsza-lista-krolewiec",
+  "url": "https://staticmoja.biedronka.pl/bundles/loyalty/rules/regulamin-biblioteka-biedronki-01-01-2023.pdf",
+  "retrieved_at": "2026-11-02T18:31:21.918Z",
+  "status": 200,
+  "final_url": "https://staticmoja.biedronka.pl/bundles/loyalty/rules/regulamin-biblioteka-biedronki-01-01-2023.pdf",
+  "content_type": "application/pdf",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/starsza-lista-krolewiec.pdf",
+  "sha256": "8be8cc8fb0da46099420a9517497919bc29f52b745b9c8e4d08ff9d6bd2299a6",
+  "bytes": 728452
+}

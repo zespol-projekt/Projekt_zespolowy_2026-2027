@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=niemcz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:47.871Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/niemcz-7ab78860.json",
+  "sha256": "4c21a119f3452b9593d6f371fe2615b9fd9e812b674803c2b42c3b4421321466",
+  "usable": true,
+  "items": 1
+}

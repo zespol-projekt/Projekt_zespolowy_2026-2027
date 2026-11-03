@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=frombork",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:46.640Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/frombork-e9cd447f.json",
+  "sha256": "fad42c8a1784bc6701dd54154e2543b5074dbfd3870f3d68c545b2a6ae428200",
+  "usable": true,
+  "items": 1
+}

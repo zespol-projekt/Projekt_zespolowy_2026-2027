@@ -1,0 +1,409 @@
+{
+  "generated_at": "2026-11-02T18:45:27.480Z",
+  "population": 181,
+  "method": "Próba celowa warstwowa: wszystkie 5 trudniejszych dopasowań nazw ulic, minimum 3 prefiksy, 5 węzłów OSM i 3 adresy bez ulicy; następnie maksymalizacja minimalnej odległości od wybranych punktów. Remisy według ID. Dobór nie zależy od wyników sprawdzenia.",
+  "limitation": "Próba nie jest losowa i nie służy do szacowania odsetka błędów w populacji 181 sklepów.",
+  "count": 20,
+  "selected": [
+    {
+      "id": "biedronka:1308",
+      "address": {
+        "formatted": "Gen. Kutrzeby 1, 62-095 Murowana Goślina",
+        "street_address": "Gen. Kutrzeby 1",
+        "street": "Gen. Kutrzeby",
+        "house_number": "1",
+        "city": "Murowana Goślina",
+        "postal_code": "62-095",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 52.5671518,
+        "longitude": 16.9939013
+      },
+      "rule": "official_store_id_and_compatible_street",
+      "kind": "overpass_center",
+      "reason": "Wszystkie przypadki wariantu nazwy ulicy potwierdzonego ID sklepu.",
+      "osm": "https://www.openstreetmap.org/way/745554341"
+    },
+    {
+      "id": "biedronka:2872",
+      "address": {
+        "formatted": "M. Faradaya 21, 42-202 Częstochowa",
+        "street_address": "M. Faradaya 21",
+        "street": "M. Faradaya",
+        "house_number": "21",
+        "city": "Częstochowa",
+        "postal_code": "42-202",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 50.8109431,
+        "longitude": 19.1411359
+      },
+      "rule": "official_store_id_and_compatible_street",
+      "kind": "overpass_center",
+      "reason": "Wszystkie przypadki wariantu nazwy ulicy potwierdzonego ID sklepu.",
+      "osm": "https://www.openstreetmap.org/way/968196091"
+    },
+    {
+      "id": "biedronka:2982",
+      "address": {
+        "formatted": "Droszyńskiego 28a, 80-381 Gdańsk",
+        "street_address": "Droszyńskiego 28a",
+        "street": "Droszyńskiego",
+        "house_number": "28a",
+        "city": "Gdańsk",
+        "postal_code": "80-381",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 54.4103436,
+        "longitude": 18.573008
+      },
+      "rule": "official_store_id_and_compatible_street",
+      "kind": "node",
+      "reason": "Wszystkie przypadki wariantu nazwy ulicy potwierdzonego ID sklepu.",
+      "osm": "https://www.openstreetmap.org/node/5286094196"
+    },
+    {
+      "id": "biedronka:3513",
+      "address": {
+        "formatted": "T. Kościuszki 72a, 37-632 Stary Dzików",
+        "street_address": "T. Kościuszki 72a",
+        "street": "T. Kościuszki",
+        "house_number": "72a",
+        "city": "Stary Dzików",
+        "postal_code": "37-632",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 50.2438193,
+        "longitude": 22.9338183
+      },
+      "rule": "official_store_id_and_compatible_street",
+      "kind": "overpass_center",
+      "reason": "Wszystkie przypadki wariantu nazwy ulicy potwierdzonego ID sklepu.",
+      "osm": "https://www.openstreetmap.org/way/1375378614"
+    },
+    {
+      "id": "biedronka:6967",
+      "address": {
+        "formatted": "Sienkiewicza 94b, 23-100 Bychawa",
+        "street_address": "Sienkiewicza 94b",
+        "street": "Sienkiewicza",
+        "house_number": "94b",
+        "city": "Bychawa",
+        "postal_code": "23-100",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 51.0044336,
+        "longitude": 22.5550928
+      },
+      "rule": "official_store_id_and_compatible_street",
+      "kind": "node",
+      "reason": "Wszystkie przypadki wariantu nazwy ulicy potwierdzonego ID sklepu.",
+      "osm": "https://www.openstreetmap.org/node/10259208393"
+    },
+    {
+      "id": "biedronka:1150",
+      "address": {
+        "formatted": "al. Jana Pawła II 4, 09-530 Gąbin",
+        "street_address": "al. Jana Pawła II 4",
+        "street": "al. Jana Pawła II",
+        "house_number": "4",
+        "city": "Gąbin",
+        "postal_code": "09-530",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 52.3986447,
+        "longitude": 19.7374913
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Adres z prefiksem alei, placu lub osiedla; największy dystans od wybranych.",
+      "osm": "https://www.openstreetmap.org/way/536606518"
+    },
+    {
+      "id": "biedronka:2404",
+      "address": {
+        "formatted": "os. Lecha 9F, 66-235 Torzym",
+        "street_address": "os. Lecha 9F",
+        "street": "os. Lecha",
+        "house_number": "9F",
+        "city": "Torzym",
+        "postal_code": "66-235",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 52.3122122,
+        "longitude": 15.0878166
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Adres z prefiksem alei, placu lub osiedla; największy dystans od wybranych.",
+      "osm": "https://www.openstreetmap.org/way/415486668"
+    },
+    {
+      "id": "biedronka:1365",
+      "address": {
+        "formatted": "Al. Wojska Polskiego 116, 62-800 Kalisz",
+        "street_address": "Al. Wojska Polskiego 116",
+        "street": "Al. Wojska Polskiego",
+        "house_number": "116",
+        "city": "Kalisz",
+        "postal_code": "62-800",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 51.7618325,
+        "longitude": 18.0776722
+      },
+      "rule": "exact_address",
+      "kind": "node",
+      "reason": "Adres z prefiksem alei, placu lub osiedla; największy dystans od wybranych.",
+      "osm": "https://www.openstreetmap.org/node/2464127119"
+    },
+    {
+      "id": "biedronka:6963",
+      "address": {
+        "formatted": "Świętojańska 15, 15-277 Białystok",
+        "street_address": "Świętojańska 15",
+        "street": "Świętojańska",
+        "house_number": "15",
+        "city": "Białystok",
+        "postal_code": "15-277",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 53.1244503,
+        "longitude": 23.1677737
+      },
+      "rule": "exact_address",
+      "kind": "node",
+      "reason": "Punkt OSM zamiast środka obszaru; największy dystans od wybranych.",
+      "osm": "https://www.openstreetmap.org/node/12536968071"
+    },
+    {
+      "id": "biedronka:7815",
+      "address": {
+        "formatted": "Nowotarska 9, 34-500 Zakopane",
+        "street_address": "Nowotarska 9",
+        "street": "Nowotarska",
+        "house_number": "9",
+        "city": "Zakopane",
+        "postal_code": "34-500",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 49.2985728,
+        "longitude": 19.9486462
+      },
+      "rule": "exact_address",
+      "kind": "node",
+      "reason": "Punkt OSM zamiast środka obszaru; największy dystans od wybranych.",
+      "osm": "https://www.openstreetmap.org/node/13456804467"
+    },
+    {
+      "id": "biedronka:3733",
+      "address": {
+        "formatted": "Dębowiec 826, 38-220 Dębowiec",
+        "street_address": "Dębowiec 826",
+        "street": "Dębowiec",
+        "house_number": "826",
+        "city": "Dębowiec",
+        "postal_code": "38-220",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 49.6998981,
+        "longitude": 21.4640053
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Numeracja miejscowości bez odrębnej ulicy; największy dystans od wybranych.",
+      "osm": "https://www.openstreetmap.org/way/1078991153"
+    },
+    {
+      "id": "biedronka:3378",
+      "address": {
+        "formatted": "Obryte 5b, 07-215 Obryte",
+        "street_address": "Obryte 5b",
+        "street": "Obryte",
+        "house_number": "5b",
+        "city": "Obryte",
+        "postal_code": "07-215",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 52.7151092,
+        "longitude": 21.2355862
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Numeracja miejscowości bez odrębnej ulicy; największy dystans od wybranych.",
+      "osm": "https://www.openstreetmap.org/way/888619925"
+    },
+    {
+      "id": "biedronka:3668",
+      "address": {
+        "formatted": "Michałowice 143, 49-314 Michałowice",
+        "street_address": "Michałowice 143",
+        "street": "Michałowice",
+        "house_number": "143",
+        "city": "Michałowice",
+        "postal_code": "49-314",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 50.885739,
+        "longitude": 17.4789466
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Numeracja miejscowości bez odrębnej ulicy; największy dystans od wybranych.",
+      "osm": "https://www.openstreetmap.org/way/984872707"
+    },
+    {
+      "id": "biedronka:3363",
+      "address": {
+        "formatted": "Topolowa 2, 72-344 Rewal",
+        "street_address": "Topolowa 2",
+        "street": "Topolowa",
+        "house_number": "2",
+        "city": "Rewal",
+        "postal_code": "72-344",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 54.0796683,
+        "longitude": 15.0327115
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Uzupełnienie pokrycia geograficznego: największy dystans od już wybranych.",
+      "osm": "https://www.openstreetmap.org/way/711990329"
+    },
+    {
+      "id": "biedronka:3102",
+      "address": {
+        "formatted": "Armii Krajowej 3a, 11-600 Węgorzewo",
+        "street_address": "Armii Krajowej 3a",
+        "street": "Armii Krajowej",
+        "house_number": "3a",
+        "city": "Węgorzewo",
+        "postal_code": "11-600",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 54.2165475,
+        "longitude": 21.735902
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Uzupełnienie pokrycia geograficznego: największy dystans od już wybranych.",
+      "osm": "https://www.openstreetmap.org/way/729860378"
+    },
+    {
+      "id": "biedronka:1242",
+      "address": {
+        "formatted": "Konstytucji 3 Maja 5, 58-540 Karpacz",
+        "street_address": "Konstytucji 3 Maja 5",
+        "street": "Konstytucji 3 Maja",
+        "house_number": "5",
+        "city": "Karpacz",
+        "postal_code": "58-540",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 50.7814409,
+        "longitude": 15.7636357
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Uzupełnienie pokrycia geograficznego: największy dystans od już wybranych.",
+      "osm": "https://www.openstreetmap.org/way/230576951"
+    },
+    {
+      "id": "biedronka:7438",
+      "address": {
+        "formatted": "Krakowska 75, 26-500 Szydłowiec",
+        "street_address": "Krakowska 75",
+        "street": "Krakowska",
+        "house_number": "75",
+        "city": "Szydłowiec",
+        "postal_code": "26-500",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 51.2346962,
+        "longitude": 20.8720188
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Uzupełnienie pokrycia geograficznego: największy dystans od już wybranych.",
+      "osm": "https://www.openstreetmap.org/way/1245100483"
+    },
+    {
+      "id": "biedronka:7668",
+      "address": {
+        "formatted": "Spółdzielcza 11, 21-532 Łomazy",
+        "street_address": "Spółdzielcza 11",
+        "street": "Spółdzielcza",
+        "house_number": "11",
+        "city": "Łomazy",
+        "postal_code": "21-532",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 51.9098601,
+        "longitude": 23.1662404
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Uzupełnienie pokrycia geograficznego: największy dystans od już wybranych.",
+      "osm": "https://www.openstreetmap.org/way/1327359108"
+    },
+    {
+      "id": "biedronka:6953",
+      "address": {
+        "formatted": "Warszawska 40D, 87-148 Łysomice",
+        "street_address": "Warszawska 40D",
+        "street": "Warszawska",
+        "house_number": "40D",
+        "city": "Łysomice",
+        "postal_code": "87-148",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 53.0864849,
+        "longitude": 18.6298653
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Uzupełnienie pokrycia geograficznego: największy dystans od już wybranych.",
+      "osm": "https://www.openstreetmap.org/way/1156052940"
+    },
+    {
+      "id": "biedronka:2314",
+      "address": {
+        "formatted": "Jana III Sobieskiego 5, 76-200 Słupsk",
+        "street_address": "Jana III Sobieskiego 5",
+        "street": "Jana III Sobieskiego",
+        "house_number": "5",
+        "city": "Słupsk",
+        "postal_code": "76-200",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 54.4672046,
+        "longitude": 17.0104788
+      },
+      "rule": "exact_address",
+      "kind": "overpass_center",
+      "reason": "Uzupełnienie pokrycia geograficznego: największy dystans od już wybranych.",
+      "osm": "https://www.openstreetmap.org/way/100351421"
+    }
+  ]
+}

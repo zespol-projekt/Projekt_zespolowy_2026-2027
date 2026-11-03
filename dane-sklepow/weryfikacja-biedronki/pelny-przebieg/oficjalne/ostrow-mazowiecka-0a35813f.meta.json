@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ostrow-mazowiecka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:05.953Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ostrow-mazowiecka-0a35813f.json",
+  "sha256": "96ec6d84de1d2983b904bc73e49ca7ad2ed79b18d44d7957a7013782d65f33ff",
+  "usable": true,
+  "items": 4
+}

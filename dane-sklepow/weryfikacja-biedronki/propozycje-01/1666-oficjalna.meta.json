@@ -1,0 +1,11 @@
+{
+  "key": "1666-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,1666",
+  "retrieved_at": "2026-11-02T18:54:18.985Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,1666",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-01/1666-oficjalna.html",
+  "sha256": "7cb0b3361e13a9f91c00372865152d2c146399c44e6ffa2dcfa1b405470522d0",
+  "bytes": 97124
+}

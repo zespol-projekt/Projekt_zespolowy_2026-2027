@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lazy",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:05.953Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lazy-788938dd.json",
+  "sha256": "a2027b2ba76fc364f7286e55be997a2e4e5842d55fac51ed1e1232abd23a8a5b",
+  "usable": true,
+  "items": 3
+}

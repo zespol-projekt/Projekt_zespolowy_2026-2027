@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jasieniec-ilzecki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:16.720Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jasieniec-ilzecki-b29323ac.json",
+  "sha256": "e772a99c6ff73b1d7049a1a03c39d7691876ad1c4fe1ce8fc1a864ec5a112133",
+  "usable": true,
+  "items": 1
+}

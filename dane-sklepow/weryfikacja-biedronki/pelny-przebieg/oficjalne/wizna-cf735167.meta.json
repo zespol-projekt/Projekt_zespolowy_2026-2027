@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wizna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:06.679Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wizna-cf735167.json",
+  "sha256": "64b492508639df64a6726998991ca2c23420438d423ea4bada5cbe48a79c5694",
+  "usable": true,
+  "items": 1
+}

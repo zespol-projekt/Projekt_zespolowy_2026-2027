@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wladyslawowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:07.319Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wladyslawowo-2ada7c89.json",
+  "sha256": "89f3d490ce8146a44e4c55be5f1733f5c359d3faf53e4fdf0d14fe8da32f66d8",
+  "usable": true,
+  "items": 4
+}

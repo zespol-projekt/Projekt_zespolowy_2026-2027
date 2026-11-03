@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=biala-podlaska",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:57.753Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/biala-podlaska-0b5bb0cd.json",
+  "sha256": "86e4e5b579f89159a3fdca27fcbc60ebf8ef2cb64939fd37bf98711f30136c92",
+  "usable": true,
+  "items": 9
+}

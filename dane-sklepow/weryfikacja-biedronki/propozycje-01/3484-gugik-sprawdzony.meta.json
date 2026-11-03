@@ -1,0 +1,11 @@
+{
+  "key": "3484-gugik-sprawdzony",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Oleszyce%2C+Sapiehy+12&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:55:29.350Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Oleszyce%2C+Sapiehy+12&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/3484-gugik-sprawdzony.json",
+  "sha256": "b1bf23dd4c6cd477458a822a454eff0c1112401ff2b498ebc7f24acbf2a5bc39",
+  "bytes": 584
+}

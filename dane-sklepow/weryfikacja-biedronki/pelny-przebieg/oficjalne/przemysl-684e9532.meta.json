@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=przemysl",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:27.780Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/przemysl-684e9532.json",
+  "sha256": "ae92eca66cbfc999ef392d96edf8d46ef816729a2c90ec8a31f2940004cfd6fd",
+  "usable": true,
+  "items": 5
+}

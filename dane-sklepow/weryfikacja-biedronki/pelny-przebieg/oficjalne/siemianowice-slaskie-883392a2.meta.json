@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=siemianowice-slaskie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:01.965Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/siemianowice-slaskie-883392a2.json",
+  "sha256": "cd5d731043ff965b3c6c575a2efc8761f7c6a1d8336864d535623404175919b2",
+  "usable": true,
+  "items": 8
+}

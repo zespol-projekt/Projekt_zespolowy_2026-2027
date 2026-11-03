@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zagan",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:15.556Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zagan-c3d087a5.json",
+  "sha256": "9663b4134895357d68c35c6506d6bcef5f533e970da9c0753e0358b9b78dad74",
+  "usable": true,
+  "items": 3
+}

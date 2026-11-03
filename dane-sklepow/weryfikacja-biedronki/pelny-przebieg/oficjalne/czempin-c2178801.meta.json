@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=czempin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:31.772Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/czempin-c2178801.json",
+  "sha256": "4fee1fd68a134324693a642a02a46dc3378c331e85c1d877ff66b688e4a92e36",
+  "usable": true,
+  "items": 1
+}

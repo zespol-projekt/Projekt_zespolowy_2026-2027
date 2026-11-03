@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sadki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:56.013Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sadki-f2b6e51e.json",
+  "sha256": "bf17b8f6e56f7d1774a9fa852c6a478dc683b15e1629f354451faf7dd7eda2b1",
+  "usable": true,
+  "items": 1
+}

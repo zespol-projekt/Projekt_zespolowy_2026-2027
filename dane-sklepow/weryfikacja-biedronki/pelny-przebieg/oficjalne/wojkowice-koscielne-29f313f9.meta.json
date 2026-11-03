@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wojkowice-koscielne",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:09.445Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wojkowice-koscielne-29f313f9.json",
+  "sha256": "40c4b998726fc436e152c19c5fbf5fd5f26740e35b8ab91f63d5c8b869c683f9",
+  "usable": true,
+  "items": 1
+}

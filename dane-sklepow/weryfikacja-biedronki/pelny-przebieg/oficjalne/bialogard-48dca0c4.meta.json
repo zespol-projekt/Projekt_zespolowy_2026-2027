@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bialogard",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:58.806Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bialogard-48dca0c4.json",
+  "sha256": "2ce78859bf2da61c5d2c3f3630e00edf6bdaf03172a32e15553435acf717679c",
+  "usable": true,
+  "items": 4
+}

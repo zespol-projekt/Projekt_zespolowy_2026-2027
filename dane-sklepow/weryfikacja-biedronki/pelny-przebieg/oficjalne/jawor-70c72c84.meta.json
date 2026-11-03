@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jawor",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:18.855Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jawor-70c72c84.json",
+  "sha256": "cf55cc456fe2a6b97d80912d3d13f1f1f871604366cee68f029b985ed0cbfa74",
+  "usable": true,
+  "items": 3
+}

@@ -1,0 +1,11 @@
+{
+  "key": "3772-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-wolnosci-4e-mragowo~22484712/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:55:22.819Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-wolnosci-4e-mragowo~22484712/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-01/3772-targeo.html",
+  "sha256": "dcf860e9ba700c46ecde9d351a24817f29e114474c56c4427420d5a5eb9d6343",
+  "bytes": 41334
+}

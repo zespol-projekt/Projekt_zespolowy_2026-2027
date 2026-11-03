@@ -1,0 +1,11 @@
+{
+  "key": "bialystok-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-swietojanska-15-bialystok~22738043/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:43:40.908Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-swietojanska-15-bialystok~22738043/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/bialystok-targeo.html",
+  "sha256": "7bd3dc04ca0c7cd68264809d79c83fdf4675794bdca41ea28e33935f8d0b2caa",
+  "bytes": 42888
+}

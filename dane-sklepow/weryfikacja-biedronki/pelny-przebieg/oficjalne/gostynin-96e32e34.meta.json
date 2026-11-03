@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gostynin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:03.487Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gostynin-96e32e34.json",
+  "sha256": "ef8eae8fb25de3ba33614d7a94589b44ed3f7adca40142f636016e47fc2a3483",
+  "usable": true,
+  "items": 2
+}

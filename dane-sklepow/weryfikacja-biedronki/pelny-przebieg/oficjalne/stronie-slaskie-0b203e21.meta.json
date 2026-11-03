@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stronie-slaskie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:25.852Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/stronie-slaskie-0b203e21.json",
+  "sha256": "63b3b73bd18740bafe446c747c2aa9854370d1e7d49dc931c6646a2546e98145",
+  "usable": true,
+  "items": 1
+}

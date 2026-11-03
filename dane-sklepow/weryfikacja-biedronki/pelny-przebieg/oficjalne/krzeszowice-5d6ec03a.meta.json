@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krzeszowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:56.716Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/krzeszowice-5d6ec03a.json",
+  "sha256": "641e596114700a219f5943f6bd854f8d38ea25c962af4a136111f28480eb9775",
+  "usable": true,
+  "items": 2
+}

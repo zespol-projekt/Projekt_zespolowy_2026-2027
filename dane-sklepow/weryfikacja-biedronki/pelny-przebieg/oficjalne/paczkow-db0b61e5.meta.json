@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=paczkow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:08.714Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/paczkow-db0b61e5.json",
+  "sha256": "f41640ae19cd813db7c09c0ee38119b29a372538300f777e774a28ca04798005",
+  "usable": true,
+  "items": 1
+}

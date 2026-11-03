@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lubowidz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:21.325Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lubowidz-6b693c7a.json",
+  "sha256": "0db278f820c36135e2eeaf24efcb8a5ad871db30037147f703aa7cf509b15a89",
+  "usable": true,
+  "items": 1
+}

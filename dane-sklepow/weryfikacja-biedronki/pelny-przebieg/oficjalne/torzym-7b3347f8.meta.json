@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=torzym",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:45.019Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/torzym-7b3347f8.json",
+  "sha256": "ffcee1adff014a46ef9aa5f3e446a5996f702349eb22fa144e63efd0e7282ce4",
+  "usable": true,
+  "items": 1
+}

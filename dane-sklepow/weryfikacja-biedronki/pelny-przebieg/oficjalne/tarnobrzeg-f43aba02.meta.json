@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=tarnobrzeg",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:41.645Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/tarnobrzeg-f43aba02.json",
+  "sha256": "ad0187005e87f0b298eb76fc52186f3b95402da94111ae16da91de69e505af86",
+  "usable": true,
+  "items": 7
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mirzec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:37.582Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/mirzec-27eb8995.json",
+  "sha256": "fbb41859a676bd4bc6986ac3e3b51db14c1dd64736df47eb0badce52e0e61258",
+  "usable": true,
+  "items": 1
+}

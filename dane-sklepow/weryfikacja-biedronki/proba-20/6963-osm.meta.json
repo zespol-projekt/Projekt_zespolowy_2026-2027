@@ -1,0 +1,11 @@
+{
+  "key": "6963-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/node/12536968071.json",
+  "retrieved_at": "2026-11-02T18:41:44.363Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/node/12536968071.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/proba-20/6963-osm.json",
+  "sha256": "62df3e0e8280244c0b9e1989684bd5feb1013f2eddc19f31ac495d6fa8b8095f",
+  "bytes": 902
+}

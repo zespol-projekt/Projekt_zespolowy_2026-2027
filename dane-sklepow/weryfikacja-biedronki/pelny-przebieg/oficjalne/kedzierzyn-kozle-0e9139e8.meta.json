@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kedzierzyn-kozle",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:30.531Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kedzierzyn-kozle-0e9139e8.json",
+  "sha256": "e69bd5a6b65d8e46d5e639356b901b70f4a4411893aca4130d78afe751f8fd91",
+  "usable": true,
+  "items": 6
+}

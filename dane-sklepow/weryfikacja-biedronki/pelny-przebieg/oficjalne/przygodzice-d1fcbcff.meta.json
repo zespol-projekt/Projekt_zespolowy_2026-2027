@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=przygodzice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:28.848Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/przygodzice-d1fcbcff.json",
+  "sha256": "a7335c3d77d5cfc483fdca85d356f4b00aa59a42084648a81acefe64fcda3a0a",
+  "usable": true,
+  "items": 1
+}

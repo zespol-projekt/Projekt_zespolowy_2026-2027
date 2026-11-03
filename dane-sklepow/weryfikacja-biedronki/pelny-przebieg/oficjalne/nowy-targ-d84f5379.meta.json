@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nowy-targ",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:52.180Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/nowy-targ-d84f5379.json",
+  "sha256": "bb32e20baf6fb2344ca145a6b82f8be4254903ebe2544a3eae3e31abc1d67a80",
+  "usable": true,
+  "items": 5
+}

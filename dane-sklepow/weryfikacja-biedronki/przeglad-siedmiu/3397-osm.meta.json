@@ -1,0 +1,11 @@
+{
+  "key": "3397-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/1004402691/full.json",
+  "retrieved_at": "2026-11-02T18:31:07.416Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/1004402691/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/3397-osm.json",
+  "sha256": "0b59c2ec51fa49e385a733e8963bbd522adeb053f7571e2f47258ec26a6e17bc",
+  "bytes": 1833
+}

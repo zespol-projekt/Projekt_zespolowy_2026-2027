@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bulowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:16.469Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bulowice-38e693d0.json",
+  "sha256": "c5a07b0526aebc8ed27cce9d5ab7d14fa85f3dfd5a9e24cf117853951265a3af",
+  "usable": true,
+  "items": 1
+}

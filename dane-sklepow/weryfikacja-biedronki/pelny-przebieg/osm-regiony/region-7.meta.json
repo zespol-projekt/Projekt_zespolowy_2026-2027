@@ -1,0 +1,15 @@
+{
+  "bbox": [
+    53,
+    14,
+    55,
+    17.5
+  ],
+  "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2853%2C14%2C55%2C17.5%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2853%2C14%2C55%2C17.5%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2853%2C14%2C55%2C17.5%29%3B%29%3Bout+center+tags%3B",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:07.479Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-7.json",
+  "sha256": "68332fb60015a045d9dff1457362d3ddcfa098a1d11413c0124bcee8afd80a03",
+  "elements": 265,
+  "remark": null
+}

@@ -1,0 +1,11 @@
+{
+  "key": "2276-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=G%C5%82og%C3%B3w%2C+Genera%C5%82a+W%C5%82adys%C5%82awa+Andersa+19&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:22.230Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=G%C5%82og%C3%B3w%2C+Genera%C5%82a+W%C5%82adys%C5%82awa+Andersa+19&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/2276-gugik-osm.json",
+  "sha256": "a735895a327c803de4445c8bc057096b13ac637b6d5e1c2b36180af8a5229326",
+  "bytes": 1116
+}

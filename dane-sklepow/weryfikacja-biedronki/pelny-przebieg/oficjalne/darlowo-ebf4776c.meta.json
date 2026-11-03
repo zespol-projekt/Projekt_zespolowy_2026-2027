@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=darlowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:36.690Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/darlowo-ebf4776c.json",
+  "sha256": "5d25c3c290eb97aa6f81122c01423135c7750cc4ffe12949124d4c375c307626",
+  "usable": true,
+  "items": 3
+}

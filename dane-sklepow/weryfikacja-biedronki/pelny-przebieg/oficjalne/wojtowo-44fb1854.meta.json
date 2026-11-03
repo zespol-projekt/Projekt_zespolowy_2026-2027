@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wojtowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:11.066Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wojtowo-44fb1854.json",
+  "sha256": "d94793fdd226e26db774ba08757819499a876f48a836b9124b2cd3b59c3b4a2d",
+  "usable": true,
+  "items": 1
+}

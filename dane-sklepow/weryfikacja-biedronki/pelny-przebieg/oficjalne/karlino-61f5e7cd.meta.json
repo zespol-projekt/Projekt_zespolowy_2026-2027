@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=karlino",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:27.722Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/karlino-61f5e7cd.json",
+  "sha256": "bb712968b6c03b3af2d3f60c9bcbe9683f2100b2f5f274f6f6479f05c468062d",
+  "usable": true,
+  "items": 1
+}

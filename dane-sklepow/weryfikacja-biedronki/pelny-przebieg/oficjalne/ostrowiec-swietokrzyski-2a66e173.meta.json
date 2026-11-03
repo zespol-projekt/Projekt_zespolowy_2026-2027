@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ostrowiec-swietokrzyski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:06.484Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ostrowiec-swietokrzyski-2a66e173.json",
+  "sha256": "929bc7dbfc88e7b8a5106f17b1a0c1d1dafb9ae1db4b54e4164958bf368c213f",
+  "usable": true,
+  "items": 9
+}

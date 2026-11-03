@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=juchnowiec-koscielny",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:24.988Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/juchnowiec-koscielny-d43c15bc.json",
+  "sha256": "c43e5af17c1c640fcdfee6a146ecd3c0c92a47e04a16689253ecaa194ebc905b",
+  "usable": true,
+  "items": 1
+}

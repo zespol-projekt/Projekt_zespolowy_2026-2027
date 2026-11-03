@@ -1,0 +1,11 @@
+{
+  "key": "2220-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-plater-emilii-9-68-100-zagan~23072540/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:55:20.693Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-plater-emilii-9-68-100-zagan~23072540/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-01/2220-targeo.html",
+  "sha256": "a4029110bd0623f8846cfd23d06a9d7164d981adb34e18c16e9b959957d661b2",
+  "bytes": 42381
+}

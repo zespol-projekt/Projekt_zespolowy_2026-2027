@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kobylka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:36.431Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kobylka-fdc98377.json",
+  "sha256": "f73e872b2bf1f2b2cc14f2cbc443c685e6485f5b77036255637e7812b9d965bc",
+  "usable": true,
+  "items": 3
+}

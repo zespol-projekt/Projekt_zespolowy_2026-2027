@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dabrowa-gornicza",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:33.435Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dabrowa-gornicza-516467f4.json",
+  "sha256": "f93dc698dcb4c7357fe8c7ae1bf51c002807200708e2536d4e6f1a65ce1f72f4",
+  "usable": true,
+  "items": 14
+}

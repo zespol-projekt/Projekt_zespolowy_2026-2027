@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wysoka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:13.282Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wysoka-131b7c57.json",
+  "sha256": "a6116bc5b5e50169a5f819fe01873f4b7fc24797faa83c606c3fcfcddc209658",
+  "usable": true,
+  "items": 2
+}

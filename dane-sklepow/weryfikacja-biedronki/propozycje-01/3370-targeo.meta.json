@@ -1,0 +1,11 @@
+{
+  "key": "3370-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-piotrowskiego-dr-27-28-130-stopnica~23072548/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:55:21.397Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-piotrowskiego-dr-27-28-130-stopnica~23072548/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-01/3370-targeo.html",
+  "sha256": "b767a1cd51185566ee1843e9fb817d6ccee8cd0a0c87fb9d5531027086f0406e",
+  "bytes": 40525
+}

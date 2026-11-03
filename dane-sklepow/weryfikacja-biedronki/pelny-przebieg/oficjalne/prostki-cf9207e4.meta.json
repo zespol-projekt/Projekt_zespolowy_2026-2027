@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=prostki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:24.553Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/prostki-cf9207e4.json",
+  "sha256": "9fd152863f43ff5e290cfbd4d192c58bb03f8e1837e88e717139716e73aea8e6",
+  "usable": true,
+  "items": 1
+}

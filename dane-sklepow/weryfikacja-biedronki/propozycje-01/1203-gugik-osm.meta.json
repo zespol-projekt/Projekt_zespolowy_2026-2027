@@ -1,0 +1,11 @@
+{
+  "key": "1203-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pruszk%C3%B3w%2C+Aleja+Wojska+Polskiego+11&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:08.734Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pruszk%C3%B3w%2C+Aleja+Wojska+Polskiego+11&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1203-gugik-osm.json",
+  "sha256": "d018a244463110c9a42884861ff2bd05bfe4836214776f69cc830978a0111e63",
+  "bytes": 1472
+}

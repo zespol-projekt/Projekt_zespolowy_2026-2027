@@ -1,0 +1,11 @@
+{
+  "key": "2466-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kielce%2C+al.+Szajnowicza-Iwanowa+17&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:52.652Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kielce%2C+al.+Szajnowicza-Iwanowa+17&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/2466-gugik-pierwotny.json",
+  "sha256": "aad325d69003b0fa87262cc8dd1f1c8c8595b457ba16fa94f48eeb10d381d65e",
+  "bytes": 634
+}

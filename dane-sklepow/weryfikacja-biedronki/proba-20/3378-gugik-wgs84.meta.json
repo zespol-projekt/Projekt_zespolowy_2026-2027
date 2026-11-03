@@ -1,0 +1,11 @@
+{
+  "key": "3378-gugik-wgs84",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Obryte+5b&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:46:55.345Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Obryte+5b&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/3378-gugik-wgs84.json",
+  "sha256": "e3afa2d5fb7912935ba628e2c056789c278b56f984f35ab3298c2980893c08ea",
+  "bytes": 525
+}

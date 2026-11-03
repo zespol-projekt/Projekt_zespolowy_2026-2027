@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mieroszyno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:34.852Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/mieroszyno-56aa7aab.json",
+  "sha256": "e7802ca822b8768b8a07115f320ce6733dd268f8bc57e0c66db19b801d20669e",
+  "usable": true,
+  "items": 1
+}

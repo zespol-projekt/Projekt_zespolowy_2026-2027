@@ -1,0 +1,11 @@
+{
+  "key": "3601-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,3601",
+  "retrieved_at": "2026-11-02T19:05:35.768Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,3601",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-02/3601-oficjalna.html",
+  "sha256": "876f2a3bfafcea2424719a9c7b276f4454f9a61397d08960a7fe5a9374103566",
+  "bytes": 97062
+}

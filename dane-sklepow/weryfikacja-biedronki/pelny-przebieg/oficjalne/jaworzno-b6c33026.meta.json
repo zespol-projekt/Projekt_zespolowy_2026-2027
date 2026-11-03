@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jaworzno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:19.464Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jaworzno-b6c33026.json",
+  "sha256": "a570308207a2c3c0e21a50bf4fadf93ba14cef1f4f657c0d6b5ce13336678adf",
+  "usable": true,
+  "items": 8
+}

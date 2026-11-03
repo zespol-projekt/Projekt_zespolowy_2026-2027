@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zawidz-koscielny",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:22.568Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zawidz-koscielny-3d80764e.json",
+  "sha256": "a92240ac6093e3dcfd29c906609181b0cea6bc4de926f0aea3b5629001d2c171",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ustronie-morskie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:54.696Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ustronie-morskie-b7fa27a6.json",
+  "sha256": "58b8f379e13791f56467588c4c9c3b0aca50e463b6b284f3caf2dc3729fa83a5",
+  "usable": true,
+  "items": 2
+}

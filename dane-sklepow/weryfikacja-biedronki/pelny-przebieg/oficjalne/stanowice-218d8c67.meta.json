@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stanowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:17.180Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/stanowice-218d8c67.json",
+  "sha256": "4ed44f9487d7ac9d77e44435afb8a30011eb7ca536ceaeae99ec536bdfbe6306",
+  "usable": true,
+  "items": 2
+}

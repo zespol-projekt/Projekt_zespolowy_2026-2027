@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=miedzyrzecz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:32.652Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/miedzyrzecz-f73d156f.json",
+  "sha256": "708afa2601671e1c81934156f61617f29d3d6fb5ba95642783467130373a4ba2",
+  "usable": true,
+  "items": 3
+}

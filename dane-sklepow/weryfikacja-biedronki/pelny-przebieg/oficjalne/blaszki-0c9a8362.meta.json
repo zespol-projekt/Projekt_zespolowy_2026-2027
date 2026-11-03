@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=blaszki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:03.772Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/blaszki-0c9a8362.json",
+  "sha256": "2ebef33fa79bd4e56b5428fd448efeed582e1aa3dddd84519c38540bc0d08e4b",
+  "usable": true,
+  "items": 1
+}
