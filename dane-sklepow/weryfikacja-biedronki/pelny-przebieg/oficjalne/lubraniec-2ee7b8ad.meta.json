@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lubraniec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:21.850Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lubraniec-2ee7b8ad.json",
+  "sha256": "db95c89c075f0a4cfae6b28feaf6400a16ea925c02b20dbd11a4954f19a2febb",
+  "usable": true,
+  "items": 1
+}

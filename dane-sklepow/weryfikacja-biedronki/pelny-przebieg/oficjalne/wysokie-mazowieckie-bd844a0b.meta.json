@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wysokie-mazowieckie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:13.934Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wysokie-mazowieckie-bd844a0b.json",
+  "sha256": "032257352398cf8815dd7c9d036a23e1f236a0284d89cb327549a952372e0e94",
+  "usable": true,
+  "items": 4
+}

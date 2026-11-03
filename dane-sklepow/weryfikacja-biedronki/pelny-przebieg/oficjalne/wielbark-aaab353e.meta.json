@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wielbark",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:01.271Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wielbark-aaab353e.json",
+  "sha256": "33e2c01e74856d59feac190c9ede0b1331edf8f781e779c80d5cd7e664d7838c",
+  "usable": true,
+  "items": 1
+}

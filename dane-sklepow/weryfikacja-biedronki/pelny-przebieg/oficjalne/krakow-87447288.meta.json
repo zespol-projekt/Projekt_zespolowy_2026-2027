@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krakow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:49.552Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/krakow-87447288.json",
+  "sha256": "2349b8cb73e41bc890bfb3ee7b635fbb0435f1ab5c03c0b4e36c0b242eae07cd",
+  "usable": true,
+  "items": 68
+}

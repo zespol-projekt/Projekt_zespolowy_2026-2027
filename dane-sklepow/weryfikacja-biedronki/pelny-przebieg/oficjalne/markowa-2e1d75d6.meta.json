@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=markowa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:27.834Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/markowa-2e1d75d6.json",
+  "sha256": "53279c647b181c12f905bad9f31a1a54233a6868846e5547857dc506d3397114",
+  "usable": true,
+  "items": 1
+}

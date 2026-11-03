@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bytow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:18.715Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bytow-7ece4d44.json",
+  "sha256": "ff809d7a7bad69b05b333f1c06f826003b090c7042f6bc1e754d38e12b9c9193",
+  "usable": true,
+  "items": 4
+}

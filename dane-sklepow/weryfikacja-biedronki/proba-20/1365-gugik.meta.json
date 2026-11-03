@@ -1,0 +1,11 @@
+{
+  "key": "1365-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kalisz%2C+Aleja+Wojska+Polskiego+116&exact_number=1",
+  "retrieved_at": "2026-11-02T18:41:41.545Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kalisz%2C+Aleja+Wojska+Polskiego+116&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/1365-gugik.json",
+  "sha256": "ed2831d9f113cfe31d27f1776f1ce969e3ba0f6023cde2f01616bf9360f02e50",
+  "bytes": 563
+}

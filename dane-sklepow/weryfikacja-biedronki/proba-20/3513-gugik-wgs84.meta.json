@@ -1,0 +1,11 @@
+{
+  "key": "3513-gugik-wgs84",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Stary+Dzik%C3%B3w%2C+Tadeusza+Ko%C5%9Bciuszki+72A&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:46:49.406Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Stary+Dzik%C3%B3w%2C+Tadeusza+Ko%C5%9Bciuszki+72A&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/3513-gugik-wgs84.json",
+  "sha256": "d514e426a655e3f9e1315d1ae563c9ae61906189884c763d0427a2ee1bc79b3f",
+  "bytes": 636
+}

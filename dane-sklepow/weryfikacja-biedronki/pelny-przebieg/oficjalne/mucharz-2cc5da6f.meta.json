@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mucharz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:43.553Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/mucharz-2cc5da6f.json",
+  "sha256": "1e6e4082cef7dfc8fa18cbab8a1e78eac4b2e44f32b0f963839f2abeabaf584a",
+  "usable": true,
+  "items": 1
+}

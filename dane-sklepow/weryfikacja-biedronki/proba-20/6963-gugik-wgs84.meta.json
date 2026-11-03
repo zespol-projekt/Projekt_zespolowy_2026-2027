@@ -1,0 +1,11 @@
+{
+  "key": "6963-gugik-wgs84",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bia%C5%82ystok%2C+%C5%9Awi%C4%99toja%C5%84ska+15&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:45:30.629Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bia%C5%82ystok%2C+%C5%9Awi%C4%99toja%C5%84ska+15&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/6963-gugik-wgs84.json",
+  "sha256": "1a2bda2fcce7f1f16900e57ee827ec1deb02097042e9757edde17d138248ff97",
+  "bytes": 616
+}

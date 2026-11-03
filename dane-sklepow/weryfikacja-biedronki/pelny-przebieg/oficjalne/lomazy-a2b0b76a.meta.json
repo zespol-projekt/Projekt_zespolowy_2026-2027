@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lomazy",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:15.260Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lomazy-a2b0b76a.json",
+  "sha256": "01d821efcee65c61ba790444868fa4a4a2beb41985be14e2a07a3446c5b070ee",
+  "usable": true,
+  "items": 1
+}

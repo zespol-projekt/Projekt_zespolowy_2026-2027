@@ -1,0 +1,11 @@
+{
+  "key": "3102-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/729860378/full.json",
+  "retrieved_at": "2026-11-02T18:42:02.788Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/729860378/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/proba-20/3102-osm.json",
+  "sha256": "e4ac02902687f483436e4d790cd06d607c203a255cd4065142bb09d3fc314451",
+  "bytes": 2044
+}

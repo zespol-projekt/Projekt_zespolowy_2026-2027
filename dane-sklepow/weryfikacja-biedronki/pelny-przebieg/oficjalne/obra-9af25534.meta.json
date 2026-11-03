@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=obra",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:55.434Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/obra-9af25534.json",
+  "sha256": "443afcdbf836c0c24afcd8ca132c0a2a86091e06ac8ef5fce8ae1d3857f57270",
+  "usable": true,
+  "items": 1
+}

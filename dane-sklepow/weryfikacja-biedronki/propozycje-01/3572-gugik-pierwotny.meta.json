@@ -1,0 +1,11 @@
+{
+  "key": "3572-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Tolkmicko%2C+Morska+17&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:31.365Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Tolkmicko%2C+Morska+17&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/3572-gugik-pierwotny.json",
+  "sha256": "854ba0a9bb299de735e860ba15b3134d00cfc03002e6895aab08f0e41e7b95fa",
+  "bytes": 1021
+}

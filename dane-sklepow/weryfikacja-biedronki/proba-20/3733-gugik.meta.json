@@ -1,0 +1,11 @@
+{
+  "key": "3733-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%99bowiec+826&exact_number=1",
+  "retrieved_at": "2026-11-02T18:41:51.397Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%99bowiec+826&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/3733-gugik.json",
+  "sha256": "8de3d43c62aea29137c4d6ac363492274edd137fcbfcc8e5c927c051557303b4",
+  "bytes": 508
+}

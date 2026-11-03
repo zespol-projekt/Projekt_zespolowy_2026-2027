@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=moskorzew",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:40.828Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/moskorzew-acb3f266.json",
+  "sha256": "94f30ed9f49dab61776db4b0e6879715d1f4597ffc9296a8ef1e5e87225a6295",
+  "usable": true,
+  "items": 1
+}

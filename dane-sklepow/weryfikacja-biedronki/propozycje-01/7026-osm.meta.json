@@ -1,0 +1,11 @@
+{
+  "key": "7026-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/1153973134/full.json",
+  "retrieved_at": "2026-11-02T18:53:40.900Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/1153973134/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-01/7026-osm.json",
+  "sha256": "cb5888c87a30d3cf96252b6f8fe105e2eeb80f8f7c55ff9da7552309ac2eaa33",
+  "bytes": 1700
+}

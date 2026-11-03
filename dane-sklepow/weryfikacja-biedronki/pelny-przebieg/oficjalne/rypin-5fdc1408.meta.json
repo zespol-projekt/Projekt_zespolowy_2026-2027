@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rypin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:54.371Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rypin-5fdc1408.json",
+  "sha256": "208101f78de562ec80d88d9b10523b5c7895a3fe646cbdf1a159a34993ce9b0a",
+  "usable": true,
+  "items": 3
+}

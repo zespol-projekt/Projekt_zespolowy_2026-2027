@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=poznan",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:21.797Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/poznan-f177adfd.json",
+  "sha256": "ebca144e0a1ccb29defe184f7741a7b16e49e9c637e32a92dd056c2804562db6",
+  "usable": true,
+  "items": 72
+}

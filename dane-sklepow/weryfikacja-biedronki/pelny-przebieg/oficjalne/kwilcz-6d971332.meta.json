@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kwilcz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:01.585Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kwilcz-6d971332.json",
+  "sha256": "c25e34ab09f3177437de5af50afe4e2f15599bb6b71d87ec773c4bb370ef92f5",
+  "usable": true,
+  "items": 1
+}

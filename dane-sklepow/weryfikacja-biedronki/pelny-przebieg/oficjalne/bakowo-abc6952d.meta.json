@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bakowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:54.988Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bakowo-abc6952d.json",
+  "sha256": "75e3d6d3e778eff5895cd01788d412a3fe51b28dd5ec6006e49a79ce428c87b9",
+  "usable": true,
+  "items": 1
+}

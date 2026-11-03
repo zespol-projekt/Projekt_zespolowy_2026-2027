@@ -1,0 +1,11 @@
+{
+  "key": "3363-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rewal%2C+Topolowa+2&exact_number=1",
+  "retrieved_at": "2026-11-02T18:42:00.429Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rewal%2C+Topolowa+2&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/3363-gugik.json",
+  "sha256": "9f875df7f6e381ba7d7adf3ba1b2a56fb94fcc89b5044b564c2e22cb5259ba57",
+  "bytes": 553
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sochaczew",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:11.629Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sochaczew-f651c30c.json",
+  "sha256": "4ebb5956247d28479c94e19000cfccf802a2f5cf9643562e95bae6e7eb6ba501",
+  "usable": true,
+  "items": 3
+}

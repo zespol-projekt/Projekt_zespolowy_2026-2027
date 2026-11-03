@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=harbutowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:10.233Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/harbutowice-9ad4043e.json",
+  "sha256": "0e7e47a827153fb4c21e6e4e851ed1ba97da938c5f2f9a0e978903a7295bfe1c",
+  "usable": true,
+  "items": 1
+}

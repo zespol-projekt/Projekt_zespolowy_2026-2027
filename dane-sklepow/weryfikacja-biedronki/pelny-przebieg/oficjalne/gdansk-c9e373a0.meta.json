@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gdansk",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:49.884Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gdansk-c9e373a0.json",
+  "sha256": "6eb681d77a39f287938b7b5020fcc5a2ec5f34a97153d4b9ab451bea7a9bedf5",
+  "usable": true,
+  "items": 63
+}

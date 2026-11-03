@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=konarzynki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:40.307Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/konarzynki-9ad7e70a.json",
+  "sha256": "fc7d7e6489187197df6b67d60fbebd72bd11d42ea90a201ee2da5074fceb162c",
+  "usable": true,
+  "items": 1
+}

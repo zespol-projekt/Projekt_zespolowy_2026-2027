@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=szprotawa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:39.429Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/szprotawa-720b3f60.json",
+  "sha256": "2b959b9aea702c641a433aed012bceb746364cb099e0de625fc501ccfb2641ea",
+  "usable": true,
+  "items": 3
+}

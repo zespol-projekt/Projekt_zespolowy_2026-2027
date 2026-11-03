@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jonkowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:23.297Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jonkowo-0fe6c8e4.json",
+  "sha256": "e415c3cd901dc35ae88ea4cab6b297d7a1731a2540d0ac9813c21e7f5fb4a23e",
+  "usable": true,
+  "items": 1
+}

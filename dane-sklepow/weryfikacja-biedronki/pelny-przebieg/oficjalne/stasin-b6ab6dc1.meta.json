@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stasin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:22.119Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/stasin-b6ab6dc1.json",
+  "sha256": "cc74d835ff85a48266b3cd604c113a51035bebc3707cec2ca6495ef815769692",
+  "usable": true,
+  "items": 1
+}

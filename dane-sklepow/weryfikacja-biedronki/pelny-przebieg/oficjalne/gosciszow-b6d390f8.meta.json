@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gosciszow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:02.964Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gosciszow-b6d390f8.json",
+  "sha256": "f06ed62502d14ad92a58158bbc0545527a052fd752fb85be0e79c4a9000ed966",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rozogi",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:48.879Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rozogi-9eae1fe6.json",
+  "sha256": "e91c2a30e5b85557ad495fa491ded7f0b1b10c77aaa99517646476c6cde2af2b",
+  "usable": true,
+  "items": 1
+}

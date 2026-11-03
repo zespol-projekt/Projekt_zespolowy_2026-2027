@@ -1,0 +1,11 @@
+{
+  "key": "krolewiec-100-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kr%C3%B3lewiec+100&exact_number=1",
+  "retrieved_at": "2026-11-02T18:33:09.922Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kr%C3%B3lewiec+100&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/krolewiec-100-gugik.json",
+  "sha256": "20ce629fb1c41011d338e393528735ecc0766d47eddd12e9ab53bd2826f168e0",
+  "bytes": 517
+}

@@ -1,0 +1,11 @@
+{
+  "key": "1308-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,1308",
+  "retrieved_at": "2026-11-02T18:41:17.128Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,1308",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/1308-oficjalna.html",
+  "sha256": "5c45f63b4857ed8f17cc89d3188f32eef2f97ace9e40a65e4277be699f316d3a",
+  "bytes": 96956
+}

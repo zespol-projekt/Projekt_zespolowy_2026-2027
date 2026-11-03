@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=olkusz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:00.434Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/olkusz-be3c0c81.json",
+  "sha256": "031c9e8aec76cc03eb5a4dd8c3937fe6c6e7ce3afa9c1f12dc17d151d94b28d5",
+  "usable": true,
+  "items": 5
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lipienice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:11.923Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lipienice-7ea5a461.json",
+  "sha256": "1f88a34cb2e510e4144ea1863711611864d7480ad55905424cabd5355d6ad7c3",
+  "usable": true,
+  "items": 1
+}

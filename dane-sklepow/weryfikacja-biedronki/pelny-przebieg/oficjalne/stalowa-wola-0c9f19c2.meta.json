@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stalowa-wola",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:16.638Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/stalowa-wola-0c9f19c2.json",
+  "sha256": "7be1cdf4491cd9a7c69c3472058160925b9fbfd69a2d75391056b49402a1ee79",
+  "usable": true,
+  "items": 6
+}

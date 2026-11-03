@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=debno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:39.389Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/debno-087f321a.json",
+  "sha256": "2dbfc8772cf6777b4da61310764a67983937cda34c749a9e8cf0e91cbd439ccf",
+  "usable": true,
+  "items": 2
+}

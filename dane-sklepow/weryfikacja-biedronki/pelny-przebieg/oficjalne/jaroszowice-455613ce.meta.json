@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jaroszowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:16.088Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jaroszowice-455613ce.json",
+  "sha256": "88850b4447eb4e7657608fba0c072f6b87a625c5324b2154355fd47567a38a4d",
+  "usable": true,
+  "items": 1
+}

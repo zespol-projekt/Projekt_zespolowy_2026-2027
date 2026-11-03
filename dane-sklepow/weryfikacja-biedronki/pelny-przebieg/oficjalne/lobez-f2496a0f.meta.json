@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lobez",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:13.606Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lobez-f2496a0f.json",
+  "sha256": "b5a87b56c7b2a3d5007bcce2c5253fae3d6dfa151d106c10f07294237e59f494",
+  "usable": true,
+  "items": 2
+}

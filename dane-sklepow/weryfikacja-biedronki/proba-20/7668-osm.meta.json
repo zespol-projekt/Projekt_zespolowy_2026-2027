@@ -1,0 +1,11 @@
+{
+  "key": "7668-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/1327359108/full.json",
+  "retrieved_at": "2026-11-02T18:42:12.339Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/1327359108/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/proba-20/7668-osm.json",
+  "sha256": "2f1565be51bbaccc9c86b7c9592fce390ff04a456d87bf5c07940cd5d0564951",
+  "bytes": 3065
+}

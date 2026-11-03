@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bonki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:08.215Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bonki-67788f6d.json",
+  "sha256": "e59758831881463e7a7a2b4aa16221117b8fdefa900b1ff5e317da7be6f653af",
+  "usable": true,
+  "items": 1
+}

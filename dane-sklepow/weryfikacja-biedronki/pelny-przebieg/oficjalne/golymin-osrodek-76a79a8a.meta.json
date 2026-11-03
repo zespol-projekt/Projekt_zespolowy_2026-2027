@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=golymin-osrodek",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:59.686Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/golymin-osrodek-76a79a8a.json",
+  "sha256": "1aa0c1cb0af21d5e8605878d5c8005f9728523c9f63e831ca4f610dc6bb274a4",
+  "usable": true,
+  "items": 1
+}

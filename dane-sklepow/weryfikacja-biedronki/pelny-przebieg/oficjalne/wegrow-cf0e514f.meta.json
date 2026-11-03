@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wegrow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:58.617Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wegrow-cf0e514f.json",
+  "sha256": "02f5521cd84641a78cdec2ec7d3386b82ec8310e1d8c4e27b79cbd1163f4f011",
+  "usable": true,
+  "items": 4
+}

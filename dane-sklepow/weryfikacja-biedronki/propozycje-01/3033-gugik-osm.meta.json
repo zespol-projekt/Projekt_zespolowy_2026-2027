@@ -1,0 +1,11 @@
+{
+  "key": "3033-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rzesz%C3%B3w%2C+Pu%C5%82kownika+Kazimierza+Iranka-Osmeckiego+25&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:59.250Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rzesz%C3%B3w%2C+Pu%C5%82kownika+Kazimierza+Iranka-Osmeckiego+25&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/3033-gugik-osm.json",
+  "sha256": "e805e91a6a6c62c85f1c109af473534645eefe69091b62e27a4a1bf5a79bccb5",
+  "bytes": 645
+}

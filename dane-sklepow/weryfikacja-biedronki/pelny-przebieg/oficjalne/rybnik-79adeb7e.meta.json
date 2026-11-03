@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rybnik",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:50.050Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rybnik-79adeb7e.json",
+  "sha256": "2954803d2daa2df85d45d0ca71e06b75882d4f8402d1571cd365948e4881a1ba",
+  "usable": true,
+  "items": 14
+}

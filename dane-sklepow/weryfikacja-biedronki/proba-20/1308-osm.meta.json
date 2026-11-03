@@ -1,0 +1,11 @@
+{
+  "key": "1308-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/745554341/full.json",
+  "retrieved_at": "2026-11-02T18:41:18.189Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/745554341/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/proba-20/1308-osm.json",
+  "sha256": "a3ed2c1ec17bbbcf370c8e84a696c98c3ca60300dd41d9903ecbcc0a1fa2973e",
+  "bytes": 2171
+}

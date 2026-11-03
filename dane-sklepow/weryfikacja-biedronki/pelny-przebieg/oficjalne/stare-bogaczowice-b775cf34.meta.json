@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stare-bogaczowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:19.922Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/stare-bogaczowice-b775cf34.json",
+  "sha256": "9cf7092e3c8eebe7ec3c6c2ec3629232672adc2f0a785acf4e0e538a54e1e282",
+  "usable": true,
+  "items": 1
+}

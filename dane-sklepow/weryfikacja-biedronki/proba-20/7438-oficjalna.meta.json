@@ -1,0 +1,11 @@
+{
+  "key": "7438-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,7438",
+  "retrieved_at": "2026-11-02T18:42:08.289Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,7438",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/7438-oficjalna.html",
+  "sha256": "79d9319c0099f8727bfb0ab0d9f21c78388a31e72517d0df6308d46f2252741d",
+  "bytes": 97006
+}

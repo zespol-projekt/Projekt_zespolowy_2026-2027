@@ -1,0 +1,11 @@
+{
+  "key": "6963-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,6963",
+  "retrieved_at": "2026-11-02T18:41:43.564Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,6963",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/6963-oficjalna.html",
+  "sha256": "4359ea214b823513c6806762b87facdb1717820300eeca3f15b58a1159ed72f7",
+  "bytes": 97117
+}

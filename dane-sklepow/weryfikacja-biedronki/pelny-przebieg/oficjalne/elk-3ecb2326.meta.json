@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=elk",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:46.102Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/elk-3ecb2326.json",
+  "sha256": "2d0ba5a24ebfeb08be8cb84d3729f5d8f2a7acf0fcef86e7ce10c546143629ac",
+  "usable": true,
+  "items": 10
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ostroleka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:04.887Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ostroleka-ee399303.json",
+  "sha256": "20521043dcb0871e71c2f840a7151fdc98962f5b84d129ed221c4c17041ddb2c",
+  "usable": true,
+  "items": 9
+}

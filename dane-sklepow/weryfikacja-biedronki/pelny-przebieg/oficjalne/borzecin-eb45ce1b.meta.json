@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=borzecin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:09.819Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/borzecin-eb45ce1b.json",
+  "sha256": "4fe7474ced9c9e71fab1c56a98c590e309d7cbc1393c8ec92989ede97690aec9",
+  "usable": true,
+  "items": 1
+}

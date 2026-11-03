@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rabka-zdroj",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:34.271Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rabka-zdroj-5a31a612.json",
+  "sha256": "4665edc3e429f5dcba372005f324305716154b7c21e462f0757e56b65096224f",
+  "usable": true,
+  "items": 2
+}

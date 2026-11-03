@@ -1,0 +1,11 @@
+{
+  "key": "1400-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bydgoszcz%2C+%C5%9Awi%C4%99tego+Maksymiliana+Kolbego+58&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:21.553Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bydgoszcz%2C+%C5%9Awi%C4%99tego+Maksymiliana+Kolbego+58&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1400-gugik-osm.json",
+  "sha256": "bc90ea18b1fec1deabff5f98913467b5860d833913d71d810b89e72384648a36",
+  "bytes": 197
+}

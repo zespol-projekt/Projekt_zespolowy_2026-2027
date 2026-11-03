@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mierzeszyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:35.374Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/mierzeszyn-6e668461.json",
+  "sha256": "69bd4899882e4621f82d3a6201fd856fb500d39fcc21a3aad0df2a30c55aee43",
+  "usable": true,
+  "items": 1
+}

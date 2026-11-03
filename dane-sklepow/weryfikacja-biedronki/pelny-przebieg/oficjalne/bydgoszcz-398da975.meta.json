@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bydgoszcz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:17.536Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bydgoszcz-398da975.json",
+  "sha256": "a43e980748ac4e1afa42c4deca5e07a58df6816327c5c662d597c931f886ba28",
+  "usable": true,
+  "items": 37
+}

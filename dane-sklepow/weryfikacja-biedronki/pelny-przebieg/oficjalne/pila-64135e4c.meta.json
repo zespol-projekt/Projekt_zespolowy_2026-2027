@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pila",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:15.267Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pila-64135e4c.json",
+  "sha256": "e39491fe2be8f7f59ec33eb940139bcedf48fd0c579d7a524d2954a814bb640d",
+  "usable": true,
+  "items": 10
+}

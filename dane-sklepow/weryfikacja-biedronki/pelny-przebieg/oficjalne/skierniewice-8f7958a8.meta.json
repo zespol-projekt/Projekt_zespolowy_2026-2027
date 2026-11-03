@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=skierniewice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:05.713Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/skierniewice-8f7958a8.json",
+  "sha256": "5a4395846af148a36cdb50d688401432b21e9024ef594fe00f235b4b4824762b",
+  "usable": true,
+  "items": 5
+}

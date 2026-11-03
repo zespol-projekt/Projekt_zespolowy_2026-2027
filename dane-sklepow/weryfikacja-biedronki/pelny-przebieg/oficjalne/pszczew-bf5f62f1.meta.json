@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pszczew",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:31.519Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pszczew-bf5f62f1.json",
+  "sha256": "121c8923914323ebe13cad8fc918f9f167adb41d0a4c31476c72e02094957930",
+  "usable": true,
+  "items": 1
+}

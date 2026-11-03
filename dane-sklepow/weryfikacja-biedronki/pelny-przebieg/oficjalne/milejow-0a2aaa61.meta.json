@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=milejow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:36.004Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/milejow-0a2aaa61.json",
+  "sha256": "cdbf3e978d29027d6f9da46051d13f56adf504cee5e9dd38a640d051b62107d9",
+  "usable": true,
+  "items": 1
+}

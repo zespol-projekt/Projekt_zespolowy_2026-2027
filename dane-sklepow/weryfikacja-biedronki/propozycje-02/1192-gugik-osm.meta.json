@@ -1,0 +1,11 @@
+{
+  "key": "1192-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Otwock%2C+Stefana+Batorego+32&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:00.963Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Otwock%2C+Stefana+Batorego+32&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1192-gugik-osm.json",
+  "sha256": "458f8b159e211107a2cf5c98b2fc0d7bd2b358b5ac8f941bd01d20312e1cbe9a",
+  "bytes": 584
+}

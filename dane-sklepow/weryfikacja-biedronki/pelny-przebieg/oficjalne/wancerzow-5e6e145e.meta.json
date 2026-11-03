@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wancerzow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:56.299Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wancerzow-5e6e145e.json",
+  "sha256": "e85b7590288033c24599c74d86b87d26fccadc3fc44a8b906f6183228815ca94",
+  "usable": true,
+  "items": 1
+}

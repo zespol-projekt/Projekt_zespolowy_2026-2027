@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=siedlce",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:00.915Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/siedlce-ef67ae75.json",
+  "sha256": "8dc438e0dceacb5559f763176f514afcc1667be213a25e7b4f660538d63c5afc",
+  "usable": true,
+  "items": 10
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rzeszow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:54.903Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rzeszow-1cca40a4.json",
+  "sha256": "2fe0d5db46392b54cf00888f159508cc94188356bd3e8fb39c16fa964e2c337c",
+  "usable": true,
+  "items": 23
+}

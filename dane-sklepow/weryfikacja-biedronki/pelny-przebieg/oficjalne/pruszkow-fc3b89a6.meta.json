@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pruszkow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:25.613Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pruszkow-fc3b89a6.json",
+  "sha256": "d1d1e48b8d8b423fc7bfa03fbc206e8948363d3fcdca61812249f799752ec88f",
+  "usable": true,
+  "items": 5
+}

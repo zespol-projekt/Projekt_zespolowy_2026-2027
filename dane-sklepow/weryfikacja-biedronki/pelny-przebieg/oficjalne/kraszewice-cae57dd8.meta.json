@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kraszewice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:52.389Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kraszewice-cae57dd8.json",
+  "sha256": "0e0bffc5da343caad6746fef6e8eb8d3adcbf34437f446a8e0b3103d8360bdff",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sobolew",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:11.102Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sobolew-d4cb431a.json",
+  "sha256": "5bd9312aca770925b8ea711ebef539b47ff67e656812f6937da5580e1512257d",
+  "usable": true,
+  "items": 1
+}

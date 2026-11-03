@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kwidzyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:01.065Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kwidzyn-9510a201.json",
+  "sha256": "f8df4da72e410d75d89e45ee12d5823e25974c0a6daeecf81fe2b76cb4526dd1",
+  "usable": true,
+  "items": 5
+}

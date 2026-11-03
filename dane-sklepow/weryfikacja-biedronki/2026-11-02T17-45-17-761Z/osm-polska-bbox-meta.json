@@ -1,0 +1,12 @@
+{
+  "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A50%5D%3B%28nwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C14%2C55%2C24.3%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C14%2C55%2C24.3%29%3B%29%3Bout+center+tags%3B",
+  "method": "GET",
+  "status": 502,
+  "retrieved_at": "2026-11-02T17:53:29.937Z",
+  "file": "osm-polska-bbox.json",
+  "query_file": "osm-polska-bbox.overpassql",
+  "sha256": "8084e21e11df846a2e41bb93ddaf66961aa2ef71e9a9fc1f46debc960b303042",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL-1.0",
+  "license_url": "https://www.openstreetmap.org/copyright"
+}

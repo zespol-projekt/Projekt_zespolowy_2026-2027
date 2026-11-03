@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nowa-sarzyna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:48.919Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/nowa-sarzyna-78204996.json",
+  "sha256": "095a025e1053827cf13493c92b9a6695aec00ed8e9971d4a9624435380b002d6",
+  "usable": true,
+  "items": 1
+}

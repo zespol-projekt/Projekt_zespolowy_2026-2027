@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pszow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:32.579Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pszow-a9e16184.json",
+  "sha256": "4dbdbf453e722a4f3848e02b9303f1b076b47e0e094131d6fad7b4280fc89288",
+  "usable": true,
+  "items": 2
+}

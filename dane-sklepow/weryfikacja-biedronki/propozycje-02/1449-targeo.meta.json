@@ -1,0 +1,11 @@
+{
+  "key": "1449-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-sienkiewicza-53-ostroleka~4482239/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T19:08:07.277Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-sienkiewicza-53-ostroleka~4482239/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-02/1449-targeo.html",
+  "sha256": "bf9fcfa683625d712fcdc4dbd742ae0d831d9be7526427fd92f21f321b2560f4",
+  "bytes": 42701
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pulawy",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:33.113Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pulawy-6d263f36.json",
+  "sha256": "48059a07799ef16c147df82487bea8d19524ee7cfe7a7afc5b42a24d5ef61549",
+  "usable": true,
+  "items": 4
+}

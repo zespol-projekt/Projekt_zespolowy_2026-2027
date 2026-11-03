@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=grajewo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:05.218Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/grajewo-8034b2c4.json",
+  "sha256": "67aab9532e6c16fca98ab2d5276a0fa7a9b6046bcd1e103a9c5bb1e6f70a9b29",
+  "usable": true,
+  "items": 3
+}

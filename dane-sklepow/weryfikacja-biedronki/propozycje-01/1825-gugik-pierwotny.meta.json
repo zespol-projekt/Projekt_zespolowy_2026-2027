@@ -1,0 +1,11 @@
+{
+  "key": "1825-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sochaczew%2C+600-lecia+40&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:30.202Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sochaczew%2C+600-lecia+40&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1825-gugik-pierwotny.json",
+  "sha256": "e02e0070c2170f764c08d7706f32dc766da5459c0ecee47fe46da877fa2e8d8b",
+  "bytes": 601
+}

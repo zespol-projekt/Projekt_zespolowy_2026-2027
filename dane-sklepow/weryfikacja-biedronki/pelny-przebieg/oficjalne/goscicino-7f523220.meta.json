@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=goscicino",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:01.899Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/goscicino-7f523220.json",
+  "sha256": "0b2b5388fe6712411f98c292d6384a67393b7862a64e024562c4b69ffa814eff",
+  "usable": true,
+  "items": 1
+}

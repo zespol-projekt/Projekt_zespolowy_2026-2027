@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dzialdowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:43.773Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dzialdowo-11bcc952.json",
+  "sha256": "796842aadc63effef051cedf4566ec05994496cadd98012316d38e8307aa5999",
+  "usable": true,
+  "items": 3
+}

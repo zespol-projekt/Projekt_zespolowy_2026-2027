@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=malbork",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:25.635Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/malbork-9f2c59c8.json",
+  "sha256": "bfbac1fa652b6bd667f301398e9678116b2406828498c6812e0d49fd7146da8b",
+  "usable": true,
+  "items": 6
+}

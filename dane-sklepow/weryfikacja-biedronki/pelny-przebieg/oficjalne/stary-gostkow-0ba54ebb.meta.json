@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stary-gostkow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:21.598Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/stary-gostkow-0ba54ebb.json",
+  "sha256": "9f89e4a8d8ca030ba678bb83f512ebc9ed9cf84575c65c00472eed4e68a198df",
+  "usable": true,
+  "items": 1
+}

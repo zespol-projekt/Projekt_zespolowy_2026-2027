@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=popielow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:20.731Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/popielow-ff7f6a17.json",
+  "sha256": "78a8e6d961bd9d0bc744e9c821146a31c627a5a20c9115ce48e93aa6e3703f1b",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,3102 @@
+
+[STRONA 1]
+MPK MIASTO ADRES
+6886 Adamów SGO Polesie
+2510 Aleksandrów Kujawski ul. Słowackiego 28C
+5979 Aleksandrów Kujawski ul. Narutowicza 8A
+6195 Aleksandrów Łódzki Konstantynowska 5-7
+3562 Alwernia ul. Mickiewicza 15A
+3063 Andrychów ul. Krakowska 83
+7771 Andrychów Włókniarzy 38
+4425 Annopol ul. Radomska 28A
+1728 Augustów ul. Chreptowicza 15
+2906 Augustów ul. Mazurska 10
+5182 Augustów ul. Przemysłowa 2
+7524 Augustów ul. Rajgrodzka 91
+4825 Babice ul. Zakopiańska 47
+2873 Babimost ul. Lotnicza 3
+3397 Baborów ul. Wiejska 2A
+6709 Banie ul. Dworcowa 5
+6861 Banie Mazurskie ul. Jasna 2
+5064 Banino ul. Borowiecka 2
+4064 Baniocha ul. Puławska 14
+6977 Baranowo (pow.ostrołęcki) ul. Madalińskiego 48
+4874 Baranowo (pow.poznański) ul. Szamotulska 26
+6860 Barciany ul. Wojska Polskiego 30
+2000 Barcin ul. Polna 2
+2786 Barczewo ul. Wojska Polskiego 1A
+6706 Bardo ul. Kolejowa 22
+1366 Barlinek ul. Żabia 7
+4200 Barlinek ul. Kombatantów 4
+1529 Bartoszyce ul. Kętrzyńska 20
+3540 Bartoszyce ul. Warszawska 29
+5340 Bartoszyce ul. Bema 40C
+3019 Barwice ul. Zielona 2 A
+3710 Bełchatów ul. Wojska Polskiego 8
+3897 Bełchatów ul. Kwiatowa 1/3
+5132 Bełchatów ul. Okrzei 35/39
+6124 Bełchatów Armii Krajowej 7
+7349 Bełchatów ul. Bawełniana 
+6660 Bestwina ul Krakowska 146
+4988 Bezrzecze ul. Górna 7B
+1541 Będzin ul. Zagórnego 1
+3096 Będzin ul. Piłsudskiego 83
+3892 Będzin ul. Piastowska 29
+3945 Będzin ul. Żwirki i Wigury 6
+5047 Będzin ul. Niepodległości 3
+2724 Biała (pow.prudnicki) ul. Opolska 1A
+6028 Biała (pow.wieluński) Parcela 13
+2312 Biała Piska ul. Słowackiego 1
+1760 Biała Podlaska ul. Przechodnia 8
+3524 Biała Podlaska ul. Orzechowa 2A
+5663 Biała Podlaska ul. Brzeska 27
+
+[STRONA 2]
+6109 Biała Podlaska ul. Janowska 54
+2817 Biała Rawska ul. Mickiewicza 19
+3221 Białe Błota ul. Szubińska 8
+5728 Białka Białka 
+3207 Białka Tatrzańska ul. Środkowa 294A
+3784 Białobrzegi ul. Krakowska 88
+6856 Białobrzegi (pow.łańcucki) Białobrzegi 56A
+2408 Białogard ul. Świdwińska 15
+2767 Białogard ul. Mickiewicza 17
+6377 Białogard Drzymały 27
+4019 Biały Bór ul. Dworcowa 3
+1295 Białystok ul. Ryska 1
+1429 Białystok ul. Wyszyńskiego 21
+1567 Białystok ul. Radzymińska 12
+1707 Białystok ul. Bolesława Chrobrego 16A
+1969 Białystok ul. Pogodna 35
+2515 Białystok ul. Choroszczańska 24
+2629 Białystok ul. Piastowska 25
+2757 Białystok ul. Paderewskiego 10B
+2884 Białystok ul. Klepacka 2/1
+2953 Białystok ul. Szosa Baranowicka 29
+3194 Białystok ul. Antoniukowska 56
+3386 Białystok ul. Ogrodniczki 2
+3808 Białystok ul. Zabłudowska 52
+4060 Białystok ul. Kawaleryjska 66
+4535 Białystok ul. Gajowa 116
+4537 Białystok ul. Porosły Kolonia 60
+4844 Białystok ul. Narodowych Sił Zbrojnych 13
+4912 Białystok ul. Antoniuk Fabryczny 58
+5001 Białystok ul. Wrocławska 15
+5034 Białystok ul. 42 Pułku Piechoty 34
+5141 Białystok ul. Bacieczki 217
+5144 Białystok ul.Fabryczna 4 
+5214 Białystok ul. Wiewiórcza 51
+5215 Białystok ul. Baranowicka 121
+5220 Białystok ul. Kaczorowskiego 7
+5409 Białystok ul. Nowowarszawska 10
+6394 Białystok Ul. Trawiasta 2
+6466 Białystok Al.. Państwa Polskiego - 1000lecia 8b
+7303 Białystok ul. Mroźna 2
+7309 Białystok ul. Świętojańska 15
+2652 Biecz ul. Kazimierza Wielkiego 26
+4511 Biedrusko ul. Jesionowa 1
+3413 Bielany Wrocławskie ul. Wrocławska 22A
+2878 Bielawa ul. Wolności 67
+3498 Bielawa ul. 1 Maja 37
+4853 Bielawa ul. Lipowa 3
+7321 Bielawa ul. Wojska Polskiego 39
+5943 Bielsk ul. Płocka 28
+1163 Bielsk Podlaski ul. Szkolna 2
+
+[STRONA 3]
+5957 Bielsk Podlaski  Piłsudskiego 54
+6731 Bielsk Podlaski ul. Orleańska
+1930 Bielsko Biała ul. Partyzantów 156
+2069 Bielsko Biała ul. Żywiecka 115
+2788 Bielsko Biała ul. Cyniarska 26
+3021 Bielsko Biała ul. Stawowa 4
+3190 Bielsko Biała ul. Grabowa 1
+3269 Bielsko Biała ul. Kamienicka 2A
+4015 Bielsko Biała ul. Cieszyńska 418
+4759 Bielsko Biała ul. Kolista 21
+5020 Bielsko Biała ul. Mostowa 5
+3319 Biertowice Biertowice 366
+3564 Bieruń ul. Warszawska 156
+5634 Bieruń ul. Licealna
+2332 Bierutów ul. Słowackiego 20
+5940 Biłgoraj ul. 3-maja 
+6867 Biskupice Biskupice 361
+7306 Biskupice (pow.poznański) ul. Mieszka I 1A
+4263 Biskupiec (pow.nowomiejski) ul. Jesionowa 2
+3853 Biskupiec (pow.olsztyński) ul. Plażowa 2
+3565 Blachownia ul. Miodowa 2
+6210 Błaszki ul. Lubanów 12
+4613 Błażowa ul. Armii Krajowej 39B
+3306 Błędów ul. Sadurkowska 1
+1872 Błonie ul. Powstańców 18A
+4997 Błonie Ul. Grodziska 56
+6136 Błonie ul. Romualda Traugutta 14
+2997 Bobolice ul. Zwycięstwa 7
+5067 Bobowa ul. Grunwaldzka 50
+7753 Bobrowiec ul. Bobrowiecka 26
+4688 Bobrowniki ul. Polna 58
+2560 Bochnia ul. Wiśnicka 16
+6051 Bochnia Krzeczowska 16
+2870 Bochotnica ul. Nałęczowska 56
+6826 Bodzanów ul. Parkoczewo 13
+7330 Bodzentyn ul. Opatowska 65
+6619 Bogacica ul. Kluczborska 1A
+1527 Bogatynia ul. II Armii Wojska Polskiego 10
+2260 Bogatynia ul. Dworcowa 2
+4091 Bogatynia ul. Matejki 64
+3925 Boguchwała ul. Przemysłowa 3B
+1982 Boguszów Gorce ul. Wałbrzyska 8
+2762 Boguszów Gorce ul. Traugutta 20
+4674 Bojano ul. Pogodna 18
+4394 Bojanowo ul. Gołaszyn 75
+7564 Bolesławice ul. Oliwkowa 1
+2127 Bolesławiec ul. Chrobrego 25/27
+2154 Bolesławiec ul. Wróblewskiego 4A-4B
+4447 Bolesławiec ul. Wesoła 23B lok.3
+5426 Bolesławiec Tysiąclecia 43
+
+[STRONA 4]
+2129 Bolków ul. Sienkiewicza 16
+3893 Bolszewo ul. Zamostna 3C
+6423 Bolszewo ul. Słoneczna 16
+6887 Bońki  ul. Wyszogrodzka 29A
+5240 Borek Wielkopolski ul. Marii Konopnickiej 24
+6146 Borkowo ul. Kartuska 10
+5992 Borne Sulinowo Aleja Niepodleglości 
+4551 Borówiec ul. Główna 2a
+7267 Branice ul. Młyńska 19A
+2217 Braniewo ul. Piłsudskiego 1
+3937 Brańsk ul. Armii Krajowej 16C
+3135 Brenna ul. Wyzwolenia 38B
+1946 Brodnica ul. Mazurska 5/7
+2564 Brodnica Ul. Gen. Stanisława Maczka 2
+2926 Brodnica ul. Kolejowa 1A
+6268 Brodnica ul. Władysława Łokietka 1
+3066 Brusy ul. Wojska Polskiego 56
+3145 Brwinów Ul. Warszawska 1
+1942 Brzeg ul. Słowackiego 31
+2689 Brzeg ul. Łokietka 4
+4246 Brzeg ul. Długa 2
+3675 Brzeg Dolny Al. Jerozolimskie 37
+5239 Brzeg Dolny Ul. Debowa 1a
+3909 Brzesko ul. Pomianowska 2B
+5449 Brzesko ul. Os. Władysława 15
+6539 Brzesko ul. Solskiego 14A
+3337 Brzeszcze ul. Ofiar Oświęcimia 31
+3222 Brześć Kujawski ul. Kolejowa 8
+6715 Brzezina ul. Chrobrego 26
+1620 Brzeziny ul. Modrzewskiego 4
+4755 Brzeziny Kościuszki 9
+6261 Brzezna Brzeźna
+6914 Brzeźnio ul. Wspólna 38
+6177 Brzostek ul. Mysłowskiego 5A
+4707 Brzoza ul. Bydgoska 34A
+2071 Brzozów ul. Bema 2
+6233 Buczkowice ul.Wyzwolenia 19
+7072 Budzów Budzów 624
+1013 Budzyń ul. Dworcowa 17a
+1895 Buk ul. Jana Pawła II 20
+7749 Bulowice Stara Droga
+3640 Busko Zdrój ul. Nadole 2
+2484 Bychawa ul. Szkolna 2
+7453 Bychawa Sienkiewicza 94
+4431 Byczyna ul. Kwiasowskiego 14
+1384 Bydgoszcz ul. O.M. Kolbego 56
+1412 Bydgoszcz ul . Rozwadowskiego 2
+1415 Bydgoszcz ul. Kąkolowa 1
+1452 Bydgoszcz ul. Sobieskiego 5
+1628 Bydgoszcz ul. Grunwaldzka 8
+
+[STRONA 5]
+1683 Bydgoszcz ul. Powstańców Wielkopolskich 56
+2200 Bydgoszcz ul. Sportowa 13
+2464 Bydgoszcz ul. Grunwaldzka 37
+2577 Bydgoszcz ul. Ujejskiego 61
+2633 Bydgoszcz ul. Skłodowskiej-Curie 29
+2686 Bydgoszcz ul. Magnuszewska 6
+2820 Bydgoszcz ul. Flisacka 2
+2824 Bydgoszcz ul. Łęczycka 33
+3177 Bydgoszcz ul. Kościuszki 27
+3254 Bydgoszcz ul. Bydgoska 31-33
+3418 Bydgoszcz ul. Kossaka 17
+3542 Bydgoszcz ul. Gdańska 138
+3543 Bydgoszcz ul. Grudziądzka 27/29
+3905 Bydgoszcz ul. Skarżyńskiego 6
+3922 Bydgoszcz ul. Schulza 7
+4018 Bydgoszcz ul. Wyzwolenia 106
+4116 Bydgoszcz ul. Ku Wiatrakom 42
+4182 Bydgoszcz ul. Inowrocławska 1A
+4719 Bydgoszcz ul. Grunwaldzka 284
+5258 Bydgoszcz ul. Żwirki i Wigury 11C
+5306 Bydgoszcz ul. Andersa 2
+5349 Bydgoszcz ul. Gajowa 7
+5573 Bydgoszcz ul. Szułczyńskiej 2
+6983 Bystrzyca Górna ul. Burkatów 207
+3676 Bystrzyca Kłodzka ul. Strażacka 8
+2144 Bytom ul. Frenzla 26
+2145 Bytom ul. Łużycka 1
+3195 Bytom ul. Zabrzańska 72
+3566 Bytom ul. Strzelców Bytomskich 250D
+4079 Bytom ul. Witczaka 4
+4422 Bytom ul. Pomorska 2A
+4654 Bytom ul. Krzyżowa 32
+4951 Bytom ul. Konstytucji 37
+5235 Bytom ul. Sandomierska 10
+6067 Bytom ul. Narutowicza 11
+6345 Bytom ul. Strzelców Bytomskich 40
+6738 Bytom ul. Konstytucji 67
+7624 Bytom ul. Żołnierska
+4923 Bytom Odrzański Dworcowa
+3711 Bytów ul. 1 Maja 13
+4885 Bytów ul. Zwyciestwa 9
+7560 Bytów ul. Wybickiego 5c
+5918 Cegłów ul. Henryka Dobrzyckiego 9
+7558 Celestynów
+6811 Charzyno Wojska polskiego 21
+1363 Chełm ul. Wojsławicka 6
+2536 Chełm ul. Lwowska 79
+2718 Chełm ul. Kolejowa 85
+3193 Chełm ul. Lubelska 173
+3641 Chełm ul. Armii Krajowej 13
+
+[STRONA 6]
+3642 Chełm ul. Rejowiecka 120
+3643 Chełm Al. Żołnierzy I Armii Wojska Polskiego 7
+4632 Chełm ul. Siedlecka 4
+5887 Chełm ul. Lwowska 105
+7345 Chełm ul. Rejowiecka 179B
+2399 Chełmek ul. Krakowska 20D
+4343 Chełmno ul. Dojazdowa 1 
+6243 Chełmno ul. Polna 18
+1051 Chełmża ul. Sikorskiego 30
+5393 Chełmża ul. Chełmińskie Przedmieście 17
+4443 Chęciny ul. Kielecka 29A
+2968 Chmielnik ul. Kwiatowa 3
+5274 Chmielów Chmielów 602
+6747 Choceń ul.Targowa
+6716 Chocianowice Chocianowice 105a
+2381 Chocianów ul. Rotmistrza Witolda Pileckiego 4a
+4157 Chociwel ul. Armii Krajowej 76
+7026 Chocz ul. Pleszewska 39B
+6253 Choczewo ul. Pucka 26
+6945 Chodel ul. Piłsudskiego 5
+2097 Chodzież ul. Zwycięstwa 18
+2205 Chojna ul. Ogrodowa 14B
+2157 Chojnice PL. PIASTOWSKI 31
+3241 Chojnice ul. Jana Pawła II 2D
+3873 Chojnice ul. Modra 4
+6373 Chojnice Karolewo 17A
+6579 Chojnice ul. Towarowa 11
+7731 Chojnice ul.Człuchowska 64
+2175 Chojnów ul. Legnicka 25
+3343 Choroszcz ul. Sienkiewicza 30B
+3493 Chorzele ul. Kasztanowa 5
+1158 Chorzów ul. Ryszki 57
+2439 Chorzów ul. Ks. Jana Gałeczki 30
+3757 Chorzów ul. Beskidzka 1
+3916 Chorzów ul. Floriańska 4
+4412 Chorzów pl. Św. Jana 24
+4533 Chorzów ul. Św. Piotra 14
+5010 Chorzów ul. Długa 67
+5044 Chorzów ul. Siemianowicka 157
+6339 Chorzów ul. Szpitalna
+3500 Choszczno ul. Jagiełły 9
+7464 Choszczno ul.Marii Konopnickiej 2b
+4615 Chotomów ul. Partyzantów 29E
+6725 Chróścice ul. Ligonia
+1533 Chrzanów ul. Sikorskiego 2
+2942 Chrzanów ul. Śląska 30D
+3568 Chrzanów ul. Świętokrzyska 30
+4046 Chrzanów ul. Armii Krajowej 6
+6094 Chrzanów ul. Henryka 54
+7032 Chrząstowice ul. Opolska 1
+
+[STRONA 7]
+2035 Chwaszczyno ul. Oliwska 139
+4310 Chybie ul. Bielska 65A
+4871 Cianowice ul. Krakowska 1
+6655 Ciążeń ul. Wiosny Ludów 40
+1775 Ciechanów ul. Sikorskiego 11
+2005 Ciechanów ul. Tatarska 1
+2303 Ciechanów ul. Sienkiewicza 79
+4012 Ciechanów ul. 17 Stycznia 6
+7275 Ciechanów ul. Sońska 3
+1575 Ciechocinek ul. Zdrojowa 25
+6276 Ciechocinek ul. Bema 40
+2977 Cieplewo ul. Sosonowa 1
+4397 Cieszanów ul. Sienkiewicza 4
+1335 Cieszyn ul. Wiejska 1
+2029 Cieszyn ul.Kolejowa 20
+3089 Cieszyn ul. Kossak Szatkowskiej 2
+7859 Cieszyn ul. Graniczna 79
+4692 Cybinka Ul. Krośnieńska 1
+1503 Czaplinek ul. Długa 19-27
+7326 Czaplinek Pławieńska 5E
+6989 Czapury ul. Poznańska 17
+3047 Czarna Białostocka ul. Fabryczna 4
+5242 Czarna Dąbrówka ul. Lęborska 2A
+6656 Czarna Tarnowska ul. Konarskiego 10
+3380 Czarne ul. Szczeciniecka 1
+5418 Czarnków ul. Wodna 1
+5938 Czarnków ul. Kościuszki 93
+3465 Czarny Dunajec ul. Kolejowa 22
+5450 Czchów ul. Krakowska 24
+1535 Czechowice Dziedzice ul. Węglowa 63
+3946 Czechowice Dziedzice ul. Szkolna 32
+4323 Czechowice Dziedzice ul. Legionów 90
+1125 Czeladź ul. Szpitalna 8
+3570 Czeladź ul. Bedzińska 10
+5835 Czeladź ul. Dehnelów 41
+6906 Czemierniki ul. Radzyńska 81
+2774 Czempiń Rynek 12
+6837 Czerniejewo ul. Poznańska 29
+6342 Czernikowo ul. Toruńska 57
+3026 Czersk ul. Cmentarna 4
+6371 Czersk ul. Jana Pawła II 3
+1744 Czerwieńsk ul. Zielonogórska 34A
+6980 Czerwińsk nad Wisłą ul. Władysława Jagiełły 28
+1545 Czerwionka Leszczyny ul. Jana Pawła II 3
+3571 Czerwionka Leszczyny ul. 3 Maja 23
+3572 Czerwionka Leszczyny ul. Ks. A. Pojdy 35B
+4277 Czerwonak ul. Leśna 1
+2196 Częstochowa ul. Św. Jadwigi 60/62
+3228 Częstochowa ul. Radomska 4A
+3858 Częstochowa ul. Pułaskiego 30
+
+[STRONA 8]
+3876 Częstochowa ul. Mostowa 11/13
+3927 Częstochowa ul. Sabinowska 92
+4384 Częstochowa ul. Bohaterów Katynia 37
+4441 Częstochowa ul. Lenartowicza 22 A
+5104 Częstochowa al. Jana Pawła II 106
+5560 Częstochowa ul. Okulickiego 92
+5752 Częstochowa ul. Główna 140
+5782 Częstochowa ul. Jagiellońska 35
+5877 Częstochowa ul. Faradaja 21
+6358 Częstochowa ul. Łukasińskiego 
+6451 Częstochowa Mościckiego
+6502 Częstochowa Łódzka
+7220 Częstochowa ul. Gościnna 92
+6657 Człopa ul. Zwycięstwa Wojska polskiego 19
+1824 Człuchów ul. Traugutta 11A
+3544 Człuchów ul. Jerzego z Dąbrowy 2A
+5167 Człuchów ul. Szkolna 10
+7218 Czosnów ul. Warszawska
+5304 Czyżew ul. Andrzejewska 2
+6685 Ćmielów Sandomierska 173
+4476 Ćwiklice ul. Męczenników Oświęcimskich72
+6616 Damasławek ul. Żnińska 28 B 
+1190 Darłowo ul. Wojska Polskiego 47
+6087 Dąbrowa Białostocka Tysiąclecia Państwa Polskiego 32
+1130 Dąbrowa Górnicza ul. Adamieckiego 11A
+1182 Dąbrowa Górnicza ul. Kasprzaka 16
+1537 Dąbrowa Górnicza ul. Królowej Jadwigi 23
+1577 Dąbrowa Górnicza ul. Sienkiewicza 18
+1970 Dąbrowa Górnicza ul. Zwycięstwa 5
+3141 Dąbrowa Górnicza al. Zagłębia Dąbrowskiego 24
+4796 Dąbrowa Górnicza ul. Konopnickiej 50
+5944 Dąbrowa Górnicza ul. Majewskiego 314
+6042 Dąbrowa Górnicza ul. Katowicka 1B 
+7577 Dąbrowa Górnicza ul. Aleja J. Piłsudskiego 87A
+6855 Dąbrowa Rzeczycka Dąbrowa Rzeczycka 108
+1832 Dąbrowa Tarnowska ul. Sucharskiego 7
+2506 Dąbrowa Tarnowska ul. Jagiellońska 39B
+3952 Dąbrówka (pow.poznański) ul. Poznańska 31
+2222 Debrzno ul. Kościuszki 8
+5474 Deszczno ul. Lubuska 42a
+6251 Dębe Wielkie ul. Gen. Jana Skrzyneckiego 1
+3118 Dębica ul. Tuwima 4
+3644 Dębica ul. Nagawczyna 245F
+4711 Dębica ul. Kraszewskiego 59
+6287 Dębica ul. Kościuszki
+1813 Dęblin ul. Rynek 4
+2856 Dęblin ul. Gen. J. Kowalskiego 9
+4726 Dębnica Kaszubska Ul.Ks.Antoniego Kani 8.
+1285 Dębno ul. Armii Krajowej 2/4
+6894 Dębowiec Dębowiec
+
+[STRONA 9]
+4146 Długołęka ul. Wiejska 64
+6263 Długosiodło ul. Pułaskiego 6
+2778 Dobczyce ul. Zarabie  6I
+6984 Dobiegniew Gdańska 1
+4933 Dobra
+6602 Dobra Nowogardzka ul. Piłsudskiego 6a
+6214 Dobra Szczecińska ul. Szczecińska 19A
+6645 Dobrcz ul. Długa 8A
+2108 Dobre Miasto ul. Wojska Polskiego 20E/20F
+3164 Dobrodzień ul. Oleska 23
+4039 Dobroń ul. Wrocławska 3A
+6608 Dobroszyce ul. Trzebnicka 22
+6966 Dobrzany ul. Jana Pawła II 24F
+4798 Dobrzeń Wielki ul. Namysłowska 10A
+6707 Dobrzyca ul. Krotoszyńska 41A
+6270 Dobrzykowice ul. Wrocławska 130-131
+6922 Dobrzyń nad Wisłą ul. Zduńska
+5454 Dolice ul. Pyrzycka 9a
+6933 Dolsk ul. Gostyńskie Przedmieście 14A
+5201 Dołhobyczów ul. Partyzantów 2
+6620 Domaszowice ul. Osiedlowa 2A
+4640 Dorohusk Okopy 130A
+6699 Doruchów ul. Kaliska 42
+6756 Drawno ul. Kaliska
+6680 Drawski Młyn Szosa Dworcowa 9c
+1149 Drawsko Pomorskie ul. Prusa 7
+5480 Drawsko Pomorskie Ul. Złocieniecka 11C
+1991 Drezdenko Plac Wileński 1
+2965 Drobin ul. Płońska 7
+4860 Drogomyśl ul. Główna 2
+4067 Drohiczyn ul. Mieszka I 6
+6737 Droszków ul. Działkowa 1
+4886 Drzewica pl. Narutowicza 20A
+2741 Dukla ul. Słowacka 22
+2507 Duszniki Zdrój ul. Dworcowa 11
+2978 Dynów ul. Grunwadzka 38
+4961 Dywity ul. Jeżynowa 1B
+1993 Działdowo ul. Skłodowskiej 35
+3545 Działdowo ul. Olsztyńska 1
+5360 Działdowo ul. Olsztyńska 2
+6924 Działoszyce ul. Chmielów 1B
+2709 Działoszyn Posmykowizna 43 
+5166 Dziemiany ul. Wyzwolenia 13
+3442 Dzierzgoń ul. Limanowskiego 15
+7534 Dzierzgoń ul. Zawadzkiego 20
+1325 Dzierżoniów Os. Różane 23
+3677 Dzierżoniów ul. Piłsudskiego 18
+5962 Dzierżoniów ul.Piastowska 15
+7350 Dzierżoniów ul. Prochowa 8
+4934 Dziwnów ul. Słowackiego 8A
+
+[STRONA 10]
+7031 Dźwierzuty ul. Szczycieńska 32A
+1248 Elbląg ul. Malborska 78
+1560 Elbląg ul. Odrodzenia 10
+2215 Elbląg ul. Armii Krajowej 1
+2509 Elbląg ul. Odzieżowa 12
+3000 Elbląg ul. Królewiecka 195B
+3255 Elbląg ul. Warszawska 66
+4086 Elbląg ul. Jana III Sobieskiego 27
+4087 Elbląg ul. Czerniakowska 7
+4810 Elbląg ul. Węgrowska 3
+4999 Elbląg ul. Żeromskiego 1
+5050 Elbląg ul. Fromborska 2D
+5210 Elbląg ul. Donimirskich 29
+5221 Elbląg ul. Pułaskiego 2A
+5305 Elbląg ul. Rawska 30
+6017 Elbląg ul. Grunwaldzka 2
+7278 Elbląg ul. Królewiecka 88
+1381 Ełk ul. Kilińskiego 11
+2349 Ełk ul. Sikorskiego 18
+3527 Ełk ul. Kilińskiego 47
+4750 Ełk ul. Czesława Miłosza 2
+4962 Ełk ul. Mickiewicza 44a
+6623 Fałków ul. Leśna 2A
+6613 Filipów ul. 1 Maja
+7093 Firlej ul. Cmentarna 39
+5315 Frampol ul. Biłgorajska 1F
+6787 Fredropol ul. Fredropol
+4398 Frysztak ul. Rzeszowska 11A
+6755 Galewice Wieruszuwska, 7
+6941 Garbatka Letnisko ul. Jana Kochanowskiego 6
+6719 Gardeja ul. Modrzewiowa 14
+1399 Garwolin ul. Korczaka 7
+7143 Garwolin ul. Warszawska 39
+7370 Garwolin Trakt Lwowski 41
+7445 Gaszowice ul. Rydułtowska 57a
+4932 Gąbin al. Jana Pawła II 4
+6753 Gąsocin Łąkowa 10 
+1146 Gdańsk ul. Porębskiego 8
+1250 Gdańsk ul. Chałubińskiego 27
+1679 Gdańsk ul. Grunwaldzka 211
+1759 Gdańsk ul. Hallera 233A
+1852 Gdańsk ul. Chłopska 16B
+1854 Gdańsk ul. Warszawska 59
+1920 Gdańsk ul. Nałkowskiej 1A
+1932 Gdańsk ul. Kartuska 332
+2214 Gdańsk ul. Jelitkowski Dwór 2
+2276 Gdańsk ul. Hallera 167
+2280 Gdańsk ul. Długie Ogrody 6-14
+2338 Gdańsk ul. Zeusa 1A
+2557 Gdańsk ul. Osowski Zakątek 17
+
+[STRONA 11]
+2570 Gdańsk ul. Rajska 6
+2921 Gdańsk ul. Kłosowa 1
+3071 Gdańsk ul. Wyzwolenia 26
+3090 Gdańsk ul. Kartuska 467
+3219 Gdańsk ul. Jabłoniowa 46
+3257 Gdańsk ul. Meteorytowa 11
+3295 Gdańsk ul. Startowa 14
+3756 Gdańsk ul. Potokowa 15D
+3920 Gdańsk ul. Wielkopolska 62
+4208 Gdańsk ul. Lecha Kaczyńskiego 5
+4250 Gdańsk ul. Pomorska 25
+4254 Gdańsk ul. Wrzosy 1 
+4259 Gdańsk ul. Grunwaldzka 100
+4260 Gdańsk ul. Św. Wojciecha 149/151
+4262 Gdańsk ul. Piecewska 26
+4306 Gdańsk ul. Słowackiego159
+4357 Gdańsk ul. Gdańska 21L
+4528 Gdańsk ul. Worcella 44
+4629 Gdańsk ul. Wajdeloty 12
+4718 Gdańsk ul. Rzeczypospolitej 33
+4721 Gdańsk ul. Karmelicka 1
+5246 Gdańsk ul. Droszyńskiego 28A
+5722 Gdańsk ul. Beethovena 11A
+5791 Gdańsk ul. Wawelska 2A
+5963 Gdańsk ul Czerwony Dwór 24
+6041 Gdańsk ul. Lecha Kaczyńskiego 20
+6117 Gdańsk ul. Norwida 15
+6213 Gdańsk ul. Paderewskiego 9
+6385 Gdańsk ul. Bolesława Chrobrego 79E
+6406 Gdańsk ul. Cieszyńskiego 1a
+6543 Gdańsk ul. Jana Pawła II 18
+6544 Gdańsk ul. Kartuska 257
+7145 Gdańsk ul. Przytulna 48
+7146 Gdańsk ul. Kartuska 406
+7163 Gdańsk ul. Balcerskiego 2
+7164 Gdańsk ul. Koziorożca
+7276 Gdańsk ul. Sucha 31
+3025 Gdów ul. Krakowska 1019
+1156 Gdynia ul Strażacka 2 
+1559 Gdynia ul. Chylońska 42A
+1857 Gdynia ul. Sikorskiego 2A
+2055 Gdynia ul. Bosmańska 45
+2141 Gdynia ul. Ledóchowskiego 4A
+2277 Gdynia ul. Chylońska 251
+2278 Gdynia ul. Iwaszkiewicza 1
+3301 Gdynia ul. Unruga 5A
+3546 Gdynia ul. Morska 70A/B
+3754 Gdynia ul. Sojowa 35
+3901 Gdynia ul. Wzgórze Bernadowo 304
+4252 Gdynia ul. Pułkownika Dąbka 193
+
+[STRONA 12]
+4257 Gdynia ul. Chylońska 126
+4305 Gdynia ul. Chwarznieńska 178a
+4585 Gdynia ul. Wiczlińska 67
+4675 Gdynia ul. Opata Hackiego 12
+4678 Gdynia ul. II Morski Pułk Strzelców 1
+4775 Gdynia ul. Legionów 112/19
+5896 Gdynia Kopernika 36
+7480 Gdynia ul. Rdestowa 160/5
+6643 Gierzwałd Gierzwałd 22AC
+6684 Gizałki ul. Kaliska 2A
+1303 Giżycko ul. Wilanowska 5
+1826 Giżycko ul. Kolejowa 24
+2627 Giżycko ul. Smętka 3
+3528 Giżycko ul. 1 Maja 38
+4339 Giżycko ul. Przemysłowa 15
+5839 Glinojeck ul. Płocka 30
+1028 Gliwice ul. Gomułki 1
+1397 Gliwice ul. Jedności 4
+1419 Gliwice ul. Chorzowska 44B
+1456 Gliwice ul. Żwirki i Wigury 62
+2693 Gliwice ul.Kolberga 41
+3379 Gliwice ul. Daszyńskiego 135
+3577 Gliwice ul. Dworcowa 44
+3578 Gliwice ul. Marzanki 21
+3580 Gliwice ul. Bojkowska 19
+3581 Gliwice ul. Dubois 16
+3582 Gliwice ul. Lipowa 35
+3584 Gliwice ul .Czwartaków 13
+4296 Gliwice ul. Toszecka 129
+4534 Gliwice ul. Przyszowska 147
+6043 Gliwice ul. Kozielska 33
+6084 Gliwice ul. Kozielska 111
+6153 Gliwice ul. Tarnogórska 171
+7617 Głogoczów Głogoczów 1116
+1808 Głogów ul. Głowackiego 7
+2687 Głogów ul. Piłsudskiego 1
+3040 Głogów ul. Brzoskwiniowa 2
+3679 Głogów ul. Gwiazdzista 1A
+4421 Głogów ul. Folwarczna 52A
+4676 Głogów ul. Gen. Andersa 19
+2793 Głogów Małopolski ul. Piłsudskiego 24
+1681 Głogówek ul. Dworcowa 10
+4106 Głogówek ul. Skargi 15
+1751 Głowno ul. Kopernika 33A
+5175 Głowno ul. Sikorskiego 59
+5321 Główczyce ul. Szosa Słupska 3A
+2191 Głubczyce ul. Raciborska 1
+6118 Głubczyce ul. Żeromskiego 12
+6271 Głuchołazy ul. Grunwaldzka 1A
+2424 Głuszyca ul. Grunwaldzka 16A
+
+[STRONA 13]
+2561 Gniew ul. Kościuszki 10
+6630 Gniewino ul. Pomorska 56
+3123 Gniewkowo ul. Rynek 3
+2007 Gniezno ul. Roosevelta 83
+2075 Gniezno ul. Biskupińska 31
+2268 Gniezno ul. Myśliwiecka 74/Poznańska
+2269 Gniezno ul. Paczkowskiego 18
+3268 Gniezno ul. Witkowska 11A
+5124 Gniezno ul. Mickiewicza 2
+6061 Gniezno ul. Kostrzewskiego
+7500 Gniezno ul. Poznańska 45
+6810 Gnojnik Gnojnik 528
+7441 Godów ul. 1 Maja 61
+6640 Godziesze Wielkie ul. Ostrowska 5A
+2361 Gogolin ul. Strzelecka 17A
+2546 Goleniów ul. Dworcowa 9
+4916 Goleniów ul. Puszkina 1
+4598 Goleszów ul. Cieszyńska 10
+2648 Golina Ul. Słowackiego 5A
+2917 Golub Dobrzyń ul. Sokołowska 202/4
+4029 Gołańcz ul. Jeziorna 12
+1654 Gołdap ul. Królewiecka 8
+4544 Gołdap ul. Zadumy 2
+6745 Gołubie ul. Samobora II 65A
+6822 Gołymin-Ośrodek ul. Polna 1
+1825 Gorlice ul. Garncarska 15
+2142 Gorlice ul. Kościuszki 42B
+4709 Gorlice ul. Biecka 64
+6951 Gorzkowice ul. Kościelna 49
+4436 Gorzów Śląski ul. Towarowa 1
+1457 Gorzów Wielkopolski ul. Mościckiego 13
+1504 Gorzów Wielkopolski ul. Okólna 28A
+1781 Gorzów Wielkopolski ul. Kościuszki 15
+1898 Gorzów Wielkopolski ul. Matejki 46
+2211 Gorzów Wielkopolski ul. Przemysłowa 57
+3196 Gorzów Wielkopolski ul. Olimpijska 7
+4336 Gorzów Wielkopolski ul. Londyńska 4
+4337 Gorzów Wielkopolski ul. Żwirowa 25
+5260 Gorzów Wielkopolski al. Konstytucji 3 Maja 102
+6381 Gorzów Wielkopolski Ul.Chemiczna 7
+7064 Gorzów Wielkopolski ul. Kasprzaka 9A
+7374 Gorzów Wielkopolski Koniawska 61
+7532 Gorzów Wielkopolski ul. Niepodległości 88
+7556 Gorzów Wielkopolski Podmiejska 16 B
+2514 Gorzyce (pow.tarnobrzeski) ul. Sandomierska 100
+4233 Gorzyce (pow.wodzisławski) ul. Bogumińska 29
+1453 Gostynin ul. Bema 9
+3981 Gostynin ul. Kutnowska 8
+3454 Gostyń ul. Poznańska 200
+6897 Goszczanów ul. Błaszkowska 20a
+
+[STRONA 14]
+7621 Gościcino ul. Handlowa 30
+6946 Gościeradów Folwark 36
+7087 Gościno ul. Ogrodowa 2
+6735 Gościszów Gościszów 129B
+7568 Gowarzewo ul. Kleszczewska 2
+6805 Goworówek Ostrołęcka
+6858 Gozdnica ul. Górna
+2103 Góra al. Jagiellonów 8
+1926 Góra Kalwaria ul. Pileckiego 4
+3991 Góra Kalwaria ul. Wojska Polskiego 37A
+7125 Góra Kalwaria ul. Wyszyńskiego
+3016 Górowo Iławeckie ul. Szkolna 2
+6749 Górzno ul. Nowe Osiedle 2
+5577 Górzyca ul. Lipowa 1
+5370 Grabownica Starzeńska Grabownica Starzeńska 118
+6248 Grabów nad Prosną Ul. Ostrzeszowska 6D
+2532 Grajewo ul. Dworna 27C
+2992 Grajewo ul. Pułku Strzelców Konnych 8
+4044 Grajewo ul. Konstytucji 3 maja 4
+7027 Grąbków ul. Grąbków 57A
+7047 Grębocin ul. Nad Strugą 2
+5563 Grębów ul. Bajkowa 2
+1669 Grodków ul. Grunwaldzka 6
+2643 Grodków ul. Kościuszki 6
+4035 Grodzisk Mazowiecki ul. Królewska 51
+4409 Grodzisk Mazowiecki ul. Matejki 6B
+5960 Grodzisk Mazowiecki ul. Nadarzyńska 93
+7442 Grodzisk Mazowiecki Żyrardowska 14
+1150 Grodzisk Wielkopolski ul. 27 Stycznia 4
+3997 Grodzisk Wielkopolski ul. Nowotomyska 50a
+5939 Gromnik ul. Krynicka 53
+1309 Grójec ul. Mogielnicka 28
+4066 Grójec ul. Laskowa 5
+4765 Grójec ul. Armii Krajowej 50B
+6766 Grudusk ul. Konopnickiej 10A
+1226 Grudziądz ul. Śniadeckich 68
+1598 Grudziądz ul. Chełmińska 117
+2150 Grudziądz ul. Chełmińska 44/46
+3547 Grudziądz ul. Mieszka I 3
+3842 Grudziądz ul. Astrowa 2
+3935 Grudziądz ul. Włodka 16
+4036 Grudziądz ul. Rataja 4
+4340 Grudziądz ul. Nauczycielska 20
+5802 Grudziądz ul. Droga Kaszubska 3
+6513 Grudziądz ul. Wyspiańskiego 27
+7144 Grudziądz ul.  Łyskowskiego
+7458 Grudziądz ul. Wierzbowa 2
+7687 Grudziądz ul. Konstytucji 3 maja
+2990 Grybów ul. Kolejowa 2
+1129 Gryfice ul. Sportowa 12
+
+[STRONA 15]
+2137 Gryfice ul. 3 Maja 21
+3502 Gryfice ul. 3 Maja 11
+3404 Gryfino ul. Sportowa 2A
+5219 Gryfino ul. Asnyka 57
+2479 Gryfów Śląski Ul. Kolejowa 40
+7005 Grzędzice ul. Gryfa 22
+3058 Gubin ul. Śląska 25
+4453 Gubin ul. Miodowa 28
+7242 Haczów Haczów 103
+2635 Hajnówka ul. Białowieska 5E
+3531 Hajnówka ul. 3 Maja  51A
+4459 Herby ul. Lubliniecka 56B
+4536 Horodniany Horodniany 14A
+5200 Hrebenne Hrebenne 87
+2979 Hrubieszów ul. Kolejowa 43
+6529 Hrubieszów ul.Piłsudskiego 57
+1555 Iława ul. Smolki 12A
+3549 Iława ul. Ostródzka 54
+4048 Iława ul. Królowej Jadwigi 6
+5673 Iława ul. Jana III Sobieskiego 43
+7233 Iława ul. Zalewska 29
+4020 Iłowa ul. Żagańska 61E
+5024 Iłowo Osada ul. Działdowska 1B
+4610 Iłża ul. Siedzikówny „Inki” 16AA
+2360 Imielin ul. Imielinska 156
+1765 Inowrocław ul. Szarych Szeregów 18
+1978 Inowrocław ul. Toruńska 90
+2407 Inowrocław ul. Świętokrzyska 38
+4850 Inowrocław ul. Solna 20
+5061 Inowrocław ul. Błażka 11
+5062 Inowrocław ul. Św. Ducha 42
+6196 Inowrocław ul. Poznańska 350
+7204 Inwałd ul. Wadowicka
+6907 Ińsko ul. Armii Krajowej 27
+3471 Istebna Istebna 1651
+6658 Iwiny Osiedle 32
+5237 Izbica Lubelska 123B
+3127 Jabłonka ul. Handlowa 1
+2671 Jabłonna ul. Parkowa 2
+7110 Jabłonna ul. Akademijna 34
+7094 Jabłonna - Majątek Słoneczna 6A
+5267 Jabłonowo al. Krakowska 79A
+3339 Jabłonowo Pomorskie ul. Kolejowa 7A
+6790 Jamielnik ul. Witosa
+1686 Janikowo ul. Główna 10
+7105 Janki ul. Aleja Krakowska 24
+5545 Jankowice ul. Krótka 2A
+6204 Janowiec Wielkopolski ul. Kościuszki 4
+1359 Janów Lubelski ul. Zamoyskiego 26
+4050 Janów Lubelski ul. Sienkiewicza 46
+
+[STRONA 16]
+6078 Janów Lubelski ul. Lubelska 2
+7042 Janów Podlaski ul. Kolonia 1A
+1027 Jarocin ul. Powstańców Wielkopolskich 40
+1936 Jarocin ul. Śródmiejska 17A
+3979 Jarocin ul.Poznańska 1A
+6890 Jarocin ul. Przemysłowa 1C
+1472 Jarosław ul. Krakowska 32
+3023 Jarosław ul. Zamkowa 3D
+4430 Jarosław ul. Pełkińska 63
+4530 Jarosław ul. Spółdzielcza 3
+6101 Jarosław ul. Pruchnicka
+7239 Jaroszowice DK 28
+3458 Jasienica Jasienica 1309
+6809 Jasienica Rosielna
+6888 Jasieniec Jasieniec Iłżecki Górny 233
+7252 Jasionka (pow.rzeszowski) ul. Jasionka 74B
+3075 Jasło ul. Kazimierza Wielkiego 23
+3076 Jasło ul. Rafineryjna 4E
+5299 Jasło ul. Mickiewicza 108
+5368 Jasło ul. 3 Maja 32
+7398 Jasło ul. Przemysłowa
+4315 Jastarnia ul. Mickiewicza 125
+1979 Jastrowie ul. Wojska Polskiego 31
+7197 Jastrowie ul. Roosevelta 6
+1972 Jastrzębie Zdrój ul. Warszawska 5
+3007 Jastrzębie Zdrój ul. Marusarzówny 28
+3362 Jastrzębie Zdrój ul. Rybnicka 11
+3586 Jastrzębie Zdrój ul.Podhalańska 1
+4030 Jastrzębie Zdrój ul. Harcerska 1A
+4438 Jastrzębie Zdrój ul. Powstańców Śląskich 82
+5027 Jastrzębie Zdrój ul. Warmińska 2 B
+5043 Jastrzębie Zdrój ul. Niepodleglości 180
+6492 Jastrzębie Zdrój al.Józefa Piłsudskiego 68
+7492 Jastrzębie Zdrój Pszczyńska 6
+4021 Jawczyce ul. Poznańska 74
+1792 Jawor ul. Limanowskiego 13
+2274 Jawor ul. Piłsudskiego 7-8
+5941 Jawor ul. Słowackiego 44
+7508 Jawornik Jawornik 879
+6285 Jaworze ul. Bielska 37
+1349 Jaworzno al. Piłsudskiego 1
+2070 Jaworzno ul. Jagiellońska 33
+2836 Jaworzno ul. Pocztowa 13
+4655 Jaworzno ul. Grunwaldzka 265
+5075 Jaworzno ul. Wygoda 80
+6065 Jaworzno ul. Grunwaldzka 182A
+6093 Jaworzno ul. Olszewskiego 5
+2480 Jedlicze ul. Sienkiewicza 19
+2471 Jedlina Zdrój ul. Piastowska 9
+6831 Jednorożec ul. Warszawska 12C
+
+[STRONA 17]
+6635 Jedwabne ul. Wojska Polskiego 26
+5812 Jelcz Laskowice ul. Sowia 17
+1833 Jelenia Góra ul. Wita Stwosza17
+2047 Jelenia Góra ul. Elsnera 1A
+2423 Jelenia Góra ul. Jana Pawła II 31A
+2443 Jelenia Góra ul. Wiejska 24
+3282 Jelenia Góra ul. Cieplicka 217
+3682 Jelenia Góra ul. Wolnosci 25A
+4100 Jelenia Góra ul. Wrocławska 73
+4362 Jelenia Góra Ul. Sudecka 42A
+5098 Jelenia Góra ul. Jana III Sobieskiego 58
+6932 Jełowa ul. Oleska 2S
+6241 Jenin ul. Gorzowska 131C
+6277 Jerzmanowice ul. Ojcowska 63
+4265 Jeziorany ul. Kopernika 30
+4302 Jeżowe ul. Jeżowe 652B
+4605 Jędrzejów ul. Reymonta 24
+5683 Jędrzejów ul. Jasionka 15A
+7134 Jędrzychowice Jędrzychowice 125A
+7438 Jodłowa Jodłowa 889B
+6846 Jonkowo ul. Hanowskiego 66
+4805 Jordanów ul. Piłsudskiego 78
+3263 Józefosław ul. Julianowska 57A
+4131 Józefów ul. Nadwiślańska 21
+6030 Józefów (pow.biłgorajski) ul. Armii Krajowej 3 A
+7336 Juszkowo 
+4538 Kadzidło ul. Handlowa 1
+6120 Kalety ul.1-go Maja  1B
+6114 Kaliska ul. Długa 9
+1229 Kalisz Al. Wojska Polskiego 116
+3010 Kalisz Wyszyńskiego 42A
+3170 Kalisz Marii Skłodowskiej -Curie 12/14
+3399 Kalisz ul. Konopnickiej 33
+3503 Kalisz ul. Podmiejska 32A
+4811 Kalisz ul. Babina 16
+6405 Kalisz Ul. Młynarska 131
+7210 Kalisz ul. Stawiszyńska 102A
+7238 Kalisz Warszawska 42
+2714 Kalisz Pomorski ul. Dworcowa 1B
+1929 Kalwaria Zebrzydowska ul. Jagiellońska 60E
+6019 Kalwaria Zebrzydowska ul. Krakowska 18A
+4335 Kałuszyn ul. Polna 6
+7382 Kałuszyn ul. Nowodworska 57
+3993 Kamieniec Ząbkowicki os. XXX-lecia PRL 5
+2847 Kamienna Góra ul. Wałbrzyska 25
+4212 Kamienna Góra ul. Nadrzeczna 1B
+5097 Kamienna Góra ul. Waryńskiego 11A
+4906 Kamień Krajeński ul. Chojnicka 1A
+2304 Kamień Pomorski ul. Krzywoustego 1
+4228 Kamień Pomorski ul. Długosza 27
+
+[STRONA 18]
+5978 Kamieńsk ul. Słowackiego 121
+6629 Kamionka (pow.lubartowski) ul. Siedliska 4
+2737 Kańczuga ul. Węgierska 39
+2567 Karczew ul. Bema 3
+4192 Karczew ul. Świderska 31
+7034 Kargowa ul. Zielonogórksa 4
+2665 Karlino ul. Koszalińska 85
+2079 Karpacz ul. Konstytucji  3 Maja 5
+6726 Karsin ul. Długa 29
+1416 Kartuzy ul. Dworcowa 14
+1794 Kartuzy os. Wybickiego 3B
+3363 Kartuzy ul. Mickiewicza 2
+1059 Katowice ul. Radockiego 150
+1280 Katowice ul. Zawiszy Czarnego 8
+2028 Katowice ul. Uniwersytecka 12
+3103 Katowice ul. Ułańska 10
+3322 Katowice ul. Wojciecha 57
+3371 Katowice ul. Kępowa 56
+3378 Katowice ul. Gliwicka 125A
+3861 Katowice ul. Strażacka 19
+4170 Katowice ul. Leopolda 15
+4202 Katowice Ul. Paderewskiego 35
+4724 Katowice ul. 1 Maja 126A
+4826 Katowice ul. Oswobodzenia 66
+4857 Katowice ul. Armii Krajowej 3
+4980 Katowice ul. Kijowska 42
+5222 Katowice ul. Dąbrówki 13
+5638 Katowice ul. Mysłowicka 84
+6279 Katowice ul. Kościuszki 229
+6374 Katowice ul. Roździeńskiego 97
+7454 Katowice ul. Adama Szebesty  2
+6512 Kazimierz Biskupi ul. Golińska 10
+2799 Kazimierza Wielka ul. Kolejowa 27B
+4715 Kaźmierz ul. Szamotulska 19
+6683 Kąkolewo ul. Gostyńska 2
+3683 Kąty Wrocławskie ul. Nowowiejska 2
+1549 Kędzierzyn Koźle ul. Piastowska 30A
+1834 Kędzierzyn Koźle ul. Jana Pawła II 50A
+2865 Kędzierzyn Koźle ul. Tuwima 3A
+3591 Kędzierzyn Koźle ul. Łokietka 4
+7293 Kędzierzyn Koźle ul. Miła 8
+7410 Kędzierzyn Koźle ul. Kozielska 79
+4926 Kępice ul. Generała Sikorskiego 7
+2710 Kępno ul. Solidarności 13
+3684 Kępno ul. Kwiatowa 18
+1756 Kętrzyn PL. SŁOWIAŃSKI 3
+1540 Kęty ul. Sobieskiego bn
+3592 Kęty ul. Sienkiewicza 21
+7263 Kiekrz ul. Poznańska 160
+1396 Kielce ul. Jana Nowaka Jeziorańskiego 71
+
+[STRONA 19]
+1441 Kielce ul. Meissnera 22
+1770 Kielce ul. Sandomierska 89
+1814 Kielce ul. Wapiennikowa 40
+2434 Kielce ul. Czarnowska 14
+4049 Kielce ul. Szydłówek Górny 10
+4567 Kielce ul. Jagiellońska 25
+4668 Kielce ul. Wrzosowa 95
+4712 Kielce ul. 1 Maja 156
+4848 Kielce al. Szajnowicza-Iwanowa 17
+5845 Kielce ul. Leśniówka 112
+6178 Kielce ul. Tarnowska 4
+6335 Kielce ul. Poleska 34
+7341 Kielce ul. Krakowska 167A
+6851 Kielno ul. Strażacka 3
+1996 Kiełczewo ul. Poznańska 4
+4069 Kiełczów ul. Wrocławska 23D
+6674 Kiełpin Kiełpin-Krokodyla 1
+2747 Kietrz ul. Raciborska 1
+5562 Kije ul. Piastowska 1
+6903 Kikół ul. Rypińska 11
+6849 Kisielice ul.Sienkiewicza 16
+6869 Kiszkowo ul. Dworcowa 30
+6445 Kleczew ul. Al.600 Lecia 23
+6768 Kleszczele ul. Kolejowa 22
+7308 Kleszczów (pow.bełchatowski) ul. Grzybowa 2
+7342 Klimontów ul. Słoneczna 3
+1949 Kluczbork ul. Wołczyńska 4
+3382 Kluczbork ul. Jagiellońska 7
+5691 Kluczbork ul. Ossowskiego 60A
+1655 Klucze ul. Zawierciańska 8
+4287 Kłecko ul. Armii Poznań 5
+2194 Kłobuck ul. Różana 10
+3406 Kłobuck ul. Staszica 48
+6174 Kłodawa ul. Poznańska 9
+6694 Kłodawa Gorzowska ul. 700-lecia 1
+3395 Kłodzko ul. Noworudzka 2
+3761 Kłodzko ul. Śląska 19
+5251 Kłodzko ul. Dusznicka 1B
+4897 Kłomnice ul. Zachodnia 1
+1064 Knurów ul. Niepodległości 9
+1542 Knurów ul. Witosa 4
+2859 Knurów ul. Parkowa 2
+3594 Knurów ul. Szpitalna 9
+3807 Knyszyn ul. Szkolna 4
+4092 Kobierzyce ul. Robotnicza 59
+4856 Kobiór ul. Ołtuszeskiego 2
+6607 Kobyla Góra ul. Konopnickiej 1A
+7015 Kobylanka ul. Szczecińska
+4396 Kobylin al. Powstańców Wielkopolskich 47A
+5930 Kobylnica ul. Główna 2d
+
+[STRONA 20]
+2903 Kobyłka ul. Napoleona 1B
+4852 Kobyłka ul. Nadarzyńska 67
+7427 Kobyłka ul. Przyjacielska 45
+6689 Kocierzew Południowy Kocierzew 149
+5855 Kock ul . gen. Franciszka Kleeberga 4
+7215 Kocmyrzów - Luborzyca ul. Gościnna 1
+6814 Koczała ul. Szkolna 17
+6893 Kodrąb (pow.radomszczański) ul.Niepodległości 2b
+3318 Kolbuszowa ul. Obrońców pokoju 1
+4010 Kolbuszowa ul. Ks. Ruczki 1A
+6589 Kolbuszowa ul. Tarnobrzeska 25
+1643 Kolno ul. Wojska Polskiego 46
+4308 Kolno ul. księcia Janusza Pierwszego 21
+4963 Kolno ul. Witosa 4A
+6797 Kolonowskie ul. 1 Maja 8
+1708 Koluszki ul. Piękna 1
+6035 Koluszki ul. Słowackiego 22
+5276 Kołaczyce ul. Burmistrza Wiejowskiego 22
+1052 Koło ul. Włocławska 16B
+3504 Koło ul. Toruńska 117A
+5866 Koło ul. Słowackiego 3a
+1612 Kołobrzeg ul. Tarnowskiego 3
+3550 Kołobrzeg ul. Trzebiatowska 29
+4660 Kołobrzeg ul. Jedności Narodowej 127
+5348 Kołobrzeg ul. Toruńska 3
+3098 Komorniki ul. Pocztowa 5
+2521 Koniecpol ul. Armii Krajowej 8
+1851 Konin ul. Wał Tarejwy 8
+3505 Konin ul. Chopina 30
+3506 Konin ul. Piłsudskiego 2
+4216 Konin ul. Przyjaźni 6
+4217 Konin ul. Spółdzielców 50 
+4979 Konin ul. Jana Pawła II 78
+6022 Konin Kolejowa 18
+7566 Konin ul. Poznańska 200
+6628 Konotop ul. Poznańska 13B
+7140 Konstancin Jeziorna ul. Warszawska 101
+1891 Konstantynów Łódzki ul. Łaska 12
+5898 Konstantynów Łódzki ul. Jana Pawła II 11/13
+2293 Końskie ul. Kielecka 1
+4485 Końskie ul. Partyzantów 11 A
+3321 Korczyna ul. Rynek 18B
+3933 Korfantów ul. Kościuszki 11
+2571 Koronowo Pl. Zwycięstwa 21
+6226 Koronowo Al.. Jana Pawła II 2
+3248 Korsze ul. Mickiewicza 27
+6280 Korzenna Korzenna 251
+3904 Kosakowo ul. Żeromskiego 32
+6873 Kosów Lacki ul. Polna 3D
+6257 Kostrzyn ul. Poznańska 116
+
+[STRONA 21]
+1761 Kostrzyn nad Odrą ul. Żeglarska 1
+3712 Kostrzyn nad Odrą ul. Niepodległości 9
+1228 Koszalin ul. Prosta 4
+1458 Koszalin ul. Jana Pawła II 15A
+1961 Koszalin ul. Morska 53
+2025 Koszalin ul. Poprzeczna 1
+3062 Koszalin ul. Doktora Andrzeja Zientarskiego3
+3457 Koszalin ul. Kwiatkowskiego 20
+3860 Koszalin ul. Bohaterów Warszawy 29
+4333 Koszalin ul. 4 Marca 33
+4509 Koszalin ul. Połtawska 6A
+4773 Koszalin ul. Zwycięstwa 282
+6239 Koszalin Okrzei
+6475 Koszalin ul. Połczyńska 146
+6542 Koszalin ul. Holenderska 72
+7588 Koszalin ul Szczecińska 57F
+4240 Koszęcin ul. Ligonia 12b
+1376 Kościan ul. Kaźmierczaka 29
+1562 Kościerzyna ul. M. C. Skłodowskiej 34
+3393 Kościerzyna ul. Kamienna 2
+4922 Kościerzyna ul. Wrzosowa 45
+7684 Kościerzyna ul. Przemysłowa 44
+5420 Kotlin ul. Poznańska 42
+4161 Kowal ul. Kołłątaja 28
+7202 Kowale ul. Glazurowa 14
+3942 Kowale Oleckie ul. Witosa 2
+2725 Kowalewo Pomorskie ul. Batalionów Chłopskich 10
+2009 Kowary ul. Matejki 3
+7201 Koziegłowy ul. Woźnicka 105
+1137 Koziegłowy (pow.poznański) ul. Piaskowa 21
+1876 Kozienice ul. Warszawska 34
+3407 Kozienice ul. Lubelska 7
+5308 Kozy ul. Bielska 31A
+6948 Koźminek Słowiki Pierwsze 3H
+2176 Kożuchów ul. Nowosolna 47
+3724 Kórnik ul. Woźniaka 1
+6021 Krajenka ul. Mickiewicza 1-4
+6586 Krajnik Dolny Krajnik Dolny 8
+1395 Kraków ul. Heleny 18
+1477 Kraków ul. Jerzmanowskiego 12A
+1514 Kraków ul. Beskidzka 30
+1696 Kraków ul. Wysłouchów 22A
+2198 Kraków ul. Powstańców 3
+2765 Kraków ul. Mała Góra 97
+3074 Kraków ul. Leopolda Okulickiego 51
+3130 Kraków ul. Rydlówka 10
+3159 Kraków ul. Tadeusza Połomskiego 14
+3360 Kraków ul. Łużycka 43F
+3470 Kraków os. Na Stoku 53
+3646 Kraków ul. Porucznika Halszki 3A
+
+[STRONA 22]
+3768 Kraków OS. BOHATERÓW WRZEŚNIA 82
+4009 Kraków OS. STRUSIA 23
+4031 Kraków ul. Powstańców Wielkopolskich 18
+4142 Kraków ul. Lipska 28
+4272 Kraków ul. Dobrego Pasterza 122A
+4273 Kraków ul. Juliana Ursyna Niemcewicza 4
+4504 Kraków ul. Drukarska 2
+4531 Kraków ul. Księdza Meiera 13
+4546 Kraków ul. Zygmunta Glogera 22
+4620 Kraków ul. Żabiniec 93
+4738 Kraków ul. Balicka 157
+4743 Kraków ul. Berka Joselewicza 28
+4846 Kraków ul. Ofiar Dąbia 12
+4847 Kraków ul. Łokietka 5
+4973 Kraków ul.Półłanki 12B
+4974 Kraków Ul. Sołtysowska 23D
+5226 Kraków ul. Polonijna 13
+5298 Kraków ul. Siewna 46 
+5300 Kraków ul. Zygmunta Miłkowskiego 3/4
+5385 Kraków Ul. Łokietka 136
+5529 Kraków Igołomska 
+5617 Kraków ul. Księcia Józefa 20
+5734 Kraków Medweckiego 21
+5987 Kraków ul. Kościuszki 71
+6004 Kraków ul. Grażyny 4
+6416 Kraków ul. Lubostroń 15
+6434 Kraków ul. Miśnieńska 87
+6450 Kraków ul. Bunscha 2
+6537 Kraków al. Gen. T. Bora-Komorowskiego 41 
+6568 Kraków ul. Prof.. Adama Rożańskiego 32
+7150 Kraków ul.Wrocławska 67
+7151 Kraków ul. Chełmońskiego 255
+7248 Kraków ul. Mirowska
+1694 Krapkowice ul. Żeromskiego 11
+2301 Krapkowice ul. 3 Maja 36
+3595 Krapkowice ul. Słowackiego 4
+2691 Krasnystaw ul. Nieczaja 2
+4416 Krasnystaw ul. Zakręcie 2F
+6693 Krasocin
+6993 Kraszewice ul. Wieluńska 57B
+1238 Kraśnik al. Tysiąclecia 9
+2580 Kraśnik ul. Niepodległości 16
+3648 Kraśnik ul. Urzędowska 472
+4111 Kraśnik ul. Chopina 10
+2003 Krążkowy Mianowice 2i
+4457 Krokowa
+1799 Krosno ul. Bohaterów Westerplatte 20B
+2042 Krosno ul. Podkarpacka 3B
+3107 Krosno ul. Grodzka 12-16
+4268 Krosno ul. Naftowa 6
+
+[STRONA 23]
+6590 Krosno ul. Bieszczadzka
+7422 Krosno ul. Podkarpacka 26
+3057 Krosno Odrzańskie ul. Wakacyjna 23
+4065 Krosno Odrzańskie ul. Chopina 8
+6967 Krośnice ul. Szkolna 46
+4085 Krotoszyn ul. Ostrowska 18
+4144 Krotoszyn ul. Zdunowska 56 A
+6705 Królewiec Królewiec 100
+6820 Kruklanki 22 Lipca 18
+2785 Kruszwica Ul. Kościuszki 31/34
+6896 Kruszyna ul.Kmicica 2
+2712 Krynica Zdrój ul. Czarny Potok 7
+6651 Krzemieniewo ul. Dworcowa 100
+2341 Krzepice ul. Andersa 5
+1999 Krzeszowice ul. Kościuszki 54
+7012 Krzeszyce ul. Ogrodowa 1
+6668 Krzywa Różyniec Różyniec 83 BA
+6916 Krzywda ul. Łukowska 64A
+6506 Krzywiń ul. Leszczyńska 4
+2544 Krzyż Wielkopolski ul. Walki Młodych 12
+3990 Krzyżanowice ul. Tworkowska 5
+4648 Ksawerów ul. Łódzka 113/115 
+7056 Książ Wielki ul. Stawowa 1A
+5204 Książ Wielkopolski ul. Radoszkowo Drugie 22
+5655 Książenice ul. Partyzantów AK 2/4
+2232 Kudowa Zdrój ul. Główna 42C
+2458 Kutno ul. Grunwaldzka 3
+3508 Kutno ul. Łąkoszyńska 166
+3982 Kutno ul. Mickiewicza 4
+6064 Kutno ul. Chodkiewicza 33
+6307 Kutno ul. Kościuszki 73
+3352 Kuźnia Raciborska ul. Kozielska 2
+4184 Kuźnica Białostocka ul. Grodzieńska 1001
+1597 Kwidzyn ul. Słowackiego 4
+2161 Kwidzyn ul. Warszawska  71
+3713 Kwidzyn ul. Kopernika 7A
+5534 Kwidzyn ul. Korczaka 3
+7425 Kwidzyn ul. Malborska 127
+5583 Laski ul. Trenów 51
+2412 Lądek Zdrój ul. Śnieżna 45
+1915 Legionowo ul. Zegrzyńska 5A
+3533 Legionowo ul. Sowińskiego 2
+4521 Legionowo ul. Reymonta 15A
+4890 Legionowo ul. Siwińskiego 2
+1206 Legnica ul. Górnicza 1a
+1498 Legnica ul. Asnyka 27
+1580 Legnica ul. Jagiellońska 19
+2713 Legnica ul. Orzeszkowej 29
+2961 Legnica ul. Rzeczypospolitej 14
+3943 Legnica ul. Dworcowa 5B
+
+[STRONA 24]
+4135 Legnica ul. Gwiezdna 3
+4154 Legnica ul. Sikorskiego 3
+4213 Legnica ul. Jaworzyńska 257
+4292 Legnica ul. Jaworzyńska 17-19
+5924 Legnica Bieszczadzka 2
+7131 Legnica ul. Złotoryjska 170A
+2109 Lesko ul. Stawowa 16
+2054 Leszno (pow.leszno) ul. Gronowska 11
+3685 Leszno (pow.leszno) ul. Okrężna 3
+4088 Leszno (pow.leszno) ul. 1 Maja 8
+4389 Leszno (pow.leszno) ul. Księdza Teodora Korcza 5
+4454 Leszno (pow.leszno) ul. Kasprowicza 4 
+5133 Leszno (pow.leszno) ul. Zacisze 16
+6000 Leszno (pow.leszno) ul. Kąkolewska
+6199 Leszno (pow.leszno) ul. Niepodległości 71A
+7371 Leszno (pow.leszno) ul. Poznańska 3
+2877 Leszno (pow.warszawski zachodni) ul. Sochaczewska 68
+7108 Lesznowola ul. Słoneczna 128
+3184 Lewin Brzeski ul. Moniuszki 8E
+1729 Leżajsk ul. Mickiewicza 80
+3061 Leżajsk ul. Sanowa 40A
+1089 Lębork ul. Waryńskiego 18
+1201 Lębork ul. Armii Krajowej 34
+2261 Lębork ul. Krzywoustego 7
+3427 Lębork ul. Kossaka 41
+3551 Lębork ul. Wojska Polskiego 12 
+7465 Lębork ul. Żeromskiego
+2321 Lędziny ul. Hołdunowska 18A
+7024 Lgota Górna ul. Wspólna 5
+5118 Libertów ul. Góra Libertowska 6
+1299 Libiąż ul. Wojska Polskiego 4
+3760 Libiąż ul. 11 Listopada 26
+6049 Lidzbark Żeromskiego 2B  
+1633 Lidzbark Warmiński ul. Lipowa 5
+4117 Lidzbark Warmiński ul. Wiejska 11
+7155 Lidzbark Warmiński ul. Olsztyńska 6B
+4722 Ligota ul. Rolników 1
+6931 Ligota Piękna ul. Wrocławska 2C
+3004 Limanowa ul. Piłsudskiego 24A
+6961 Linia ul. Łąkowa 5
+7067 Liniewo ul. Łąkowa 35
+2433 Lipiany ul. Jedności Narodowej 9
+7008 Lipnica (pow.bytowski) ul. Słomińskiego 46
+2932 Lipno ul. Włocławska 9-9A
+4698 Lipsk ul. Kościelna 8A
+2764 Lipsko ul. Armii Krajowej 3
+6343 Lisewo ul. Wybudowanie Wąbrzeskie 4A
+7250 Lisia Góra ul. Tarnowska 7A
+4141 Liszki Kryspinów 428
+1599 Lubaczów ul. Mickiewicza 103
+
+[STRONA 25]
+4918 Lubaczów ul. Płk. Dąbka 2D
+1274 Lubań ul. Dąbrowskiego 2
+2442 Lubań ul. Esperantystów 1C
+3687 Lubań ul. Robotnicza 11C
+1551 Lubartów Al. Tysiąclecia 2
+2309 Lubartów ul. Lubelska 98-100
+1741 Lubawa ul. Kopernika 3
+5453 Lubawa ul.Wyzwolenia 3a
+6956 Lubawa ul.Sadowa 6
+3212 Lubawka ul. Kamiennogórska 39
+4776 Lubicz Dolny ul. Dworcowa 32
+6827 Lubień Kujawski ul. Narty 41
+4230 Lubieszyn Lubieszyn 62/4
+2259 Lubin ul. Jana Pawła II 78
+3042 Lubin ul. Szpakowa 4
+4677 Lubin ul. Wrocławska 7
+4733 Lubin ul. Leszczynowa 27C
+5313 Lubin ul. Budowniczych LGOM 24
+6165 Lubin ul. Legnicka 65 
+7207 Lubin ul. Miroszowicka 6
+5829 Lublewo Gdańskie ul. Dojazdowa 2
+1164 Lublin ul. Górska 11
+1364 Lublin ul. Nałęczowska 24
+1667 Lublin ul. Sapiehy 2
+1827 Lublin ul. Zamojska 26
+1836 Lublin ul. Hetmańska 2
+2016 Lublin ul. Wolska 8a
+2314 Lublin ul. Jana Sawy 1A
+2540 Lublin ul. Lwowska 12F
+2967 Lublin ul. Ruciana 4
+3024 Lublin ul. Pogodna 48
+3414 Lublin ul. Choiny 1
+3714 Lublin ul. Diamentowa 19I-H
+3775 Lublin ul. Sławinkowska 49B
+3819 Lublin ul. Woronieckiego 12
+4342 Lublin ul. Hutnicza 1A
+4417 Lublin ul. Jana Pawła II 23
+4619 Lublin ul. Abramowicka 10A
+4638 Lublin Szerokie 128
+4864 Lublin ul. Gęsia 16
+4878 Lublin ul. Mełgiewska 4A
+4879 Lublin ul. Bursztynowa 39
+4908 Lublin ul. Zemborzycka 78-80
+4927 Lublin ul. Krzemionki 3
+4942 Lublin ul. Główna 1-3
+5292 Lublin ul. Lotnicza 5
+6099 Lublin ul. Prusa
+6126 Lublin Unii Lubelskiej 2
+7211 Lublin ul. Spółdzielczości Pracy 88
+3596 Lubliniec ul. Stalmacha 9
+
+[STRONA 26]
+4558 Lubliniec ul. Lubliniecka 1E
+5434 Lubliniec ul. Oleska 20
+3509 Luboń ul. Żabikowska 71
+1766 Lubraniec ul. Lipowa 1A
+6317 Lubrza (pow.prudnicki) ul.Opolska 4
+1846 Lubsko ul. Wrocławska 88
+4893 Lubsko ul. Wrocławska 3A
+7359 Lusówko ul. Tranowska 39
+6793 Luszowice ul. Tarnowska 22
+6675 Lututów ul. Wieruszowska 44
+4143 Luzino ul. Wilczka 46
+6011 Lwówek ul. Pniewska 53b
+2843 Lwówek Śląski ul. Oświęcimska 480
+4697 Lwówek Śląski ul. Jaśkiewicza 4
+3978 Łabiszyn ul. Powstańców Wielkopolskich 17B
+3349 Łagiewniki ul. Przemysłowa 2
+5094 Łagów ul. Chopina 2A
+7165 Łagów (pow.kielecki) ul. Kwarcytowa 1
+6557 Łany ul. Parkowa 7
+2085 Łańcut ul. Podzwierzyniec 39
+2777 Łańcut ul. Piłsudskiego 64
+4919 Łańcut ul. Kościuszki 19
+6794 Łapanów ul. Kobylec 330
+1592 Łapy ul. Główna 24
+6002 Łapy ul. Żwirki i Wigury 25a
+7389 Łapy ul. Sikorskiego 116
+6242 Łasin ul. Dworcowa
+1113 Łask ul. Jana Pawła II 7
+5140 Łask ul. Jodłowa 13
+3936 Łaskarzew ul. Warszawska 77F
+5183 Łaszczów ul. Dworcowa 11
+1255 Łaziska Górne Os. Kościuszki 100
+3597 Łaziska Górne ul. Dworcowa 38
+4181 Łaziska Górne ul. Wiejska 1
+6533 Łazy ul. Targowa 8 
+6534 Łazy ul. Kolejowa 7
+3437 Łącko Łącko  862
+6804 Łąkta Górna Łąkta Górna 407
+4518 Łeba al. Świętego Jakuba 39
+2013 Łęczna ul. Szkolna 8
+6033 Łęczna ul. Wacława Jawoszka 2a 
+1223 Łęczyca (pow.łęczycki) ul. Belwederska 77
+4073 Łęczyca (pow.łęczycki) ul. Belwederska 1
+5281 Łęczyca (pow.poznański) ul. Poznańska 37
+7006 Łęczyce ul. Długa 28C
+7446 Łęknica ul. Leśna 7B
+4082 Łężyca ul. Łężyca-Inwestycyjna 1
+2162 Łobez ul. Segala 7
+4959 Łochowo ul. Szosa Bydgoska 37
+5834 Łodygowice ul. Beskidzka 8
+
+[STRONA 27]
+2422 Łomianki ul. Warszawska 76
+4380 Łomianki ul. Warszawska 150
+6085 Łomianki ul. Warszawska 201/203
+1917 Łomża ul. Dworna 11
+2526 Łomża ul. Wyszyńskiego 4
+2616 Łomża ul. Łagody 4B
+3941 Łomża ul. Szosa Zambrowska 100
+4663 Łomża al. J. Piłsudskiego 121
+6001 Łomża al. Legionów 60
+4820 Łoniów Łoniów 19
+7690 Łopuszno ul. Konecka 9B
+2364 Łosice ul. Powstania Styczniowego 6
+2365 Łososina Dolna Łososina Dolna 290
+1896 Łowicz ul. Warszawska 1
+4168 Łowicz ul. Łęczycka 66
+5377 Łowicz Ul. Katarzynów 1
+7780 Łowicz ul.Armii Krajowej 43
+1136 Łódź ul. Nastrojowa 8
+1584 Łódź ul. Haszka 11
+2294 Łódź ul. Aleksandrowska 58
+3030 Łódź ul. Przędzalniana 124
+3113 Łódź ul. Tamka 3
+3777 Łódź ul. Obywatelska 137
+4165 Łódź ul. Zakładowa 65
+4166 Łódź ul. Pomorska 585
+4297 Łódź ul. Kossaka 10
+4318 Łódź ul. Rokicińska 366/368
+4426 Łódź ul. Dąbrowskiego 17F
+4643 Łódź ul. Sternfelda 24
+4644 Łódź ul. Woronicza 1
+4671 Łódź ul. Gojawiczyńskiej 20
+4986 Łódź ul. Starorudzka 42
+5000 Łódź ul. Pabianicka 77
+5103 Łódź ul. Sikorskiego 12
+5138 Łódź ul. Traktorowa 52
+5145 Łódź ul. Srebrna 4
+5172 Łódź ul. Łęczycka 11/13
+5425 Łódź ul. Kusocińskiego 137
+5445 Łódź ul. Krokusowa 1
+5692 Łódź ul. Łazowskiego 44
+5910 Łódź ul. Paradna 39
+5932 Łódź ul. Politechniki 60
+6218 Łódź ul. Goplańska 23
+6306 Łódź ul. Brzezińska 38 C
+7685 Łubianka ul. Toruńska 75
+6654 Łubowo ul.  Łubowo 14 G
+1678 Łuków ul. Międzyrzecka 72B
+3425 Łuków ul. Sienkiewicza 1
+7156 Łuków Al. Ryszarda Kaczorowskiego 4
+6479 Łużna Łużna 895
+
+[STRONA 28]
+4264 Łyse ul. Kościelna 16
+6412 Łysomice ul. Warszawska 40D
+6714 Łyszkowice ul. Kościelna 12
+6752 Maciejowice Lubelska
+3494 Magdalenka ul. Słoneczna 314A
+4045 Maków Mazowiecki ul. Moniuszki 32
+6115 Maków Mazowiecki ul. Ciechanowska 2
+6524 Maków Podhalański ul. Wolności
+2091 Malbork ul. Sucharskiego 2
+2696 Malbork al. Wojska Polskiego 54
+3866 Malbork ul. Koszalińska 3
+6216 Malbork ul. Główna 2
+6123 Mała Nieszawka ul. Toruńska 196A
+7046 Małdyty ul. Morąska 1
+2531 Małkinia Górna ul. Biegańskiego 74/7
+4814 Małogoszcz ul. Chęcińska 78M
+5921 Małomice Małynicza 5
+7160 Maniowy Ks.Antoniego Siudy
+6679 Marcinowice ul. Świdnicka 12
+4149 Margonin ul. Cmentarna 19a
+3369 Marki ul. Fabryczna 72
+4581 Marki ul. Bandurskiego 20B
+6209 Marki ul. Piłsudskiego 200A
+7318 Markowa Markowa 164
+3484 Markuszów ul. Lubelska 76
+5149 Maszewo (pow.goleniowski) ul. Jedności Narodowej 25D
+4545 Maszewo Duże (pow.płocki) ul. Lipnowska 2
+1196 Medyka Medyka 405
+6952 Mełgiew ul. Lubelska 1
+6653 Mezowo ul. Błękitnej Armii 8a
+3293 Miastko ul. Kazimierza Wielkiego 24A
+4907 Miastko ul. Fabryczna 10
+6650 Miastkowo Łomżyńska 71
+6850 Michałowice (pow.brzeski)
+7240 Michałowice (pow.krakowski) ul. Krakowska 247
+5196 Michałowice (pow.pruszkowski) ul. Kuchy 24
+3932 Michałowo ul. Białostocka 1
+4367 Michałów Reginów ul. Nowodworska 12
+6833 Michów ul. Tysiąclecia 11
+2115 Miechów ul. Daneckiej 2
+4059 Miechów ul. Racławicka 43C
+4625 Miejsce Piastowe ul. Handlowa 4
+4219 Miejska Górka ul. 700-lecia 4
+1243 Mielec ul. Drzewieckiego 1
+1284 Mielec ul. Warneńczyka 11
+2572 Mielec ul. Sandomierska 6
+3005 Mielec ul. Piaskowa 2
+3798 Mielec al. Niepodległości 13
+4669 Mielec ul. Legionów 80
+5884 Mielec ul. Jagiellończyka 29
+
+[STRONA 29]
+6212 Mielec ul. Szafera 37
+7135 Mielec ul Rzochowska 57
+7578 Mielec ul. Żeronskiego 15
+4989 Mielno ul. B. Chrobrego 241/2
+5894 Mieroszów ul. Wolności 25
+7332 Mierzwin Mierzwin 2B
+3015 Mierzyn ul. Welecka 2
+7188 Mierzyn ul. Tytusa 1
+4778 Mieszkowice ul. Poniatowskiego 51
+6682 Mieścisko Św. Huberta 1
+4700 Międzybórz ul. Wrocławska 67
+3409 Międzybrodzie Bialskie ul. Ekologiczna 2
+7305 Międzychód ul. Św. Jana Pawła II 40A 
+4322 Międzylesie ul. Warszawska 2A
+2882 Międzyrzec Podlaski ul. Partyzantów 6B
+5209 Międzyrzec Podlaski ul. Warszawska 36
+3410 Międzyrzecz ul. 30 Stycznia 58
+3987 Międzyrzecz ul. Wojska Polskiego 3
+6324 Międzyzdroje ul. Nowomyśliwska 21
+7091 Miękinia ul. Wrocławska 20
+2866 Mikołajki ul. Dąbrowskiego 2
+3598 Mikołów ul. Młyńska 11
+7411 Mikołów ul Gliwicka 34
+6636 Mikstat Wrocławska 2
+1913 Milanówek ul. Piłsudskiego 3
+4929 Milanówek ul. Królewska 21
+7176 Milejów ul. Partyzancka
+2231 Milicz ul. Armii Krajowej 16-18
+3688 Milicz ul. Trzebnicka 4A
+6981 Milicz ul. Krotoszyńska 5
+4203 Milówka ul. Jana Kazimierza 2/18
+6609 Miłakowo ul. Daszyńskiego 6
+5400 Miłomłyn ul. Pasłęcka 1
+4276 Miłosław ul. Poznańska 10
+1955 Mińsk Mazowiecki ul. Dąbrówki 30
+3383 Mińsk Mazowiecki ul. Orzeszkowej 23
+4883 Mińsk Mazowiecki ul. Mrozowska 7
+5069 Mirosławiec ul. Wolności 10
+3753 Mirsk ul. Sikorskiego 3A
+2370 Mława ul. Grzebskiego 29
+3286 Mława ul. Staszewskiego 12A
+3923 Mława ul. Sienkiewicza 12
+6510 Mława ul.Aleja świętego Wojciecha 13
+4432 Młyny ul. Młyny 90 
+7014 Mochowo ul. Płock 3
+6777 Mochy ul. Wolsztyńska
+6955 Moczadła Moczadła 1Z
+6700 Modliborzyce ul. Piłsudskiego 97
+5384 Modlnica ul. Częstochowska 70
+4992 Mogielnica ul. Kościelna 2
+
+[STRONA 30]
+2431 Mogilno ul. Hallera 22b
+3980 Mogilno ul. Powstańców Wlkp. 46
+7060 Mokrsko Mokrsko 155a
+6697 Mokrzyska Parafialna 2
+4185 Mońki ul. Wojska Polskiego 61
+5846 Mońki ul. Dworcowa 9/11
+4503 Morawica ul. Kielecka 29A
+1630 Morąg ul. Wróblewskiego 1
+3552 Morąg ul. Jagiełły 1
+4510 Morąg ul. Dworcowa 11A
+7057 Mordy ul. ks.Skorupki 24
+6774 Moryń ul. Lipowa 7
+4513 Mosina ul. Nektarowa 3
+5288 Mosina Farbiarska 30
+5083 Moszczenica ul. Piotrkowska 15a
+6421 Mościska ul.. 3 Maja 81
+6661 Mościsko ul. Zielona 16
+2908 Mrągowo ul. Rynkowa 20
+7428 Mrągowo ul. Wolności 4E
+3223 Mrocza ul. Nakielska 2
+6601 Mrozy ul. Graniczna
+2602 Mszana Dolna ul. Krakowska 3
+4472 Mszana Dolna ul. Starowiejska 2M
+3396 Mszczonów Ul. Wschodnia 18
+6518 Mścice ul. Bałtycka 4B
+6854 Mucharz Mucharz 272
+2855 Murowana Goślina ul. Poznańska 15
+3828 Muszyna ul. Kity 12
+7485 Mysiadło Puławska/Kuropatwy
+4095 Mysłakowice ul. Szkolna 17
+1286 Mysłowice ul. Powstańców 6
+1909 Mysłowice ul. Piastow Śląskich 19
+2023 Mysłowice ul. Oświęcimska 13
+2971 Mysłowice ul. Wielka Skotnica 31
+3600 Mysłowice ul. Mikołowska 42D
+4950 Mysłowice ul. Laryska 87
+6501 Mysłowice ul. Ziętka 45
+6569 Mysłowice ul. Katowicka 64 A
+5945 Myszków ul. Kwiatkowskiego
+6045 Myszków ul. Pułaskiego 8B
+3364 Myszyniec ul. Stefanowicza 47
+2534 Myślenice ul. Słowackiego 70
+7507 Myślenice ul. Słowackiego 112C
+1608 Myślibórz ul. Lipowa 7
+6499 Myślibórz ul. Królewiecka 1B
+2039 Nakło nad Notecią ul. Gimnazjalna 4
+3715 Nakło nad Notecią ul. Potulicka 4B
+7123 Nakło nad Notecią ul. Mrotecka 37A
+3326 Nałęczów Bochotnica Kolonia 20A
+3472 Namysłów ul. Oławska 30A
+
+[STRONA 31]
+5164 Namysłów ul. Stawowa 1A
+2566 Nasielsk ul. Elektronowa 3H
+7470 Nasielsk Kolejowa 14
+7669 Naszacowice Naszacowice
+6692 Natalin (pow. radomski)
+4679 Nekla ul. Wiosny Ludów 2a
+5794 Nidzica ul. Mickiewicza 5
+7358 Nidzica ul. Grunwaldzka 1
+6331 Niedrzwica Duża ul. Lubelska 61A
+5153 Niemce ul. Parkowa 1
+7249 Niemcz ul. Janusza Kusocińskiego1
+4740 Niemcza ul. Chrobrego 54
+3602 Niemodlin ul. Opolska 7
+6597 Nienadowa ul. Nienadowa 535A
+1614 Niepołomice ul. Na Tamie 7
+4505 Niepołomice ul. Płaszowska 2
+6830 Nieszawa ul. Warszawska 1
+1767 Nisko ul. Kwiatkowskiego 1D
+3654 Nisko ul. Sandomierska 13
+1509 Nowa Dęba ul. Jasna 3
+7159 Nowa Dęba ul. Anieli Krzywoń 9
+2169 Nowa Ruda ul. Słupiecka 7A
+3226 Nowa Ruda ul. Marsz. J. Piłsudskiego 33a
+3205 Nowa Sarzyna ul. Korczaka 5
+5524 Nowa Słupia ul. Wólka Milanowska 65
+3689 Nowa Sól ul. Wojska Polskiego 51
+4269 Nowa Sól ul. Zielonogórska 89
+6005 Nowa Sól Aleksandra Fredry 1/u1
+6418 Nowa Sól Przemysłowa 36
+7279 Nowa Wieś ul. Polna 40
+5837 Nowe ul. Bydgoska 18
+6135 Nowe Babice ul. Warszawska 193
+5549 Nowe Brzesko ul. Spółdzielcza 1
+4084 Nowe Miasteczko ul. Szosa Bytomska 11
+1773 Nowe Miasto Lubawskie ul. Grunwaldzka 19
+4074 Nowe Miasto Lubawskie ul. Jagiellońska 40I
+1960 Nowe Miasto nad Pilicą ul. Armii Krajowej 3
+5296 Nowe Skalmierzyce ul. Kaliska 16 B
+2482 Nowogard ul. Warszawska 9
+3752 Nowogard ul. Bohaterów Warszawy 103A
+7189 Nowogard ul. Gen. Józefa Bema 10a
+4835 Nowogrodziec Ul. Asnyka 62
+6600 Nowogród ul. Stacha Konwy 1
+3035 Nowogród Bobrzański ul. Polna 1
+2453 Nowy Dwór Gdański ul. Warszawska 2F
+3973 Nowy Dwór Mazowiecki ul. Harcerska 2
+4248 Nowy Dwór Mazowiecki ul. Leśna 2
+1133 Nowy Sącz ul. Zdrojowa 32
+1272 Nowy Sącz pl. Dąbrowskiego 1A
+2720 Nowy Sącz ul. Tarnowska 17
+
+[STRONA 32]
+2775 Nowy Sącz ul. Węgierska 175
+3467 Nowy Sącz ul. Krakowska 49
+3655 Nowy Sącz ul. Piłsudskiego 106
+4028 Nowy Sącz ul. I Brygady 4A
+6143 Nowy Sącz ul. Zielona 64
+6530 Nowy Sącz ul. Prażmowskiego 11
+2924 Nowy Staw ul. Obrońców Westerplatte 23
+1447 Nowy Targ ul. Plac Evry 1
+3161 Nowy Targ ul. Ludźmierska 26A
+3488 Nowy Targ ul. Lotników 4
+4346 Nowy Targ ul. Królowej Jadwigi 17
+7290 Nowy Targ ul. Szaflarska
+1020 Nowy Tomyśl ul. Witosa 7
+7206 Nowy Wiśnicz ul. Bocheńska 26
+4350 Nowy Żmigród Mytarz 1
+1831 Nysa ul. Karola Miarki 8
+1899 Nysa pl. Kilińskiego 2
+1963 Nysa ul. Prusa 9A
+6168 Nysa ul. Racławicka 8
+7551 Nysa ul. Zygmunta Krasińskiego 29
+2088 Oborniki Śląskie ul. Wrocławska 29-31
+1015 Oborniki Wielkopolskie ul. Powstańców Wlkp. 20
+4041 Oborniki Wielkopolskie ul. Obrzycka 58/60
+4225 Oborniki Wielkopolskie ul. Czarnkowska 48
+6634 Obryte Obryte
+5322 Odolanów ul. Krotoszyńska 29
+7092 Ogrodniczki ul. Białostocka 3
+7671 Ogrodzieniec ul. Kościuszki 126B
+4673 Okonek ul. Niepodległości 29c
+2530 Olecko ul. Gołdapska 31
+4554 Olecko ul. Wojska Polskiego 18
+3388 Olesno ul. Kościuszki 25
+3723 Olesno ul. Dobrodzieńska 7
+6767 Oleszyce ul Sapiehy
+1699 Oleśnica ul. Jana Kilińskiego 4-4B
+2143 Oleśnica ul. 3 Maja 39
+3690 Oleśnica ul. Wojska Polskiego 32
+4818 Oleśnica ul. Wrocławska 17
+7484 Oleśnica ul. Krzywoustego 24
+1975 Olkusz ul. Marii Curie-Skłodowskiej 45
+2410 Olkusz ul. Sławkowska 13
+3604 Olkusz ul. Tadeusza Kościuszki 34
+4199 Olkusz ul. Oskara Kolberga 1
+7689 Olkusz ul.Wspólna 
+4749 Olszewo Borki ul. Broniewskiego 2A
+1170 Olsztyn ul. Wyszyńskiego 15
+1357 Olsztyn ul. Okrzei 10
+1689 Olsztyn ul. Wilczyńskiego 4
+1873 Olsztyn ul. Sielska 12
+2002 Olsztyn ul. Piłsudskiego 50
+
+[STRONA 33]
+2651 Olsztyn ul. Kołobrzeska 32
+3553 Olsztyn ul. Bartąska 1
+3779 Olsztyn ul. Sikorskiego 21A
+4034 Olsztyn ul. Obrońców Tobruku 6
+4616 Olsztyn ul. Pstrowskiego 26
+4708 Olsztyn ul. Jarocka 84
+5171 Olsztyn ul. Bałtycka 155
+5358 Olsztyn ul. Barczewskiego 1
+5392 Olsztyn ul. Poprzeczna 24
+5674 Olsztyn ul. Hozjusza 11
+7292 Olsztyn (pow.częstochowski) ul. Asnyka 2
+5819 Olsztynek ul. Mrongowiusza 24
+2086 Oława ul. Kilińskiego 2A
+3172 Oława ul. Kutrowskiego 48
+4403 Oława ul. 3 Maja 2C
+6161 Oława ul. 3 Maja 51a
+6710 Ołpiny Ołpiny 131
+1809 Opalenica ul. Sienkiewicza 27
+5417 Opalenica ul. Poznańska 70
+3203 Opatów ul. Mikołaja Kopernika 15
+7516 Opatów ul. 1 Maja 48
+1126 Opoczno ul. Biernackiego 13
+4317 Opoczno ul. Piotrkowska 83-89
+6388 Opoczno ul. Inowłodzka 22
+1222 Opole ul. Wrocławska 3
+1995 Opole ul. Oleska 104
+2219 Opole ul. Wiejska 141B
+3163 Opole ul. Chełmońskiego 2
+3336 Opole ul. Wrocławska 156
+3350 Opole ul. Oświęcimska 98
+3607 Opole ul. Niemodlińska 77
+3804 Opole ul. Grudzicka 51
+3863 Opole ul. Ozimska 48
+5218 Opole ul. Fabryczna 1
+5712 Opole ul. Ozimska 189
+5851 Opole ul. Jagiellonów 91
+7258 Opole ul. Nyska 25D
+1839 Opole Lubelskie ul. Lubelska 32
+4941 Opole Lubelskie ul. Fabryczna 38C
+6776 Orchowo Ul.  Wyzwolenia 38
+7510 Orły ul. Krakowska 15
+4075 Orneta ul. Dworcowa 2
+7011 Orzechowo ul. Średzka 41
+2334 Orzesze ul. Rynek 12
+6786 Orzesze ul. Centralna 270
+5881 Orzysz ul. Mickiewicza
+6111 Osie ul. Dworcowa 9D
+6919 Osieczna ul. Drzeczkowska 1C
+6864 Osiek (pow.oświęcimski) ul. Główna 296
+4489 Osielsko ul. Ziołowa 2
+
+[STRONA 34]
+2957 Osięciny ul. Włocławska 1
+3844 Osinów Dolny Osinów Dolny 4A
+6769 Osjaków ul. Częstochowska 53a
+1554 Ostrołęka ul. Sienkiewicza 53
+3534 Ostrołęka ul. Steyera 2D
+4011 Ostrołęka ul. Słowackiego 31A
+4896 Ostrołęka ul. Bohaterów Warszawy 29
+5148 Ostrołęka ul. Hallera 15
+7216 Ostrołęka ul. Stacha Konwy 3D
+7471 Ostrołęka ul. Goworowska 24
+6838 Ostroróg ul. Jaworowa 3
+1287 Ostrowiec Świętokrzyski ul. Polna 9A
+1479 Ostrowiec Świętokrzyski OS. STAWKI 46
+1482 Ostrowiec Świętokrzyski ul. Okólna 5
+2576 Ostrowiec Świętokrzyski ul. Długa 2B (Grabowiecka?)
+3253 Ostrowiec Świętokrzyski ul. Waryńskiego 32
+4763 Ostrowiec Świętokrzyski ul. Sandomierska 89
+6231 Ostrowiec Świętokrzyski ul. Mickiewicza
+6836 Ostrowiec Świętokrzyski ul. Bałtowska 249
+7054 Ostrowite ul. Polna 2
+1430 Ostróda ul. Grunwaldzka 41
+1703 Ostróda ul. Stapińskiego 13
+3231 Ostróda Ul. Wojska Polskiego 12
+4592 Ostróda ul. Mickiewicza 34A
+4839 Ostrów Lubelski ul. Nowy Świat 1
+2012 Ostrów Mazowiecka ul. 3 Maja 98
+7281 Ostrów Mazowiecka ul. Lubiejewska 76
+1054 Ostrów Wielkopolski ul. Mertki 12
+1743 Ostrów Wielkopolski ul. Konopnickiej 2a
+3453 Ostrów Wielkopolski ul.Budowlanych 1
+3477 Ostrów Wielkopolski ul. Głowackiego 69
+3869 Ostrów Wielkopolski ul. Kolejowa 32A
+4007 Ostrów Wielkopolski ul. Jerzego Ofierskiego 1
+4387 Ostrów Wielkopolski ul. Ks. Czesława Majorka 1
+4466 Ostrów Wielkopolski ul. Grabowska 115
+2545 Ostrzeszów ul. Zamkowa 52
+4023 Ośno Lubuskie ul. 3 Maja 7
+2203 Oświęcim ul. Zaborska 22
+2622 Oświęcim ul. Garbarska 1A
+5056 Oświęcim ul. Konopnickiej 2A
+6490 Oświęcim ul. Leszczyńskiej 18
+7339 Oświęcim ul. Chemików 1D
+7028 Otfinów Otfinów 66
+1573 Otwock ul. Batorego 32
+1943 Otwock ul. Kołłątaja 61A
+4940 Otwock ul. Reymonta 43
+6175 Otwock ul. Wawerska 22
+3439 Ozimek ul. Sportowa  1A
+3608 Ozimek ul. Kolejowa 2
+4167 Ozorków ul. Południowa 10
+
+[STRONA 35]
+1640 Ożarów PL. WOLNOŚCI 14
+5961 Ożarów Mazowiecki ul. Poznańska 153
+1583 Pabianice ul. Grota Roweckiego 18A
+3017 Pabianice ul. Piotra Skargi 78
+3305 Pabianice ul. Konopnickiej 39a
+4121 Pabianice ul. Łaska 23/25
+6282 Padew Narodowa Jana Pawła 22
+6611 Pakosław ul. Kolejowa 23
+2350 Pakość ul. Jankowska 9
+7451 Pakość ul. Mogileńska 33
+6538 Panki ul. Tysiąclecia 34C
+1757 Parczew ul. Wojska Polskiego 2
+3048 Parczew ul. Jana Pawła II 92
+1587 Pasłęk ul. Ogrodowa 44
+3924 Pasłęk ul. Strażacka 1A
+5481 Pasym ul. Burskiego 29
+2299 Pawłowice ul. Prosta 10
+6807 Pawłów ul. Rzepin Kolonia 85
+7515 Pcim Pcim 1626
+3240 Pelplin ul. Szkolna 6
+6746 Pełczyce Chrobrego 4C
+5891 Pęcice ul. Parkowa 49
+3289 Piaseczno ul. Julianowska 35
+3836 Piaseczno ul. Dworcowa 21
+4280 Piaseczno ul. Sienkiewicza 3
+5397 Piaseczno ul. Okulickiego 20c
+1859 Piaski ul. Lubelska 100
+1179 Piastów ul. Wysockiego 3A
+7149 Piastów ul. Warszawska 51
+4872 Piątek ul. Stodolniana 2
+6638 Piątnica ul. Jedwabieńska
+3068 Piechowice ul. Cmentarna 1
+4635 Piecki ul. Zwycięstwa 16A
+1484 Piekary Śląskie ul. Kamienna 2
+2624 Piekary Śląskie ul. Skłodowskiej-Curie 65A
+6500 Piekary Śląskie ul. Bytomska 54
+4442 Piekoszów ul. Czarnowska 54
+6895 Pielgrzymka
+6292 Pieniężno Królewiecka 3
+2760 Pieszyce ul. Ogrodowa 20A
+3111 Pilawa AL. WYZWOLENIA 29
+3969 Pilchowice ul. Spółdzielcza 11
+2362 Pilica ul. Krakowska 31
+2454 Pilzno ul. Bujnowskiego 3
+1035 Piła AL. POWSTAŃCÓW WIELKOPOLSKICH 68
+3512 Piła ul. Drygasa 4
+3513 Piła ul. Poznańska 26
+4229 Piła ul. Bydgoska 114
+4512 Piła ul. Miła 1
+4576 Piła ul. Tczewska 1
+
+[STRONA 36]
+7228 Piła ul. Fritsa Philipsa 1
+7229 Piła ul. Okrzei 7
+1823 Piława Górna ul. Piastowska 52A
+3659 Pińczów ul. Batalionów Chłopskich 52
+6055 Pionki ul. Niepodległości 4A
+2011 Piotrków Trybunalski ul. Wolborska 6
+2204 Piotrków Trybunalski ul. Sienkiewicza 19
+3448 Piotrków Trybunalski ul. Belzacka 93
+4549 Piotrków Trybunalski ul. Sulejowska 45
+5406 Piotrków Trybunalski ul. Dmowskiego 28 B
+6145 Piotrków Trybunalski ul. Wojska polskiego 137/139
+2761 Pisarzowice ul. Bielska 46A
+3496 Pisz ul. M. Wołodyjowskiego 17A
+3535 Pisz ul. Olsztyńska 2
+4341 Pisz ul. Klementowskiego 21
+7304 Pisz ul. Warszawska 50C
+6779 Piszczac ul. Włodawska 14a
+5740 Piwniczna Zdrój ul. Zagrody 2
+1998 Pleszew ul. Ogrodowa 8
+4736 Pleszew ul. Wojska Polskiego 46
+6718 Pławno ul. Gidelska 106
+3456 Płochocin ul. Długa 2A
+1710 Płock ul. Otolińska 8
+1939 Płock ul. Tysiąclecia 11
+2590 Płock ul. Gierzyńskiego 17
+2669 Płock ul. Narodowych Sił Zbrojnych 14
+2983 Płock ul. 8 Pułku Artylerii Lekkiej 2
+3053 Płock ul. Armii Krajowej 18
+3492 Płock ul. Bielska 45
+4206 Płock ul. Portowa 4
+4550 Płock ul. Czwartaków 9
+5264 Płock ul. Chopina 51
+5391 Płock ul. Ks. J. Popiełuszki 4
+7460 Płock ul.Tysiąclecia 2A
+2668 Płońsk ul. Młodzieżowa 28H
+2783 Płońsk ul. Pułtuska 60A
+3536 Płońsk ul. Rzemieślnicza 4
+7391 Płońsk ul. Świętego Jana Pawła II 22
+3314 Płoty ul. Grunwaldzka 1
+5843 Pniewy ul. Poznańska 48a
+1508 Pobiedziska ul. Krótka 9
+6321 Pobiedziska ul. Gnieźnieńska 63
+5826 Pobierowo ul. Wojska Polskiego 44, 44b
+3818 Poddębice ul. Łęczycka 29B
+4293 Podgórzyn ul. Bojki 5
+6383 Pogorzela ul. Armii Poznań 2a
+6071 Pokój Zieleniec 69A
+4703 Polanów ul. Wolności 8
+1116 Police ul. Głowackiego 10
+4946 Police ul. Morelowa 2
+
+[STRONA 37]
+3691 Polkowice ul. Ogrodowa 5
+4593 Polkowice ul. Dąbrowskiego 5
+6547 Polkowice ul. Młyńska 2A
+2770 Połaniec ul. Czarnieckiego 1
+6108 Połaniec ul. Zielińskiego 1
+2430 Połczyn Zdrój ul. Warszawska 19/2
+7106 Pomiechówek ul. Warszawska 37
+2246 Poniatowa ul. 1 Maja 7C
+2573 Poniec ul. Szosa Gostyńska 29
+7065 Popów ul. Szlachecka 2
+2839 Poraj ul. Armii Krajowej 33
+2098 Poręba ul. Wojska Polskiego 30
+6194 Potęgowo ul. Kościuszki 2F
+6639 Potworów Radomska
+1009 Poznań ul. Sokoła 26
+1022 Poznań OS. ZWYCIĘSTWA 110
+1175 Poznań OS. RZECZYPOSPOLITEJ 43
+1985 Poznań ul. Naramowicka 219
+2617 Poznań Os. Bolesława Chrobrego 110
+2641 Poznań ul. Książęca 1
+2980 Poznań ul. Bobrzańska 13
+3065 Poznań ul. Łukaszewicza 43
+3109 Poznań ul. Stróżyńskiego 21a
+3116 Poznań ul. Czarnieckiego 12
+3187 Poznań ul. Szadecka 2
+3256 Poznań ul. Wojskowa 3
+3515 Poznań ul. Starołęcka 1
+3720 Poznań ul. Bukowska 121/123
+3950 Poznań ul. Dąbrowskiego 29
+3951 Poznań ul. Dolna Wilda 104/106
+3995 Poznań ul Lechicka 59
+4080 Poznań ul. Dąbrowskiego 399
+4081 Poznań os. Czecha 111
+4159 Poznań ul. Polanka 22
+4288 Poznań ul. Chojnicka 72/74
+4414 Poznań ul. Czechosłowacka 104
+4524 Poznań os. Bolesłaawa Śmiałego 109
+4612 Poznań ul. Polna 41
+4665 Poznań pl. Wiosny Ludów 2 
+4713 Poznań ul. Gronowa 26
+4730 Poznań ul. Kazimierza Wielkiego 1-3
+4734 Poznań ul. Grunwaldzka 216-220
+4744 Poznań ul. Gwiaździsta 30
+4780 Poznań ul. 28 Czerwca 1956 r. 384
+4787 Poznań ul. Obornicka 334
+4873 Poznań ul. Połabska 1
+4917 Poznań ul. Hallera 2a
+4935 Poznań ul. Sycowska 18
+5015 Poznań ul. Naramowicka 104
+6025 Poznań ul. Poszwińskiego 2
+
+[STRONA 38]
+6328 Poznań ul. Stefanii Wołynki 1
+6348 Poznań ul. Brzechwy 99
+6401 Poznań ul. Szwedzka 6 A
+6414 Poznań ul. Serbska 15
+6525 Poznań os. Przyjaźni 141 A
+6606 Poznań ul. Głuszyna 273
+7319 Poznań ul. Srzeszyńska 25
+7565 Poznań ul. Piątkowska 78 C
+5045 Prabuty ul. Jagiełły 10A
+2072 Praszka ul. Piłsudskiego 7
+7666 Prażmów ul.Ryxa
+2123 Prochowice ul. Antoniego Rymszy 1
+4247 Prostki ul. 1 Maja 12D
+3088 Proszowice ul. Kolejowa 13
+4956 Proszówki Proszówki 389
+6316 Prószków ul. Rynek 17 b
+4507 Pruchnik ul. Kańczudzka 45
+2236 Prudnik ul. Kościuszki 20
+3499 Prudnik ul. Skowrońskiego 26
+4390 Prusice Wrocławska 67
+2019 Pruszcz Gdański ul. Skalskiego 1
+2796 Pruszcz Gdański ul. Dobrowolskiego 2
+2863 Pruszcz Gdański ul. Kasprowicza 40
+5076 Pruszcz Pomorski ul. Główna 2
+2583 Pruszków AL. JEROZOLIMSKIE 454
+4882 Pruszków ul. 3 Maja 132
+5263 Pruszków ul. Solidarności 1
+5468 Pruszków ul. Komorowska 26
+6359 Pruszków Plac Sprawiedliwości 4
+1407 Przasnysz ul. Sosnowa 7
+3327 Przasnysz ul. Leszno 1
+6362 Przasnysz ul. Piłsudskiego 89
+6711 Przechlewo Człuchowska
+7282 Przeciszów ul. Oświęcimska 
+2031 Przecław ul. Przecław 149
+4517 Przedbórz ul. Trytwa 6
+3275 Przejazdowo ul. Główna 27A
+6215 Przemęt ul. Kasztelańska 12
+2251 Przemków ul. Szprotawska 1A
+2094 Przemyśl ul. Mickiewicza 28
+2946 Przemyśl ul. Focha 2A
+4348 Przemyśl ul. Łukasińskiego 9
+4449 Przemyśl ul. Lwowska 17A
+2701 Przeworsk ul. Łańcucka 7
+7511 Przeworsk ul. Otwarta 17
+7646 Przeworsk ul. Dynowska 18B
+7393 Przodkowo Kartuska 46
+6994 Przygodzice ul. Wrocławska 111
+7040 Przyjaźń ul. Łapińska 20
+6227 Przysucha Ul. Radomska 25
+
+[STRONA 39]
+6985 Przytoczna ul. Główna 1B
+5332 Przywidz Gdańska 22
+5054 Pszczew ul. Sikorskiego 22
+4672 Pszczyna ul. Szymanowskiego 23
+7101 Pszczyna ul. Bielska 46
+1971 Pszów ul. Traugutta 6
+3389 Pszów ul. Andersa 19
+3366 Puck ul. Topolowa 9
+5672 Puck ul, Kopernika 4A
+1793 Puławy ul. Piłsudskiego 15
+4038 Puławy ul. Gen. Filedorfa "Nila" 12
+4909 Puławy ul. Włostowicka 154
+1795 Pułtusk ul. Jana Pawła II 2/4
+4399 Pułtusk ul. Warszawska 23A
+5888 Pułtusk Przemiarowska
+7021 Pułtusk ul. Wyszkowska 11C
+3375 Puszczykowo ul. Rynek 4
+5779 Pyrzyce ul. Adama Mickiewicza 2a
+7126 Pyrzyce ul. Szczecińska 2
+5935 Pyskowice ul. Zaolszany 7A
+5936 Pyskowice ul. Toszecka 40
+6527 Pyzdry ul. Wrzesińska 29 e
+2489 Rabka Zdrój ul. Zakopiańska 22A
+7544 Rabka Zdrój ul. Sądecka 108B
+7782 Raciąż Zawoda 43
+1321 Racibórz ul. Opawska 69/1
+2400 Racibórz ul. Siwonia 38
+3613 Racibórz ul. Reymonta16
+4174 Racibórz ul. Opawska 18
+6183 Racibórz ul. Jana 3
+6333 Racibórz ul. Pracy 18
+6842 Raczki ul. Gospodarska 32
+6898 Radgoszcz ul.Jagielońska 33a
+3616 Radlin ul. Hallera 15 A
+6757 Radłów (pow.ostrowski) ul. Wiejska 
+1387 Radom ul. Paderewskiego 17
+1819 Radom ul. Czarnoleska 9
+2152 Radom ul. Maratońska 23
+2188 Radom ul. Zbrowskiego 95
+2940 Radom ul. Zbrowskiego 53
+3333 Radom ul. Okulickiego 47
+3450 Radom ul. Gajowa 27
+3661 Radom ul. Żółkiewskiego 10
+3662 Radom ul. Limanowskiego 93
+3947 Radom ul. Wandy Malczewskiej 9
+4037 Radom ul. Wolanowska 55
+4227 Radom Ul. Warszawska 96
+4555 Radom ul. Słowackiego 62
+4766 Radom ul. Mireckiego 14-16
+4838 Radom ul. Sobótki 1A
+
+[STRONA 40]
+4862 Radom ul. Słowackiego 255J
+5113 Radom ul. Kozienicka 100
+1166 Radomsko ul. Krasickiego 5
+1701 Radomsko ul. Starowiejska 1
+3793 Radomsko ul. Narutowicza 11
+5082 Radomsko ul. Brzeźnicka 65a
+4450 Radomyśl Wielki ul. Nowa 6
+6618 Radwanice (pow.polkowicki) u. Mechaniczna 1G
+4002 Radwanice (pow.wrocławski) ul. Słoneczna 27
+2475 Radymno ul. Lwowska 9
+3373 Radziejowice ul. Słoneczna 6
+2067 Radziejów ul. Komunalna 1 
+7016 Radziłów Bargłówek 2b
+3567 Radzionków ul. Świętego Wojciecha 1
+5193 Radzionków ul. Unii Europejskiej 1
+6631 Radzionków ul. Nałkowskiej 2/5
+3114 Radzymin ul. Jana Pawła II 66
+4579 Radzymin ul. Weteranów 22
+6131 Radzymin ul. Konstytucji 3 Maja
+4279 Radzyń Chełmiński ul. Tysiąclecia 10
+1507 Radzyń Podlaski ul. Lubelska 3A
+2984 Radzyń Podlaski ul. Warszawska  66
+6920 Rajbrot  Rajbrot  53
+4789 Rajgród ul. Warszawska 13
+6796 Raków ul. Łagowska 28
+7055 Rakszawa Rakszawa 207
+3928 Raszków Przybysławice 43
+5959 Raszyn ul. Sportowa 1
+6300 Raszyn ul. Krakowska 113
+1586 Rawa Mazowiecka ul. Konstytucji 3 Maja 3
+2781 Rawa Mazowiecka ul. Słowackiego 68
+4415 Rawa Mazowiecka ul. Kazimierza Wielkiego 18
+1256 Rawicz ul. Westerplatte 1
+2230 Rawicz ul. Sarnowska 4A
+2297 Rawicz ul. Piłsudskiego 8
+4334 Recz ul. Kolejowa 54
+3903 Reda ul. Obwodowa 27
+5793 Reda ul. Pucka 5
+4231 Redzikowo ul. Słupska 31
+7315 Reguły ul. Regulska 1A
+2893 Rejowiec Fabryczny ul. Lubelska 10
+4769 Rembelszczyzna ul. Jana Kazimierza 471
+1727 Resko ul. Bohaterów Warszawy 1
+3094 Reszel ul. Słowiańska 25
+4900 Rewal ul. Topolowa
+6923 Ręczno ul. Główna 36
+6594 Rogowo (pow.żninski) ul. Kościuszki 9A
+7739 Rogoźnik (pow.nowotarski) DW 957
+1006 Rogoźno ul. Przemysława II 7
+5416 Rogoźno al. Marszałka J. Piłsudskiego 36
+
+[STRONA 41]
+3972 Rokiciny ul. Łódzka 8A
+3430 Rokietnica ul. Szamotulska 7
+2057 Ropczyce ul. Konarskiego 1-7
+3953 Ropczyce ul. Witosa 1C
+6528 Ropczyce ul. Grunwaldzka 41
+7191 Rotmanka ul. Zaczarowana 1
+6988 Rozdrażew ul. Krotoszyńska 67
+6877 Rozogi ul. Warszawska 27c 
+4701 Rozprza ul. Legionów Polskich 40D
+5482 Różan ul. Przemysłowa 9
+2469 Ruciane Nida ul. Gałczyńskiego 11
+1062 Ruda Śląska ul. Norwida 26B
+1871 Ruda Śląska ul. Piastowska 2
+2325 Ruda Śląska ul. Planty Kowalskiego 1
+2336 Ruda Śląska ul. Kłodnicka 70
+2389 Ruda Śląska ul. Ks. Niedzieli 7
+2586 Ruda Śląska ul. Goduli 13
+3133 Ruda Śląska ul. Franciszka Wilka 4
+3618 Ruda Śląska ul. Odrodzenia 7
+3619 Ruda Śląska ul. Radoszowska 4
+4169 Ruda Śląska ul. Borowa 8
+4244 Ruda Śląska ul. Górnośląska 16
+4981 Ruda Śląska ul. 1 Maja 366
+6080 Ruda Śląska ul. Zabrzańska 65
+6283 Ruda Śląska UL. Paderewskiego 19
+7124 Ruda Śląska ul. Górnośląska 45
+6840 Rudna ul. Krochmalna 1B
+2804 Rudnik nad Sanem ul. Sanowa 11
+5277 Rudniki Wieluńska 1
+6871 Rudzica (pow.bielski) Rudzica 547 
+2959 Rumia ul. Grunwaldzka 8
+3309 Rumia ul. Kosynierów 55
+3479 Rumia ul. Dębogórska 132
+3555 Rumia ul. Dąbrowskiego 76
+4354 Rumia ul. Starowiejska 13
+5255 Rumia ul. Sobieskiego 14A
+1246 Rybnik ul. M.C. Skłodowskiej 1B
+1973 Rybnik ul. Wodzisławska 76
+1974 Rybnik ul. Górnosląska 138A
+2063 Rybnik ul. 3 Maja 31
+3070 Rybnik ul. Sztolniowa 38
+3390 Rybnik ul. Żorska 322A
+3621 Rybnik ul. Zebrzydowicka 74
+3622 Rybnik ul. Św. Maksymiliana 28
+4785 Rybnik ul. Gliwicka 101B
+4807 Rybnik ul. Sybiraków 7
+5042 Rybnik ul. Rymera 8
+5995 Rybnik ul. Raciborska 124
+6016 Rybnik ul. Patriotów 17
+6578 Rybno ul. Lubawska 6B 
+
+[STRONA 42]
+6758 Rychliki Rychliki
+7059 Rychtal Skoroszów 37
+4889 Rychwał ul. Kaliska 19
+5311 Rychwałd ul. Krakowska 14A
+4898 Ryczywół ul. Kolejowa 29
+1245 Rydułtowy ul. Obywatelska 26
+3623 Rydułtowy ul. Raciborska 351
+4658 Rydułtowy ul. Bema 5
+7623 Rydułtowy ul. Bema 90
+6681 Rydzyna Ul. Wolności 13M
+6665 Ryglice ul. Tuchowska 65
+4631 Ryki ul. Żytnia 10
+2513 Rymanów ul. Bieleckiego 17A
+6944 Rymań ul. Nowa 5
+2972 Ryn ul. Partyzantów 13
+1408 Rypin ul. Nowy Rynek 16
+3242 Rypin ul. Mławska 46B
+4179 Rypin ul. Toruńska 2B - 2C
+6372 Rytel ul. Chojnicka
+7362 Rytro Rytro 541a 
+6740 Rzeczenica ul. Leśna 3A
+6972 Rzeczniów Rzeczniów 140B
+2429 Rzepin ul. Słubicka 4
+1421 Rzeszów ul. Rejtana 51
+1517 Rzeszów ul. Siemieńskiego 14
+1931 Rzeszów ul. Okulickiego 6
+2089 Rzeszów ul. Hetmańska 56
+2501 Rzeszów ul. Piłsudskiego 34
+3081 Rzeszów ul. Przemysłowa 3
+3091 Rzeszów ul. Kwiatkowskiego 2A
+3325 Rzeszów ul. Warszawska 29
+3880 Rzeszów ul. Leska 2
+4349 Rzeszów ul. Witolda 8
+4600 Rzeszów ul. Podkarpacka 8A
+4957 Rzeszów ul. Strażacka 27E
+5369 Rzeszów ul. Lubelska 65
+5499 Rzeszów ul. Reymonta 3
+5528 Rzeszów ul.Słowackiego
+6050 Rzeszów ul. Pułkownika Iranka-Osmeckiego 25
+6102 Rzeszów ul. Stołajowskiego 6
+7645 Rzeszów ul. Wieniawskiego 73a
+7237 Rzgów ul. Tuszyńska 70D
+6729 Sadki ul. Strażacka 1B
+6863 Sadków ul. Leśna
+5886 Samborzec Samborzec 50
+1306 Sandomierz ul. Słowackiego 29
+3462 Sandomierz ul. Portowa 33
+5784 Sandomierz ul. Kwiatkowskiego 67
+5889 Sandomierz ul. Armii krajowej 10
+6978 Sanniki Warszawska
+
+[STRONA 43]
+1880 Sanok ul. Krakowska 194
+2017 Sanok ul. Lipińskiego 17
+2791 Sanok ul. Przemyska 24
+3663 Sanok ul. Krakowska 2
+6788 Sarnaki Ul.Kolejowa 45a 
+6663 Sawin ul. Kościelna 46
+2851 Sejny ul. 1 Maja 6
+4395 Serby ul. Główna 2
+3215 Serock ul. Warszawska 32
+3049 Sędziszów ul. Majowa 9
+2656 Sędziszów Małopolski ul. Wesoła 12A
+4964 Sędziszów Małopolski ul. Jana Pawła II 54a
+7857 Sędziszów Małopolski ul.Witosa 22
+5005 Sępólno Krajeńskie ul. Kościuszki 24B
+1868 Sianów ul. Morska 4
+2170 Siechnice ul. Osiedlowa 18
+1553 Siedlce ul. Rynkowa 20
+2004 Siedlce ul. Wojska Polskiego 25
+2518 Siedlce ul. Brzeska 134
+3424 Siedlce ul. Mieszka I 23
+4187 Siedlce ul. Warszawska 89
+5555 Siedlce ul. Kleeberga 6
+7109 Siedlce ul.Łukowska
+6603 Siedlec ul. Wolsztyńska 66
+6806 Siedlisko ul. Głogowska 16a
+1938 Siemianowice Śląskie ul. Śląska 41
+2539 Siemianowice Śląskie ul. Fitznerów 2
+3624 Siemianowice Śląskie ul. Niepodleglości 27
+3625 Siemianowice Śląskie ul. Wróbla 2
+4400 Siemianowice Śląskie ul. Mysłowicka 1
+4968 Siemianowice Śląskie ul. Bańgowska 52
+6564 Siemianowice Śląskie Ul. Kapicy 8
+1083 Siemiatycze ul. 11 Listopada 45
+1682 Siemiatycze ul. Nadrzeczna 1
+6332 Siemiatycze ul.Ciechanowiecka 33
+3436 Sieniawa ul. Kościelna 3
+6784 Siennica ul. Mińska 121
+2904 Sieradz ul. Kościuszki 23A
+2974 Sieradz ul. Targowa 3C
+6473 Sieradz ul. Składowa 1a
+4307 Sierakowice ul. Ks. Bernarda Łosińskiego 1C
+2548 Sieraków ul. Wroniecka 9
+2033 Sierpc ul. Kościuszki 5
+3799 Sierpc ul. Chopina 4
+5383 Siewierz ul. Piłsudskiego 51A
+6258 Sitkówka Nowiny ul. Przemysłowa 6
+4817 Skalbmierz ul. W. Witosa 2A
+6169 Skarbimierz ul. Dębowa 1a
+2719 Skarszewy ul. Tczewska 7A
+2898 Skaryszew ul. Słowackiego 24
+
+[STRONA 44]
+1531 Skarżysko-Kamienna ul. Spółdzielcza 82
+1565 Skarżysko-Kamienna ul. Piłsudskiego 38
+4089 Skarżysko-Kamienna ul. Żeromskiego 40
+5086 Skarżysko-Kamienna ul. 1-go Maja 16
+6580 Skarżysko-Kamienna ul. Krakowska 142
+7375 Skawa Skawa 690K
+2418 Skawina ul. Przemysłowa 6
+7270 Skawina ul. Radziszowska
+5270 Skępe ul. Sierpecka 64
+1167 Skierniewice ul. Reymonta 1
+1621 Skierniewice ul. Mszczonowska 37
+2818 Skierniewice ul. Rawska 73
+2895 Skierniewice ul. Domarasiewicza 3/5
+6207 Skierniewice ul. Liska 4
+2320 Skoczów ul. Górny Bór 5
+4311 Skoczów ul. Górecka 32D
+6208 Skoki ul. Turystyczna 11
+3246 Skopanie ul. Mielecka 6
+4016 Skórcz ul. Pomorska 27A
+7343 Skórzec ul. Garwolińska 90a
+3391 Skórzewo ul. Poznańska 90
+7487 Skórzewo ul. Poznańska 1W
+7605 Skwierzyna ul. Gorzowska 18e
+1997 Sława ul. Wojska Polskiego 5
+4514 Sławków ul. Polskiego Czerwonego Krzyża 22
+1966 Sławno ul. Armii Krajowej 22A-C
+4303 Sławno ul. Mireckiego 1A
+3906 Sławoborze ul. Świdwińska 31
+2250 Słomniki ul. Stefana Żeromskiego 4
+5290 Słońsk ul. 3 Lutego 60
+2027 Słubice ul. Kościuszki 3
+2080 Słubice pl. Przyjaźni 18
+4102 Słubice ul. Wrocławska 9
+1801 Słupca ul. Niepodległości 19
+3782 Słupca Plac Szkolny 16a
+7435 Słupia (pow.buski) Słupia 135b
+1393 Słupsk PL. DĄBROWSKIEGO 3
+2262 Słupsk ul. Lutosławskiego 3
+2896 Słupsk ul. Szafranka 2
+2951 Słupsk ul. Kołłątaja 28A
+3029 Słupsk ul. Koszalińska 11
+3270 Słupsk ul. Bałtycka 160
+3958 Słupsk ul. Kniaziewicza 32
+4234 Słupsk Ul. 11 Listopada 11
+4706 Słupsk ul. Kilińskiego 26
+4821 Słupsk ul. Jana III Sobieskiego 5
+6009 Słupsk ul. Szczecinska
+6070 Słupsk ul. Kaszubska 80
+6237 Słupsk Grunwaldzka
+6357 Słupsk ul. Wolności
+
+[STRONA 45]
+5247 Smętowo Graniczne ul. Dworcowa 6
+3872 Smolec ul. Wrocławska 1
+7074 Sobolew ul. Maciejowicka 35
+3463 Sobótka ul. Warszawska 4A
+2943 Sochaczew ul. 600-lecia 40
+3421 Sochaczew ul. 15 Sierpnia 87
+4732 Sochaczew ul. Hubala 1
+2695 Sokołów Małopolski ul. Lubelska 56
+2014 Sokołów Podlaski ul. Jana Bosko 5
+3538 Sokołów Podlaski ul. Kolejowa 1
+6783 Sokoły ul. Mazowiecka 16
+3342 Sokółka ul. Białostocka 132
+5038 Sokółka Jana Pawła ll  1
+2327 Solec Kujawski ul. Powstańców 7
+6934 Somianka Somianka 94B
+4076 Somonino ul. Wolności 37C
+5174 Sompolno ul. Warszawska 46
+1327 Sosnowiec ul. Goszczyńskiego 17
+1547 Sosnowiec ul. Braci Mieroszewskich 2
+1976 Sosnowiec ul. Konstytucji 3
+2919 Sosnowiec ul. Grota Roweckiego 20A
+3054 Sosnowiec ul. 1 Maja 23A
+3149 Sosnowiec ul. Narutowicza 56
+3626 Sosnowiec ul. Żytnia 15
+3628 Sosnowiec ul. Braci Mieroszewskich 50
+3862 Sosnowiec ul. Podjazdowa 8
+4859 Sosnowiec ul. Orląt Lwowskich 42
+5057 Sosnowiec ul. Główna 17B
+5084 Sosnowiec ul. Jana III Sobieskiego 64
+5269 Sosnowiec ul. Lenartowicza 39C
+5907 Sosnowiec ul. Jana Długosza 45
+5908 Sosnowiec ul. Bora Komorowskiego 3
+6156 Sosnowiec ul. Będzińska 13
+6493 Sosnowiec ul. Grenadierów 2
+7103 Sosnowiec ul. Norwida 2
+1885 Stalowa Wola ul. Rozwadowska 37A
+2131 Stalowa Wola ul. Gen. Okulickiego 140
+4145 Stalowa Wola ul. Okulickiego 2
+6106 Stalowa Wola ul. Staszica 3D
+7390 Stalowa Wola ul. Przemysłowa 8
+6439 Stanisławów Pierwszy ul. Sonaty 2
+7514 Stanowice ul. Zwycięstwa 62
+7069 Stanowice (pow.oławski) ul.Wierzbowa 
+7173 Stara Bircza Stara Bircza 132
+3776 Stara Iwiczna ul. Nowa 9
+5601 Stara Kiszewa ul. Kościerska 44D
+6723 Stara Wieś (pow.brzozowski) Stara Wieś 417
+1717 Starachowice ul. Majówka 23
+2511 Starachowice ul. Radomska 35A
+3132 Starachowice al. Jana Pawła II 20
+
+[STRONA 46]
+3146 Starachowice ul. Kolejowa 15
+4984 Starachowice ul. Kościelna 7
+6294 Starachowice ul. Wojska Polskiego 11
+3251 Stare Babice ul. Warszawska 291
+7053 Stare Bogaczowice Główna 256A
+6964 Stare Kurowo ul. Kościuszki
+6882 Stare Miasto ul. Ogrodowa 86
+1865 Stargard Szczeciński ul. Armii Krajowej 2B
+2707 Stargard Szczeciński ul. Gdańska 2
+3008 Stargard Szczeciński ul. Czeska 10
+3233 Stargard Szczeciński ul. Szczecińska 127
+4774 Stargard Szczeciński ul. Kościuszki 32-34
+1803 Starogard Gdański ul. Zblewska 10A
+2373 Starogard Gdański ul. Skarszewska 6
+5359 Starogard Gdański ul. Zielona 14
+6267 Starogard Gdański ul. Lubichowska 136
+6455 Starogard Gdański ul. Pelplińska 31
+7245 Starogard Gdański ul. Tadeusza Kościuszki 18
+6975 Staroźreby ul. Płocka 1
+6819 Stary Dzików ul. Kościuszki 72A
+2981 Stary Sącz ul. Piłsudskiego 166
+6240 Stary Sącz ul. Jana Pawła 77 c
+6760 Starzyno ul. Pucka
+7495 Stasin Stasin 104E
+1486 Staszów ul. Jana Pawła II 15
+2575 Staszów ul. Kolejowa 38A
+4611 Staszów ul. Krakowska 49
+7175 Stawiguda ul Olsztyńska
+4664 Stawiski ul. Kossaka 2
+7181 Stąporków ul. Żeromskiego 2A
+2690 Stegna ul. Gdańska 54
+5089 Stepnica ul. Krzywoustego 1D
+3303 Stęszew ul. Kościańska 54A
+3791 Stężyca ul. Dr Majkowskiego 1
+2883 Stoczek Łukowski ul. Partyzantów 44
+4223 Stopnica ul. Dr.Piotrowskiego
+1596 Straszyn ul. Starogardzka 1
+6669 Strawczyn ul. Żeromskiego 7B
+4741 Stronie Śląskie ul. Kościuszki 11B
+6940 Stróża Kolonia ul. Akacjowa 42
+2663 Strumień ul. Młyńska 4
+4435 Stryków ul. Warszawska 80
+4802 Strzebielino ul. Wejherowska 33
+2187 Strzegom ul. Legnicka 16-18
+3692 Strzegom ul. Paderewskiego 26
+5291 Strzegom ul. Wojska Polskiego 80F
+6262 Strzegowo ul. Polna 3
+2206 Strzelce Krajeńskie ul. Okrężna 110
+3516 Strzelce Krajeńskie ul. Gorzowska 4a
+1420 Strzelce Opolskie Pl. Targowy 1
+
+[STRONA 47]
+2993 Strzelce Opolskie ul. Gogolińska 31
+3629 Strzelce Opolskie ul. Stawowa 2
+2020 Strzelin ul. Dzierżoniowska 16A
+3868 Strzelin ul.Okulickiego 4
+1807 Strzelno Ul. Św. Ducha 26A
+7098 Strzyżewice ul. Lotnicza 2
+1687 Strzyżów ul. Witosa 17
+4955 Strzyżów ul. Kombatantów 1
+3151 Sucha Beskidzka ul. Mickiewicza 21
+6678 Suchorze ul. Dębowa 1
+3940 Suchowola ul. Białostocka 36
+5991 Suchy Las ul. Obornicka 85
+2229 Sulechów ul. Styczniowa 31
+4424 Sulejów ul. Piotrkowska 62D
+4058 Sulejówek Al. J. Piłsudskiego 102
+6176 Sulejówek ul. Okuniewska 9/25
+3517 Sulęcin ul. E.Plater 6
+6947 Sulmierzyce (pow.krotoszyński) ul.Strzelecka 11
+4356 Susz ul. Piastowska 32
+4626 Suszec ul. Piaskowa 2
+1571 Suwałki ul. Pułaskiego 54
+2743 Suwałki ul. Sikorskiego 6
+2868 Suwałki ul. Daszyńskiego 8
+3041 Suwałki ul. Wojska Polskiego 15
+3539 Suwałki ul. Reja 61
+6062 Suwałki ul. Jana Pawła II 2
+6393 Suwałki ul. Armii Krajowej 33
+7226 Suwałki ul. Sejneńska 59
+7625 Suwałki Ul.Wyszyńskiego 5
+7675 Suwałki Krasickiego
+1074 Swarzędz OS. CZWARTAKÓW 13
+1649 Swarzędz ul. Cieszkowskiego 5/7
+3032 Swarzędz Os. T. Działyńskiego 1K/501
+5825 Swarzędz ul. Planetarna 18
+6841 Sycewice ul. Sportowa
+2790 Syców ul. Kaliska 52
+7552 Syców ul. Kolejowa 20
+5224 Syrynia ul. Raciborska 2G
+4731 Szadek ul. Kilińskiego 1 
+7312 Szamocin ul. Dworcowa 1
+2253 Szamotuły ul. Dworcowa 6A
+5797 Szamotuły ul. Zamkowa 9
+3452 Szczawnica ul. Główna 340
+3043 Szczawno Zdrój ul. Solicka 21
+4455 Szczawno Zdrój ul. Szczawieńska 6
+3079 Szczebrzeszyn ul. Targowa 8
+1337 Szczecin AL. BOHATERÓW WARSZAWY 34/35
+1437 Szczecin ul. Karpia 1
+1750 Szczecin ul. Milczańska 8
+1863 Szczecin ul. Rostocka 1
+
+[STRONA 48]
+2074 Szczecin ul. 26 Kwietnia 91
+2473 Szczecin ul. Struga 18
+2742 Szczecin ul. Obotrycka 6
+3073 Szczecin ul. Goleniowska 87
+3262 Szczecin al. Piastów 22/U1
+3267 Szczecin Al. Wyzwolenia 44A
+3316 Szczecin ul. Leszczynowa 23
+3519 Szczecin ul. Janickiego 24
+3520 Szczecin ul. Derdowskiego 4
+3766 Szczecin ul. Stalmacha 12
+4072 Szczecin ul. Ogrodnicza 47
+4201 Szczecin ul. Maciejkowa 37/1
+4220 Szczecin ul. Firlika 42
+4488 Szczecin ul. Krasińskiego 55
+4705 Szczecin ul. Przyjaciół Żołnierza 128A
+4910 Szczecin ul. Ku Słońcu 68C
+5152 Szczecin ul. Łukasińskiego 116
+5228 Szczecin ul. Botaniczna 29
+5831 Szczecin Narutowicza 11
+6010 Szczecin Ul. Mieszka I
+6122 Szczecin ul. Południowa 24
+6457 Szczecin ul. Szosa Stargardzka 38/40
+6558 Szczecin ul. Walecznych 64
+6587 Szczecin ul. Metalowa 57A
+7196 Szczecin ul. Policka 9
+1848 Szczecinek ul. Bohaterów Warszawy 31-35
+1987 Szczecinek ul. Przemysłowa 4
+2734 Szczecinek ul. Polna 55
+2835 Szczecinek ul. Narutowicza 3
+7559 Szczecinek ul. Pilska
+6189 Szczekociny ul. 8 Pułku Ułanów 1
+1207 Szczucin ul. Topolowa 2
+2256 Szczuczyn ul. Sobieskiego 22
+6808 Szczurowa ul. Krakowska 136B
+5915 Szczyrk ul. Beskidzka 19
+4127 Szczytna ul. Słoneczna 110
+1558 Szczytno ul. Żeromskiego 18
+2488 Szczytno ul. Pasymska 22
+6048 Szczytno ul Przemysłowa 23
+6847 Szepietowo ul. Kolejowa 6
+4099 Szklarska Poręba ul. Kilińskiego 11
+7614 Szówsko ul. Książąt Czartoryskich 27a
+6264 Szpetal ul. Włocławska 47
+3977 Szprotawa ul. Kożuchowska 3
+5180 Sztum ul. Baczyńskiego 1
+1858 Szubin ul. Kcyńska 31
+7205 Szydłowiec ul. Krakowska 75
+6935 Szydłów ul. Kielecka 88
+2099 Ścinawa ul. Jagiełły 69
+4742 Ścinawka Średnia ul. Mickiewicza 2A
+
+[STRONA 49]
+4914 Ślesin ul. Kleczewska 29
+6340 Śliwice ul. Dębowa 1
+2411 Śmigiel ul. Leszczyńska 1
+6834 Śmigiel Leszczyńska
+6817 Śniadowo ul. Szosowa
+1691 Śrem ul. Grottgera 50
+2032 Śrem ul. Kilińskiego 30
+2879 Śrem ul. Gostyńska 17
+2467 Środa Śląska ul. Legnicka 27-29
+2180 Środa Wielkopolska ul. Niedziałkowskiego 22
+6346 Środa Wielkopolska ul. Kilńskiego 22B
+6347 Środa Wielkopolska ul. Popiełuszki
+5517 Świątniki Górne ul. Kazimierza Bruchnalskiego 30
+1181 Świdnica ul. Okrężna 41
+2130 Świdnica ul. Henryka Pobożnego 3
+2697 Świdnica ul. Zamenhoffa 2
+3443 Świdnica ul. Głowackiego 28
+4290 Świdnica ul. Przemysłowa 2
+4572 Świdnica ul. Wróblewskiego 1A-1B
+5806 Świdnica ul. Kliczkowska 22
+2563 Świdnik ul. Wyszyńskiego 22
+3667 Świdnik ul. Skarżyńskiego 1
+7178 Świdnik ul. Piasecka
+7412 Świdnik Aleje AK 
+1330 Świdwin ul. Wojska Polskiego 29
+1589 Świdwin ul. Kombatantów Polskich 12
+3696 Świebodzice ul. Wałbrzyska 35
+1657 Świebodzin ul. Łużycka 33A
+2558 Świebodzin ul. Żymierskiego 20
+3837 Świebodzin ul. Konarskiego 35A
+2505 Świecie ul. Wojska Polskiego 12A
+2553 Świecie os. Sikorskiego 2
+3556 Świecie ul. Wojska Polskiego 90
+6224 Świecie Armii Krajowej
+7522 Świecie ul. Sobieskiego 1
+4924 Świeradów Zdrój Ul. 11 Listopada 26
+4176 Świerklaniec ul. Parkowa 7
+1326 Świerzawa ul. Jeleniogórska 41
+6741 Święciechowa ul. Leszczyńska 36A
+4175 Święta Katarzyna ul. Główna 1A
+2662 Świętochłowice ul. Kubiny 7
+3178 Świętochłowice ul. Sportowa 1
+3631 Świętochłowice ul. Katowicka 31C
+4413 Świętochłowice ul. Bukowa 158
+4936 Świętochłowice ul. Śląska 111
+5345 Świętochłowice ul. Barlickiego 34
+7104 Świętochłowice ul. Chorzowska 19
+2830 Świnoujście ul. Wojska Polskiego 16A
+3401 Świnoujście ul. Fińska 4
+6417 Świnoujście ul. Wojska Polskiego 97
+
+[STRONA 50]
+4641 Tarczyn ul. Grójecka 21A
+7395 Tarczyn ul. Warszawska 70
+6624 Tarłów ul. Sandomierska 80
+1311 Tarnobrzeg pl. Bartosza Głowackiego 46
+2519 Tarnobrzeg ul. Kopernika 15
+3668 Tarnobrzeg ul. Kwiatkowskiego 1
+3864 Tarnobrzeg ul. Jachowicza 12
+5670 Tarnobrzeg ul. Warszawska 2
+6113 Tarnobrzeg ul. Mickiewicza 40
+6200 Tarnobrzeg ul. Zwierzyniecka 15A
+5314 Tarnogród ul. Nadstawna 4
+4300 Tarnowo Podgórne ul. Owocowa 16
+1933 Tarnowskie Góry ul. Zagórska 91
+2114 Tarnowskie Góry ul. Bytomska 30
+3632 Tarnowskie Góry ul. Ułańska 2
+5430 Tarnowskie Góry ul. Janasa 33
+5914 Tarnowskie Góry ul. Fińska 53
+6865 Tarnowskie Góry ul.Siewierska 73
+1234 Tarnów al. Matki Bożej Fatimskiej 59
+2401 Tarnów ul. Czerwonych Klonów 9
+2417 Tarnów ul. Św. Ducha 7
+2658 Tarnów ul. Dąbrowskiego 8
+3669 Tarnów ul. Leśna 18
+3717 Tarnów ul. Czerwona 1
+3823 Tarnów ul. Lwowska 117
+4052 Tarnów ul. Romanowicza 39
+4078 Tarnów ul. Szkotnik 1A
+4352 Tarnów ul. Marynarki Wojennej 5A
+4603 Tarnów ul. Tuchowska 25
+6467 Tarnów ul. Krakowska 149
+6588 Tarnów ul. Wiesława Wody 2A
+7400 Tarnów ul. Lwowska 184a
+7582 Tarnów ul. Jarosława Dąbrowskiego 10
+7615 Tarnów Błonie 23
+1402 Tczew ul. Franciszka Żwirki 48
+2975 Tczew ul. Kwiatowa 1
+4411 Tczew ul. Czerwonego Kapturka 7
+5883 Tczew ul. Wojska Polskiego
+2306 Terespol ul. Wojska Polskiego 81/83
+5058 Tłuszcz ul. Przemysłowa 9
+6670 Tolkmicko ul. Morska 17
+1595 Tomaszów Lubelski ul. Jana Pawła II 21
+2810 Tomaszów Lubelski ul. Lwowska 126A
+4444 Tomaszów Lubelski ul. Łaszczowiecka 1B
+1241 Tomaszów Mazowiecki ul. Strzelecka 16
+1569 Tomaszów Mazowiecki ul. Wandy Panfil 1/3
+4960 Tomaszów Mazowiecki ul. Farbiarska 19/23
+5968 Tomaszów Mazowiecki ul. Dzieci Polskich 26
+6063 Tomaszów Mazowiecki ul. Nowy Port 10/12
+6190 Tomaszów Mazowiecki ul. Polna 26
+
+[STRONA 51]
+7212 Tomaszów Mazowiecki ul. Warszawska 1
+1233 Toruń ul. Wyszyńskiego 19
+1277 Toruń ul. Teligi 7
+1576 Toruń ul. Dziewulskiego 43
+1838 Toruń ul. Bażyńskich 20
+1864 Toruń ul. Żwirki i Wigury 86A-E
+2495 Toruń ul. Dziewulskiego 10
+2601 Toruń ul. Kosynierów Kościuszkowskich 4
+2955 Toruń ul. Szosa Chełmińska 212
+3002 Toruń ul. Poznańska 17-19
+3258 Toruń ul. Łódzka 116A
+3557 Toruń ul. Łyskowskiego 24
+3845 Toruń ul. Poznańska 180 
+3851 Toruń ul. Fałata 21
+4136 Toruń ul. Turystyczna 95
+5394 Toruń ul. Olsztyńska 117
+5572 Toruń ul. Waryńskiego 13
+6184 Toruń Broniewskiego
+4693 Torzym os. Lecha 9F
+3084 Toszek ul. Gliwicka 10A
+5245 Trąbki Wielkie ul. Gdańska 29
+4353 Trzciana Trzciana 397
+1388 Trzcianka ul. Sikorskiego 57
+2024 Trzcianka ul. Wiosny Ludów 6
+4313 Trzciel ul. Poznańska 6
+5090 Trzcińsko Zdrój ul. Dworcowa 209
+2936 Trzebiatów ul. Parkowa 4
+5004 Trzebiatów ul. Torowa 20B
+6702 Trzebiechów ul. Chabrowa 1
+6698 Trzebieszów Trzebieszów Drugi 62B
+5236 Trzebinia ul. Młoszowska
+5685 Trzebinia ul. Kościuszki
+3018 Trzebnica ul. Siostry Hilgi Brzoski 2
+4068 Trzebnica ul. Chrobrego 4
+1820 Trzemeszno ul. Piastowska 2
+6413 Trzemeszno ul. Foluska 6B
+1835 Tuchola ul. Warszawska 19
+5347 Tuchola ul. Krzywa 2
+2805 Tuchów ul. Okólna 1
+7502 Tuchów ul. Mickiewicza
+4794 Tulce ul. Fiołkowa 1
+4173 Tułowice ul. Porcelitowa 1
+1043 Turek ul. Ogrodowa 5
+2077 Turek ul. Nowa 22
+3718 Turek ul. Kaliska 63A
+3451 Turka ul. Sosnowa 2
+4508 Tuszyma Tuszyma 138B
+6392 Tuszynek Majoracki ul. Jana Pawła II
+2456 Twardogóra ul. 1 Maja 17
+6039 Twardogóra ul. Wielkopolska 5
+
+[STRONA 52]
+3359 Tworóg ul. Zamkowa 2A
+4359 Tychowo ul. Białogardzka 1B
+1802 Tychy ul. Wejchertów 2
+1843 Tychy AL. BIELSKA 132
+3136 Tychy ul. Kopernika 28
+5026 Tychy ul. Zwierzyniecka 2
+5948 Tychy al. Bielska 7
+6403 Tychy ul. Towarowa 2C
+2899 Tyczyn ul. Orkana 2A
+6633 Tykocin ul.Sokołowska 40
+5297 Tymbark ul. Armii Krajowej  657
+7437 Tyszowce ul. Wielka 60B
+6667 Udanin Piekary  48C
+4054 Ujazd os. Niewiadów 43A
+7266 Ujazd (pow.strzelecki) ul. Powstańców Śląskich 23B
+5882 Ujście ul. Kanałowa 14
+4483 Uniejów ul. Ogrodowa 14
+6225 Unisław ul. Bydgoska 4
+6917 Urszulin ul. Lubelska 5B
+1369 Ustka pl. Dąbrowskiego 1
+4017 Ustka ul. Kwiatowa 1
+6489 Ustka ul. Słupska 27
+6772 Ustrobna Ustrobna 51A
+7311 Ustronie Morskie ul. Kolejowa
+3179 Ustroń ul. Katowicka II nr 30
+7490 Ustroń Wiejska 7
+2894 Ustrzyki Dolne ul. 29 Listopada 38A
+4661 Ustrzyki Dolne ul. PCK 19
+3970 Wadowice ul. Wałowa 3
+6092 Wadowice ul. Wojska Polskiego 14
+7100 Walce ul. Eichendorffa 4
+1638 Wałbrzych ul. Palisadowa 53
+2106 Wałbrzych AL. WYZWOLENIA 44
+2645 Wałbrzych ul. Moniuszki 34
+3044 Wałbrzych ul. 11 Listopada 91
+3875 Wałbrzych ul. Wieniawskiego 70
+4097 Wałbrzych Ul. 1 Maja 98C
+4689 Wałbrzych ul. Długa 5A
+4729 Wałbrzych ul. Kusocińskiego 23
+1561 Wałcz ul. Andersa 15
+1954 Wałcz ul. Chopina 4
+3773 Wałcz ul. Budowlanych 1B
+7541 Wancerzów ul. Malownicza 2
+1379 Warka ul. Warszawska 19
+4022 Warka ul. Pułaskiego 2C
+6460 Warka ul. Puławska 30
+6614 Warlubie ul.Starogardzka 8
+1333 Warszawa ul. Orląt Lwowskich 70
+1365 Warszawa ul. Szobera 3A
+1431 Warszawa ul. Świetlików 9
+
+[STRONA 53]
+1908 Warszawa ul. Szadkowskiego 1A
+1910 Warszawa ul. Targowa 24
+1911 Warszawa ul. Witolińska 7
+2111 Warszawa ul. Światowida 53E
+2285 Warszawa ul. Zwoleńska 122/128
+2310 Warszawa ul. Trakt Brzeski 73
+2352 Warszawa ul. Korotyńskiego 23
+2387 Warszawa ul. Głębocka 13
+2552 Warszawa ul. Wyki 11
+2850 Warszawa ul. Zwycięzców 40
+2889 Warszawa ul. Głębocka 110
+3200 Warszawa al. Jerozolimskie 56C
+3247 Warszawa ul. Grzybowa 3
+3259 Warszawa ul. Skoroszewska 5B
+3398 Warszawa Al. Jerozolimskie 262
+3415 Warszawa ul. Wrocławska 8
+3416 Warszawa ul. Wał Miedzeszyński 106
+3719 Warszawa ul. Warszawska 42
+3797 Warszawa ul. Heroldów 6
+3912 Warszawa ul. Powstańcow Śląskich 9
+3914 Warszawa ul. Połczyńska 106
+3976 Warszawa ul. Bronowska 13
+4000 Warszawa ul. Czarodzieja 28
+4026 Warszawa ul. Marywilska 44
+4128 Warszawa ul. Barkocińska 6
+4129 Warszawa ul. Związku Walki Młodych 11
+4158 Warszawa ul. Jagiellońska 82
+4160 Warszawa ul. Bukowińska 22
+4215 Warszawa ul. Lazurowa 71
+4281 Warszawa ul. Widoczna 17
+4368 Warszawa ul. Plastyczna 10
+4374 Warszawa ul. Abrahama 1
+4378 Warszawa ul. J. Elsnera 34
+4379 Warszawa ul. Przy Agorze 22
+4445 Warszawa ul. Bartycka 183
+4495 Warszawa ul. Śpiewna 11
+4552 Warszawa ul. Wspólna 2
+4553 Warszawa ul. Hanki Ordonówny 12
+4563 Warszawa ul. Saska 6A
+4590 Warszawa ul. Sejmu Czteroletniego 2
+4606 Warszawa ul. Karczunkowska 139A
+4652 Warszawa ul. Przekorna 52
+4746 Warszawa ul. Wydawnicza 56/58
+4784 Warszawa ul. Syta 100
+4790 Warszawa ul. Kamyk 14
+4869 Warszawa ul. Dęblińska 2
+4870 Warszawa ul. Ostródzka 114
+4902 Warszawa ul. Kraśnicka 6
+4969 Warszawa ul. Pałacowa 2
+5029 Warszawa ul. Obozowa 16
+
+[STRONA 54]
+5158 Warszawa ul. Rydygiera 19
+5160 Warszawa ul. Romera 10
+5336 Warszawa ul. Jana Kazimierza 12
+5339 Warszawa ul. Krucza 50
+5354 Warszawa ul. Kopijników 6
+5479 Warszawa ul. Przewodowa 22
+5582 Warszawa ul, Podskarbińska 4
+5647 Warszawa ul. Trakt Nadwiślański 14
+5765 Warszawa ul. Rzeczypospolitej 23a
+5766 Warszawa  ul. Dereniowa 10/U4
+5860 Warszawa ul. Garażowa 5
+5862 Warszawa ul. Belgradzka 3
+5900 Warszawa ul. Łopuszańska 22
+5925 Warszawa ul. Trakt Lubelski 131
+5971 Warszawa ul. Animuszu 1
+5974 Warszawa ul. Sarmacka 4
+6088 Warszawa ul. Myśliborska 50
+6127 Warszawa ul. Konstruktorska 10c
+6192 Warszawa Al. Marszałka Józefa Piłsudskiego 2
+6228 Warszawa Plac Wojska Polskiego 1
+6367 Warszawa ul. Herbu Oksza 22
+6378 Warszawa ul. Zgrupowania AK Kampinoa 15
+6379 Warszawa ul. Magiczna 22 
+6541 Warszawa ul. Kobiałka 39
+7153 Warszawa ul. Łodygowa 24A
+7768 Warszawa ul. Pociskowa 4B
+4958 Warta ul. Zachodnia
+2991 Wasilków ul. Czysta 33
+5405 Wasilków ul. Grodzieńska15
+6982 Waśniów Czajęcice 31 B
+1487 Wąbrzeźno ul. Tysiaclecia 11-11A
+2973 Wąbrzeźno ul. Hallera 8
+7025 Wąbrzeźno ul. Okrężna 21
+1471 Wągrowiec ul. Bydgoska 9
+4791 Wągrowiec ul. Janowiecka 96
+4391 Wąsosz ul. Rawicka 24
+1263 Wejherowo ul. Obrońców Helu 3
+1921 Wejherowo ul. Rzeźnicka 8
+1981 Wejherowo os. Kaszubskie 46
+2493 Wejherowo ul. Sobieskiego 241
+4702 Wejherowo ul. Orzeszkowej 2
+4822 Wejherowo ul. Sikorskiego 33
+6426 Wejherowo ul. Przemysłowa 1C
+6329 Werbkowice ul. Zamojska 16
+3249 Węgierska Górka ul. Wyspiańskiego 8
+4361 Węgliniec ul. Piłsudskiego 23
+1798 Węgorzewo ul. Zamkowa 2
+5988 Węgorzewo ul. Armii Krajowej
+4266 Węgorzyno ul. Przemysłowa 5
+2516 Węgrów ul. Podlaska 1
+
+[STRONA 55]
+3419 Węgrów ul. K. Szamoty 42
+5039 Węgrów ul. Mickiewicza 6
+5202 Wielbark ul. Kopernika 27B
+6992 Wielichowo ul. Podgórna 6A
+5212 Wieliczka ul. Nowy Świat 27
+7154 Wieliczka ul. Reformacka 26
+7288 Wieliszew ul. Modlińska 139
+7203 Wielopole Skrzyńskie ul. Wielopole Skrzyńskie 424A
+3485 Wieluń ul. 18 Stycznia 37
+3633 Wieluń ul. Traugutta 1
+4858 Wieprz ul. Żywiecka 974
+5259 Wieruszów ul. Wrocławska 22
+4630 Wierzbica ul. Kościuszki 82
+5303 Wierzchosławice Wierzchosławice 871
+3122 Więcbork ul. Gdańska 18
+6743 Wijewo ul. Powstańców Wielkopolskich 44
+5021 Wilamowice ul. Paderewskiego 17C
+7097 Wilczyn (pow.koniński) ul. Cegielińska 54
+5990 Wilkasy ul. Niegocińska 2 
+6612 Wilków ul. Wrocławska 46
+2371 Wisła ul. 1 Maja 75A
+2857 Wisznice ul. Kościelna 37
+6911 Wiślica ul. Tysiąclecia Państwa Polskiego 14
+5526 Wiśniowa ul. Wiśnowa 749
+6024 Witkowo ul. Jana Pawła II 23
+3792 Witnica ul. Żwirowa 1
+6627 Wizna ul.Stefana Czarneckiego 152a
+1980 Władysławowo ul. Starowiejska 25
+7392 Władysławowo ul. Morelowa 1
+7693 Władysławowo (pow.ciechanowski) Ciechanowska 65
+1096 Włocławek ul. Zbiegniewskiej 19
+1816 Włocławek ul. Toruńska 85/87
+3374 Włocławek ul. Jana Pawła II 8
+3560 Włocławek ul. Barska 17
+4393 Włocławek ul. Wieniecka 19
+5146 Włocławek ul. Kaliska 9/15
+5904 Włocławek ul. Zielony Rynek 5
+6363 Włocławek ul. Polna 96/98
+1168 Włodawa ul. Korolowska 2
+4560 Włodawa ul. Lubelska 50
+4190 Włoszakowice ul. Powstańców Wielkopolskich 22
+2574 Włoszczowa ul. Wiśniowa 21
+5177 Włoszczowa ul. Partyzantów 9
+6695 Wodzisław Brzezie 14
+1900 Wodzisław Śląski ul. Marklowicka 38
+2190 Wodzisław Śląski ul. Bogumińska 13
+2797 Wodzisław Śląski ul. Armii Ludowej 3
+3085 Wodzisław Śląski ul. Leszka 25
+3634 Wodzisław Śląski ul. 26 Marca 45
+3871 Wodzisław Śląski ul. Jastrzębska 1
+
+[STRONA 56]
+6652 Wohyń ul.Radzyńska 17
+7035 Wojcieszków Bystrzyca
+4532 Wojkowice Ul. Morcinka 4
+7379 Wojkowice ul. Jana III Sobieskiego 271
+6712 Wojkowice Kościelne ul. Zawodzie 2A
+2828 Wojnicz ul. Krakowska 112
+5316 Wojsławice ul. Krasnystawsska 4A
+3052 Wola ul. Pszczyńska 5
+5497 Wola Rzędzińska Wola Rzędzińska 457C
+3183 Wolbrom ul. Mariacka 32
+5310 Wolbrom ul. Szosa Olkuska 7
+2782 Wolin ul. Sienkiewicza 32
+1032 Wolsztyn ul. Przemysłowa 10
+2133 Wolsztyn ul. Dworcowa 11
+3124 Wolsztyn ul. Gajewskich 1
+2367 Wołczyn ul. Sienkiewicza 2
+4370 Wołomin ul. Kościelna 56G
+4837 Wołomin ul. Pradzyńskiego 41
+5494 Wołomin ul. Geodetów 1
+1546 Wołów ul. Ludowa 3
+3697 Wołów ul. Objazdowa 1
+3101 Woźniki ul. 3 Maja 4
+6913 Wójtowo ul. Malinowa 2
+6075 Wólka Cycowska Wólka Cycowska
+5833 Wręczyca Wielka ul. Ks. Józefa Odróbki
+1112 Wrocław ul. Popowicka 134
+1244 Wrocław ul. Wilanowska 25
+1253 Wrocław ul. Afgańska 3
+1282 Wrocław ul. Nowowiejska 48
+1578 Wrocław ul. Krynicka 1
+1892 Wrocław ul. Lotnicza 24
+1944 Wrocław ul. Strzegomska 194
+1964 Wrocław ul. Szybka 2/4
+2110 Wrocław ul. Kiełczowska 66D
+2374 Wrocław ul. Jedności Narodowej 72/80
+3277 Wrocław ul. Żernicka 207
+3356 Wrocław ul. Przedwiośnie 1 
+3384 Wrocław ul. Kozanowska 2
+3698 Wrocław ul. Armii Krajowej  37
+3701 Wrocław ul. Bezpieczna 19
+3874 Wrocław ul. Zielińskiego 61
+3889 Wrocław ul. Królewiecka 68
+4063 Wrocław ul. Gagarina 19
+4237 Wrocław ul. Sarnia 1
+4404 Wrocław ul. Borowska 114
+4452 Wrocław ul. Krzywoustego 40
+4460 Wrocław ul. Bystrzycka 55
+4461 Wrocław ul. Krakowska 1
+4462 Wrocław ul. Rogowska 119
+4464 Wrocław ul. Sułowska 7
+
+[STRONA 57]
+4682 Wrocław ul. Wróblewskiego 7 a
+4865 Wrocław ul. Strachocińska 192
+5206 Wrocław pl. Konstytucji 3 Maja 3
+5581 Wrocław ul. Sucha 1
+5807 Wrocław ul. Legnicka 57 b
+5841 Wrocław ul. Mińska 58A
+6038 Wrocław ul. Czekoladowa 81
+6040 Wrocław ul. Braniborska 14
+6083 Wrocław ul. Awicenny 51
+6130 Wrocław ul. Świdnicka 40
+6302 Wrocław ul. Paprotna 7
+6360 Wrocław ul. Ślężna 130-134
+6402 Wrocław ul. Dokerska 2a
+6404 Wrocław ul. Grabiszyńska 240
+2134 Wronki ul. Mickiewicza 24
+1014 Września ul. Opieszyn 7
+3433 Września ul. Daszyńskiego 8
+3521 Września ul. Wrocławska 34
+5868 Września A. Gendka 6/50
+7432 Września ul. Przemysłowa 1B
+1332 Wschowa ul. Konradowska 4
+3704 Wschowa PL. GRUNWALDU 2
+5287 Wydminy ul. Giżycka 1
+3234 Wyrzysk ul. Parkowa 1
+3992 Wysoka ul. Chabrowa 8
+1732 Wysokie Mazowieckie ul. Jagiellońska 41
+3086 Wysokie Mazowieckie ul. Białostocka 4
+2366 Wyszków ul. Pułtuska 57
+2756 Wyszków ul. Serocka 36
+5587 Wyszków ul. Świętojańska 175
+7177 Wyszków ul. Pana Tadeusza 25 
+2589 Wyszogród ul. Mickiewicza 16
+3206 Zabierzów ul. Krakowska 232
+6802 Zabłudów ul. Białostocka 69
+1305 Zabrze ul. Klonowa 15
+1543 Zabrze ul. Szczęść Boże 6
+2207 Zabrze ul. Hermisza 16
+2209 Zabrze ul. Jordana 61A
+2264 Zabrze ul. Krakowska 5
+3252 Zabrze ul. Wolności 317
+4588 Zabrze ul. Wolności 88
+4597 Zabrze al. Szczęście Ludwika 2A
+4903 Zabrze uL. Legnicka 31
+5025 Zabrze ul. Paderewskiego 21a
+5588 Zabrze ul. Wolności 273
+5631 Zabrze ul. Bytomska
+6095 Zabrze ul. Franciszkańska 22
+6286 Zabrze ul. Matejki 48
+7779 Zabrze Mielżyńskiego
+7499 Zagnańsk ul. Kielecka 1A
+
+[STRONA 58]
+4753 Zagórów ul. Pyzderska 6a
+3131 Zagórz ul. Piłsudskiego 26
+5738 Zakliczyn ul. Polna 2
+6532 Zaklików ul. Lubelska
+2508 Zakopane ul. Nowotarska 35
+5553 Zakopane ul. Jagiellońska 18C
+4894 Zakroczym ul. Doranta  41
+5051 Zakrzewo (pow.aleksandrowski) ul. Radziejowska 3
+6930 Zakrzewo (pow.złotowski) ul. Dworcowa 27
+6902 Zakrzówek Żeromskiego
+4451 Zalewo ul. Traugutta 7
+4267 Załom ul. Franciszka Starowieyskiego 2
+3809 Zambrów ul. Jana Pawła II 3B
+4628 Zambrów ul. Grunwaldzka 1
+7426 Zambrów ul. Białostocka 28B
+3392 Zamość ul. Peowiaków 9B
+3672 Zamość ul. Lubelska 40
+3673 Zamość ul. Lwowska 35
+3674 Zamość ul. Wyszyńskiego 26
+3829 Zamość ul. Lipska 40A
+4077 Zamość ul. Dzieci Zamojszczyzny 2
+5184 Zamość ul. Sadowa 8
+6330 Zamość ul. Legionów
+6098 Zaniemyśl ul. Czarnecka 3
+6375 Zarzecze ul. Mickiewicza
+6778 Zarzecze (pow.przeworski) ul. Ksiedza Stanisława Gajeckiego 19
+3833 Zator ul. Juliusza Słowackiego 1
+2048 Zawadzkie ul. Opolska 61
+5502 Zawidów ul. Kopernika 1
+1123 Zawiercie ul. Bohaterów Westerplatte 33
+2197 Zawiercie ul. Obrońców Poczty Gdańskiej 20
+5946 Zawiercie ul. Jałowcowa 4
+6965 Zawonia ul. Swobodna 2
+3218 Ząbki ul. Targowa 4
+4042 Ząbki ul. Reymonta 28
+4156 Ząbki ul. Wolności 3
+2551 Ząbkowice Śląskie ul. 1 Maja 9A
+3786 Ząbkowice Śląskie ul. Jasna 19
+4324 Ząbkowice Śląskie ul. Piastowska 18
+7261 Ząbkowice Śląskie ul. Wrocławska 31A
+2195 Zbąszynek ul. Targowa 2
+2630 Zbąszyń ul. Mostowa 4
+6748 Zbiczno Zbiczno 142E
+6185 Zblewo ul. Szosa Borzechowska 1b
+4656 Zbrosławice ul. Wolności 100A
+6463 Zbylitowska Góra ul. Krakowska 43
+4990 Zduny ul. Polna 64
+1389 Zduńska Wola ul. Getta Żydowskiego 29
+2125 Zduńska Wola ul. Łaska 26
+2705 Zduńska Wola ul. Długa 3
+
+[STRONA 59]
+3637 Zdzieszowice ul. Myśliwca 16
+4238 Zebrzydowice ul. Jutrzenki 2c
+1648 Zelów ul. Kościuszki 2
+7235 Zembrzyce DK28
+1720 Zgierz ul. Gałczyńskiego 20/20A
+5147 Zgierz ul. Kasprowicza 12 a
+5173 Zgierz ul. Gałczyńskiego 40
+5933 Zgierz Armii Krajowej 10
+2084 Zgorzelec ul. Lubańska 10B
+2380 Zgorzelec ul. Grunwaldzka 1
+3706 Zgorzelec ul. Armii Krajowej 30
+1236 Zielona Góra ul. Osiedle Kaszubskie 1
+1947 Zielona Góra ul. Kożuchowska 8
+1986 Zielona Góra ul. Dworcowa 27A
+2081 Zielona Góra ul. Zachodnia 65
+3009 Zielona Góra ul. Sulechowska 38
+3707 Zielona Góra ul. Pomorskie 5
+3721 Zielona Góra al. Zjednoczenia 106
+3788 Zielona Góra ul. Rzeźniczaka 1
+3989 Zielona Góra ul. Zacisze 22
+4134 Zielona Góra ul. Poznańska 11B
+4686 Zielona Góra ul. Wyszyńskiego 36
+5913 Zielona Góra ul. Podgórna 43D
+5923 Zielona Góra ul. Makowa 12
+6322 Zielona Góra ul. Racula-Głogowska 87
+7567 Zielona Góra ul. Wiejska 2
+4492 Zielonka ul. Poniatowskiego 64
+7217 Zielonka ul. Paderewskiego 1
+2644 Ziębice ul. Stawowa 2B
+5052 Zławieś Wielka ul. Handlowa 1
+1588 Złocieniec ul. Okrzei 11
+4842 Złoczew ul. Burzenińska 13
+2694 Złotoryja ul. Hoża 11A
+3708 Złotoryja ul. Legnicka 19A
+1935 Złotów ul. Norwida 9
+5131 Złotów ul. Słoneczna 46
+4172 Złoty Stok ul. Działkowa 8
+5186 Zwierzyniec ul. Biłgorajska 3A
+2659 Zwoleń ul. Kardynała Wyszyńskiego 8
+3434 Żabno ul. Tarnowska 147
+1480 Żagań ul. Pstrowskiego 1
+2008 Żagań ul. Kopernika 10
+4319 Żagań ul. E. Plater
+6818 Żarki (pow.chrzanowski) ul. Tadeusza Kościuszki 80
+4795 Żarki (pow.myszkowski) ul. Myszkowska 21A
+6900 Żarnowiec
+5542 Żarów ul. Armii Krajowej 11B
+1076 Żary ul. Szymanowskiego 27A
+2052 Żary ul. Artylerzystów 4
+4320 Żary ul. Armii Krajowej 39 
+
+[STRONA 60]
+4685 Żary Katowicka 41
+5919 Żary ul. Okrzei 54
+5998 Żary ul. Podwale 14
+2881 Żelechów ul. Długa 38
+5244 Żelistrzewo ul. Polna 34
+6785 Żerków ul. Stanisława Wyspiańskiego 17
+3168 Żmigród ul. Sportowa 22
+2179 Żnin ul. Szpitalna 2
+7222 Żnin ul. Klemensa Janickiego 18c
+3857 Żołynia ul. Mickiewicza 1B
+2599 Żory AL. JANA PAWŁA II 41
+3239 Żory Al. Zjednoczonej Europy 14
+5192 Żory ul. Wodzisławska 272C
+5783 Żory ul. Wodzisławska 11
+7351 Żory ul.Męczenników Oświęcimskich 20B
+7491 Żory ul. Malinowa 4A
+7740 Żory Kościuszki
+5589 Żółkiewka ul. Żółkiewskiego
+4328 Żórawina Ul. Wrocławska 3C
+3162 Żukowo ul. Książąt Pomorskich 2D
+6180 Żurawica ul. 3 Maja 4
+1812 Żuromin ul. Warszawska 10
+1806 Żychlin ul. Marii Konopnickiej 4
+6097 Żychlin ul. Narutowicza 102
+6813 Żydowo Ul. Ojca Świętego Jana Pawła II 17 A
+1570 Żyrardów ul. Legionów Polskich 61
+2625 Żyrardów ul. Środkowa 52B
+2794 Żyrardów ul. Skrowaczewskiego 68
+2947 Żyrardów ul. Mickiewicza 59
+2749 Żywiec ul. Żeromskiego 2C
+5531 Żywiec ul. Dworcowa 1
+6447 Żywiec ul. Wesoła 71

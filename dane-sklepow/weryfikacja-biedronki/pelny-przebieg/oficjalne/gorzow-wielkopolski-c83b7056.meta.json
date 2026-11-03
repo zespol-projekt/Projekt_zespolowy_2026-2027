@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gorzow-wielkopolski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:00.751Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gorzow-wielkopolski-c83b7056.json",
+  "sha256": "15a64f180e297f0fdd8e0cf14c6dc7a2c8980e195da0ecb4179c1862d238c31d",
+  "usable": true,
+  "items": 10
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=cwiklice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:27.966Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/cwiklice-0346add9.json",
+  "sha256": "0610ead33ff34e1abacd50726f625c036358bd8f1e79e8c67ec922af7c399fc3",
+  "usable": true,
+  "items": 1
+}

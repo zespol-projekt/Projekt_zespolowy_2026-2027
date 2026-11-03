@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zbylitowska-gora",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:25.290Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zbylitowska-gora-ac2cc3aa.json",
+  "sha256": "b2716988d0ef3490370cf373a6b75cd556ee255c3a1bfbc7293789415503af57",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ogrodzieniec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:57.116Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ogrodzieniec-dbcdb717.json",
+  "sha256": "d53158ef6a8193004f5b01c14f3d465373ba19ce68ba0bbb6b9ac15ebc7a58e8",
+  "usable": true,
+  "items": 2
+}

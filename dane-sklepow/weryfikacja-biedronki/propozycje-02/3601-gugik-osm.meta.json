@@ -1,0 +1,11 @@
+{
+  "key": "3601-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jastrz%C4%99bie-Zdr%C3%B3j%2C+Aleja+Ludwika+Piechoczka+4&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:39.036Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jastrz%C4%99bie-Zdr%C3%B3j%2C+Aleja+Ludwika+Piechoczka+4&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/3601-gugik-osm.json",
+  "sha256": "b2ef14461579d648ed631a66f2a50818ef8128bcb40d4ea36826303563198917",
+  "bytes": 655
+}

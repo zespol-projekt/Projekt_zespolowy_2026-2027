@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-03T18:00:51.564Z",
+  "input_fingerprint": "7a0a9b06d0f88a59c9a849a6a594b6a9cd35d0501a7bc646cf414b034adf9f57",
+  "sources": [
+    {
+      "chain": "lidl",
+      "input_records": 13039,
+      "excluded_country": 12025,
+      "excluded_store_format": 0,
+      "selected_records": 1014,
+      "ready_records": 1014,
+      "review_records": 0
+    },
+    {
+      "chain": "biedronka",
+      "input_records": 3858,
+      "excluded_country": 0,
+      "excluded_store_format": 0,
+      "selected_records": 3858,
+      "ready_records": 3278,
+      "review_records": 580
+    },
+    {
+      "chain": "dino",
+      "input_records": 3315,
+      "excluded_country": 0,
+      "excluded_store_format": 0,
+      "selected_records": 3315,
+      "ready_records": 3315,
+      "review_records": 0
+    },
+    {
+      "chain": "auchan",
+      "input_records": 265,
+      "excluded_country": 0,
+      "excluded_store_format": 119,
+      "selected_records": 146,
+      "ready_records": 146,
+      "review_records": 0
+    }
+  ],
+  "source_review": {
+    "file": "weryfikacja-biedronki/decyzje-przegladu.json",
+    "sha256": "0dae91171de9e79ed576d481c02d7d50a180314ddf4e7b8f250e31674e99992e",
+    "reviewed": 67,
+    "corroborated": 62,
+    "held": 5
+  },
+  "corrections": {
+    "file": "poprawki/biedronka.json",
+    "sha256": "d09733f9a70fd2c49a5b4f4c3211fd0ef7abde718a12e793937615e515cbe8ad",
+    "applied": 227,
+    "coordinates": 219,
+    "addresses": 9,
+    "automatic": 188,
+    "after_source_review": 39,
+    "supplemental_documents": [
+      {
+        "file": "poprawki/biedronka-zweryfikowane.json",
+        "sha256": "5f72d197302d0cb2719e7f4612fae5463dcd25d905bf11f2e4e8deab83c33259"
+      }
+    ],
+    "scope": "Dane OSM z prostokąta obejmującego Polskę: pełne odpowiedzi dla 9/9 obszarów bazowych, 16 zapisanych odpowiedzi. Nie jest to potwierdzenie kompletności placówek.",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL-1.0",
+    "license_url": "https://www.openstreetmap.org/copyright"
+  },
+  "baseline_input_fingerprint": "c57e8b7e4ab4c5c3c6dd57649d7d65d87ead9bb8a96b8014119d9c21bdab2d78",
+  "input_records": 20477,
+  "selected_records": 8333,
+  "ready_records": 7753,
+  "review_records": 580,
+  "issue_counts": {
+    "missing_geometry": 556,
+    "cross_source_address_conflict": 5,
+    "missing_street_address": 9,
+    "shared_coordinates_different_cities": 9,
+    "possible_duplicate_address": 2,
+    "shared_coordinates": 2
+  },
+  "limitation": "Gotowe oznacza przejście opisanych kontroli automatycznych. Nie potwierdza kompletności sieci ani zgodności każdego punktu z adresem."
+}

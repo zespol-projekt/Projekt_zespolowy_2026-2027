@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kalisz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:25.518Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kalisz-2097066b.json",
+  "sha256": "e52433cf725c6c57aa917782e569a1e91962bf81b0f2e3bf07c7647ea915ba21",
+  "usable": true,
+  "items": 9
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=otfinow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:07.114Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/otfinow-57d611c9.json",
+  "sha256": "ded918a68721fe0da1474c9b7454eeb6941a6c0ecdfdd13311372478220e672c",
+  "usable": true,
+  "items": 1
+}

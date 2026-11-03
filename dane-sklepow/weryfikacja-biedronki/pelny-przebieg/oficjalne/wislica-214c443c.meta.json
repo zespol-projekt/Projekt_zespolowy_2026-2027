@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wislica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:06.137Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wislica-214c443c.json",
+  "sha256": "455542e762e98ff5d9aac2eba68decd556d3e79f0e967de4ec681b1ba08bfa30",
+  "usable": true,
+  "items": 1
+}

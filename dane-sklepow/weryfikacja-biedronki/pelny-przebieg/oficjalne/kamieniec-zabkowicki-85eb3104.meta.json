@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kamieniec-zabkowicki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:26.055Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kamieniec-zabkowicki-85eb3104.json",
+  "sha256": "0f0d418bb6ceecf62cd77d0f9b8873cacac13dd50432e2cc22429783508605cb",
+  "usable": true,
+  "items": 1
+}

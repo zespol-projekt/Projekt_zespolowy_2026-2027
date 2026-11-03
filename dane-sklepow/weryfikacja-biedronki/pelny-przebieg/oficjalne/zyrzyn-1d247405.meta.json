@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zyrzyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:32.919Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zyrzyn-1d247405.json",
+  "sha256": "a95069ce69ab40505db2e8f9bd681292c542ad0355a753c3e264b14c22e6bd3a",
+  "usable": true,
+  "items": 1
+}

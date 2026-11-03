@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lomnica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:15.865Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lomnica-66f972a8.json",
+  "sha256": "bf2569e96266ff6611b00a1a37de3afe7824c1e110a3d2b269d0586035ca0be1",
+  "usable": true,
+  "items": 1
+}

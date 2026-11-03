@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rzezawa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:55.481Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rzezawa-659dea35.json",
+  "sha256": "031f0d0b655c0531ce0c68e124ee5b8f7b305fbd8adc72a1eeeff3aadee0a84f",
+  "usable": true,
+  "items": 1
+}

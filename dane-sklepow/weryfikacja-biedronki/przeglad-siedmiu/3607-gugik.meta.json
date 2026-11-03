@@ -1,0 +1,11 @@
+{
+  "key": "3607-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Maciejowice%2C+Lubelska+73A&exact_number=1",
+  "retrieved_at": "2026-11-02T18:33:06.098Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Maciejowice%2C+Lubelska+73A&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/3607-gugik.json",
+  "sha256": "03a9d7882bcb2b600c8358a1797b029f4ff15b41e281c460e6aeb99796a7e32a",
+  "bytes": 568
+}

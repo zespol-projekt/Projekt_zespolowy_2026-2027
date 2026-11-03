@@ -1,0 +1,11 @@
+{
+  "key": "3668-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,3668",
+  "retrieved_at": "2026-11-02T18:41:55.846Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,3668",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/3668-oficjalna.html",
+  "sha256": "6216dcb1d302e970fe3fbf573ae053128a1bac5eb6b94f4a5c82de83bca5ddd0",
+  "bytes": 97109
+}

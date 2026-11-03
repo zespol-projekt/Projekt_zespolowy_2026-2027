@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=godow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:57.534Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/godow-84d3fd2c.json",
+  "sha256": "c196385a28178ab9a4492dff32e4bdac12f922a3c356449d1e5917d85901ae92",
+  "usable": true,
+  "items": 1
+}

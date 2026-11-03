@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zarzecze",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:21.505Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zarzecze-c6814f30.json",
+  "sha256": "9e8b1d360c272c5183b695afd2c6c161b711ada551fb2caf5cb629c20902255a",
+  "usable": true,
+  "items": 2
+}

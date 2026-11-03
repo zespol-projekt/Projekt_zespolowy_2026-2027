@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lakta-gorna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:03.188Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lakta-gorna-1af50ca5.json",
+  "sha256": "55e4ef089340f0007bf6a4714372e344377d2783f78a9278161c71657f1ec713",
+  "usable": true,
+  "items": 1
+}

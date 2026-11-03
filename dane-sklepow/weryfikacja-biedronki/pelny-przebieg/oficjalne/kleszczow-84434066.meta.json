@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kleszczow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:35.365Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kleszczow-84434066.json",
+  "sha256": "82c9ad9a3c967c6055a64732ba685fad7bd58cf0c70329a0a9f609634e857bb5",
+  "usable": true,
+  "items": 2
+}

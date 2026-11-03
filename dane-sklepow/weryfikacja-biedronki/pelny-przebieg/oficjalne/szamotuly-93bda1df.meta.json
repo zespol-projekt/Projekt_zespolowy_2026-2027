@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=szamotuly",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:37.288Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/szamotuly-93bda1df.json",
+  "sha256": "c5097e3fa8ee626c17d5a8e8f1a17d3ed5206f97c08e6d4c986410a84885760b",
+  "usable": true,
+  "items": 3
+}

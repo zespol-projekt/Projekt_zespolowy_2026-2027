@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=limanowa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:10.850Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/limanowa-fdf6141a.json",
+  "sha256": "579dab6230edbc5367b18a5359463029b7f84a4817a3eed2a4935646aa53782f",
+  "usable": true,
+  "items": 3
+}

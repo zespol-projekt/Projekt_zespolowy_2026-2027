@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=tarnow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:42.187Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/tarnow-bbefe4ff.json",
+  "sha256": "defdc4ae658dd40a621ba6cefeeb228f3a765a5f554f60e2ef0bacbcdc58d4c2",
+  "usable": true,
+  "items": 16
+}

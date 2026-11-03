@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=przyjazn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:29.368Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/przyjazn-8c93e04d.json",
+  "sha256": "a11dccd6e96a1d5559977ed10fefffcd62d94af5c76da5f4184ed893778ef54f",
+  "usable": true,
+  "items": 1
+}

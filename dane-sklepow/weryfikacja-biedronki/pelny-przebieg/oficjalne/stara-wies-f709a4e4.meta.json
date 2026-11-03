@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stara-wies",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:18.864Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/stara-wies-f709a4e4.json",
+  "sha256": "bb6b8c8b19a451e8ee310c592afc3f666fd22933c415b6f9521c6c2c5f494bab",
+  "usable": true,
+  "items": 1
+}

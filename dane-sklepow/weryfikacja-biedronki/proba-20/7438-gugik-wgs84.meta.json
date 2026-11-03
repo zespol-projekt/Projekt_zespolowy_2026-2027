@@ -1,0 +1,11 @@
+{
+  "key": "7438-gugik-wgs84",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szyd%C5%82owiec%2C+Krakowska+75&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:46:59.602Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szyd%C5%82owiec%2C+Krakowska+75&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/7438-gugik-wgs84.json",
+  "sha256": "7abaf797308771667eac87dd7b2a783a86a5a8788aeecd077e2c78e0ada97f8b",
+  "bytes": 605
+}

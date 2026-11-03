@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-11-02T19:11:30.846Z",
+  "verified_outputs_generated_at": "2026-11-02T19:11:22.475Z",
+  "input_fingerprint": "79ef2ff35c8c4df1a48a3df10200e74b8c274293abc17d0b56ea5f2b70b014ae",
+  "baseline_review_records": 803,
+  "previously_review_records": 797,
+  "accepted_total": 227,
+  "accepted_in_previous_sample": 6,
+  "accepted_automatic": 188,
+  "accepted_after_source_review": 39,
+  "newly_accepted": 221,
+  "source_review": {
+    "file": "weryfikacja-biedronki/decyzje-przegladu.json",
+    "sha256": "febc6f720d90aa003489eea64a884e567d4eaa457bb0cb0e64bae85135229158",
+    "reviewed": 67,
+    "corroborated": 62,
+    "held": 5
+  },
+  "corrected_records_in_ready": 223,
+  "corrected_records_held_for_review": 4,
+  "coordinate_updates": 219,
+  "address_updates": 9,
+  "missing_coordinates_filled": 217,
+  "suspect_existing_points_replaced": 2,
+  "by_matching_rule": {
+    "exact_address": 178,
+    "official_store_id_and_compatible_street": 5,
+    "official_store_id_and_nearby_location": 5,
+    "reviewed_official_id_and_second_map": 1,
+    "reviewed_official_id_and_registry_address": 3,
+    "reviewed_official_id_and_conflicting_osm_number": 2,
+    "reviewed_official_id_and_official_postcode": 1,
+    "reviewed_official_address_and_registry_point": 31,
+    "reviewed_official_address_and_second_map": 1
+  },
+  "official_api": {
+    "city_responses": 551,
+    "compared_records": 803,
+    "coordinate_candidates": 0,
+    "any_address_change": 4,
+    "missing_street_can_be_completed": 0,
+    "report": "weryfikacja-biedronki/raport-oficjalnego-api.json"
+  },
+  "osm": {
+    "unique_elements": 3867,
+    "saved_responses": 16,
+    "covered_regions": 9,
+    "total_regions": 9,
+    "scope": "Dane OSM z prostokąta obejmującego Polskę: pełne odpowiedzi dla 9/9 obszarów bazowych, 16 zapisanych odpowiedzi. Nie jest to potwierdzenie kompletności placówek."
+  },
+  "dataset": {
+    "total": 8333,
+    "ready": 7753,
+    "review": 580,
+    "chains": [
+      {
+        "chain": "lidl",
+        "input_records": 13039,
+        "excluded_country": 12025,
+        "excluded_store_format": 0,
+        "selected_records": 1014,
+        "ready_records": 1014,
+        "review_records": 0
+      },
+      {
+        "chain": "biedronka",
+        "input_records": 3858,
+        "excluded_country": 0,
+        "excluded_store_format": 0,
+        "selected_records": 3858,
+        "ready_records": 3278,
+        "review_records": 580
+      },
+      {
+        "chain": "dino",
+        "input_records": 3315,
+        "excluded_country": 0,
+        "excluded_store_format": 0,
+        "selected_records": 3315,
+        "ready_records": 3315,
+        "review_records": 0
+      },
+      {
+        "chain": "auchan",
+        "input_records": 265,
+        "excluded_country": 0,
+        "excluded_store_format": 119,
+        "selected_records": 146,
+        "ready_records": 146,
+        "review_records": 0
+      }
+    ],
+    "remaining_issue_counts": {
+      "missing_geometry": 556,
+      "cross_source_address_conflict": 5,
+      "missing_street_address": 9,
+      "shared_coordinates_different_cities": 9,
+      "possible_duplicate_address": 2,
+      "shared_coordinates": 2
+    }
+  },
+  "unresolved_with_suggestions": 131,
+  "checks": {
+    "source_hashes_and_evidence": "passed",
+    "output_reproduction": "passed",
+    "all_scoped_ids_preserved_once": "passed",
+    "changes_match_only_recorded_patches": "passed",
+    "previous_corrections_preserved": "passed"
+  },
+  "files": {
+    "accepted_csv": "weryfikacja-biedronki/przyjete-poprawki.csv",
+    "remaining_csv": "weryfikacja-biedronki/pozostale-do-sprawdzenia.csv",
+    "all_decisions_csv": "weryfikacja-biedronki/do-sprawdzenia.csv",
+    "possible_duplicates": "weryfikacja-biedronki/mozliwe-duplikaty.json",
+    "seven_record_source_review": "weryfikacja-biedronki/przeglad-siedmiu/raport.json",
+    "twenty_record_sample_review": "weryfikacja-biedronki/proba-20/raport.json",
+    "first_suggestion_batch": "weryfikacja-biedronki/propozycje-01/raport.json",
+    "second_suggestion_batch": "weryfikacja-biedronki/propozycje-02/raport.json"
+  },
+  "limitation": "Przyjęto dopasowania spełniające reguły automatyczne. Wymagają późniejszego przeglądu; nie potwierdzają otwarcia ani kompletności sieci. Ranking propozycji nie jest prawdopodobieństwem. Żadnego rekordu nie scalono.",
+  "suggestion_batches": {
+    "reviewed": 40,
+    "accepted": 39,
+    "reviewed_unresolved": 1,
+    "address_follow_up": 2,
+    "reports": [
+      {
+        "file": "weryfikacja-biedronki/propozycje-01/raport.json",
+        "reviewed": 20,
+        "accepted": 19,
+        "unresolved": 1,
+        "address_follow_up": 0
+      },
+      {
+        "file": "weryfikacja-biedronki/propozycje-02/raport.json",
+        "reviewed": 20,
+        "accepted": 20,
+        "unresolved": 0,
+        "address_follow_up": 2
+      }
+    ],
+    "unreviewed_with_suggestions": 130
+  }
+}

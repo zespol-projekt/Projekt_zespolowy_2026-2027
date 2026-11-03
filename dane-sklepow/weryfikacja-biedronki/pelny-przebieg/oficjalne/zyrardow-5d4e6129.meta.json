@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zyrardow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:32.395Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zyrardow-5d4e6129.json",
+  "sha256": "26802fdac00ce35ee9fab937c5e669dc9643566594f08bcf9b161d4cf09d8707",
+  "usable": true,
+  "items": 5
+}

@@ -1,0 +1,11 @@
+{
+  "key": "3484-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-sapiehy-jozefa-12-37-630-oleszyce~23072553/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:55:22.102Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-sapiehy-jozefa-12-37-630-oleszyce~23072553/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-01/3484-targeo.html",
+  "sha256": "1cacf8fe072092e83059e1cb3605703ba54ecceb3c6ce8ccd28428930b0a40ad",
+  "bytes": 37263
+}

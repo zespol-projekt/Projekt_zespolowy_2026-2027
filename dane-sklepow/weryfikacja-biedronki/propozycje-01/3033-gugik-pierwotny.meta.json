@@ -1,0 +1,11 @@
+{
+  "key": "3033-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rzesz%C3%B3w%2C+Pu%C5%82kownika+Iranka-Osmeckiego+25&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:53:58.295Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rzesz%C3%B3w%2C+Pu%C5%82kownika+Iranka-Osmeckiego+25&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/3033-gugik-pierwotny.json",
+  "sha256": "dab6dbe16aeca1477ff3cac4ed89d2eaddf23fea194f16a380a09b3eac4aac03",
+  "bytes": 645
+}

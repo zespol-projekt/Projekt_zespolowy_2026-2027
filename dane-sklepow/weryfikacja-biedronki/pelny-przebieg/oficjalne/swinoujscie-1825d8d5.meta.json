@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=swinoujscie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:35.147Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/swinoujscie-1825d8d5.json",
+  "sha256": "34ca20d66791dc1a7733fbfbc8e108b7805b39c2bdf142c53d5d18e6241f4525",
+  "usable": true,
+  "items": 5
+}

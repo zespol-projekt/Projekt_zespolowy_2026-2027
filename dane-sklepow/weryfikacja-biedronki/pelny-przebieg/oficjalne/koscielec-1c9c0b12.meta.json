@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=koscielec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:44.585Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/koscielec-1c9c0b12.json",
+  "sha256": "e0939cdcc60d6c35e52d0a293e2666410eeb368cac914fed77cc511803f32daf",
+  "usable": true,
+  "items": 2
+}

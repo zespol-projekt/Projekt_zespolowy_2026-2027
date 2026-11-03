@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ustka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:52.017Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ustka-a202651d.json",
+  "sha256": "863e1550a932099add62980180f45e25497f69b080a99382330ffc25b11fb0e3",
+  "usable": true,
+  "items": 3
+}

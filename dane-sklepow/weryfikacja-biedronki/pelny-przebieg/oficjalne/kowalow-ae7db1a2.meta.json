@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kowalow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:46.797Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kowalow-ae7db1a2.json",
+  "sha256": "26c203c7ac42603c0048978be95a6987752de67463ec97528190573a7e9c35d8",
+  "usable": true,
+  "items": 1
+}

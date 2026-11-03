@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bierawa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:01.565Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bierawa-fb05a768.json",
+  "sha256": "ead760a32ac243bb20e563f427f2a7a757a2b24c24cc6c70d0f8a1322a60af03",
+  "usable": true,
+  "items": 1
+}

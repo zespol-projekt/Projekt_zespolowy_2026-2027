@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zielona-gora",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:28.030Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zielona-gora-3d8441e4.json",
+  "sha256": "d671b3a6ad9c2db60d448a0e29d3b30d18ecf9625a9751c6a1d28aa036a50664",
+  "usable": true,
+  "items": 21
+}

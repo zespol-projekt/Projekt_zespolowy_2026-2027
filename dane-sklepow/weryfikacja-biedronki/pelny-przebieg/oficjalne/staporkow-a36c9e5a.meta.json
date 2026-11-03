@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=staporkow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:17.705Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/staporkow-a36c9e5a.json",
+  "sha256": "d469bd7bdf73496f1caf5faaf156320f2f8f804b084e58b1939fdc328f0c6949",
+  "usable": true,
+  "items": 2
+}

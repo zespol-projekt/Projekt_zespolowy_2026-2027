@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wieniec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:04.546Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wieniec-ea9729b9.json",
+  "sha256": "a2db05ef3b678a6ef888f040c59acb983941399519cfb5817dc40bdf42d4bd3d",
+  "usable": true,
+  "items": 1
+}

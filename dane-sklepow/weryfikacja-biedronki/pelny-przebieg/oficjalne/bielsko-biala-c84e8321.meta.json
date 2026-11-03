@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bielsko-biala",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:01.038Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bielsko-biala-c84e8321.json",
+  "sha256": "612e794d8bb0622bcb49388ed339b59f274fa6c09c9e1c9e3c373e7c3656311c",
+  "usable": true,
+  "items": 11
+}

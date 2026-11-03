@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=legionowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:08.638Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/legionowo-e397b117.json",
+  "sha256": "eafa4828853395ed3fad918521898108759668357adccaa1557ee32ad0dd14d5",
+  "usable": true,
+  "items": 4
+}

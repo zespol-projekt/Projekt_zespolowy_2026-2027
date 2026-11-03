@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=konczewice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:40.836Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/konczewice-e9899030.json",
+  "sha256": "cb73d1e0c91125f5b4dae99fb1cae2a9e89197174d83078204c6d773e55d74aa",
+  "usable": true,
+  "items": 1
+}

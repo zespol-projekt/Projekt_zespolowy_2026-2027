@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=oborniki-slaskie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:54.385Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/oborniki-slaskie-0165a4fb.json",
+  "sha256": "810119aace6edd8cefba1c949e4ad3df11502749a233b8282e1f736b8655f50d",
+  "usable": true,
+  "items": 1
+}

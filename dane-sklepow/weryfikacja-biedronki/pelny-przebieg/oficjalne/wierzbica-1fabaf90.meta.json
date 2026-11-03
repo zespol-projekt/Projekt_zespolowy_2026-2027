@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wierzbica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:05.086Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wierzbica-1fabaf90.json",
+  "sha256": "d58c7059fbbae7bbdb25dcd239717dc9db1cc1c7dbf2870e7c9307706aa5a706",
+  "usable": true,
+  "items": 1
+}

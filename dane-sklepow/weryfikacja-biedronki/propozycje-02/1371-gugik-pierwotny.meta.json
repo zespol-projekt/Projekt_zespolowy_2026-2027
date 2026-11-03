@@ -1,0 +1,11 @@
+{
+  "key": "1371-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gda%C5%84sk%2C+Cha%C5%82ubi%C5%84skiego+27&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:18.713Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gda%C5%84sk%2C+Cha%C5%82ubi%C5%84skiego+27&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1371-gugik-pierwotny.json",
+  "sha256": "8912ee9862b496ed6cf3fe84ac8621721d3baf3e169d973ac36cc2261b0fbdaf",
+  "bytes": 1468
+}

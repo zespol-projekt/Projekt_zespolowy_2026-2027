@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=czarne",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:29.057Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/czarne-642b5c68.json",
+  "sha256": "e4803a4815079dccb0d45f41c419886d6fde3298c67c55f5aadb5b76710f8119",
+  "usable": true,
+  "items": 1
+}

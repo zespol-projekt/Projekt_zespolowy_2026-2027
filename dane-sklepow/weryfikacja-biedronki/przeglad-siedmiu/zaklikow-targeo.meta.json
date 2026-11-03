@@ -1,0 +1,11 @@
+{
+  "key": "zaklikow-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-lubelska-39-37-470-zaklikow~23072531/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:31:16.562Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-lubelska-39-37-470-zaklikow~23072531/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/zaklikow-targeo.html",
+  "sha256": "811b26ec3cada172677d25637063c83314c274093d616326176c1165d2b5b029",
+  "bytes": 39577
+}

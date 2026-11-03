@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sawin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:58.687Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sawin-bbd4c701.json",
+  "sha256": "cda73a392ad4cbed88b45caa6e635acece54ac00e04e1fac3f8d7ab101b9f39d",
+  "usable": true,
+  "items": 1
+}

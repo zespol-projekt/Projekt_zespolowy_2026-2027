@@ -1,0 +1,11 @@
+{
+  "key": "1150-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,1150",
+  "retrieved_at": "2026-11-02T18:41:33.646Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,1150",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/1150-oficjalna.html",
+  "sha256": "9c029e5636a767310e08161ba23a167789cb2b3cc5f740348a91f527e006db1d",
+  "bytes": 97103
+}

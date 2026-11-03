@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kodrab",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:37.071Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kodrab-805f0092.json",
+  "sha256": "bfb155ae91b57d52fe17106c7f7c04603697a84b0d22721572c220926c80a9e5",
+  "usable": true,
+  "items": 1
+}

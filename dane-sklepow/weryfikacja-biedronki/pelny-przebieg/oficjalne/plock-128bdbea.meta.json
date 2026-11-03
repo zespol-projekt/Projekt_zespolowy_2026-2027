@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=plock",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:18.489Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/plock-128bdbea.json",
+  "sha256": "d9d382daf920d98fb2793c3fa3f754eb7192b464a1f9855263ecbd93894f3c8a",
+  "usable": true,
+  "items": 13
+}

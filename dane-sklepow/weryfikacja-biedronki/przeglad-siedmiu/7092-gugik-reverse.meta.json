@@ -1,0 +1,11 @@
+{
+  "key": "7092-gugik-reverse",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddressReverse&location=POINT%2818.4504777+54.4615125%29&srid=4326",
+  "retrieved_at": "2026-11-02T18:33:57.365Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddressReverse&location=POINT%2818.4504777+54.4615125%29&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/7092-gugik-reverse.json",
+  "sha256": "f6c6651ede9935c5e5b078b40fe77cf3313fabf54e62d9b4542f6004d485b2f7",
+  "bytes": 474
+}

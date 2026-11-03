@@ -1,0 +1,11 @@
+{
+  "key": "7815-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,7815",
+  "retrieved_at": "2026-11-02T18:41:46.679Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,7815",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/7815-oficjalna.html",
+  "sha256": "aa4e4e88ee7589ad138a59115161c8d25a7ce2e2faf1ceb8afc90829f63de91d",
+  "bytes": 97000
+}

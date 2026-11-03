@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jaroslaw",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:15.554Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jaroslaw-edac8a87.json",
+  "sha256": "e37c115873cc7671fa67388a6bb15da44d605833da8ca8710b3a73dae35fda6f",
+  "usable": true,
+  "items": 5
+}

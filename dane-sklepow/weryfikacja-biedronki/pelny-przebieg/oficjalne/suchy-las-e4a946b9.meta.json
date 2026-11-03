@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=suchy-las",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:28.603Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/suchy-las-e4a946b9.json",
+  "sha256": "ec310af9f301e176cb79020ea5849ec5ec56cb55c0cb9656557330d22784b810",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=cedynia",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:19.254Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/cedynia-62e8c3ac.json",
+  "sha256": "fa0e618cb112914dcdad18fda3a696c1da65b756884a3066aa3f700d2fb21a60",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=oborniki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:53.850Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/oborniki-8641ff93.json",
+  "sha256": "b1094c4b6fb8fafde3cd90f951b8ac6ce76a85c5d32b963d8a85a37b5b0c293e",
+  "usable": true,
+  "items": 1
+}

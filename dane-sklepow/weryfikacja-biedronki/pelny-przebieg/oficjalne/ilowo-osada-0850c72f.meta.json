@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ilowo-osada",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:11.804Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ilowo-osada-0850c72f.json",
+  "sha256": "7c56d6d23ebd05db8a79c51a147c96e25366b50cb02985ac8bcba0b1f4967188",
+  "usable": true,
+  "items": 1
+}

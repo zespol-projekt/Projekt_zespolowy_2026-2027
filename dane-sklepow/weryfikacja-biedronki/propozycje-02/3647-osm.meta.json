@@ -1,0 +1,11 @@
+{
+  "key": "3647-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/1082272339/full.json",
+  "retrieved_at": "2026-11-02T19:05:40.880Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/1082272339/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-02/3647-osm.json",
+  "sha256": "af4738092395cbe5cd6ca30ea04824e948d7f5d659804ae97602b5d7c9a5f1ef",
+  "bytes": 2101
+}

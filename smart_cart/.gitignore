@@ -44,3 +44,7 @@ example
 AGENTS.md
 
 .vscode
+
+# browser tests
+test-results/
+playwright-report/

@@ -1,0 +1,3011 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-02T19:11:18.325Z",
+  "baseline_input_fingerprint": "c57e8b7e4ab4c5c3c6dd57649d7d65d87ead9bb8a96b8014119d9c21bdab2d78",
+  "evidence_files": [
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/2698-oficjalna.html",
+      "sha256": "28c361a7a858be95214e057969afc328036d9394d192cb7373172819ac04230b"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/2698-osm.json",
+      "sha256": "d634ae5e2a23aa57409e755fa0956fd331f81a4c986815782b4d41fd2f2ed97c"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3397-oficjalna.html",
+      "sha256": "58ea5805c43a0c45f796e6811dd4914153a910d05e1c8f5af938f7de30168e6a"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3397-osm.json",
+      "sha256": "0b59c2ec51fa49e385a733e8963bbd522adeb053f7571e2f47258ec26a6e17bc"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3607-oficjalna.html",
+      "sha256": "d1b1ffcb468e7cee61f537084addd2c3a7ea3892bc9fcb2998c89728dd39f6bf"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3607-osm.json",
+      "sha256": "41c9fb264231b44cce9e7d5cc5448cbf436c18ca8d591aa41889eca02ba4dad7"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3608-oficjalna.html",
+      "sha256": "f8bf9d5cdda0d6df546712dce26d2b4c6e44f6f959d3dbfbe699e41b8790f44d"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3608-osm.json",
+      "sha256": "1bc113701dfe84c35a14e5128a1b4c5f87b8a2f9f75ad45c5a5887946c52cadb"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3711-oficjalna.html",
+      "sha256": "b8e0b9bd1bad15f6a769009c95533d80a775e40bdc4a207007c1084cabd89309"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3711-osm.json",
+      "sha256": "58f4db23b587284fd6a700a7d654cc39269184c61e9ce59dd17741e4adc869ff"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/7078-oficjalna.html",
+      "sha256": "dc5a03d1434d0f6892a760733e058b67c9b892ded12ff04498c42844a9495cf2"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/7078-osm.json",
+      "sha256": "4839c21f3966b0631fb048fe87620a3311f651801dd69763ff3403bf76d0e2ff"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/7092-oficjalna.html",
+      "sha256": "5fc90b0c0225aa0168a9af61aed298309650bf2ddfc33a25cf0b85da8a569d1e"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/7092-osm.json",
+      "sha256": "e6f15199840a28ed488e1f65b1ba3a4161e55a3fe5b9b169b18db3bce29467ef"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/trzebinia-cityon.html",
+      "sha256": "b69ea01aa71cb7c36d0aad8bd3467b4f03f8b01b1717babcf76532d88855acd8"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/zaklikow-targeo.html",
+      "sha256": "811b26ec3cada172677d25637063c83314c274093d616326176c1165d2b5b029"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/maciejowice-targeo.html",
+      "sha256": "9f9392324ef98a46f49a35ee53e4e3524e5ccd7b6e1757224811c4c9d5c90d84"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/krolewiec-mojagazetka.html",
+      "sha256": "118836d45dfce1ab9d4d5d34f13bcbdfdace349769bef8cb31c374afce906a63"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/grabkow-targeo.html",
+      "sha256": "12bcd50e5dc67787a5c9e95f5d131b6a752f20f1f6055d56508ec6c0e6f21bb5"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/gdynia-targeo.html",
+      "sha256": "2fb32c786cde2ee4f12cc1800569d79c9e47747edaabe55dc802e8aad307750f"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/starsza-lista-biedronka.pdf",
+      "sha256": "11e24145de05304ec1eaac9ba4e5ebfb5a000d3ff308bb3e664bb7e493b987c9"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/starsza-lista-krolewiec.pdf",
+      "sha256": "8be8cc8fb0da46099420a9517497919bc29f52b745b9c8e4d08ff9d6bd2299a6"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/drawno-targeo.html",
+      "sha256": "607d3da366df05f74024962f6ea503ae1f0b4a4fe30d0c6b56b90fdf1bd4255e"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/krolewiec-targeo.html",
+      "sha256": "ec8c76a4681bfe374fc5417cf78785d85508e279e607d6ba86497581e34482b3"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/uug-opis.html",
+      "sha256": "dcf948180be64f1f11c4c828b2e0ce1ddf10176441694fc2c31bbd31ae242860"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/2698-gugik.json",
+      "sha256": "d982c64d27c4531551aeb155419c6a27b5c05ab55cec99dbaa7bd199c217d192"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3397-gugik.json",
+      "sha256": "d319d3b3fad34c64b2428ad1b23c713fe784c1a95f0a4e90d717d0777e66a384"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3607-gugik.json",
+      "sha256": "03a9d7882bcb2b600c8358a1797b029f4ff15b41e281c460e6aeb99796a7e32a"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3608-gugik.json",
+      "sha256": "3df774568bc331d4e8f5d6d65a402677d4b921719f96ef0d20efb1039503ea74"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3711-gugik.json",
+      "sha256": "1334979dbaacc60c9ffeed51a5d063d9c04f77f39fa7292d4f2b670f3324ca76"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/7078-gugik.json",
+      "sha256": "53f7b6f9717df6a3eb12bbac7f74243b50be5d31503d822155d1c7e539067dbc"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/7092-gugik.json",
+      "sha256": "f545944a781edb383f9a4f5688264fbe5038a4a67a5ec54e37b4e13af2c8e546"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/krolewiec-100-gugik.json",
+      "sha256": "20ce629fb1c41011d338e393528735ecc0766d47eddd12e9ab53bd2826f168e0"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/grabkow-57a-gugik.json",
+      "sha256": "1b087248930bc25be97af4a202ae7356d1096a8ccb8093af90b9d7ca8d00363c"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/2698-gugik-reverse.json",
+      "sha256": "6dd47f42b068879bdd487774a1211408f8c20feefa78ee3a31918c8ab5c60a3d"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3397-gugik-reverse.json",
+      "sha256": "bfb218593c408729209641ebc95332f8e9903b49e258ed802ef1bfcb67b95397"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3607-gugik-reverse.json",
+      "sha256": "7884ddd99847ce91eb124d184448a3aca3ec5c773ca24b00ad2262b294706199"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3608-gugik-reverse.json",
+      "sha256": "6ea1627067c3cda31901679abef95304e354b7ee0a95b63a47c3752f8fc32e2b"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/3711-gugik-reverse.json",
+      "sha256": "09000148216c2e7b001469255d2cb186938586f7669a360b2633797b2bf82560"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/7078-gugik-reverse.json",
+      "sha256": "81e86eba7cc040eacded69393998e111b09f7cbf0a1a7f9e53eb1cdd3212a7ca"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/7092-gugik-reverse.json",
+      "sha256": "f6c6651ede9935c5e5b078b40fe77cf3313fabf54e62d9b4542f6004d485b2f7"
+    },
+    {
+      "file": "weryfikacja-biedronki/przeglad-siedmiu/raport.json",
+      "sha256": "59c5726332bc0faab76c2c383e4e17d90e925a3ffc998caa9ba57b9820d7e1b5"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/wybor.json",
+      "sha256": "316254e9339f8e5e17554e3fd971537abf2f558cfbd90440a6aa43ed333d1455"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/manifest.json",
+      "sha256": "da90d9554ecb3574ec717fc182eb6c6d2ca99d0a4e2fb084f30ad849b6032661"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1308-oficjalna.html",
+      "sha256": "5c45f63b4857ed8f17cc89d3188f32eef2f97ace9e40a65e4277be699f316d3a"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1308-osm.json",
+      "sha256": "a3ed2c1ec17bbbcf370c8e84a696c98c3ca60300dd41d9903ecbcc0a1fa2973e"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1308-gugik.json",
+      "sha256": "866fb26f5b2051fc27ea34c95b45581cbee4c0bc88c3677f88fa0a95c5710774"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1308-gugik-reverse.json",
+      "sha256": "45360c97443d055cbb0f2e2d2aac4889ae544cdbcb4d895f95ed00b579658340"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2872-oficjalna.html",
+      "sha256": "f2ca967c2cc6c32c53f097f291e1f79f91a0ab98d8e048c3228c0b11cab9a5f8"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2872-osm.json",
+      "sha256": "c7b86ccc62063ca4a831f7b70db3ee1b3eab91c0eb5e4070ad9d392b90b8bd9d"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2872-gugik.json",
+      "sha256": "132cd0d0e499434947c38191c27c37d0c013f5e9ec18d7c5a826666afb3e5315"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2872-gugik-reverse.json",
+      "sha256": "4abcc0f647196578f31ab573d79e9507f8278d1b90e79489804664cb547bd20f"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2982-oficjalna.html",
+      "sha256": "93ebc04aedeebc1b4dcc4b4dbe103c83502fc42b883dbf8c8506150573c6dc0f"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2982-osm.json",
+      "sha256": "a2354f8d68943f50cbe0eda556b0011fb08ea023ead42b38974a6c7fc15649f2"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2982-gugik.json",
+      "sha256": "f3cbf051c342603aaed3532ddd1536db07a10d6dd4710a9a0a0c42f01f8c6e56"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2982-gugik-reverse.json",
+      "sha256": "619701b85ae80f1084810ba2e05d6295c962f21da4335ef96299de768339ee23"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3513-oficjalna.html",
+      "sha256": "4d8a9200bdf0b5eac27564a056fcfa30d8ef851144f809f0f2d586769f6a05cc"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3513-osm.json",
+      "sha256": "7d62057e7c8b2de4a0104a13db6b783c0835d4f2508c22d1562849e467a13430"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3513-gugik.json",
+      "sha256": "b5a4347c926cbab370349c603a8d44f0ce04ffe3de0f1b2b8b5e3f62a32eb490"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3513-gugik-reverse.json",
+      "sha256": "5b33cc5da4d84c1bd44d38b9358c76a9e08db132600b33f8782d0676addcb178"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6967-oficjalna.html",
+      "sha256": "c8495c742bec8bba8337026791ff4629cfac5bc872b8c9504a10f1bfa1c5e03e"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6967-osm.json",
+      "sha256": "dbdf2f7f3eb448b1c54c8db15d920a2c9a759172c386797e3980d036d94f0d26"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6967-gugik.json",
+      "sha256": "eb87d03ff98e6251cb0bd74f9d61251ff50e68408033eef61fd25deb8781ca81"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6967-gugik-reverse.json",
+      "sha256": "9861b5861f21551046a128a7442c96f74faeeb5db051968518369246501e31fc"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1150-oficjalna.html",
+      "sha256": "9c029e5636a767310e08161ba23a167789cb2b3cc5f740348a91f527e006db1d"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1150-osm.json",
+      "sha256": "59d0a5381320577a239be211dd707a819021ca036da7c9b0f0eacb61f7313727"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1150-gugik.json",
+      "sha256": "fdba32c081adb519567baa37ef1389ef0415140d61e15dc570158287abe3cbe8"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1150-gugik-reverse.json",
+      "sha256": "0fa8a1fa8f9db46371ef2a887660b4b80fa99c37b9e0d305c69e88fef7981d12"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2404-oficjalna.html",
+      "sha256": "5b86fd5863215c8bce5d4fd80f4dc2d15f6b003d2431e471c54cb91c763fb3bb"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2404-osm.json",
+      "sha256": "cf16556de907439c9185694fd7deeccb8a2f4f62e9fc97d091789d9dbbbcf510"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2404-gugik.json",
+      "sha256": "e20fdfb14568c909d457ef2c306cb80c7b10dc2836651cb3f03368f15ad7101a"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2404-gugik-reverse.json",
+      "sha256": "cb33d0459566b607ddb0a22294e9e58c766f316a138d0c149c744684d87f2976"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1365-oficjalna.html",
+      "sha256": "b521d57ae8c93b09df8d5d5608759d301e8855f9d1b59f4e719fe55b49dbdcf6"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1365-osm.json",
+      "sha256": "3160f62a9f07be1896e5459096da1c6e400e0c05362305175cd1de1bc6d6a84d"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1365-gugik.json",
+      "sha256": "ed2831d9f113cfe31d27f1776f1ce969e3ba0f6023cde2f01616bf9360f02e50"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1365-gugik-reverse.json",
+      "sha256": "5097cd05ffa9fd5f016982593e600c0b598580e3863110dfe5c71ad9539ef768"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6963-oficjalna.html",
+      "sha256": "4359ea214b823513c6806762b87facdb1717820300eeca3f15b58a1159ed72f7"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6963-osm.json",
+      "sha256": "62df3e0e8280244c0b9e1989684bd5feb1013f2eddc19f31ac495d6fa8b8095f"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6963-gugik.json",
+      "sha256": "1cc32b2564756aaef85c72490ab2ac3b1e3e062dd62eddc222f539ff8f798c13"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6963-gugik-reverse.json",
+      "sha256": "2f8c6271b7a424f6b24873ff297c86d08580a8400ecd9d26244e059ed3a30e15"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7815-oficjalna.html",
+      "sha256": "aa4e4e88ee7589ad138a59115161c8d25a7ce2e2faf1ceb8afc90829f63de91d"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7815-osm.json",
+      "sha256": "fb9fe543d43ced2d6443218170d116aa1e4441dd8120a2e382e435d9a314226f"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7815-gugik.json",
+      "sha256": "5753dd0b23213ee8a1a33b00915d8d3b08b2eab956f253317040ffa590503cdb"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7815-gugik-reverse.json",
+      "sha256": "cf86c157bdc9a550b699480fb7d21afda392c2620ff92b36a2bdc164e379f3dc"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3733-oficjalna.html",
+      "sha256": "e17788b9b8baccafdb63be7b2d93687a0a0e724940181fd65ed115b42cdffd72"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3733-osm.json",
+      "sha256": "30ebe69fb840541a056eecbf37fc7f763d014efcf82c7793b009588da0a8828a"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3733-gugik.json",
+      "sha256": "8de3d43c62aea29137c4d6ac363492274edd137fcbfcc8e5c927c051557303b4"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3733-gugik-reverse.json",
+      "sha256": "e986c67ad2c793537a0e6ce089f6b99b267cdddccd3ec6454e3d6b80394062a3"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3378-oficjalna.html",
+      "sha256": "2116692a3ed046472dbacd6e3283b9427ec3a77f25e5ac94f4a2015f06e37040"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3378-osm.json",
+      "sha256": "3f52cdc2aef49c239cd817b0f0ede34f4bdc160cd267c2fb50cbcf77e970baf7"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3378-gugik.json",
+      "sha256": "5df0d97f811923480800476705ff1acfd0db333ae89cc0488e1b4df3865df015"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3378-gugik-reverse.json",
+      "sha256": "14dc5f8062df8fc1477ccd8e6c9b053142a1fc20f52dca5ab986d39c18afbe01"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3668-oficjalna.html",
+      "sha256": "6216dcb1d302e970fe3fbf573ae053128a1bac5eb6b94f4a5c82de83bca5ddd0"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3668-osm.json",
+      "sha256": "6b57febbc40147599198972d28bb610e4f1aa94d192cb7fc1348777cdbadf314"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3668-gugik.json",
+      "sha256": "51d9b58c28fc533e8ac34782098079f173d72dc275361204285626b3069083c3"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3668-gugik-reverse.json",
+      "sha256": "2e152dc4d7d551d64b29b5f5e4c199970283f73705391a26d7b0fbb5cf96b767"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3363-oficjalna.html",
+      "sha256": "bc2e34cbef9555108dddaba94a1de5a9dca43bcc7c4484cf95b5f135cc1498d9"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3363-osm.json",
+      "sha256": "923e92c404a2021a446b38fe850980a4913569870615fdbbd4ed64f046f8553f"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3363-gugik.json",
+      "sha256": "9f875df7f6e381ba7d7adf3ba1b2a56fb94fcc89b5044b564c2e22cb5259ba57"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3363-gugik-reverse.json",
+      "sha256": "3c7b94434360be479dbbf3ec586c37589e19940a1a4cbc965d3ac968de61b410"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3102-oficjalna.html",
+      "sha256": "b471e7dc6dc7e3b4a1429facf111858ebb0e936b96b17ba4bfccf6e5de39c299"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3102-osm.json",
+      "sha256": "e4ac02902687f483436e4d790cd06d607c203a255cd4065142bb09d3fc314451"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3102-gugik.json",
+      "sha256": "a860c90cb7645858e29f66403b830ba1bb42f615bcaf78b6e432798b760a2de1"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3102-gugik-reverse.json",
+      "sha256": "b1986b3f91d6561c8610cc0bb3fbae65819b9128ad68f5c424958838158352a6"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1242-oficjalna.html",
+      "sha256": "c8a287bfd68ff25aa425c3718173df4a0dea74f5178cea158d95fcfd44f3950d"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1242-osm.json",
+      "sha256": "3c48040be918685569c28fcf6819efc8e5774f4298fd5e5f4448129a64f7eee9"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1242-gugik.json",
+      "sha256": "1936d1c3db98d3a5ea68484d88d81b382b5e36d9c1367f861034cd9a9a61307a"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1242-gugik-reverse.json",
+      "sha256": "6a8726101aae90e580b0ab2e8f2f1ea208e4b91dcb60b94cf89a9c1420959103"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7438-oficjalna.html",
+      "sha256": "79d9319c0099f8727bfb0ab0d9f21c78388a31e72517d0df6308d46f2252741d"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7438-osm.json",
+      "sha256": "290e2b398a62dc2d9d168b66dfe97a7e0a3603f5730d1fa1510dff78b6d6d60e"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7438-gugik.json",
+      "sha256": "cf7865da1e3045a5ae78681ab6e119e80e5994bff8a3a410f80bb064d754c522"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7438-gugik-reverse.json",
+      "sha256": "78e7d8737d22bf44b54a6232145ceb5067bbe4ce40171657fcc460aaf32a8219"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7668-oficjalna.html",
+      "sha256": "3a365c161de2ca0902b4811ee6200cb0f004f81312fbe6036698bba0d51fea6f"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7668-osm.json",
+      "sha256": "2f1565be51bbaccc9c86b7c9592fce390ff04a456d87bf5c07940cd5d0564951"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7668-gugik.json",
+      "sha256": "a509ed2e272a6e75edabd1dfc69fe6be8072644cd7682044ebd639aae4dd1491"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7668-gugik-reverse.json",
+      "sha256": "e546ecacc611b4ce79c0baad379565b8b8c11358c1afef2dee9c8c23a1d8404a"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6953-oficjalna.html",
+      "sha256": "f4633745a5865c453cdc46402afd036487f1a6ee1ec33b757bd7b5e9abf1b944"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6953-osm.json",
+      "sha256": "dd482b628d9cfbaf3aa382872ff8c8198c7d1331931630671522b07b3985e162"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6953-gugik.json",
+      "sha256": "81432ec0c315e131e5c85543cf544535f2cacea08057e296eb38ff6fb6ddf23e"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6953-gugik-reverse.json",
+      "sha256": "5ac0040f401618a99ff7e9b5dcb90e78ccd851e51b9221fe30eb6964501e592d"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2314-oficjalna.html",
+      "sha256": "92973f0c680addae32b4c2f0715c4fea0536daae61c811646054b012c1374a2a"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2314-osm.json",
+      "sha256": "bd67209f7281a55f6e2e314860b8ba6d4a67b49115b5782525c10a5848d34e7a"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2314-gugik.json",
+      "sha256": "c25b1da476f48de1e117936fe91dbf64fad7a4175f5a957e3a3804a661f2a26f"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2314-gugik-reverse.json",
+      "sha256": "b3e30dd53f0d79d761e733a6fd1e3637020804b5c4a005af133fa455f04f9dc6"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/gabin-targeo.html",
+      "sha256": "b595e518c7da4776fa5f574a910403dfd53034917b821e4829db28f8c84e61d5"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/bialystok-targeo.html",
+      "sha256": "7bd3dc04ca0c7cd68264809d79c83fdf4675794bdca41ea28e33935f8d0b2caa"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/bialystok-alfa-kontakt.html",
+      "sha256": "af2bf311c29d083f9efdd373447c9df0a18bad2079fdb85b1b2fadafbd43802c"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/bialystok-alfa-sklep.html",
+      "sha256": "09e3b2e251b47d60f857725f1f01593c4e98bb3d63ff9ba419634a7673d8da65"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/stary-dzikow-zyn.html",
+      "sha256": "fde845e6c202ad1b8d9fe7fa1155ee124f2467473af67eee3889185eba628dc7"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1308-gugik-wgs84.json",
+      "sha256": "95dbb308ec550c372865c461c9aaf6384f6def324506f709748801eb6f7977d7"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2872-gugik-wgs84.json",
+      "sha256": "d463758e2e0427fa9a02b319ad661340dd53d00714f985661363d7d48e3728d8"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2982-gugik-wgs84.json",
+      "sha256": "a9b6f2767ed168a98ab0ea0000c2c17afb2d643a78e89f20837eb860031ede3e"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3513-gugik-wgs84.json",
+      "sha256": "d514e426a655e3f9e1315d1ae563c9ae61906189884c763d0427a2ee1bc79b3f"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6967-gugik-wgs84.json",
+      "sha256": "c1adcb12465f1c1e8e6bef9f6659ebe76efa7f542b9797feaebf9c3b1bad22c5"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1150-gugik-wgs84.json",
+      "sha256": "70b1c86d5a7e79bea18d11998532e0b764ec8303b62b8fc3f535687c915e2a7f"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2404-gugik-wgs84.json",
+      "sha256": "dbb8a1050aa5e7c4647071c0ca39c39113db7bbba4f9a2f691642d5a91aa674a"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1365-gugik-wgs84.json",
+      "sha256": "6d9d93d02b532f747752f2d5bca48ac8d4d8158c02c92cc0c48d91f51d8ccca8"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6963-gugik-wgs84.json",
+      "sha256": "1a2bda2fcce7f1f16900e57ee827ec1deb02097042e9757edde17d138248ff97"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7815-gugik-wgs84.json",
+      "sha256": "7839b2bdf41e838931fe547eda71182544a3ec390f8f4b43b1f6bf02f23d4f8d"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3733-gugik-wgs84.json",
+      "sha256": "c1905e6c9cc17793c6310809571aa70bfeba50a815ee90ad316c8135f1b73410"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3378-gugik-wgs84.json",
+      "sha256": "e3afa2d5fb7912935ba628e2c056789c278b56f984f35ab3298c2980893c08ea"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3668-gugik-wgs84.json",
+      "sha256": "6578189ba5f79d981097519e0aff9a5858f6dc8d2cb8a11447da606cc03f119f"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3363-gugik-wgs84.json",
+      "sha256": "89c4d9984c90e3278d35063ce6722058b8bdc2fa504d09f6cdcea5eb19db23c5"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/3102-gugik-wgs84.json",
+      "sha256": "f2fade4f1a1df4e0b7411eb09ebb9de43a22c53d3c964c7961d3d1dc0472922e"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/1242-gugik-wgs84.json",
+      "sha256": "799d801c0dcffa170a0076d70abe47917357a9a4e8483bd6e741f8043ed80eaa"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7438-gugik-wgs84.json",
+      "sha256": "7abaf797308771667eac87dd7b2a783a86a5a8788aeecd077e2c78e0ada97f8b"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/7668-gugik-wgs84.json",
+      "sha256": "c5380788125fc37bcc15b867bce12d45a34b315be40176914c59f687a4ddc254"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/6953-gugik-wgs84.json",
+      "sha256": "6922e6450ab248a6c0999bfd969b4b301ffc34c9d53626f4e2b0742f59c0a3da"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/2314-gugik-wgs84.json",
+      "sha256": "5bc6f084322119d8faf69d30e251793b206c8a6a25390b587b820323cf611022"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/bialystok-otoczenie-osm.xml",
+      "sha256": "360b2aa073fe3a521795875e42fb6789acf7536ce675606974cf79da97448462"
+    },
+    {
+      "file": "weryfikacja-biedronki/proba-20/raport.json",
+      "sha256": "83c33ff946d4baaca48e137793fad5c98b5ffc2fe460c24fe3bb4640f1c22681"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/wybor.json",
+      "sha256": "90ff144cc051a6c38a9186d2029160e679b8a8ac15606de97cb46c5615042fb6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/manifest.json",
+      "sha256": "3009767edde1605a02350ecbd9d481ddd6565078cf729fe25ed9088393044da6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-oficjalna.html",
+      "sha256": "0f483775f5f1e91def39d4abfc7b0932ac0bd5318da6f3972461459199bb9c40"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-osm.json",
+      "sha256": "3e1e0ff61440cb6ab6ef468057029f7ab40079ab87f7351198123ee663818d3f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-gugik-reverse.json",
+      "sha256": "59e4f3acf5e7ded61ec29e4257f6176af83d98ca22066027d8ac839151c000d6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-gugik-pierwotny.json",
+      "sha256": "e1a082df5d27120e6551ecf220bb22ceab8779c6eb1c387c651b751722f0a8a0"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-gugik-osm.json",
+      "sha256": "bc90ea18b1fec1deabff5f98913467b5860d833913d71d810b89e72384648a36"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2220-oficjalna.html",
+      "sha256": "5714e81b944c2c54b479aacb526a5280d59ebd7670a1edfa93847c5c086e41a2"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2220-osm.json",
+      "sha256": "6567d4c69249756c6c715d4271b9f2b51e178f920fba0c13871a02e02b273ef8"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2220-gugik-reverse.json",
+      "sha256": "533f2258d24a0b708277b4165025c7f7c1ef702fbc0b731a1393155fd6a3dd53"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3370-oficjalna.html",
+      "sha256": "4b85cb8b1acaf2ecd384c0018f050d0ea51c4490f27153ecbda262bf34de33fc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3370-osm.json",
+      "sha256": "fdc6039ba262943c5f47b867488466cfca588b8e3ab1a6e620f2b7c1a7fcf916"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3370-gugik-reverse.json",
+      "sha256": "85a956a55c6f42e3f5c4d2460f68d65a70d728246df0c6aaa39e1cf50c709d3e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3484-oficjalna.html",
+      "sha256": "815d659f6c397886789e9fdb3fd1a94ecaa9c28acbdf9f39849e6b5d0285077f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3484-osm.json",
+      "sha256": "4bf20e2a322d4c64602909992e011d40ca8d1cb5970ecb2594848c710c16f3c7"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3484-gugik-reverse.json",
+      "sha256": "ef2068498c35ba5148d83dff342004e0ac5adc8388b3f19ddeb115bc8c76659e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-oficjalna.html",
+      "sha256": "2f114bb692de0a5c84057737fc0eafc661fa76244458dbbc4d25a87681fa1f9c"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-osm.json",
+      "sha256": "3d29fb786edcef88ee8e41c139945fcc9bb86f90352a7a441834659843b8bc97"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-gugik-reverse.json",
+      "sha256": "178e57fdecc7584739af5a5fc7a17a21aaeb4427093d05f968fb24f866ec121e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-gugik-pierwotny.json",
+      "sha256": "854ba0a9bb299de735e860ba15b3134d00cfc03002e6895aab08f0e41e7b95fa"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-gugik-osm.json",
+      "sha256": "cc7702953766cf735a68fc84f556703f0558686ac4b2c227a858af48402ad79a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3768-oficjalna.html",
+      "sha256": "f71224dc8853a7266b882efe9aaa543c53f57c28d2dcf6ab32d18c09a224be33"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3768-osm.json",
+      "sha256": "5fe8a974a5cd8e04230b3155666c55e259dce34c1383a429d43f91afb562fc98"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3768-gugik-reverse.json",
+      "sha256": "a74f5ff8f67a17c01edb34ccff688199a949ab6bd26c9c5f8cda85d2ee059668"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3768-gugik-pierwotny.json",
+      "sha256": "226a1726d5d1f500fa941f7796402a53b65a31aa30a7da573d8b0c38cc96681f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3768-gugik-osm.json",
+      "sha256": "bdcbe35d98ebd0d5fc4f0dc2dc6df3f21daf9dc54c3740cdd359c8f04b84a605"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-oficjalna.html",
+      "sha256": "475093e4b74137aa8d41437ce67947b204225189e3442955ba3843d301798dc3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-osm.json",
+      "sha256": "30868fc8bd7042bf550e63742a76369942088292f347cfc87c605706c7278ab3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-gugik-reverse.json",
+      "sha256": "62906ea7c714eea6091a64bf0c994f346ac5c35de86d46b55c80ce356e277b48"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-gugik-pierwotny.json",
+      "sha256": "36a79d0dc35cc4fa346f2565b443697345b36ad2204775acfeb7a6be5cab854b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/7026-oficjalna.html",
+      "sha256": "a6523aace86e0fe89e9f0d754eae6cea4f17d7fdc5b5f7e45010d5931c0c361b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/7026-osm.json",
+      "sha256": "cb5888c87a30d3cf96252b6f8fe105e2eeb80f8f7c55ff9da7552309ac2eaa33"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/7026-gugik-reverse.json",
+      "sha256": "eb3de3f87348b65a18cb70a68c4ed4092ec3e11ebdbbd8b414f5671c72b44436"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1573-oficjalna.html",
+      "sha256": "1223d77b07fdf9371cbfd72ed0ada9a4136743a2d94d3ca69afee8fcfa5605b0"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1573-osm.json",
+      "sha256": "454974c097dfb17eca1ff0efbc08506c6d3dcffc3f96069d35f928952ce9c6d5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1573-gugik-reverse.json",
+      "sha256": "fa507a8ffc1ab8db0c0c08b648ed19d7ff3359c4537cc0c6cae98c3f0d016b70"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1573-gugik-pierwotny.json",
+      "sha256": "4a826e0307361ffc0ef549952f96e0407325fc3628bd4b14557a6836d394462a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1573-gugik-osm.json",
+      "sha256": "5d6158584c69d490b92f35a852efae476962134c67598ad33c1e23a1b45aba1f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1838-oficjalna.html",
+      "sha256": "e00a5ecf0054482bd276d7980fd445f24e60de92e7ad0c4f339225e106d04c0e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1838-osm.json",
+      "sha256": "d18d9c9b85f34c551a0f749eeaa9a6a1a341c8f375fb00f0cede997ff1a27a15"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1838-gugik-reverse.json",
+      "sha256": "648017b4963582fad4d44651445432de3363bd3eed4889ef88d22ed59ba825c9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1838-gugik-pierwotny.json",
+      "sha256": "736c496d51ede1b3bf5656106f19480953e7aceb208cc162bb86f689a10e7d57"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1838-gugik-osm.json",
+      "sha256": "d2b29fe30e52dccdba8aedb17008c7da7143216f523872de2f0a44fe61a15033"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2466-oficjalna.html",
+      "sha256": "aeefc1c22acaabc79ee19dc5596b273c5604ab0c851e52ee7327b39c9a07b3d3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2466-osm.json",
+      "sha256": "cb93530d3d36d85b1ac1ac85d667042bbcc3e728187bc66ec23103d44ecef444"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2466-gugik-reverse.json",
+      "sha256": "2d6918504eb2535f9f0681e190a332fb8f56caaa345ab8c8b7b9897684e9725a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2466-gugik-pierwotny.json",
+      "sha256": "aad325d69003b0fa87262cc8dd1f1c8c8595b457ba16fa94f48eeb10d381d65e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2466-gugik-osm.json",
+      "sha256": "062311903eb917e3b64a0a900e9d13c8397e516522cfe7f56f46334fe417ea03"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3033-oficjalna.html",
+      "sha256": "76cc73c1f713277d167dfdbe97dba5580c0dd2ec027948426b3152431241edce"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3033-osm.json",
+      "sha256": "34c912873585d155cdb5f9dcefd5fca8534241f473761a6cbbe9f63ce239d63f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3033-gugik-reverse.json",
+      "sha256": "0d558d43c4aa29f776ad9db6d421bd016be9adb578da84e0a729312cffe63906"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3033-gugik-pierwotny.json",
+      "sha256": "dab6dbe16aeca1477ff3cac4ed89d2eaddf23fea194f16a380a09b3eac4aac03"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3033-gugik-osm.json",
+      "sha256": "e805e91a6a6c62c85f1c109af473534645eefe69091b62e27a4a1bf5a79bccb5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3454-oficjalna.html",
+      "sha256": "8dd8972eb14e359fccbc900940b36b7317f2e8afa953c3799ab4e387950032c1"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3454-osm.json",
+      "sha256": "3b345beba0dfbd1bcd8549337f171d7a664c9aa7808617e90c7d584684879298"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3454-gugik-reverse.json",
+      "sha256": "44b92f4387a7aaf629d419205aa841c6da46eb92d85b4d4c47fd417b07c268ec"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3454-gugik-pierwotny.json",
+      "sha256": "88c95375927b654af8ce8aec3ea2a2c699e810e365adad59fe918e968fa9ab17"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3454-gugik-osm.json",
+      "sha256": "801c1f83a981a0451e06c692dca7605dd7de732bb323d2e008eaabc3cf0d3add"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1203-oficjalna.html",
+      "sha256": "a411cdb1dc2cef6879ca78f4adf868c7d1c98ead3784d1162402aac32c0ec22d"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1203-osm.json",
+      "sha256": "2a372550173ee742af380aed95dc944c27662aab3be330372a098198dc724fe3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1203-gugik-reverse.json",
+      "sha256": "c116c9e577918919937ed5fb511b02ef15fbb3640e36c88542eb7bdec44ceade"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1203-gugik-pierwotny.json",
+      "sha256": "b6e2aed00e02030b12a731737b6c29c339c7cf97dbb36cafa42f2c83c5d20972"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1203-gugik-osm.json",
+      "sha256": "d018a244463110c9a42884861ff2bd05bfe4836214776f69cc830978a0111e63"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1216-oficjalna.html",
+      "sha256": "631ef06000011e88b59b78f450c23ebf975af1b7b9e959d5de72e3a83ab7e8a3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1216-osm.json",
+      "sha256": "8f5a6d25b95c93a3c3230f258ecfca4dc185bc76b39417a425e180694065b675"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1216-gugik-reverse.json",
+      "sha256": "0bfdfa04cf9972dd1204f85a8462980954ad23dddb77ba011d4f1947d166f58d"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1216-gugik-pierwotny.json",
+      "sha256": "27911dcb2ec17f9ec7993077cdbb7f8dbc4839d94639c90f2a09096173aa1ded"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1216-gugik-osm.json",
+      "sha256": "5fbe078a8ef8ba64e7cbf10fd3ac28fd7e008dc96fd4de4452baee652dc122fc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1649-oficjalna.html",
+      "sha256": "f05205fb451505ce0cf8c1416223e08086ec7de4a7d133ce2bfc3112feb590de"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1649-osm.json",
+      "sha256": "7ace0a552cb89fd547290ae857997d64816bd148aa1144eecc23afe92fa4a8a7"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1649-gugik-reverse.json",
+      "sha256": "eff9c2b8aab4293c75084ae53a68fb1f8c4320f1d19b5746ca7054ee6e38bcd3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1649-gugik-pierwotny.json",
+      "sha256": "5904d8c62a9298fec7776aa1afdd8ae6a549b879f57bc7aca0979a6219a375fd"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1649-gugik-osm.json",
+      "sha256": "d8e1733054d148c7f523702fd31d56e75118ecadc5171f7522567a502408257f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1666-oficjalna.html",
+      "sha256": "7cb0b3361e13a9f91c00372865152d2c146399c44e6ffa2dcfa1b405470522d0"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1666-osm.json",
+      "sha256": "037a58a4ee4e9803b37066f9fea9a468f80195751f1f2f24347ca502ce4b8b20"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1666-gugik-reverse.json",
+      "sha256": "287ecea19f6750dd70b7f898b73d71f63890c1161248379da4c5685accdd8940"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1666-gugik-pierwotny.json",
+      "sha256": "5da34ffb5de80dce6b89375464f21778ae9f18fed21c0f1fea8989e59908d6c9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1666-gugik-osm.json",
+      "sha256": "fa7a99294abac0103a6301b68837ea2ba13d93c7148fbbc85ad3e0b8eafacbaf"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1782-oficjalna.html",
+      "sha256": "3419e8b47a513c44f0d8ec97d06ca0b7b6f456be20c2caa2e76d0d6466541194"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1782-osm.json",
+      "sha256": "f3717df3be5f0799f8f54cfaec39d82a9a28d4cd4f39479e78d4344f8033258b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1782-gugik-reverse.json",
+      "sha256": "afc64b14ba09ebc0e70964369fae4708173ca53cad165d26f4b011f1fa75427f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1782-gugik-pierwotny.json",
+      "sha256": "fb60d9c87839f2fb29352abf6c9a1adc92f0a2296c77d0000448cfdedf477e39"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1782-gugik-osm.json",
+      "sha256": "72db701fd3978fce96208f4a9f8db829762aa3f379058e851ae0420a958e14a8"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1825-oficjalna.html",
+      "sha256": "b37ef5e7e08ce7a7a0323476cc27c31528257d6634a148570e4de319e7192972"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1825-osm.json",
+      "sha256": "47a7c089ebcde95406a788d1fd74754d5fa7432fc249a095a81a00529e2f3085"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1825-gugik-reverse.json",
+      "sha256": "0e0d3d38266af6c1f933929127ec33cf29891c5c9b7b0bbef37c63faf188df47"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1825-gugik-pierwotny.json",
+      "sha256": "e02e0070c2170f764c08d7706f32dc766da5459c0ecee47fe46da877fa2e8d8b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1825-gugik-osm.json",
+      "sha256": "ad0180af0497799cffcb1172b64f0a650ecfcea577b223e24f8069343e6a4524"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1968-oficjalna.html",
+      "sha256": "ed26106793a562a8dfea858748c039a84bf3a8aba48c1ff6ecfe159734b443a6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1968-osm.json",
+      "sha256": "2885273d9c4b191f0287cce981c08ea5a80c1506344d3ddf11ea9a9959d03347"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1968-gugik-reverse.json",
+      "sha256": "6f70153b91fb9a6f20e07addb453aadc44478402ebe8f5ff5f595dd02943ae94"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1968-gugik-pierwotny.json",
+      "sha256": "4e6c47f35ad212c7b53ba8656eab6fb333b1568c6edfe445f20d9490d89ff278"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1968-gugik-osm.json",
+      "sha256": "431882eb627a5530acc456e945131cb30fb393abe187a0bed998401b05753210"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/1400-targeo.html",
+      "sha256": "efd30dea4458c5ce5f0b587328b9fc870ede9ad576dc2aeb1c6f2a4efcecd64b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2220-targeo.html",
+      "sha256": "a4029110bd0623f8846cfd23d06a9d7164d981adb34e18c16e9b959957d661b2"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3370-targeo.html",
+      "sha256": "b767a1cd51185566ee1843e9fb817d6ccee8cd0a0c87fb9d5531027086f0406e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3484-targeo.html",
+      "sha256": "1cacf8fe072092e83059e1cb3605703ba54ecceb3c6ce8ccd28428930b0a40ad"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-targeo.html",
+      "sha256": "dcf860e9ba700c46ecde9d351a24817f29e114474c56c4427420d5a5eb9d6343"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/7026-targeo.html",
+      "sha256": "384b422e54627e7aa0e043f7c832f61d5a99ad0bfa08c34ff5c213e91edd2955"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/oficjalna-lista-adresow.pdf",
+      "sha256": "d3c1b13ef16d88c8133aef1851178a76b0d7934e37e63dfb673f3ac31a01d055"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3572-oficjalny-komunikat.html",
+      "sha256": "ea3067c8592d961fbc2d0a6cc98c5093046ca28f33163765e77f101fa1b33060"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3772-oficjalny-komunikat.html",
+      "sha256": "bbef0ee8cdf12dcbe8dadd1adedc12aef336bd1e79269bdd80d1ed8ead917766"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/2220-gugik-sprawdzony.json",
+      "sha256": "68ad57a53896d8f237b9a2b190d6c30bf654a1cf82e4482b733d186f0122dc72"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3370-gugik-sprawdzony.json",
+      "sha256": "2d6eee6e3e5a3218da6b6a8f3e3d11131034a5d07fc9f6e6c794bddeea46b7b2"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/3484-gugik-sprawdzony.json",
+      "sha256": "b1bf23dd4c6cd477458a822a454eff0c1112401ff2b498ebc7f24acbf2a5bc39"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/7026-gugik-sprawdzony.json",
+      "sha256": "3ba5b68cdb4ff91ea3818a9c8fa28adaea49f9c77fdf35f0a862bcf74cb05312"
+    },
+    {
+      "file": "weryfikacja-biedronki/pelny-przebieg/osm-polaczone.json",
+      "sha256": "735d59010914204a03faaac64e90d64b4b7f60a7358f24b766d36b60bd78ab97"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/oficjalna-lista-adresow.txt",
+      "sha256": "ab51375e683d68e5b42b2c86e6ee5b44489dfc1de13abf4089c12230ed3b9f62"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/wyciag-dokumentu.json",
+      "sha256": "7f41bec1e60368b4075a5a10f3d189b7605a3db0efec2924281233a6f9c587c6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/wybor.json",
+      "sha256": "f184170717e0fe67d5de0ee938410dfa79a557a51f81559c42a339b35a94e97f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/manifest.json",
+      "sha256": "31c499a0f40ac03933be4c600238a66f758ebc988d3a05f5e320dc49f969f91a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2276-oficjalna.html",
+      "sha256": "d4c93df0c4b9190b522c3c0fdb0c62c9925c366678fa235107da30c9bde62425"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2276-osm.json",
+      "sha256": "0483228ef2aef057cce186c82c977ab7e1d3ab9bab6093710ef76f6eb21c2951"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2276-gugik-reverse.json",
+      "sha256": "bbeb4af2abbb891de5fead1fcc0706a1bdca153ece4541893bc74db1c528c8e6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2276-gugik-pierwotny.json",
+      "sha256": "1c635b6914cef5a8fd66b224d8013719c1d815c992225138c037064dd04b926b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2276-gugik-osm.json",
+      "sha256": "a735895a327c803de4445c8bc057096b13ac637b6d5e1c2b36180af8a5229326"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-oficjalna.html",
+      "sha256": "3112f46cfaf22a7495264a3031508fd7477186f5a7b73e45e3153c383840d9a9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-osm.json",
+      "sha256": "4cdea51c8e7ef2c2e7f76aad3f47f4c204d7872b62802893670b39a83926cfba"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-gugik-reverse.json",
+      "sha256": "f37d149cd7799032b085190f0165869979669351c5604e95a16aa94c1ddce8dd"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-gugik-pierwotny.json",
+      "sha256": "5021e3a4f9ec5ff9d486ea06119fd5886303b3cd15af951d2fa99bc173b9a0bc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-gugik-osm.json",
+      "sha256": "8dde1865a8f531f5f045495aa361ec2527efca584f5384cf9b7f3b815d553fb5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2782-oficjalna.html",
+      "sha256": "e0dc16a251958e8019ecfb443bfa2ae88260887f54dcfa3318eed5c51549dd92"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2782-osm.json",
+      "sha256": "f3e034eed5413436f91607afa01afa82f741fa01a2108abf4650f1a67ca201fb"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2782-gugik-reverse.json",
+      "sha256": "f1f22d94a095edc186275383e30400a05e160508e14bf0843aafa6411b075e50"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2782-gugik-pierwotny.json",
+      "sha256": "323dc67e3e501f40a6dc42c3f5d5edb948a9ba404cd85b7d117f15ad3d487bbc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2782-gugik-osm.json",
+      "sha256": "e50d3860a79d423da1906075f2f53cb1acdeb33d12cae5677746efa759bdada1"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2869-oficjalna.html",
+      "sha256": "d2ab2ca1ce66af0844efe9a572098e68c0d272e7311935fb6e6abe12d33dc5ec"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2869-osm.json",
+      "sha256": "375b06fecfc866d9321c3f9b825df00c981645b158d959189eb4002ab1048e5c"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2869-gugik-reverse.json",
+      "sha256": "e79fcbe43f3da31ec81ec55eb3b126c015330a4076407c8e7ceb9a36ef622fc1"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2869-gugik-pierwotny.json",
+      "sha256": "ae74b403326d6486116674b22494b63aae4ccdab059c7d0abc94d1447c1217b3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2869-gugik-osm.json",
+      "sha256": "267d296d814ccc0ac735a8d468e6371ef5f272a11ccf7773f8aed613af41bd8c"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3601-oficjalna.html",
+      "sha256": "876f2a3bfafcea2424719a9c7b276f4454f9a61397d08960a7fe5a9374103566"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3601-osm.json",
+      "sha256": "840b9b5a84fccecf8f8004322198ec45228c25ef9f7a089d14430583f062f798"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3601-gugik-reverse.json",
+      "sha256": "791c2f9d0d89a05341441ecf7a853410c9278e8dc5587167784725282035c513"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3601-gugik-pierwotny.json",
+      "sha256": "a5dc489c8d7e103f451ff77196104e505fd96dbef2b27c260de5b0911c54ed9d"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3601-gugik-osm.json",
+      "sha256": "b2ef14461579d648ed631a66f2a50818ef8128bcb40d4ea36826303563198917"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3647-oficjalna.html",
+      "sha256": "c6598244df3ea74ee153a3834886560dc3bb2b84eb17a85906dad1d7e1cbdbc8"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3647-osm.json",
+      "sha256": "af4738092395cbe5cd6ca30ea04824e948d7f5d659804ae97602b5d7c9a5f1ef"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3647-gugik-reverse.json",
+      "sha256": "2a31dce02416a75c0270dbf04926feee2fce50d12edec79b70ad839bc5a135c1"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3647-gugik-pierwotny.json",
+      "sha256": "b7c9cfbff4c4f63fc62b02086c7f437157367f6a8766ec88cc491c4523d2b421"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/3647-gugik-osm.json",
+      "sha256": "0f8cc4a4493f7a3311fb0b81f7363f6421943331c757e6502ffba0375e741ba4"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/7333-oficjalna.html",
+      "sha256": "bf996c03697aae3a98d28194c8f20c9864ec5724f093e257495a527b15bd1683"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/7333-osm.json",
+      "sha256": "268d180da5e4d9e8c9dfc06dc6643a1cff4ed975bf12741e3121ef3f36d6e50a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/7333-gugik-reverse.json",
+      "sha256": "abdea0f4414b536b3a137aab7a293e8fd7da39f9e4754e25f4e94d96f96e99fa"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/7333-gugik-pierwotny.json",
+      "sha256": "0f86efc1d3a1cb3d7fb9746149d24ae1fa8ad00fe3d52a7ca7b42ae2953f0ea9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/7333-gugik-osm.json",
+      "sha256": "fab959f720bcc38de5b25a197adf9b40b97d3bb89e27599a0386cd81aa96344a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1872-oficjalna.html",
+      "sha256": "ae53e29bf9e17f3bbba868b234cb9761056ff37828ffad03df9c68ca5e7cbf91"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1872-osm.json",
+      "sha256": "56550946aaf875b047a4a96ab900ab2a533e8cf3583061fbcacc5a845c2f90a7"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1872-gugik-reverse.json",
+      "sha256": "8d12ac45c73dcc3490434c0c9bbb70984a911808de667c28503ead0a58bb2275"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1872-gugik-pierwotny.json",
+      "sha256": "83de83f42413e25fd5278d73cd16b4bfdc511d177f9f45f3de3ef2b79a91db61"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1872-gugik-osm.json",
+      "sha256": "1509a337914118b7618c6ac32cc2a0d7ead595ce0a7a72e1378e2a7a52fc7a79"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1164-oficjalna.html",
+      "sha256": "4c9f80b1552391ae28459a28a53650c7443e18f4b654a4da2af666f48136eb07"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1164-osm.json",
+      "sha256": "d7b014933d67a19953d70c2f9bc730e44905a669202e75d673b5a05643c0ec20"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1164-gugik-reverse.json",
+      "sha256": "6825b3fe35c81343f3f4c432d26296eefb427252a06fb5b34157c4558f2dd2dd"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1164-gugik-pierwotny.json",
+      "sha256": "f9aadcf2f0ed13222774fc2fbb437b933d2a432c366836748ab2c77273458591"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1164-gugik-osm.json",
+      "sha256": "29f12abfdd5c138b74c69886b5248c11e75803c4109e124248c5e63f6c90aded"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1192-oficjalna.html",
+      "sha256": "ad49e33dbb7082ddc1022672317c2c087314b5e4161b07a09b93acf1a9acf3f8"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1192-osm.json",
+      "sha256": "077dfcc4617957953278d2ab94271dc41542e58421ebfef013f561adad829ca3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1192-gugik-reverse.json",
+      "sha256": "728990360ebc89ca9d5d8af8f7bcff7afbf7facdb901af73843229197191586f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1192-gugik-pierwotny.json",
+      "sha256": "34626fed8edec177a50b0d0280af0e6d87ec62745bc8086795d9ddb97f924ff9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1192-gugik-osm.json",
+      "sha256": "458f8b159e211107a2cf5c98b2fc0d7bd2b358b5ac8f941bd01d20312e1cbe9a"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1226-oficjalna.html",
+      "sha256": "ddde064685799926eb8fcf0250030321921a65cd410dec7ae43bf365ed46d166"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1226-osm.json",
+      "sha256": "a1295839e288815737533d8197ded5a9f05ff8fdfcafe3b91e71c5c5bafaeea0"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1226-gugik-reverse.json",
+      "sha256": "40bfe03584121fa5d0e30ffc3a39518feb31ef2e588c1ee997349133fe8b3ccc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1226-gugik-pierwotny.json",
+      "sha256": "024d6f42dd05aceefec0a42aa578259031abc4fae051e646449b4329e202975f"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1226-gugik-osm.json",
+      "sha256": "7f0d52fc604156b7e27e284900474abfce55fdec2b27e74e9731802035b37400"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1328-oficjalna.html",
+      "sha256": "5603b99cef28449d17d778db86270979d3d19cfdfee04706741bd401ba7febbf"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1328-osm.json",
+      "sha256": "f15f3bd90d0fe33cd727885d62179b8fdfc7f0274f788adffaba55cb98174ecd"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1328-gugik-reverse.json",
+      "sha256": "1b9e4511c5151e71ddc29f8548b78345d6d5c482ddce3d31a5e0178217799465"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1328-gugik-pierwotny.json",
+      "sha256": "98a8beeb428117e1f1894cfde458f940b6f7837b752479b364815a57e4ab65bc"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1328-gugik-osm.json",
+      "sha256": "2fad12178aaede7a94a5b16f3afaf281416d38dabdebc7e9201aabfc88bd4348"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1344-oficjalna.html",
+      "sha256": "896431fd7369193569b2bea644192da6d1238ea1ce3a1b14a5c7f18a8e5400e5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1344-osm.json",
+      "sha256": "50fc5962bb358aa88bc8855291879715f5636f03eb3f2608710401fc77078e5b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1344-gugik-reverse.json",
+      "sha256": "c3243ccd2ca97330db2d20e97319f2cc64f457f53797aeaf6a1faf42648ba764"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1344-gugik-pierwotny.json",
+      "sha256": "7b0bae3dd68de0a8b436b31fdbcb3db2959ecbca7dcce48fe49663112c7fe197"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1344-gugik-osm.json",
+      "sha256": "ee4ff57943e0e4d68d3de8c1fbc36c764b6daca47ff9bddf6addf7b4d400622d"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1371-oficjalna.html",
+      "sha256": "f31927b82de11ed0fd987acef2204280b4f3703447754e37bb0019495cf925b8"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1371-osm.json",
+      "sha256": "0468d620c0038f17ec1dfeb19408a6889a88b907acc4aafcb9e1ec73a2b04613"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1371-gugik-reverse.json",
+      "sha256": "93444312af46db5b4dd6226e7f93a603f1b2059efdeedca26cbd8a18cd731eaf"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1371-gugik-pierwotny.json",
+      "sha256": "8912ee9862b496ed6cf3fe84ac8621721d3baf3e169d973ac36cc2261b0fbdaf"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1371-gugik-osm.json",
+      "sha256": "d77a17b02f40e044de1715df202ad5abbb811c527bf5e6f9798dac868961e8ee"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1387-oficjalna.html",
+      "sha256": "f076bb04531ab8772700f1be0a24a6e5790a649d8b3bed8f85e23149a6dbc629"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1387-osm.json",
+      "sha256": "0674c5a7824027478dc1d53740eb20a03a3fc1da1450945c72ab5abeaedada73"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1387-gugik-reverse.json",
+      "sha256": "cf7a1f18379a2fe6cb74539ae99e71a7696c2a972f34309e827b07d383a6dd3e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1387-gugik-pierwotny.json",
+      "sha256": "ce725bc6f0852bf78c3664581f5d6cc743a9f951a76dcdce355925568e605074"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1387-gugik-osm.json",
+      "sha256": "efd35303a7a7b769daeefc4e911554937e26e9d92072f65a88f7dcbc11f5d5c3"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-oficjalna.html",
+      "sha256": "9a5573284ffb7cc1963949b61d5790e7b3a9f4ba2ab3851a2333641ba33d2b8b"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-osm.json",
+      "sha256": "da9677d9e739c3e8bc4de7ab29c4b5425988cee8c5ae057bcdf904f35c3a5fb1"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-gugik-reverse.json",
+      "sha256": "2c6ed6990c3934aee49a0c12380ba269b8aec18281005770e2a69e3f06032239"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-gugik-pierwotny.json",
+      "sha256": "86c1d3a9dc36cb3b4c41b6af88415857ac67ff7eb702e6efced3da1c29b79015"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-gugik-osm.json",
+      "sha256": "45b212f6e7a04fe0cbbdeb1c2039844f38024fd1ecac460e1133c055f3ceba02"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-oficjalna.html",
+      "sha256": "2238da5819e9d4965a9a670176133d58ebbfc9fbe55bbcc025aaabe0a0391b80"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-osm.json",
+      "sha256": "bb5559cf17d100ea8fa5cb1fb170f5bf52611a66bee9e097eb6bde7c31010de5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-gugik-reverse.json",
+      "sha256": "af399fbe160d1a247650b527cb97a963c7e38a60318fa220ad3cf18ef45527ea"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-gugik-pierwotny.json",
+      "sha256": "022aafd83914fa050b291205f44c12ce570825920d9f4fae0691dc0ccaf76625"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-gugik-osm.json",
+      "sha256": "5b4ce74c3e31e61322b7113f1db649c6d8bf1fd41ddda753d54afb31cb7ac2f7"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1459-oficjalna.html",
+      "sha256": "565e4aa9d581cc73fb5b38e80042ec4c57bf2d298467cc6480516eabb9429c23"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1459-osm.json",
+      "sha256": "eccf8b334def5d073bab56264d3ff707e6d6604c680c68812904d99ba1c914fe"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1459-gugik-reverse.json",
+      "sha256": "2185633c972400970e56214000c3da4790a68ce8b63f36c9225c785c18e4da41"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1459-gugik-pierwotny.json",
+      "sha256": "c36edec3b5731085662feac9e134b7796dd7f00cd8e6041cf48e8972699942c5"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1459-gugik-osm.json",
+      "sha256": "4d9ea4f55d25d2df123f96cef85200408530b2709e5dfd5bc26fe58457f674f9"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1503-oficjalna.html",
+      "sha256": "d0fcd0737e5ef6458aa98915372ea0ba9bfeb7f2a2938a9e023ab2a3d04411d6"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1503-osm.json",
+      "sha256": "df060727de84c6d844473e489f59ac4e8f310be50d80ab46a3cd04e447065a14"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1503-gugik-reverse.json",
+      "sha256": "358719dfa9f3a4f6bb668fb71ff5985e17ba875ece33d4a33a0d6df4ee5b8b03"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1503-gugik-pierwotny.json",
+      "sha256": "a5e02b4ba553bb95805df6f234c92d5b2fecc2a556c1e170b16f968f4f2180cd"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1503-gugik-osm.json",
+      "sha256": "138e499373d4c779cceefd5c14487fb826797131f83efdc797250396ac51f107"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1520-oficjalna.html",
+      "sha256": "532328cfb6022acfbb468a9d593ce9c9aade87abdf77885515985a66a4ac9b44"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1520-osm.json",
+      "sha256": "861a977d23dbfab6c1f6570e0a4483986cad0c8fe184f36e48f5203dedc42090"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1520-gugik-reverse.json",
+      "sha256": "3ed4da2da08b2cf2ebed91dffe1669fb508e158af7c9260df5c68fd283f97662"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1520-gugik-pierwotny.json",
+      "sha256": "388d34f8397855bdc5209866cbd35cfb045ca29704e45f3d538786d8de90563e"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1520-gugik-osm.json",
+      "sha256": "a2f169a94340835620e119b49bba55e12609bfc2a4ed5a6f6ed2112758a14a93"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/2390-targeo.html",
+      "sha256": "e5ec8287a3cf711a3cae2a6b97a79f2a38c5921b7f2d65fd1879b083bf0bef60"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1444-targeo.html",
+      "sha256": "31c0be1754ab2d8ffb65c30810fedc9a0eeaac8c80c37640db28a303fc97c7cb"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/1449-targeo.html",
+      "sha256": "bf9fcfa683625d712fcdc4dbd742ae0d831d9be7526427fd92f21f321b2560f4"
+    },
+    {
+      "file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "biedronka:1150",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 61 m od punktu sklepu. Najbliższy punkt UUG ma numer 5, ale oddzielne zapytanie o dokładny numer 4 potwierdza jego istnienie. Nie podmieniono numeru na najbliższy. Targeo potwierdza sklep pod tym adresem 15 m od punktu OSM. Punkt rejestrowy numeru 4 leży 61 m od środka budynku.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "al. Jana Pawła II 4, 09-530 Gąbin",
+          "street_address": "al. Jana Pawła II 4",
+          "street": "al. Jana Pawła II",
+          "house_number": "4",
+          "city": "Gąbin",
+          "postal_code": "09-530",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.3986447,
+          "longitude": 19.7374913
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:1164",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Porównano pisownię Marcellego / Marcelego. Nazwa i numer z oficjalnej karty mają zgodny punkt w rejestrze; adres wejściowy zachowano. Dokładny adres UUG: ul. Marcellego Bacciarellego 56, 51-649 Wrocław; odległość od proponowanego punktu 13 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Marcellego Bacciarellego 56, 51-649 Wrocław",
+          "street_address": "Marcellego Bacciarellego 56",
+          "street": "Marcellego Bacciarellego",
+          "house_number": "56",
+          "city": "Wrocław",
+          "postal_code": "51-649",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.1023339,
+          "longitude": 17.1177399
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1192",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono rozwinięcie imienia Stefana przy ulicy Batorego. Dokładny adres UUG: Stefana Batorego 32, 05-400 Otwock; odległość od proponowanego punktu 6 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Batorego 32, 05-400 Otwock",
+          "street_address": "Batorego 32",
+          "street": "Batorego",
+          "house_number": "32",
+          "city": "Otwock",
+          "postal_code": "05-400",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.0999089,
+          "longitude": 21.2545276
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1203",
+      "status": "corroborated",
+      "reason": "Potwierdzono wariant z prefiksem Aleja. Dokładny adres GUGiK: Aleja Wojska Polskiego 11, 05-800 Pruszków; odległość od proponowanego punktu: 11 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Wojska Polskiego 11, 05-800 Pruszków",
+          "street_address": "Wojska Polskiego 11",
+          "street": "Wojska Polskiego",
+          "house_number": "11",
+          "city": "Pruszków",
+          "postal_code": "05-800",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.166093,
+          "longitude": 20.8065846
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:1216",
+      "status": "corroborated",
+      "reason": "Potwierdzono skrót al. J. Piłsudskiego mimo brakującej miejscowości w tagach OSM. Dokładny adres GUGiK: Aleja Piłsudskiego 102, 05-070 Sulejówek; odległość od proponowanego punktu: 21 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "al. J. Piłsudskiego 102, 05-070 Sulejówek",
+          "street_address": "al. J. Piłsudskiego 102",
+          "street": "al. J. Piłsudskiego",
+          "house_number": "102",
+          "city": "Sulejówek",
+          "postal_code": "05-070",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.2363035,
+          "longitude": 21.2548445
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:1226",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono rozwinięcie imienia Władysława przy ulicy Korotyńskiego. Dokładny adres 23 sprawdzono osobno od najbliższego numeru 21. Dokładny adres UUG: ulica Władysława Korotyńskiego 23, 02-123 Warszawa; odległość od proponowanego punktu 40 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Korotyńskiego 23, 02-123 Warszawa",
+          "street_address": "Korotyńskiego 23",
+          "street": "Korotyńskiego",
+          "house_number": "23",
+          "city": "Warszawa",
+          "postal_code": "02-123",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.2035953,
+          "longitude": 20.9646146
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1242",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 17 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Konstytucji 3 Maja 5, 58-540 Karpacz",
+          "street_address": "Konstytucji 3 Maja 5",
+          "street": "Konstytucji 3 Maja",
+          "house_number": "5",
+          "city": "Karpacz",
+          "postal_code": "58-540",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.7814409,
+          "longitude": 15.7636357
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:1308",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 22 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Gen. Kutrzeby 1, 62-095 Murowana Goślina",
+          "street_address": "Gen. Kutrzeby 1",
+          "street": "Gen. Kutrzeby",
+          "house_number": "1",
+          "city": "Murowana Goślina",
+          "postal_code": "62-095",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.5671518,
+          "longitude": 16.9939013
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:1328",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono rozwinięcie imienia Karola przy ulicy Szymanowskiego i wariant 27a/27A. Dokładny adres UUG: Karola Szymanowskiego 27a, 68-200 Żary; odległość od proponowanego punktu 17 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Szymanowskiego 27a, 68-200 Żary",
+          "street_address": "Szymanowskiego 27a",
+          "street": "Szymanowskiego",
+          "house_number": "27a",
+          "city": "Żary",
+          "postal_code": "68-200",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.6429917,
+          "longitude": 15.1263489
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1344",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono rozwinięcie imienia Kazimierza przy ulicy Porębskiego; odrzucono zwrócone przez geokoder inne ulice. Dokładny adres UUG: Kazimierza Porębskiego 8, 80-180 Gdańsk; odległość od proponowanego punktu 15 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Porębskiego 8, 80-180 Gdańsk",
+          "street_address": "Porębskiego 8",
+          "street": "Porębskiego",
+          "house_number": "8",
+          "city": "Gdańsk",
+          "postal_code": "80-180",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.3190715,
+          "longitude": 18.582426
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1365",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 17 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Al. Wojska Polskiego 116, 62-800 Kalisz",
+          "street_address": "Al. Wojska Polskiego 116",
+          "street": "Al. Wojska Polskiego",
+          "house_number": "116",
+          "city": "Kalisz",
+          "postal_code": "62-800",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.7618325,
+          "longitude": 18.0776722
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:1371",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono rozwinięcie imienia Tytusa przy ulicy Chałubińskiego. Nie podmieniono numeru 27 na najbliższy 25C. Dokładny adres UUG: Tytusa Chałubińskiego 27, 80-807 Gdańsk; odległość od proponowanego punktu 20 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Chałubińskiego 27, 80-807 Gdańsk",
+          "street_address": "Chałubińskiego 27",
+          "street": "Chałubińskiego",
+          "house_number": "27",
+          "city": "Gdańsk",
+          "postal_code": "80-807",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.340827,
+          "longitude": 18.6192515
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1387",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono rozwinięcie imienia Władysława przy ulicy Jagiełły. Dokładny adres UUG: Władysława Jagiełły 1, 11-400 Kętrzyn; odległość od proponowanego punktu 12 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Jagiełły 1, 11-400 Kętrzyn",
+          "street_address": "Jagiełły 1",
+          "street": "Jagiełły",
+          "house_number": "1",
+          "city": "Kętrzyn",
+          "postal_code": "11-400",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.0847824,
+          "longitude": 21.3724044
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1400",
+      "status": "corroborated",
+      "reason": "Oficjalna karta i Targeo podają Kolbego 58, 85-433 oraz zgodne położenie sklepu. OSM ma kod 85-435, rejestr jako najbliższy wskazuje numer 56. Uzupełniamy wyłącznie punkt; zachowujemy adres z oficjalnej karty i zapisujemy rozbieżności. Nie potwierdzono urzędowej numeracji budynku.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "św. M. Kolbego 58, 85-433 Bydgoszcz",
+          "street_address": "św. M. Kolbego 58",
+          "street": "św. M. Kolbego",
+          "house_number": "58",
+          "city": "Bydgoszcz",
+          "postal_code": "85-433",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.1589408,
+          "longitude": 17.912213
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:1444",
+      "status": "requires_review",
+      "scope": "location_confirmed_postcode_unresolved",
+      "reason": "Położenie sklepu potwierdzają adres uliczny z oficjalnej karty, punkt UUG (15 m) oraz Targeo (6 m). Kod pocztowy pozostaje nierozstrzygnięty: Biedronka 44-190, GUGiK 44-196, Targeo 44-196. Przyjęto współrzędne, zachowano pierwotny adres i pozostawiono rekord poza zbiorem gotowym do wyjaśnienia kodu.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Witosa 4, 44-190 Knurów",
+          "street_address": "Witosa 4",
+          "street": "Witosa",
+          "house_number": "4",
+          "city": "Knurów",
+          "postal_code": "44-190",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.2368496,
+          "longitude": 18.6586714
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1449",
+      "status": "requires_review",
+      "scope": "location_confirmed_postcode_unresolved",
+      "reason": "Położenie sklepu potwierdzają adres uliczny z oficjalnej karty, punkt UUG (12 m) oraz Targeo (4 m). Kod pocztowy pozostaje nierozstrzygnięty: Biedronka 07-412, GUGiK 07-410, Targeo 07-409. Przyjęto współrzędne, zachowano pierwotny adres i pozostawiono rekord poza zbiorem gotowym do wyjaśnienia kodu.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Sienkiewicza 53, 07-412 Ostrołęka",
+          "street_address": "Sienkiewicza 53",
+          "street": "Sienkiewicza",
+          "house_number": "53",
+          "city": "Ostrołęka",
+          "postal_code": "07-412",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.0736297,
+          "longitude": 21.5641501
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1459",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono pełny wariant Generała Stefana Grota Roweckiego i numer 18A. Dokładny adres UUG: gen. Stefana \"Grota\" Roweckiego 18A, 95-200 Pabianice; odległość od proponowanego punktu 17 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Grota Roweckiego 18a, 95-200 Pabianice",
+          "street_address": "Grota Roweckiego 18a",
+          "street": "Grota Roweckiego",
+          "house_number": "18a",
+          "city": "Pabianice",
+          "postal_code": "95-200",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.6570322,
+          "longitude": 19.3703695
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1503",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono rozwinięcie imienia Marii przy ulicy Konopnickiej. Dokładny adres UUG: Marii Konopnickiej 2, 85-124 Bydgoszcz; odległość od proponowanego punktu 14 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Konopnickiej 2, 85-124 Bydgoszcz",
+          "street_address": "Konopnickiej 2",
+          "street": "Konopnickiej",
+          "house_number": "2",
+          "city": "Bydgoszcz",
+          "postal_code": "85-124",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.1117481,
+          "longitude": 18.0074684
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1520",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono pełną nazwę Osiedle gen. Józefa Wybickiego; numer 3b pozostaje bez zmiany. Dokładny adres UUG: Osiedle gen. Józefa Wybickiego 3b, 83-300 Kartuzy; odległość od proponowanego punktu 13 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Os. Wybickiego 3b, 83-300 Kartuzy",
+          "street_address": "Os. Wybickiego 3b",
+          "street": "Os. Wybickiego",
+          "house_number": "3b",
+          "city": "Kartuzy",
+          "postal_code": "83-300",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.3262535,
+          "longitude": 18.1957607
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1573",
+      "status": "corroborated",
+      "reason": "Potwierdzono wariant kolejności członów Curie-Skłodowskiej / Skłodowskiej-Curie. Dokładny adres GUGiK: Marii Curie-Skłodowskiej 45, 32-300 Olkusz; odległość od proponowanego punktu: 5 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Marii Curie-Skłodowskiej 45, 32-300 Olkusz",
+          "street_address": "Marii Curie-Skłodowskiej 45",
+          "street": "Marii Curie-Skłodowskiej",
+          "house_number": "45",
+          "city": "Olkusz",
+          "postal_code": "32-300",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.2707047,
+          "longitude": 19.5736016
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:1649",
+      "status": "corroborated",
+      "reason": "Rejestr i OSM pomijają III w nazwie Jana Sobieskiego; numer 22 jest zgodny. Dokładny adres GUGiK: Jana Sobieskiego 22, 19-230 Szczuczyn; odległość od proponowanego punktu: 10 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Jana III Sobieskiego 22, 19-230 Szczuczyn",
+          "street_address": "Jana III Sobieskiego 22",
+          "street": "Jana III Sobieskiego",
+          "house_number": "22",
+          "city": "Szczuczyn",
+          "postal_code": "19-230",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.5600516,
+          "longitude": 22.2879638
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:1666",
+      "status": "corroborated",
+      "reason": "Potwierdzono rozwinięcie imienia Antoniego w nazwie Planty Kowalskiego. Dokładny adres GUGiK: Planty Kowalskiego 1, 41-709 Ruda Śląska; odległość od proponowanego punktu: 14 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Planty Kowalskiego 1, 41-709 Ruda Śląska",
+          "street_address": "Planty Kowalskiego 1",
+          "street": "Planty Kowalskiego",
+          "house_number": "1",
+          "city": "Ruda Śląska",
+          "postal_code": "41-709",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.2892054,
+          "longitude": 18.8757226
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:1782",
+      "status": "corroborated",
+      "reason": "Potwierdzono wariant z prefiksem Aleja Armii Krajowej. Dokładny adres GUGiK: Aleja Armii Krajowej 3, 27-300 Lipsko; odległość od proponowanego punktu: 16 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Armii Krajowej 3, 27-300 Lipsko",
+          "street_address": "Armii Krajowej 3",
+          "street": "Armii Krajowej",
+          "house_number": "3",
+          "city": "Lipsko",
+          "postal_code": "27-300",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.1547885,
+          "longitude": 21.65385
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:1825",
+      "status": "corroborated",
+      "reason": "Potwierdzono wariant Aleja 600-lecia. Dokładny adres GUGiK: Aleja 600-lecia 40, 96-500 Sochaczew; odległość od proponowanego punktu: 23 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "600-lecia 40, 96-500 Sochaczew",
+          "street_address": "600-lecia 40",
+          "street": "600-lecia",
+          "house_number": "40",
+          "city": "Sochaczew",
+          "postal_code": "96-500",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.2335009,
+          "longitude": 20.2477466
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:1838",
+      "status": "corroborated",
+      "reason": "Rejestr rozwija nazwę jednostki do 9-go Pułku Strzelców Konnych; numer domu pozostaje 8. Dokładny adres GUGiK: 9-go Pułku Strzelców Konnych 8, 19-200 Grajewo; odległość od proponowanego punktu: 5 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Pułku Strzelców Konnych 8, 19-200 Grajewo",
+          "street_address": "Pułku Strzelców Konnych 8",
+          "street": "Pułku Strzelców Konnych",
+          "house_number": "8",
+          "city": "Grajewo",
+          "postal_code": "19-200",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.6409034,
+          "longitude": 22.4691691
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:1872",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono wariant ze słowem Świętego w nazwie alei Jana Pawła II. Dokładny adres UUG: Aleja Świętego Jana Pawła II 20, 27-200 Starachowice; odległość od proponowanego punktu 21 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "al. Jana Pawła II 20, 27-200 Starachowice",
+          "street_address": "al. Jana Pawła II 20",
+          "street": "al. Jana Pawła II",
+          "house_number": "20",
+          "city": "Starachowice",
+          "postal_code": "27-200",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.0365329,
+          "longitude": 21.0619494
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:1968",
+      "status": "corroborated",
+      "reason": "Potwierdzono wariant al. Armii Krajowej. Dokładny adres GUGiK: al. Armii Krajowej 13, 22-100 Chełm; odległość od proponowanego punktu: 26 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Armii Krajowej 13, 22-100 Chełm",
+          "street_address": "Armii Krajowej 13",
+          "street": "Armii Krajowej",
+          "house_number": "13",
+          "city": "Chełm",
+          "postal_code": "22-100",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.1310661,
+          "longitude": 23.4645126
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:2220",
+      "status": "requires_review",
+      "reason": "Zgodne ID sklepu i punkt Targeo potwierdzają placówkę przy Plater. Targeo podaje numer 9, rejestr nie zwraca dokładnego numeru 9 i jako najbliższy wskazuje 14. Źródła dotyczące ładowarki podają także 6. Nie uzupełniamy numeru z sąsiedniego adresu ani samego katalogu.",
+      "scope": "unresolved_address",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "68-100 Żagań",
+          "street_address": null,
+          "street": null,
+          "house_number": null,
+          "city": "Żagań",
+          "postal_code": "68-100",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.6161937,
+          "longitude": 15.3047183
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:2276",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Rozwinięto Gen. do Generała na potrzeby porównania. Dokładny adres UUG: Generała Władysława Andersa 19, 67-200 Głogów; odległość od proponowanego punktu 28 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Gen. Władysława Andersa 19, 67-200 Głogów",
+          "street_address": "Gen. Władysława Andersa 19",
+          "street": "Gen. Władysława Andersa",
+          "house_number": "19",
+          "city": "Głogów",
+          "postal_code": "67-200",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.6557227,
+          "longitude": 16.0606167
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:2314",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 18 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Jana III Sobieskiego 5, 76-200 Słupsk",
+          "street_address": "Jana III Sobieskiego 5",
+          "street": "Jana III Sobieskiego",
+          "house_number": "5",
+          "city": "Słupsk",
+          "postal_code": "76-200",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.4672046,
+          "longitude": 17.0104788
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:2390",
+      "status": "corroborated",
+      "scope": "location_only_official_address_variant",
+      "reason": "Oficjalna karta i Targeo wskazują Biedronkę przy Lecha Kaczyńskiego 5, 80-374 Gdańsk. Punkty OSM i Targeo różnią się o 10 m. UUG nie zwraca dokładnego numeru 5, a jako najbliższy wskazuje 3. Potwierdzono lokalizację sklepu względem drugiej mapy; nie zmieniono adresu i nie uznano numeru 3 za adres sklepu.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Lecha Kaczyńskiego 5, 80-374 Gdańsk",
+          "street_address": "Lecha Kaczyńskiego 5",
+          "street": "Lecha Kaczyńskiego",
+          "house_number": "5",
+          "city": "Gdańsk",
+          "postal_code": "80-374",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.4164324,
+          "longitude": 18.597031
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:2404",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 4 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "os. Lecha 9F, 66-235 Torzym",
+          "street_address": "os. Lecha 9F",
+          "street": "os. Lecha",
+          "house_number": "9F",
+          "city": "Torzym",
+          "postal_code": "66-235",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.3122122,
+          "longitude": 15.0878166
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:2466",
+      "status": "corroborated",
+      "reason": "Rozwinięto imię Jerzego w nazwie alei wyłącznie na etapie porównania. Dokładny adres GUGiK: aleja Jerzego Szajnowicza-Iwanowa 17, 25-636 Kielce; odległość od proponowanego punktu: 29 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "al. Szajnowicza-Iwanowa 17, 25-636 Kielce",
+          "street_address": "al. Szajnowicza-Iwanowa 17",
+          "street": "al. Szajnowicza-Iwanowa",
+          "house_number": "17",
+          "city": "Kielce",
+          "postal_code": "25-636",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.8809416,
+          "longitude": 20.5827786
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:2698",
+      "status": "requires_review",
+      "reason": "Numer 47 pochodzi z OSM; CityOn powtarza ten sam punkt OSM. UUG nie zwróciło dokładnego adresu Młoszowska 47, a najbliższy punkt rejestrowy to Młoszowska 46 (23 m). Oficjalna strona i starsza lista potwierdzają miejscowość i ulicę bez numeru. Nie zastępujemy 47 numerem 46: najbliższy adres może należeć do innego budynku.",
+      "report_file": "weryfikacja-biedronki/przeglad-siedmiu/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Młoszowska 47, 32-540 Trzebinia",
+          "street_address": "Młoszowska 47",
+          "street": "Młoszowska",
+          "house_number": "47",
+          "city": "Trzebinia",
+          "postal_code": "32-540",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.1568743,
+          "longitude": 19.4813012
+        }
+      },
+      "reviewed_at": "2026-11-02T18:36:35.377Z"
+    },
+    {
+      "id": "biedronka:2782",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Różnica obejmuje prefiks alei i cudzysłów wokół Solidarności. Zapytanie rejestru z typograficznym cudzysłowem zwróciło błąd; poprawne dane uzyskano z zapytania o adres pierwotny. Dokładny adres UUG: Aleja „Solidarności” 115, 00-140 Warszawa; odległość od proponowanego punktu 3 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Al. Solidarności 115, 00-140 Warszawa",
+          "street_address": "Al. Solidarności 115",
+          "street": "Al. Solidarności",
+          "house_number": "115",
+          "city": "Warszawa",
+          "postal_code": "00-140",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.2419502,
+          "longitude": 20.9945227
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:2869",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono wariant Armii Krajowej / Aleje Armii Krajowej / Al. Armii Krajowej. Dokładny adres UUG: Al. Armii Krajowej 20, 97-300 Piotrków Trybunalski; odległość od proponowanego punktu 7 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Armii Krajowej 20, 97-300 Piotrków Trybunalski",
+          "street_address": "Armii Krajowej 20",
+          "street": "Armii Krajowej",
+          "house_number": "20",
+          "city": "Piotrków Trybunalski",
+          "postal_code": "97-300",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.4090094,
+          "longitude": 19.6771393
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:2872",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 30 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "M. Faradaya 21, 42-202 Częstochowa",
+          "street_address": "M. Faradaya 21",
+          "street": "M. Faradaya",
+          "house_number": "21",
+          "city": "Częstochowa",
+          "postal_code": "42-202",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.8109431,
+          "longitude": 19.1411359
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:2982",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 11 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Droszyńskiego 28a, 80-381 Gdańsk",
+          "street_address": "Droszyńskiego 28a",
+          "street": "Droszyńskiego",
+          "house_number": "28a",
+          "city": "Gdańsk",
+          "postal_code": "80-381",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.4103436,
+          "longitude": 18.573008
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:3033",
+      "status": "corroborated",
+      "reason": "Potwierdzono pełną nazwę z imieniem Kazimierza; adres wejściowy zachowano. Dokładny adres GUGiK: płk. Kazimierza Iranka-Osmeckiego 25, 35-506 Rzeszów; odległość od proponowanego punktu: 13 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Pułkownika Iranka-Osmeckiego 25, 35-506 Rzeszów",
+          "street_address": "Pułkownika Iranka-Osmeckiego 25",
+          "street": "Pułkownika Iranka-Osmeckiego",
+          "house_number": "25",
+          "city": "Rzeszów",
+          "postal_code": "35-506",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.0601219,
+          "longitude": 21.985065
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:3102",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 21 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Armii Krajowej 3a, 11-600 Węgorzewo",
+          "street_address": "Armii Krajowej 3a",
+          "street": "Armii Krajowej",
+          "house_number": "3a",
+          "city": "Węgorzewo",
+          "postal_code": "11-600",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.2165475,
+          "longitude": 21.735902
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:3363",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 22 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Topolowa 2, 72-344 Rewal",
+          "street_address": "Topolowa 2",
+          "street": "Topolowa",
+          "house_number": "2",
+          "city": "Rewal",
+          "postal_code": "72-344",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.0796683,
+          "longitude": 15.0327115
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:3370",
+      "status": "corroborated",
+      "reason": "Uzupełniono adres z GUGiK; tożsamość potwierdza dokładne ID strony sklepu w OSM, bliskość pierwotnego punktu oraz zgodny sklep w Targeo. Punkt rejestrowy jest 23 m od pierwotnej lokalizacji.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Dr Piotrowskiego 27, 28-130 Stopnica",
+          "street_address": "Dr Piotrowskiego 27",
+          "street": "Dr Piotrowskiego",
+          "house_number": "27",
+          "city": "Stopnica",
+          "postal_code": "28-130",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.4359437,
+          "longitude": 20.9384134
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:3378",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 19 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Obryte 5b, 07-215 Obryte",
+          "street_address": "Obryte 5b",
+          "street": "Obryte",
+          "house_number": "5b",
+          "city": "Obryte",
+          "postal_code": "07-215",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.7151092,
+          "longitude": 21.2355862
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:3397",
+      "status": "corroborated",
+      "reason": "Zgodne ID strony sklepu w OSM, punkt pierwotny 2 m od środka budynku. UUG potwierdza dokładny adres i kod 37-470, a rejestrowy punkt tego adresu leży 16 m od środka budynku. Targeo potwierdza Biedronkę przy Lubelskiej 39. DW855 pozostaje wyłącznie historyczną błędną wartością pola numeru.",
+      "report_file": "weryfikacja-biedronki/przeglad-siedmiu/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Lubelska 39, 37-470 Zaklików",
+          "street_address": "Lubelska 39",
+          "street": "Lubelska",
+          "house_number": "39",
+          "city": "Zaklików",
+          "postal_code": "37-470",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.7665563,
+          "longitude": 22.1021638
+        }
+      },
+      "reviewed_at": "2026-11-02T18:36:35.377Z"
+    },
+    {
+      "id": "biedronka:3454",
+      "status": "corroborated",
+      "reason": "Rozwinięto skrót Marsz. i wielkość litery numeru 200a/200A przy porównaniu. Dokładny adres GUGiK: Aleja Marszałka Józefa Piłsudskiego 200A, 05-270 Marki; odległość od proponowanego punktu: 27 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Al. Marsz. Józefa Piłsudskiego 200a, 05-270 Marki",
+          "street_address": "Al. Marsz. Józefa Piłsudskiego 200a",
+          "street": "Al. Marsz. Józefa Piłsudskiego",
+          "house_number": "200a",
+          "city": "Marki",
+          "postal_code": "05-270",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.3444754,
+          "longitude": 21.1237507
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:3484",
+      "status": "corroborated",
+      "reason": "Uzupełniono adres z GUGiK; tożsamość potwierdza dokładne ID strony sklepu w OSM, bliskość pierwotnego punktu oraz zgodny sklep w Targeo. Punkt rejestrowy jest 27 m od pierwotnej lokalizacji.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Sapiehy 12, 37-630 Oleszyce",
+          "street_address": "Sapiehy 12",
+          "street": "Sapiehy",
+          "house_number": "12",
+          "city": "Oleszyce",
+          "postal_code": "37-630",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.1671678,
+          "longitude": 23.0495287
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:3513",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 37 m od punktu sklepu. Najbliższy punkt UUG ma numer 72, ale oddzielne zapytanie o dokładny numer 72a potwierdza jego istnienie. Nie podmieniono numeru na najbliższy. Katalog punktów sprzedaży ZYN również podaje Biedronkę przy Kościuszki 72A. Rejestrowy punkt 72A jest blisko budynku, mimo że najbliższym adresem jest 72.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "T. Kościuszki 72a, 37-632 Stary Dzików",
+          "street_address": "T. Kościuszki 72a",
+          "street": "T. Kościuszki",
+          "house_number": "72a",
+          "city": "Stary Dzików",
+          "postal_code": "37-632",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.2438193,
+          "longitude": 22.9338183
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:3572",
+      "status": "corroborated",
+      "reason": "OSM opisuje budynek numerem 13, a oficjalna karta numerem 17. Dokładny punkt GUGiK dla numeru oficjalnego leży 28 m od środka budynku OSM. Zachowujemy numer z oficjalnej karty; przyjmujemy współrzędne po kontroli ID i źródeł. Dokładny adres GUGiK: Morska 17, 82-340 Tolkmicko; odległość od proponowanego punktu: 28 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Morska 17, 82-340 Tolkmicko",
+          "street_address": "Morska 17",
+          "street": "Morska",
+          "house_number": "17",
+          "city": "Tolkmicko",
+          "postal_code": "82-340",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.3191486,
+          "longitude": 19.5225722
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:3601",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono prefiks aleja przy nazwie Ludwika Piechoczka. Dokładny adres UUG: aleja Ludwika Piechoczka 4, 44-335 Jastrzębie-Zdrój; odległość od proponowanego punktu 24 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Ludwika Piechoczka 4, 44-335 Jastrzębie-Zdrój",
+          "street_address": "Ludwika Piechoczka 4",
+          "street": "Ludwika Piechoczka",
+          "house_number": "4",
+          "city": "Jastrzębie-Zdrój",
+          "postal_code": "44-335",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 49.9544753,
+          "longitude": 18.6160868
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:3607",
+      "status": "corroborated",
+      "reason": "Zgodne ID strony sklepu, pierwotny punkt 7 m od budynku. UUG potwierdza Lubelską 73A oraz kod 08-480 (gmina Maciejowice, powiat garwoliński), punkt rejestrowy 24 m od środka budynku. Targeo potwierdza sklep pod tym adresem. Kod 05-090 w oficjalnej stronie sklepu jest sprzeczny z tymi danymi.",
+      "report_file": "weryfikacja-biedronki/przeglad-siedmiu/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Lubelska 73A, 08-480 Maciejowice",
+          "street_address": "Lubelska 73A",
+          "street": "Lubelska",
+          "house_number": "73A",
+          "city": "Maciejowice",
+          "postal_code": "08-480",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.6872293,
+          "longitude": 21.5608028
+        }
+      },
+      "reviewed_at": "2026-11-02T18:36:35.377Z"
+    },
+    {
+      "id": "biedronka:3608",
+      "status": "corroborated",
+      "reason": "Zgodne ID strony sklepu, pierwotny punkt 17 m od środka budynku. UUG potwierdza Kolejową 2A i kod 73-220 (punkt rejestrowy 9 m od środka budynku), Targeo potwierdza sklep. Starsza lista Biedronki opisuje ten sam numer sklepu 6756 jako ulicę Kaliską bez numeru. Dokument gminy widoczny w wyszukiwarce zwrócił teraz 404 i nie służy jako rozstrzygający dowód.",
+      "report_file": "weryfikacja-biedronki/przeglad-siedmiu/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Kolejowa 2A, 73-220 Drawno",
+          "street_address": "Kolejowa 2A",
+          "street": "Kolejowa",
+          "house_number": "2A",
+          "city": "Drawno",
+          "postal_code": "73-220",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.2149085,
+          "longitude": 15.7680778
+        }
+      },
+      "reviewed_at": "2026-11-02T18:36:35.377Z"
+    },
+    {
+      "id": "biedronka:3647",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono rozwinięcie imienia Stanisława w nazwie ulicy księdza Gajeckiego. Dokładny adres UUG: Księdza Stanisława Gajeckiego 19, 37-205 Zarzecze; odległość od proponowanego punktu 7 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Księdza Gajeckiego 19, 37-205 Zarzecze",
+          "street_address": "Księdza Gajeckiego 19",
+          "street": "Księdza Gajeckiego",
+          "house_number": "19",
+          "city": "Zarzecze",
+          "postal_code": "37-205",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 49.98592,
+          "longitude": 22.5449748
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:3668",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 9 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Michałowice 143, 49-314 Michałowice",
+          "street_address": "Michałowice 143",
+          "street": "Michałowice",
+          "house_number": "143",
+          "city": "Michałowice",
+          "postal_code": "49-314",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.885739,
+          "longitude": 17.4789466
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:3711",
+      "status": "corroborated",
+      "reason": "Zgodne ID strony sklepu w OSM, pierwotny punkt 57 m od środka budynku. UUG potwierdza numer 100B w gminie Smyków i kod 26-212; punkt rejestrowy tego adresu leży 13 m od środka budynku. Starsze dokumenty Biedronki mają numer 100, który istnieje w rejestrze jako osobny adres. CityOn powtarza dane OSM i nie jest niezależnym potwierdzeniem.",
+      "report_file": "weryfikacja-biedronki/przeglad-siedmiu/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Królewiec 100B, 26-212 Królewiec",
+          "street_address": "Królewiec 100B",
+          "street": "Królewiec",
+          "house_number": "100B",
+          "city": "Królewiec",
+          "postal_code": "26-212",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.0523626,
+          "longitude": 20.4051968
+        }
+      },
+      "reviewed_at": "2026-11-02T18:36:35.377Z"
+    },
+    {
+      "id": "biedronka:3733",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 14 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Dębowiec 826, 38-220 Dębowiec",
+          "street_address": "Dębowiec 826",
+          "street": "Dębowiec",
+          "house_number": "826",
+          "city": "Dębowiec",
+          "postal_code": "38-220",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 49.6998981,
+          "longitude": 21.4640053
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:3768",
+      "status": "corroborated",
+      "reason": "OSM opisuje budynek numerem 10, a oficjalna karta numerem 8. Dokładny punkt GUGiK dla numeru oficjalnego leży 15 m od środka budynku OSM. Zachowujemy numer z oficjalnej karty; przyjmujemy współrzędne po kontroli ID i źródeł. Dokładny adres GUGiK: Piasecka 8, 21-040 Świdnik; odległość od proponowanego punktu: 15 m. Adres wejściowy zachowano.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Piasecka 8, 21-040 Świdnik",
+          "street_address": "Piasecka 8",
+          "street": "Piasecka",
+          "house_number": "8",
+          "city": "Świdnik",
+          "postal_code": "21-040",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.213343,
+          "longitude": 22.6436979
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:3772",
+      "status": "corroborated",
+      "reason": "Punkt potwierdzają dokładne ID sklepu i Targeo. Kod 17-100 z API zastąpiono kodem 11-700: oficjalna lista Biedronki podaje go przy Wolności 4e, a Targeo potwierdza ten sam adres i kod. Rejestr nie zwraca numeru 4e; nie zastępujemy go sąsiednim numerem 4.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Wolności 4e, 11-700 Mrągowo",
+          "street_address": "Wolności 4e",
+          "street": "Wolności",
+          "house_number": "4e",
+          "city": "Mrągowo",
+          "postal_code": "11-700",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.8791037,
+          "longitude": 21.3081482
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:6953",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 22 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Warszawska 40D, 87-148 Łysomice",
+          "street_address": "Warszawska 40D",
+          "street": "Warszawska",
+          "house_number": "40D",
+          "city": "Łysomice",
+          "postal_code": "87-148",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.0864849,
+          "longitude": 18.6298653
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:6963",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 162 m od punktu sklepu. OSM i Targeo różnią się o 212 m. Oba punkty leżą wewnątrz geometrii Alfa Centrum przy Świętojańskiej 15. Właściciel centrum potwierdza najemcę Biedronka. Potwierdzono właściwą galerię; dokładny lokal i wejście nie zostały potwierdzone. UUG podaje kod 15-082, natomiast Biedronka i zarządca Alfa Centrum podają 15-277. Zachowano kod z tych dwóch źródeł. SIMC w OSM różni się od UUG i nie został użyty jako dowód tożsamości. Najbliższy punkt UUG ma numer 17A, ale oddzielne zapytanie o dokładny numer 15 potwierdza jego istnienie. Nie podmieniono numeru na najbliższy.",
+      "scope": "building_only",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Świętojańska 15, 15-277 Białystok",
+          "street_address": "Świętojańska 15",
+          "street": "Świętojańska",
+          "house_number": "15",
+          "city": "Białystok",
+          "postal_code": "15-277",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.1244503,
+          "longitude": 23.1677737
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:6967",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 27 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Sienkiewicza 94b, 23-100 Bychawa",
+          "street_address": "Sienkiewicza 94b",
+          "street": "Sienkiewicza",
+          "house_number": "94b",
+          "city": "Bychawa",
+          "postal_code": "23-100",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.0044336,
+          "longitude": 22.5550928
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:7026",
+      "status": "corroborated",
+      "reason": "Uzupełniono adres z GUGiK; tożsamość potwierdza dokładne ID strony sklepu w OSM, bliskość pierwotnego punktu oraz zgodny sklep w Targeo. Punkt rejestrowy jest 8 m od pierwotnej lokalizacji.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/propozycje-01/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "1 Maja 48, 27-500 Opatów",
+          "street_address": "1 Maja 48",
+          "street": "1 Maja",
+          "house_number": "48",
+          "city": "Opatów",
+          "postal_code": "27-500",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.8059135,
+          "longitude": 21.4295448
+        }
+      },
+      "reviewed_at": "2026-11-02T19:01:42.669Z"
+    },
+    {
+      "id": "biedronka:7078",
+      "status": "requires_review",
+      "reason": "Nowy punkt OSM jest około 49,1 km od błędnego punktu ogólnopolskiego i tylko około 6 m od punktu sklepu w Targeo. Lokalizacja sklepu jest potwierdzona. Numer adresowy pozostaje sprzeczny: aktualna strona Biedronki i Targeo podają 57, starszy dokument dla numeru sklepu 7027 podaje 57A, a najbliższy punkt rejestru to 57A (37 m). Oba numery istnieją jako osobne punkty adresowe. Nie zmieniamy numeru na podstawie samej bliskości.",
+      "report_file": "weryfikacja-biedronki/przeglad-siedmiu/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Grąbków 57, 62-709 Grąbków",
+          "street_address": "Grąbków 57",
+          "street": "Grąbków",
+          "house_number": "57",
+          "city": "Grąbków",
+          "postal_code": "62-709",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.9597469,
+          "longitude": 18.4099144
+        }
+      },
+      "reviewed_at": "2026-11-02T18:36:35.377Z"
+    },
+    {
+      "id": "biedronka:7092",
+      "status": "corroborated",
+      "reason": "Oficjalna strona potwierdza sklep i adres Rdestowa 160, 81-577 Gdynia. UUG potwierdza adres (punkt rejestrowy 9 m od nowego punktu), Targeo wskazuje sklep około 6 m od nowego punktu. Stary punkt leżał około 286 km dalej, w środkowej Polsce.",
+      "report_file": "weryfikacja-biedronki/przeglad-siedmiu/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Rdestowa 160, 81-577 Gdynia",
+          "street_address": "Rdestowa 160",
+          "street": "Rdestowa",
+          "house_number": "160",
+          "city": "Gdynia",
+          "postal_code": "81-577",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.4615125,
+          "longitude": 18.4504777
+        }
+      },
+      "reviewed_at": "2026-11-02T18:36:35.377Z"
+    },
+    {
+      "id": "biedronka:7333",
+      "status": "corroborated",
+      "scope": "address_and_building",
+      "reason": "Potwierdzono skrót ks. / Księdza; brak kodu w OSM nie zastępuje niezależnej kontroli adresu. Dokładny adres UUG: ks. Jana Hanowskiego 66, 11-042 Jonkowo; odległość od proponowanego punktu 23 m.",
+      "report_file": "weryfikacja-biedronki/propozycje-02/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "ks. Jana Hanowskiego 66, 11-042 Jonkowo",
+          "street_address": "ks. Jana Hanowskiego 66",
+          "street": "ks. Jana Hanowskiego",
+          "house_number": "66",
+          "city": "Jonkowo",
+          "postal_code": "11-042",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.8248467,
+          "longitude": 20.3036945
+        }
+      },
+      "reviewed_at": "2026-11-02T19:11:18.325Z"
+    },
+    {
+      "id": "biedronka:7438",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 27 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Krakowska 75, 26-500 Szydłowiec",
+          "street_address": "Krakowska 75",
+          "street": "Krakowska",
+          "house_number": "75",
+          "city": "Szydłowiec",
+          "postal_code": "26-500",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.2346962,
+          "longitude": 20.8720188
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:7668",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 17 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Spółdzielcza 11, 21-532 Łomazy",
+          "street_address": "Spółdzielcza 11",
+          "street": "Spółdzielcza",
+          "house_number": "11",
+          "city": "Łomazy",
+          "postal_code": "21-532",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.9098601,
+          "longitude": 23.1662404
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    },
+    {
+      "id": "biedronka:7815",
+      "status": "corroborated",
+      "reason": "Oficjalna karta potwierdza sklep i adres. Świeży odczyt OSM zachowuje tagi i położenie. GUGiK potwierdza zgodną miejscowość, ulicę lub numerację miejscowości i numer domu; punkt dokładnego adresu jest 9 m od punktu sklepu.",
+      "scope": "address_and_building",
+      "report_file": "weryfikacja-biedronki/proba-20/raport.json",
+      "expected": {
+        "address": {
+          "formatted": "Nowotarska 9, 34-500 Zakopane",
+          "street_address": "Nowotarska 9",
+          "street": "Nowotarska",
+          "house_number": "9",
+          "city": "Zakopane",
+          "postal_code": "34-500",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 49.2985728,
+          "longitude": 19.9486462
+        }
+      },
+      "reviewed_at": "2026-11-02T18:49:24.927Z"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lancut",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:03.844Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lancut-4a0ac97c.json",
+  "sha256": "343601a88e2cf3f2b6fd236bb003eb2d0fa0b5a6b6d47d45e75eeb8bc28fe1c1",
+  "usable": true,
+  "items": 4
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=goscino",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:02.431Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/goscino-70e83c0d.json",
+  "sha256": "b43469fef9d762bce2cafa1aad83b3a1bec3d0127193e8698f4d41058f2dfea4",
+  "usable": true,
+  "items": 1
+}

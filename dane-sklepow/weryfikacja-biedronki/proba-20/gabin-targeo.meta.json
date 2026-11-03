@@ -1,0 +1,11 @@
+{
+  "key": "gabin-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-al-jana-pawla-ii-4-gabin~10102425/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:43:39.997Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-al-jana-pawla-ii-4-gabin~10102425/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/gabin-targeo.html",
+  "sha256": "b595e518c7da4776fa5f574a910403dfd53034917b821e4829db28f8c84e61d5",
+  "bytes": 41345
+}

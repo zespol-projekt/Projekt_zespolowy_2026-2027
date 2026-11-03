@@ -1,0 +1,11 @@
+{
+  "key": "1242-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,1242",
+  "retrieved_at": "2026-11-02T18:42:05.127Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,1242",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/1242-oficjalna.html",
+  "sha256": "c8a287bfd68ff25aa425c3718173df4a0dea74f5178cea158d95fcfd44f3950d",
+  "bytes": 96940
+}

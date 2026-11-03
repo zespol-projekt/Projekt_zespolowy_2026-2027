@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kryspinow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:55.650Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kryspinow-c64a7a7b.json",
+  "sha256": "402a6901d9bc7323f2ba62ad43471f355735434852e281c1715e392fc92ac451",
+  "usable": true,
+  "items": 2
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pelczyce",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:11.514Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pelczyce-28a33478.json",
+  "sha256": "c0dc374a4a79141ba908170248ac2f5a3c8a1b5a9d9e4fc459139e7f1f94a511",
+  "usable": true,
+  "items": 1
+}

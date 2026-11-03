@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zamosc",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:19.332Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zamosc-9bf11aec.json",
+  "sha256": "01ba255757765d1a1731d6ecd0a4ba2269cbf5b3c123f591fa15a0ab6d3fc1d2",
+  "usable": true,
+  "items": 10
+}

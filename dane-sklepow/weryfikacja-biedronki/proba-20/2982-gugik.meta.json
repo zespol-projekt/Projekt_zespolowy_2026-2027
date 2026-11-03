@@ -1,0 +1,11 @@
+{
+  "key": "2982-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gda%C5%84sk%2C+Leona+Droszy%C5%84skiego+28A&exact_number=1",
+  "retrieved_at": "2026-11-02T18:41:25.408Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gda%C5%84sk%2C+Leona+Droszy%C5%84skiego+28A&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/2982-gugik.json",
+  "sha256": "f3cbf051c342603aaed3532ddd1536db07a10d6dd4710a9a0a0c42f01f8c6e56",
+  "bytes": 576
+}

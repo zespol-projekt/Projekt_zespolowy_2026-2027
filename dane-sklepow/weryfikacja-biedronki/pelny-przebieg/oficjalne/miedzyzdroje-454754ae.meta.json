@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=miedzyzdroje",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:33.268Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/miedzyzdroje-454754ae.json",
+  "sha256": "5c4ee0a822381e72707619026966b7409ec3080dbd5e7767b830fd7e464624b2",
+  "usable": true,
+  "items": 2
+}

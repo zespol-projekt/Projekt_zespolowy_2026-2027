@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lubin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:19.094Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lubin-99c29e1e.json",
+  "sha256": "170f6a344fe80f348b3472e0f6b5bef030722d68cd84af54ac5255387cdee671",
+  "usable": true,
+  "items": 10
+}

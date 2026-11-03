@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gniezno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:56.495Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gniezno-39f1126b.json",
+  "sha256": "33b9346751e42b5629e489a0bfe9ab839b4fda0e90d4b19334e29987ecffc736",
+  "usable": true,
+  "items": 9
+}

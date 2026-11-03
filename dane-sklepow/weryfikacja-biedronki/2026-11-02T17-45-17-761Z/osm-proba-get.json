@@ -1,0 +1,3031 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-02T17:46:11Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 481952141,
+  "lat": 51.2493961,
+  "lon": 22.5132448,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "24",
+    "addr:postcode": "20-701",
+    "addr:street": "Nałęczowska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1396",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 481952147,
+  "lat": 51.2402797,
+  "lon": 22.5710405,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "1",
+    "addr:postcode": "20-106",
+    "addr:street": "Stolarska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,350"
+  }
+},
+{
+  "type": "node",
+  "id": 1013229800,
+  "lat": 51.2644533,
+  "lon": 22.5743882,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:country": "PL",
+    "addr:housenumber": "1",
+    "addr:postcode": "20-143",
+    "addr:street": "Magnoliowa",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 08:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "ref:id": "3651",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1970",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1701569926,
+  "lat": 51.2381834,
+  "lon": 22.5240238,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,478"
+  }
+},
+{
+  "type": "node",
+  "id": 1738391385,
+  "lat": 54.5482148,
+  "lon": 18.5326008,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "ref": "2055",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,417"
+  }
+},
+{
+  "type": "node",
+  "id": 1772035381,
+  "lat": 54.5518908,
+  "lon": 18.5084444,
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:housenumber": "42",
+    "addr:postcode": "81-168",
+    "addr:street": "Rymarska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source": "survey",
+    "website": "https://www.biedronka.pl/pl/shop,id,955"
+  }
+},
+{
+  "type": "node",
+  "id": 1844484137,
+  "lat": 54.5547444,
+  "lon": 18.5230804,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo,Tu 06:00-23:00; Su 08:00-22:00; We-Fr 00:00-23:59; Sa 06:00-23:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source": "knowledge",
+    "website": "https://www.biedronka.pl/pl/shop,id,2159"
+  }
+},
+{
+  "type": "node",
+  "id": 1857509428,
+  "lat": 51.2700034,
+  "lon": 22.5594398,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "1",
+    "addr:postcode": "20-816",
+    "addr:street": "Choiny",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2088",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1888932200,
+  "lat": 51.2556370,
+  "lon": 22.5796671,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "12f",
+    "addr:postcode": "20-128",
+    "addr:street": "Lwowska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 1998847392,
+  "lat": 54.4570176,
+  "lon": 18.5524780,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,553"
+  }
+},
+{
+  "type": "node",
+  "id": 2107063793,
+  "lat": 54.4692831,
+  "lon": 18.4687901,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "check_date": "2026-07-30",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 2133490015,
+  "lat": 54.6024374,
+  "lon": 18.3536503,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1434"
+  }
+},
+{
+  "type": "node",
+  "id": 2217296593,
+  "lat": 51.2325669,
+  "lon": 22.5985246,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "48",
+    "addr:postcode": "20-333",
+    "addr:street": "Pogodna",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,662"
+  }
+},
+{
+  "type": "node",
+  "id": 2339494506,
+  "lat": 54.5480963,
+  "lon": 18.4430938,
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:housenumber": "251",
+    "addr:street": "Chylońska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1654"
+  }
+},
+{
+  "type": "node",
+  "id": 2339644809,
+  "lat": 54.5224728,
+  "lon": 18.5436966,
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:housenumber": "15",
+    "addr:street": "Plac Kaszubski",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,512"
+  }
+},
+{
+  "type": "node",
+  "id": 2339666817,
+  "lat": 54.5181248,
+  "lon": 18.5413800,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Su-We 06:00-22:00; Th-Sa 06:00-23:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,817"
+  }
+},
+{
+  "type": "node",
+  "id": 2344730360,
+  "lat": 54.4048801,
+  "lon": 18.6254803,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "level": "0",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,324"
+  }
+},
+{
+  "type": "node",
+  "id": 2398827834,
+  "lat": 51.2291922,
+  "lon": 22.5149545,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "23",
+    "addr:postcode": "20-535",
+    "addr:street": "Jana Pawła II",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Fr 00:15-23:45; Sa 00:15-23:30",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2238"
+  }
+},
+{
+  "type": "node",
+  "id": 2409475889,
+  "lat": 54.4910864,
+  "lon": 18.5422766,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1101"
+  }
+},
+{
+  "type": "node",
+  "id": 2465844161,
+  "lat": 54.4450078,
+  "lon": 18.5596380,
+  "tags": {
+    "addr:city": "Sopot",
+    "addr:country": "PL",
+    "addr:housenumber": "813a",
+    "addr:street": "Aleja Niepodległości",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,899"
+  }
+},
+{
+  "type": "node",
+  "id": 2593678196,
+  "lat": 51.2003416,
+  "lon": 22.5866534,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "10A",
+    "addr:postcode": "20-391",
+    "addr:street": "Abramowicka",
+    "brand": "Biedronka",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 2593678202,
+  "lat": 51.2338948,
+  "lon": 22.4992421,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "2",
+    "addr:postcode": "20-234",
+    "addr:street": "Hetmańska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1537"
+  }
+},
+{
+  "type": "node",
+  "id": 2593678214,
+  "lat": 51.2769432,
+  "lon": 22.5077709,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "49B",
+    "addr:postcode": "20-810",
+    "addr:street": "Sławinkowska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,869"
+  }
+},
+{
+  "type": "node",
+  "id": 2686796764,
+  "lat": 54.4119539,
+  "lon": 18.6023153,
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:country": "PL",
+    "addr:housenumber": "20",
+    "addr:postcode": "80-365",
+    "addr:street": "Prezydenta Lecha Kaczyńskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "old_addr:street": "Dąbrowszczaków",
+    "opening_hours": "Mo-Fr 07:00-22:00; Su 08:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 2949804651,
+  "lat": 51.2162707,
+  "lon": 22.6994606,
+  "tags": {
+    "addr:city": "Świdnik",
+    "addr:housenumber": "22",
+    "addr:postcode": "21-040",
+    "addr:street": "Kardynała Stefana Wyszyńskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,547"
+  }
+},
+{
+  "type": "node",
+  "id": 3037945501,
+  "lat": 54.5367404,
+  "lon": 18.4886145,
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:housenumber": "12A",
+    "addr:street": "Opata Hackiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-23:00; Su 06:00-23:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2424"
+  }
+},
+{
+  "type": "node",
+  "id": 3072119942,
+  "lat": 54.5407517,
+  "lon": 18.4786997,
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:country": "PL",
+    "addr:housenumber": "42A",
+    "addr:street": "Chylońska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "check_date": "2026-03-07",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 3107939830,
+  "lat": 54.4085342,
+  "lon": 18.5673522,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "check_date": "2025-03-24",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2581"
+  }
+},
+{
+  "type": "node",
+  "id": 3522797040,
+  "lat": 51.2673201,
+  "lon": 22.5712494,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "36b",
+    "addr:postcode": "20-147",
+    "addr:street": "Aleja Spółdzielczości Pracy",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 10:00-21:00; Su 10:00-20:00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,7502",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3632848994,
+  "lat": 54.5814836,
+  "lon": 18.3877687,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1898"
+  }
+},
+{
+  "type": "node",
+  "id": 3753958080,
+  "lat": 51.2227809,
+  "lon": 22.5215329,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2473",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3792520062,
+  "lat": 51.2340028,
+  "lon": 22.5865814,
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "5",
+    "addr:street": "Lotnicza",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Fr 06:00-23:30; Sa 06:00-23:00, Su closed",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2697"
+  }
+},
+{
+  "type": "node",
+  "id": 3811021678,
+  "lat": 51.2550262,
+  "lon": 22.4848723,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2572"
+  }
+},
+{
+  "type": "node",
+  "id": 4039873704,
+  "lat": 54.4126986,
+  "lon": 18.5915819,
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:housenumber": "2 A",
+    "addr:postcode": "80-371",
+    "addr:street": "Jagiellońska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1554"
+  }
+},
+{
+  "type": "node",
+  "id": 4113346011,
+  "lat": 54.5729602,
+  "lon": 18.4182288,
+  "tags": {
+    "addr:city": "Rumia",
+    "addr:housenumber": "132",
+    "addr:postcode": "84-230",
+    "addr:street": "Dębogórska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2615"
+  }
+},
+{
+  "type": "node",
+  "id": 4176503358,
+  "lat": 54.5111073,
+  "lon": 18.5397902,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source": "survey",
+    "website": "https://www.biedronka.pl/pl/shop,id,2701"
+  }
+},
+{
+  "type": "node",
+  "id": 4218758371,
+  "lat": 50.4269113,
+  "lon": 19.3923978,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:pl": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 4316772338,
+  "lat": 54.5624859,
+  "lon": 18.4925578,
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:country": "PL",
+    "addr:housenumber": "24",
+    "addr:street": "Komandora Bolesława Romanowskiego",
+    "brand": "Biedronka",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 4335661689,
+  "lat": 54.4041747,
+  "lon": 18.6010768,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2130"
+  }
+},
+{
+  "type": "node",
+  "id": 4359067080,
+  "lat": 54.5015042,
+  "lon": 18.5140247,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2846"
+  }
+},
+{
+  "type": "node",
+  "id": 5286094196,
+  "lat": 54.4103436,
+  "lon": 18.5730080,
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:housenumber": "28A",
+    "addr:postcode": "80-381",
+    "addr:street": "Leona Droszyńskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "check_date": "2025-11-07",
+    "email": "bok@biedronka.eu",
+    "level": "0",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Fr 06:00-22:00; Sa 06:00-22:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "ref": "5246",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2982"
+  }
+},
+{
+  "type": "node",
+  "id": 5701602321,
+  "lat": 54.6062401,
+  "lon": 18.3469410,
+  "tags": {
+    "addr:city": "Reda",
+    "addr:housenumber": "5",
+    "addr:postcode": "84-240",
+    "addr:street": "Pucka",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-23:30",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,3003"
+  }
+},
+{
+  "type": "node",
+  "id": 6588373687,
+  "lat": 54.4122189,
+  "lon": 18.5865321,
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:housenumber": "24",
+    "addr:postcode": "80-376",
+    "addr:street": "Czerwony Dwór",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-23:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2798"
+  }
+},
+{
+  "type": "node",
+  "id": 7325793308,
+  "lat": 50.4851538,
+  "lon": 19.4143994,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1633"
+  }
+},
+{
+  "type": "node",
+  "id": 8288116827,
+  "lat": 51.2453194,
+  "lon": 22.5569962,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 9204573230,
+  "lat": 54.5027139,
+  "lon": 18.5417665,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "level": "-1",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "start_date": "2019-10-31"
+  }
+},
+{
+  "type": "node",
+  "id": 9424052788,
+  "lat": 54.4194269,
+  "lon": 18.4694767,
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:housenumber": "38",
+    "addr:postcode": "80-299",
+    "addr:street": "Koziorożca",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "check_date": "2024-10-21",
+    "name": "Biedronka",
+    "operator": "Jeronimo",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 9556623298,
+  "lat": 54.5629158,
+  "lon": 18.3907167,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "level": "-1",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2499"
+  }
+},
+{
+  "type": "node",
+  "id": 10575955903,
+  "lat": 51.2473665,
+  "lon": 22.5512822,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "check_date": "2023-05-27",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 05:00-23:30; Su 09:00-20:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 12099723269,
+  "lat": 54.4615125,
+  "lon": 18.4504777,
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:housenumber": "160",
+    "addr:postcode": "81-577",
+    "addr:street": "Rdestowa",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 12619248382,
+  "lat": 54.4317920,
+  "lon": 18.4705912,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-23:00; Su 08:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl"
+  }
+},
+{
+  "type": "node",
+  "id": 12670568141,
+  "lat": 51.2492744,
+  "lon": 22.5524000,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 13046318776,
+  "lat": 53.5509977,
+  "lon": 16.2332690,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 13367121149,
+  "lat": 51.2766733,
+  "lon": 22.5256259,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 13917188979,
+  "lat": 54.4630608,
+  "lon": 18.4574998,
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:housenumber": "57A",
+    "addr:postcode": "81-577",
+    "addr:street": "Rdestowa",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 14216332716,
+  "lat": 54.5715601,
+  "lon": 18.4986448,
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-23:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,963",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 82803637,
+  "center": {
+    "lat": 51.6182808,
+    "lon": 15.3151930
+  },
+  "tags": {
+    "addr:city": "Żagań",
+    "addr:city:simc": "0988661",
+    "addr:housenumber": "4A",
+    "addr:postcode": "68-100",
+    "addr:street": "Włókniarzy",
+    "addr:street:sym_ul": "24540",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "mzagan.e-mapa.net",
+    "source:geometry": "geoportal.gov.pl:BDOT"
+  }
+},
+{
+  "type": "way",
+  "id": 89681274,
+  "center": {
+    "lat": 54.4307530,
+    "lon": 18.4694515
+  },
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:country": "PL",
+    "addr:housenumber": "12",
+    "addr:postcode": "80-299",
+    "addr:street": "Wacława Balcerskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka Outlet",
+    "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-16:00",
+    "shop": "supermarket",
+    "source:addr": "Urząd Miasta Gdańsk",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB"
+  }
+},
+{
+  "type": "way",
+  "id": 101738893,
+  "center": {
+    "lat": 54.4069434,
+    "lon": 18.5905122
+  },
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:country": "PL",
+    "addr:housenumber": "16B",
+    "addr:postcode": "80-399",
+    "addr:street": "Chłopska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:addr": "Urząd Miasta Gdańsk",
+    "website": "https://www.biedronka.pl/pl/shop,id,1541",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 101959792,
+  "center": {
+    "lat": 54.4164324,
+    "lon": 18.5970310
+  },
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:country": "PL",
+    "addr:housenumber": "5",
+    "addr:postcode": "80-374",
+    "addr:street": "Prezydenta Lecha Kaczyńskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "old_addr:street": "Dąbrowszczaków",
+    "opening_hours": "Mo-Sa 06:00-22:00; Su 08:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:addr": "Urząd Miasta Gdańsk",
+    "website": "https://www.biedronka.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 102555177,
+  "center": {
+    "lat": 54.4201405,
+    "lon": 18.5817670
+  },
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:city:simc": "0933016",
+    "addr:country": "PL",
+    "addr:housenumber": "24",
+    "addr:postcode": "80-333",
+    "addr:street": "Pomorska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:pl": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Th 06:00-23:00; Fr 06:00-23:30; Sa 06:00-19:00; Su off",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "ref": "4250",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "website": "https://www.biedronka.pl/pl/shop,id,2143",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 104524694,
+  "center": {
+    "lat": 50.4905923,
+    "lon": 19.4333358
+  },
+  "tags": {
+    "addr:city": "Zawiercie",
+    "addr:housenumber": "33",
+    "addr:postcode": "42-400",
+    "addr:street": "Bohaterów Westerplatte",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "phone": "+48 32 672 3 991",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1339"
+  }
+},
+{
+  "type": "way",
+  "id": 107043549,
+  "center": {
+    "lat": 51.2354185,
+    "lon": 22.5726058
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "8A",
+    "addr:postcode": "20-411",
+    "addr:street": "Wolska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-14:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "EMUiA (emuia.geoportal.gov.pl)",
+    "website": "https://www.biedronka.pl/pl/shop,id,405"
+  }
+},
+{
+  "type": "way",
+  "id": 124171212,
+  "center": {
+    "lat": 54.4324049,
+    "lon": 18.5623378
+  },
+  "tags": {
+    "addr:city": "Sopot",
+    "addr:country": "PL",
+    "addr:housenumber": "691",
+    "addr:postcode": "81-853",
+    "addr:street": "Aleja Niepodległości",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 130013100,
+  "center": {
+    "lat": 54.4700832,
+    "lon": 18.5011965
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:country": "PL",
+    "addr:housenumber": "19",
+    "addr:postcode": "81-587",
+    "addr:street": "Korzenna",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "website": "https://www.biedronka.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 130017666,
+  "center": {
+    "lat": 54.4735305,
+    "lon": 18.4912641
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:country": "PL",
+    "addr:housenumber": "1",
+    "addr:street": "Jarosława Iwaszkiewicza",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:credit_cards": "no",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,471",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 134253638,
+  "center": {
+    "lat": 54.5280887,
+    "lon": 18.5092699
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:country": "PL",
+    "addr:housenumber": "70",
+    "addr:postcode": "81-225",
+    "addr:street": "Morska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 134955765,
+  "center": {
+    "lat": 54.5454222,
+    "lon": 18.4610415
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:country": "PL",
+    "addr:housenumber": "126",
+    "addr:postcode": "81-021",
+    "addr:street": "Chylońska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "website": "https://www.biedronka.pl/pl/shop,id,1118"
+  }
+},
+{
+  "type": "way",
+  "id": 137292059,
+  "center": {
+    "lat": 54.5589524,
+    "lon": 18.5086962
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:housenumber": "4A",
+    "addr:street": "Kapitana Antoniego Ledóchowskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "check_date": "2025-07-29",
+    "email": "bok@biedronka.eu",
+    "internet_access": "no",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 158281267,
+  "center": {
+    "lat": 54.4704881,
+    "lon": 18.5150804
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:housenumber": "304",
+    "addr:postcode": "81-583",
+    "addr:street": "Wzgórze Bernadowo",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source": "survey",
+    "website": "https://www.biedronka.pl/pl/shop,id,925"
+  }
+},
+{
+  "type": "way",
+  "id": 165579177,
+  "center": {
+    "lat": 54.4306727,
+    "lon": 18.4798248
+  },
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:housenumber": "17",
+    "addr:postcode": "80-299",
+    "addr:street": "Osowski Zakątek",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "Urząd Miasta Gdańsk",
+    "website": "https://www.biedronka.pl/pl/shop,id,545"
+  }
+},
+{
+  "type": "way",
+  "id": 167870867,
+  "center": {
+    "lat": 54.5818605,
+    "lon": 18.4934307
+  },
+  "tags": {
+    "addr:city": "Kosakowo",
+    "addr:housenumber": "32",
+    "addr:postcode": "81-198",
+    "addr:street": "Stefana Żeromskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "check_date": "2025-07-29",
+    "email": "bok@biedronka.eu",
+    "internet_access": "no",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Sa 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:addr": "kosakowo.e-mapa.net",
+    "website": "https://www.biedronka.pl/pl/shop,id,963",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 168407702,
+  "center": {
+    "lat": 51.6135337,
+    "lon": 15.3318349
+  },
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:30-22:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 170639839,
+  "center": {
+    "lat": 54.4431991,
+    "lon": 18.4175509
+  },
+  "tags": {
+    "addr:city": "Chwaszczyno",
+    "addr:housenumber": "139",
+    "addr:street": "Oliwska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source": "www.geoportal.gov.pl",
+    "source:addr": "UG Żukowo",
+    "website": "https://www.biedronka.pl/pl/shop,id,7759"
+  }
+},
+{
+  "type": "way",
+  "id": 175995588,
+  "center": {
+    "lat": 51.2535118,
+    "lon": 22.5638213
+  },
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "yes",
+    "check_date": "2022-11-14",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 00:30-23:30; Su off",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,3598"
+  }
+},
+{
+  "type": "way",
+  "id": 176357566,
+  "center": {
+    "lat": 51.2135867,
+    "lon": 22.5502484
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:postcode": "20-471",
+    "addr:street": "Diamentowa",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "website": "https://www.biedronka.pl/pl/shop,id,808"
+  }
+},
+{
+  "type": "way",
+  "id": 180045028,
+  "center": {
+    "lat": 54.5591049,
+    "lon": 18.4233231
+  },
+  "tags": {
+    "addr:city": "Rumia",
+    "addr:housenumber": "76",
+    "addr:postcode": "84-230",
+    "addr:street": "Henryka Dąbrowskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "roof:levels": "0",
+    "roof:shape": "flat",
+    "shop": "supermarket",
+    "source": "Bing",
+    "source:addr": "UGiM Rumia",
+    "website": "https://www.biedronka.pl/pl/shop,id,750"
+  }
+},
+{
+  "type": "way",
+  "id": 180729871,
+  "center": {
+    "lat": 51.2591317,
+    "lon": 22.5713535
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "2",
+    "addr:postcode": "20-095",
+    "addr:street": "Jana Sapiehy",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Fr 06:00-23:30; Sa 06:00-23:00; Su 08:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1478",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 181749276,
+  "center": {
+    "lat": 51.2342827,
+    "lon": 22.5132749
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "4",
+    "addr:postcode": "20-537",
+    "addr:street": "Ruciana",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-22:30",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1059"
+  }
+},
+{
+  "type": "way",
+  "id": 185438588,
+  "center": {
+    "lat": 51.2196699,
+    "lon": 22.5599544
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "2",
+    "addr:street": "Mariana Smoluchowskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "yes",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-23:00",
+    "shop": "supermarket",
+    "source:addr": "EMUiA (emuia.geoportal.gov.pl)"
+  }
+},
+{
+  "type": "way",
+  "id": 198897309,
+  "center": {
+    "lat": 54.4108216,
+    "lon": 18.4848095
+  },
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:housenumber": "11",
+    "addr:postcode": "80-299",
+    "addr:street": "Meteorytowa",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "opening_hours": "08:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "roof:levels": "0",
+    "shop": "supermarket",
+    "source:addr": "Urząd Miasta Gdańsk",
+    "source:building": "BDOT",
+    "website": "https://www.biedronka.pl/pl/shop,id,2070"
+  }
+},
+{
+  "type": "way",
+  "id": 226112274,
+  "center": {
+    "lat": 54.5483668,
+    "lon": 18.5143307
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:country": "PL",
+    "addr:housenumber": "5A",
+    "addr:street": "Admirała Józefa Unruga",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 226590204,
+  "center": {
+    "lat": 51.2666849,
+    "lon": 22.5556118
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "11",
+    "addr:postcode": "20-863",
+    "addr:street": "Górska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "yes",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,165"
+  }
+},
+{
+  "type": "way",
+  "id": 235643646,
+  "center": {
+    "lat": 54.4822590,
+    "lon": 18.4362800
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:housenumber": "67",
+    "addr:postcode": "81-578",
+    "addr:street": "Wiczlińska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "website": "https://www.biedronka.pl/pl/shop,id,1087"
+  }
+},
+{
+  "type": "way",
+  "id": 236904350,
+  "center": {
+    "lat": 50.4874865,
+    "lon": 19.3410783
+  },
+  "tags": {
+    "addr:city": "Poręba",
+    "addr:housenumber": "30",
+    "addr:postcode": "42-480",
+    "addr:street": "Wojska Polskiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source": "geoportal.gov.pl:ortofoto",
+    "source:addr": "mporeba.e-mapa.net",
+    "website": "https://www.biedronka.pl/pl/shop,id,428"
+  }
+},
+{
+  "type": "way",
+  "id": 237478495,
+  "center": {
+    "lat": 54.6033764,
+    "lon": 18.3003883
+  },
+  "tags": {
+    "addr:city": "Wejherowo",
+    "addr:housenumber": "2",
+    "addr:postcode": "84-200",
+    "addr:street": "Elizy Orzeszkowej",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-22:30",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:coins": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard_debit": "yes",
+    "payment:visa": "yes",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1010"
+  }
+},
+{
+  "type": "way",
+  "id": 250319584,
+  "center": {
+    "lat": 54.5694485,
+    "lon": 18.3903664
+  },
+  "tags": {
+    "addr:city": "Rumia",
+    "addr:housename": "Biedronka",
+    "addr:housenumber": "13",
+    "addr:postcode": "84-230",
+    "addr:street": "Starowiejska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "operator:wikidata": "Q857182",
+    "operator:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "website": "https://www.biedronka.pl/pl/shop,id,2280"
+  }
+},
+{
+  "type": "way",
+  "id": 258601519,
+  "center": {
+    "lat": 54.5746073,
+    "lon": 18.3825393
+  },
+  "tags": {
+    "addr:city": "Rumia",
+    "addr:housenumber": "8A",
+    "addr:postcode": "84-230",
+    "addr:street": "Grunwaldzka",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "UGiM Rumia",
+    "source:geometry": "geoportal.gov.pl:ortofoto",
+    "website": "https://www.biedronka.pl/pl/shop,id,2050"
+  }
+},
+{
+  "type": "way",
+  "id": 261450253,
+  "center": {
+    "lat": 54.5924205,
+    "lon": 18.3604655
+  },
+  "tags": {
+    "addr:city": "Reda",
+    "addr:country": "PL",
+    "addr:housename": "Biedronka",
+    "addr:housenumber": "27",
+    "addr:postcode": "84-240",
+    "addr:street": "Obwodowa",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-23:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "website": "https://www.biedronka.pl/pl/shop,id,932"
+  }
+},
+{
+  "type": "way",
+  "id": 261813874,
+  "center": {
+    "lat": 51.2705167,
+    "lon": 22.4910213
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:city:simc": "0954700",
+    "addr:housenumber": "1",
+    "addr:postcode": "20-829",
+    "addr:street": "Główna",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl",
+    "website": "https://www.biedronka.pl/pl/shop,id,1183"
+  }
+},
+{
+  "type": "way",
+  "id": 283131672,
+  "center": {
+    "lat": 54.4916245,
+    "lon": 18.5086655
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:housenumber": "2",
+    "addr:street": "2 Morskiego Pułku Strzelców",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Fr 07:00-21:00; Su 09:00-20:00; Sa 07:00-22:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "website": "https://www.biedronka.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 290920866,
+  "center": {
+    "lat": 51.2262083,
+    "lon": 22.4792085
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "16",
+    "addr:postcode": "20-719",
+    "addr:street": "Gęsia",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 05:00-23:30",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2471"
+  }
+},
+{
+  "type": "way",
+  "id": 291514624,
+  "center": {
+    "lat": 51.2151846,
+    "lon": 22.6931807
+  },
+  "tags": {
+    "addr:city": "Świdnik",
+    "addr:housenumber": "1",
+    "addr:postcode": "21-040",
+    "addr:street": "Stanisława Skarżyńskiego",
+    "building": "retail",
+    "height": "5",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "swidnik.e-mapa.net"
+  }
+},
+{
+  "type": "way",
+  "id": 297348714,
+  "center": {
+    "lat": 54.4022020,
+    "lon": 18.6321931
+  },
+  "tags": {
+    "addr:city": "Gdańsk",
+    "addr:housenumber": "21L",
+    "addr:postcode": "80-518",
+    "addr:street": "Gdańska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 06:00-23:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "website": "https://www.biedronka.pl/pl/shop,id,2270"
+  }
+},
+{
+  "type": "way",
+  "id": 301279563,
+  "center": {
+    "lat": 51.2793872,
+    "lon": 22.6598605
+  },
+  "tags": {
+    "addr:city": "Turka",
+    "addr:housenumber": "2",
+    "addr:postcode": "20-258",
+    "addr:street": "Sosnowa",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "website": "https://www.biedronka.pl/pl/shop,id,2042"
+  }
+},
+{
+  "type": "way",
+  "id": 322498518,
+  "center": {
+    "lat": 51.2405565,
+    "lon": 22.5895675
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "3",
+    "addr:street": "Krzemionki",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "supermarket",
+    "building:levels": "1",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "website": "https://www.biedronka.pl/pl/shop,id,2604"
+  }
+},
+{
+  "type": "way",
+  "id": 331758240,
+  "center": {
+    "lat": 53.5592959,
+    "lon": 16.2311704
+  },
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "yes",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "source": "Starostwo Powiatowe w Drawsku Pomorskim",
+    "website": "https://www.biedronka.pl/pl/shop,id,251"
+  }
+},
+{
+  "type": "way",
+  "id": 359453688,
+  "center": {
+    "lat": 51.2083961,
+    "lon": 22.5712499
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "78",
+    "addr:street": "Zemborzycka",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2365"
+  }
+},
+{
+  "type": "way",
+  "id": 376043536,
+  "center": {
+    "lat": 51.2492199,
+    "lon": 22.5761466
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "2",
+    "addr:postcode": "20-108",
+    "addr:street": "Aleja Unii Lubelskiej",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "indoor": "room",
+    "level": "-2",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 09:00-21:00; Su 09:00-20:00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,2877",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 396748904,
+  "center": {
+    "lat": 51.6160644,
+    "lon": 15.3044622
+  },
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:geometry": "geoportal.gov.pl:ortofoto",
+    "website": "https://www.biedronka.pl/pl/shop,id,2220"
+  }
+},
+{
+  "type": "way",
+  "id": 436052869,
+  "center": {
+    "lat": 51.5541401,
+    "lon": 15.4454987
+  },
+  "tags": {
+    "addr:city": "Małomice",
+    "addr:housenumber": "5",
+    "addr:postcode": "67-320",
+    "addr:street": "Małynicza",
+    "building": "yes",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,3015"
+  }
+},
+{
+  "type": "way",
+  "id": 438163656,
+  "center": {
+    "lat": 54.4996350,
+    "lon": 18.4340192
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:country": "PL",
+    "addr:housenumber": "178A",
+    "addr:street": "Chwarznieńska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "old_addr:housenumber": "178A",
+    "old_addr:street": "Chwarznieńska",
+    "opening_hours": "Mo-Sa 07:00-21:00; Su 09:00-20:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "source:geometry": "EGiB",
+    "website": "https://www.biedronka.pl/pl/shop,id,2723"
+  }
+},
+{
+  "type": "way",
+  "id": 438625206,
+  "center": {
+    "lat": 54.4736456,
+    "lon": 18.3798977
+  },
+  "tags": {
+    "addr:city": "Bojano",
+    "addr:city:simc": "0175120",
+    "addr:housenumber": "18",
+    "addr:postcode": "84-207",
+    "addr:street": "Pogodna",
+    "addr:street:sym_ul": "16900",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-23:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "szemud.e-mapa.net",
+    "website": "https://www.biedronka.pl/pl/shop,id,2516"
+  }
+},
+{
+  "type": "way",
+  "id": 440734788,
+  "center": {
+    "lat": 54.4996941,
+    "lon": 18.4564869
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:housenumber": "91D",
+    "addr:street": "Chwarznieńska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:building": "BDOT",
+    "website": "https://www.biedronka.pl/pl/shop,id,2553"
+  }
+},
+{
+  "type": "way",
+  "id": 482089296,
+  "center": {
+    "lat": 51.2495692,
+    "lon": 22.6011440
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "4A",
+    "addr:postcode": "20-001",
+    "addr:street": "Mełgiewska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "payment:blik": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:diners_club": "yes",
+    "payment:maestro": "yes",
+    "payment:mastercard": "yes",
+    "payment:sodexo": "yes",
+    "payment:v_pay": "yes",
+    "payment:visa": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,1145"
+  }
+},
+{
+  "type": "way",
+  "id": 705838514,
+  "center": {
+    "lat": 51.1986054,
+    "lon": 22.5420356
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "12",
+    "addr:postcode": "20-492",
+    "addr:street": "Jacka Woronieckiego",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "yes",
+    "name": "Biedronka",
+    "name:ru": "Бедронка",
+    "opening_hours": "Mo-Fr 06:00-23:30; Sa 06:00-23:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "shop": "supermarket",
+    "source:addr": "EMUiA (emuia.geoportal.gov.pl)",
+    "website": "https://www.biedronka.pl/pl/shop,id,994"
+  }
+},
+{
+  "type": "way",
+  "id": 782607676,
+  "center": {
+    "lat": 54.4890099,
+    "lon": 18.5299979
+  },
+  "tags": {
+    "addr:city": "Gdynia",
+    "addr:country": "PL",
+    "addr:housenumber": "7A",
+    "addr:postcode": "81-506",
+    "addr:street": "Halicka",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "yes",
+    "name": "Biedronka",
+    "operator": "Bideronka",
+    "payment:cash": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,3511"
+  }
+},
+{
+  "type": "way",
+  "id": 1021486055,
+  "center": {
+    "lat": 54.4514679,
+    "lon": 18.3345514
+  },
+  "tags": {
+    "addr:city": "Kielno",
+    "addr:housenumber": "3",
+    "addr:postcode": "84-208",
+    "addr:street": "Strażacka",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 1032385134,
+  "center": {
+    "lat": 51.2837606,
+    "lon": 22.5701074
+  },
+  "tags": {
+    "brand": "Biedronka",
+    "brand:website": "biedronka.pl",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "indoor": "room",
+    "level": "0",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 08:00-22:00; Jan 25,Mar 29,Apr 26,Jun 28,Aug 30,Dec 06,Dec 13,Dec 20 Su 89:00-22:00",
+    "shop": "supermarket",
+    "start_date": "2021-03-16",
+    "website": "https://www.biedronka.pl/pl/shop,id,3629",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1047118341,
+  "center": {
+    "lat": 50.4291367,
+    "lon": 19.3864942
+  },
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,3383"
+  }
+},
+{
+  "type": "way",
+  "id": 1074047543,
+  "center": {
+    "lat": 51.2133430,
+    "lon": 22.6436979
+  },
+  "tags": {
+    "addr:city": "Świdnik",
+    "addr:housenumber": "10",
+    "addr:postcode": "21-040",
+    "addr:street": "Piasecka",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,3768"
+  }
+},
+{
+  "type": "way",
+  "id": 1194265868,
+  "center": {
+    "lat": 51.2119612,
+    "lon": 22.4535194
+  },
+  "tags": {
+    "addr:city:simc": "0383544",
+    "addr:housenumber": "104E",
+    "addr:place": "Stasin",
+    "addr:postcode": "21-030",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "yes",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 1234705225,
+  "center": {
+    "lat": 50.4855340,
+    "lon": 19.3986879
+  },
+  "tags": {
+    "addr:city": "Zawiercie",
+    "addr:housenumber": "4",
+    "addr:postcode": "42-400",
+    "addr:street": "Jałowcowa",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "yes",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 1301167921,
+  "center": {
+    "lat": 51.2408454,
+    "lon": 22.4488141
+  },
+  "tags": {
+    "addr:city:simc": "0383426",
+    "addr:housenumber": "271",
+    "addr:place": "Konopnica",
+    "addr:postcode": "21-030",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "yes",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 1301335833,
+  "center": {
+    "lat": 51.2054770,
+    "lon": 22.5979580
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "26",
+    "addr:postcode": "20-380",
+    "addr:street": "Głuska",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "name": "Biedronka",
+    "opening_hours": "Mo 06:00-23:00; Tu-Fr 06:00-23:30",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 1313498731,
+  "center": {
+    "lat": 50.4815528,
+    "lon": 19.4409316
+  },
+  "tags": {
+    "addr:housenumber": "47",
+    "addr:street": "Ignacego Jana Paderewskiego",
+    "building": "yes",
+    "name": "Biedronka",
+    "shop": "variety_store"
+  }
+},
+{
+  "type": "way",
+  "id": 1345110184,
+  "center": {
+    "lat": 50.4977208,
+    "lon": 19.4588507
+  },
+  "tags": {
+    "addr:city": "Zawiercie",
+    "addr:housenumber": "49",
+    "addr:postcode": "42-400",
+    "addr:street": "Łośnicka",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "yes",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 1374288304,
+  "center": {
+    "lat": 50.4645215,
+    "lon": 19.4905825
+  },
+  "tags": {
+    "addr:city": "Ogrodzieniec",
+    "addr:city:simc": "0941748",
+    "addr:housenumber": "123D",
+    "addr:postcode": "42-440",
+    "addr:street": "Tadeusza Kościuszki",
+    "building": "retail",
+    "building:levels": "1",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-22:00",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl",
+    "source:building": "EGiB",
+    "website": "https://www.biedronka.pl/pl/sklepy/shop,id,7456"
+  }
+},
+{
+  "type": "way",
+  "id": 1380934349,
+  "center": {
+    "lat": 51.2095333,
+    "lon": 22.6726843
+  },
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "yes",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "website": "https://www.biedronka.pl/pl/shop,id,7816"
+  }
+},
+{
+  "type": "way",
+  "id": 1385328262,
+  "center": {
+    "lat": 51.3157510,
+    "lon": 22.5364607
+  },
+  "tags": {
+    "addr:city": "Jakubowice Konińskie-Kolonia",
+    "addr:city:simc": "0387513",
+    "addr:housenumber": "1",
+    "addr:postcode": "21-003",
+    "addr:street": "Nad Ciemięgą",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "retail",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl",
+    "source:building": "EGiB"
+  }
+},
+{
+  "type": "way",
+  "id": 1387071437,
+  "center": {
+    "lat": 51.2189971,
+    "lon": 22.6397496
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "12",
+    "addr:postcode": "20-282",
+    "addr:street": "Królowej Jadwigi",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "yes",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 1419008579,
+  "center": {
+    "lat": 51.2024939,
+    "lon": 22.5582687
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:city:simc": "0954700",
+    "addr:housenumber": "65",
+    "addr:postcode": "20-445",
+    "addr:street": "Zemborzycka",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "construction",
+    "name": "Biedronka",
+    "shop": "supermarket",
+    "source:addr": "gugik.gov.pl"
+  }
+},
+{
+  "type": "way",
+  "id": 1423264598,
+  "center": {
+    "lat": 51.1890712,
+    "lon": 22.5244350
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "17a",
+    "addr:postcode": "20-518",
+    "addr:street": "Krężnicka",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "building": "supermarket",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 06:00-23:00",
+    "phone": "+48800080010",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 1475011937,
+  "center": {
+    "lat": 54.5975435,
+    "lon": 18.4968265
+  },
+  "tags": {
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "retail",
+    "email": "bok@biedronka.eu",
+    "name": "Biedronka",
+    "opening_hours": "Mo-Sa 07:00-21:00",
+    "operator": "Jeronimo Martins Polska S.A.",
+    "phone": "+48 22 205 33 00",
+    "shop": "supermarket",
+    "source:building": "EGiB"
+  }
+},
+{
+  "type": "way",
+  "id": 1512577864,
+  "center": {
+    "lat": 51.2398762,
+    "lon": 22.4949843
+  },
+  "tags": {
+    "addr:city": "Lublin",
+    "addr:housenumber": "76e",
+    "addr:postcode": "20-712",
+    "addr:street": "Parysa",
+    "brand": "Biedronka",
+    "brand:wikidata": "Q857182",
+    "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+    "building": "supermarket",
+    "name": "Biedronka",
+    "shop": "supermarket"
+  }
+}
+
+  ]
+}

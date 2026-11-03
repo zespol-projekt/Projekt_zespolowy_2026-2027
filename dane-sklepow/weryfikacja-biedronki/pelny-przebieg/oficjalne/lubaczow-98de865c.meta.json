@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lubaczow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:17.448Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lubaczow-98de865c.json",
+  "sha256": "33112d99a87de82be919fc62ced64c41799b0830fe0cfd19c95aaa483a9172ea",
+  "usable": true,
+  "items": 2
+}

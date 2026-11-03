@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zary",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:19.862Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zary-539be4ad.json",
+  "sha256": "a0b5ab46b5d8a8fadd0ade68bd96068c0f671c542f9254877d8ccb9b34d81ccf",
+  "usable": true,
+  "items": 6
+}

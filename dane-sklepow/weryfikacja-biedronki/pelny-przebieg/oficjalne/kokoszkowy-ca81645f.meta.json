@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kokoszkowy",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:37.596Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kokoszkowy-ca81645f.json",
+  "sha256": "f24e48231e3254653d3a7df01b267044c9899843b271ee146191f8bc5714455e",
+  "usable": true,
+  "items": 1
+}

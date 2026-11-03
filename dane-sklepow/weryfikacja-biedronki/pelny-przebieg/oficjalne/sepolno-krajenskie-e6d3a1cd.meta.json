@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sepolno-krajenskie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:59.748Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sepolno-krajenskie-e6d3a1cd.json",
+  "sha256": "f181136e9ed0eb4769766463916ac6b266efc02c043a8f5c09a6598a8a1c8112",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sieciaszka-pierwsza",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:00.394Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sieciaszka-pierwsza-8e7f8f0b.json",
+  "sha256": "4095acfdce4119aa93bb765c68ab2acb43d83369d5023c29729db86bbb94b585",
+  "usable": true,
+  "items": 1
+}

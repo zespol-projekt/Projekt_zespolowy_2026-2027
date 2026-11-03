@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=raciaz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:34.798Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/raciaz-903dcf0a.json",
+  "sha256": "80643d5cb47dd25b3f8fe1c276055342089c9ffcfa6330dbb01aac682183eb93",
+  "usable": true,
+  "items": 2
+}

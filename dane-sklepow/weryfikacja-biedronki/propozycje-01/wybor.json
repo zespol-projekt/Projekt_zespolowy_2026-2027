@@ -1,0 +1,1202 @@
+{
+  "schema_version": 1,
+  "selected_at": "2026-11-02T18:53:17.408Z",
+  "initial_remaining": 170,
+  "baseline_input_fingerprint": "c57e8b7e4ab4c5c3c6dd57649d7d65d87ead9bb8a96b8014119d9c21bdab2d78",
+  "matching_report_sha256": "3953ff298e6ebc6fd2b30558ddd1c29f7fe1e1160e9bc541a8f05f47b516a49e",
+  "method": "Pierwsze 20 propozycji według rankingu, malejąco; remisy według ID. Ranking porządkuje pracę i nie jest prawdopodobieństwem.",
+  "selected": [
+    {
+      "id": "biedronka:1400",
+      "store": {
+        "id": "biedronka:1400",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "św. M. Kolbego 58, 85-433 Bydgoszcz",
+          "street_address": "św. M. Kolbego 58",
+          "street": "św. M. Kolbego",
+          "house_number": "58",
+          "city": "Bydgoszcz",
+          "postal_code": "85-433",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1400",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1400",
+          "id_kind": "ref",
+          "feature_id": "KOudYajNbVAmIXkc_cGiSyNYGS4=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 3603,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bydgoszcz",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/144883963",
+          "location": {
+            "latitude": 53.1589408,
+            "longitude": 17.912213
+          },
+          "address": {
+            "city": "Bydgoszcz",
+            "street": "Świętego Maksymiliana Kolbego",
+            "house_number": "58",
+            "postal_code": "85-435"
+          },
+          "reason": "official_store_id",
+          "score": 1,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:2220",
+      "store": {
+        "id": "biedronka:2220",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "68-100 Żagań",
+          "street_address": null,
+          "street": null,
+          "house_number": null,
+          "city": "Żagań",
+          "postal_code": "68-100",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.6161937,
+          "longitude": 15.3047183
+        },
+        "website": "https://www.biedronka.pl/pl/shop,id,2220",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "2220",
+          "id_kind": "ref",
+          "feature_id": "1WaSVoZdv3hrL_QvE9IqrZR1rys=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 74,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zagan",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_street_address",
+              "message": "Brak ulicy lub pełnego adresu sklepu."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/396748904",
+          "location": {
+            "latitude": 51.6160644,
+            "longitude": 15.3044622
+          },
+          "address": {
+            "city": null,
+            "street": null,
+            "house_number": null,
+            "postal_code": null
+          },
+          "reason": "official_store_id",
+          "score": 1,
+          "distance_from_original_m": 23
+        }
+      ]
+    },
+    {
+      "id": "biedronka:3370",
+      "store": {
+        "id": "biedronka:3370",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "28-130 Stopnica",
+          "street_address": null,
+          "street": null,
+          "house_number": null,
+          "city": "Stopnica",
+          "postal_code": "28-130",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.4359437,
+          "longitude": 20.9384134
+        },
+        "website": "https://www.biedronka.pl/pl/shop,id,3370",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "3370",
+          "id_kind": "ref",
+          "feature_id": "ZXhbaymJtlh1u6uo4v44vkOdxkE=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1000,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stopnica",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_street_address",
+              "message": "Brak ulicy lub pełnego adresu sklepu."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/702098752",
+          "location": {
+            "latitude": 50.435721,
+            "longitude": 20.9383652
+          },
+          "address": {
+            "city": null,
+            "street": "Doktora Jana Piotrowskiego",
+            "house_number": null,
+            "postal_code": null
+          },
+          "reason": "official_store_id",
+          "score": 1,
+          "distance_from_original_m": 25
+        }
+      ]
+    },
+    {
+      "id": "biedronka:3484",
+      "store": {
+        "id": "biedronka:3484",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "37-630 Oleszyce",
+          "street_address": null,
+          "street": null,
+          "house_number": null,
+          "city": "Oleszyce",
+          "postal_code": "37-630",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.1671678,
+          "longitude": 23.0495287
+        },
+        "website": "https://www.biedronka.pl/pl/shop,id,3484",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "3484",
+          "id_kind": "ref",
+          "feature_id": "rrBDJO-_skUN4PBgCuhndZGN0zQ=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1878,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=oleszyce",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_street_address",
+              "message": "Brak ulicy lub pełnego adresu sklepu."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/778842815",
+          "location": {
+            "latitude": 50.167192,
+            "longitude": 23.0497211
+          },
+          "address": {
+            "city": null,
+            "street": null,
+            "house_number": null,
+            "postal_code": null
+          },
+          "reason": "official_store_id",
+          "score": 1,
+          "distance_from_original_m": 14
+        }
+      ]
+    },
+    {
+      "id": "biedronka:3572",
+      "store": {
+        "id": "biedronka:3572",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Morska 17, 82-340 Tolkmicko",
+          "street_address": "Morska 17",
+          "street": "Morska",
+          "house_number": "17",
+          "city": "Tolkmicko",
+          "postal_code": "82-340",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,3572",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "3572",
+          "id_kind": "ref",
+          "feature_id": "XyliMduGZSCtohz2UM7IFhlZU5c=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 740,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=tolkmicko",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/1029157057",
+          "location": {
+            "latitude": 54.3191486,
+            "longitude": 19.5225722
+          },
+          "address": {
+            "city": "Tolkmicko",
+            "street": "Morska",
+            "house_number": "13",
+            "postal_code": "82-340"
+          },
+          "reason": "official_store_id",
+          "score": 1,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:3768",
+      "store": {
+        "id": "biedronka:3768",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Piasecka 8, 21-040 Świdnik",
+          "street_address": "Piasecka 8",
+          "street": "Piasecka",
+          "house_number": "8",
+          "city": "Świdnik",
+          "postal_code": "21-040",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,3768",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "3768",
+          "id_kind": "ref",
+          "feature_id": "KQYGzyWj-LRHE3XOtOjc_X0o268=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 823,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=swidnik",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/1074047543",
+          "location": {
+            "latitude": 51.213343,
+            "longitude": 22.6436979
+          },
+          "address": {
+            "city": "Świdnik",
+            "street": "Piasecka",
+            "house_number": "10",
+            "postal_code": "21-040"
+          },
+          "reason": "official_store_id",
+          "score": 1,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:3772",
+      "store": {
+        "id": "biedronka:3772",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Wolności 4e, 17-100 Mrągowo",
+          "street_address": "Wolności 4e",
+          "street": "Wolności",
+          "house_number": "4e",
+          "city": "Mrągowo",
+          "postal_code": "17-100",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,3772",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "3772",
+          "id_kind": "ref",
+          "feature_id": "iM-NdJjGGjfkJDvLMobaYJd8TQg=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 2026,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mragowo",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/node/10016978767",
+          "location": {
+            "latitude": 53.8791037,
+            "longitude": 21.3081482
+          },
+          "address": {
+            "city": null,
+            "street": null,
+            "house_number": null,
+            "postal_code": null
+          },
+          "reason": "official_store_id",
+          "score": 1,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:7026",
+      "store": {
+        "id": "biedronka:7026",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "27-500 Opatów",
+          "street_address": null,
+          "street": null,
+          "house_number": null,
+          "city": "Opatów",
+          "postal_code": "27-500",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.8059135,
+          "longitude": 21.4295448
+        },
+        "website": "https://www.biedronka.pl/pl/shop,id,7026",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "7026",
+          "id_kind": "ref",
+          "feature_id": "q2H4LxY9DM8TOOqz89ll1VjJqE4=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1834,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=opatow",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_street_address",
+              "message": "Brak ulicy lub pełnego adresu sklepu."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/1153973134",
+          "location": {
+            "latitude": 50.8057145,
+            "longitude": 21.4293484
+          },
+          "address": {
+            "city": null,
+            "street": null,
+            "house_number": null,
+            "postal_code": null
+          },
+          "reason": "official_store_id",
+          "score": 1,
+          "distance_from_original_m": 26
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1573",
+      "store": {
+        "id": "biedronka:1573",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Marii Curie-Skłodowskiej 45, 32-300 Olkusz",
+          "street_address": "Marii Curie-Skłodowskiej 45",
+          "street": "Marii Curie-Skłodowskiej",
+          "house_number": "45",
+          "city": "Olkusz",
+          "postal_code": "32-300",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1573",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1573",
+          "id_kind": "ref",
+          "feature_id": "yV2K7avfCaAaxLMFvTEjc4Ss_wM=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1867,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=olkusz",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/133633782",
+          "location": {
+            "latitude": 50.2707047,
+            "longitude": 19.5736016
+          },
+          "address": {
+            "city": "Olkusz",
+            "street": "Marii Skłodowskiej-Curie",
+            "house_number": "45",
+            "postal_code": "32-300"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.85,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1838",
+      "store": {
+        "id": "biedronka:1838",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Pułku Strzelców Konnych 8, 19-200 Grajewo",
+          "street_address": "Pułku Strzelców Konnych 8",
+          "street": "Pułku Strzelców Konnych",
+          "house_number": "8",
+          "city": "Grajewo",
+          "postal_code": "19-200",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1838",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1838",
+          "id_kind": "ref",
+          "feature_id": "UMy8Bh1ZQt4x4vDIa86FeKYQ9pE=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 3049,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=grajewo",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/213910638",
+          "location": {
+            "latitude": 53.6409034,
+            "longitude": 22.4691691
+          },
+          "address": {
+            "city": "Grajewo",
+            "street": "9 Pułku Strzelców Konnych",
+            "house_number": "8",
+            "postal_code": "19-200"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.762,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:2466",
+      "store": {
+        "id": "biedronka:2466",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "al. Szajnowicza-Iwanowa 17, 25-636 Kielce",
+          "street_address": "al. Szajnowicza-Iwanowa 17",
+          "street": "al. Szajnowicza-Iwanowa",
+          "house_number": "17",
+          "city": "Kielce",
+          "postal_code": "25-636",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,2466",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "2466",
+          "id_kind": "ref",
+          "feature_id": "YUalP009ZspVqoAgyljHdes8NwQ=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 2754,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kielce",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/node/3402713690",
+          "location": {
+            "latitude": 50.8809416,
+            "longitude": 20.5827786
+          },
+          "address": {
+            "city": "Kielce",
+            "street": "Aleja Jerzego Szajnowicza-Iwanowa",
+            "house_number": "17",
+            "postal_code": "25-636"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.762,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:3033",
+      "store": {
+        "id": "biedronka:3033",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Pułkownika Iranka-Osmeckiego 25, 35-506 Rzeszów",
+          "street_address": "Pułkownika Iranka-Osmeckiego 25",
+          "street": "Pułkownika Iranka-Osmeckiego",
+          "house_number": "25",
+          "city": "Rzeszów",
+          "postal_code": "35-506",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,3033",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "3033",
+          "id_kind": "ref",
+          "feature_id": "Q2EELFgxINEBuPaBNd1LD8m-tNE=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1249,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rzeszow",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/225026413",
+          "location": {
+            "latitude": 50.0601219,
+            "longitude": 21.985065
+          },
+          "address": {
+            "city": "Rzeszów",
+            "street": "Pułkownika Kazimierza Iranka-Osmeckiego",
+            "house_number": "25",
+            "postal_code": null
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.762,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:3454",
+      "store": {
+        "id": "biedronka:3454",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Al. Marsz. Józefa Piłsudskiego 200a, 05-270 Marki",
+          "street_address": "Al. Marsz. Józefa Piłsudskiego 200a",
+          "street": "Al. Marsz. Józefa Piłsudskiego",
+          "house_number": "200a",
+          "city": "Marki",
+          "postal_code": "05-270",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,3454",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "3454",
+          "id_kind": "ref",
+          "feature_id": "Ux2Cff0asulNoJff1DRv2ylL9RI=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 2140,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=marki",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/node/4351698767",
+          "location": {
+            "latitude": 52.3444754,
+            "longitude": 21.1237507
+          },
+          "address": {
+            "city": "Marki",
+            "street": "Aleja Marszałka Józefa Piłsudskiego",
+            "house_number": "200A",
+            "postal_code": "05-270"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.762,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1203",
+      "store": {
+        "id": "biedronka:1203",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Wojska Polskiego 11, 05-800 Pruszków",
+          "street_address": "Wojska Polskiego 11",
+          "street": "Wojska Polskiego",
+          "house_number": "11",
+          "city": "Pruszków",
+          "postal_code": "05-800",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1203",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1203",
+          "id_kind": "ref",
+          "feature_id": "c1x2auhf-X5Hi5ApMPSaTz8SbV8=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1493,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pruszkow",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/node/1137307512",
+          "location": {
+            "latitude": 52.166093,
+            "longitude": 20.8065846
+          },
+          "address": {
+            "city": "Pruszków",
+            "street": "Aleja Wojska Polskiego",
+            "house_number": "11",
+            "postal_code": "05-800"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1216",
+      "store": {
+        "id": "biedronka:1216",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "al. J. Piłsudskiego 102, 05-070 Sulejówek",
+          "street_address": "al. J. Piłsudskiego 102",
+          "street": "al. J. Piłsudskiego",
+          "house_number": "102",
+          "city": "Sulejówek",
+          "postal_code": "05-070",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1216",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1216",
+          "id_kind": "ref",
+          "feature_id": "roAinoaWKBiOYpWHqB0C1olkXaE=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 960,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sulejowek",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/441519780",
+          "location": {
+            "latitude": 52.2363035,
+            "longitude": 21.2548445
+          },
+          "address": {
+            "city": null,
+            "street": "Aleja Józefa Piłsudskiego",
+            "house_number": "102",
+            "postal_code": "05-070"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1649",
+      "store": {
+        "id": "biedronka:1649",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Jana III Sobieskiego 22, 19-230 Szczuczyn",
+          "street_address": "Jana III Sobieskiego 22",
+          "street": "Jana III Sobieskiego",
+          "house_number": "22",
+          "city": "Szczuczyn",
+          "postal_code": "19-230",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1649",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1649",
+          "id_kind": "ref",
+          "feature_id": "U5TzIT0SlB0MQGNXZzwpUIA-UvU=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 874,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=szczuczyn",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/node/12787533835",
+          "location": {
+            "latitude": 53.5600516,
+            "longitude": 22.2879638
+          },
+          "address": {
+            "city": "Szczuczyn",
+            "street": "Jana Sobieskiego",
+            "house_number": "22",
+            "postal_code": "19-230"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1666",
+      "store": {
+        "id": "biedronka:1666",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Planty Kowalskiego 1, 41-709 Ruda Śląska",
+          "street_address": "Planty Kowalskiego 1",
+          "street": "Planty Kowalskiego",
+          "house_number": "1",
+          "city": "Ruda Śląska",
+          "postal_code": "41-709",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1666",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1666",
+          "id_kind": "ref",
+          "feature_id": "PHvF0VbsYmBV4rauHp8Pw-WLE6w=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1323,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ruda-slaska",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/167066584",
+          "location": {
+            "latitude": 50.2892054,
+            "longitude": 18.8757226
+          },
+          "address": {
+            "city": "Ruda Śląska",
+            "street": "Planty Antoniego Kowalskiego",
+            "house_number": "1",
+            "postal_code": "41-709"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1782",
+      "store": {
+        "id": "biedronka:1782",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Armii Krajowej 3, 27-300 Lipsko",
+          "street_address": "Armii Krajowej 3",
+          "street": "Armii Krajowej",
+          "house_number": "3",
+          "city": "Lipsko",
+          "postal_code": "27-300",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1782",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1782",
+          "id_kind": "ref",
+          "feature_id": "LqUoInnJwn-ap1I3_C6MunnQVpo=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 2386,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lipsko",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/235209443",
+          "location": {
+            "latitude": 51.1547885,
+            "longitude": 21.65385
+          },
+          "address": {
+            "city": "Lipsko",
+            "street": "Aleja Armii Krajowej",
+            "house_number": "3",
+            "postal_code": "27-300"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1825",
+      "store": {
+        "id": "biedronka:1825",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "600-lecia 40, 96-500 Sochaczew",
+          "street_address": "600-lecia 40",
+          "street": "600-lecia",
+          "house_number": "40",
+          "city": "Sochaczew",
+          "postal_code": "96-500",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1825",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1825",
+          "id_kind": "ref",
+          "feature_id": "v30M6fZCXrHLqRnmt9jF0VFSxCM=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1103,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sochaczew",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/203263680",
+          "location": {
+            "latitude": 52.2335009,
+            "longitude": 20.2477466
+          },
+          "address": {
+            "city": "Sochaczew",
+            "street": "Aleja 600-lecia",
+            "house_number": "40",
+            "postal_code": "96-500"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1968",
+      "store": {
+        "id": "biedronka:1968",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Armii Krajowej 13, 22-100 Chełm",
+          "street_address": "Armii Krajowej 13",
+          "street": "Armii Krajowej",
+          "house_number": "13",
+          "city": "Chełm",
+          "postal_code": "22-100",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1968",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1968",
+          "id_kind": "ref",
+          "feature_id": "DZ0a6SIZe4NSJkRlSM1jVT2f3RU=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 3533,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=chelm",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/301048060",
+          "location": {
+            "latitude": 51.1310661,
+            "longitude": 23.4645126
+          },
+          "address": {
+            "city": "Chełm",
+            "street": "Aleja Armii Krajowej",
+            "house_number": "13",
+            "postal_code": "22-100"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=radlow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:37.551Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/radlow-56c8ca44.json",
+  "sha256": "efee1cddb74272b49fa72ef8fbfb5ebb27243399df8f9dc770df6474ff20f913",
+  "usable": true,
+  "items": 2
+}

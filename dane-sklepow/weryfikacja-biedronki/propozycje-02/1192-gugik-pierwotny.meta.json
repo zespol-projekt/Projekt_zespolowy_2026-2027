@@ -1,0 +1,11 @@
+{
+  "key": "1192-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Otwock%2C+Batorego+32&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:00.185Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Otwock%2C+Batorego+32&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1192-gugik-pierwotny.json",
+  "sha256": "34626fed8edec177a50b0d0280af0e6d87ec62745bc8086795d9ddb97f924ff9",
+  "bytes": 598
+}

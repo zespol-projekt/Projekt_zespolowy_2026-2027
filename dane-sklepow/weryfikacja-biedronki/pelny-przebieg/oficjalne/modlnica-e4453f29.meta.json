@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=modlnica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:39.246Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/modlnica-e4453f29.json",
+  "sha256": "e78c51ec0981fd859ccc1b581160f2774d66d25ccc30dbfc43e1837f913f42f8",
+  "usable": true,
+  "items": 1
+}

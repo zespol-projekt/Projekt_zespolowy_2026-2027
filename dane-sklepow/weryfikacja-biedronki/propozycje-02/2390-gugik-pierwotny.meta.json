@@ -1,0 +1,11 @@
+{
+  "key": "2390-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gda%C5%84sk%2C+Lecha+Kaczy%C5%84skiego+5&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:25.618Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gda%C5%84sk%2C+Lecha+Kaczy%C5%84skiego+5&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/2390-gugik-pierwotny.json",
+  "sha256": "5021e3a4f9ec5ff9d486ea06119fd5886303b3cd15af951d2fa99bc173b9a0bc",
+  "bytes": 1034
+}

@@ -1,0 +1,11 @@
+{
+  "key": "1400-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/144883963/full.json",
+  "retrieved_at": "2026-11-02T18:53:19.109Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/144883963/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-01/1400-osm.json",
+  "sha256": "3e1e0ff61440cb6ab6ef468057029f7ab40079ab87f7351198123ee663818d3f",
+  "bytes": 3635
+}

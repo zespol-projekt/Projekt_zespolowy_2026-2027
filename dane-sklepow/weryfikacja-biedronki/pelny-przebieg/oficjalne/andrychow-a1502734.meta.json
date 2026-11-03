@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=andrychow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:53.924Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/andrychow-a1502734.json",
+  "sha256": "de42fa0ef5d246882d7f3fb2536b462ceb34970dcbc6814a41842d9073fde9f8",
+  "usable": true,
+  "items": 2
+}

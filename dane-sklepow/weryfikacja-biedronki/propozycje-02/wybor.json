@@ -1,0 +1,1190 @@
+{
+  "schema_version": 1,
+  "selected_at": "2026-11-02T19:05:17.955Z",
+  "initial_remaining": 150,
+  "baseline_input_fingerprint": "c57e8b7e4ab4c5c3c6dd57649d7d65d87ead9bb8a96b8014119d9c21bdab2d78",
+  "matching_report_sha256": "3953ff298e6ebc6fd2b30558ddd1c29f7fe1e1160e9bc541a8f05f47b516a49e",
+  "method": "Pierwsze 20 jeszcze nieprzejrzanych propozycji według rankingu, malejąco; remisy według ID. Ranking porządkuje pracę i nie jest prawdopodobieństwem.",
+  "selected": [
+    {
+      "id": "biedronka:2276",
+      "store": {
+        "id": "biedronka:2276",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Gen. Władysława Andersa 19, 67-200 Głogów",
+          "street_address": "Gen. Władysława Andersa 19",
+          "street": "Gen. Władysława Andersa",
+          "house_number": "19",
+          "city": "Głogów",
+          "postal_code": "67-200",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,2276",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "2276",
+          "id_kind": "ref",
+          "feature_id": "LwmowU9ISFvTW9UhWMR-IgiUZRU=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 3142,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=glogow",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/368770292",
+          "location": {
+            "latitude": 51.6557227,
+            "longitude": 16.0606167
+          },
+          "address": {
+            "city": "Głogów",
+            "street": "Generała Władysława Andersa",
+            "house_number": "19",
+            "postal_code": "67-200"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:2390",
+      "store": {
+        "id": "biedronka:2390",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Lecha Kaczyńskiego 5, 80-374 Gdańsk",
+          "street_address": "Lecha Kaczyńskiego 5",
+          "street": "Lecha Kaczyńskiego",
+          "house_number": "5",
+          "city": "Gdańsk",
+          "postal_code": "80-374",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,2390",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "2390",
+          "id_kind": "ref",
+          "feature_id": "Mw2XMAjMspSWd_haZelwvyiHfc0=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 3241,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gdansk",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/101959792",
+          "location": {
+            "latitude": 54.4164324,
+            "longitude": 18.597031
+          },
+          "address": {
+            "city": "Gdańsk",
+            "street": "Prezydenta Lecha Kaczyńskiego",
+            "house_number": "5",
+            "postal_code": "80-374"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:2782",
+      "store": {
+        "id": "biedronka:2782",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Al. Solidarności 115, 00-140 Warszawa",
+          "street_address": "Al. Solidarności 115",
+          "street": "Al. Solidarności",
+          "house_number": "115",
+          "city": "Warszawa",
+          "postal_code": "00-140",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,2782",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "2782",
+          "id_kind": "ref",
+          "feature_id": "Rh3pfek8Il2FlQJiZ8RTETCyMOA=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 440,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/node/4574038921",
+          "location": {
+            "latitude": 52.2419502,
+            "longitude": 20.9945227
+          },
+          "address": {
+            "city": "Warszawa",
+            "street": "Aleja „Solidarności”",
+            "house_number": "115",
+            "postal_code": null
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:2869",
+      "store": {
+        "id": "biedronka:2869",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Armii Krajowej 20, 97-300 Piotrków Trybunalski",
+          "street_address": "Armii Krajowej 20",
+          "street": "Armii Krajowej",
+          "house_number": "20",
+          "city": "Piotrków Trybunalski",
+          "postal_code": "97-300",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,2869",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "2869",
+          "id_kind": "ref",
+          "feature_id": "YX8b9uxCu3hQbPX2KViD22pU7jA=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1652,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=piotrkow-trybunalski",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/610874787",
+          "location": {
+            "latitude": 51.4090094,
+            "longitude": 19.6771393
+          },
+          "address": {
+            "city": "Piotrków Trybunalski",
+            "street": "Aleje Armii Krajowej",
+            "house_number": "20",
+            "postal_code": "97-300"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:3601",
+      "store": {
+        "id": "biedronka:3601",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Ludwika Piechoczka 4, 44-335 Jastrzębie-Zdrój",
+          "street_address": "Ludwika Piechoczka 4",
+          "street": "Ludwika Piechoczka",
+          "house_number": "4",
+          "city": "Jastrzębie-Zdrój",
+          "postal_code": "44-335",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,3601",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "3601",
+          "id_kind": "ref",
+          "feature_id": "Zuzj5L-SNVAOV7wvXdWD9-dOfGg=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 2911,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jastrzebie-zdroj",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/1072694723",
+          "location": {
+            "latitude": 49.9544753,
+            "longitude": 18.6160868
+          },
+          "address": {
+            "city": "Jastrzębie-Zdrój",
+            "street": "Aleja Ludwika Piechoczka",
+            "house_number": "4",
+            "postal_code": "44-335"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:3647",
+      "store": {
+        "id": "biedronka:3647",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Księdza Gajeckiego 19, 37-205 Zarzecze",
+          "street_address": "Księdza Gajeckiego 19",
+          "street": "Księdza Gajeckiego",
+          "house_number": "19",
+          "city": "Zarzecze",
+          "postal_code": "37-205",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,3647",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "3647",
+          "id_kind": "ref",
+          "feature_id": "tXDJyhFIYbTB9myG4pdLp4OxQ24=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 169,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zarzecze",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/1082272339",
+          "location": {
+            "latitude": 49.98592,
+            "longitude": 22.5449748
+          },
+          "address": {
+            "city": "Zarzecze",
+            "street": "Księdza Stanisława Gajeckiego",
+            "house_number": "19",
+            "postal_code": "37-205"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:7333",
+      "store": {
+        "id": "biedronka:7333",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "ks. Jana Hanowskiego 66, 11-042 Jonkowo",
+          "street_address": "ks. Jana Hanowskiego 66",
+          "street": "ks. Jana Hanowskiego",
+          "house_number": "66",
+          "city": "Jonkowo",
+          "postal_code": "11-042",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,7333",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "7333",
+          "id_kind": "ref",
+          "feature_id": "HebKna5b0C00Jdyv2GS_3M4A8vM=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 2863,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jonkowo",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/1327065948",
+          "location": {
+            "latitude": 53.8248467,
+            "longitude": 20.3036945
+          },
+          "address": {
+            "city": "Jonkowo",
+            "street": "Księdza Jana Hanowskiego",
+            "house_number": "66",
+            "postal_code": null
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.733,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1872",
+      "store": {
+        "id": "biedronka:1872",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "al. Jana Pawła II 20, 27-200 Starachowice",
+          "street_address": "al. Jana Pawła II 20",
+          "street": "al. Jana Pawła II",
+          "house_number": "20",
+          "city": "Starachowice",
+          "postal_code": "27-200",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1872",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1872",
+          "id_kind": "ref",
+          "feature_id": "Sr4rw6p4PtyN8QY--SmXychkTw0=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1039,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=starachowice",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/261499557",
+          "location": {
+            "latitude": 51.0365329,
+            "longitude": 21.0619494
+          },
+          "address": {
+            "city": "Starachowice",
+            "street": "Aleja Świętego Jana Pawła II",
+            "house_number": "20",
+            "postal_code": "27-200"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.71,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1164",
+      "store": {
+        "id": "biedronka:1164",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Marcellego Bacciarellego 56, 51-649 Wrocław",
+          "street_address": "Marcellego Bacciarellego 56",
+          "street": "Marcellego Bacciarellego",
+          "house_number": "56",
+          "city": "Wrocław",
+          "postal_code": "51-649",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1164",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1164",
+          "id_kind": "ref",
+          "feature_id": "PFOKlPKoFDMxSGGN2j7KxfAYdJ4=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 272,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wroclaw",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/node/12148540411",
+          "location": {
+            "latitude": 51.1023339,
+            "longitude": 17.1177399
+          },
+          "address": {
+            "city": "Wrocław",
+            "street": "Marcelego Bacciarellego",
+            "house_number": "56",
+            "postal_code": "51-649"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1192",
+      "store": {
+        "id": "biedronka:1192",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Batorego 32, 05-400 Otwock",
+          "street_address": "Batorego 32",
+          "street": "Batorego",
+          "house_number": "32",
+          "city": "Otwock",
+          "postal_code": "05-400",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1192",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1192",
+          "id_kind": "ref",
+          "feature_id": "W98CUkVAi_m9CamqK2cS49W8bA4=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1743,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=otwock",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/132576387",
+          "location": {
+            "latitude": 52.0999089,
+            "longitude": 21.2545276
+          },
+          "address": {
+            "city": "Otwock",
+            "street": "Stefana Batorego",
+            "house_number": "32",
+            "postal_code": "05-400"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1226",
+      "store": {
+        "id": "biedronka:1226",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Korotyńskiego 23, 02-123 Warszawa",
+          "street_address": "Korotyńskiego 23",
+          "street": "Korotyńskiego",
+          "house_number": "23",
+          "city": "Warszawa",
+          "postal_code": "02-123",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1226",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1226",
+          "id_kind": "ref",
+          "feature_id": "6czbOwJ7QoTZ3c2lcPzfALK7_zk=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 511,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/node/1493537025",
+          "location": {
+            "latitude": 52.2035953,
+            "longitude": 20.9646146
+          },
+          "address": {
+            "city": "Warszawa",
+            "street": "Władysława Korotyńskiego",
+            "house_number": "23",
+            "postal_code": "02-123"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1328",
+      "store": {
+        "id": "biedronka:1328",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Szymanowskiego 27a, 68-200 Żary",
+          "street_address": "Szymanowskiego 27a",
+          "street": "Szymanowskiego",
+          "house_number": "27a",
+          "city": "Żary",
+          "postal_code": "68-200",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1328",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1328",
+          "id_kind": "ref",
+          "feature_id": "mnEZIiR-NwHu0Omj4cIeJQBo1HY=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 68,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zary",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/node/5611475917",
+          "location": {
+            "latitude": 51.6429917,
+            "longitude": 15.1263489
+          },
+          "address": {
+            "city": "Żary",
+            "street": "Karola Szymanowskiego",
+            "house_number": "27A",
+            "postal_code": "68-200"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1344",
+      "store": {
+        "id": "biedronka:1344",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Porębskiego 8, 80-180 Gdańsk",
+          "street_address": "Porębskiego 8",
+          "street": "Porębskiego",
+          "house_number": "8",
+          "city": "Gdańsk",
+          "postal_code": "80-180",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1344",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1344",
+          "id_kind": "ref",
+          "feature_id": "ZbW-U_9Hb5Z-s11x02U4SyMV6xo=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 3253,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gdansk",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/111648825",
+          "location": {
+            "latitude": 54.3190715,
+            "longitude": 18.582426
+          },
+          "address": {
+            "city": "Gdańsk",
+            "street": "Kazimierza Porębskiego",
+            "house_number": "8",
+            "postal_code": "80-180"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1371",
+      "store": {
+        "id": "biedronka:1371",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Chałubińskiego 27, 80-807 Gdańsk",
+          "street_address": "Chałubińskiego 27",
+          "street": "Chałubińskiego",
+          "house_number": "27",
+          "city": "Gdańsk",
+          "postal_code": "80-807",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1371",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1371",
+          "id_kind": "ref",
+          "feature_id": "wPHY-8Q7SDwiAhBuGGeSx8B-FgQ=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 3214,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gdansk",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/105308553",
+          "location": {
+            "latitude": 54.340827,
+            "longitude": 18.6192515
+          },
+          "address": {
+            "city": "Gdańsk",
+            "street": "Tytusa Chałubińskiego",
+            "house_number": "27",
+            "postal_code": "80-807"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1387",
+      "store": {
+        "id": "biedronka:1387",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Jagiełły 1, 11-400 Kętrzyn",
+          "street_address": "Jagiełły 1",
+          "street": "Jagiełły",
+          "house_number": "1",
+          "city": "Kętrzyn",
+          "postal_code": "11-400",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1387",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1387",
+          "id_kind": "ref",
+          "feature_id": "ClzS-H6fa0mY8Zd7Tv4-qWt3UWM=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 2772,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ketrzyn",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/174998647",
+          "location": {
+            "latitude": 54.0847824,
+            "longitude": 21.3724044
+          },
+          "address": {
+            "city": "Kętrzyn",
+            "street": "Władysława Jagiełły",
+            "house_number": "1",
+            "postal_code": null
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1444",
+      "store": {
+        "id": "biedronka:1444",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Witosa 4, 44-190 Knurów",
+          "street_address": "Witosa 4",
+          "street": "Witosa",
+          "house_number": "4",
+          "city": "Knurów",
+          "postal_code": "44-190",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1444",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1444",
+          "id_kind": "ref",
+          "feature_id": "QxVDNDqmN_iYIW7cK67gUrV5gII=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 2722,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=knurow",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/152329236",
+          "location": {
+            "latitude": 50.2368496,
+            "longitude": 18.6586714
+          },
+          "address": {
+            "city": "Knurów",
+            "street": "Wincentego Witosa",
+            "house_number": "4",
+            "postal_code": null
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1449",
+      "store": {
+        "id": "biedronka:1449",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Sienkiewicza 53, 07-412 Ostrołęka",
+          "street_address": "Sienkiewicza 53",
+          "street": "Sienkiewicza",
+          "house_number": "53",
+          "city": "Ostrołęka",
+          "postal_code": "07-412",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1449",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1449",
+          "id_kind": "ref",
+          "feature_id": "b5AMkwMA6EPFLYSYNTtc9HWxJrg=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1793,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ostroleka",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/114995405",
+          "location": {
+            "latitude": 53.0736297,
+            "longitude": 21.5641501
+          },
+          "address": {
+            "city": "Ostrołęka",
+            "street": "Henryka Sienkiewicza",
+            "house_number": "53",
+            "postal_code": null
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1459",
+      "store": {
+        "id": "biedronka:1459",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Grota Roweckiego 18a, 95-200 Pabianice",
+          "street_address": "Grota Roweckiego 18a",
+          "street": "Grota Roweckiego",
+          "house_number": "18a",
+          "city": "Pabianice",
+          "postal_code": "95-200",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1459",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1459",
+          "id_kind": "ref",
+          "feature_id": "eaJ6NkvKGGDKWPgBibIUJgJEpD4=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 1732,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pabianice",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/140237132",
+          "location": {
+            "latitude": 51.6570322,
+            "longitude": 19.3703695
+          },
+          "address": {
+            "city": "Pabianice",
+            "street": "Generała Stefana \"Grota\" Roweckiego",
+            "house_number": "18A",
+            "postal_code": null
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1503",
+      "store": {
+        "id": "biedronka:1503",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Konopnickiej 2, 85-124 Bydgoszcz",
+          "street_address": "Konopnickiej 2",
+          "street": "Konopnickiej",
+          "house_number": "2",
+          "city": "Bydgoszcz",
+          "postal_code": "85-124",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1503",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1503",
+          "id_kind": "ref",
+          "feature_id": "1QeBVtCUKyxZ0T8iqbZSdg-HA80=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 3588,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bydgoszcz",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/node/589805243",
+          "location": {
+            "latitude": 53.1117481,
+            "longitude": 18.0074684
+          },
+          "address": {
+            "city": "Bydgoszcz",
+            "street": "Marii Konopnickiej",
+            "house_number": "2",
+            "postal_code": null
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    },
+    {
+      "id": "biedronka:1520",
+      "store": {
+        "id": "biedronka:1520",
+        "chain": "biedronka",
+        "name": "Biedronka",
+        "brand": "Biedronka",
+        "store_format": "supermarket",
+        "address": {
+          "formatted": "Os. Wybickiego 3b, 83-300 Kartuzy",
+          "street_address": "Os. Wybickiego 3b",
+          "street": "Os. Wybickiego",
+          "house_number": "3b",
+          "city": "Kartuzy",
+          "postal_code": "83-300",
+          "country": "PL"
+        },
+        "location": null,
+        "website": "https://www.biedronka.pl/pl/shop,id,1520",
+        "source": {
+          "provider": "alltheplaces",
+          "store_id": "1520",
+          "id_kind": "ref",
+          "feature_id": "7AT8dw9RtaqUxHXNvcEyqQAGtts=",
+          "dataset_file": "surowe/biedronka_pl.geojson",
+          "feature_index": 2819,
+          "dataset_url": "https://data.alltheplaces.xyz/runs/latest/output/biedronka_pl.geojson",
+          "original_url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kartuzy",
+          "collected_at": "2026-10-25T01:43:12.935156"
+        },
+        "quality": {
+          "status": "needs_review",
+          "issues": [
+            {
+              "code": "missing_geometry",
+              "message": "Brak współrzędnych w źródle."
+            }
+          ]
+        }
+      },
+      "suggestions": [
+        {
+          "osm_url": "https://www.openstreetmap.org/way/364636085",
+          "location": {
+            "latitude": 54.3262535,
+            "longitude": 18.1957607
+          },
+          "address": {
+            "city": "Kartuzy",
+            "street": "Osiedle Generała Józefa Wybickiego",
+            "house_number": "3b",
+            "postal_code": "83-300"
+          },
+          "reason": "similar_street_same_number_locality",
+          "score": 0.675,
+          "distance_from_original_m": null
+        }
+      ]
+    }
+  ]
+}

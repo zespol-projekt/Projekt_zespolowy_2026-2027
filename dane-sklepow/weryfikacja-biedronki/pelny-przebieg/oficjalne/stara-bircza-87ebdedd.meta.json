@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stara-bircza",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:18.248Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/stara-bircza-87ebdedd.json",
+  "sha256": "a47a2dc81f1db62781d25804c25574367b304630ba3b481794b1ae7cbb38070f",
+  "usable": true,
+  "items": 1
+}

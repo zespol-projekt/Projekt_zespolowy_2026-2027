@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pawlow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:10.454Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pawlow-e2f0fe75.json",
+  "sha256": "fabd4d2c0182945be65c4ff414894cb15980e06d9d945887829d5c80099de3be",
+  "usable": true,
+  "items": 1
+}

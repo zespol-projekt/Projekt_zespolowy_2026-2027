@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=szydlowiec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:40.579Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/szydlowiec-5b7b8035.json",
+  "sha256": "d734fa719a3a4fac3ec5a3ec24b9090950a9bd765b5fc65e1674d578ec060d8b",
+  "usable": true,
+  "items": 2
+}

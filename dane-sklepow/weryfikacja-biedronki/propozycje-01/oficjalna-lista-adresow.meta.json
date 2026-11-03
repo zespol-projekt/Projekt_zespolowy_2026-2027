@@ -1,0 +1,11 @@
+{
+  "key": "oficjalna-lista-adresow",
+  "url": "https://cdn.biedronka.pl/__2024/T29A/lista_sklepow/Lista_sklepow_obslugujacych_usluge.pdf",
+  "retrieved_at": "2026-11-02T18:55:24.220Z",
+  "status": 200,
+  "final_url": "https://cdn.biedronka.pl/__2024/T29A/lista_sklepow/Lista_sklepow_obslugujacych_usluge.pdf",
+  "content_type": "application/pdf",
+  "file": "weryfikacja-biedronki/propozycje-01/oficjalna-lista-adresow.pdf",
+  "sha256": "d3c1b13ef16d88c8133aef1851178a76b0d7934e37e63dfb673f3ac31a01d055",
+  "bytes": 919949
+}

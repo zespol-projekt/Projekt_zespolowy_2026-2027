@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=konstancin-jeziorna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:43.522Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/konstancin-jeziorna-e04f24b8.json",
+  "sha256": "59417b62fcc8a809bb5b45454c1c47a7d7f0e56bf4aff540b19252b069ff529f",
+  "usable": true,
+  "items": 2
+}

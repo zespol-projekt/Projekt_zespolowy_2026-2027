@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=swarzedz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:31.870Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/swarzedz-8a53c5f8.json",
+  "sha256": "34471df102ce119ebece07bebcc3edc9626dc3fc2d215b1985998a203c6a235f",
+  "usable": true,
+  "items": 3
+}

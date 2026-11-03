@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=malkinia-gorna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:26.165Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/malkinia-gorna-59577abb.json",
+  "sha256": "cd066a299d23f001d4250a35901d8d070a78ae70ac8e9098f807b35a901ad465",
+  "usable": true,
+  "items": 1
+}

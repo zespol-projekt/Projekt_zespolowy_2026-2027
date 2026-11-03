@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pinczow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:15.801Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pinczow-5ee7a9c1.json",
+  "sha256": "ac128b6ef468372c1d710de3309fa9b4da7fa6135f65f49f44fe03a4cbfc4968",
+  "usable": true,
+  "items": 2
+}

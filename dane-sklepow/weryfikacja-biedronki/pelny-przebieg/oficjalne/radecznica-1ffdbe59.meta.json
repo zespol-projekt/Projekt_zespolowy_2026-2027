@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=radecznica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:35.854Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/radecznica-1ffdbe59.json",
+  "sha256": "f622e14bb72335d853b3db3d1474e815b54668013df13470471ea80bfa590e19",
+  "usable": true,
+  "items": 1
+}

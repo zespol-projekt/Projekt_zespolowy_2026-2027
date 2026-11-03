@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=osieczna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:03.737Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/osieczna-2c21e0a4.json",
+  "sha256": "6e8df96f70359fdd232e8975deca077d606e721b11b2a599c6b9e680f9d44b7d",
+  "usable": true,
+  "items": 1
+}

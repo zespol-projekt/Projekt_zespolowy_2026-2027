@@ -1,0 +1,11 @@
+{
+  "key": "2220-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,2220",
+  "retrieved_at": "2026-11-02T18:53:22.413Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,2220",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-01/2220-oficjalna.html",
+  "sha256": "5714e81b944c2c54b479aacb526a5280d59ebd7670a1edfa93847c5c086e41a2",
+  "bytes": 96810
+}

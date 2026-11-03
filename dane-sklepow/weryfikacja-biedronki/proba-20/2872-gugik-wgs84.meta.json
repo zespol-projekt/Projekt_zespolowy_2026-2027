@@ -1,0 +1,11 @@
+{
+  "key": "2872-gugik-wgs84",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Cz%C4%99stochowa%2C+Micha%C5%82a+Faradaya+21&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:46:47.561Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Cz%C4%99stochowa%2C+Micha%C5%82a+Faradaya+21&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/2872-gugik-wgs84.json",
+  "sha256": "d463758e2e0427fa9a02b319ad661340dd53d00714f985661363d7d48e3728d8",
+  "bytes": 1075
+}

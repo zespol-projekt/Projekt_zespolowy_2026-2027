@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ryman",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:51.690Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ryman-7773c2f8.json",
+  "sha256": "93d5787f1de3c55e0b9160f40a928fdc0d30738509e0b0e033fbdca99b3c0bdb",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kurzetnik",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:58.919Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kurzetnik-ebf8f8df.json",
+  "sha256": "74ac03307e2fa90321402529dc70699e55c08c4041c77b8f90190f2fabd81f79",
+  "usable": true,
+  "items": 1
+}

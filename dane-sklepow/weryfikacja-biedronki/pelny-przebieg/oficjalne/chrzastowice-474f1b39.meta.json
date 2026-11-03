@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=chrzastowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:24.621Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/chrzastowice-474f1b39.json",
+  "sha256": "a7896e1ab309fe7785dab678f5478964f55c2b01f68b69abad784d35c650008e",
+  "usable": true,
+  "items": 1
+}

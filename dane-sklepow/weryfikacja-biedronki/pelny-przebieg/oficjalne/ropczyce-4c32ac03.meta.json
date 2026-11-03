@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ropczyce",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:47.826Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ropczyce-4c32ac03.json",
+  "sha256": "304fcd068ccae9ed71f03565d8a3eb4bca6d454145aa6546c51219547f4bbd21",
+  "usable": true,
+  "items": 3
+}

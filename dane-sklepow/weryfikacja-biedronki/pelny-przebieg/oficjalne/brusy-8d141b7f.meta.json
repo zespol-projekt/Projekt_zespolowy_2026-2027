@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=brusy",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:12.566Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/brusy-8d141b7f.json",
+  "sha256": "d528c4596c31be55de491c0046a3b08ca11f81f0ed68459d9e1888a039b7516b",
+  "usable": true,
+  "items": 2
+}

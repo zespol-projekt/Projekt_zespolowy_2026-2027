@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jadow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:14.488Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jadow-7ad00d8d.json",
+  "sha256": "dbde6080a24b9319c9480250e266a346d8d8dbc9f7ef0316d4c6e3fc8358cee9",
+  "usable": true,
+  "items": 1
+}

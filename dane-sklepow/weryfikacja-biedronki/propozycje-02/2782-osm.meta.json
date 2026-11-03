@@ -1,0 +1,11 @@
+{
+  "key": "2782-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/node/4574038921.json",
+  "retrieved_at": "2026-11-02T19:05:28.453Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/node/4574038921.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-02/2782-osm.json",
+  "sha256": "f3e034eed5413436f91607afa01afa82f741fa01a2108abf4650f1a67ca201fb",
+  "bytes": 894
+}

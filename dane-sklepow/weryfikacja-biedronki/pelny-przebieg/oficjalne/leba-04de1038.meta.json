@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=leba",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:07.583Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/leba-04de1038.json",
+  "sha256": "6d4ea0095b631b69029510aa22151a205f1c9217b7187b2aa88fc314067039ec",
+  "usable": true,
+  "items": 1
+}

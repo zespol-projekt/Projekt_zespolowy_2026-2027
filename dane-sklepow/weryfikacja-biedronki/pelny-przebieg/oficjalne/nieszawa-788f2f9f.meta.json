@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nieszawa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:48.392Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/nieszawa-788f2f9f.json",
+  "sha256": "fbe09a14a2c37a5398832b23847ee0c17eccd8e00ed8db98769c84d9050433d8",
+  "usable": true,
+  "items": 1
+}

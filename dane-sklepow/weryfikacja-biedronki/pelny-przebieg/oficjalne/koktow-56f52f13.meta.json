@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=koktow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:38.117Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/koktow-56f52f13.json",
+  "sha256": "2c012f45b904fbc5036e14db3aa6cdaf0541855b9dc876636c5b5c79f85f3610",
+  "usable": true,
+  "items": 1
+}

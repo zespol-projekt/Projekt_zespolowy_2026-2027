@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zawidow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:22.046Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zawidow-01951f6d.json",
+  "sha256": "641f0591f130163453035a56982f76652d9068ad4642b234cfd4a30e8019e4d1",
+  "usable": true,
+  "items": 1
+}

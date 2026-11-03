@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lowicz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:16.919Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lowicz-b83dd0f0.json",
+  "sha256": "2113f2599e81d22ffbbbe0fcf5ef52b4482c7d131adb436bfb27154ee5f004fd",
+  "usable": true,
+  "items": 4
+}

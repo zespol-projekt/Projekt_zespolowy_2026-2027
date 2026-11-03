@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=micha%C5%82owice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:30.523Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/micha-owice-c09fb251.json",
+  "sha256": "0f0c0917c7475ee4cae7702badace84369bc2aee6925e2deed9fda48390356a3",
+  "usable": true,
+  "items": 3
+}

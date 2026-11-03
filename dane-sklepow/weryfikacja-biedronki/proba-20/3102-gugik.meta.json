@@ -1,0 +1,11 @@
+{
+  "key": "3102-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=W%C4%99gorzewo%2C+Armii+Krajowej+3A&exact_number=1",
+  "retrieved_at": "2026-11-02T18:42:03.512Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=W%C4%99gorzewo%2C+Armii+Krajowej+3A&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/3102-gugik.json",
+  "sha256": "a860c90cb7645858e29f66403b830ba1bb42f615bcaf78b6e432798b760a2de1",
+  "bytes": 590
+}

@@ -1,0 +1,1 @@
+[out:json][timeout:50];(nwr["shop"]["brand"="Biedronka"](48.9,14,55,24.3);nwr["shop"]["name"="Biedronka"](48.9,14,55,24.3););out center tags;

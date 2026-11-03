@@ -1,0 +1,11 @@
+{
+  "key": "1838-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/213910638/full.json",
+  "retrieved_at": "2026-11-02T18:53:47.180Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/213910638/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-01/1838-osm.json",
+  "sha256": "d18d9c9b85f34c551a0f749eeaa9a6a1a341c8f375fb00f0cede997ff1a27a15",
+  "bytes": 1665
+}

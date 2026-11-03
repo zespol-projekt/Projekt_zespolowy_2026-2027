@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=opoczno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:02.099Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/opoczno-d1ac4e70.json",
+  "sha256": "be01eae9551e7c301c2b64f538c046dafe9e6b2f2d9125367941beced8bdeba0",
+  "usable": true,
+  "items": 3
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nysa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:53.318Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/nysa-69fc941f.json",
+  "sha256": "482ed813df1a78e4a40b95fb034f3ea505f010374e38ebc1de1b75f051640818",
+  "usable": true,
+  "items": 6
+}

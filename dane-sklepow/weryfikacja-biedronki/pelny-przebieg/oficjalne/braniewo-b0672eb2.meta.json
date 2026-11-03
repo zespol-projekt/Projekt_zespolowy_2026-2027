@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=braniewo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:10.967Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/braniewo-b0672eb2.json",
+  "sha256": "48f62af8af576f72f39dee9d191dbdbbbbed493dcc88577f91340d7e60927f07",
+  "usable": true,
+  "items": 3
+}

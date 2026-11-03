@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=szczuczyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:38.379Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/szczuczyn-9086d941.json",
+  "sha256": "fdf4a0a05186183f3ab54e6badddb06c64c1900bc6ba2e1d202878e511caeb3f",
+  "usable": true,
+  "items": 1
+}

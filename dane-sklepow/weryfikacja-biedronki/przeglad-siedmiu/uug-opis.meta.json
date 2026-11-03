@@ -1,0 +1,11 @@
+{
+  "key": "uug-opis",
+  "url": "https://services.gugik.gov.pl/uug/opis.html",
+  "retrieved_at": "2026-11-02T18:33:03.784Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/opis.html",
+  "content_type": "text/html",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/uug-opis.html",
+  "sha256": "dcf948180be64f1f11c4c828b2e0ce1ddf10176441694fc2c31bbd31ae242860",
+  "bytes": 29568
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gliwice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:52.665Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gliwice-98ad0b18.json",
+  "sha256": "baf7854077b2be80b124040c19868f9b35762c09ee39565e150353b5f52ec9bf",
+  "usable": true,
+  "items": 21
+}

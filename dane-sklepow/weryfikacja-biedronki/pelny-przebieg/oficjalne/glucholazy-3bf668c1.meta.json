@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=glucholazy",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:55.971Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/glucholazy-3bf668c1.json",
+  "sha256": "b6145f758270af375723f6d5553086ed05e76c34523b9707ddc1805fa873b8b6",
+  "usable": true,
+  "items": 2
+}

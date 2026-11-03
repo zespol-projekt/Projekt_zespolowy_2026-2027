@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lysomice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:22.899Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lysomice-d5e82d47.json",
+  "sha256": "910a3978edf67e4b7b2a5ba95ab58956742ed42c7efc8c456bb02ba3270ba329",
+  "usable": true,
+  "items": 1
+}

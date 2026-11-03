@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=piotrkow-trybunalski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:17.437Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/piotrkow-trybunalski-7b43fc28.json",
+  "sha256": "7fbe54d4ce7fbdb8e3587f9786f25f132d8b1dbdb67233ae82114b39874e511b",
+  "usable": true,
+  "items": 10
+}

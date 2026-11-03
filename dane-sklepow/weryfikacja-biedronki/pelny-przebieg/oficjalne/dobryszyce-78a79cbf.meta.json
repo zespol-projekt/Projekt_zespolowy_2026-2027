@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dobryszyce",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:42.156Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/dobryszyce-78a79cbf.json",
+  "sha256": "831265f8fc915d68176ad21e590c49f31c7c77b38ecacfdf027b9eebd9202410",
+  "usable": true,
+  "items": 1
+}

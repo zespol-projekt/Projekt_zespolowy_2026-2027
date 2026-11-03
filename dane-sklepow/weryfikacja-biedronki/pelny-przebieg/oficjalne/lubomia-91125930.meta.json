@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lubomia",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:20.186Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lubomia-91125930.json",
+  "sha256": "ced518a37b36280e3a4cda6ba6a75ca639693ea059f70c96ca547f72872d2fd6",
+  "usable": true,
+  "items": 1
+}

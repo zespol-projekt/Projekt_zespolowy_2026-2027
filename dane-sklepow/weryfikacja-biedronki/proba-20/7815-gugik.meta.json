@@ -1,0 +1,11 @@
+{
+  "key": "7815-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zakopane%2C+Nowotarska+9&exact_number=1",
+  "retrieved_at": "2026-11-02T18:41:48.175Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zakopane%2C+Nowotarska+9&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/7815-gugik.json",
+  "sha256": "5753dd0b23213ee8a1a33b00915d8d3b08b2eab956f253317040ffa590503cdb",
+  "bytes": 566
+}

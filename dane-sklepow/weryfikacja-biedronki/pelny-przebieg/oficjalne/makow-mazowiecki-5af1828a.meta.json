@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=makow-mazowiecki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:24.580Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/makow-mazowiecki-5af1828a.json",
+  "sha256": "6e1735c099e48d0076dc423af0d5b38402646fd6d472290ec49b0baf798a35de",
+  "usable": true,
+  "items": 2
+}

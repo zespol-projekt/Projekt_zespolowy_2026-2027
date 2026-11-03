@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jastrzebie-zdroj",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:18.322Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jastrzebie-zdroj-9050f592.json",
+  "sha256": "2fba35d7329941a004729f81e8ac243461ec59b26e5736450f6b7c7f7046d130",
+  "usable": true,
+  "items": 11
+}

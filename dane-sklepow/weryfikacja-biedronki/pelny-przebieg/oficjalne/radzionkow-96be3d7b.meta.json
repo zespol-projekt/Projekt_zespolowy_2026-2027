@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=radzionkow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:40.818Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/radzionkow-96be3d7b.json",
+  "sha256": "1edb6711217e89585a549aee0488620b6410ab4e2b8e2507190a03dcb802fecf",
+  "usable": true,
+  "items": 3
+}

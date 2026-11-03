@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=suchy-dab",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:28.075Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/suchy-dab-6de10465.json",
+  "sha256": "824e80bde1c1b45404372805d18f341f1a99b7fa534a6abcfd5528924b9f9ef7",
+  "usable": true,
+  "items": 1
+}

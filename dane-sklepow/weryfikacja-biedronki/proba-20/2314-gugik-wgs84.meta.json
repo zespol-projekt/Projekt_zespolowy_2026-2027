@@ -1,0 +1,11 @@
+{
+  "key": "2314-gugik-wgs84",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=S%C5%82upsk%2C+Jana+III+Sobieskiego+5&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:47:02.421Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=S%C5%82upsk%2C+Jana+III+Sobieskiego+5&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/2314-gugik-wgs84.json",
+  "sha256": "5bc6f084322119d8faf69d30e251793b206c8a6a25390b587b820323cf611022",
+  "bytes": 1038
+}

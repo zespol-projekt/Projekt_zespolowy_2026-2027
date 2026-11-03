@@ -1,0 +1,11 @@
+{
+  "key": "3601-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jastrz%C4%99bie-Zdr%C3%B3j%2C+Ludwika+Piechoczka+4&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:38.104Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jastrz%C4%99bie-Zdr%C3%B3j%2C+Ludwika+Piechoczka+4&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/3601-gugik-pierwotny.json",
+  "sha256": "a5dc489c8d7e103f451ff77196104e505fd96dbef2b27c260de5b0911c54ed9d",
+  "bytes": 665
+}

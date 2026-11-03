@@ -1,0 +1,11 @@
+{
+  "key": "1444-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Knur%C3%B3w%2C+Wincentego+Witosa+4&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:27.911Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Knur%C3%B3w%2C+Wincentego+Witosa+4&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1444-gugik-osm.json",
+  "sha256": "45b212f6e7a04fe0cbbdeb1c2039844f38024fd1ecac460e1133c055f3ceba02",
+  "bytes": 599
+}

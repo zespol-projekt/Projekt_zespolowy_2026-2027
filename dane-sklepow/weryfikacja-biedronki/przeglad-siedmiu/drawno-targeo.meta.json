@@ -1,0 +1,11 @@
+{
+  "key": "drawno-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-kolejowa-2a-73-220-drawno~23072541/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:33:02.435Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-kolejowa-2a-73-220-drawno~23072541/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/drawno-targeo.html",
+  "sha256": "607d3da366df05f74024962f6ea503ae1f0b4a4fe30d0c6b56b90fdf1bd4255e",
+  "bytes": 36906
+}

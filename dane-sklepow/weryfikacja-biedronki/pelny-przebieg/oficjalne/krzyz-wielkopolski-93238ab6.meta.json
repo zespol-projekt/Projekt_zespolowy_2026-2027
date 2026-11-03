@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krzyz-wielkopolski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:57.326Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/krzyz-wielkopolski-93238ab6.json",
+  "sha256": "be427c7b3ee80b8726aa5e5ae81ac4451e76fc83327aee7c5647ebb21fae4017",
+  "usable": true,
+  "items": 1
+}

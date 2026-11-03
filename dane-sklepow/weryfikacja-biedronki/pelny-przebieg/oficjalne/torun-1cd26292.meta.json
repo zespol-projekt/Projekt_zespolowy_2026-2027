@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=torun",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:44.454Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/torun-1cd26292.json",
+  "sha256": "75893b6317ceb6e93ea9dca9a3ad3236b43b660215272e305e4e674d7a00ff7e",
+  "usable": true,
+  "items": 25
+}

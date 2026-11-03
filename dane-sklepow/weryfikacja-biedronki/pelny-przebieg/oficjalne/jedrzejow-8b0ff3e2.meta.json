@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jedrzejow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:20.517Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jedrzejow-8b0ff3e2.json",
+  "sha256": "7df1d780b8d57ff99d7d41a0777942cea078e8b3a8615a3bf27720593e511c82",
+  "usable": true,
+  "items": 2
+}

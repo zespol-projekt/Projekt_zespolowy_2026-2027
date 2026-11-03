@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lubartow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:17.970Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lubartow-86b3368d.json",
+  "sha256": "dd3c6d74c495e8f01468fa4103c81e6d5f9709dfb226c2b9d6145b23b358f1e9",
+  "usable": true,
+  "items": 3
+}

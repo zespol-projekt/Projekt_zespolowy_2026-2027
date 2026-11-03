@@ -1,0 +1,11 @@
+{
+  "key": "2404-gugik-wgs84",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Torzym%2C+Osiedle+Lecha+9F&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:46:51.587Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Torzym%2C+Osiedle+Lecha+9F&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/2404-gugik-wgs84.json",
+  "sha256": "dbb8a1050aa5e7c4647071c0ca39c39113db7bbba4f9a2f691642d5a91aa674a",
+  "bytes": 603
+}

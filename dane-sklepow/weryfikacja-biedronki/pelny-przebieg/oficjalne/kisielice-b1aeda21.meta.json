@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kisielice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:34.830Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kisielice-b1aeda21.json",
+  "sha256": "6985850d8dc5697c0cb611e58927028b3882cd7f5aeef1b6c6b1d01e750b7eef",
+  "usable": true,
+  "items": 1
+}

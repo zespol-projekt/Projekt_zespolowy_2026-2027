@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=glogow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:53.232Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/glogow-56a79709.json",
+  "sha256": "acf9d0c530e9126718195be6aeb03c094fcad37815693d74211bc848afe05fe3",
+  "usable": true,
+  "items": 9
+}

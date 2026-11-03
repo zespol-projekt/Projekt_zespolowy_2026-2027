@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=poronin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:21.270Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/poronin-e7eaa027.json",
+  "sha256": "f2351eb4634cccb43c7ca5348b7384d65b35300779b9cb696cabc490e13a9439",
+  "usable": true,
+  "items": 1
+}

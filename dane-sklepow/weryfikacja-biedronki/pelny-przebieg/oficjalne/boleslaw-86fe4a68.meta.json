@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=boleslaw",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:06.526Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/boleslaw-86fe4a68.json",
+  "sha256": "55abbb2ab174d07d799f028ef98e8ccaa9c3121515f1ebf14e36052844d73206",
+  "usable": true,
+  "items": 1
+}

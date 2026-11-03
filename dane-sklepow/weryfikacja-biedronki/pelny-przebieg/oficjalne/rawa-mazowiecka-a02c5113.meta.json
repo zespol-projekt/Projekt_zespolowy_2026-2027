@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rawa-mazowiecka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:42.930Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rawa-mazowiecka-a02c5113.json",
+  "sha256": "06d4d8a2f38013e562e4f273a6edc65c0cdd5d66bf59b05aa62e2d273ad93003",
+  "usable": true,
+  "items": 3
+}

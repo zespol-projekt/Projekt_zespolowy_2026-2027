@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=czerwionka-leszczyny",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:32.322Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/czerwionka-leszczyny-15b98d5a.json",
+  "sha256": "448b44150240969b86bf5a0e3f316e182a29361c40851cf055d03101cb5f175d",
+  "usable": true,
+  "items": 3
+}

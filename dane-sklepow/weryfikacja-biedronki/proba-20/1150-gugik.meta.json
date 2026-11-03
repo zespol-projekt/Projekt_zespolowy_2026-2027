@@ -1,0 +1,11 @@
+{
+  "key": "1150-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=G%C4%85bin%2C+Aleja+Jana+Paw%C5%82a+II+4&exact_number=1",
+  "retrieved_at": "2026-11-02T18:41:35.245Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=G%C4%85bin%2C+Aleja+Jana+Paw%C5%82a+II+4&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/1150-gugik.json",
+  "sha256": "fdba32c081adb519567baa37ef1389ef0415140d61e15dc570158287abe3cbe8",
+  "bytes": 575
+}

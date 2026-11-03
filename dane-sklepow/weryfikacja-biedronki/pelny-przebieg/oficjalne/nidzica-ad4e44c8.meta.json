@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nidzica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:47.265Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/nidzica-ad4e44c8.json",
+  "sha256": "501bbbcda84005600767eb09f08c4880c93527eaf2cd75ddbfffa0002b202d84",
+  "usable": true,
+  "items": 3
+}

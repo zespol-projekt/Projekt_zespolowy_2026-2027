@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=peczniew",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:10.985Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/peczniew-6858c5c5.json",
+  "sha256": "caa7eba4ff5e1e8d1248d6d251182f031010cf2df9092811e85095caf4d4627b",
+  "usable": true,
+  "items": 1
+}

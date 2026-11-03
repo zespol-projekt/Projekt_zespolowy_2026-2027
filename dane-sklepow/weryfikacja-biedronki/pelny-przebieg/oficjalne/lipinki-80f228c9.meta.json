@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lipinki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:12.449Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lipinki-80f228c9.json",
+  "sha256": "cbeb39860611dd741530bc74afcbdd13d291f4a7ae3158d32303cc4566166d60",
+  "usable": true,
+  "items": 1
+}

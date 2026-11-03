@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jerka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:22.235Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jerka-fc90bff8.json",
+  "sha256": "b1d8d4311fbee7fffbdc9453d12cbaba6c31171eb57ac48ff8c655e7b133fe3e",
+  "usable": true,
+  "items": 1
+}

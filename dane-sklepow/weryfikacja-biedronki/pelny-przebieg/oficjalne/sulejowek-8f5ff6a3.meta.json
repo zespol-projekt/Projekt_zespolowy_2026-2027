@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sulejowek",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:30.198Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sulejowek-8f5ff6a3.json",
+  "sha256": "df80505ab0dd3eb9d11cc4e1f9a598292ac6f2bc093557fa2e07c3423f441aea",
+  "usable": true,
+  "items": 3
+}

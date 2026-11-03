@@ -1,0 +1,11 @@
+{
+  "key": "1459-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/140237132/full.json",
+  "retrieved_at": "2026-11-02T19:06:33.887Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/140237132/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-02/1459-osm.json",
+  "sha256": "eccf8b334def5d073bab56264d3ff707e6d6604c680c68812904d99ba1c914fe",
+  "bytes": 1676
+}

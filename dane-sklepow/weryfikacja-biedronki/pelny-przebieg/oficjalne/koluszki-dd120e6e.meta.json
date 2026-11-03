@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=koluszki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:39.784Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/koluszki-dd120e6e.json",
+  "sha256": "70cd4377727d1e1d470ed7ca22ea85c72f62cd0e755a056e5dc2dda6f139ddb3",
+  "usable": true,
+  "items": 2
+}

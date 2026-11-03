@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mszana",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:43.036Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/mszana-ff59fcba.json",
+  "sha256": "39110ec36416b440a8dbca9db9cbdfb7f0156f1fe0dd08f1dc3b0963fa7b33b6",
+  "usable": true,
+  "items": 1
+}

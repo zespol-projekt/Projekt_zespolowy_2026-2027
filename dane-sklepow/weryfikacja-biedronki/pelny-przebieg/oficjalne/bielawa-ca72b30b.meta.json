@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bielawa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:08:59.987Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/bielawa-ca72b30b.json",
+  "sha256": "1b760ee592a6e04642218e0530d21c1c8c4557cdfb2256e99b540739443ae3a3",
+  "usable": true,
+  "items": 4
+}

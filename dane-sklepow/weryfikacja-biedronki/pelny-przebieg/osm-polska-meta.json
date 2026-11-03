@@ -1,0 +1,12 @@
+{
+  "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A45%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C14%2C55%2C24.3%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C14%2C55%2C24.3%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C14%2C55%2C24.3%29%3B%29%3Bout+center+tags%3B",
+  "method": "GET",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:06:57.509Z",
+  "file": "osm-polska.json",
+  "query_file": "osm-polska.overpassql",
+  "sha256": "7972033a5ab3e1b98cc7cf360c385a12f3b2b5191ae6e1f8220accb25d776b37",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL-1.0",
+  "license_url": "https://www.openstreetmap.org/copyright"
+}

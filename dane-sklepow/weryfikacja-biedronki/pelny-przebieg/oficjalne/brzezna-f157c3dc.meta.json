@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=brzezna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:14.784Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/brzezna-f157c3dc.json",
+  "sha256": "eda6b39d57c815b33dfca7ff7b583718ff31074ffdce2da420da9227a504ec68",
+  "usable": true,
+  "items": 1
+}

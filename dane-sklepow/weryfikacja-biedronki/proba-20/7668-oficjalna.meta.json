@@ -1,0 +1,11 @@
+{
+  "key": "7668-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,7668",
+  "retrieved_at": "2026-11-02T18:42:11.556Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,7668",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/7668-oficjalna.html",
+  "sha256": "3a365c161de2ca0902b4811ee6200cb0f004f81312fbe6036698bba0d51fea6f",
+  "bytes": 97017
+}

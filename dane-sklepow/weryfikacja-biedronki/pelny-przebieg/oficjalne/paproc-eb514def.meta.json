@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=paproc",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:09.915Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/paproc-eb514def.json",
+  "sha256": "7ec061b9211adb98a944ef1bbf7904ebbb544d1fc946fc4ba0275ef361a502c3",
+  "usable": true,
+  "items": 1
+}

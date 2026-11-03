@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=siemiatycze",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:02.498Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/siemiatycze-4db96953.json",
+  "sha256": "6eb1e6d069de9828bc880a09f002834f6717cffd285941d8c0fcb784aee46c29",
+  "usable": true,
+  "items": 3
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=glogow-malopolski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:53.772Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/glogow-malopolski-8e483246.json",
+  "sha256": "e10543dc4575b94cbd25551557d79e63effc391bf541053c9b2e1242d2280268",
+  "usable": true,
+  "items": 1
+}

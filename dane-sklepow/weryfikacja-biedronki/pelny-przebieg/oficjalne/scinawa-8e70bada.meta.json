@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=scinawa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:59.218Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/scinawa-8e70bada.json",
+  "sha256": "8eabfb1fe7690ba91c3c23e8a9430540a22e4ba354df479c23eb86273a119957",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,11 @@
+{
+  "key": "7668-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81omazy%2C+Sp%C3%B3%C5%82dzielcza+11&exact_number=1",
+  "retrieved_at": "2026-11-02T18:42:13.055Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81omazy%2C+Sp%C3%B3%C5%82dzielcza+11&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/7668-gugik.json",
+  "sha256": "a509ed2e272a6e75edabd1dfc69fe6be8072644cd7682044ebd639aae4dd1491",
+  "bytes": 566
+}

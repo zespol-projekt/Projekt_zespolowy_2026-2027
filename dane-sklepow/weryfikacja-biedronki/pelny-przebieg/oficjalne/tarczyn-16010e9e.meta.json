@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=tarczyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:41.113Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/tarczyn-16010e9e.json",
+  "sha256": "d7d73f27033f339dd36252abd72b27261424d237e771b5a09ebf2c92ad1a0b98",
+  "usable": true,
+  "items": 2
+}

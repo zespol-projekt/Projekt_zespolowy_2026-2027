@@ -1,0 +1,15 @@
+{
+  "bbox": [
+    48.9,
+    17.5,
+    51,
+    21
+  ],
+  "url": "https://ovp.dresel.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%3B%28nwr%5B%22brand%3Awikidata%22%3D%22Q857182%22%5D%2848.9%2C17.5%2C51%2C21%29%3Bnwr%5B%22brand%22%3D%22Biedronka%22%5D%2848.9%2C17.5%2C51%2C21%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%3D%22Biedronka%22%5D%2848.9%2C17.5%2C51%2C21%29%3B%29%3Bout+center+tags%3B",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:39.575Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/osm-regiony/region-2.json",
+  "sha256": "3161c9adf14b5beebc45f98106ad57ffed33723065f2fdacce5349cee942ef23",
+  "elements": 0,
+  "remark": "runtime error: Query timed out in \"query\" at line 1 after 21 seconds."
+}

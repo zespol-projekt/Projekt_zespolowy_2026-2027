@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=katowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:29.881Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/katowice-9b837e13.json",
+  "sha256": "85a56cd0c56d35f9a915df350a7f6a76c4cc8a31ccbe10ea8f9124606c90f20b",
+  "usable": true,
+  "items": 25
+}

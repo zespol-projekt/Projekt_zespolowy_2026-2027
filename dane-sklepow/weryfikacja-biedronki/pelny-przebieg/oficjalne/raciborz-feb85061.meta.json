@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=raciborz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:35.322Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/raciborz-feb85061.json",
+  "sha256": "b82c626a74ff977c3a422f9a059e01049112bc2d4691e09838e8772d71fc9568",
+  "usable": true,
+  "items": 9
+}

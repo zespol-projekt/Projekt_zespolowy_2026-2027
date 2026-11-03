@@ -1,0 +1,11 @@
+{
+  "key": "1216-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sulej%C3%B3wek%2C+al.+J.+Pi%C5%82sudskiego+102&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:12.558Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sulej%C3%B3wek%2C+al.+J.+Pi%C5%82sudskiego+102&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1216-gugik-pierwotny.json",
+  "sha256": "27911dcb2ec17f9ec7993077cdbb7f8dbc4839d94639c90f2a09096173aa1ded",
+  "bytes": 633
+}

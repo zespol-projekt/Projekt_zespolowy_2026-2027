@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mogilno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:39.770Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/mogilno-7081c36f.json",
+  "sha256": "ba1f109c9c02a1456440e2381db0df8423dfa3f553df417d35d7f306842f2169",
+  "usable": true,
+  "items": 2
+}

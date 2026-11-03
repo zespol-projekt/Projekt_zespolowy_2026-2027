@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jednorozec",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:19.998Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jednorozec-76d4cbb9.json",
+  "sha256": "54b3fab43fcbd6a49945006fef78dba0dce3b9a4b586da626ad93ddf0ba57775",
+  "usable": true,
+  "items": 1
+}

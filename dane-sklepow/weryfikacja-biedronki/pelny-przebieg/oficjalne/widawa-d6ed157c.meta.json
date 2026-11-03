@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=widawa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:00.752Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/widawa-d6ed157c.json",
+  "sha256": "44f6fdcbbe068714d928f3cc83f5f627918b832cc7b6efa063921fa24782b28d",
+  "usable": true,
+  "items": 1
+}

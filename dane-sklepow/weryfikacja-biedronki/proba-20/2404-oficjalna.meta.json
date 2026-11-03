@@ -1,0 +1,11 @@
+{
+  "key": "2404-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,2404",
+  "retrieved_at": "2026-11-02T18:41:36.980Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,2404",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/2404-oficjalna.html",
+  "sha256": "5b86fd5863215c8bce5d4fd80f4dc2d15f6b003d2431e471c54cb91c763fb3bb",
+  "bytes": 96910
+}

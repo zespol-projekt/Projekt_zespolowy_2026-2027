@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lochow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:14.131Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lochow-be9a85a0.json",
+  "sha256": "f31ac9a006050f82714b84b9ff3d71269b43d3715c7c2fccd22b6ffe9e890806",
+  "usable": true,
+  "items": 1
+}

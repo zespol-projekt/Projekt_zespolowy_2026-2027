@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=tolkmicko",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:43.918Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/tolkmicko-29398939.json",
+  "sha256": "92f2f7591f1975d2c959bbefa352fe8276d8438aa1ebfd0a9eae6e93e78e0611",
+  "usable": true,
+  "items": 1
+}

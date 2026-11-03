@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zawiercie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:23.099Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zawiercie-82054d35.json",
+  "sha256": "4447a0859cb93bd0006f9d2c72f26b3b1ffee9442755031235f38b711aad1be6",
+  "usable": true,
+  "items": 3
+}

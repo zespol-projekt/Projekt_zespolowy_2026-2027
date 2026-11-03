@@ -1,0 +1,11 @@
+{
+  "key": "1503-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bydgoszcz%2C+Konopnickiej+2&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:40.060Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bydgoszcz%2C+Konopnickiej+2&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1503-gugik-pierwotny.json",
+  "sha256": "a5e02b4ba553bb95805df6f234c92d5b2fecc2a556c1e170b16f968f4f2180cd",
+  "bytes": 611
+}

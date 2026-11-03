@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mysiadlo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:45.699Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/mysiadlo-a90dd553.json",
+  "sha256": "307822f21fb3738fd3a94fae6a59eb3db8f916f89abe74ca13ea96937437e2b4",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-11-02T19:11:23.342Z",
+  "status": "requires_human_review",
+  "applied_merge": false,
+  "records": [
+    {
+      "id": "biedronka:7305",
+      "address": {
+        "formatted": "Targowa 8, 42-450 Łazy",
+        "street_address": "Targowa 8",
+        "street": "Targowa",
+        "house_number": "8",
+        "city": "Łazy",
+        "postal_code": "42-450",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 50.4269047,
+        "longitude": 19.3923745
+      },
+      "website": "https://www.biedronka.pl/pl/shop,id,7305",
+      "official_store_number": "6553",
+      "official_location_id": "10489344943628720549",
+      "official_hours": {
+        "hours_monday": "06:00-22:00",
+        "hours_tuesday": "06:00-22:00",
+        "hours_wednesday": "06:00-22:00",
+        "hours_thursday": "06:00-22:00",
+        "hours_friday": "06:00-22:00",
+        "hours_saturday": "06:00-22:00",
+        "hours_sunday": "Zamknięte"
+      },
+      "official_closed_date": null,
+      "source": {
+        "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lazy",
+        "status": 200,
+        "retrieved_at": "2026-11-02T18:11:05.953Z",
+        "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lazy-788938dd.json",
+        "sha256": "a2027b2ba76fc364f7286e55be997a2e4e5842d55fac51ed1e1232abd23a8a5b",
+        "usable": true,
+        "items": 3
+      }
+    },
+    {
+      "id": "biedronka:7339",
+      "address": {
+        "formatted": "Targowa 8, 42-450 Łazy",
+        "street_address": "Targowa 8",
+        "street": "Targowa",
+        "house_number": "8",
+        "city": "Łazy",
+        "postal_code": "42-450",
+        "country": "PL"
+      },
+      "location": {
+        "latitude": 50.4269047,
+        "longitude": 19.3923745
+      },
+      "website": "https://www.biedronka.pl/pl/shop,id,7339",
+      "official_store_number": "6533",
+      "official_location_id": "10489344943628720549",
+      "official_hours": {
+        "hours_monday": "06:00-23:00",
+        "hours_tuesday": "06:00-23:00",
+        "hours_wednesday": "06:00-23:00",
+        "hours_thursday": "06:00-23:00",
+        "hours_friday": "06:00-23:30",
+        "hours_saturday": "06:00-23:30",
+        "hours_sunday": "Zamknięte"
+      },
+      "official_closed_date": null,
+      "source": {
+        "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lazy",
+        "status": 200,
+        "retrieved_at": "2026-11-02T18:11:05.953Z",
+        "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lazy-788938dd.json",
+        "sha256": "a2027b2ba76fc364f7286e55be997a2e4e5842d55fac51ed1e1232abd23a8a5b",
+        "usable": true,
+        "items": 3
+      }
+    }
+  ],
+  "evidence_summary": "W Łazach oba wpisy Targowa 8 mają ten sam adres, punkt i location_id oficjalnego API. Numery sklepów i godziny są różne; brak podstaw do arbitralnego wyboru aktywnego wpisu.",
+  "proposal": "Sprawdzić, czy oba identyfikatory opisują tę samą fizyczną placówkę. Po potwierdzeniu użyć jednej tożsamości sklepu na mapie, zachowując oba identyfikatory jako aliasy i historię. Do tego czasu oba rekordy pozostają poza zbiorem gotowym."
+}

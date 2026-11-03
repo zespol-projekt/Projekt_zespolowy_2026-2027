@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krasne",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:51.864Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/krasne-4fb9a263.json",
+  "sha256": "dba95b4c1ffda9898489aa625c7f6d580aeef5c0a36191930e56c3bb335169cf",
+  "usable": true,
+  "items": 1
+}

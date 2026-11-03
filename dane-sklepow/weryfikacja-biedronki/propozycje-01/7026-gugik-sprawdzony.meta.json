@@ -1,0 +1,11 @@
+{
+  "key": "7026-gugik-sprawdzony",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Opat%C3%B3w%2C+1+Maja+48&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:55:30.160Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Opat%C3%B3w%2C+1+Maja+48&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/7026-gugik-sprawdzony.json",
+  "sha256": "3ba5b68cdb4ff91ea3818a9c8fa28adaea49f9c77fdf35f0a862bcf74cb05312",
+  "bytes": 599
+}

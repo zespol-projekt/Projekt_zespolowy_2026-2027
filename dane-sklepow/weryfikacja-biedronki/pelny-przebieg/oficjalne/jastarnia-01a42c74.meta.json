@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jastarnia",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:17.776Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jastarnia-01a42c74.json",
+  "sha256": "9e727b83eeccb5e00fe75c6ee76827c9ae082d573ab158c96f22dcd64487cc72",
+  "usable": true,
+  "items": 1
+}

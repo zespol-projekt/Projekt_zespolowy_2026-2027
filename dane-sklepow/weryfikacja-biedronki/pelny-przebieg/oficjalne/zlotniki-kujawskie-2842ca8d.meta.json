@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zlotniki-kujawskie",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:29.119Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zlotniki-kujawskie-2842ca8d.json",
+  "sha256": "7f5671c1f25310558dcabcebaac305a437c3bf0d56ffba1ce69cfc8bb41b8b50",
+  "usable": true,
+  "items": 1
+}

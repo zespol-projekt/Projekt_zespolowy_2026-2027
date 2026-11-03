@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ceglow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:19.783Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ceglow-736065ff.json",
+  "sha256": "5b9f074ae263ed76fe18d2b3c1cde293bc00ee1709deac7f77bdb28daa3ff190",
+  "usable": true,
+  "items": 1
+}

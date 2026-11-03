@@ -1,0 +1,11 @@
+{
+  "key": "3608-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/901722953/full.json",
+  "retrieved_at": "2026-11-02T18:31:10.250Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/901722953/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/3608-osm.json",
+  "sha256": "1bc113701dfe84c35a14e5128a1b4c5f87b8a2f9f75ad45c5a5887946c52cadb",
+  "bytes": 2714
+}

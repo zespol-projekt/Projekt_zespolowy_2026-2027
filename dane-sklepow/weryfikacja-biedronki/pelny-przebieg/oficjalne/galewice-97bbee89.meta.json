@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=galewice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:48.823Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/galewice-97bbee89.json",
+  "sha256": "b5d28ecdf043c2c3f28c0bc7ac710bc060af009d7fa14ea8954f1fd479231ea1",
+  "usable": true,
+  "items": 1
+}

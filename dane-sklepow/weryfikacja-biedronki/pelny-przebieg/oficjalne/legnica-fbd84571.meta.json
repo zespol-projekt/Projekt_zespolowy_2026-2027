@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=legnica",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:09.173Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/legnica-fbd84571.json",
+  "sha256": "910ce6af0186a87b29c57f4890bb0f30c7f4f32f482eeec24f213612fcabcd54",
+  "usable": true,
+  "items": 12
+}

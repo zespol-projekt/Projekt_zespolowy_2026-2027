@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=czarnozyly",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:30.123Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/czarnozyly-70c39144.json",
+  "sha256": "277102ea2c075d8b2968261b53022be5c6fb5b2ba7c83c2ccc2d0c40a6cda7a5",
+  "usable": true,
+  "items": 1
+}

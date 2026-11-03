@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wabrzezno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:55.236Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wabrzezno-14229940.json",
+  "sha256": "dc2cde0d59bac7ab89abe81bb920248299566e1f16a0db4fc76df6d75d46bc66",
+  "usable": true,
+  "items": 3
+}

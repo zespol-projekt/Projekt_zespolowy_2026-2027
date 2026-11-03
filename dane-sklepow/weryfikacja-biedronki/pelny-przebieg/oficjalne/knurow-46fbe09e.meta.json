@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=knurow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:35.897Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/knurow-46fbe09e.json",
+  "sha256": "3a692ab3dba0b740f901f4a57e5a0fb19f77a37f8762e84130144c35a42546c9",
+  "usable": true,
+  "items": 5
+}

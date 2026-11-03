@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=latowicz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:05.419Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/latowicz-642f0ec7.json",
+  "sha256": "4abcfb54d097877c6be1da0b7f75beceda07b31f0676f980bccd2093d8eb2e65",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=slonsk",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:08.912Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/slonsk-178db1c6.json",
+  "sha256": "776c353ac5c19beb99c2007fedda7f8b3a2baa00f6dec3f1fa83d9e2201c5ce4",
+  "usable": true,
+  "items": 1
+}

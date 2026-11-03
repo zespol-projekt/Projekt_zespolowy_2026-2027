@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kramsk",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:50.172Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kramsk-6415115f.json",
+  "sha256": "de475a48802869002e37f99b985ff6852de90aed8a0e8527eda4c24f54ce59e2",
+  "usable": true,
+  "items": 1
+}

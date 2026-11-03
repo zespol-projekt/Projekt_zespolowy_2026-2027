@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jelesnia",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:21.589Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jelesnia-1225b47e.json",
+  "sha256": "2e84e7b5b8cc2b7a2494f42ff56ef878d6149572dd8d78867edc33e5a392c241",
+  "usable": true,
+  "items": 1
+}

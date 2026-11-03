@@ -1,0 +1,11 @@
+{
+  "key": "7333-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/1327065948/full.json",
+  "retrieved_at": "2026-11-02T19:05:45.494Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/1327065948/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-02/7333-osm.json",
+  "sha256": "268d180da5e4d9e8c9dfc06dc6643a1cff4ed975bf12741e3121ef3f36d6e50a",
+  "bytes": 2850
+}

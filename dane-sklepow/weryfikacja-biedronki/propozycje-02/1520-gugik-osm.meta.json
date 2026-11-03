@@ -1,0 +1,11 @@
+{
+  "key": "1520-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kartuzy%2C+Osiedle+Genera%C5%82a+J%C3%B3zefa+Wybickiego+3b&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:45.252Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kartuzy%2C+Osiedle+Genera%C5%82a+J%C3%B3zefa+Wybickiego+3b&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1520-gugik-osm.json",
+  "sha256": "a2f169a94340835620e119b49bba55e12609bfc2a4ed5a6f6ed2112758a14a93",
+  "bytes": 625
+}

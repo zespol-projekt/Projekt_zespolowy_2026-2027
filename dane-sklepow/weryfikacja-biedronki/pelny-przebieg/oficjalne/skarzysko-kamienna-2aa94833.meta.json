@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=skarzysko-kamienna",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:05.181Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/skarzysko-kamienna-2aa94833.json",
+  "sha256": "fe26a0b9bdfe725f55999cb34f4decabd87a1e40f4b740a7a3743a249ca9dfb8",
+  "usable": true,
+  "items": 5
+}

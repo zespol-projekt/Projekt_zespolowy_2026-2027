@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=praszka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:24.031Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/praszka-de332383.json",
+  "sha256": "d85dc543c88f7006b9d03ba9afb3c6cd0e55a09612ee0fc2884c1eee5cfe72e2",
+  "usable": true,
+  "items": 1
+}

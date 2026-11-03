@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gryfice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:08.013Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gryfice-84ec6d62.json",
+  "sha256": "69aeee0eece7196caa3b165ac5f516d427cb51ee5129dc89777ed3011c045bc4",
+  "usable": true,
+  "items": 3
+}

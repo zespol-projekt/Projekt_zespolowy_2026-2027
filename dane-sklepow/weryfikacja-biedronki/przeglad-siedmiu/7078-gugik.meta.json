@@ -1,0 +1,11 @@
+{
+  "key": "7078-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gr%C4%85bk%C3%B3w+57&exact_number=1",
+  "retrieved_at": "2026-11-02T18:33:08.498Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gr%C4%85bk%C3%B3w+57&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/7078-gugik.json",
+  "sha256": "53f7b6f9717df6a3eb12bbac7f74243b50be5d31503d822155d1c7e539067dbc",
+  "bytes": 510
+}

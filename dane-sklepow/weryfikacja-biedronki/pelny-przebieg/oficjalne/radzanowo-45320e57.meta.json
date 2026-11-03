@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=radzanowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:39.188Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/radzanowo-45320e57.json",
+  "sha256": "ea6d9f1fc45b35670caaf95d6f3e7576443510b6311384ec9b09c5c7c0abe5ee",
+  "usable": true,
+  "items": 1
+}

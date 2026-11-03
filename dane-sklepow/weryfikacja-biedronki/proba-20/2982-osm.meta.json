@@ -1,0 +1,11 @@
+{
+  "key": "2982-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/node/5286094196.json",
+  "retrieved_at": "2026-11-02T18:41:24.689Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/node/5286094196.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/proba-20/2982-osm.json",
+  "sha256": "a2354f8d68943f50cbe0eda556b0011fb08ea023ead42b38974a6c7fc15649f2",
+  "bytes": 1262
+}

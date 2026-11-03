@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pleszew",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:17.964Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pleszew-7a45557c.json",
+  "sha256": "609afff199446e960c2c92d5a9e79d026760939edbb986b2c9e73357dde82024",
+  "usable": true,
+  "items": 3
+}

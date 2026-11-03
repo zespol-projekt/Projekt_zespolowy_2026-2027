@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kargowa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:27.102Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kargowa-dd6d056c.json",
+  "sha256": "f348219c252422a2842932a2dc14ce8179ba57aed16ff49c0d59fae7d0c83680",
+  "usable": true,
+  "items": 1
+}

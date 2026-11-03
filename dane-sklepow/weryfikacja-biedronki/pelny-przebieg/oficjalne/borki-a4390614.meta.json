@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=borki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:09.290Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/borki-a4390614.json",
+  "sha256": "292b535a7902fe564741293953c103e3ce492d1530feb3f0a4ac22d6903f162b",
+  "usable": true,
+  "items": 1
+}

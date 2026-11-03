@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gabin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:47.172Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gabin-e4b2984b.json",
+  "sha256": "f0bcd9f8aa2b1541fb5029b975f37c1205f2326ad7836b1dd21efd080cca8072",
+  "usable": true,
+  "items": 1
+}

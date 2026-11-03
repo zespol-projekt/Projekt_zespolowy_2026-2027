@@ -1,0 +1,11 @@
+{
+  "key": "1242-gugik-wgs84",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Karpacz%2C+Konstytucji+3+Maja+5&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:46:58.793Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Karpacz%2C+Konstytucji+3+Maja+5&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/1242-gugik-wgs84.json",
+  "sha256": "799d801c0dcffa170a0076d70abe47917357a9a4e8483bd6e741f8043ed80eaa",
+  "bytes": 601
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kruklanki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:54.598Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kruklanki-358f04b0.json",
+  "sha256": "c58bd271bb02c81d621571f8ed0110c455cbedcb936dad99e6210978be121a38",
+  "usable": true,
+  "items": 1
+}

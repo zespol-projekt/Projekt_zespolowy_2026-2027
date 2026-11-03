@@ -1,0 +1,11 @@
+{
+  "key": "1365-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,1365",
+  "retrieved_at": "2026-11-02T18:41:40.030Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,1365",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/1365-oficjalna.html",
+  "sha256": "b521d57ae8c93b09df8d5d5608759d301e8855f9d1b59f4e719fe55b49dbdcf6",
+  "bytes": 97030
+}

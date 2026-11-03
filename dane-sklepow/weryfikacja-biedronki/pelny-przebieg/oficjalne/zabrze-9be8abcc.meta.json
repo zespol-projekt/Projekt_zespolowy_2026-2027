@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zabrze",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:14.989Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zabrze-9be8abcc.json",
+  "sha256": "7ce355596f7c9c84ad2da3a94892a9d78f6ff7755fa46f0a8532510a7b577f19",
+  "usable": true,
+  "items": 16
+}

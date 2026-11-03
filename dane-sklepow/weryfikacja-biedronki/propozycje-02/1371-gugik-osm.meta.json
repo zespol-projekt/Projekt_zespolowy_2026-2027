@@ -1,0 +1,11 @@
+{
+  "key": "1371-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gda%C5%84sk%2C+Tytusa+Cha%C5%82ubi%C5%84skiego+27&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:19.620Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gda%C5%84sk%2C+Tytusa+Cha%C5%82ubi%C5%84skiego+27&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1371-gugik-osm.json",
+  "sha256": "d77a17b02f40e044de1715df202ad5abbb811c527bf5e6f9798dac868961e8ee",
+  "bytes": 610
+}

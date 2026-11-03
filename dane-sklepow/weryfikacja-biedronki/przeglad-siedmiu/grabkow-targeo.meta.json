@@ -1,0 +1,11 @@
+{
+  "key": "grabkow-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-grabkow-57-grabkow~23164633/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:31:19.620Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-grabkow-57-grabkow~23164633/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/grabkow-targeo.html",
+  "sha256": "12bcd50e5dc67787a5c9e95f5d131b6a752f20f1f6055d56508ec6c0e6f21bb5",
+  "bytes": 37758
+}

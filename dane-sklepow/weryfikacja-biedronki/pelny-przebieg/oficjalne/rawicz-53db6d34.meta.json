@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rawicz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:43.563Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rawicz-53db6d34.json",
+  "sha256": "103576b78aeeeebd8ab80858e0ec6f539cb8070fdb560853e65d29bd951c11f0",
+  "usable": true,
+  "items": 4
+}

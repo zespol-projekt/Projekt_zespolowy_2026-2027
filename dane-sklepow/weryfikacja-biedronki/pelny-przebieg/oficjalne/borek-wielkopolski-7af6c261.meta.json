@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=borek-wielkopolski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:08.751Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/borek-wielkopolski-7af6c261.json",
+  "sha256": "8b5b56cfc86087948340e80d473c3225363bf28ccec3d60b991edb5678b00202",
+  "usable": true,
+  "items": 1
+}

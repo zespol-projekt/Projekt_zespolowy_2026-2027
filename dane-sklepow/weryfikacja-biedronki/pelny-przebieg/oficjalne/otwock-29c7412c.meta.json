@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=otwock",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:07.651Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/otwock-29c7412c.json",
+  "sha256": "75503eccf5188c3a82151893cf56f5848a002440cb151cb16d434933eda26c8b",
+  "usable": true,
+  "items": 4
+}

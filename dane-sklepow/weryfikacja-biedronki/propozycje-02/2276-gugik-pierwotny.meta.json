@@ -1,0 +1,11 @@
+{
+  "key": "2276-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=G%C5%82og%C3%B3w%2C+Gen.+W%C5%82adys%C5%82awa+Andersa+19&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:05:21.269Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=G%C5%82og%C3%B3w%2C+Gen.+W%C5%82adys%C5%82awa+Andersa+19&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/2276-gugik-pierwotny.json",
+  "sha256": "1c635b6914cef5a8fd66b224d8013719c1d815c992225138c037064dd04b926b",
+  "bytes": 1128
+}

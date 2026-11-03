@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=horodniany",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:10.754Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/horodniany-81497420.json",
+  "sha256": "a2d26e75f7c056bb7d927741b2aa7ada508eba3ed9a051f09afb9687351eaf7a",
+  "usable": true,
+  "items": 1
+}

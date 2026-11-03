@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jozefow-nad-wisla",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:24.370Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jozefow-nad-wisla-07c77a99.json",
+  "sha256": "d511272a80ad0600477cc813eff24796111bc3bfba5266add14dd94312a62c4d",
+  "usable": true,
+  "items": 1
+}

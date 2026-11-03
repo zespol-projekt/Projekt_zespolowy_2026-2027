@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=solec-kujawski",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:13.303Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/solec-kujawski-6dc8bf7a.json",
+  "sha256": "0f5e893990bcc317f5c6cc9977343a51412f8ab59abbbab49df8447725853585",
+  "usable": true,
+  "items": 2
+}

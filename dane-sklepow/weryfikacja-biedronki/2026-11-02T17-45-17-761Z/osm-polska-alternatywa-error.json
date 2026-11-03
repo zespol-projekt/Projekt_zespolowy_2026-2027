@@ -1,0 +1,5 @@
+{
+  "url": "https://overpass.private.coffee/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A90%5D%3Barea%5B%22ISO3166-1%22%3D%22PL%22%5D%5B%22admin_level%22%3D%222%22%5D-%3E.pl%3B%28nwr%5B%22shop%22%5D%5B%22brand%22%3D%22Biedronka%22%5D%28area.pl%29%3Bnwr%5B%22shop%22%5D%5B%22name%22%7E%22%5EBiedronka%24%22%2Ci%5D%28area.pl%29%3B%29%3Bout+center+tags%3B",
+  "error": "The operation was aborted due to timeout",
+  "retrieved_at": "2026-11-02T17:53:06.458Z"
+}

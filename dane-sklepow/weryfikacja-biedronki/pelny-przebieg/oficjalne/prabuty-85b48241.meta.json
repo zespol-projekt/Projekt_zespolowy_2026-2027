@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=prabuty",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:22.405Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/prabuty-85b48241.json",
+  "sha256": "d2e92f68701786c9b4965a7035b00e2bdc651fc36b53202818a8167dea01d46f",
+  "usable": true,
+  "items": 1
+}

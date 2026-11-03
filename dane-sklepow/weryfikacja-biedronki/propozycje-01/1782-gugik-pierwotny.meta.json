@@ -1,0 +1,11 @@
+{
+  "key": "1782-gugik-pierwotny",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lipsko%2C+Armii+Krajowej+3&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T18:54:25.879Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lipsko%2C+Armii+Krajowej+3&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-01/1782-gugik-pierwotny.json",
+  "sha256": "fb60d9c87839f2fb29352abf6c9a1adc92f0a2296c77d0000448cfdedf477e39",
+  "bytes": 596
+}

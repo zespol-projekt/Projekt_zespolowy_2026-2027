@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=tarnowo-podgorne",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:42.855Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/tarnowo-podgorne-0aea3e22.json",
+  "sha256": "015c9b39cb43748b06705a2f45ca3722448b54289b8664f1a14de5bd19849ed3",
+  "usable": true,
+  "items": 2
+}

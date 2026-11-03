@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=somianka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:13.838Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/somianka-f56433cb.json",
+  "sha256": "360a859da983e63dfc253a20d58aa1790033cad1fec2983a295d77f6302c3d79",
+  "usable": true,
+  "items": 1
+}

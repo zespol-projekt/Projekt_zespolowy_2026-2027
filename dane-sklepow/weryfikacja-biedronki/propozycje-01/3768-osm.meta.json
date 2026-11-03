@@ -1,0 +1,11 @@
+{
+  "key": "3768-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/1074047543/full.json",
+  "retrieved_at": "2026-11-02T18:53:33.946Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/1074047543/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-01/3768-osm.json",
+  "sha256": "5fe8a974a5cd8e04230b3155666c55e259dce34c1383a429d43f91afb562fc98",
+  "bytes": 1798
+}

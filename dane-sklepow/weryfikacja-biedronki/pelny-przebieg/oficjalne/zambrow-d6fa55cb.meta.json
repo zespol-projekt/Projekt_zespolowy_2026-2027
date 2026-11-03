@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zambrow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:18.801Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zambrow-d6fa55cb.json",
+  "sha256": "7e5a183ddd244585d72519d05b95d8a8198658d52433ff9226e5a8252fe5b39a",
+  "usable": true,
+  "items": 4
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kikol",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:34.296Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/kikol-38821149.json",
+  "sha256": "973fddc2f78d8912edf7fb9e35ce86733533bb79a6063c7fd0ecf62f9ffc04f4",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=szydlow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:40.050Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/szydlow-c7e9c268.json",
+  "sha256": "ae4b621bc986c1265ec5e3496fe5d4aeef3219d71fb5c10a0a1470a80b1a6fab",
+  "usable": true,
+  "items": 1
+}

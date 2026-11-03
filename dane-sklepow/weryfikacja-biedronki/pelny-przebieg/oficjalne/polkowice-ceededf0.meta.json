@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=polkowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:20.204Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/polkowice-ceededf0.json",
+  "sha256": "9c7c3a23e7c8f7c7ce862b24b260830fe498c0b79ea1a039b436e15666538542",
+  "usable": true,
+  "items": 3
+}

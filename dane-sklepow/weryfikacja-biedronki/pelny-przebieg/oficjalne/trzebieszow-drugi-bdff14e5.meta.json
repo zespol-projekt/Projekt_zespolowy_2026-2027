@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=trzebieszow-drugi",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:47.217Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/trzebieszow-drugi-bdff14e5.json",
+  "sha256": "48b2077bd44d097850a856b7ca12d88f954c486bee7ef0ef3f668897e1f4066e",
+  "usable": true,
+  "items": 1
+}

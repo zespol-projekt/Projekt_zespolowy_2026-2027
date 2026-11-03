@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=drawno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:42.686Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/drawno-3f78460e.json",
+  "sha256": "2190e7f6f9450a74eda4d0a5a8ffc9300901752029420acd84b168b52d5a8aef",
+  "usable": true,
+  "items": 1
+}

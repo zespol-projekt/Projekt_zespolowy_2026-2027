@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sosno",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:14.898Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sosno-0488e419.json",
+  "sha256": "4bcecdab0304039dd01b244a9426f49a7dfd74227df69fb4528714acddd57400",
+  "usable": true,
+  "items": 1
+}

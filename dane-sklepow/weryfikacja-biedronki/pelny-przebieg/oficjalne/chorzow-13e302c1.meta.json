@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=chorzow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:24.086Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/chorzow-13e302c1.json",
+  "sha256": "c6e7946c6a42029dcb20fec2e5aab0e3324e590963bbcac6ed50ace0d9f11ef5",
+  "usable": true,
+  "items": 9
+}

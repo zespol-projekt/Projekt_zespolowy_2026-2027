@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gora-kalwaria",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:00.216Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/gora-kalwaria-53191e2a.json",
+  "sha256": "57af27bfe542b6f27d62d2e59dd0e57fe361111b6fb9abfe2ea04035ef98f548",
+  "usable": true,
+  "items": 3
+}

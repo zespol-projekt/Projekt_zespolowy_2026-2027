@@ -1,0 +1,11 @@
+{
+  "key": "3513-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,3513",
+  "retrieved_at": "2026-11-02T18:41:27.080Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,3513",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/3513-oficjalna.html",
+  "sha256": "4d8a9200bdf0b5eac27564a056fcfa30d8ef851144f809f0f2d586769f6a05cc",
+  "bytes": 97034
+}

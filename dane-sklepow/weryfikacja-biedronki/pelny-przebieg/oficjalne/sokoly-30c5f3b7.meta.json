@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sokoly",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:12.685Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sokoly-30c5f3b7.json",
+  "sha256": "72dbe6abd329ccdd768e7fc00b4c4bcec52840f905a5a1ee35ac32fbf398bd9b",
+  "usable": true,
+  "items": 1
+}

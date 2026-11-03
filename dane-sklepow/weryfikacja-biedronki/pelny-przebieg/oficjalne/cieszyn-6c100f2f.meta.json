@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=cieszyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:09:26.831Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/cieszyn-6c100f2f.json",
+  "sha256": "5de0a7634c0a97613943e94f0672ef251686053554c8ccd0da49921b6c1b65bf",
+  "usable": true,
+  "items": 5
+}

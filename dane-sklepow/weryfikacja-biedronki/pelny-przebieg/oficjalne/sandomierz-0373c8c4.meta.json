@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sandomierz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:57.637Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sandomierz-0373c8c4.json",
+  "sha256": "80fe84b8fbbd1b443c9956489be83e2955b4a19b3707e79b3bfd2835d46d92c5",
+  "usable": true,
+  "items": 4
+}

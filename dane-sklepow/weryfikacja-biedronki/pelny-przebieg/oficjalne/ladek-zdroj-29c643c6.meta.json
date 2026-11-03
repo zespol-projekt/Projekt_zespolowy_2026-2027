@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ladek-zdroj",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:02.119Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ladek-zdroj-29c643c6.json",
+  "sha256": "62f969837f87844b1ed7cb6def494ee1cb7702f6246ad53b4720b24e97f16917",
+  "usable": true,
+  "items": 1
+}

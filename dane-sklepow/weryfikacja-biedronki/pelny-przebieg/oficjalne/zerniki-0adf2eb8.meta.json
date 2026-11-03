@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zerniki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:26.352Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zerniki-0adf2eb8.json",
+  "sha256": "fcf43239baed312d5e5f0e6994167cb1ad6707fdd241ae58ed1cd909a9e04c1e",
+  "usable": true,
+  "items": 1
+}

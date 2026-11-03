@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sroda-wielkopolska",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:16.102Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sroda-wielkopolska-2a215b4c.json",
+  "sha256": "f3ac070f4d658c8b66cf651896b4d8acf5883dc65bc40b52b39c077a5d6f75a6",
+  "usable": true,
+  "items": 4
+}

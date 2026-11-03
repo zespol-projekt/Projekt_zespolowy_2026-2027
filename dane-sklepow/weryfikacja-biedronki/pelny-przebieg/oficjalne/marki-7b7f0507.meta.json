@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=marki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:27.303Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/marki-7b7f0507.json",
+  "sha256": "82962ef2b4dd03aefe01296bd8cd372db0a3af4cac5458fe28fece846892cde8",
+  "usable": true,
+  "items": 4
+}

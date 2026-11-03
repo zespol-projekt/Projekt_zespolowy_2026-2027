@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lagow",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:02.655Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lagow-050c528a.json",
+  "sha256": "39475e21ca37d7ee86ca3a189313eab4169ba442ebcf12abb4957188eb91936d",
+  "usable": true,
+  "items": 2
+}

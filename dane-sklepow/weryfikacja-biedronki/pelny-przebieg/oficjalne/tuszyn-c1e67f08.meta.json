@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=tuszyn",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:48.812Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/tuszyn-c1e67f08.json",
+  "sha256": "a8840e42653d5450457329db9ea7f1efb0d0d319446250a444d6cb62bb48e7d7",
+  "usable": true,
+  "items": 1
+}

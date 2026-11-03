@@ -1,0 +1,11 @@
+{
+  "key": "krolewiec-targeo",
+  "url": "https://mapa.targeo.pl/biedronka-supermarket-smykow-98-26-212-smykow~23072545/biedronka-supermarket/adres",
+  "retrieved_at": "2026-11-02T18:33:03.131Z",
+  "status": 200,
+  "final_url": "https://mapa.targeo.pl/biedronka-supermarket-smykow-98-26-212-smykow~23072545/biedronka-supermarket/adres",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/przeglad-siedmiu/krolewiec-targeo.html",
+  "sha256": "ec8c76a4681bfe374fc5417cf78785d85508e279e607d6ba86497581e34482b3",
+  "bytes": 38808
+}

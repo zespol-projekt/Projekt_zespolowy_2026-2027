@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rozdrazew",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:48.348Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/rozdrazew-6b4f1f10.json",
+  "sha256": "b44dd13494807819c56d0e2e63fbb0083418acd97d42fe8245a414fb55926431",
+  "usable": true,
+  "items": 1
+}

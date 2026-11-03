@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ruda-slaska",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:49.413Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/ruda-slaska-755a6847.json",
+  "sha256": "ceb84836f0c69d763ea0289abbaedd854de2c5441382052b40396192a99473b0",
+  "usable": true,
+  "items": 16
+}

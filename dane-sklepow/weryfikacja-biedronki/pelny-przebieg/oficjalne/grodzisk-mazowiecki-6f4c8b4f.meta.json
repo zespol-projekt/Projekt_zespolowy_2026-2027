@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=grodzisk-mazowiecki",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:06.274Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/grodzisk-mazowiecki-6f4c8b4f.json",
+  "sha256": "21368145f5658660ad668167491caca30bfc8cacbf250e5d153c22b2f4b03656",
+  "usable": true,
+  "items": 5
+}

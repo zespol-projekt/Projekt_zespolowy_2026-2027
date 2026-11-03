@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentacja API UUG</title>
+    <style>
+        :root {
+            --primary-color: #0052a5;
+            --secondary-color: #f4f7f6;
+            --text-color: #333;
+            --border-color: #e1e4e8;
+            --code-bg: #282c34;
+            --code-text: #abb2bf;
+            --success-color: #2ea44f;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        header {
+            border-bottom: 0px solid var(--primary-color);
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        h1 { color: var(--primary-color); margin-bottom: 5px; }
+        h2 { border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-top: 40px;}
+        h3 { color: #555; }
+
+        .endpoint {
+            background-color: #e8f4fd;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            font-family: monospace;
+            font-size: 1.1em;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+            word-break: break-all;
+        }
+
+        .method {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        th { background-color: var(--secondary-color); font-weight: bold; }
+        
+        .type { color: #e36209; font-family: monospace; }
+        .required { color: #d73a49; font-size: 0.9em; font-weight: bold; }
+
+        pre {
+            background-color: var(--code-bg);
+            color: var(--code-text);
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 0.9em;
+        }
+
+        .example-url {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .example-url:hover { text-decoration: underline; }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 7px;
+            font-size: 0.8em;
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: #eee;
+        }
+        .badge.json { background-color: #f1e05a; color: #333; }
+        .badge.csv { background-color: #2ea44f; color: white; }
+        
+        .headtable {
+            border: 1px solid #0052a5; 
+            width: 100%;
+            color: white;
+            border-collapse: collapse;
+            margin: 0 0;
+            background-color: #0052a5;
+        }
+        
+        .notice {
+            background-color: #fff9db;
+            border-left: 4px solid #fcc419;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .sandbox-box {
+            background-color: #f8f9fa;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #495057;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 82, 165, 0.15);
+        }
+
+        .sandbox-actions {
+            margin: 20px 0;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #003d7c;
+        }
+
+        .live-url-box {
+            background-color: #e9ecef;
+            padding: 12px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.95em;
+            word-break: break-all;
+            border-left: 4px solid #6c757d;
+            margin-bottom: 15px;
+        }
+
+        .response-container {
+            margin-top: 20px;
+        }
+
+        .response-header {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #495057;
+        }
+
+        /* Podwyższone i dostosowane okno wyniku pod format JSON */
+        .response-output {
+            min-height: 500px;
+            max-height: 750px;
+            margin: 0;
+            background-color: #e8f4fd;
+            color: black;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-y: auto;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 0.95em;
+            white-space: pre;
+        }
+
+        .loader {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        code {
+			background-color: #e8f4fd;
+			color: #000; 
+			padding: 4px;
+			border-radius: 10px;
+		}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <table class="headtable">
+            <tr>
+                <td style="width: 150px; border: none">
+                    <a href="https://www.gov.pl/web/gugik">
+                        <img src="logo_gugik.jpg" alt="GUGiK Logo">
+                    </a>
+                </td>
+                <td style="border: none">
+                    <h1 style="text-align:center; color: white; margin: 0;">Główny Urząd Geodezji i Kartografii</h1>
+                    <h2 style="text-align:center; color: white; border: none; margin: 5px 0 0 0;">Specyfikacja usługi UUG</h2>
+                </td>
+                <td style="width: 150px; border: none; text-align: right;">
+                    <a href="https://integracja.gugik.gov.pl/eziudp/index.php">
+                        <img style="height: 75px;" src="logo_adr.png" alt="Logo Prawe">
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <p>Usługa UUG (Usługa Usług Geokodowania) umożliwia wyszukiwanie współrzędnych oraz obiektów przestrzennych na podstawie podanych kryteriów adresowych, kilometrażu dróg krajowych, identyfikatorów przejazdów kolejowych, a także bazy państwowego rejestru nazw geograficznych (PRNG) i słowników TERYT.</p>
+    </header>
+
+    <section>
+        <h2>Metody wywołania usługi (Endpoints)</h2>
+        <p>API obsługuje zapytania typu <strong>GET</strong>. Poniżej znajdują się dostępne metody strukturyzacji zapytań:</p>
+        
+        <div class="endpoint-box">
+            <h3>1. Wyszukiwanie i lokalizacja adresów</h3>
+            <div class="endpoint">
+                <span class="method">GET</span> https://services.gugik.gov.pl/uug?request=GetAddress&amp;address={address}
+            </div>
+            
+            <h3>2. Odwrotne geokodowanie (Adres na podstawie współrzędnych)</h3>
+            <div class="endpoint">
+                <span class="method">GET</span> https://services.gugik.gov.pl/uug/?request=GetAddressReverse&amp;location={location}&amp;srid={srid}
+            </div>
+
+            <h3>3. Lokalizacja obiektów liniowych i punktowych (Kilometraż dróg, Kolej, PRNG)</h3>
+            <div class="endpoint">
+                <span class="method">GET</span> https://services.gugik.gov.pl/uug?request={request}&amp;location={location}
+            </div>
+
+            <h3>4. Zapytania słownikowe i strukturalne (TERYT / SIMC)</h3>
+            <div class="endpoint">
+                <span class="method">GET</span> https://services.gugik.gov.pl/uug?request={request}&amp;[parametry_slownika]
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Konsola testowa API</h2>
+        <p>Wybierz metodę, uzupełnij wymagane parametry i przetestuj działanie usługi UUG na żywo. Odpowiedzi JSON zostaną automatycznie sformatowane.</p>
+        
+        <div class="sandbox-box">
+            <div class="form-group">
+                <label for="test-request">Parametr request (Operacja)</label>
+                <select id="test-request">
+                    <option value="GetAddress" selected>GetAddress (Adresy tekstowe)</option>
+                    <option value="GetAddressReverse">GetAddressReverse (Odwrotne geokodowanie WKT)</option>
+                    <option value="GetRoadMarker">GetRoadMarker (Kilometraż dróg)</option>
+                    <option value="GetLevelCrossing">GetLevelCrossing (Przejazdy kolejowe)</option>
+                    <option value="GetLocation">GetLocation (Nazwy geograficzne PRNG)</option>
+                    <option value="GetCity">GetCity (Słownik miejscowości)</option>
+                    <option value="GetStreet">GetStreet (Słownik ulic)</option>
+                    <option value="GetAddresses">GetAddresses (Lista punktów w ul./miejsc.)</option>
+                    <option value="GetRoads">GetRoads (Słownik dróg głównych)</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="group-address">
+                <label for="test-address">Parametr adresowy (address)</label>
+                <input type="text" id="test-address" value="Marki, Andersa 1" placeholder="np. Marki, Andersa 1 lub Królewskie Brzeziny 13">
+            </div>
+
+            <div class="form-group" id="group-location" style="display:none;">
+                <label for="test-location">Lokalizacja / Obiekt / Geometria WKT (location)</label>
+                <input type="text" id="test-location" value="POINT(21.020 52.229)" placeholder="np. POINT(21.020 52.229), 714 10 lub 001 018 478">
+            </div>
+
+            <div class="form-group" id="group-teryt" style="display:none;">
+                <label for="test-teryt">Identyfikator gminy (teryt)</label>
+                <input type="text" id="test-teryt" value="141207" placeholder="np. 141207">
+            </div>
+
+            <div class="form-group" id="group-simc" style="display:none;">
+                <label for="test-simc">Identyfikator miejscowości SIMC (simc)</label>
+                <input type="text" id="test-simc" value="0668956" placeholder="np. 0668956">
+            </div>
+
+            <div class="form-group" id="group-ulic" style="display:none;">
+                <label for="test-ulic">Identyfikator ulicy ULIC (ulic)</label>
+                <input type="text" id="test-ulic" value="00470" placeholder="np. 00470">
+            </div>
+
+            <div class="form-group" id="group-srid" style="display:none;">
+                <label for="test-srid">Układ współrzędnych geometrii wejściowej (srid)</label>
+                <input type="number" id="test-srid" value="4326" placeholder="np. 4326 lub 2180">
+            </div>
+
+            <div class="response-header">Generowany URL testowy:</div>
+            <div class="live-url-box" id="live-url">https://services.gugik.gov.pl/uug?request=GetAddress&amp;address=Marki%2C+Andersa+1</div>
+
+            <div class="sandbox-actions">
+                <button type="button" class="btn" id="btn-send">Wyślij zapytanie testowe</button>
+            </div>
+
+            <div class="loader" id="sandbox-loader">Pobieranie danych z serwera GUGiK...</div>
+
+            <div class="response-container" id="response-block" style="display: none;">
+                <div class="response-header">Odpowiedź z serwera (JSON / Tekst):</div>
+                <pre class="response-output" id="response-text"></pre>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Parametry zapytania (Query Parameters)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Parametr</th>
+                    <th>Typ</th>
+                    <th>Opis</th>
+                    <th>Wartości / Format / Przykłady</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>request</code></td>
+                    <td><span class="type">string</span> <span class="required">wymagany</span></td>
+                    <td>Określa rodzaj operacji oraz poszukiwanego obiektu słownikowego lub przestrzennego.</td>
+                    <td>
+                        <code>GetAddress</code> – wyszukanie punktu adresowego<br>
+                        <code>GetAddressReverse</code> – odwrotne geokodowanie z WKT<br>
+                        <code>GetRoadMarker</code> – lokalizacja słupka kilometrowego drogi<br>
+                        <code>GetLevelCrossing</code> – wyszukanie przejazdu kolejowego<br>
+                        <code>GetLocation</code> – obiekty z Państwowego Rejestru Nazw Geograficznych<br>
+                        <code>GetCity</code> – słownik miejscowości dla gminy<br>
+                        <code>GetStreet</code> – słownik ulic w danej miejscowości<br>
+                        <code>GetAddresses</code> – wykaz punktów przy ulicy lub w miejscowości
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>address</code></td>
+                    <td><span class="type">string</span></td>
+                    <td>Dowolna, tekstowa postać szukanego adresu (stosowana przy <code>GetAddress</code>).</td>
+                    <td>
+                        • <code>Miejscowość, Ulica Numer</code> (np. <code>Marki, Andersa 1</code>)<br>
+                        • <code>Miejscowość Numer</code> (np. <code>Królewskie Brzeziny 13</code>)<br>
+                        • <code>Miejscowość, Ulica</code><br>
+                        • <code>Miejscowość</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>location</code></td>
+                    <td><span class="type">string</span></td>
+                    <td>Wielofunkcyjny parametr definiujący geometrię, opis lub unikalny kod obiektu.</td>
+                    <td>
+                        • Geometria w zapisie WKT: <code>POINT(X Y)</code> (np. <code>POINT(21.020 52.229)</code>)<br>
+                        • Droga i słupek: <code>[Droga] [Słupek]</code> lub samo <code>[Droga]</code> (np. <code>714 10</code>)<br>
+                        • Identyfikator kolejowy (pełny lub min. 3 znaki): (np. <code>001 018 478</code>)<br>
+                        • Nazwa obiektu z rejestru PRNG: (np. <code>Las Mierzei</code>)
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>srid</code></td>
+                    <td><span class="type">integer</span></td>
+                    <td>Układ odniesienia przestrzennego EPSG stosowany do interpretacji geometrii wejściowej.</td>
+                    <td>Najczęściej stosowane: <code>4326</code> (WGS 84 dla GPS) lub <code>2180</code> (PUWG 1992).</td>
+                </tr>
+                <tr>
+                    <td><code>teryt</code></td>
+                    <td><span class="type">string</span></td>
+                    <td>Krajowy kod identyfikacyjny podziału terytorialnego dla jednostki nadrzędnej (gminy).</td>
+                    <td>6-cyfrowy identyfikator TERYT (np. <code>141207</code>)</td>
+                </tr>
+                <tr>
+                    <td><code>simc</code></td>
+                    <td><span class="type">string</span></td>
+                    <td>Unikalny identyfikator miejscowości pochodzący z rejestru TERYT.</td>
+                    <td>7-cyfrowy kod SIMC (np. <code>0668956</code> lub <code>0002750</code>)</td>
+                </tr>
+                <tr>
+                    <td><code>ulic</code></td>
+                    <td><span class="type">string</span></td>
+                    <td>Systemowy identyfikator nazwy konkretnej ulicy powiązany z bazą TERYT.</td>
+                    <td>5-cyfrowy kod ULIC (np. <code>00470</code>)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <div class="notice">
+        <strong>Uwagi techniczne i parametry zaawansowane:</strong>
+        <ul>
+            <li><strong>Dokładność dopasowania (Parametr accuracy):</strong> Domyślnie przyjmuje wartość <code>0.6</code>. Może być przekazywany opcjonalnie w zakresie od <code>0.5</code> do <code>1.0</code> w celu sterowania dokładnością dopasowania adresu tekstowego do wzorca bazowego.</li>
+            <li><strong>Ścisły numer porządkowy (Parametr exact_number):</strong> Domyślnie przyjmuje wartość <code>1</code>. Nakazuje usłudze zwrócenie wyłącznie tych wyników, w których przypisany numer porządkowy pokrywa się idealnie z szukaną frazą.</li>
+            <li><strong>Zwracane dane:</strong> Rezultaty zapytań usługi geokodowania zwracają współrzędne punktu geometrycznego szukanego obiektu lub powiązane listy obiektów słownikowych wraz z ich metadanymi rejestrowymi w formacie JSON.</li>
+        </ul>
+    </div>
+
+    <section>
+        <h2>Przykłady wykorzystania</h2>
+
+        <h3>1. Wywołania usługi dotyczące adresów (Geokodowanie i Odwrotne geokodowanie)</h3>
+        
+        <h4>• Miejscowość, Ulica Numer</h4>
+        <a href="https://services.gugik.gov.pl/uug?request=GetAddress&amp;address=Marki,%20Andersa%201" target="_blank" class="example-url">https://services.gugik.gov.pl/uug?request=GetAddress&amp;address=Marki, Andersa 1</a>
+
+        <h4>• Miejscowość Numer (Miejscowości bez struktur ulic)</h4>
+        <a href="https://services.gugik.gov.pl/uug?request=GetAddress&amp;address=Kr%C3%B3lewskie%20Brzeziny%2013" target="_blank" class="example-url">https://services.gugik.gov.pl/uug?request=GetAddress&amp;address=Królewskie Brzeziny 13</a>
+
+        <h4>• Miejscowość, Ulica (Wyszukanie osi/centrum danej ulicy)</h4>
+        <a href="https://services.gugik.gov.pl/uug?request=GetAddress&amp;address=Marki,%20Andersa" target="_blank" class="example-url">https://services.gugik.gov.pl/uug?request=GetAddress&amp;address=Marki, Andersa</a>
+
+        <h4>• Miejscowość (Lokalizacja ogólna punktu miejscowości)</h4>
+        <a href="https://services.gugik.gov.pl/uug?request=GetAddress&amp;address=Marki" target="_blank" class="example-url">https://services.gugik.gov.pl/uug?request=GetAddress&amp;address=Marki</a>
+
+        <h4>• Wyszukiwanie punktu adresowego w pobliżu współrzędnych geograficznych (GetAddressReverse)</h4>
+        <a href="https://services.gugik.gov.pl/uug/?request=GetAddressReverse&amp;location=POINT(21.020%2052.229)&amp;srid=4326" target="_blank" class="example-url">https://services.gugik.gov.pl/uug/?request=GetAddressReverse&amp;location=POINT(21.020 52.229)&amp;srid=4326</a>
+
+        <h3>2. Wywołanie usługi dotyczące kilometrażu dróg i kolei</h3>
+        
+        <h4>• Oznaczenie drogi krajowej i słupek kilometrowy</h4>
+        <a href="https://services.gugik.gov.pl/uug?request=GetRoadMarker&amp;location=714%2010" target="_blank" class="example-url">https://services.gugik.gov.pl/uug?request=GetRoadMarker&amp;location=714 10</a>
+
+        <h4>• Samo oznaczenie drogi</h4>
+        <a href="https://services.gugik.gov.pl/uug?request=GetRoadMarker&amp;location=714" target="_blank" class="example-url">https://services.gugik.gov.pl/uug?request=GetRoadMarker&amp;location=714</a>
+
+        <h4>• Identyfikator przejazdu kolejowego</h4>
+        <a href="https://services.gugik.gov.pl/uug?request=GetLevelCrossing&amp;location=001%20018%20478" target="_blank" class="example-url">https://services.gugik.gov.pl/uug?request=GetLevelCrossing&amp;location=001 018 478</a>
+
+        <h3>3. Lokalizacja nazw geograficznych (PRNG) oraz Słowniki państwowe</h3>
+        
+        <h4>• Nazwa obiektu geograficznego z rejestru PRNG</h4>
+        <a href="https://services.gugik.gov.pl/uug/?request=GetLocation&amp;location=Las%20Mierzei" target="_blank" class="example-url">https://services.gugik.gov.pl/uug/?request=GetLocation&amp;location=Las Mierzei</a>
+
+        <h4>• Słownik miejscowości przypisanych do wybranej gminy (TERYT)</h4>
+        <a href="https://services.gugik.gov.pl/uug?request=GetCity&amp;teryt=141207" target="_blank" class="example-url">https://services.gugik.gov.pl/uug?request=GetCity&amp;teryt=141207</a>
+
+        <h4>• Słownik zarejestrowanych ulic w miejscowości (SIMC)</h4>
+        <a href="https://services.gugik.gov.pl/uug?request=GetStreet&amp;simc=0668956" target="_blank" class="example-url">https://services.gugik.gov.pl/uug?request=GetStreet&amp;simc=0668956</a>
+
+        <h4>• Lista punktów adresowych przy wybranej ulicy (SIMC + ULIC)</h4>
+        <a href="https://services.gugik.gov.pl/uug/?request=GetAddresses&amp;simc=0668956&amp;ulic=00470" target="_blank" class="example-url">https://services.gugik.gov.pl/uug/?request=GetAddresses&amp;simc=0668956&amp;ulic=00470</a>
+
+        <h4>• Lista punktów w miejscowości dla obszarów bez nazwanych ulic (SIMC)</h4>
+        <a href="https://services.gugik.gov.pl/uug/?request=GetAddresses&amp;simc=0002750" target="_blank" class="example-url">https://services.gugik.gov.pl/uug/?request=GetAddresses&amp;simc=0002750</a>
+
+        <h4>• Słownik dróg głównych</h4>
+        <a href="https://services.gugik.gov.pl/uug?request=GetRoads" target="_blank" class="example-url">https://services.gugik.gov.pl/uug?request=GetRoads</a>
+    </section>
+</div>
+
+<footer style="background-color: #0052a5; color: white; text-align: center; padding: 20px 0; margin-top: 40px;">
+    W przypadku pytań i wątpliwości, co do funkcjonowania usługi prosimy o kontakt:
+    <br><strong>Główny Urząd Geodezji i Kartografii</strong>
+    <br>Adres: ul. Żurawia 6/12, 00-926 Warszawa
+    <br>e-mail: <a style="color: white" href="mailto:uslugi.iip@gugik.gov.pl">uslugi.iip@gugik.gov.pl</a> 
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Elementy formularza konsoli testowej
+        const requestSelect = document.getElementById('test-request');
+        const addressInput = document.getElementById('test-address');
+        const locationInput = document.getElementById('test-location');
+        const terytInput = document.getElementById('test-teryt');
+        const simcInput = document.getElementById('test-simc');
+        const ulicInput = document.getElementById('test-ulic');
+        const sridInput = document.getElementById('test-srid');
+        
+        // Słownik grup kontenerów DOM
+        const fieldsMap = {
+            address: document.getElementById('group-address'),
+            location: document.getElementById('group-location'),
+            teryt: document.getElementById('group-teryt'),
+            simc: document.getElementById('group-simc'),
+            ulic: document.getElementById('group-ulic'),
+            srid: document.getElementById('group-srid')
+        };
+
+        // Elementy wyjściowe
+        const liveUrlDiv = document.getElementById('live-url');
+        const btnSend = document.getElementById('btn-send');
+        const loader = document.getElementById('sandbox-loader');
+        const responseBlock = document.getElementById('response-block');
+        const responseText = document.getElementById('response-text');
+
+        // Funkcja ukrywająca i pokazująca właściwe pola wejściowe
+        function toggleFields() {
+            const req = requestSelect.value;
+            
+            // Domyślny reset widoczności
+            Object.values(fieldsMap).forEach(el => el.style.display = 'none');
+
+            if (req === 'GetAddress') {
+                fieldsMap.address.style.display = 'block';
+            } else if (req === 'GetAddressReverse') {
+                fieldsMap.location.style.display = 'block';
+                fieldsMap.srid.style.display = 'block';
+                locationInput.value = 'POINT(21.020 52.229)';
+            } else if (['GetRoadMarker', 'GetLevelCrossing', 'GetLocation'].includes(req)) {
+                fieldsMap.location.style.display = 'block';
+                if (req === 'GetRoadMarker') locationInput.value = '714 10';
+                if (req === 'GetLevelCrossing') locationInput.value = '001 018 478';
+                if (req === 'GetLocation') locationInput.value = 'Las Mierzei';
+            } else if (req === 'GetCity') {
+                fieldsMap.teryt.style.display = 'block';
+            } else if (req === 'GetStreet') {
+                fieldsMap.simc.style.display = 'block';
+            } else if (req === 'GetAddresses') {
+                fieldsMap.simc.style.display = 'block';
+                fieldsMap.ulic.style.display = 'block';
+            } else if (req === 'GetRoads') {
+                // Metoda pobierająca pełny Słownik bez filtrów wejściowych
+            }
+            
+            updateUrl();
+        }
+
+        // Konstrukcja adresu URL w czasie rzeczywistym
+        function updateUrl() {
+            const baseUrl = 'https://services.gugik.gov.pl/uug';
+            const req = requestSelect.value;
+            const params = new URLSearchParams();
+            
+            params.append('request', req);
+
+            if (fieldsMap.address.style.display !== 'none' && addressInput.value) {
+                params.append('address', addressInput.value);
+            }
+            if (fieldsMap.location.style.display !== 'none' && locationInput.value) {
+                params.append('location', locationInput.value);
+            }
+            if (fieldsMap.teryt.style.display !== 'none' && terytInput.value) {
+                params.append('teryt', terytInput.value);
+            }
+            if (fieldsMap.simc.style.display !== 'none' && simcInput.value) {
+                params.append('simc', simcInput.value);
+            }
+            if (fieldsMap.ulic.style.display !== 'none' && ulicInput.value) {
+                params.append('ulic', ulicInput.value);
+            }
+            if (fieldsMap.srid.style.display !== 'none' && sridInput.value) {
+                params.append('srid', sridInput.value);
+            }
+
+            // Rozróżnienie ukośnika dla metody GetAddressReverse obecnego w specyfikacji źródłowej
+            const finalSlash = (req === 'GetAddressReverse' || req === 'GetAddresses') ? '/?' : '?';
+            liveUrlDiv.textContent = baseUrl + finalSlash + params.toString();
+        }
+
+        // Wiązanie zdarzeń
+        requestSelect.addEventListener('change', toggleFields);
+        const dynamicInputs = [addressInput, locationInput, terytInput, simcInput, ulicInput, sridInput];
+        dynamicInputs.forEach(input => input.addEventListener('input', updateUrl));
+
+        // Obsługa komunikacji sieciowej (Fetch API) z upiększaniem formatu JSON
+        btnSend.addEventListener('click', function() {
+            const url = liveUrlDiv.textContent;
+            
+            loader.style.display = 'block';
+            responseBlock.style.display = 'none';
+            responseText.textContent = '';
+
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Błąd serwera HTTP: ' + response.status);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    loader.style.display = 'none';
+                    responseBlock.style.display = 'block';
+                    
+                    // Próba automatycznego parsowania i ładnego formatowania struktur JSON
+                    try {
+                        const jsonObject = JSON.parse(data);
+                        responseText.textContent = JSON.stringify(jsonObject, null, 4);
+                    } catch (e) {
+                        // Jeśli odpowiedź to zwykły tekst/CSV, wyświetl bez zmian
+                        responseText.textContent = data;
+                    }
+                })
+                .catch(error => {
+                    loader.style.display = 'none';
+                    responseBlock.style.display = 'block';
+                    responseText.textContent = 'Nie udało się pobrać danych.\nPowód: ' + error.message + '\n\nUwaga: Jeśli otwierasz ten dokument jako plik lokalny (file://), zapytanie Fetch mogło zostać zablokowane przez politykę CORS Twojej przeglądarki.';
+                });
+        });
+
+        // Pierwsze uruchomienie konfiguracji widoku
+        toggleFields();
+    });
+</script>
+</body>
+</html>

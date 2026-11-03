@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=starozreby",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:20.447Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/starozreby-3f7fda1e.json",
+  "sha256": "2640385cbf03b2a4222afe48592fd37397e9acaf472fe5548fd0d19a6fb6b4b5",
+  "usable": true,
+  "items": 1
+}

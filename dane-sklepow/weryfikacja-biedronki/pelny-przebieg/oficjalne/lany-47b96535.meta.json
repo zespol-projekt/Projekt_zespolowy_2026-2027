@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lany",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:04.371Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/lany-47b96535.json",
+  "sha256": "21c790f262a2d4a082622afb6dde0ecae228a149e1461b6da7e2b34aca16754b",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pabianice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:08.180Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/pabianice-028c2b08.json",
+  "sha256": "51732d5171900570097a2e0c2a018df7a50bfed7d851dc6fe1dd95a43f78ea42",
+  "usable": true,
+  "items": 6
+}

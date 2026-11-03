@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sochocin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:12.154Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sochocin-a3e2a4d3.json",
+  "sha256": "b15ab1b93cad23443b4240c2db40e97cb668dea241c5592c20ca914789d8035e",
+  "usable": true,
+  "items": 1
+}

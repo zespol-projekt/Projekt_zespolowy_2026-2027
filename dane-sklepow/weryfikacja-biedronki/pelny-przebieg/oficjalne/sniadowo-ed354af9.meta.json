@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sniadowo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:10.580Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sniadowo-ed354af9.json",
+  "sha256": "fc7d2aac79eea371e1104b4e45a9664da472abed7d5b08a6f4f38b2d46468039",
+  "usable": true,
+  "items": 1
+}

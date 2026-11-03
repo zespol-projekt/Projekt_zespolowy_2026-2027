@@ -1,0 +1,11 @@
+{
+  "key": "1400-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,1400",
+  "retrieved_at": "2026-11-02T18:53:18.082Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,1400",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/propozycje-01/1400-oficjalna.html",
+  "sha256": "0f483775f5f1e91def39d4abfc7b0932ac0bd5318da6f3972461459199bb9c40",
+  "bytes": 97018
+}

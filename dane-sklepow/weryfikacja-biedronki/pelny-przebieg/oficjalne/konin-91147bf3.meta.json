@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=konin",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:41.372Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/konin-91147bf3.json",
+  "sha256": "b5af91e4e518f48e2cbd805a1b71de7d22e4d91c31f639d3153b51c11c015cb3",
+  "usable": true,
+  "items": 8
+}

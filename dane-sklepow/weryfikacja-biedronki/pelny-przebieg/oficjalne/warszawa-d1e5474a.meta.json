@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:56.913Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/warszawa-d1e5474a.json",
+  "sha256": "86f194dfb5c8a5295707ba070b94052a652085c05b5f67096b5078133d460515",
+  "usable": true,
+  "items": 181
+}

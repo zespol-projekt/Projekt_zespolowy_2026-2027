@@ -1,0 +1,11 @@
+{
+  "key": "1449-gugik-osm",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ostro%C5%82%C4%99ka%2C+Henryka+Sienkiewicza+53&exact_number=1&srid=4326",
+  "retrieved_at": "2026-11-02T19:06:32.018Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ostro%C5%82%C4%99ka%2C+Henryka+Sienkiewicza+53&exact_number=1&srid=4326",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/propozycje-02/1449-gugik-osm.json",
+  "sha256": "5b4ce74c3e31e61322b7113f1db649c6d8bf1fd41ddda753d54afb31cb7ac2f7",
+  "bytes": 626
+}

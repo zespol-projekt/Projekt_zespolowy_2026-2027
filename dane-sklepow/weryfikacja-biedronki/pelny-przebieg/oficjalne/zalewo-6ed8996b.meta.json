@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zalewo",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:14:18.265Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/zalewo-6ed8996b.json",
+  "sha256": "3f1545d33b52245def9f389de4b5fa9a6ae7109a2dc60ef656d1470cab7e97f8",
+  "usable": true,
+  "items": 1
+}

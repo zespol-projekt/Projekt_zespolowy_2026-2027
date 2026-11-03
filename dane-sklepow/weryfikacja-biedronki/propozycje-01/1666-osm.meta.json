@@ -1,0 +1,11 @@
+{
+  "key": "1666-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/167066584/full.json",
+  "retrieved_at": "2026-11-02T18:54:19.847Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/167066584/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-01/1666-osm.json",
+  "sha256": "037a58a4ee4e9803b37066f9fea9a468f80195751f1f2f24347ca502ce4b8b20",
+  "bytes": 2713
+}

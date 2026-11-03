@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wegierska-gorka",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:57.563Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/wegierska-gorka-77c4721f.json",
+  "sha256": "a20ada0bd82548f3d77720d261a2422e65b9045f0973e55106daee1529eac705",
+  "usable": true,
+  "items": 1
+}

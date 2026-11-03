@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nowy-wisnicz",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:52.710Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/nowy-wisnicz-7c94e522.json",
+  "sha256": "cfc88b223e7abd9de67473b43566cd64aee91edf0977d1a980e0f91ba7b330de",
+  "usable": true,
+  "items": 1
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jedrzychowice",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:10:21.055Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/jedrzychowice-b02a9daa.json",
+  "sha256": "26ad3e24e040f98cbb36052798781d81fd6eb5030220aaf4b0f891dfdcc3ad49",
+  "usable": true,
+  "items": 1
+}

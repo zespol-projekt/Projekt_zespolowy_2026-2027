@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=radomsko",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:12:38.648Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/radomsko-8751cc2d.json",
+  "sha256": "fed47191c25ef886f49a44f96358f66ff0175510f5b4192ad3fa1c4726fbba2e",
+  "usable": true,
+  "items": 5
+}

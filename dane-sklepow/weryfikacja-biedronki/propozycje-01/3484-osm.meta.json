@@ -1,0 +1,11 @@
+{
+  "key": "3484-osm",
+  "url": "https://api.openstreetmap.org/api/0.6/way/778842815/full.json",
+  "retrieved_at": "2026-11-02T18:53:27.648Z",
+  "status": 200,
+  "final_url": "https://api.openstreetmap.org/api/0.6/way/778842815/full.json",
+  "content_type": "application/json; charset=utf-8",
+  "file": "weryfikacja-biedronki/propozycje-01/3484-osm.json",
+  "sha256": "4bf20e2a322d4c64602909992e011d40ca8d1cb5970ecb2594848c710c16f3c7",
+  "bytes": 1667
+}

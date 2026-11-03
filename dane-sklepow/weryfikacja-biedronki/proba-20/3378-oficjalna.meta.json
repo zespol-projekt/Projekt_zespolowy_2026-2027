@@ -1,0 +1,11 @@
+{
+  "key": "3378-oficjalna",
+  "url": "https://www.biedronka.pl/pl/shop,id,3378",
+  "retrieved_at": "2026-11-02T18:41:52.912Z",
+  "status": 200,
+  "final_url": "https://www.biedronka.pl/pl/shop,id,3378",
+  "content_type": "text/html; charset=UTF-8",
+  "file": "weryfikacja-biedronki/proba-20/3378-oficjalna.html",
+  "sha256": "2116692a3ed046472dbacd6e3283b9427ec3a77f25e5ac94f4a2015f06e37040",
+  "bytes": 97062
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sierpc",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:13:04.663Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/sierpc-79206685.json",
+  "sha256": "dec56e46b6088b9dd573cf61fbc1356687a2ad72ab1d9b38f64c5cd5ec3a5a9e",
+  "usable": true,
+  "items": 3
+}

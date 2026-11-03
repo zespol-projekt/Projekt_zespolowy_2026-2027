@@ -1,0 +1,9 @@
+{
+  "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=olawa",
+  "status": 200,
+  "retrieved_at": "2026-11-02T18:11:57.649Z",
+  "file": "weryfikacja-biedronki/pelny-przebieg/oficjalne/olawa-38b0fca2.json",
+  "sha256": "8d6548f9ebc0270ae4efd80d52a656065e0c2ad9e9450aef23eb51c5a24abbab",
+  "usable": true,
+  "items": 5
+}

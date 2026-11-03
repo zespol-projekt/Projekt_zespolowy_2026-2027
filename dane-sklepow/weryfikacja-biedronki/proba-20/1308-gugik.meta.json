@@ -1,0 +1,11 @@
+{
+  "key": "1308-gugik",
+  "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Murowana+Go%C5%9Blina%2C+Genera%C5%82a+Tadeusza+Kutrzeby+1&exact_number=1",
+  "retrieved_at": "2026-11-02T18:41:19.113Z",
+  "status": 200,
+  "final_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Murowana+Go%C5%9Blina%2C+Genera%C5%82a+Tadeusza+Kutrzeby+1&exact_number=1",
+  "content_type": "application/json;",
+  "file": "weryfikacja-biedronki/proba-20/1308-gugik.json",
+  "sha256": "866fb26f5b2051fc27ea34c95b45581cbee4c0bc88c3677f88fa0a95c5710774",
+  "bytes": 619
+}
