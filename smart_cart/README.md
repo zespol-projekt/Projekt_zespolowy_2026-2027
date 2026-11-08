@@ -2,6 +2,15 @@
 
 Aplikacja Expo / React Native na Androida, iOS i WWW. Ekrany: `src/app`; mapa: `src/features/stores`.
 
+## Logowanie — kontrakt do wdrożenia
+
+[Kontrakt modułu auth](docs/auth-contract.md) opisuje typy, operacje i podział pracy
+przy integracji Supabase. Na tym etapie logowanie i ochrona dostępu nie są jeszcze wdrożone.
+
+[Konfiguracja Supabase — punkt 2](docs/supabase-setup.md) zawiera ustawienia Auth,
+SMTP dla projektu bez własnej domeny, polskie szablony maili oraz zmienne środowiskowe.
+Wymaga zastosowania w panelu i sprawdzenia rzeczywistej wysyłki.
+
 ## Uruchomienie — PowerShell
 
 Wymagany Node.js 24 LTS. Z katalogu `SMARTCART` przejdź do aplikacji i zainstaluj zależności:
