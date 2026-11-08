@@ -1,7 +1,12 @@
 # Supabase — konfiguracja punktu 2
 
-Status: przygotowane szablony i instrukcja. Nie potwierdzono ustawień zdalnego
-projektu ani doręczania wiadomości. Sam zapis tych plików nie zmienia panelu Supabase.
+Status na 8 listopada 2026: użytkownik potwierdził konfigurację Gmail SMTP oraz
+zapis obu szablonów w panelu. Wartości Auth i limitów odczytano z przesłanych
+zrzutów ekranu. Dodatkowo odczyt `GET /auth/v1/settings` z publicznym kluczem
+zakończył się HTTP 200: dostawca email i rejestracja są włączone, automatyczne
+potwierdzanie emaila i konta anonimowe są wyłączone. Ten endpoint nie potwierdza
+ustawień SMTP, limitów ani treści maili. Doręczanie wiadomości pozostaje
+nieprzetestowane. Sam zapis tych plików nie zmienia panelu Supabase.
 W tym punkcie nie instalujemy jeszcze klienta i nie wdrażamy formularzy.
 
 Projekt jest pracą na zaliczenie i nie ma własnej domeny. Poniżej wariant ze
@@ -16,21 +21,21 @@ włącz rejestrację i wymagane potwierdzenie emaila. Ustawienia dostawcy Email
 znajdziesz niżej, w **Auth Providers → Email**. Układ panelu może się różnić;
 szukaj nazw pól z tabeli. Nie twórz osobnego projektu dla własnej części aplikacji.
 
-Poniżej przyjęte wartości do ustawienia, a nie odczyt istniejącej konfiguracji.
-Po zapisaniu ponownie otwórz ustawienia i wpisz odczytane wartości w ostatniej kolumnie.
+Ostatnia kolumna zawiera wartości widoczne na zrzutach użytkownika z 8 listopada
+2026. Po kolejnych zmianach zaktualizuj tabelę na podstawie zapisanych ustawień.
 
-| Ustawienie | Wartość do ustawienia | Odczyt z panelu |
+| Ustawienie | Przyjęta wartość | Odczyt ze zrzutów panelu |
 | --- | --- | --- |
-| Allow new users to sign up | Włączone | Niezweryfikowane |
-| Confirm email | Włączone | Niezweryfikowane |
-| Allow anonymous sign-ins | Wyłączone | Niezweryfikowane |
-| Enable email provider | Włączone | Niezweryfikowane |
-| Minimum password length | 8 znaków | Niezweryfikowane |
-| Password requirements | Bez dodatkowego wymogu konkretnych rodzajów znaków | Niezweryfikowane |
-| Email OTP length | 6 cyfr | Niezweryfikowane |
-| Email OTP expiration | 600 sekund, czyli 10 minut | Niezweryfikowane |
-| Rate Limits → Minimum interval per user | 60 sekund | Niezweryfikowane |
-| Rate Limits → Rate limit for sending emails | 30 wiadomości na godzinę dla całego projektu | Niezweryfikowane |
+| Allow new users to sign up | Włączone | Włączone |
+| Confirm email | Włączone | Włączone |
+| Allow anonymous sign-ins | Wyłączone | Wyłączone |
+| Enable email provider | Włączone | Włączone |
+| Minimum password length | 8 znaków | 8 |
+| Password requirements | Bez dodatkowego wymogu konkretnych rodzajów znaków | Brak wybranej opcji |
+| Email OTP length | 6 cyfr | 6 |
+| Email OTP expiration | 600 sekund, czyli 10 minut | 600 |
+| Rate Limits → Minimum interval per user | 60 sekund | 60 |
+| Rate Limits → Rate limit for sending emails | 30 wiadomości na godzinę dla całego projektu | 30 |
 
 **Najpierw zapisz 600 sekund, potem wklej szablony maili.** Oba zawierają informację
 o ważności przez 10 minut. Jeśli zespół przyjmie inny czas, popraw oba szablony
@@ -111,26 +116,27 @@ SUPABASE_URL=https://PROJECT_REF.supabase.co
 
 Oba adresy muszą wskazywać ten sam projekt. Zastąp przykłady prawdziwymi wartościami.
 `.env.local` jest ignorowany przez Git. Klucze secret/admin/service_role i hasło
-SMTP nie należą do aplikacji. Te zmienne zaczną być używane po wdrożeniu klienta
-i ochrony API w kolejnych punktach; samo ich wpisanie nie uruchamia logowania.
+SMTP nie należą do aplikacji. Klient z punktu 3 odczytuje zmienne `EXPO_PUBLIC_*`;
+`SUPABASE_URL` będzie używane przy ochronie API w punkcie 5.
 [Klucze Supabase](https://supabase.com/docs/guides/api/api-keys).
 
 ## 5. Potwierdzenie konfiguracji i doręczenia
 
 Do uzupełnienia po wykonaniu konfiguracji i testów, bez haseł, kodów i tokenów:
 
-- Projekt / Project ref: **niezapisany**.
-- Dostawca SMTP: **proponowany Gmail; połączenie niezweryfikowane**.
+- Projekt: **smart-koszyk**, organizacja **SmartCart** (ze zrzutu); Project ref: **jhxoosqepmqdsppvkzns** (z danych Connect przekazanych przez użytkownika).
+- Dostawca SMTP: **Gmail; zapis konfiguracji potwierdzony przez użytkownika, doręczenie kodu rejestracji sprawdzone**.
 - Adres nadawcy projektu: **niezapisany**.
-- Data sprawdzenia i osoba: **brak**.
-- [ ] Wartości odczytane po zapisie uzupełniono w tabeli.
-- [ ] Oba polskie szablony zapisano w panelu; czas w treści odpowiada ustawieniom.
-- [ ] Kod rejestracji dotarł na kontrolowany adres spoza zespołu Supabase.
-- [ ] Kod rejestracji rzeczywiście potwierdził email.
+- Data i źródło potwierdzenia: **8 listopada 2026, zrzuty panelu, deklaracja użytkownika oraz odczyt publicznych ustawień Auth**.
+- [x] Dane Connect wpisano do ignorowanego `.env.local`; oba adresy wskazują ten sam projekt.
+- [x] Zapytanie do `/auth/v1/settings` potwierdziło dostępność projektu i podstawowe ustawienia Auth; nie wysyłało maila ani nie tworzyło użytkownika.
+- [x] Wartości widoczne na przesłanych zrzutach uzupełniono w tabeli.
+- [x] Użytkownik potwierdził zapis obu polskich szablonów; ich treść przewiduje ustawione 600 sekund.
+- [x] Kod rejestracji dotarł na kontrolowany adres testowy podany przez użytkownika.
+- [x] Kod rejestracji rzeczywiście potwierdził email; działało późniejsze logowanie hasłem i lokalne wylogowanie.
 - [ ] Kod odzyskiwania dotarł na potwierdzone konto i pozwolił zmienić hasło.
 - [ ] Ponowna wysyłka respektuje ustawiony odstęp i limity.
 
-Test rejestracji i odzyskiwania wykonamy przez rzeczywiste operacje auth z punktu 3.
-Nie dodajemy teraz drugiego, tymczasowego systemu logowania tylko do testu SMTP.
-Sprawdź również folder spam. Zapisanie ustawień lub podgląd szablonu nie wystarcza
-do zaznaczenia doręczenia. Punkt 2 pozostaje niezweryfikowany do tych testów.
+Testy korzystają z rzeczywistych operacji auth z punktu 3. Hasła testowe są losowe
+i pozostają wyłącznie w pamięci procesu testowego; kody i tokeny nie są zapisywane.
+Zapisanie ustawień lub podgląd szablonu nie wystarcza do zaznaczenia doręczenia.

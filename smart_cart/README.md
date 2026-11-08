@@ -2,10 +2,13 @@
 
 Aplikacja Expo / React Native na Androida, iOS i WWW. Ekrany: `src/app`; mapa: `src/features/stores`.
 
-## Logowanie — kontrakt do wdrożenia
+## Logowanie — integracja Supabase
 
-[Kontrakt modułu auth](docs/auth-contract.md) opisuje typy, operacje i podział pracy
-przy integracji Supabase. Na tym etapie logowanie i ochrona dostępu nie są jeszcze wdrożone.
+[Kontrakt modułu auth](docs/auth-contract.md) opisuje typy, operacje i podział pracy.
+[Operacje konta — punkt 3](docs/auth-operations.md) obsługują rzeczywiste Supabase:
+rejestrację, potwierdzanie kodów, logowanie, reset hasła i lokalne wylogowanie.
+Ekrany logowania, trwała sesja/provider i ochrona dostępu pozostają do wdrożenia
+w kolejnych punktach. Obecna mapa i API nadal działają bez logowania.
 
 [Konfiguracja Supabase — punkt 2](docs/supabase-setup.md) zawiera ustawienia Auth,
 SMTP dla projektu bez własnej domeny, polskie szablony maili oraz zmienne środowiskowe.

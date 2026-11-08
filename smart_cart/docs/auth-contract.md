@@ -1,6 +1,8 @@
 # Kontrakt logowania — punkt 1
 
-Status: przygotowane typy i zasady współpracy. To nie jest jeszcze działające logowanie.
+Status: przygotowane typy i zasady współpracy; [operacje Supabase](auth-operations.md)
+są zaimplementowane w punkcie 3. Provider/hook, trwała sesja, ekrany i ochrona API
+pozostają do wdrożenia w kolejnych punktach.
 Źródłem typów jest [`src/features/auth/types.ts`](../src/features/auth/types.ts).
 Import: `import type { AuthContextValue } from '@/features/auth/types';`.
 
@@ -39,8 +41,10 @@ jest dostępne. UI nie rozpoznaje błędów po treści angielskich zdań.
 Hasła nie są automatycznie przycinane ani przechowywane; dotyczy to też kodów.
 Poprawienie adresu podczas rejestracji uruchamia `signUp` z nowym emailem i hasłem,
 nie tylko zmianę podpisu na ekranie. Moduł stosuje jedną politykę normalizacji emaila.
-Ważność kodów, limity i wymagania haseł zostaną zapisane po konfiguracji Supabase
-w punkcie 2; kontrakt nie zakłada ich wartości.
+Ważność kodów, limity i wymagania haseł są zapisane w [konfiguracji Supabase](supabase-setup.md).
+Eksport `authPolicy` z `@/features/auth` udostępnia je formularzom. Nowy proces
+rejestracji/logowania/weryfikacji kodu można rozpocząć w stanie `signedOut`;
+bieżącą sesję lub rozpoczęte odzyskiwanie należy wcześniej zakończyć przez `signOut`.
 
 ## Stan i nawigacja
 
