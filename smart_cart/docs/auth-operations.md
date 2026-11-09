@@ -35,9 +35,9 @@ unieważnić refresh token na serwerze. Wydany JWT może pozostać ważny do wyg
 Punkt 4 dodał [trwałą zwykłą sesję, odtwarzanie i provider](auth-session.md).
 Sesja odzyskiwania pozostaje wyłącznie w pamięci; restart wymaga ponowienia resetu.
 Nie przechwytujemy linków — weryfikacja nadal używa kodów.
-Ochrona API i uwierzytelnione pobieranie sklepów należą do punktu 5. Formularze
-i podłączenie providera do nawigacji przygotowuje osoba 2. Ten etap nie zabezpiecza
-jeszcze mapy ani endpointów i nie dodaje ekranów do aplikacji.
+[Punkt 5](auth-api.md) dodał ochronę API i uwierzytelnione pobieranie sklepów.
+Formularze i podłączenie providera do nawigacji przygotowuje osoba 2. Moduł operacji
+nie tworzy ekranów ani nie steruje routerem.
 
 ## Sprawdzenie
 

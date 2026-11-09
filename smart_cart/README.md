@@ -14,9 +14,13 @@ Provider czeka na podłączenie do nawigacji przez osobę 2.
 pobieranie sklepów używa bieżącego tokenu i przerywa się przy wylogowaniu.
 Do czasu podłączenia formularzy mapa bez sesji wyświetla prośbę o zalogowanie.
 
+[Przekazanie i odbiór — punkt 6](docs/auth-handoff.md) zbiera gotowy zakres osoby 1,
+instrukcję dla osoby 2, wyniki kontroli i listę wspólnych testów po integracji.
+
 [Konfiguracja Supabase — punkt 2](docs/supabase-setup.md) zawiera ustawienia Auth,
 SMTP dla projektu bez własnej domeny, polskie szablony maili oraz zmienne środowiskowe.
-Wymaga zastosowania w panelu i sprawdzenia rzeczywistej wysyłki.
+Konfigurację wspólnego projektu oraz rzeczywiste doręczenie obu kodów sprawdzono
+8–9 listopada 2026; szczegóły i ograniczenia są zapisane w instrukcji.
 
 ## Uruchomienie — PowerShell
 

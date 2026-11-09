@@ -5,9 +5,10 @@ zapis obu szablonów w panelu. Wartości Auth i limitów odczytano z przesłanyc
 zrzutów ekranu. Dodatkowo odczyt `GET /auth/v1/settings` z publicznym kluczem
 zakończył się HTTP 200: dostawca email i rejestracja są włączone, automatyczne
 potwierdzanie emaila i konta anonimowe są wyłączone. Ten endpoint nie potwierdza
-ustawień SMTP, limitów ani treści maili. Doręczanie wiadomości pozostaje
-nieprzetestowane. Sam zapis tych plików nie zmienia panelu Supabase.
-W tym punkcie nie instalujemy jeszcze klienta i nie wdrażamy formularzy.
+ustawień SMTP, limitów ani treści maili. Następnie, 8–9 listopada, sprawdzono
+rzeczywiste doręczenie obu kodów oraz pełne operacje konta opisane
+w [punkcie 3](auth-operations.md). Sam zapis tych plików nie zmienia panelu Supabase.
+Klient jest już wdrożony; formularze pozostają zadaniem osoby 2.
 
 Projekt jest pracą na zaliczenie i nie ma własnej domeny. Poniżej wariant ze
 skrzynką Gmail jako SMTP do niewielkiej liczby testów i prezentacji. Nie wymaga
@@ -117,7 +118,7 @@ SUPABASE_URL=https://PROJECT_REF.supabase.co
 Oba adresy muszą wskazywać ten sam projekt. Zastąp przykłady prawdziwymi wartościami.
 `.env.local` jest ignorowany przez Git. Klucze secret/admin/service_role i hasło
 SMTP nie należą do aplikacji. Klient z punktu 3 odczytuje zmienne `EXPO_PUBLIC_*`;
-`SUPABASE_URL` będzie używane przy ochronie API w punkcie 5.
+`SUPABASE_URL` jest używane przy ochronie API z punktu 5.
 [Klucze Supabase](https://supabase.com/docs/guides/api/api-keys).
 
 ## 5. Potwierdzenie konfiguracji i doręczenia

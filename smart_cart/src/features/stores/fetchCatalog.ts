@@ -1,15 +1,10 @@
 import type { AuthSessionAccess } from '../auth/types.ts';
 import { parseCatalog, type Catalog } from './model.ts';
 
-type StoresAuth = AuthSessionAccess & {
-  getSessionKey(): string | null;
-  subscribe(listener: () => void): () => void;
-};
-
 /** Jeden katalog, maksymalnie jedno ponowienie po 401, wyłącznie w tej samej sesji. */
 export async function fetchCatalog(
   url: string,
-  auth: StoresAuth,
+  auth: AuthSessionAccess,
   signal: AbortSignal,
   request: typeof fetch = fetch,
 ): Promise<Catalog> {

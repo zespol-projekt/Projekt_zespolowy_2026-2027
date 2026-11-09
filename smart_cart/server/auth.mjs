@@ -33,10 +33,13 @@ export function createAccessVerifier(env = process.env, { fetch: fetcher = globa
       // supplies current user data. Decoding alone never grants access.
       const { data, error } = await client.auth.getUser(token);
       if (error) {
+        if (error.name === 'AuthSessionMissingError') return denied(401);
         if (['user_banned', 'email_not_confirmed'].includes(error.code)) return denied(403);
         if (['bad_jwt', 'session_not_found', 'user_not_found', 'no_authorization'].includes(error.code)) return denied(401);
         if (['invalid_api_key', 'invalid_credentials'].includes(error.code)) return denied(503);
-        return denied([400, 401, 403].includes(error.status) ? 401 : 503);
+        // Gateway może zwrócić 401 bez kodu Auth, np. dla błędnego apikey.
+        // Nie traktuj nieznanej awarii weryfikatora jako utraty sesji klienta.
+        return denied(503);
       }
       const user = data.user;
       if (!user?.id) return denied(503);

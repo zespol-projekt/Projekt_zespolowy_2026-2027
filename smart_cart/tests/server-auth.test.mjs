@@ -70,7 +70,7 @@ test('dostęp wymaga potwierdzonego konta; metadane klienta nie potwierdzają em
 
 test('awarie usługi i limit są 503, błędne sesje 401, zablokowane konto 403', async () => {
   for (const [status, code, expected] of [[503, 'unexpected_failure', 503], [429, 'over_request_rate_limit', 503],
-    [401, 'invalid_api_key', 503], [401, 'session_not_found', 401], [403, 'user_banned', 403]]) {
+    [401, 'invalid_api_key', 503], [401, undefined, 503], [401, 'session_not_found', 401], [403, 'user_banned', 403]]) {
     const verify = verifier(async () => response({ code, message: 'technical detail' }, status));
     assert.deepEqual(await verify(`Bearer ${token()}`), { ok: false, status: expected });
   }

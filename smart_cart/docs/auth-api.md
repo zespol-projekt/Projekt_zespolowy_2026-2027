@@ -38,6 +38,8 @@ z odpowiedzi Supabase, a nie z `user_metadata` ani danych przesłanych osobno pr
 | Prawidłowa sesja i konto | Katalog, `HEAD` lub pasujące `304` |
 
 Weryfikacja odbywa się przed odczytem katalogu dla żądania, ustawieniem ETag i `304`.
+Zewnętrzne sprawdzenie ma limit 5 sekund. Nieznany błąd bramki Supabase, w tym `401`
+bez kodu błędu Auth, jest traktowany jako niedostępność weryfikacji (`503`).
 Odpowiedzi chronione oraz błędy mają `Cache-Control: no-store`. Wewnętrzny cache
 katalogu i gzip pozostaje; nie jest cache'em uprawnień użytkownika.
 
@@ -84,7 +86,14 @@ Testy Node obejmują rzeczywiste HTTP serwera z kontrolowaną weryfikacją,
 SDK z kontrolowanym transportem, granice sesji i żądania katalogu. Playwright używa
 fikcyjnej konfiguracji i sesji wyłącznie w fixture'ach testowych, uruchamiając
 rzeczywisty kod aplikacji oraz mapy. Produkcyjny kod nie ma przełącznika omijającego auth.
-Wyniki końcowej kontroli i odbiór na urządzeniach należy odróżniać od testów z mockami.
+9 listopada 2026: przeszły 82 testy Node, 17 testów Chrome i `tsc --noEmit`.
+`server:check` potwierdził 7753 rekordy także bez konfiguracji auth; zwykły start
+bez tej konfiguracji został poprawnie odrzucony. Rzeczywisty projekt Supabase
+odrzucił fałszywy token przez wdrożony weryfikator (`401`), bez wysyłania maili.
+To test negatywny; pozytywne operacje konta i maile sprawdzono w punkcie 3.
+Lint pozostaje niezaliczony z powodu braku konfiguracji ESLint w repozytorium.
+Odbiór pełnego logowania i mapy na urządzeniu wymaga jeszcze ekranów osoby 2;
+testy z fixture'ami nie zastępują tego odbioru.
 
 Źródła: [Supabase getUser](https://supabase.com/docs/reference/javascript/auth-getuser),
 [claims JWT](https://supabase.com/docs/guides/auth/jwt-fields),
