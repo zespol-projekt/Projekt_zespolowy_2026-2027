@@ -15,11 +15,58 @@ export const embedded = (page: Page) => page.frameLocator('[data-testid="stores-
 export const waitForStores = async (page: Page, count: number) => {
   await expect(embedded(page).locator('#map')).toHaveAttribute('data-store-count', String(count));
 };
+
+// These credentials exist only in Playwright's mocked HTTP/storage environment.
+export const AUTH_URL = 'https://smartcart-test.supabase.invalid';
+export const AUTH_STORAGE_KEY = `smartcart-${AUTH_URL.replace(/[^a-z0-9]/gi, '-')}-auth`;
+export function testSession(sessionId = '11111111-1111-4111-8111-111111111111', tokenVersion = 1) {
+  const user = {
+    id: '22222222-2222-4222-8222-222222222222', email: 'map-test@example.invalid',
+    aud: 'authenticated', role: 'authenticated', email_confirmed_at: '2026-01-01T00:00:00Z',
+    created_at: '2026-01-01T00:00:00Z', app_metadata: {}, user_metadata: {}, is_anonymous: false,
+  };
+  const encode = (value: object) => Buffer.from(JSON.stringify(value)).toString('base64url');
+  const access_token = `${encode({ alg: 'HS256', typ: 'JWT' })}.${encode({
+    iss: `${AUTH_URL}/auth/v1`, sub: user.id, aud: 'authenticated', role: 'authenticated',
+    exp: 4102444800, iat: 1760000000 + tokenVersion, session_id: sessionId,
+  })}.${Buffer.from('mock-signature').toString('base64url')}`;
+  return { access_token, refresh_token: `mock-refresh-${sessionId}-${tokenVersion}`, token_type: 'bearer',
+    expires_in: 3600, expires_at: 4102444800, user };
+}
+export type TestSession = ReturnType<typeof testSession>;
+
+/** Simulate another browser tab via the SDK's actual storage and BroadcastChannel protocol. */
+export async function changeSession(page: Page, session: TestSession | null, event = session ? 'SIGNED_IN' : 'SIGNED_OUT') {
+  await page.evaluate(({ key, session, event }) => {
+    if (session) localStorage.setItem(key, JSON.stringify(session));
+    else localStorage.removeItem(key);
+    const channel = new BroadcastChannel(key);
+    channel.postMessage({ event, session });
+    channel.close();
+  }, { key: AUTH_STORAGE_KEY, session, event });
+}
+
+async function mockAuth(page: Page, session: TestSession | null) {
+  await page.addInitScript(({ key, session }) => {
+    if (window !== window.top || location.hostname !== 'localhost') return;
+    if (session) localStorage.setItem(key, JSON.stringify(session));
+    else localStorage.removeItem(key);
+  }, { key: AUTH_STORAGE_KEY, session });
+  // Block every auth URL as well as mocking the intended host: no real account requests.
+  await page.route('**/auth/v1/**', async route => {
+    const url = new URL(route.request().url());
+    if (url.origin !== AUTH_URL) return route.abort();
+    if (url.pathname === '/auth/v1/user') return route.fulfill({ json: testSession().user });
+    if (url.pathname === '/auth/v1/logout') return route.fulfill({ status: 204 });
+    return route.fulfill({ status: 400, json: { code: 'unexpected_test_request' } });
+  });
+}
 export async function localLibrary(filename: string) {
   return { body: await readFile(path.join(process.cwd(), 'node_modules/maplibre-gl/dist', filename)),
     contentType: filename.endsWith('.css') ? 'text/css' : 'text/javascript', headers: { 'Access-Control-Allow-Origin': '*' } };
 }
-export async function mockMap(page: Page) {
+export async function mockMap(page: Page, session: TestSession | null = testSession()) {
+  await mockAuth(page, session);
   // Use real MapLibre/worker code, without downloading public tiles or fonts.
   await page.route(`${MAPLIBRE_ASSETS}**`, async route => {
     const filename = new URL(route.request().url()).pathname.split('/').pop()!;

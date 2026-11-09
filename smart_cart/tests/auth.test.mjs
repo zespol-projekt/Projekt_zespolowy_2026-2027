@@ -29,7 +29,8 @@ const deferred = () => {
   return { promise, resolve };
 };
 
-function setup(overrides = {}) {
+async function setup(overrides = {}) {
+  let initialized = false;
   const calls = [];
   const methods = {
     signUp: async () => ({ data: { user: { ...user, email_confirmed_at: null }, session: null }, error: null }),
@@ -44,14 +45,18 @@ function setup(overrides = {}) {
     ...overrides,
   };
   const auth = Object.fromEntries(Object.entries(methods).map(([name, method]) => [name, async (...args) => {
+    if (!initialized && name === 'getSession') return { data: { session: null }, error: null };
     calls.push({ name, args });
     return method(...args);
   }]));
-  return { service: createAuthService(() => auth), calls };
+  const service = createAuthService(() => auth);
+  await service.initialize();
+  initialized = true;
+  return { service, calls };
 }
 
 test('rejestracja normalizuje adres, zachowuje hasło i czeka na potwierdzenie', async () => {
-  const { service, calls } = setup();
+  const { service, calls } = await setup();
   assert.deepEqual(await service.signUp(' TEST@EXAMPLE.COM ', password), {
     ok: true, data: { status: 'confirmationRequired', email },
   });
@@ -62,14 +67,14 @@ test('rejestracja normalizuje adres, zachowuje hasło i czeka na potwierdzenie',
 });
 
 test('sesja zwrócona przy rejestracji bez wymaganego potwierdzenia jest odrzucana', async () => {
-  const { service, calls } = setup({ signUp: async () => signedIn() });
+  const { service, calls } = await setup({ signUp: async () => signedIn() });
   assert.equal((await service.signUp(email, password)).error.code, 'configuration_error');
   assert.equal(service.getState().status, 'signedOut');
   assert.deepEqual(calls.at(-1), { name: 'signOut', args: [{ scope: 'local' }] });
 });
 
 test('logowanie niepotwierdzonym adresem kieruje do kodu, bez tworzenia sesji', async () => {
-  const { service } = setup({ signInWithPassword: async () => failure('email_not_confirmed') });
+  const { service } = await setup({ signInWithPassword: async () => failure('email_not_confirmed') });
   assert.deepEqual(await service.signIn(email, password), {
     ok: true, data: { status: 'confirmationRequired', email },
   });
@@ -77,21 +82,21 @@ test('logowanie niepotwierdzonym adresem kieruje do kodu, bez tworzenia sesji', 
 });
 
 test('logowanie akceptuje istniejące krótsze hasło i ujawnia UI tylko id oraz email', async () => {
-  const { service, calls } = setup();
+  const { service, calls } = await setup();
   assert.deepEqual(await service.signIn(email, 'short'), { ok: true, data: { status: 'signedIn' } });
   assert.deepEqual(calls[0].args, [{ email, password: 'short' }]);
   assert.deepEqual(service.getState(), { status: 'signedIn', user: { id: user.id, email } });
 });
 
 test('potwierdzenie rejestracji używa email OTP; brak sesji wymaga logowania', async () => {
-  const { service, calls } = setup();
+  const { service, calls } = await setup();
   assert.deepEqual(await service.verifySignupCode(email, '123456'), {
     ok: true, data: { status: 'signedIn' },
   });
   assert.deepEqual(calls[0].args, [{ email, token: '123456', type: 'email' }]);
   assert.equal(service.getState().status, 'signedIn');
 
-  const withoutSession = setup({ verifyOtp: async () => ({ data: { user, session: null }, error: null }) });
+  const withoutSession = await setup({ verifyOtp: async () => ({ data: { user, session: null }, error: null }) });
   assert.deepEqual(await withoutSession.service.verifySignupCode(email, '123456'), {
     ok: true, data: { status: 'signInRequired' },
   });
@@ -99,7 +104,7 @@ test('potwierdzenie rejestracji używa email OTP; brak sesji wymaga logowania', 
 });
 
 test('kod jest sześcioma cyframi i nie jest po cichu przycinany', async () => {
-  const { service, calls } = setup();
+  const { service, calls } = await setup();
   for (const code of [' 123456', '123456 ', '12345', '12345a']) {
     assert.equal((await service.verifySignupCode(email, code)).error.code, 'invalid_or_expired_code');
   }
@@ -107,7 +112,7 @@ test('kod jest sześcioma cyframi i nie jest po cichu przycinany', async () => {
 });
 
 test('ponowienie rejestracji używa signup, reset nie sprawdza istnienia konta', async () => {
-  const { service, calls } = setup();
+  const { service, calls } = await setup();
   assert.equal((await service.resendSignupCode(email)).ok, true);
   assert.deepEqual(calls[0].args, [{ type: 'signup', email }]);
   assert.equal((await service.sendPasswordResetCode('unknown@example.com')).ok, true);
@@ -118,7 +123,7 @@ test('ponowienie rejestracji używa signup, reset nie sprawdza istnienia konta',
 test('recovery zaczyna się przed weryfikacją kodu i nigdy nie przechodzi do signedIn', async () => {
   const started = deferred();
   const response = deferred();
-  const { service, calls } = setup({ verifyOtp: async () => { started.resolve(); return response.promise; } });
+  const { service, calls } = await setup({ verifyOtp: async () => { started.resolve(); return response.promise; } });
   const states = [];
   const unsubscribe = service.subscribe(() => states.push(service.getState()));
   const verification = service.verifyPasswordResetCode(email, '123456');
@@ -133,13 +138,13 @@ test('recovery zaczyna się przed weryfikacją kodu i nigdy nie przechodzi do si
 });
 
 test('błędny kod recovery zamyka tryb odzyskiwania', async () => {
-  const { service } = setup({ verifyOtp: async () => failure('otp_expired') });
+  const { service } = await setup({ verifyOtp: async () => failure('otp_expired') });
   assert.equal((await service.verifyPasswordResetCode(email, '123456')).error.code, 'invalid_or_expired_code');
   assert.equal(service.getState().status, 'signedOut');
 });
 
 test('kolejka operacji i ponowienie sesji nie zamieniają recovery w zwykłe logowanie', async () => {
-  const { service, calls } = setup({
+  const { service, calls } = await setup({
     getSession: async () => ({ data: { session }, error: null }),
   });
   const states = [];
@@ -159,13 +164,13 @@ test('kolejka operacji i ponowienie sesji nie zamieniają recovery w zwykłe log
 
   assert.equal((await service.retrySession()).ok, true);
   assert.deepEqual(service.getState(), { status: 'recovery', phase: 'settingPassword' });
-  assert.deepEqual(calls.map(call => call.name), ['verifyOtp', 'getSession', 'getUser']);
+  assert.deepEqual(calls.map(call => call.name), ['verifyOtp', 'getSession', 'getUser', 'getSession']);
   assert.equal(states.includes('signedIn'), false);
   unsubscribe();
 });
 
 test('wyjątek sieciowy podczas OTP zamyka recovery i ukrywa szczegóły błędu', async () => {
-  const { service } = setup({
+  const { service } = await setup({
     verifyOtp: async () => { throw new TypeError('RAW_SERVER_RESPONSE_WITH_PRIVATE_DETAILS'); },
   });
   const result = await service.verifyPasswordResetCode(email, '123456');
@@ -176,14 +181,14 @@ test('wyjątek sieciowy podczas OTP zamyka recovery i ukrywa szczegóły błędu
 });
 
 test('ponowienie recovery bez istniejącej sesji wraca do signedOut', async () => {
-  const { service } = setup();
+  const { service } = await setup();
   await service.verifyPasswordResetCode(email, '123456');
   assert.equal((await service.retrySession()).ok, true);
   assert.equal(service.getState().status, 'signedOut');
 });
 
 test('zmiana hasła wymaga recovery, zachowuje spacje i kończy się lokalnym wylogowaniem', async () => {
-  const { service, calls } = setup();
+  const { service, calls } = await setup();
   assert.equal((await service.setNewPassword(password)).ok, false);
   assert.deepEqual(calls, []);
   assert.equal((await service.verifyPasswordResetCode(email, '123456')).ok, true);
@@ -197,7 +202,7 @@ test('zmiana hasła wymaga recovery, zachowuje spacje i kończy się lokalnym wy
 });
 
 test('zapis hasła i nieudane unieważnienie sesji daje wyraźny częściowy sukces', async () => {
-  const { service } = setup({ signOut: async () => failure('unexpected_failure', 500) });
+  const { service } = await setup({ signOut: async () => failure('unexpected_failure', 500) });
   await service.verifyPasswordResetCode(email, '123456');
   const result = await service.setNewPassword(password);
   assert.equal(result.ok, false);
@@ -213,9 +218,10 @@ test('błędy są mapowane według kodu bez surowych szczegółów odpowiedzi', 
     ['weak_password', 422, 'weak_password'],
     ['over_email_send_rate_limit', 429, 'rate_limited'],
     ['session_expired', 403, 'session_expired'],
+    ['email_provider_disabled', 403, 'configuration_error'],
     ['unexpected_failure', 500, 'service_unavailable'],
   ]) {
-    const { service } = setup({ signInWithPassword: async () => failure(serverCode, status) });
+    const { service } = await setup({ signInWithPassword: async () => failure(serverCode, status) });
     const result = await service.signIn(email, password);
     assert.equal(result.ok, false);
     assert.equal(result.error.code, appCode);
@@ -235,7 +241,7 @@ test('brak konfiguracji zwraca kontrolowany błąd', async () => {
 test('wylogowanie unieważnia odpowiedź trwającego logowania i czyści sesję po nim', async () => {
   const started = deferred();
   const response = deferred();
-  const { service, calls } = setup({ signInWithPassword: async () => { started.resolve(); return response.promise; } });
+  const { service, calls } = await setup({ signInWithPassword: async () => { started.resolve(); return response.promise; } });
   const pendingLogin = service.signIn(email, password);
   await started.promise;
   const pendingLogout = service.signOut();

@@ -39,11 +39,12 @@ export function mapAuthError(error: unknown): AuthError {
     mapped = 'weak_password';
   } else if (code === 'otp_expired' || code === 'otp_disabled') {
     mapped = 'invalid_or_expired_code';
-  } else if (code === 'session_expired' || code === 'session_not_found' || code === 'refresh_token_not_found' ||
-    code === 'refresh_token_already_used' || name === 'AuthSessionMissingError') {
-    mapped = 'session_expired';
   } else if (code === 'signup_disabled' || code === 'email_provider_disabled' || code === 'email_address_not_authorized') {
     mapped = 'configuration_error';
+  } else if (code === 'session_expired' || code === 'session_not_found' || code === 'refresh_token_not_found' ||
+    code === 'refresh_token_already_used' || code === 'bad_jwt' || code === 'user_not_found' ||
+    code === 'user_banned' || name === 'AuthSessionMissingError' || status === 401 || status === 403) {
+    mapped = 'session_expired';
   }
 
   return {

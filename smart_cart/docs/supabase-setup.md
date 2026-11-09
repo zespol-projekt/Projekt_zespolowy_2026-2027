@@ -122,20 +122,22 @@ SMTP nie należą do aplikacji. Klient z punktu 3 odczytuje zmienne `EXPO_PUBLIC
 
 ## 5. Potwierdzenie konfiguracji i doręczenia
 
-Do uzupełnienia po wykonaniu konfiguracji i testów, bez haseł, kodów i tokenów:
+Wyniki konfiguracji i testów, bez haseł, kodów i tokenów:
 
 - Projekt: **smart-koszyk**, organizacja **SmartCart** (ze zrzutu); Project ref: **jhxoosqepmqdsppvkzns** (z danych Connect przekazanych przez użytkownika).
-- Dostawca SMTP: **Gmail; zapis konfiguracji potwierdzony przez użytkownika, doręczenie kodu rejestracji sprawdzone**.
+- Dostawca SMTP: **Gmail; sprawdzone doręczenie kodów rejestracji i odzyskiwania hasła**.
 - Adres nadawcy projektu: **niezapisany**.
-- Data i źródło potwierdzenia: **8 listopada 2026, zrzuty panelu, deklaracja użytkownika oraz odczyt publicznych ustawień Auth**.
+- Data i źródło potwierdzenia: **8–9 listopada 2026, zrzuty panelu, deklaracja użytkownika, odczyt publicznych ustawień Auth i rzeczywiste operacje SDK**.
 - [x] Dane Connect wpisano do ignorowanego `.env.local`; oba adresy wskazują ten sam projekt.
 - [x] Zapytanie do `/auth/v1/settings` potwierdziło dostępność projektu i podstawowe ustawienia Auth; nie wysyłało maila ani nie tworzyło użytkownika.
 - [x] Wartości widoczne na przesłanych zrzutach uzupełniono w tabeli.
 - [x] Użytkownik potwierdził zapis obu polskich szablonów; ich treść przewiduje ustawione 600 sekund.
 - [x] Kod rejestracji dotarł na kontrolowany adres testowy podany przez użytkownika.
 - [x] Kod rejestracji rzeczywiście potwierdził email; działało późniejsze logowanie hasłem i lokalne wylogowanie.
-- [ ] Kod odzyskiwania dotarł na potwierdzone konto i pozwolił zmienić hasło.
-- [ ] Ponowna wysyłka respektuje ustawiony odstęp i limity.
+- [x] Kod odzyskiwania dotarł na potwierdzone konto i pozwolił zmienić hasło; stan pozostawał `recovery` do zapisania hasła.
+- [x] Po zmianie hasła sesja SDK była usunięta; stare hasło odrzucono, nowe pozwoliło się zalogować, a końcowe wylogowanie znów usunęło sesję.
+- [x] Ponowna wysyłka resetu zastąpiła poprzedni kod; odrzucony kod pozostawił stan `signedOut`.
+- [ ] Osobny test granicy 60 sekund i limitu 30 wiadomości/h; wartości potwierdzono w panelu, bez wyczerpywania limitu podczas testu integracji.
 
 Testy korzystają z rzeczywistych operacji auth z punktu 3. Hasła testowe są losowe
 i pozostają wyłącznie w pamięci procesu testowego; kody i tokeny nie są zapisywane.

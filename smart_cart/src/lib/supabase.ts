@@ -1,5 +1,19 @@
 import 'react-native-url-polyfill/auto';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+import { Platform } from 'react-native';
+import { createSessionStorage, type AuthStorage } from '../features/auth/storage';
+
+const storageKey = `smartcart-${(process.env.EXPO_PUBLIC_SUPABASE_URL ?? 'missing').replace(/[^a-z0-9]/gi, '-')}-auth`;
+const browserStorage: AuthStorage = {
+  async getItem(key) { return window.localStorage.getItem(key); },
+  async setItem(key, value) { window.localStorage.setItem(key, value); },
+  async removeItem(key) { window.localStorage.removeItem(key); },
+};
+export const sessionStorage = createSessionStorage(
+  Platform.OS === 'web' ? browserStorage : AsyncStorage,
+  storageKey,
+);
 
 let client: SupabaseClient | undefined;
 
@@ -14,9 +28,11 @@ export function getSupabase(): SupabaseClient | null {
   try {
     client = createClient(url, key, {
       auth: {
-        // Trwałe przechowywanie i cykl życia sesji dodaje punkt 4.
-        persistSession: false,
-        autoRefreshToken: false,
+        storage: sessionStorage,
+        storageKey,
+        persistSession: true,
+        // WWW: widoczność obsługuje SDK. Native: ticker uruchamia AppState po restore.
+        autoRefreshToken: Platform.OS === 'web',
         detectSessionInUrl: false,
       },
     });

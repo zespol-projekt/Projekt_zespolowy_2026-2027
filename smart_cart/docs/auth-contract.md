@@ -1,8 +1,9 @@
 # Kontrakt logowania — punkt 1
 
 Status: przygotowane typy i zasady współpracy; [operacje Supabase](auth-operations.md)
-są zaimplementowane w punkcie 3. Provider/hook, trwała sesja, ekrany i ochrona API
-pozostają do wdrożenia w kolejnych punktach.
+są zaimplementowane w punkcie 3. [Provider/hook i trwała sesja](auth-session.md)
+są gotowe w punkcie 4. [Ochrona API i pobieranie sklepów](auth-api.md) są wdrożone
+w punkcie 5. Ekrany i podłączenie nawigacji pozostają po stronie osoby 2.
 Źródłem typów jest [`src/features/auth/types.ts`](../src/features/auth/types.ts).
 Import: `import type { AuthContextValue } from '@/features/auth/types';`.
 
@@ -10,8 +11,8 @@ Import: `import type { AuthContextValue } from '@/features/auth/types';`.
 
 - Osoba 1 implementuje klienta w `src/lib/supabase.ts`, operacje i sesję w
   `src/features/auth`, konfigurację Supabase, ochronę API oraz pobieranie sklepów.
-- Docelowo `src/features/auth/AuthProvider.tsx` udostępni `AuthProvider` i `useAuth`.
-  Hook zwróci `AuthContextValue`. Te eksporty jeszcze nie istnieją.
+- `src/features/auth/AuthProvider.tsx` udostępnia `AuthProvider` i `useAuth`.
+  Hook zwraca `AuthContextValue`. Eksporty są również dostępne z `@/features/auth`.
 - Osoba 2 przygotowuje formularze, profil i nawigację. Podłącza jeden provider
   do głównego layoutu i korzysta z hooka, bez drugiego klienta ani magazynu sesji.
 - Moduł auth nie wywołuje routera. Ekrany reagują na wyniki operacji i wspólny stan.
@@ -58,9 +59,9 @@ bieżącą sesję lub rozpoczęte odzyskiwanie należy wcześniej zakończyć pr
   ponowić próbę. Nie przechodzimy wtedy do ustawiania hasła.
 - `error`: komunikat i ponowienie przez `retrySession`, bez otwierania aplikacji.
 
-Po restarcie zwykła sesja jest odtwarzana. Przerwany reset może wznowić wyłącznie
-formularz nowego hasła po sprawdzeniu sesji odzyskiwania albo zakończyć tę sesję
-i wrócić do logowania. Timeout nie usuwa automatycznie zapisanej, poprawnej sesji.
+Po restarcie zwykła sesja jest odtwarzana. Sesja resetu jest przechowywana wyłącznie
+w pamięci, więc restart wraca do logowania i wymaga ponowienia resetu.
+Timeout nie usuwa automatycznie zapisanej, poprawnej sesji.
 Stan formularza (pola, oczekiwanie, komunikat sukcesu) należy do ekranu. Dane
 zalogowanego użytkownika pochodzą wyłącznie ze wspólnego stanu.
 
@@ -90,9 +91,9 @@ odświeżeniu nie uruchamia ponownego pobierania całego katalogu.
 
 Do zamknięcia uzgodnień punktu 1 przekaż osobie 2 ten dokument i typy. Może według
 nich przygotować formularze później. Przy scalaniu sprawdźcie zgodność importów
-i wyników. Kolejne punkty dodadzą rzeczywistą implementację oraz jej testy.
+i wyników. Moduł operacji i sesji ma już implementację oraz testy.
 
 W panelu Supabase nic nie trzeba ustawiać dla samego kontraktu. Następny krok to
 potwierdzenie dostępu do wspólnego projektu i [konfiguracja Auth oraz SMTP](supabase-setup.md).
-Kontrakt nie zabezpiecza obecnie tras ani API. Zabezpieczone API i obsługę logowania
-należy wdrożyć wspólnie, gdy ekrany osoby 2 będą gotowe.
+API jest już zabezpieczone, natomiast trasy czekają na pracę osoby 2. Całość należy
+scalić i wdrożyć wspólnie z działającymi ekranami logowania.

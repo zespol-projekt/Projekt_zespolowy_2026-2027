@@ -55,11 +55,14 @@ export interface AuthActions {
   retrySession(): Promise<AuthResult>;
 }
 
-/** Docelowy wynik useAuth(); tokeny nie należą do kontraktu formularzy. */
+/** Wynik useAuth(); tokeny nie należą do kontraktu formularzy. */
 export type AuthContextValue = AuthActions & { state: AuthState };
 
 /** Wewnętrzny kontrakt dla pobierania danych, nie dla ekranów ani mapy. */
 export interface AuthSessionAccess {
+  /** Opaque klucz bieżącego logowania; null blokuje dane. Zwykły refresh go nie zmienia. */
+  getSessionKey(): string | null;
+  subscribe(listener: () => void): () => void;
   getAccessToken(): Promise<AuthResult<string>>;
   refreshAfterUnauthorized(rejectedToken: string): Promise<AuthResult<string>>;
   invalidateSession(rejectedToken: string): Promise<AuthResult>;
