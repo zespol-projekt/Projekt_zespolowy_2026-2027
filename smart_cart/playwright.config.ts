@@ -16,8 +16,14 @@ export default defineConfig({
   webServer: {
     command: `npx expo start --web --port ${port}`,
     url: `http://localhost:${port}/stores`,
-    reuseExistingServer: !process.env.CI,
+    // Always start with isolated credentials, never reuse a developer's real project.
+    reuseExistingServer: false,
     timeout: 120_000,
-    env: { CI: '1', EXPO_NO_TELEMETRY: '1' },
+    env: {
+      CI: '1', EXPO_NO_TELEMETRY: '1',
+      EXPO_PUBLIC_SUPABASE_URL: 'https://smartcart-test.supabase.invalid',
+      EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_browser_test_only',
+      EXPO_PUBLIC_STORES_API_URL: 'http://localhost:8787/v1/stores',
+    },
   },
 });

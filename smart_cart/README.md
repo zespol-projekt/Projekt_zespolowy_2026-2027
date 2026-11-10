@@ -2,6 +2,26 @@
 
 Aplikacja Expo / React Native na Androida, iOS i WWW. Ekrany: `src/app`; mapa: `src/features/stores`.
 
+## Logowanie — integracja Supabase
+
+[Kontrakt modułu auth](docs/auth-contract.md) opisuje typy, operacje i podział pracy.
+[Operacje konta — punkt 3](docs/auth-operations.md) obsługują rzeczywiste Supabase:
+rejestrację, potwierdzanie kodów, logowanie, reset hasła i lokalne wylogowanie.
+[Sesja i provider — punkt 4](docs/auth-session.md) dodają zapamiętywanie zwykłego
+logowania, odtwarzanie i odświeżanie oraz `AuthProvider/useAuth` dla ekranów osoby 2.
+Provider czeka na podłączenie do nawigacji przez osobę 2.
+[Chronione API — punkt 5](docs/auth-api.md) wymaga sesji potwierdzonego konta;
+pobieranie sklepów używa bieżącego tokenu i przerywa się przy wylogowaniu.
+Do czasu podłączenia formularzy mapa bez sesji wyświetla prośbę o zalogowanie.
+
+[Przekazanie i odbiór — punkt 6](docs/auth-handoff.md) zbiera gotowy zakres osoby 1,
+instrukcję dla osoby 2, wyniki kontroli i listę wspólnych testów po integracji.
+
+[Konfiguracja Supabase — punkt 2](docs/supabase-setup.md) zawiera ustawienia Auth,
+SMTP dla projektu bez własnej domeny, polskie szablony maili oraz zmienne środowiskowe.
+Konfigurację wspólnego projektu oraz rzeczywiste doręczenie obu kodów sprawdzono
+8–9 listopada 2026; szczegóły i ograniczenia są zapisane w instrukcji.
+
 ## Uruchomienie — PowerShell
 
 Wymagany Node.js 24 LTS. Z katalogu `SMARTCART` przejdź do aplikacji i zainstaluj zależności:
@@ -39,7 +59,9 @@ EXPO_PUBLIC_STORES_API_URL=http://ADRES_IP_KOMPUTERA:8787/v1/stores
 
 ### Konfiguracja serwera danych
 
-`npm.cmd run server` automatycznie wczytuje `.env.local` z katalogu `smart_cart`. Możesz skopiować `.env.example` jako szablon. Serwer nie wymaga dodatkowych bibliotek poza Node.js.
+`npm.cmd run server` automatycznie wczytuje `.env.local` z katalogu `smart_cart`. Możesz skopiować `.env.example` jako szablon. Serwer korzysta z zainstalowanego SDK Supabase.
+
+- `SUPABASE_URL` i `SUPABASE_PUBLISHABLE_KEY` — adres i publiczny klucz wspólnego projektu. Jeśli ich nie podasz, serwer użyje odpowiadających zmiennych `EXPO_PUBLIC_SUPABASE_*`. Brak konfiguracji blokuje start. Nie potrzeba klucza `service_role`.
 
 - `SMARTCART_DATA_DIR` — katalog zawierający `gotowe/sklepy.json`. Domyślnie `../dane-sklepow` względem `smart_cart`, czyli w katalogu głównym repozytorium. Ścieżka względna jest zawsze liczona od katalogu aplikacji, także przy uruchomieniu skryptu z innego miejsca. Standardowy układ po sklonowaniu repo nie wymaga ustawiania tej zmiennej.
 - `SMARTCART_DATA_PORT` — domyślnie `8787`. Jeśli zmienisz port, dostosuj również `EXPO_PUBLIC_STORES_API_URL` i uruchom Expo ponownie.
@@ -51,7 +73,7 @@ SMARTCART_DATA_DIR=C:/dane-smartcart
 SMARTCART_DATA_PORT=8787
 ```
 
-Serwer udostępnia wyłącznie przygotowany katalog i informacje o jego stanie. Przy braku lub błędnych danych kończy start z komunikatem, zanim otworzy port. `npm.cmd run server:check` sprawdza plik bez uruchamiania serwera. Samo importowanie modułu nie uruchamia serwera.
+Serwer udostępnia przygotowany katalog po sprawdzeniu tokenu `Authorization: Bearer …`; wejście bez tokenu na `/v1/stores` zwróci `401`. Publiczny `/health` udostępnia wyłącznie informacje techniczne. Przy braku lub błędnych danych serwer kończy start, zanim otworzy port. `npm.cmd run server:check` sprawdza plik bez uruchamiania serwera, konfiguracji auth ani połączenia z Supabase. Samo importowanie modułu nie uruchamia serwera.
 
 ## Mapa sklepów
 
@@ -95,7 +117,7 @@ npm.cmd run test:e2e
 npx.cmd expo export --platform all
 ```
 
-Testy jednostkowe używają runnera Node 24. Playwright wymaga zainstalowanego Google Chrome. Domyślnie używa istniejącego Expo na porcie 8081; jeśli go nie ma, startuje własny serwer. Dla innego portu ustaw `MAP_TEST_PORT`. Testy uruchamiają rzeczywisty silnik i workery MapLibre z lokalnych plików, z fikcyjnymi sklepami i zastępczym podkładem — nie potrzebują rzeczywistego katalogu ani nie pobierają publicznych kafelków.
+Testy jednostkowe używają runnera Node 24. Playwright wymaga zainstalowanego Google Chrome i uruchamia własne Expo z fikcyjną konfiguracją Supabase; zatrzymaj wcześniej Metro. Dla innego portu ustaw `MAP_TEST_PORT`. Testy uruchamiają rzeczywisty silnik i workery MapLibre z lokalnych plików, z fikcyjną sesją, sklepami i zastępczym podkładem — nie potrzebują prawdziwego konta ani nie pobierają publicznych kafelków.
 
 Uruchamiaj jedną instancję Metro dla projektu. Po zmianie zależności lub problemie z cache zatrzymaj Expo i uruchom `npx.cmd expo start --clear --port 8081`, a następnie ponownie otwórz projekt w Expo Go. Eksport najlepiej wykonywać przy zatrzymanym serwerze deweloperskim.
 

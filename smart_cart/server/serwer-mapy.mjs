@@ -6,6 +6,7 @@ import os from 'node:os';
 import { createHash } from 'node:crypto';
 import { gzipSync } from 'node:zlib';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { createAccessVerifier } from './auth.mjs';
 
 const root=path.dirname(fileURLToPath(import.meta.url));
 const appRoot=path.resolve(root,'..');
@@ -33,7 +34,8 @@ export function buildCatalog(input){
       {label:'© OpenStreetMap contributors',url:'https://www.openstreetmap.org/copyright'}]};
 }
 
-export function createStoreServer(load){
+export function createStoreServer(load,verifyAccess){
+  assert.equal(typeof verifyAccess,'function','Serwer wymaga weryfikatora sesji Supabase.');
   let cached;
   function snapshot(){
     const {key,input}=load();
@@ -43,29 +45,42 @@ export function createStoreServer(load){
     return cached;
   }
   snapshot(); // Nie uruchamiamy serwera z uszkodzonym zbiorem.
-  return http.createServer((req,res)=>{
+  return http.createServer(async(req,res)=>{
     res.setHeader('Access-Control-Allow-Origin','*');
     res.setHeader('Access-Control-Allow-Methods','GET, HEAD, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers','If-None-Match');
+    res.setHeader('Access-Control-Allow-Headers','Authorization, If-None-Match');
     res.setHeader('Access-Control-Expose-Headers','ETag');
     res.setHeader('X-Content-Type-Options','nosniff');
+    res.setHeader('Cache-Control','no-store');
     if(req.method==='OPTIONS'){res.writeHead(204).end();return;}
     if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{'Allow':'GET, HEAD, OPTIONS'}).end();return;}
-    const url=new URL(req.url,'http://localhost');
+    let url;
+    try{url=new URL(req.url,'http://localhost');}catch{res.writeHead(400).end();return;}
     if(!['/v1/stores','/health'].includes(url.pathname)){res.writeHead(404).end();return;}
+    if(url.pathname==='/v1/stores'){
+      let access;
+      try{access=await verifyAccess(req.headers.authorization);}catch{access={ok:false,status:503};}
+      if(res.destroyed)return;
+      if(access?.ok!==true){
+        const status=[401,403,503].includes(access?.status)?access.status:503;
+        const message=status===401?'Zaloguj się, aby pobrać sklepy.':status===403?'To konto nie ma dostępu do sklepów.':'Sprawdzenie sesji jest chwilowo niedostępne.';
+        if(status===401)res.setHeader('WWW-Authenticate','Bearer');
+        res.writeHead(status,{'Content-Type':'application/json; charset=utf-8'}).end(req.method==='HEAD'?undefined:JSON.stringify({error:message}));return;
+      }
+    }
     try{
       const data=snapshot();res.setHeader('Content-Type','application/json; charset=utf-8');
       if(url.pathname==='/health'){
         res.setHeader('Cache-Control','no-store');res.end(req.method==='HEAD'?undefined:JSON.stringify({status:'ok',count:data.catalog.count,updatedAt:data.catalog.updatedAt}));return;
       }
-      res.setHeader('Cache-Control','public, max-age=60');res.setHeader('ETag',data.etag);res.setHeader('Vary','Accept-Encoding');
+      res.setHeader('ETag',data.etag);res.setHeader('Vary','Accept-Encoding');
       if(req.headers['if-none-match']===data.etag){res.writeHead(304).end();return;}
       const gzip=/\bgzip\b/u.test(req.headers['accept-encoding']??'');
       if(gzip)res.setHeader('Content-Encoding','gzip');
       const body=gzip?data.gzip:data.body;res.setHeader('Content-Length',body.length);res.end(req.method==='HEAD'?undefined:body);
     }catch(error){
       console.error('Nie można odczytać gotowych danych:',error.message);
-      res.writeHead(503,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}).end(JSON.stringify({error:'Dane sklepów są chwilowo niedostępne.'}));
+      res.writeHead(503,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}).end(req.method==='HEAD'?undefined:JSON.stringify({error:'Dane sklepów są chwilowo niedostępne.'}));
     }
   });
 }
@@ -85,7 +100,7 @@ if(process.argv[1]&&pathToFileURL(path.resolve(process.argv[1])).href===import.m
   if(process.argv.includes('--check'))console.log(JSON.stringify({status:'ok',count:buildCatalog(load().input).count}));
   else{
     const port=Number(process.env.SMARTCART_DATA_PORT??8787);assert.ok(Number.isInteger(port)&&port>0&&port<65536);
-    const server=createStoreServer(load);
+    const server=createStoreServer(load,createAccessVerifier());
     server.on('error',e=>{
       console.error(e.code==='EADDRINUSE'?`Port ${port} jest zajęty. Zatrzymaj poprzedni serwer lub ustaw SMARTCART_DATA_PORT.`:e.message);
       process.exitCode=1;
