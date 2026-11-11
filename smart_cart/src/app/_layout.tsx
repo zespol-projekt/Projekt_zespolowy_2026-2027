@@ -3,6 +3,8 @@ import { Tabs } from "expo-router/js-tabs";
 import { StatusBar } from "expo-status-bar";
 import { SymbolView } from "expo-symbols";
 import {
+  ActivityIndicator,
+  KeyboardAvoidingView,
   Platform,
   Pressable,
   StyleSheet,
@@ -11,20 +13,63 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useMemo, useState } from "react";
 
+import { AuthShell } from "@/components/auth/AuthShell";
 import BottomBar from "@/components/navigation/BottomBar";
+import { authPolicy, AuthProvider, useAuth } from "@/features/auth";
 
 export default function RootLayout() {
-  const isWeb = Platform.OS === "web";
-  const isStores = usePathname().startsWith('/stores');
+  return (
+    <AuthProvider>
+      <AppShell />
+    </AuthProvider>
+  );
+}
+
+function AppShell() {
+  const { state, signIn, signUp, verifySignupCode, resendSignupCode, sendPasswordResetCode, verifyPasswordResetCode, setNewPassword, retrySession } = useAuth();
+  const pathname = usePathname();
+  const isAuthScreen = pathname.startsWith("/auth") || pathname === "/" && state.status !== "signedIn";
+  const isStores = pathname.startsWith("/stores");
+
+  if (state.status === "initializing") {
+    return (
+      <SafeAreaView style={styles.screen}>
+        <StatusBar style="dark" />
+        <View style={styles.centered}>
+          <ActivityIndicator size="large" color="#07966D" />
+          <Text style={styles.loadingText}>Ładowanie aplikacji…</Text>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (state.status === "error") {
+    return (
+      <SafeAreaView style={styles.screen}>
+        <StatusBar style="dark" />
+        <View style={styles.centered}>
+          <Text style={styles.errorTitle}>Nie udało się odtworzyć sesji</Text>
+          <Text style={styles.errorText}>{state.error.message}</Text>
+          <Pressable style={styles.buttonPrimary} onPress={() => void retrySession()}>
+            <Text style={styles.buttonPrimaryText}>Spróbuj ponownie</Text>
+          </Pressable>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (state.status !== "signedIn") {
+    return <AuthUI />;
+  }
 
   return (
     <SafeAreaView style={styles.screen}>
       <StatusBar style="dark" />
 
-      <View style={isWeb ? styles.webLayout : styles.mobileLayout}>
+      <View style={isAuthScreen ? styles.hidden : isWeb ? styles.webLayout : styles.mobileLayout}>
         <View style={isWeb ? styles.webMain : styles.mobileMain}>
-          {/* Wspólny nagłówek */}
           <View style={styles.header}>
             <Link href="/" asChild>
               <Pressable
@@ -54,31 +99,30 @@ export default function RootLayout() {
             </Pressable>
           </View>
 
-          {/* Wspólne pole wyszukiwania */}
-          {!isStores && <View style={styles.searchBar}>
-            <SymbolView
-              name={{
-                ios: "magnifyingglass",
-                android: "search",
-                web: "search",
-              }}
-              size={22}
-              tintColor="#777B78"
-            />
+          {!isStores && (
+            <View style={styles.searchBar}>
+              <SymbolView
+                name={{
+                  ios: "magnifyingglass",
+                  android: "search",
+                  web: "search",
+                }}
+                size={22}
+                tintColor="#777B78"
+              />
+              <TextInput
+                style={styles.searchInput}
+                placeholder="Szukaj produktów..."
+                placeholderTextColor="#777B78"
+                accessibilityLabel="Szukaj produktów"
+                autoCapitalize="none"
+                autoCorrect={false}
+                returnKeyType="search"
+                underlineColorAndroid="transparent"
+              />
+            </View>
+          )}
 
-            <TextInput
-              style={styles.searchInput}
-              placeholder="Szukaj produktów..."
-              placeholderTextColor="#777B78"
-              accessibilityLabel="Szukaj produktów"
-              autoCapitalize="none"
-              autoCorrect={false}
-              returnKeyType="search"
-              underlineColorAndroid="transparent"
-            />
-          </View>}
-
-          {/* Ekrany i ich wspólny dolny pasek */}
           <View style={styles.content}>
             <Tabs
               backBehavior="history"
@@ -103,10 +147,423 @@ export default function RootLayout() {
   );
 }
 
+function AuthUI() {
+  const { state, signIn, signUp, verifySignupCode, resendSignupCode, sendPasswordResetCode, verifyPasswordResetCode, setNewPassword, signOut } = useAuth();
+  const [mode, setMode] = useState<"signin" | "signup" | "confirm" | "reset" | "resetCode" | "newPassword">("signin");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [repeatPassword, setRepeatPassword] = useState("");
+  const [code, setCode] = useState("");
+  const [message, setMessage] = useState<string | null>(null);
+  const [pending, setPending] = useState(false);
+  const [emailForFlow, setEmailForFlow] = useState("");
+  const authMode = useMemo(() => {
+    if (state.status === "recovery") return state.phase === "settingPassword" ? "newPassword" : "resetCode";
+    return mode;
+  }, [mode, state]);
+
+  const handleResetToSignIn = async () => {
+    if (state.status === "recovery") {
+      await signOut();
+      return;
+    }
+    setMode("signin");
+    setMessage(null);
+    setPassword("");
+    setRepeatPassword("");
+    setCode("");
+  };
+
+  const submitSignIn = async () => {
+    if (!email.trim() || !password) {
+      setMessage("Podaj email i hasło.");
+      return;
+    }
+
+    setPending(true);
+    setMessage(null);
+    const result = await signIn(email.trim(), password);
+    setPending(false);
+    if (!result.ok) {
+      setMessage(result.error.message);
+      return;
+    }
+
+    if (result.data.status === "confirmationRequired") {
+      setEmailForFlow(result.data.email);
+      setMode("confirm");
+      setMessage("Konto wymaga potwierdzenia emaila. Wpisz kod z wiadomości.");
+      return;
+    }
+
+    setMessage(null);
+  };
+
+  const submitSignUp = async () => {
+    if (!email.trim() || !password || !repeatPassword) {
+      setMessage("Uzupełnij wszystkie pola.");
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
+      setMessage("Podaj poprawny adres email.");
+      return;
+    }
+    if (password.length < authPolicy.minimumPasswordLength) {
+      setMessage(`Hasło musi mieć co najmniej ${authPolicy.minimumPasswordLength} znaków.`);
+      return;
+    }
+    if (password !== repeatPassword) {
+      setMessage("Hasła nie są takie same.");
+      return;
+    }
+
+    setPending(true);
+    setMessage(null);
+    const result = await signUp(email.trim(), password);
+    setPending(false);
+    if (!result.ok) {
+      setMessage(result.error.message);
+      return;
+    }
+
+    setEmailForFlow(result.data.email);
+    setMode("confirm");
+    setMessage("Na adres e-mail wysłano kod aktywacji. Wpisz go poniżej.");
+  };
+
+  const submitConfirm = async () => {
+    if (!emailForFlow && !email.trim()) {
+      setMessage("Brak adresu email do weryfikacji.");
+      return;
+    }
+    if (!/^[0-9]{6}$/.test(code)) {
+      setMessage("Kod musi składać się z 6 cyfr.");
+      return;
+    }
+
+    setPending(true);
+    setMessage(null);
+    const result = await verifySignupCode((emailForFlow || email).trim(), code);
+    setPending(false);
+    if (!result.ok) {
+      setMessage(result.error.message);
+      return;
+    }
+
+    if (result.data.status === "signInRequired") {
+      setMode("signin");
+      setMessage("Email potwierdzony. Zaloguj się hasłem.");
+      setPassword("");
+      return;
+    }
+
+    setMessage(null);
+  };
+
+  const submitResetRequest = async () => {
+    if (!email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
+      setMessage("Podaj poprawny adres email.");
+      return;
+    }
+
+    setPending(true);
+    setMessage(null);
+    const result = await sendPasswordResetCode(email.trim());
+    setPending(false);
+    if (!result.ok) {
+      setMessage(result.error.message);
+      return;
+    }
+
+    setMode("resetCode");
+    setMessage("Jeśli konto istnieje, wysłaliśmy kod odzyskiwania hasła.");
+  };
+
+  const submitResetCode = async () => {
+    if (!email.trim() || !/^[0-9]{6}$/.test(code)) {
+      setMessage("Podaj poprawny 6-cyfrowy kod.");
+      return;
+    }
+
+    setPending(true);
+    setMessage(null);
+    const result = await verifyPasswordResetCode(email.trim(), code);
+    setPending(false);
+    if (!result.ok) {
+      setMessage(result.error.message);
+      return;
+    }
+
+    setMode("newPassword");
+    setMessage("Kod poprawny. Ustaw nowe hasło.");
+  };
+
+  const submitNewPassword = async () => {
+    if (!password || !repeatPassword) {
+      setMessage("Wpisz i potwierdź nowe hasło.");
+      return;
+    }
+    if (password.length < authPolicy.minimumPasswordLength) {
+      setMessage(`Hasło musi mieć co najmniej ${authPolicy.minimumPasswordLength} znaków.`);
+      return;
+    }
+    if (password !== repeatPassword) {
+      setMessage("Nowe hasła nie są takie same.");
+      return;
+    }
+
+    setPending(true);
+    setMessage(null);
+    const result = await setNewPassword(password);
+    setPending(false);
+    if (!result.ok) {
+      setMessage(result.error.message);
+      return;
+    }
+
+    setMode("signin");
+    setPassword("");
+    setRepeatPassword("");
+    setMessage("Hasło zostało zmienione. Zaloguj się nowym hasłem.");
+  };
+
+  if (state.status === "recovery") {
+    const phase = state.phase;
+    return (
+      <AuthShell
+        title={phase === "settingPassword" ? "Nowe hasło" : "Odzyskiwanie dostępu"}
+        subtitle={phase === "settingPassword" ? "Ustaw silne, nowe hasło do konta." : "Wpisz kod wysłany na adres e-mail."}
+        footer={
+          <Pressable onPress={handleResetToSignIn} accessibilityRole="button">
+            <Text style={styles.linkText}>Powrót do logowania</Text>
+          </Pressable>
+        }
+      >
+        {phase === "settingPassword" ? (
+          <>
+            <TextInput
+              value={password}
+              onChangeText={setPassword}
+              placeholder="Nowe hasło"
+              secureTextEntry
+              style={styles.input}
+              autoCapitalize="none"
+              autoCorrect={false}
+            />
+            <TextInput
+              value={repeatPassword}
+              onChangeText={setRepeatPassword}
+              placeholder="Powtórz nowe hasło"
+              secureTextEntry
+              style={styles.input}
+              autoCapitalize="none"
+              autoCorrect={false}
+            />
+            {message ? <Text style={styles.notice}>{message}</Text> : null}
+            <Pressable
+              style={[styles.buttonPrimary, pending && styles.buttonDisabled]}
+              onPress={() => void submitNewPassword()}
+              disabled={pending}
+            >
+              <Text style={styles.buttonPrimaryText}>{pending ? "Zapisywanie…" : "Zapisz hasło"}</Text>
+            </Pressable>
+          </>
+        ) : (
+          <>
+            <TextInput
+              value={email}
+              onChangeText={setEmail}
+              placeholder="Email"
+              keyboardType="email-address"
+              autoCapitalize="none"
+              autoCorrect={false}
+              style={styles.input}
+            />
+            <TextInput
+              value={code}
+              onChangeText={setCode}
+              placeholder="6-cyfrowy kod"
+              keyboardType="number-pad"
+              maxLength={authPolicy.codeLength}
+              style={styles.input}
+            />
+            {message ? <Text style={styles.notice}>{message}</Text> : null}
+            <Pressable
+              style={[styles.buttonPrimary, pending && styles.buttonDisabled]}
+              onPress={() => void submitResetCode()}
+              disabled={pending}
+            >
+              <Text style={styles.buttonPrimaryText}>{pending ? "Sprawdzanie…" : "Zweryfikuj kod"}</Text>
+            </Pressable>
+          </>
+        )}
+      </AuthShell>
+    );
+  }
+
+  const activeMode = authMode;
+  const mainTitle = activeMode === "signin" ? "Zaloguj się" : activeMode === "signup" ? "Utwórz konto" : activeMode === "confirm" ? "Potwierdź email" : activeMode === "reset" ? "Reset hasła" : activeMode === "resetCode" ? "Kod odzyskiwania" : "Nowe hasło";
+  const mainSubtitle = activeMode === "signin"
+    ? "Wprowadź dane swoich konta, aby wejść do aplikacji."
+    : activeMode === "signup"
+      ? "Utwórz konto i potwierdź adres email."
+      : activeMode === "confirm"
+        ? "Wpisz kod z wiadomości e-mail, aby aktywować konto."
+        : activeMode === "reset"
+          ? "Wprowadź adres e-mail powiązany z kontem."
+          : activeMode === "resetCode"
+            ? "Wpisz kod z e-maila i ustaw nowe hasło."
+            : "Ustaw nowe, bezpieczne hasło do konta.";
+
+  return (
+    <KeyboardAvoidingView style={styles.screen} behavior={Platform.OS === "ios" ? "padding" : undefined}>
+      <AuthShell
+        title={mainTitle}
+        subtitle={mainSubtitle}
+        footer={
+          activeMode === "signin" ? (
+            <View style={styles.footerRow}>
+              <Pressable onPress={() => setMode("signup")} accessibilityRole="button">
+                <Text style={styles.linkText}>Utwórz konto</Text>
+              </Pressable>
+              <Pressable onPress={() => setMode("reset")} accessibilityRole="button">
+                <Text style={styles.linkText}>Zapomniałem hasła</Text>
+              </Pressable>
+            </View>
+          ) : activeMode === "signup" ? (
+            <Pressable onPress={() => setMode("signin")} accessibilityRole="button">
+              <Text style={styles.linkText}>Masz już konto? Zaloguj się</Text>
+            </Pressable>
+          ) : activeMode === "confirm" ? (
+            <View style={styles.footerRow}>
+              <Pressable onPress={() => void resendSignupCode(emailForFlow || email.trim())} accessibilityRole="button">
+                <Text style={styles.linkText}>Wyślij kod ponownie</Text>
+              </Pressable>
+              <Pressable onPress={handleResetToSignIn} accessibilityRole="button">
+                <Text style={styles.linkText}>Anuluj</Text>
+              </Pressable>
+            </View>
+          ) : activeMode === "reset" ? (
+            <Pressable onPress={handleResetToSignIn} accessibilityRole="button">
+              <Text style={styles.linkText}>Powrót do logowania</Text>
+            </Pressable>
+          ) : activeMode === "resetCode" ? (
+            <View style={styles.footerRow}>
+              <Pressable onPress={() => setMode("reset")} accessibilityRole="button">
+                <Text style={styles.linkText}>Zmień email</Text>
+              </Pressable>
+              <Pressable onPress={handleResetToSignIn} accessibilityRole="button">
+                <Text style={styles.linkText}>Anuluj</Text>
+              </Pressable>
+            </View>
+          ) : (
+            <Pressable onPress={handleResetToSignIn} accessibilityRole="button">
+              <Text style={styles.linkText}>Powrót do logowania</Text>
+            </Pressable>
+          )
+        }
+      >
+        {activeMode === "signin" && (
+          <>
+            <TextInput value={email} onChangeText={setEmail} placeholder="Email" keyboardType="email-address" autoCapitalize="none" autoCorrect={false} style={styles.input} />
+            <TextInput value={password} onChangeText={setPassword} placeholder="Hasło" secureTextEntry style={styles.input} autoCapitalize="none" autoCorrect={false} />
+            {message ? <Text style={styles.notice}>{message}</Text> : null}
+            <Pressable style={[styles.buttonPrimary, pending && styles.buttonDisabled]} onPress={() => void submitSignIn()} disabled={pending}>
+              <Text style={styles.buttonPrimaryText}>{pending ? "Logowanie…" : "Zaloguj się"}</Text>
+            </Pressable>
+          </>
+        )}
+
+        {activeMode === "signup" && (
+          <>
+            <TextInput value={email} onChangeText={setEmail} placeholder="Email" keyboardType="email-address" autoCapitalize="none" autoCorrect={false} style={styles.input} />
+            <TextInput value={password} onChangeText={setPassword} placeholder="Hasło" secureTextEntry style={styles.input} autoCapitalize="none" autoCorrect={false} />
+            <TextInput value={repeatPassword} onChangeText={setRepeatPassword} placeholder="Powtórz hasło" secureTextEntry style={styles.input} autoCapitalize="none" autoCorrect={false} />
+            {message ? <Text style={styles.notice}>{message}</Text> : null}
+            <Pressable style={[styles.buttonPrimary, pending && styles.buttonDisabled]} onPress={() => void submitSignUp()} disabled={pending}>
+              <Text style={styles.buttonPrimaryText}>{pending ? "Rejestracja…" : "Utwórz konto"}</Text>
+            </Pressable>
+          </>
+        )}
+
+        {activeMode === "confirm" && (
+          <>
+            <TextInput value={emailForFlow || email} onChangeText={setEmail} placeholder="Email" keyboardType="email-address" autoCapitalize="none" autoCorrect={false} style={styles.input} />
+            <TextInput value={code} onChangeText={setCode} placeholder="6-cyfrowy kod" keyboardType="number-pad" maxLength={authPolicy.codeLength} style={styles.input} />
+            {message ? <Text style={styles.notice}>{message}</Text> : null}
+            <Pressable style={[styles.buttonPrimary, pending && styles.buttonDisabled]} onPress={() => void submitConfirm()} disabled={pending}>
+              <Text style={styles.buttonPrimaryText}>{pending ? "Weryfikacja…" : "Potwierdź konto"}</Text>
+            </Pressable>
+          </>
+        )}
+
+        {activeMode === "reset" && (
+          <>
+            <TextInput value={email} onChangeText={setEmail} placeholder="Email" keyboardType="email-address" autoCapitalize="none" autoCorrect={false} style={styles.input} />
+            {message ? <Text style={styles.notice}>{message}</Text> : null}
+            <Pressable style={[styles.buttonPrimary, pending && styles.buttonDisabled]} onPress={() => void submitResetRequest()} disabled={pending}>
+              <Text style={styles.buttonPrimaryText}>{pending ? "Wysyłanie…" : "Wyślij kod"}</Text>
+            </Pressable>
+          </>
+        )}
+
+        {activeMode === "resetCode" && (
+          <>
+            <TextInput value={email} onChangeText={setEmail} placeholder="Email" keyboardType="email-address" autoCapitalize="none" autoCorrect={false} style={styles.input} />
+            <TextInput value={code} onChangeText={setCode} placeholder="6-cyfrowy kod" keyboardType="number-pad" maxLength={authPolicy.codeLength} style={styles.input} />
+            {message ? <Text style={styles.notice}>{message}</Text> : null}
+            <Pressable style={[styles.buttonPrimary, pending && styles.buttonDisabled]} onPress={() => void submitResetCode()} disabled={pending}>
+              <Text style={styles.buttonPrimaryText}>{pending ? "Sprawdzanie…" : "Zweryfikuj kod"}</Text>
+            </Pressable>
+          </>
+        )}
+
+        {activeMode === "newPassword" && (
+          <>
+            <TextInput value={password} onChangeText={setPassword} placeholder="Nowe hasło" secureTextEntry style={styles.input} autoCapitalize="none" autoCorrect={false} />
+            <TextInput value={repeatPassword} onChangeText={setRepeatPassword} placeholder="Powtórz hasło" secureTextEntry style={styles.input} autoCapitalize="none" autoCorrect={false} />
+            {message ? <Text style={styles.notice}>{message}</Text> : null}
+            <Pressable style={[styles.buttonPrimary, pending && styles.buttonDisabled]} onPress={() => void submitNewPassword()} disabled={pending}>
+              <Text style={styles.buttonPrimaryText}>{pending ? "Zapisywanie…" : "Zapisz hasło"}</Text>
+            </Pressable>
+          </>
+        )}
+      </AuthShell>
+    </KeyboardAvoidingView>
+  );
+}
+
+const isWeb = Platform.OS === "web";
+
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
     backgroundColor: "#F7F7F2",
+  },
+  centered: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 24,
+  },
+  errorTitle: {
+    fontSize: 24,
+    fontWeight: "800",
+    color: "#252B30",
+  },
+  errorText: {
+    marginTop: 12,
+    textAlign: "center",
+    color: "#606660",
+    fontSize: 15,
+  },
+  loadingText: {
+    marginTop: 16,
+    color: "#252B30",
+    fontSize: 15,
+  },
+  hidden: {
+    display: "none",
   },
   webLayout: {
     flex: 1,
@@ -168,5 +625,46 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+  },
+  input: {
+    minHeight: 52,
+    borderRadius: 14,
+    borderWidth: 1,
+    borderColor: "#D7DBD6",
+    backgroundColor: "#F7F7F2",
+    paddingHorizontal: 14,
+    fontSize: 16,
+    color: "#252B30",
+  },
+  buttonPrimary: {
+    minHeight: 52,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 14,
+    backgroundColor: "#07966D",
+    paddingHorizontal: 18,
+  },
+  buttonPrimaryText: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#FFFFFF",
+  },
+  buttonDisabled: {
+    opacity: 0.7,
+  },
+  linkText: {
+    color: "#07966D",
+    fontSize: 15,
+    fontWeight: "700",
+  },
+  notice: {
+    color: "#343A40",
+    fontSize: 14,
+    lineHeight: 20,
+  },
+  footerRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    gap: 12,
   },
 });
