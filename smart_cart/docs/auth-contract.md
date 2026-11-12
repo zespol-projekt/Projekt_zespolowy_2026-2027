@@ -29,13 +29,13 @@ jest dostępne. UI nie rozpoznaje błędów po treści angielskich zdań.
 
 | Operacja | Wynik sukcesu / obowiązek implementacji |
 | --- | --- |
-| `signUp(email, password)` | `confirmationRequired` i email; bez dostępu do aplikacji. Potwierdzenie hasła sprawdza formularz. |
+| `signUp(email, password)` | `confirmationRequired` i email; bez dostępu do aplikacji. Formularz na bieżąco pokazuje spełnienie minimalnej długości hasła i zgodność potwierdzenia; usługa nadal sprawdza długość przed wysłaniem. |
 | `verifySignupCode(email, code)` | `signedIn` z prawdziwą sesją albo `signInRequired`: email potwierdzony, należy zalogować się hasłem. |
 | `resendSignupCode(email)` | Ponowna wysyłka kodu rejestracji z respektowaniem limitów. Nie zmienia emaila konta. |
 | `signIn(email, password)` | `signedIn` albo `confirmationRequired` i email, gdy trzeba dokończyć potwierdzanie. |
 | `sendPasswordResetCode(email)` | Neutralna odpowiedź: „Jeśli konto istnieje, wyślemy kod odzyskiwania hasła”. Ta sama funkcja służy do ponownej wysyłki. |
 | `verifyPasswordResetCode(email, code)` | Kod sprawdzony w procesie `recovery`; stan `recovery` z fazą `settingPassword`. |
-| `setNewPassword(password)` | Zapis hasła, zakończenie lokalnej sesji odzyskiwania, stan `signedOut`. Dopiero pełne powodzenie oznacza sukces. |
+| `setNewPassword(password)` | Zapis hasła, zakończenie lokalnej sesji odzyskiwania, stan `signedOut`. Formularz rejestracji oraz oba ekrany ustawiania nowego hasła na bieżąco pokazują spełnienie wymogu długości i zgodność potwierdzenia. Dopiero pełne powodzenie oznacza sukces. |
 | `signOut()` | Wylogowanie tylko z bieżącego urządzenia/przeglądarki, usunięcie lokalnej sesji i stanu użytkownika. |
 | `retrySession()` | Ponowne sprawdzenie/odtworzenie sesji po błędzie; aktualizacja wspólnego stanu. |
 
