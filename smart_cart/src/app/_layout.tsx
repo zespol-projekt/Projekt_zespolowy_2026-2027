@@ -157,6 +157,8 @@ function AuthUI() {
   const [message, setMessage] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
   const [emailForFlow, setEmailForFlow] = useState("");
+  const passwordHasError = password.length > 0 && password.length < authPolicy.minimumPasswordLength;
+  const repeatPasswordHasError = repeatPassword.length > 0 && repeatPassword !== password;
   const authMode = useMemo(() => {
     if (state.status === "recovery") return state.phase === "settingPassword" ? "newPassword" : "resetCode";
     return mode;
@@ -346,7 +348,7 @@ function AuthUI() {
               onChangeText={setPassword}
               placeholder="Nowe hasło"
               secureTextEntry
-              style={styles.input}
+              style={[styles.input, passwordHasError && styles.inputInvalid]}
               autoCapitalize="none"
               autoCorrect={false}
             />
@@ -355,10 +357,11 @@ function AuthUI() {
               onChangeText={setRepeatPassword}
               placeholder="Powtórz nowe hasło"
               secureTextEntry
-              style={styles.input}
+              style={[styles.input, repeatPasswordHasError && styles.inputInvalid]}
               autoCapitalize="none"
               autoCorrect={false}
             />
+            <PasswordRequirements password={password} repeatPassword={repeatPassword} />
             {message ? <Text style={styles.notice}>{message}</Text> : null}
             <Pressable
               style={[styles.buttonPrimary, pending && styles.buttonDisabled]}
@@ -477,8 +480,9 @@ function AuthUI() {
         {activeMode === "signup" && (
           <>
             <TextInput value={email} onChangeText={setEmail} placeholder="Email" keyboardType="email-address" autoCapitalize="none" autoCorrect={false} style={styles.input} />
-            <TextInput value={password} onChangeText={setPassword} placeholder="Hasło" secureTextEntry style={styles.input} autoCapitalize="none" autoCorrect={false} />
-            <TextInput value={repeatPassword} onChangeText={setRepeatPassword} placeholder="Powtórz hasło" secureTextEntry style={styles.input} autoCapitalize="none" autoCorrect={false} />
+            <TextInput value={password} onChangeText={setPassword} placeholder="Hasło" secureTextEntry style={[styles.input, passwordHasError && styles.inputInvalid]} autoCapitalize="none" autoCorrect={false} />
+            <TextInput value={repeatPassword} onChangeText={setRepeatPassword} placeholder="Powtórz hasło" secureTextEntry style={[styles.input, repeatPasswordHasError && styles.inputInvalid]} autoCapitalize="none" autoCorrect={false} />
+            <PasswordRequirements password={password} repeatPassword={repeatPassword} />
             {message ? <Text style={styles.notice}>{message}</Text> : null}
             <Pressable style={[styles.buttonPrimary, pending && styles.buttonDisabled]} onPress={() => void submitSignUp()} disabled={pending}>
               <Text style={styles.buttonPrimaryText}>{pending ? "Rejestracja…" : "Utwórz konto"}</Text>
@@ -520,8 +524,9 @@ function AuthUI() {
 
         {activeMode === "newPassword" && (
           <>
-            <TextInput value={password} onChangeText={setPassword} placeholder="Nowe hasło" secureTextEntry style={styles.input} autoCapitalize="none" autoCorrect={false} />
-            <TextInput value={repeatPassword} onChangeText={setRepeatPassword} placeholder="Powtórz hasło" secureTextEntry style={styles.input} autoCapitalize="none" autoCorrect={false} />
+            <TextInput value={password} onChangeText={setPassword} placeholder="Nowe hasło" secureTextEntry style={[styles.input, passwordHasError && styles.inputInvalid]} autoCapitalize="none" autoCorrect={false} />
+            <TextInput value={repeatPassword} onChangeText={setRepeatPassword} placeholder="Powtórz hasło" secureTextEntry style={[styles.input, repeatPasswordHasError && styles.inputInvalid]} autoCapitalize="none" autoCorrect={false} />
+            <PasswordRequirements password={password} repeatPassword={repeatPassword} />
             {message ? <Text style={styles.notice}>{message}</Text> : null}
             <Pressable style={[styles.buttonPrimary, pending && styles.buttonDisabled]} onPress={() => void submitNewPassword()} disabled={pending}>
               <Text style={styles.buttonPrimaryText}>{pending ? "Zapisywanie…" : "Zapisz hasło"}</Text>
@@ -530,6 +535,28 @@ function AuthUI() {
         )}
       </AuthShell>
     </KeyboardAvoidingView>
+  );
+}
+
+function PasswordRequirements({ password, repeatPassword }: { password: string; repeatPassword: string }) {
+  const passwordIsLongEnough = password.length >= authPolicy.minimumPasswordLength;
+  const passwordsMatch = repeatPassword.length > 0 && password === repeatPassword;
+
+  return (
+    <View style={styles.passwordRequirements} accessibilityLiveRegion="polite">
+      <Text style={[
+        styles.passwordRequirement,
+        passwordIsLongEnough ? styles.passwordRequirementMet : password ? styles.passwordRequirementUnmet : null,
+      ]}>
+        {passwordIsLongEnough ? "Hasło spełnia wymaganie długości." : `Błąd: hasło musi mieć co najmniej ${authPolicy.minimumPasswordLength} znaków.`}
+      </Text>
+      <Text style={[
+        styles.passwordRequirement,
+        passwordsMatch ? styles.passwordRequirementMet : repeatPassword ? styles.passwordRequirementUnmet : null,
+      ]}>
+        {passwordsMatch ? "Hasła są takie same." : repeatPassword ? "Błąd: hasła nie są takie same." : "Potwierdź hasło, aby sprawdzić zgodność."}
+      </Text>
+    </View>
   );
 }
 
@@ -636,6 +663,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#252B30",
   },
+  inputInvalid: {
+    borderColor: "#C62828",
+  },
   buttonPrimary: {
     minHeight: 52,
     alignItems: "center",
@@ -661,6 +691,20 @@ const styles = StyleSheet.create({
     color: "#343A40",
     fontSize: 14,
     lineHeight: 20,
+  },
+  passwordRequirements: {
+    gap: 4,
+  },
+  passwordRequirement: {
+    color: "#606660",
+    fontSize: 13,
+    lineHeight: 18,
+  },
+  passwordRequirementMet: {
+    color: "#087A59",
+  },
+  passwordRequirementUnmet: {
+    color: "#C62828",
   },
   footerRow: {
     flexDirection: "row",
