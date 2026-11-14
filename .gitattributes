@@ -1,2 +1,9 @@
 # Zachowaj bajty źródeł i dowodów: ich sumy SHA-256 są częścią kontroli danych.
 dane-sklepow/** -text
+
+# Keep pg_dump snapshots byte-exact (documented SHA-256 and migration fixtures).
+smart_cart/supabase-schema.sql -text whitespace=-blank-at-eof,-blank-at-eol
+smart_cart/tests/fixtures/legacy-schema.sql -text whitespace=-blank-at-eof,-blank-at-eol
+
+# CLI migration files may end with an empty line; preserve SQL and stable LF.
+smart_cart/supabase/migrations/*.sql text eol=lf whitespace=-blank-at-eof

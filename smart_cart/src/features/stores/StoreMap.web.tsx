@@ -8,11 +8,12 @@ function Session(props: StoreMapProps & { retry: () => void }) {
   const frame = useRef<HTMLIFrameElement>(null);
   const send = useCallback((message: object) => frame.current?.contentWindow?.postMessage(message, '*'), []);
   const bridge = useMapBridge(props, send);
+  const receive = bridge.receive;
   useEffect(() => {
-    const onMessage = (event: MessageEvent) => { if (event.source === frame.current?.contentWindow) bridge.receive(event.data); };
+    const onMessage = (event: MessageEvent) => { if (event.source === frame.current?.contentWindow) receive(event.data); };
     window.addEventListener('message', onMessage);
     return () => window.removeEventListener('message', onMessage);
-  }, [bridge.receive]);
+  }, [receive]);
   return <View style={styles.frame}>
     <iframe ref={frame} srcDoc={bridge.html} title="Wektorowa mapa sklepów" data-testid="stores-map"
       sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"

@@ -6,6 +6,18 @@
   "final_url": "https://www.biedronka.pl/pl/shop,id,6967",
   "content_type": "text/html; charset=UTF-8",
   "file": "weryfikacja-biedronki/proba-20/6967-oficjalna.html",
-  "sha256": "c8495c742bec8bba8337026791ff4629cfac5bc872b8c9504a10f1bfa1c5e03e",
-  "bytes": 97086
+  "sha256": "43214fe7f7cc6b5416903604d72f6db799357aa3bd69e46587ca339dd1ab03ca",
+  "bytes": 97060,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/proba-20/6967-oficjalna.html",
+      "fields": [
+        "jwplayer.key"
+      ],
+      "count": 1,
+      "original_sha256": "c8495c742bec8bba8337026791ff4629cfac5bc872b8c9504a10f1bfa1c5e03e",
+      "sanitized_sha256": "43214fe7f7cc6b5416903604d72f6db799357aa3bd69e46587ca339dd1ab03ca"
+    }
+  ]
 }

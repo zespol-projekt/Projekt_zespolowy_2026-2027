@@ -1,7 +1,7 @@
 import Constants from 'expo-constants';
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { authService } from '../auth/instance';
-import { fetchCatalog } from './fetchCatalog';
+import { CatalogError, fetchCatalog } from './fetchCatalog';
 import type { Catalog } from './model';
 
 function storesUrl() {
@@ -34,6 +34,8 @@ export function useStores() {
   useEffect(() => authService.start(), []);
   useEffect(() => {
     if (!sessionKey) {
+      // Clear cached catalog on logout; render also guards the session key.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setResult({ sessionKey: null, catalog: null, loading: false, error: null });
       return;
     }
@@ -44,9 +46,9 @@ export function useStores() {
       try {
         const catalog = await fetchCatalog(storesUrl(), authService, controller.signal);
         if (active) setResult({ sessionKey, catalog, loading: false, error: null });
-      } catch {
+      } catch (error) {
         if (active) setResult({ sessionKey, catalog: null, loading: false,
-          error: 'Nie udało się pobrać sklepów. Sprawdź połączenie i spróbuj ponownie.' });
+          error: error instanceof CatalogError ? error.message : 'Nie można połączyć się z serwerem sklepów. Sprawdź połączenie i spróbuj ponownie.' });
       }
     })();
     return () => { active = false; controller.abort(); };

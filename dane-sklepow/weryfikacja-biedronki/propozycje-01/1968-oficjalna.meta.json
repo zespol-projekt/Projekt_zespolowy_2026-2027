@@ -6,6 +6,18 @@
   "final_url": "https://www.biedronka.pl/pl/shop,id,1968",
   "content_type": "text/html; charset=UTF-8",
   "file": "weryfikacja-biedronki/propozycje-01/1968-oficjalna.html",
-  "sha256": "ed26106793a562a8dfea858748c039a84bf3a8aba48c1ff6ecfe159734b443a6",
-  "bytes": 97070
+  "sha256": "de996bbf040ba1148c5dafeaf4a7308655f77119a3051b836368e06c1c504bc4",
+  "bytes": 97044,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/propozycje-01/1968-oficjalna.html",
+      "fields": [
+        "jwplayer.key"
+      ],
+      "count": 1,
+      "original_sha256": "ed26106793a562a8dfea858748c039a84bf3a8aba48c1ff6ecfe159734b443a6",
+      "sanitized_sha256": "de996bbf040ba1148c5dafeaf4a7308655f77119a3051b836368e06c1c504bc4"
+    }
+  ]
 }

@@ -5,12 +5,16 @@ Gotowe są `AuthProvider` i `useAuth`, dostępne z `@/features/auth` oraz
 stan i operacje konta, bez tokenów. Korzystają z jednego klienta Supabase
 i jednej instancji modułu sesji.
 
-## Podłączenie przez osobę 2
+## Obecne podłączenie w UI
 
-1. W `src/app/_layout.tsx` zaimportuj `AuthProvider` i otocz nim całe drzewo
-   nawigacji: zarówno formularze auth, jak i ekrany aplikacji. Provider montuj
-   raz, poza warunkiem sprawdzającym zalogowanie.
-2. W formularzach i profilu pobieraj dane przez hook:
+Aktualizacja 14 listopada 2026: poniższy sposób podłączenia jest już wdrożony.
+Jeden provider jest w głównym layoucie, `AuthScreen` w `src/features/auth` używa hooka, a profil pokazuje email
+i wylogowanie. Nie ma osobnych tras auth; tryby formularza są stanem `AuthScreen`.
+
+1. W `src/app/_layout.tsx` `AuthProvider` otacza całe drzewo:
+   zarówno formularze auth, jak i ekrany aplikacji. Jest montowany raz,
+   poza warunkiem sprawdzającym zalogowanie.
+2. Formularze i profil pobierają dane przez hook:
 
    ```tsx
    import { useAuth } from '@/features/auth';
@@ -20,14 +24,18 @@ i jednej instancji modułu sesji.
 
 3. Nawigacja reaguje na `state.status`: `initializing` pokazuje ładowanie,
    `signedOut` formularze, `signedIn` właściwą aplikację, `recovery` wyłącznie
-   formularz nowego hasła. `error` pokazuje komunikat i przycisk `retrySession`.
+   formularz kodu lub nowego hasła, zależnie od fazy. `error` pokazuje komunikat i przycisk `retrySession`.
    Faza `recovery/verifyingCode` nadal oznacza oczekiwanie, nie zgodę na zmianę hasła.
 4. Po `setNewPassword` pokaż sukces tylko dla `result.ok`; błąd może informować,
    że hasło zapisano, ale zakończenie sesji wymaga ponowienia.
 
-Główny layout pozostaje plikiem osoby 2. W tej zmianie provider nie został tam
-zamontowany i nie dodano ekranów ani ochrony tras. Osoba 2 nie tworzy drugiego
-klienta Supabase ani własnej kopii sesji. `useAuth` poza providerem zgłasza błąd.
+Główny layout stale montuje `Tabs`, ukrywając je i wyłączając dostępność poza `signedIn`.
+Zapytania i widoki danych osobno sprawdzają klucz sesji; dane poprzedniej sesji nie są pokazywane.
+Nawigacja zachowuje ekran przy odtwarzaniu/zmianie sesji. Po logowaniu wraca do zamierzonego celu,
+a jawne wylogowanie czyści go i kieruje do Startu. Nieznany cel nie jest otwartym przekierowaniem.
+`cancelOperation` unieważnia wcześniejszą operację i kolejkuje zakończenie sesji SDK;
+formularz dodatkowo odrzuca wyniki poprzedniej generacji. Błąd wylogowania jest dostępny jako `accountNotice`.
+Nie twórz drugiego klienta ani własnej kopii sesji. `useAuth` poza providerem zgłasza błąd.
 
 ## Przechowywanie i odtwarzanie
 
@@ -36,7 +44,8 @@ klienta Supabase ani własnej kopii sesji. `useAuth` poza providerem zgłasza b�
 - WWW: `localStorage` dla bieżącego originu; jest dostępny skryptom tej strony.
   Klucz sesji jest osobny dla adresu projektu Supabase.
 - Zapis i usuwanie tokenów wykonuje SDK przez jeden adapter `storage.ts`.
-  Hasła i kody nie są utrwalane; formularze, parametry tras i dokument mapy nie dostają tokenów.
+  Hasła i kody nie są utrwalane przez moduł auth; pola formularzy są stanem UI.
+  Formularze, parametry tras i dokument mapy nie dostają tokenów.
 
 Provider rozpoczyna od `initializing`. Moduł odczytuje sesję, pozwala SDK odświeżyć
 wygasły token i sprawdza użytkownika przez `getUser`. Dopiero potwierdzony email
@@ -74,17 +83,15 @@ HTTP: zapis i restart, odświeżenie wygasłej sesji oraz brak utrwalenia recove
 Te testy nie wysyłają maili. Testy prawdziwego projektu i maili z punktu 3 są opisane
 w [operacjach konta](auth-operations.md).
 
-9 listopada 2026: zaliczono 53 testy oraz `tsc --noEmit`. Kontrola pakowania samego
-modułu providera wygenerowała pakiety Android i WWW. Lint nadal nie jest zaliczony,
-ponieważ repozytorium nie ma konfiguracji ESLint. Test pakowania nie zastępuje
-odbioru na urządzeniu ani testów nawigacji po połączeniu pracy obu osób.
-
-Po podłączeniu ekranów trzeba jeszcze wykonać odbiór na telefonie i w przeglądarce:
+Po wdrożeniu 14 listopada: 89/89 testów Node, TypeScript, ESLint, 20/20 Playwright
+i pakowanie WWW/Android/iOS zaliczone. [Raport](wdrozenie-po-audycie.md) odróżnia tę kontrolę
+od wcześniejszych wyników i rzeczywistego odbioru na urządzeniach.
+Ekrany są podłączone, ale trzeba jeszcze wykonać pełny odbiór na telefonie i w przeglądarce:
 zalogowanie → zamknięcie i ponowne otwarcie, tło → powrót, brak internetu → ponowienie,
 wylogowanie w drugiej karcie oraz przeładowanie strony w połowie resetu.
 Ochrona API i użycie aktualnego tokenu do pobierania sklepów są opisane
 w [punkcie 5](auth-api.md). `useStores` współdzieli subskrypcję modułu sesji z providerem;
-działa również przed podłączeniem providera, ale wymaga prawdziwego zalogowania.
+ma własne zliczane wywołanie `start()`, ale obecnie działa wewnątrz podłączonego providera i wymaga sesji.
 
 Źródła: [AsyncStorage w Expo SDK 58](https://docs.expo.dev/versions/v58.0.0/sdk/async-storage/),
 [Supabase w React Native](https://supabase.com/docs/guides/auth/quickstarts/react-native),

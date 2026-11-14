@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-03T18:00:51.564Z",
-  "input_fingerprint": "7a0a9b06d0f88a59c9a849a6a594b6a9cd35d0501a7bc646cf414b034adf9f57",
+  "generated_at": "2026-11-14T18:55:33.641Z",
+  "input_fingerprint": "6d56c0be40ec60fb663e07a9ceaccc1b8f478594df407ef56a0b58472c5de3c6",
   "sources": [
     {
       "chain": "lidl",
@@ -34,14 +34,14 @@
   ],
   "source_review": {
     "file": "weryfikacja-biedronki/decyzje-przegladu.json",
-    "sha256": "0dae91171de9e79ed576d481c02d7d50a180314ddf4e7b8f250e31674e99992e",
+    "sha256": "588f4d04f6f604e8beab2fb1652cf2933a2d403b5d0768675ec8d01ae31180ff",
     "reviewed": 67,
     "corroborated": 62,
     "held": 5
   },
   "corrections": {
     "file": "poprawki/biedronka.json",
-    "sha256": "d09733f9a70fd2c49a5b4f4c3211fd0ef7abde718a12e793937615e515cbe8ad",
+    "sha256": "c0a867297ca0ca192508c3d1fb6bcce98eeaf4893d6f5a9c8990028716451bfb",
     "applied": 227,
     "coordinates": 219,
     "addresses": 9,
@@ -50,7 +50,7 @@
     "supplemental_documents": [
       {
         "file": "poprawki/biedronka-zweryfikowane.json",
-        "sha256": "5f72d197302d0cb2719e7f4612fae5463dcd25d905bf11f2e4e8deab83c33259"
+        "sha256": "e1abc8bcb4cba159bb9a3e53933b16c0934dc51666bfd1cb87b3bdb479171d7d"
       }
     ],
     "scope": "Dane OSM z prostokąta obejmującego Polskę: pełne odpowiedzi dla 9/9 obszarów bazowych, 16 zapisanych odpowiedzi. Nie jest to potwierdzenie kompletności placówek.",
@@ -11964,7 +11964,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -12923,7 +12923,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -13344,7 +13344,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -13838,7 +13838,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -14116,7 +14116,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -17476,7 +17476,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -17973,7 +17973,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -18920,7 +18920,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -19357,7 +19357,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -19746,7 +19746,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -21152,7 +21152,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -22472,7 +22472,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -23009,7 +23009,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -24582,7 +24582,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -26603,7 +26603,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -27094,7 +27094,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -30397,7 +30397,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -31620,7 +31620,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -32117,7 +32117,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -33290,7 +33290,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -36250,7 +36250,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -46148,7 +46148,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -49453,7 +49453,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -51819,7 +51819,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -62154,7 +62154,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -65487,7 +65487,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -68686,7 +68686,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -75719,7 +75719,7 @@
             },
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -78223,7 +78223,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -79469,7 +79469,7 @@
             },
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -82794,7 +82794,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -83941,7 +83941,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -85838,7 +85838,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }
@@ -89847,7 +89847,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -90097,7 +90097,7 @@
             },
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -106167,7 +106167,7 @@
             },
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-              "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+              "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
             }
           }
         }
@@ -112457,7 +112457,7 @@
             "license_url": "https://www.openstreetmap.org/copyright",
             "review_report": {
               "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-              "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+              "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
             }
           }
         }

@@ -6,6 +6,18 @@
   "final_url": "https://www.biedronka.pl/pl/shop,id,3033",
   "content_type": "text/html; charset=UTF-8",
   "file": "weryfikacja-biedronki/propozycje-01/3033-oficjalna.html",
-  "sha256": "76cc73c1f713277d167dfdbe97dba5580c0dd2ec027948426b3152431241edce",
-  "bytes": 96984
+  "sha256": "51026e8f619f2d7d6648aba155f1a78a9e52aea229ed44913ba23659962e399c",
+  "bytes": 96958,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/propozycje-01/3033-oficjalna.html",
+      "fields": [
+        "jwplayer.key"
+      ],
+      "count": 1,
+      "original_sha256": "76cc73c1f713277d167dfdbe97dba5580c0dd2ec027948426b3152431241edce",
+      "sanitized_sha256": "51026e8f619f2d7d6648aba155f1a78a9e52aea229ed44913ba23659962e399c"
+    }
+  ]
 }

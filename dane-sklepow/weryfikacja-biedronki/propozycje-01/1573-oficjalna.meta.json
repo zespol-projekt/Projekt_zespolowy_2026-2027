@@ -6,6 +6,18 @@
   "final_url": "https://www.biedronka.pl/pl/shop,id,1573",
   "content_type": "text/html; charset=UTF-8",
   "file": "weryfikacja-biedronki/propozycje-01/1573-oficjalna.html",
-  "sha256": "1223d77b07fdf9371cbfd72ed0ada9a4136743a2d94d3ca69afee8fcfa5605b0",
-  "bytes": 96962
+  "sha256": "c3ffb6d9c8890dbc75f406d637aa75dff9df2328e01ecb2ae670caad32a788cc",
+  "bytes": 96936,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/propozycje-01/1573-oficjalna.html",
+      "fields": [
+        "jwplayer.key"
+      ],
+      "count": 1,
+      "original_sha256": "1223d77b07fdf9371cbfd72ed0ada9a4136743a2d94d3ca69afee8fcfa5605b0",
+      "sanitized_sha256": "c3ffb6d9c8890dbc75f406d637aa75dff9df2328e01ecb2ae670caad32a788cc"
+    }
+  ]
 }

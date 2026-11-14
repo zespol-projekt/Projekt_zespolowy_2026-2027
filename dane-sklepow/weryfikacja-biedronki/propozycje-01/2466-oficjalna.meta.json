@@ -6,6 +6,18 @@
   "final_url": "https://www.biedronka.pl/pl/shop,id,2466",
   "content_type": "text/html; charset=UTF-8",
   "file": "weryfikacja-biedronki/propozycje-01/2466-oficjalna.html",
-  "sha256": "aeefc1c22acaabc79ee19dc5596b273c5604ab0c851e52ee7327b39c9a07b3d3",
-  "bytes": 97029
+  "sha256": "397360ec3d4fce76632fa421e0e409efae4dec5e41ec32131a265eae6f71051b",
+  "bytes": 97003,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/propozycje-01/2466-oficjalna.html",
+      "fields": [
+        "jwplayer.key"
+      ],
+      "count": 1,
+      "original_sha256": "aeefc1c22acaabc79ee19dc5596b273c5604ab0c851e52ee7327b39c9a07b3d3",
+      "sanitized_sha256": "397360ec3d4fce76632fa421e0e409efae4dec5e41ec32131a265eae6f71051b"
+    }
+  ]
 }

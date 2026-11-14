@@ -6,6 +6,18 @@
   "final_url": "https://www.biedronka.pl/pl/shop,id,2390",
   "content_type": "text/html; charset=UTF-8",
   "file": "weryfikacja-biedronki/propozycje-02/2390-oficjalna.html",
-  "sha256": "3112f46cfaf22a7495264a3031508fd7477186f5a7b73e45e3153c383840d9a9",
-  "bytes": 96948
+  "sha256": "1e7712d72f75a542484f4275b781be50f38a23399afd818f47d4fbac7ce92a09",
+  "bytes": 96922,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/propozycje-02/2390-oficjalna.html",
+      "fields": [
+        "jwplayer.key"
+      ],
+      "count": 1,
+      "original_sha256": "3112f46cfaf22a7495264a3031508fd7477186f5a7b73e45e3153c383840d9a9",
+      "sanitized_sha256": "1e7712d72f75a542484f4275b781be50f38a23399afd818f47d4fbac7ce92a09"
+    }
+  ]
 }

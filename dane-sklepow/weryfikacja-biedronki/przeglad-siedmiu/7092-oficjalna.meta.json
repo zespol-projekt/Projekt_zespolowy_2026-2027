@@ -6,6 +6,18 @@
   "final_url": "https://www.biedronka.pl/pl/shop,id,7092",
   "content_type": "text/html; charset=UTF-8",
   "file": "weryfikacja-biedronki/przeglad-siedmiu/7092-oficjalna.html",
-  "sha256": "5fc90b0c0225aa0168a9af61aed298309650bf2ddfc33a25cf0b85da8a569d1e",
-  "bytes": 96898
+  "sha256": "8954dfc869a7714728cecdcea7f4c2b8ed8540cd9442575ac3ae3b979fa51667",
+  "bytes": 96872,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/przeglad-siedmiu/7092-oficjalna.html",
+      "fields": [
+        "jwplayer.key"
+      ],
+      "count": 1,
+      "original_sha256": "5fc90b0c0225aa0168a9af61aed298309650bf2ddfc33a25cf0b85da8a569d1e",
+      "sanitized_sha256": "8954dfc869a7714728cecdcea7f4c2b8ed8540cd9442575ac3ae3b979fa51667"
+    }
+  ]
 }

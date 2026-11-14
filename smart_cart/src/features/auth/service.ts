@@ -60,6 +60,7 @@ export function createAuthService(getAuth: () => AuthClient | null, options: Ser
   let unsubscribeAuth: (() => void) | undefined;
   let unsubscribeLifecycle: (() => void) | undefined;
   let eventPending = false;
+  let closing = 0;
   let refreshReady = false;
   let foreground = false;
   let refreshQueue = Promise.resolve();
@@ -203,6 +204,7 @@ export function createAuthService(getAuth: () => AuthClient | null, options: Ser
           const auth = getAuth();
           if (auth) {
             const { data } = auth.onAuthStateChange((event, session) => {
+              if (closing > 0) return;
               // Callback nigdy nie czeka na SDK; payload może pochodzić ze starej karty.
               if (event === 'INITIAL_SESSION') return;
               if (sessionKey !== null && (event === 'SIGNED_OUT' || event === 'PASSWORD_RECOVERY' ||
@@ -361,9 +363,12 @@ export function createAuthService(getAuth: () => AuthClient | null, options: Ser
 
     signOut() {
       revision += 1;
+      closing += 1;
       publish({ status: 'signedOut' }, revision);
-      return run(closeSession);
+      return run(closeSession).finally(() => { closing -= 1; });
     },
+
+    cancelOperation() { return service.signOut(); },
 
     getAccessToken() {
       return runWithSession(async (auth, current, key) => {

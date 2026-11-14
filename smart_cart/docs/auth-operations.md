@@ -36,8 +36,11 @@ Punkt 4 dodał [trwałą zwykłą sesję, odtwarzanie i provider](auth-session.m
 Sesja odzyskiwania pozostaje wyłącznie w pamięci; restart wymaga ponowienia resetu.
 Nie przechwytujemy linków — weryfikacja nadal używa kodów.
 [Punkt 5](auth-api.md) dodał ochronę API i uwierzytelnione pobieranie sklepów.
-Formularze i podłączenie providera do nawigacji przygotowuje osoba 2. Moduł operacji
-nie tworzy ekranów ani nie steruje routerem.
+Po naprawach z 14 listopada formularze są w `AuthScreen`, provider pozostaje w głównym
+layoucie, a profil ma email i wylogowanie. Moduł operacji nie steruje routerem.
+`cancelOperation` unieważnia poprzednią operację i kończy sesję SDK także po spóźnionej odpowiedzi;
+formularz ma dodatkową ochronę generacji. [Raport wdrożenia](wdrozenie-po-audycie.md)
+opisuje naprawy oraz wynik 20/20 Playwright.
 
 ## Sprawdzenie
 
@@ -57,8 +60,10 @@ W środowisku blokującym tworzenie procesów runnera można użyć
 TypeScript dopuszcza importy `.ts`, aby Node 24 uruchamiał tę samą implementację
 co aplikacja bez dodatkowego kompilatora/loadera testowego.
 
-Lint obecnie nie działa: repozytorium nie ma konfiguracji ani zależności ESLint.
-Nie traktujemy tego polecenia jako zaliczonego sprawdzenia.
+Po wdrożeniu napraw 14 listopada: 89/89 testów Node, TypeScript i ESLint zaliczone.
+Aktualne zmiany formularzy i wyniki 20/20 Playwright opisuje [raport wdrożenia](wdrozenie-po-audycie.md).
+Poniższy opis rzeczywistych kont i maili jest historycznym zapisem z 8–9 listopada;
+w audycie nie ponawiano wysyłek ani całego procesu resetu.
 
 Rzeczywisty test integracyjny z 8–9 listopada 2026 używał `createAuthService` i klienta
 SDK z ustawieniami `.env.local`. Użytkownik odebrał kod rejestracji; Supabase potwierdziło

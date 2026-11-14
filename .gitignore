@@ -1,0 +1,42 @@
+# Local configuration and credentials; examples contain placeholders only.
+.env*
+!.env.example
+!.env.template
+!.env.*.example
+!.env.*.template
+.envrc
+.pypirc
+.aws/
+.ssh/
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.mobileprovision
+service-account*.json
+*firebase-adminsdk*.json
+google-services.json
+GoogleService-Info.plist
+
+# Dependencies, generated builds and test output, anywhere in the repository.
+node_modules/
+.expo/
+dist/
+web-build/
+coverage/
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.log
+.DS_Store
+Thumbs.db
+
+# Supabase local/link state is not part of the schema or migrations.
+**/supabase/.temp/
+**/supabase/.branches/
+
+# Private audit output, downloaded tooling and temporary export copies.
+.audit-local/

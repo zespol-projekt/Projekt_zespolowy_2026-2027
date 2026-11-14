@@ -2,6 +2,11 @@
 
 Aplikacja Expo / React Native na Androida, iOS i WWW. Ekrany: `src/app`; mapa: `src/features/stores`.
 
+Stan po wdrożeniu **14 listopada 2026**: [zmiany, testy i ograniczenia danych](docs/wdrozenie-po-audycie.md).
+Wdrożono ustalenia [ankiety](docs/plan-napraw-po-ankiecie.md): wyszukiwanie grup i ofert, prywatne nazwane listy, edycję produktów/ilości, porównanie pełnych opakowań i sprzedaży luzem oraz ulubione. Naprawiono formularze i zachowanie nawigacji przy zmianie sesji. Pięć migracji jest już we wspólnym Supabase.
+[Baza produktów i cen](docs/database-context.md) jest osobna od katalogu placówek mapy. `supabase-schema.sql` odświeżono po wdrożeniu. [Utrzymanie katalogu](docs/utrzymanie-katalogu.md) opisuje migracje, eksport oraz uzupełnianie zweryfikowanych grup, dat i warunków promocji.
+Źródła nie zawierają wszystkich metadanych: niepewne zamienniki pozostają osobnymi produktami, nieznany sposób sprzedaży wyłącza wycenę, a promocje bez dowodów nie są naliczane. [Audyt sprzed napraw](docs/stan-projektu.md) zachowuje historię wykrytych błędów.
+
 ## Logowanie — integracja Supabase
 
 [Kontrakt modułu auth](docs/auth-contract.md) opisuje typy, operacje i podział pracy.
@@ -9,13 +14,14 @@ Aplikacja Expo / React Native na Androida, iOS i WWW. Ekrany: `src/app`; mapa: `
 rejestrację, potwierdzanie kodów, logowanie, reset hasła i lokalne wylogowanie.
 [Sesja i provider — punkt 4](docs/auth-session.md) dodają zapamiętywanie zwykłego
 logowania, odtwarzanie i odświeżanie oraz `AuthProvider/useAuth` dla ekranów osoby 2.
-Provider czeka na podłączenie do nawigacji przez osobę 2.
+Jeden provider jest zamontowany w `src/app/_layout.tsx`. W tym samym pliku `AppShell`
+blokuje właściwą aplikację poza stanem `signedIn`, a `AuthScreen` zawiera formularze.
 [Chronione API — punkt 5](docs/auth-api.md) wymaga sesji potwierdzonego konta;
 pobieranie sklepów używa bieżącego tokenu i przerywa się przy wylogowaniu.
-Do czasu podłączenia formularzy mapa bez sesji wyświetla prośbę o zalogowanie.
+Bez sesji główny layout pokazuje formularz logowania; chroniona nawigacja jest ukryta i niedostępna, a mapa nie jest montowana.
 
-[Przekazanie i odbiór — punkt 6](docs/auth-handoff.md) zbiera gotowy zakres osoby 1,
-instrukcję dla osoby 2, wyniki kontroli i listę wspólnych testów po integracji.
+[Przekazanie i odbiór](docs/auth-handoff.md) opisuje obecną integrację, otwarte braki
+formularzy i nawigacji oraz checklistę odbioru na urządzeniach.
 
 [Konfiguracja Supabase — punkt 2](docs/supabase-setup.md) zawiera ustawienia Auth,
 SMTP dla projektu bez własnej domeny, polskie szablony maili oraz zmienne środowiskowe.
@@ -30,6 +36,11 @@ Wymagany Node.js 24 LTS. Z katalogu `SMARTCART` przejdź do aplikacji i zainstal
 cd .\Projekt_zespolowy_2026-2027\smart_cart
 npm.cmd ci
 ```
+
+Przed pierwszym uruchomieniem skopiuj `.env.example` do `.env.local` i uzupełnij
+`EXPO_PUBLIC_SUPABASE_URL`, `EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY` oraz `SUPABASE_URL`.
+Oba adresy muszą wskazywać ten sam projekt; publiczny klucz ma postać `sb_publishable_…`.
+`.env.local` jest ignorowany przez Git.
 
 W terminalu 1, w katalogu `smart_cart`, uruchom serwer danych:
 
@@ -60,6 +71,11 @@ EXPO_PUBLIC_STORES_API_URL=http://ADRES_IP_KOMPUTERA:8787/v1/stores
 ### Konfiguracja serwera danych
 
 `npm.cmd run server` automatycznie wczytuje `.env.local` z katalogu `smart_cart`. Możesz skopiować `.env.example` jako szablon. Serwer korzysta z zainstalowanego SDK Supabase.
+
+Po zmianie adresu lub klucza Supabase zrestartuj **serwer danych i Expo**.
+Serwer Node nie przeładowuje `.env.local` automatycznie. Gdy logowanie działa,
+a sklepy są niedostępne, sprawdź, czy na porcie 8787 nie działa starszy proces ze starą konfiguracją.
+`/health` potwierdza dane i działanie HTTP, ale nie poprawność połączenia z Supabase.
 
 - `SUPABASE_URL` i `SUPABASE_PUBLISHABLE_KEY` — adres i publiczny klucz wspólnego projektu. Jeśli ich nie podasz, serwer użyje odpowiadających zmiennych `EXPO_PUBLIC_SUPABASE_*`. Brak konfiguracji blokuje start. Nie potrzeba klucza `service_role`.
 
@@ -105,6 +121,13 @@ Do wersji produkcyjnej ustaw `EXPO_PUBLIC_STORES_API_URL` na rzeczywisty publicz
 
 WWW używa `web.output: "single"`: ekrany działają w przeglądarce, a dane pobierają z osobnego API. Projekt nie korzysta z API Routes ani loaderów Expo. Ten tryb omija odtworzony błąd renderowania serwerowego SDK 58 przy zmianie tras i przeładowaniu. Hosting musi przekierowywać adresy ekranów do `dist/index.html`. Jeśli dodacie serwerowe funkcje Expo, trzeba ponownie dobrać tryb WWW.
 
+## Eksport bazy i lokalna konfiguracja Supabase
+
+`supabase-schema.sql` jest migawką struktury zdalnej bazy z 14 listopada, bez rekordów.
+Nie synchronizuje się automatycznie. [Aktualny kontrakt RPC](docs/database-context.md) i [obsługa eksportu/migracji](docs/utrzymanie-katalogu.md) opisują nowe funkcje po wdrożeniu napraw.
+
+`supabase/config.toml` opisuje konfigurację lokalną, z dopasowanymi podstawowymi parametrami auth. Nie jest kopią konfiguracji chmury. Korzystamy ze wspólnego projektu; nie uruchamiamy dodatkowego lokalnego Auth.
+
 ## Sprawdzanie
 
 Z katalogu aplikacji:
@@ -112,14 +135,22 @@ Z katalogu aplikacji:
 ```powershell
 npm.cmd test
 npm.cmd run server:check
-npx.cmd tsc --noEmit
+npm.cmd run typecheck
+npm.cmd run lint
 npm.cmd run test:e2e
 npx.cmd expo export --platform all
 ```
 
-Testy jednostkowe używają runnera Node 24. Playwright wymaga zainstalowanego Google Chrome i uruchamia własne Expo z fikcyjną konfiguracją Supabase; zatrzymaj wcześniej Metro. Dla innego portu ustaw `MAP_TEST_PORT`. Testy uruchamiają rzeczywisty silnik i workery MapLibre z lokalnych plików, z fikcyjną sesją, sklepami i zastępczym podkładem — nie potrzebują prawdziwego konta ani nie pobierają publicznych kafelków.
+Testy jednostkowe używają runnera Node 24. Playwright wymaga zainstalowanego Google Chrome i uruchamia własne Expo z fikcyjną konfiguracją Supabase na domyślnym porcie **8091**. Inny wolny port można wskazać przez `MAP_TEST_PORT`. Testy uruchamiają rzeczywisty silnik i workery MapLibre z lokalnych plików, z fikcyjną sesją, sklepami i zastępczym podkładem — nie potrzebują prawdziwego konta ani nie pobierają publicznych kafelków.
 
 Uruchamiaj jedną instancję Metro dla projektu. Po zmianie zależności lub problemie z cache zatrzymaj Expo i uruchom `npx.cmd expo start --clear --port 8081`, a następnie ponownie otwórz projekt w Expo Go. Eksport najlepiej wykonywać przy zatrzymanym serwerze deweloperskim.
+
+Wyjątkiem jest izolowane Expo uruchamiane przez Playwright na osobnym porcie i z fikcyjnymi ustawieniami. Nie używaj jego adresu jako zwykłego środowiska deweloperskiego.
+
+Wyniki po wdrożeniu: **89/89 testów Node, 20/20 Playwright, 37/37 testów danych, TypeScript, ESLint i kontrola 7753 sklepów zaliczone**. Eksport WWW/Android/iOS zakończony powodzeniem. Szczegóły oraz granice odbioru: [raport](docs/wdrozenie-po-audycie.md).
+Przed publikacją dodano cztery testy kontroli sekretów: aktualny zestaw Node ma **93 testy**. Reguły i problem starszej historii Git opisuje [kontrola publikacji](docs/publikacja-git.md).
+
+`npm.cmd run test:db` sprawdza migracje i RLS w wyłącznie testowym kontenerze Postgres. [Instrukcja](docs/utrzymanie-katalogu.md). Nieistniejący skrypt `reset-project` usunięto.
 
 `npm.cmd test` obejmuje również `tests/server.test.mjs`: konfigurację ścieżki danych i działanie API na fikcyjnych rekordach. `server:check` odczytuje prawdziwy plik danych z repozytorium. Instrukcje kontroli i ponownego przygotowania całego zbioru są w `../dane-sklepow/README.md`.
 

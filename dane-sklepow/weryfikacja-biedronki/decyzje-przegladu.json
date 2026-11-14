@@ -5,7 +5,7 @@
   "evidence_files": [
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/2698-oficjalna.html",
-      "sha256": "28c361a7a858be95214e057969afc328036d9394d192cb7373172819ac04230b"
+      "sha256": "e88dfd2bf883ee2e4253d89f1e4ff45804a67088e75500bdbebe55bcba77ab6b"
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/2698-osm.json",
@@ -13,7 +13,7 @@
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/3397-oficjalna.html",
-      "sha256": "58ea5805c43a0c45f796e6811dd4914153a910d05e1c8f5af938f7de30168e6a"
+      "sha256": "d3f7a3e84a300edfc3b41c70c12b64685d37c9b94d2503f3f325e1b29928c7bb"
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/3397-osm.json",
@@ -21,7 +21,7 @@
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/3607-oficjalna.html",
-      "sha256": "d1b1ffcb468e7cee61f537084addd2c3a7ea3892bc9fcb2998c89728dd39f6bf"
+      "sha256": "843547d0808a69d60dd208d67700c4352236d1eada4e1bf46d41949ab2aa1f1d"
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/3607-osm.json",
@@ -29,7 +29,7 @@
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/3608-oficjalna.html",
-      "sha256": "f8bf9d5cdda0d6df546712dce26d2b4c6e44f6f959d3dbfbe699e41b8790f44d"
+      "sha256": "30299dc49125b990f4f6a819b9736df1b927c17d8ffad747d146ca793793e9b2"
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/3608-osm.json",
@@ -37,7 +37,7 @@
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/3711-oficjalna.html",
-      "sha256": "b8e0b9bd1bad15f6a769009c95533d80a775e40bdc4a207007c1084cabd89309"
+      "sha256": "4e72c76593c59c9e83c81a1b4f93fe2da6b1bcc947c58e277af1e86803a8b62b"
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/3711-osm.json",
@@ -45,7 +45,7 @@
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/7078-oficjalna.html",
-      "sha256": "dc5a03d1434d0f6892a760733e058b67c9b892ded12ff04498c42844a9495cf2"
+      "sha256": "d9d414e99f32ad4735059051b8bd0681b3ed46c1ef94db75be21d72720021230"
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/7078-osm.json",
@@ -53,7 +53,7 @@
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/7092-oficjalna.html",
-      "sha256": "5fc90b0c0225aa0168a9af61aed298309650bf2ddfc33a25cf0b85da8a569d1e"
+      "sha256": "8954dfc869a7714728cecdcea7f4c2b8ed8540cd9442575ac3ae3b979fa51667"
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/7092-osm.json",
@@ -61,7 +61,7 @@
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/trzebinia-cityon.html",
-      "sha256": "b69ea01aa71cb7c36d0aad8bd3467b4f03f8b01b1717babcf76532d88855acd8"
+      "sha256": "741203c9dea638ac9dd7078949278381515c6ed9772954e04353734691d7684c"
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/zaklikow-targeo.html",
@@ -169,7 +169,7 @@
     },
     {
       "file": "weryfikacja-biedronki/przeglad-siedmiu/raport.json",
-      "sha256": "59c5726332bc0faab76c2c383e4e17d90e925a3ffc998caa9ba57b9820d7e1b5"
+      "sha256": "628bda0f0d0022bb86776dfab09a2339e8c7ef9e0a12ae6a49d1a258ff6a3548"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/wybor.json",
@@ -177,11 +177,11 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/manifest.json",
-      "sha256": "da90d9554ecb3574ec717fc182eb6c6d2ca99d0a4e2fb084f30ad849b6032661"
+      "sha256": "7112e6bef456b26ffa94aff65a176bd416a80f6488fc7b6ef0ee2bfb5ccf5bc6"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/1308-oficjalna.html",
-      "sha256": "5c45f63b4857ed8f17cc89d3188f32eef2f97ace9e40a65e4277be699f316d3a"
+      "sha256": "c566e15e510bfe587ad8c3241ece6ab2914b67f5393267f64a0e23fca53b2b76"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/1308-osm.json",
@@ -197,7 +197,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/2872-oficjalna.html",
-      "sha256": "f2ca967c2cc6c32c53f097f291e1f79f91a0ab98d8e048c3228c0b11cab9a5f8"
+      "sha256": "1ea118187a1dcc8f5c00fd56c1b6b431e6d2c03564f565857232d5370cbc3c71"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/2872-osm.json",
@@ -213,7 +213,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/2982-oficjalna.html",
-      "sha256": "93ebc04aedeebc1b4dcc4b4dbe103c83502fc42b883dbf8c8506150573c6dc0f"
+      "sha256": "5e9424e6345535c47e9b7a499b88ba0bef67ad0c761c31bb44a6e0a776805622"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/2982-osm.json",
@@ -229,7 +229,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3513-oficjalna.html",
-      "sha256": "4d8a9200bdf0b5eac27564a056fcfa30d8ef851144f809f0f2d586769f6a05cc"
+      "sha256": "381fac414a3bd6ad72aad7294045ef87d76dc272da60c0bc40ddf419b7d6f975"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3513-osm.json",
@@ -245,7 +245,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/6967-oficjalna.html",
-      "sha256": "c8495c742bec8bba8337026791ff4629cfac5bc872b8c9504a10f1bfa1c5e03e"
+      "sha256": "43214fe7f7cc6b5416903604d72f6db799357aa3bd69e46587ca339dd1ab03ca"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/6967-osm.json",
@@ -261,7 +261,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/1150-oficjalna.html",
-      "sha256": "9c029e5636a767310e08161ba23a167789cb2b3cc5f740348a91f527e006db1d"
+      "sha256": "1299cf1bd2a456ab901e522e55d7a69c6e32b479ee886487b2a4b0b7022535b8"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/1150-osm.json",
@@ -277,7 +277,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/2404-oficjalna.html",
-      "sha256": "5b86fd5863215c8bce5d4fd80f4dc2d15f6b003d2431e471c54cb91c763fb3bb"
+      "sha256": "a923c07abc16f834598d612f2d05b2205d8e0d9e10133949180aca90c9eedef8"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/2404-osm.json",
@@ -293,7 +293,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/1365-oficjalna.html",
-      "sha256": "b521d57ae8c93b09df8d5d5608759d301e8855f9d1b59f4e719fe55b49dbdcf6"
+      "sha256": "4539dbbe4eb88393bd901c37fd2496d74a76d93a6e60325add43d51dcb5e3c88"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/1365-osm.json",
@@ -309,7 +309,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/6963-oficjalna.html",
-      "sha256": "4359ea214b823513c6806762b87facdb1717820300eeca3f15b58a1159ed72f7"
+      "sha256": "54b739e19241e44d19192dd1dfe1c39b9d82e73ba05a91016a05e9ba38d25f4e"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/6963-osm.json",
@@ -325,7 +325,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/7815-oficjalna.html",
-      "sha256": "aa4e4e88ee7589ad138a59115161c8d25a7ce2e2faf1ceb8afc90829f63de91d"
+      "sha256": "260655051113e2bc26b19f57022ac88b8eadb49ccaa1f113a96e930040d66fab"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/7815-osm.json",
@@ -341,7 +341,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3733-oficjalna.html",
-      "sha256": "e17788b9b8baccafdb63be7b2d93687a0a0e724940181fd65ed115b42cdffd72"
+      "sha256": "77b69ef1cc32f068a99bdfb4fa135400685cf7d8d0503b300ee2ca8ac523a770"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3733-osm.json",
@@ -357,7 +357,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3378-oficjalna.html",
-      "sha256": "2116692a3ed046472dbacd6e3283b9427ec3a77f25e5ac94f4a2015f06e37040"
+      "sha256": "b4fcc62e631d5eb95a6417d4dcc4a9025af65398e15e3ecca279508fbd7b3588"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3378-osm.json",
@@ -373,7 +373,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3668-oficjalna.html",
-      "sha256": "6216dcb1d302e970fe3fbf573ae053128a1bac5eb6b94f4a5c82de83bca5ddd0"
+      "sha256": "a456df5a13c8d4e826ce5f95462333fb261c1148c427cd233b129f288394b0fc"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3668-osm.json",
@@ -389,7 +389,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3363-oficjalna.html",
-      "sha256": "bc2e34cbef9555108dddaba94a1de5a9dca43bcc7c4484cf95b5f135cc1498d9"
+      "sha256": "1c3b6b8d3b84ad1f310da28a71f2303766f40f9dc0f6cda2fb22f2490cc67a46"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3363-osm.json",
@@ -405,7 +405,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3102-oficjalna.html",
-      "sha256": "b471e7dc6dc7e3b4a1429facf111858ebb0e936b96b17ba4bfccf6e5de39c299"
+      "sha256": "b65c37f6b0d5532e48b6a0d5c7a68bac5d97f08eaabc3e9fc2fe7d289d0a1cef"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/3102-osm.json",
@@ -421,7 +421,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/1242-oficjalna.html",
-      "sha256": "c8a287bfd68ff25aa425c3718173df4a0dea74f5178cea158d95fcfd44f3950d"
+      "sha256": "1fe972cd75e3c25c8a8087366c56a4661f25e2936e08ace40086f0b5e45876fc"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/1242-osm.json",
@@ -437,7 +437,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/7438-oficjalna.html",
-      "sha256": "79d9319c0099f8727bfb0ab0d9f21c78388a31e72517d0df6308d46f2252741d"
+      "sha256": "e293be4b91f047c9fab4ad9b571be7dfc59c8e2ac2331d5ba6a14d402ea289f7"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/7438-osm.json",
@@ -453,7 +453,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/7668-oficjalna.html",
-      "sha256": "3a365c161de2ca0902b4811ee6200cb0f004f81312fbe6036698bba0d51fea6f"
+      "sha256": "1a58aca3ea7133b8a019c10c6221da18e524474ad1b4e4d98813c1fbbfffbc91"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/7668-osm.json",
@@ -469,7 +469,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/6953-oficjalna.html",
-      "sha256": "f4633745a5865c453cdc46402afd036487f1a6ee1ec33b757bd7b5e9abf1b944"
+      "sha256": "ca09e05006771b52f616bf1ac27568f209d63e3b3cbbeccae1b9e9788058c592"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/6953-osm.json",
@@ -485,7 +485,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/2314-oficjalna.html",
-      "sha256": "92973f0c680addae32b4c2f0715c4fea0536daae61c811646054b012c1374a2a"
+      "sha256": "836374e9700973097502ddd236b12a5f1fb6e99a0f0792a42951238e5de32e64"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/2314-osm.json",
@@ -517,7 +517,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/stary-dzikow-zyn.html",
-      "sha256": "fde845e6c202ad1b8d9fe7fa1155ee124f2467473af67eee3889185eba628dc7"
+      "sha256": "84088b9812367f9215824a97cbe4174479dda3ba3e6b65c7c2254271568ec584"
     },
     {
       "file": "weryfikacja-biedronki/proba-20/1308-gugik-wgs84.json",
@@ -605,7 +605,7 @@
     },
     {
       "file": "weryfikacja-biedronki/proba-20/raport.json",
-      "sha256": "83c33ff946d4baaca48e137793fad5c98b5ffc2fe460c24fe3bb4640f1c22681"
+      "sha256": "77b0fa36e77d72484ff0ef3b284167bf3ce1bbd2c47ef77f73d6346f67b1e6cd"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/wybor.json",
@@ -613,11 +613,11 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/manifest.json",
-      "sha256": "3009767edde1605a02350ecbd9d481ddd6565078cf729fe25ed9088393044da6"
+      "sha256": "943f561725f1118d4235b46294cee361ff00ac7529591abe00bff8c79d3883bd"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1400-oficjalna.html",
-      "sha256": "0f483775f5f1e91def39d4abfc7b0932ac0bd5318da6f3972461459199bb9c40"
+      "sha256": "3cae4ff4f09a74c52a31a58dfb308157272ac95f82c63abd8bfbd97b00be73d0"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1400-osm.json",
@@ -637,7 +637,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/2220-oficjalna.html",
-      "sha256": "5714e81b944c2c54b479aacb526a5280d59ebd7670a1edfa93847c5c086e41a2"
+      "sha256": "56ae3908d8e9c3985c3a2f4e8d6176fce0558fb04cc3373643803f3fbd3b79a9"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/2220-osm.json",
@@ -649,7 +649,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3370-oficjalna.html",
-      "sha256": "4b85cb8b1acaf2ecd384c0018f050d0ea51c4490f27153ecbda262bf34de33fc"
+      "sha256": "a0ff4a9d99e94a17af07e84320825a4932e73f3eaa5542e60f9cf75fb9826b0e"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3370-osm.json",
@@ -661,7 +661,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3484-oficjalna.html",
-      "sha256": "815d659f6c397886789e9fdb3fd1a94ecaa9c28acbdf9f39849e6b5d0285077f"
+      "sha256": "6e3d37bdd20211ec61873cf3ea66f67d423bbc4b2c716ab1996b93352f68a3ec"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3484-osm.json",
@@ -673,7 +673,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3572-oficjalna.html",
-      "sha256": "2f114bb692de0a5c84057737fc0eafc661fa76244458dbbc4d25a87681fa1f9c"
+      "sha256": "4611cd1b1579efee7b92a3627471056c6b93e8d64bbe0514b12905de2b4b7ee1"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3572-osm.json",
@@ -693,7 +693,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3768-oficjalna.html",
-      "sha256": "f71224dc8853a7266b882efe9aaa543c53f57c28d2dcf6ab32d18c09a224be33"
+      "sha256": "e86b05ada1e190e0d305919fad70038d13b5ba5920abbecb02046537e5d069c1"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3768-osm.json",
@@ -713,7 +713,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3772-oficjalna.html",
-      "sha256": "475093e4b74137aa8d41437ce67947b204225189e3442955ba3843d301798dc3"
+      "sha256": "b3c607c9fd95c75ad2dd06b6efcc31dde493133d19902c750a087d098f8da467"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3772-osm.json",
@@ -729,7 +729,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/7026-oficjalna.html",
-      "sha256": "a6523aace86e0fe89e9f0d754eae6cea4f17d7fdc5b5f7e45010d5931c0c361b"
+      "sha256": "4bef9d929501a3f2f7fee917b0a3488367942074aa17f90620fea51ae296d631"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/7026-osm.json",
@@ -741,7 +741,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1573-oficjalna.html",
-      "sha256": "1223d77b07fdf9371cbfd72ed0ada9a4136743a2d94d3ca69afee8fcfa5605b0"
+      "sha256": "c3ffb6d9c8890dbc75f406d637aa75dff9df2328e01ecb2ae670caad32a788cc"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1573-osm.json",
@@ -761,7 +761,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1838-oficjalna.html",
-      "sha256": "e00a5ecf0054482bd276d7980fd445f24e60de92e7ad0c4f339225e106d04c0e"
+      "sha256": "0e2e4cfade7f4a2c1300e14a0f74fcfc54e2dae1b38e73ce5ca06d55da8e35e3"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1838-osm.json",
@@ -781,7 +781,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/2466-oficjalna.html",
-      "sha256": "aeefc1c22acaabc79ee19dc5596b273c5604ab0c851e52ee7327b39c9a07b3d3"
+      "sha256": "397360ec3d4fce76632fa421e0e409efae4dec5e41ec32131a265eae6f71051b"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/2466-osm.json",
@@ -801,7 +801,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3033-oficjalna.html",
-      "sha256": "76cc73c1f713277d167dfdbe97dba5580c0dd2ec027948426b3152431241edce"
+      "sha256": "51026e8f619f2d7d6648aba155f1a78a9e52aea229ed44913ba23659962e399c"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3033-osm.json",
@@ -821,7 +821,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3454-oficjalna.html",
-      "sha256": "8dd8972eb14e359fccbc900940b36b7317f2e8afa953c3799ab4e387950032c1"
+      "sha256": "7f7a3e88fc59d131d6dbcbbbeaa2a0a7d9b54286ca3aa10d9720208438c407b7"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3454-osm.json",
@@ -841,7 +841,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1203-oficjalna.html",
-      "sha256": "a411cdb1dc2cef6879ca78f4adf868c7d1c98ead3784d1162402aac32c0ec22d"
+      "sha256": "710720a38c4bf20a7f309bbe02140707ef1b6d2237eac15ac68c86e0b3bb826c"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1203-osm.json",
@@ -861,7 +861,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1216-oficjalna.html",
-      "sha256": "631ef06000011e88b59b78f450c23ebf975af1b7b9e959d5de72e3a83ab7e8a3"
+      "sha256": "65552a412687955bbdb91e1a4b8e8c107407378e88a7ac82658f695187a33eef"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1216-osm.json",
@@ -881,7 +881,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1649-oficjalna.html",
-      "sha256": "f05205fb451505ce0cf8c1416223e08086ec7de4a7d133ce2bfc3112feb590de"
+      "sha256": "95ff8f6f972a512620d5b4cecc412bc5dc997ca29ff607c990bfa67c22b71645"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1649-osm.json",
@@ -901,7 +901,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1666-oficjalna.html",
-      "sha256": "7cb0b3361e13a9f91c00372865152d2c146399c44e6ffa2dcfa1b405470522d0"
+      "sha256": "979bf83a3066a3ceaeacfed94a5fcf36b45ad91ecb02845694773bfc3cc34b84"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1666-osm.json",
@@ -921,7 +921,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1782-oficjalna.html",
-      "sha256": "3419e8b47a513c44f0d8ec97d06ca0b7b6f456be20c2caa2e76d0d6466541194"
+      "sha256": "7927c008a5b119b5e88601b3640910bb79475141f16544ba7a28bd193f4495ae"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1782-osm.json",
@@ -941,7 +941,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1825-oficjalna.html",
-      "sha256": "b37ef5e7e08ce7a7a0323476cc27c31528257d6634a148570e4de319e7192972"
+      "sha256": "89dbda686b7909eef569496f2b9dc3ea6f4d462f4f3af8753c796cda42270f73"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1825-osm.json",
@@ -961,7 +961,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1968-oficjalna.html",
-      "sha256": "ed26106793a562a8dfea858748c039a84bf3a8aba48c1ff6ecfe159734b443a6"
+      "sha256": "de996bbf040ba1148c5dafeaf4a7308655f77119a3051b836368e06c1c504bc4"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1968-osm.json",
@@ -1045,7 +1045,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/raport.json",
-      "sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+      "sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/wybor.json",
@@ -1053,11 +1053,11 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/manifest.json",
-      "sha256": "31c499a0f40ac03933be4c600238a66f758ebc988d3a05f5e320dc49f969f91a"
+      "sha256": "0f86f2e9f6b15d533dabd3a220aca9a5cc590d39ac7780f33155b3c266dd3f77"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2276-oficjalna.html",
-      "sha256": "d4c93df0c4b9190b522c3c0fdb0c62c9925c366678fa235107da30c9bde62425"
+      "sha256": "566f1c5ab70a0225de51311504a93267003ba14aaa452cd203b2e40191a127c4"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2276-osm.json",
@@ -1077,7 +1077,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2390-oficjalna.html",
-      "sha256": "3112f46cfaf22a7495264a3031508fd7477186f5a7b73e45e3153c383840d9a9"
+      "sha256": "1e7712d72f75a542484f4275b781be50f38a23399afd818f47d4fbac7ce92a09"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2390-osm.json",
@@ -1097,7 +1097,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2782-oficjalna.html",
-      "sha256": "e0dc16a251958e8019ecfb443bfa2ae88260887f54dcfa3318eed5c51549dd92"
+      "sha256": "f3249a8fbfc86a2015a8184c0a8745f71fd575c00bf4f228bcb46cf0251a3026"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2782-osm.json",
@@ -1117,7 +1117,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2869-oficjalna.html",
-      "sha256": "d2ab2ca1ce66af0844efe9a572098e68c0d272e7311935fb6e6abe12d33dc5ec"
+      "sha256": "acace715786ad57cb53d6b62fd2b0f0ede727e88078fe9286659bdf885022771"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2869-osm.json",
@@ -1137,7 +1137,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/3601-oficjalna.html",
-      "sha256": "876f2a3bfafcea2424719a9c7b276f4454f9a61397d08960a7fe5a9374103566"
+      "sha256": "323de10da071e759f82d0365ff4f2cbf024ef1a599574878a320f6fd5038fc03"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/3601-osm.json",
@@ -1157,7 +1157,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/3647-oficjalna.html",
-      "sha256": "c6598244df3ea74ee153a3834886560dc3bb2b84eb17a85906dad1d7e1cbdbc8"
+      "sha256": "9500bbcec306ca5faf71913199c30c1eb25ad9cb612280fddd6716f8215859c9"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/3647-osm.json",
@@ -1177,7 +1177,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/7333-oficjalna.html",
-      "sha256": "bf996c03697aae3a98d28194c8f20c9864ec5724f093e257495a527b15bd1683"
+      "sha256": "3fc5081c02d27b5c47a5611e791d5f09458d63c2e1e3ce83772c6e4d1f16fd2f"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/7333-osm.json",
@@ -1197,7 +1197,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1872-oficjalna.html",
-      "sha256": "ae53e29bf9e17f3bbba868b234cb9761056ff37828ffad03df9c68ca5e7cbf91"
+      "sha256": "8c4b5effe63fb7f14bfd58b8a0d7d065e8855b4ea1a93560ac81f627cecdb2d5"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1872-osm.json",
@@ -1217,7 +1217,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1164-oficjalna.html",
-      "sha256": "4c9f80b1552391ae28459a28a53650c7443e18f4b654a4da2af666f48136eb07"
+      "sha256": "3a5a4e1dad934b0460997bf9d288cd6a056ea3e7ccd07819cf6f57856e1d115f"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1164-osm.json",
@@ -1237,7 +1237,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1192-oficjalna.html",
-      "sha256": "ad49e33dbb7082ddc1022672317c2c087314b5e4161b07a09b93acf1a9acf3f8"
+      "sha256": "d3167c81246630bebb5850046560aff75e349af0ab91c4a55f9b56c76950958d"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1192-osm.json",
@@ -1257,7 +1257,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1226-oficjalna.html",
-      "sha256": "ddde064685799926eb8fcf0250030321921a65cd410dec7ae43bf365ed46d166"
+      "sha256": "a2f4bd5abf3a4b16fd3e2eb67e20ecd5bc3b05385b442b6e29718dd258fc49cc"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1226-osm.json",
@@ -1277,7 +1277,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1328-oficjalna.html",
-      "sha256": "5603b99cef28449d17d778db86270979d3d19cfdfee04706741bd401ba7febbf"
+      "sha256": "bdbdffa35ec1f344c304f52f6e3c6ec7ff6a71402727b82a19859952da6ab96e"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1328-osm.json",
@@ -1297,7 +1297,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1344-oficjalna.html",
-      "sha256": "896431fd7369193569b2bea644192da6d1238ea1ce3a1b14a5c7f18a8e5400e5"
+      "sha256": "5125df9e4c81336e0001cd3af421f8fb9ed6c3d915239e912dbf6b0f4be1d428"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1344-osm.json",
@@ -1317,7 +1317,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1371-oficjalna.html",
-      "sha256": "f31927b82de11ed0fd987acef2204280b4f3703447754e37bb0019495cf925b8"
+      "sha256": "c3352b62ed28f4ae5ee2818940ef92260241020b1bc3635cc1b43296f90aa31e"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1371-osm.json",
@@ -1337,7 +1337,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1387-oficjalna.html",
-      "sha256": "f076bb04531ab8772700f1be0a24a6e5790a649d8b3bed8f85e23149a6dbc629"
+      "sha256": "4da1e185d5f4ebe86f7ae0183127eac6d1ac84a976b20245aed1a86e845e9834"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1387-osm.json",
@@ -1357,7 +1357,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1444-oficjalna.html",
-      "sha256": "9a5573284ffb7cc1963949b61d5790e7b3a9f4ba2ab3851a2333641ba33d2b8b"
+      "sha256": "545b2cc44eef75463baff9c8e736b827fcc6a3e330d483a29fa181e0a9fca28a"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1444-osm.json",
@@ -1377,7 +1377,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1449-oficjalna.html",
-      "sha256": "2238da5819e9d4965a9a670176133d58ebbfc9fbe55bbcc025aaabe0a0391b80"
+      "sha256": "a2fcb3abff8f5bf448478bf20d411ad0592ef64e5a30fb0357612003824ed5b5"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1449-osm.json",
@@ -1397,7 +1397,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1459-oficjalna.html",
-      "sha256": "565e4aa9d581cc73fb5b38e80042ec4c57bf2d298467cc6480516eabb9429c23"
+      "sha256": "59d4d2e1ddd796e0319916fa06ba942cd89c250227b533cf0ae5925c5244ebd2"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1459-osm.json",
@@ -1417,7 +1417,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1503-oficjalna.html",
-      "sha256": "d0fcd0737e5ef6458aa98915372ea0ba9bfeb7f2a2938a9e023ab2a3d04411d6"
+      "sha256": "92050b4df65d63b7d242b5aec4434d4c4a188cf977bafe9858b123bb35111cad"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1503-osm.json",
@@ -1437,7 +1437,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1520-oficjalna.html",
-      "sha256": "532328cfb6022acfbb468a9d593ce9c9aade87abdf77885515985a66a4ac9b44"
+      "sha256": "20b7e81df69e9d850fa55977bfecb42a8fea0ea8a03f594beb3687b97ed09b6f"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1520-osm.json",
@@ -1469,7 +1469,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/raport.json",
-      "sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+      "sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
     }
   ],
   "decisions": [

@@ -3,6 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { Platform } from 'react-native';
 import { createSessionStorage, type AuthStorage } from '../features/auth/storage';
+import { createTimeoutFetch } from '../features/auth/timeoutFetch';
 
 const storageKey = `smartcart-${(process.env.EXPO_PUBLIC_SUPABASE_URL ?? 'missing').replace(/[^a-z0-9]/gi, '-')}-auth`;
 const browserStorage: AuthStorage = {
@@ -27,6 +28,7 @@ export function getSupabase(): SupabaseClient | null {
 
   try {
     client = createClient(url, key, {
+      global: { fetch: createTimeoutFetch() },
       auth: {
         storage: sessionStorage,
         storageKey,

@@ -52,11 +52,12 @@ export interface AuthActions {
   verifyPasswordResetCode(email: string, code: string): Promise<AuthResult>;
   setNewPassword(password: string): Promise<AuthResult>;
   signOut(): Promise<AuthResult>;
+  cancelOperation(): Promise<AuthResult>;
   retrySession(): Promise<AuthResult>;
 }
 
 /** Wynik useAuth(); tokeny nie należą do kontraktu formularzy. */
-export type AuthContextValue = AuthActions & { state: AuthState };
+export type AuthContextValue = AuthActions & { state: AuthState; accountNotice: string | null; clearAccountNotice(): void };
 
 /** Wewnętrzny kontrakt dla pobierania danych, nie dla ekranów ani mapy. */
 export interface AuthSessionAccess {

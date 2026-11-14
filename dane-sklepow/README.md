@@ -1,9 +1,21 @@
 # Dane sklepów SMARTCART
 
+Kontrola publikacji 14 listopada 2026: z 70 archiwalnych HTML usunięto 76 wartości kluczy/licencji stron trzecich. Treść dowodowa i dane placówek pozostały zachowane; sumy kontrolne i referencje odświeżono. [Raport sanitizacji](raport-sanitizacji.json) i [stan historii Git](../smart_cart/docs/publikacja-git.md). Zgodnie z decyzją właściciela historia pozostaje bez zmian; redakcja dotyczy bieżących plików, a stare wartości nadal są w dawnym commicie.
+
 Katalog jest częścią repozytorium `Projekt_zespolowy_2026-2027`, obok katalogu `smart_cart`.
 Zawiera cały zbiór, oryginały, poprawki, archiwum kontroli oraz narzędzia przygotowania danych.
 
+Aktualna kontrola: **14 listopada 2026** — 37/37 testów oraz `przygotuj-dane.mjs --check`
+zaliczone; podział nadal wynosi **7753 gotowe / 580 do weryfikacji**.
+To kontrola zapisanej migawki, bez nowego pobierania i bez potwierdzenia bieżącego otwarcia placówek.
+[Audyt całego projektu](../smart_cart/docs/stan-projektu.md) rozróżnia ten katalog od bazy produktów i cen Supabase.
+
 Kod serwera HTTP i jego testy są w `smart_cart/server/serwer-mapy.mjs` oraz `smart_cart/tests/server.test.mjs`. Serwer uruchamia się z katalogu `smart_cart` poleceniem `npm.cmd run server`, a kontrolę danych bez uruchamiania serwera wykonuje `npm.cmd run server:check`. Domyślnie odczytuje `gotowe/sklepy.json` z tego katalogu. Można zmienić położenie danych przez `SMARTCART_DATA_DIR` w `smart_cart/.env.local`. Dane nie są importowane do pakietu Expo — aplikacja otrzymuje gotowy katalog przez API.
+
+Obecne API wymaga sesji potwierdzonego użytkownika Supabase dla `GET` i `HEAD /v1/stores`.
+Publiczny `/health` oraz `server:check` pozwalają sprawdzić dane bez logowania.
+`public.stores` w bazie produktów oznacza sieci handlowe, nie te pojedyncze placówki.
+Nie ma automatycznej synchronizacji między tym katalogiem a zdalną bazą cen.
 
 Pliki źródłowe i dowody mają zapisane sumy SHA-256. Główny `.gitattributes` wyłącza normalizację końców linii dla całego tego katalogu, aby Git zachował ich bajty także na Windows. Nie formatuj automatycznie źródeł, odpowiedzi JSON/HTML ani plików dowodowych.
 

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { createMapDocument } from './document';
 import type { StoreMapProps } from '../StoreMap.types';
 
@@ -14,7 +14,8 @@ export function useMapBridge(props: StoreMapProps, send: Send) {
   const [bridgeReady, setBridgeReady] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [fatal, setFatal] = useState(false);
-  const latest = useRef(props); latest.current = props;
+  const latest = useRef(props);
+  useLayoutEffect(() => { latest.current = props; });
   const lastStores = useRef<StoreMapProps['stores'] | null>(null);
   const timeout = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const receive = useCallback((raw: unknown) => {

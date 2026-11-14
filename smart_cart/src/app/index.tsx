@@ -25,8 +25,8 @@ const shortcuts = [
     href: "/stores",
   },
   {
-    title: "Gazetki i promocje",
-    description: "Sprawdź aktualne produkty",
+    title: "Produkty i ceny",
+    description: "Porównaj oferty sieci",
     action: "Przeglądaj",
     href: "/products",
   },
@@ -73,8 +73,10 @@ export default function Index() {
         ))}
       </View>
 
-      <View style={styles.productsPanel} accessibilityLabel="Puste produkty">
-        <Text style={styles.productsTitle}>PRODUKTY</Text>
+      <View style={styles.productsPanel}>
+        <Text style={styles.productsTitle}>ZAPLANUJ ZAKUPY</Text>
+        <Text>Dodaj produkty do prywatnej listy i porównaj koszt zakupu w sieciach. Przy brakujących cenach pokażemy, których danych nie ma w bazie.</Text>
+        <Link href="/products" style={{ paddingVertical: 16, color: '#087F5D', fontWeight: '700' }}>Wyszukaj produkty →</Link>
       </View>
     </ScrollView>
   );

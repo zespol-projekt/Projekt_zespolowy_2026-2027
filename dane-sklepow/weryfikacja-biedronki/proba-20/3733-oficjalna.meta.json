@@ -6,6 +6,18 @@
   "final_url": "https://www.biedronka.pl/pl/shop,id,3733",
   "content_type": "text/html; charset=UTF-8",
   "file": "weryfikacja-biedronki/proba-20/3733-oficjalna.html",
-  "sha256": "e17788b9b8baccafdb63be7b2d93687a0a0e724940181fd65ed115b42cdffd72",
-  "bytes": 97091
+  "sha256": "77b69ef1cc32f068a99bdfb4fa135400685cf7d8d0503b300ee2ca8ac523a770",
+  "bytes": 97065,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/proba-20/3733-oficjalna.html",
+      "fields": [
+        "jwplayer.key"
+      ],
+      "count": 1,
+      "original_sha256": "e17788b9b8baccafdb63be7b2d93687a0a0e724940181fd65ed115b42cdffd72",
+      "sanitized_sha256": "77b69ef1cc32f068a99bdfb4fa135400685cf7d8d0503b300ee2ca8ac523a770"
+    }
+  ]
 }

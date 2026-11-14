@@ -1,8 +1,10 @@
 import { test, expect } from '@playwright/test';
+import { mockMap } from './map-fixture';
 
 test('kolejne wejścia na różne trasy i przeładowania zachowują działającą aplikację', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
+  await mockMap(page);
   await page.route('**/v1/stores', route => route.fulfill({ json: {
     version: 1, updatedAt: '2026-11-02T12:00:00Z', count: 0, stores: [],
   } }));

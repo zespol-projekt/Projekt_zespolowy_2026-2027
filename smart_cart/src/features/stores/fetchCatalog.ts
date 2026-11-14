@@ -1,5 +1,6 @@
 import type { AuthSessionAccess } from '../auth/types.ts';
 import { parseCatalog, type Catalog } from './model.ts';
+export class CatalogError extends Error {}
 
 /** Jeden katalog, maksymalnie jedno ponowienie po 401, wyłącznie w tej samej sesji. */
 export async function fetchCatalog(
@@ -55,9 +56,12 @@ export async function fetchCatalog(
           throw new Error('Sesja wygasła. Zaloguj się ponownie.');
         }
       }
-      if (response.status === 403) throw new Error('To konto nie ma dostępu do sklepów.');
-      if (!response.ok) throw new Error('Nie udało się pobrać sklepów. Spróbuj ponownie.');
-      const catalog = parseCatalog(await response.json());
+      if (response.status === 403) throw new CatalogError('To konto nie ma dostępu do sklepów. Zaloguj się potwierdzonym kontem.');
+      if (response.status >= 500) throw new CatalogError('Serwer sklepów jest chwilowo niedostępny. Spróbuj ponownie za chwilę.');
+      if (!response.ok) throw new CatalogError('Nie udało się pobrać sklepów. Spróbuj ponownie.');
+      let catalog: Catalog;
+      try { catalog = parseCatalog(await response.json()); }
+      catch { throw new CatalogError('Serwer zwrócił nieprawidłowe dane sklepów. Zgłoś problem zespołowi projektu.'); }
       guard();
       return catalog;
     };

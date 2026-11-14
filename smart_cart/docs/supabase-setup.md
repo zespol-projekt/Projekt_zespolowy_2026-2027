@@ -1,4 +1,10 @@
-# Supabase — konfiguracja punktu 2
+# Supabase — konfiguracja Auth, SMTP i lokalnego CLI
+
+Aktualizacja dokumentacji: **14 listopada 2026**. Klient, provider, formularze,
+profil i bramka dostępu są już w kodzie. [Bieżący audyt](stan-projektu.md) opisuje
+historyczny punkt wyjścia. [Raport wdrożenia](wdrozenie-po-audycie.md) zawiera aktualne funkcje i testy.
+Poniższe potwierdzenia ustawień chmury i doręczenia pochodzą z 8–10 listopada;
+eksport SQL z 14 listopada nie zawiera konfiguracji Auth ani SMTP.
 
 Status na 8 listopada 2026: użytkownik potwierdził konfigurację Gmail SMTP oraz
 zapis obu szablonów w panelu. Wartości Auth i limitów odczytano z przesłanych
@@ -8,7 +14,8 @@ potwierdzanie emaila i konta anonimowe są wyłączone. Ten endpoint nie potwier
 ustawień SMTP, limitów ani treści maili. Następnie, 8–9 listopada, sprawdzono
 rzeczywiste doręczenie obu kodów oraz pełne operacje konta opisane
 w [punkcie 3](auth-operations.md). Sam zapis tych plików nie zmienia panelu Supabase.
-Klient jest już wdrożony; formularze pozostają zadaniem osoby 2.
+Formularze zostały później podłączone w głównym layoucie. Nie oznacza to ponownego
+sprawdzenia wszystkich ustawień panelu ani całego procesu z rzeczywistą wysyłką maili.
 
 Projekt jest pracą na zaliczenie i nie ma własnej domeny. Poniżej wariant ze
 skrzynką Gmail jako SMTP do niewielkiej liczby testów i prezentacji. Nie wymaga
@@ -121,6 +128,11 @@ SMTP nie należą do aplikacji. Klient z punktu 3 odczytuje zmienne `EXPO_PUBLIC
 `SUPABASE_URL` jest używane przy ochronie API z punktu 5.
 [Klucze Supabase](https://supabase.com/docs/guides/api/api-keys).
 
+Po zmianie tych zmiennych zrestartuj **Expo oraz serwer danych Node**. Serwer
+odczytuje plik przy starcie; pozostawiony stary proces może nadal używać poprzedniego
+klucza, mimo że logowanie aplikacji korzysta już z poprawnego. Taki przypadek
+rozwiązano restartem serwera podczas tej sesji 14 listopada.
+
 ## 5. Potwierdzenie konfiguracji i doręczenia
 
 Wyniki konfiguracji i testów, bez haseł, kodów i tokenów:
@@ -143,3 +155,19 @@ Wyniki konfiguracji i testów, bez haseł, kodów i tokenów:
 Testy korzystają z rzeczywistych operacji auth z punktu 3. Hasła testowe są losowe
 i pozostają wyłącznie w pamięci procesu testowego; kody i tokeny nie są zapisywane.
 Zapisanie ustawień lub podgląd szablonu nie wystarcza do zaznaczenia doręczenia.
+
+## 6. Lokalny `supabase/config.toml` a projekt w chmurze
+
+Pracujemy ze wspólnym projektem w chmurze. CLI służy do migracji i eksportu; nie uruchamiamy dodatkowego lokalnego Auth. Plik TOML nie jest kopią konfiguracji Auth/SMTP chmury i nie służy do jej automatycznego nadpisywania.
+
+Po wdrożeniu dopasowano lokalne parametry: minimum hasła 8 znaków, potwierdzenie emaila włączone, OTP 6 cyfr/600 s, odstęp wysyłki 60 s i przykładowy adres WWW localhost:8081. Frontend ma odliczanie 60 s osobno dla adresu i procesu. `api.auto_expose_new_tables=false`; nowe uprawnienia nadają migracje. Nie ma odwołania do nieistniejącego pliku seed.
+
+Nie uruchamiano `config push` ani nie zmieniano ustawień Auth/SMTP w chmurze. [Instrukcja utrzymania](utrzymanie-katalogu.md) opisuje migracje, eksport i test na izolowanym Postgresie.
+
+## 7. Co potwierdza eksport bazy
+
+`supabase-schema.sql` zawiera strukturę tabel, widoki, funkcje, triggery, RLS i uprawnienia.
+Nie zawiera rekordów produktów, potwierdzenia liczebności tabel, konfiguracji SMTP,
+zdalnych limitów Auth ani bieżącej treści zapisanych szablonów maili.
+Opis struktury i naprawionych `compare_basket` / `search_offers` jest w
+[database-context.md](database-context.md). Plik eksportu trzeba odświeżać po zmianach bazy.

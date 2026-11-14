@@ -6,6 +6,18 @@
   "final_url": "https://www.biedronka.pl/pl/shop,id,7438",
   "content_type": "text/html; charset=UTF-8",
   "file": "weryfikacja-biedronki/proba-20/7438-oficjalna.html",
-  "sha256": "79d9319c0099f8727bfb0ab0d9f21c78388a31e72517d0df6308d46f2252741d",
-  "bytes": 97006
+  "sha256": "e293be4b91f047c9fab4ad9b571be7dfc59c8e2ac2331d5ba6a14d402ea289f7",
+  "bytes": 96980,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/proba-20/7438-oficjalna.html",
+      "fields": [
+        "jwplayer.key"
+      ],
+      "count": 1,
+      "original_sha256": "79d9319c0099f8727bfb0ab0d9f21c78388a31e72517d0df6308d46f2252741d",
+      "sanitized_sha256": "e293be4b91f047c9fab4ad9b571be7dfc59c8e2ac2331d5ba6a14d402ea289f7"
+    }
+  ]
 }

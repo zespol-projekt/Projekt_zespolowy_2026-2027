@@ -6,7 +6,7 @@ test('bez sesji katalog nie jest pobierany', async ({ page }) => {
   let requests = 0;
   page.on('request', request => { if (request.url().endsWith('/v1/stores')) requests++; });
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
-  await expect(page.getByText(/[Zz]aloguj się/)).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Zaloguj się', exact: true })).toBeVisible();
   await expect(page.getByTestId('stores-map')).toHaveCount(0);
   expect(requests).toBe(0);
 });
@@ -35,7 +35,7 @@ test('wylogowanie w innej karcie usuwa widoczną mapę', async ({ page }) => {
   await waitForStores(page, 4);
   await changeSession(page, null);
   await expect(page.getByTestId('stores-map')).toHaveCount(0);
-  await expect(page.getByText(/[Zz]aloguj się/)).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Zaloguj się', exact: true })).toBeVisible();
 });
 
 test('nowa sesja tej samej osoby anuluje stary katalog i ignoruje jego odpowiedź', async ({ page }) => {
@@ -103,7 +103,7 @@ test('drugie 401 kończy bieżącą sesję bez pętli ponowień', async ({ page 
     return route.fulfill({ status: 401, json: {} });
   });
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
-  await expect(page.getByText(/[Zz]aloguj się/)).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Zaloguj się', exact: true })).toBeVisible();
   await expect.poll(() => page.evaluate(key => localStorage.getItem(key), AUTH_STORAGE_KEY)).toBeNull();
   await expect(page.getByTestId('stores-map')).toHaveCount(0);
   expect(refreshes).toBe(1);

@@ -6,6 +6,18 @@
   "final_url": "https://www.biedronka.pl/pl/shop,id,1308",
   "content_type": "text/html; charset=UTF-8",
   "file": "weryfikacja-biedronki/proba-20/1308-oficjalna.html",
-  "sha256": "5c45f63b4857ed8f17cc89d3188f32eef2f97ace9e40a65e4277be699f316d3a",
-  "bytes": 96956
+  "sha256": "c566e15e510bfe587ad8c3241ece6ab2914b67f5393267f64a0e23fca53b2b76",
+  "bytes": 96930,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/proba-20/1308-oficjalna.html",
+      "fields": [
+        "jwplayer.key"
+      ],
+      "count": 1,
+      "original_sha256": "5c45f63b4857ed8f17cc89d3188f32eef2f97ace9e40a65e4277be699f316d3a",
+      "sanitized_sha256": "c566e15e510bfe587ad8c3241ece6ab2914b67f5393267f64a0e23fca53b2b76"
+    }
+  ]
 }

@@ -1,9 +1,18 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import { useAuth } from "@/features/auth";
+import { useState } from "react";
 
 export default function ProfileScreen() {
   const { state, signOut } = useAuth();
+  const [message, setMessage] = useState<string | null>(null);
+  const [pending, setPending] = useState(false);
+  const logout = async () => {
+    setPending(true); setMessage(null);
+    const result = await signOut();
+    if (!result.ok) setMessage(result.error.message);
+    setPending(false);
+  };
 
   if (state.status !== "signedIn") {
     return (
@@ -26,10 +35,12 @@ export default function ProfileScreen() {
         style={styles.primaryButton}
         accessibilityRole="button"
         accessibilityLabel="Wyloguj się"
-        onPress={() => void signOut()}
+        disabled={pending}
+        onPress={() => void logout()}
       >
         <Text style={styles.primaryButtonText}>Wyloguj się</Text>
       </Pressable>
+      {message && <Text accessibilityLiveRegion="polite">{message}</Text>}
     </View>
   );
 }

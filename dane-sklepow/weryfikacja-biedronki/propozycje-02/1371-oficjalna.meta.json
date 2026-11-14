@@ -6,6 +6,18 @@
   "final_url": "https://www.biedronka.pl/pl/shop,id,1371",
   "content_type": "text/html; charset=UTF-8",
   "file": "weryfikacja-biedronki/propozycje-02/1371-oficjalna.html",
-  "sha256": "f31927b82de11ed0fd987acef2204280b4f3703447754e37bb0019495cf925b8",
-  "bytes": 97030
+  "sha256": "c3352b62ed28f4ae5ee2818940ef92260241020b1bc3635cc1b43296f90aa31e",
+  "bytes": 97004,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/propozycje-02/1371-oficjalna.html",
+      "fields": [
+        "jwplayer.key"
+      ],
+      "count": 1,
+      "original_sha256": "f31927b82de11ed0fd987acef2204280b4f3703447754e37bb0019495cf925b8",
+      "sanitized_sha256": "c3352b62ed28f4ae5ee2818940ef92260241020b1bc3635cc1b43296f90aa31e"
+    }
+  ]
 }

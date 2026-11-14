@@ -10,11 +10,11 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/manifest.json",
-      "sha256": "3009767edde1605a02350ecbd9d481ddd6565078cf729fe25ed9088393044da6"
+      "sha256": "943f561725f1118d4235b46294cee361ff00ac7529591abe00bff8c79d3883bd"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1400-oficjalna.html",
-      "sha256": "0f483775f5f1e91def39d4abfc7b0932ac0bd5318da6f3972461459199bb9c40"
+      "sha256": "3cae4ff4f09a74c52a31a58dfb308157272ac95f82c63abd8bfbd97b00be73d0"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1400-osm.json",
@@ -34,7 +34,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/2220-oficjalna.html",
-      "sha256": "5714e81b944c2c54b479aacb526a5280d59ebd7670a1edfa93847c5c086e41a2"
+      "sha256": "56ae3908d8e9c3985c3a2f4e8d6176fce0558fb04cc3373643803f3fbd3b79a9"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/2220-osm.json",
@@ -46,7 +46,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3370-oficjalna.html",
-      "sha256": "4b85cb8b1acaf2ecd384c0018f050d0ea51c4490f27153ecbda262bf34de33fc"
+      "sha256": "a0ff4a9d99e94a17af07e84320825a4932e73f3eaa5542e60f9cf75fb9826b0e"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3370-osm.json",
@@ -58,7 +58,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3484-oficjalna.html",
-      "sha256": "815d659f6c397886789e9fdb3fd1a94ecaa9c28acbdf9f39849e6b5d0285077f"
+      "sha256": "6e3d37bdd20211ec61873cf3ea66f67d423bbc4b2c716ab1996b93352f68a3ec"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3484-osm.json",
@@ -70,7 +70,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3572-oficjalna.html",
-      "sha256": "2f114bb692de0a5c84057737fc0eafc661fa76244458dbbc4d25a87681fa1f9c"
+      "sha256": "4611cd1b1579efee7b92a3627471056c6b93e8d64bbe0514b12905de2b4b7ee1"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3572-osm.json",
@@ -90,7 +90,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3768-oficjalna.html",
-      "sha256": "f71224dc8853a7266b882efe9aaa543c53f57c28d2dcf6ab32d18c09a224be33"
+      "sha256": "e86b05ada1e190e0d305919fad70038d13b5ba5920abbecb02046537e5d069c1"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3768-osm.json",
@@ -110,7 +110,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3772-oficjalna.html",
-      "sha256": "475093e4b74137aa8d41437ce67947b204225189e3442955ba3843d301798dc3"
+      "sha256": "b3c607c9fd95c75ad2dd06b6efcc31dde493133d19902c750a087d098f8da467"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3772-osm.json",
@@ -126,7 +126,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/7026-oficjalna.html",
-      "sha256": "a6523aace86e0fe89e9f0d754eae6cea4f17d7fdc5b5f7e45010d5931c0c361b"
+      "sha256": "4bef9d929501a3f2f7fee917b0a3488367942074aa17f90620fea51ae296d631"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/7026-osm.json",
@@ -138,7 +138,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1573-oficjalna.html",
-      "sha256": "1223d77b07fdf9371cbfd72ed0ada9a4136743a2d94d3ca69afee8fcfa5605b0"
+      "sha256": "c3ffb6d9c8890dbc75f406d637aa75dff9df2328e01ecb2ae670caad32a788cc"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1573-osm.json",
@@ -158,7 +158,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1838-oficjalna.html",
-      "sha256": "e00a5ecf0054482bd276d7980fd445f24e60de92e7ad0c4f339225e106d04c0e"
+      "sha256": "0e2e4cfade7f4a2c1300e14a0f74fcfc54e2dae1b38e73ce5ca06d55da8e35e3"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1838-osm.json",
@@ -178,7 +178,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/2466-oficjalna.html",
-      "sha256": "aeefc1c22acaabc79ee19dc5596b273c5604ab0c851e52ee7327b39c9a07b3d3"
+      "sha256": "397360ec3d4fce76632fa421e0e409efae4dec5e41ec32131a265eae6f71051b"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/2466-osm.json",
@@ -198,7 +198,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3033-oficjalna.html",
-      "sha256": "76cc73c1f713277d167dfdbe97dba5580c0dd2ec027948426b3152431241edce"
+      "sha256": "51026e8f619f2d7d6648aba155f1a78a9e52aea229ed44913ba23659962e399c"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3033-osm.json",
@@ -218,7 +218,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3454-oficjalna.html",
-      "sha256": "8dd8972eb14e359fccbc900940b36b7317f2e8afa953c3799ab4e387950032c1"
+      "sha256": "7f7a3e88fc59d131d6dbcbbbeaa2a0a7d9b54286ca3aa10d9720208438c407b7"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/3454-osm.json",
@@ -238,7 +238,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1203-oficjalna.html",
-      "sha256": "a411cdb1dc2cef6879ca78f4adf868c7d1c98ead3784d1162402aac32c0ec22d"
+      "sha256": "710720a38c4bf20a7f309bbe02140707ef1b6d2237eac15ac68c86e0b3bb826c"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1203-osm.json",
@@ -258,7 +258,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1216-oficjalna.html",
-      "sha256": "631ef06000011e88b59b78f450c23ebf975af1b7b9e959d5de72e3a83ab7e8a3"
+      "sha256": "65552a412687955bbdb91e1a4b8e8c107407378e88a7ac82658f695187a33eef"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1216-osm.json",
@@ -278,7 +278,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1649-oficjalna.html",
-      "sha256": "f05205fb451505ce0cf8c1416223e08086ec7de4a7d133ce2bfc3112feb590de"
+      "sha256": "95ff8f6f972a512620d5b4cecc412bc5dc997ca29ff607c990bfa67c22b71645"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1649-osm.json",
@@ -298,7 +298,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1666-oficjalna.html",
-      "sha256": "7cb0b3361e13a9f91c00372865152d2c146399c44e6ffa2dcfa1b405470522d0"
+      "sha256": "979bf83a3066a3ceaeacfed94a5fcf36b45ad91ecb02845694773bfc3cc34b84"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1666-osm.json",
@@ -318,7 +318,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1782-oficjalna.html",
-      "sha256": "3419e8b47a513c44f0d8ec97d06ca0b7b6f456be20c2caa2e76d0d6466541194"
+      "sha256": "7927c008a5b119b5e88601b3640910bb79475141f16544ba7a28bd193f4495ae"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1782-osm.json",
@@ -338,7 +338,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1825-oficjalna.html",
-      "sha256": "b37ef5e7e08ce7a7a0323476cc27c31528257d6634a148570e4de319e7192972"
+      "sha256": "89dbda686b7909eef569496f2b9dc3ea6f4d462f4f3af8753c796cda42270f73"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1825-osm.json",
@@ -358,7 +358,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1968-oficjalna.html",
-      "sha256": "ed26106793a562a8dfea858748c039a84bf3a8aba48c1ff6ecfe159734b443a6"
+      "sha256": "de996bbf040ba1148c5dafeaf4a7308655f77119a3051b836368e06c1c504bc4"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/1968-osm.json",
@@ -442,7 +442,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-01/raport.json",
-      "sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+      "sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/wybor.json",
@@ -450,11 +450,11 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/manifest.json",
-      "sha256": "31c499a0f40ac03933be4c600238a66f758ebc988d3a05f5e320dc49f969f91a"
+      "sha256": "0f86f2e9f6b15d533dabd3a220aca9a5cc590d39ac7780f33155b3c266dd3f77"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2276-oficjalna.html",
-      "sha256": "d4c93df0c4b9190b522c3c0fdb0c62c9925c366678fa235107da30c9bde62425"
+      "sha256": "566f1c5ab70a0225de51311504a93267003ba14aaa452cd203b2e40191a127c4"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2276-osm.json",
@@ -474,7 +474,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2390-oficjalna.html",
-      "sha256": "3112f46cfaf22a7495264a3031508fd7477186f5a7b73e45e3153c383840d9a9"
+      "sha256": "1e7712d72f75a542484f4275b781be50f38a23399afd818f47d4fbac7ce92a09"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2390-osm.json",
@@ -494,7 +494,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2782-oficjalna.html",
-      "sha256": "e0dc16a251958e8019ecfb443bfa2ae88260887f54dcfa3318eed5c51549dd92"
+      "sha256": "f3249a8fbfc86a2015a8184c0a8745f71fd575c00bf4f228bcb46cf0251a3026"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2782-osm.json",
@@ -514,7 +514,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2869-oficjalna.html",
-      "sha256": "d2ab2ca1ce66af0844efe9a572098e68c0d272e7311935fb6e6abe12d33dc5ec"
+      "sha256": "acace715786ad57cb53d6b62fd2b0f0ede727e88078fe9286659bdf885022771"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/2869-osm.json",
@@ -534,7 +534,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/3601-oficjalna.html",
-      "sha256": "876f2a3bfafcea2424719a9c7b276f4454f9a61397d08960a7fe5a9374103566"
+      "sha256": "323de10da071e759f82d0365ff4f2cbf024ef1a599574878a320f6fd5038fc03"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/3601-osm.json",
@@ -554,7 +554,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/3647-oficjalna.html",
-      "sha256": "c6598244df3ea74ee153a3834886560dc3bb2b84eb17a85906dad1d7e1cbdbc8"
+      "sha256": "9500bbcec306ca5faf71913199c30c1eb25ad9cb612280fddd6716f8215859c9"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/3647-osm.json",
@@ -574,7 +574,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/7333-oficjalna.html",
-      "sha256": "bf996c03697aae3a98d28194c8f20c9864ec5724f093e257495a527b15bd1683"
+      "sha256": "3fc5081c02d27b5c47a5611e791d5f09458d63c2e1e3ce83772c6e4d1f16fd2f"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/7333-osm.json",
@@ -594,7 +594,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1872-oficjalna.html",
-      "sha256": "ae53e29bf9e17f3bbba868b234cb9761056ff37828ffad03df9c68ca5e7cbf91"
+      "sha256": "8c4b5effe63fb7f14bfd58b8a0d7d065e8855b4ea1a93560ac81f627cecdb2d5"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1872-osm.json",
@@ -614,7 +614,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1164-oficjalna.html",
-      "sha256": "4c9f80b1552391ae28459a28a53650c7443e18f4b654a4da2af666f48136eb07"
+      "sha256": "3a5a4e1dad934b0460997bf9d288cd6a056ea3e7ccd07819cf6f57856e1d115f"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1164-osm.json",
@@ -634,7 +634,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1192-oficjalna.html",
-      "sha256": "ad49e33dbb7082ddc1022672317c2c087314b5e4161b07a09b93acf1a9acf3f8"
+      "sha256": "d3167c81246630bebb5850046560aff75e349af0ab91c4a55f9b56c76950958d"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1192-osm.json",
@@ -654,7 +654,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1226-oficjalna.html",
-      "sha256": "ddde064685799926eb8fcf0250030321921a65cd410dec7ae43bf365ed46d166"
+      "sha256": "a2f4bd5abf3a4b16fd3e2eb67e20ecd5bc3b05385b442b6e29718dd258fc49cc"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1226-osm.json",
@@ -674,7 +674,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1328-oficjalna.html",
-      "sha256": "5603b99cef28449d17d778db86270979d3d19cfdfee04706741bd401ba7febbf"
+      "sha256": "bdbdffa35ec1f344c304f52f6e3c6ec7ff6a71402727b82a19859952da6ab96e"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1328-osm.json",
@@ -694,7 +694,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1344-oficjalna.html",
-      "sha256": "896431fd7369193569b2bea644192da6d1238ea1ce3a1b14a5c7f18a8e5400e5"
+      "sha256": "5125df9e4c81336e0001cd3af421f8fb9ed6c3d915239e912dbf6b0f4be1d428"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1344-osm.json",
@@ -714,7 +714,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1371-oficjalna.html",
-      "sha256": "f31927b82de11ed0fd987acef2204280b4f3703447754e37bb0019495cf925b8"
+      "sha256": "c3352b62ed28f4ae5ee2818940ef92260241020b1bc3635cc1b43296f90aa31e"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1371-osm.json",
@@ -734,7 +734,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1387-oficjalna.html",
-      "sha256": "f076bb04531ab8772700f1be0a24a6e5790a649d8b3bed8f85e23149a6dbc629"
+      "sha256": "4da1e185d5f4ebe86f7ae0183127eac6d1ac84a976b20245aed1a86e845e9834"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1387-osm.json",
@@ -754,7 +754,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1444-oficjalna.html",
-      "sha256": "9a5573284ffb7cc1963949b61d5790e7b3a9f4ba2ab3851a2333641ba33d2b8b"
+      "sha256": "545b2cc44eef75463baff9c8e736b827fcc6a3e330d483a29fa181e0a9fca28a"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1444-osm.json",
@@ -774,7 +774,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1449-oficjalna.html",
-      "sha256": "2238da5819e9d4965a9a670176133d58ebbfc9fbe55bbcc025aaabe0a0391b80"
+      "sha256": "a2fcb3abff8f5bf448478bf20d411ad0592ef64e5a30fb0357612003824ed5b5"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1449-osm.json",
@@ -794,7 +794,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1459-oficjalna.html",
-      "sha256": "565e4aa9d581cc73fb5b38e80042ec4c57bf2d298467cc6480516eabb9429c23"
+      "sha256": "59d4d2e1ddd796e0319916fa06ba942cd89c250227b533cf0ae5925c5244ebd2"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1459-osm.json",
@@ -814,7 +814,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1503-oficjalna.html",
-      "sha256": "d0fcd0737e5ef6458aa98915372ea0ba9bfeb7f2a2938a9e023ab2a3d04411d6"
+      "sha256": "92050b4df65d63b7d242b5aec4434d4c4a188cf977bafe9858b123bb35111cad"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1503-osm.json",
@@ -834,7 +834,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1520-oficjalna.html",
-      "sha256": "532328cfb6022acfbb468a9d593ce9c9aade87abdf77885515985a66a4ac9b44"
+      "sha256": "20b7e81df69e9d850fa55977bfecb42a8fea0ea8a03f594beb3687b97ed09b6f"
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/1520-osm.json",
@@ -866,7 +866,7 @@
     },
     {
       "file": "weryfikacja-biedronki/propozycje-02/raport.json",
-      "sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+      "sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
     }
   ],
   "corrections": [
@@ -974,7 +974,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1051,7 +1051,7 @@
         },
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1137,7 +1137,7 @@
         },
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1207,7 +1207,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1270,7 +1270,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1346,7 +1346,7 @@
         },
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1419,7 +1419,7 @@
         },
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1487,7 +1487,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1559,7 +1559,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1626,7 +1626,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1690,7 +1690,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1756,7 +1756,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1824,7 +1824,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1893,7 +1893,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -1954,7 +1954,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -2020,7 +2020,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -2091,7 +2091,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -2159,7 +2159,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -2227,7 +2227,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-01/raport.json",
-          "dataset_sha256": "500fdaa65dd18e46b1a9e8bdb82b6bbc2488ba6ececb2fd6cbbfde5cfcf87a20"
+          "dataset_sha256": "ece83e42fef4bd7ca9b868e167cdf7e350b9fe8de123308d916ba69118eeb276"
         }
       }
     },
@@ -2293,7 +2293,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -2376,7 +2376,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -2444,7 +2444,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -2510,7 +2510,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -2574,7 +2574,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -2655,7 +2655,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -2719,7 +2719,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -2783,7 +2783,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -2857,7 +2857,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -2923,7 +2923,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -2992,7 +2992,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -3070,7 +3070,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -3138,7 +3138,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -3207,7 +3207,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -3291,7 +3291,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -3359,7 +3359,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -3424,7 +3424,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -3490,7 +3490,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -3557,7 +3557,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     },
@@ -3623,7 +3623,7 @@
         "license_url": "https://www.openstreetmap.org/copyright",
         "review_report": {
           "dataset_file": "weryfikacja-biedronki/propozycje-02/raport.json",
-          "dataset_sha256": "d1c162814bfe3807c8e3bd7a76a2fb0b22bb1562c376a25b3966bcae669745e1"
+          "dataset_sha256": "7dd024d9b8ac576796885bb3c8ab363ff3aac9eb40767e9193c4fd1be9b2aca2"
         }
       }
     }

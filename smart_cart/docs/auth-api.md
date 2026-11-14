@@ -13,9 +13,13 @@ Publiczny klucz projektu nie zastępuje tokenu użytkownika.
 2. Uruchom `npm.cmd run server`, a w drugim terminalu `npm.cmd start`.
 3. `http://localhost:8787/health` powinien zwrócić stan techniczny.
    `/v1/stores` otwarty bez tokenu powinien zwrócić `401` — to poprawny wynik ochrony.
-4. Pełny odbiór mapy po zalogowaniu wymaga podłączenia formularzy i nawigacji osoby 2
-   według [instrukcji providera](auth-session.md). Do tego czasu ekran sklepów bez
-   sesji wyświetla prośbę o zalogowanie. Nie scalać tego etapu do `main` bez gotowego UI.
+4. Formularze i nawigacja są już podłączone według [instrukcji providera](auth-session.md).
+   Bez sesji główny layout pokazuje formularz, a mapa nie jest montowana.
+   Poprawki UI i nawigacji oraz wyniki testów: [aktualny stan](wdrozenie-po-audycie.md).
+
+Po zmianie `.env.local` zrestartuj serwer Node, aby odczytał nowe dane Supabase.
+Samo przeładowanie Expo nie wystarcza. `/health` nie sprawdza połączenia Auth:
+może zwracać 200, gdy żądanie katalogu z tokenem kończy się 503 z powodu klucza.
 
 `server:check` nadal sprawdza lokalny zbiór bez tokenów, sieci i otwierania portu.
 Zwykły start bez konfiguracji Supabase kończy się błędem.
@@ -65,7 +69,11 @@ hostingu, kiedy będzie znany; CORS nie zastępuje autoryzacji.
   Limit 15 sekund obejmuje pobieranie oraz oczekiwanie na odświeżenie.
 
 `getSessionKey` jest wewnętrznym identyfikatorem cyklu życia, nie tokenem ani dowodem
-uprawnień. UI nadal reaguje na `AuthState`; osoba 2 nie implementuje własnego refreshu.
+uprawnień. UI reaguje na `AuthState`; formularze nie implementują własnego refreshu.
+
+`fetchCatalog` rozróżnia część przyczyn błędów, lecz `useStores` prezentuje jeden
+ogólny komunikat dla nieudanego pobierania. UI nie opisuje osobno błędnego klucza
+serwera, niedostępności weryfikacji czy błędnego formatu katalogu.
 
 ## Granice gwarancji
 
@@ -86,14 +94,15 @@ Testy Node obejmują rzeczywiste HTTP serwera z kontrolowaną weryfikacją,
 SDK z kontrolowanym transportem, granice sesji i żądania katalogu. Playwright używa
 fikcyjnej konfiguracji i sesji wyłącznie w fixture'ach testowych, uruchamiając
 rzeczywisty kod aplikacji oraz mapy. Produkcyjny kod nie ma przełącznika omijającego auth.
-9 listopada 2026: przeszły 82 testy Node, 17 testów Chrome i `tsc --noEmit`.
+Historycznie, 9 listopada 2026: przeszły 82 testy Node, 17 testów Chrome i `tsc --noEmit`.
 `server:check` potwierdził 7753 rekordy także bez konfiguracji auth; zwykły start
 bez tej konfiguracji został poprawnie odrzucony. Rzeczywisty projekt Supabase
 odrzucił fałszywy token przez wdrożony weryfikator (`401`), bez wysyłania maili.
 To test negatywny; pozytywne operacje konta i maile sprawdzono w punkcie 3.
-Lint pozostaje niezaliczony z powodu braku konfiguracji ESLint w repozytorium.
-Odbiór pełnego logowania i mapy na urządzeniu wymaga jeszcze ekranów osoby 2;
-testy z fixture'ami nie zastępują tego odbioru.
+Po wdrożeniu napraw 14 listopada: 89/89 Node, 20/20 Playwright, TypeScript i ESLint
+zaliczone. Pięć przypadków nieudanych podczas audytu zostało naprawionych.
+[Raport wdrożenia](wdrozenie-po-audycie.md) opisuje nowy wynik i zakres weryfikacji.
+Pełnego procesu mailowego i odbioru na fizycznych urządzeniach nie ponawiano.
 
 Źródła: [Supabase getUser](https://supabase.com/docs/reference/javascript/auth-getuser),
 [claims JWT](https://supabase.com/docs/guides/auth/jwt-fields),

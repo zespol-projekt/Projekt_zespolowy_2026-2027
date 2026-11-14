@@ -3,7 +3,9 @@
 Status: przygotowane typy i zasady współpracy; [operacje Supabase](auth-operations.md)
 są zaimplementowane w punkcie 3. [Provider/hook i trwała sesja](auth-session.md)
 są gotowe w punkcie 4. [Ochrona API i pobieranie sklepów](auth-api.md) są wdrożone
-w punkcie 5. Ekrany i podłączenie nawigacji pozostają po stronie osoby 2.
+w punkcie 5. Aktualizacja 14 listopada 2026: formularze, profil i podłączenie
+providera są już wdrożone. Formularze przeniesiono do `src/features/auth/AuthScreen.tsx`.
+Bramka zachowuje nawigację i cel logowania; wynik testów oraz granice odbioru opisuje [raport wdrożenia](wdrozenie-po-audycie.md).
 Źródłem typów jest [`src/features/auth/types.ts`](../src/features/auth/types.ts).
 Import: `import type { AuthContextValue } from '@/features/auth/types';`.
 
@@ -13,8 +15,8 @@ Import: `import type { AuthContextValue } from '@/features/auth/types';`.
   `src/features/auth`, konfigurację Supabase, ochronę API oraz pobieranie sklepów.
 - `src/features/auth/AuthProvider.tsx` udostępnia `AuthProvider` i `useAuth`.
   Hook zwraca `AuthContextValue`. Eksporty są również dostępne z `@/features/auth`.
-- Osoba 2 przygotowuje formularze, profil i nawigację. Podłącza jeden provider
-  do głównego layoutu i korzysta z hooka, bez drugiego klienta ani magazynu sesji.
+- Formularze, profil i nawigacja z zakresu osoby 2 są scalone. Główny layout
+  montuje jeden provider i korzysta z hooka, bez drugiego klienta ani magazynu sesji.
 - Moduł auth nie wywołuje routera. Ekrany reagują na wyniki operacji i wspólny stan.
   Tymczasowe zastępniki są dopuszczalne wyłącznie w pracy nad UI i testach.
 
@@ -24,8 +26,9 @@ Każda operacja zwraca `AuthResult`: `{ ok: true, data }` albo
 `{ ok: false, error }`. Dla wyniku bez danych `data` to `undefined`.
 Przewidywalne błędy usługi trafiają do tego wyniku, nie do surowych wyjątków UI.
 `error.code` służy do sterowania zachowaniem, a `error.message` jest bezpiecznym
-polskim komunikatem. `retryAfterSeconds` pochodzi z odpowiedzi serwera, jeśli
-jest dostępne. UI nie rozpoznaje błędów po treści angielskich zdań.
+polskim komunikatem. Typ przewiduje opcjonalne `retryAfterSeconds` dla danych
+o czasie ponowienia, ale obecny `mapAuthError` nie wypełnia tego pola.
+UI nie rozpoznaje błędów po treści angielskich zdań.
 
 | Operacja | Wynik sukcesu / obowiązek implementacji |
 | --- | --- |
@@ -37,6 +40,7 @@ jest dostępne. UI nie rozpoznaje błędów po treści angielskich zdań.
 | `verifyPasswordResetCode(email, code)` | Kod sprawdzony w procesie `recovery`; stan `recovery` z fazą `settingPassword`. |
 | `setNewPassword(password)` | Zapis hasła, zakończenie lokalnej sesji odzyskiwania, stan `signedOut`. Formularz rejestracji oraz oba ekrany ustawiania nowego hasła na bieżąco pokazują spełnienie wymogu długości i zgodność potwierdzenia. Dopiero pełne powodzenie oznacza sukces. |
 | `signOut()` | Wylogowanie tylko z bieżącego urządzenia/przeglądarki, usunięcie lokalnej sesji i stanu użytkownika. |
+| `cancelOperation()` | Unieważnienie trwającej operacji i zakończenie ewentualnej sesji SDK po jej spóźnionym wyniku. Nie cofa wysłanej wiadomości. |
 | `retrySession()` | Ponowne sprawdzenie/odtworzenie sesji po błędzie; aktualizacja wspólnego stanu. |
 
 Hasła nie są automatycznie przycinane ani przechowywane; dotyczy to też kodów.
@@ -67,8 +71,8 @@ zalogowanego użytkownika pochodzą wyłącznie ze wspólnego stanu.
 
 ## Token API, błędy 401 i anulowanie
 
-`AuthSessionAccess` będzie udostępniony warstwie pobierania danych przez moduł
-sesji osoby 1. `getAccessToken()` zwraca aktualny token wyłącznie dla `signedIn`.
+`AuthSessionAccess` jest udostępniony warstwie pobierania danych przez wspólny moduł
+sesji. `getAccessToken()` zwraca aktualny token wyłącznie dla `signedIn`.
 Nie przechowujemy jego kopii w formularzu, parametrach trasy ani dokumencie mapy.
 
 Po `401` wywołujemy `refreshAfterUnauthorized` z odrzuconym tokenem. Jeśli token
@@ -87,13 +91,11 @@ odpowiedź nie może przywrócić poprzedniej sesji. Pobieranie sklepów jest wt
 anulowane, a dane poprzedniego użytkownika czyszczone. Zmiana samego tokenu przy
 odświeżeniu nie uruchamia ponownego pobierania całego katalogu.
 
-## Co dalej
+## Stan realizacji kontraktu — 14 listopada
 
-Do zamknięcia uzgodnień punktu 1 przekaż osobie 2 ten dokument i typy. Może według
-nich przygotować formularze później. Przy scalaniu sprawdźcie zgodność importów
-i wyników. Moduł operacji i sesji ma już implementację oraz testy.
-
-W panelu Supabase nic nie trzeba ustawiać dla samego kontraktu. Następny krok to
-potwierdzenie dostępu do wspólnego projektu i [konfiguracja Auth oraz SMTP](supabase-setup.md).
-API jest już zabezpieczone, natomiast trasy czekają na pracę osoby 2. Całość należy
-scalić i wdrożyć wspólnie z działającymi ekranami logowania.
+Moduł operacji, provider, formularze, profil i bramka dostępu są połączone.
+Naprawiono zmianę adresu, wyniki i odliczanie ponownej wysyłki, ochronę przed spóźnionymi wynikami,
+powrót z recovery oraz utrzymanie trasy. `AuthContextValue` zawiera też `accountNotice`
+i `clearAccountNotice()` do prezentacji błędu wylogowania po przejściu do formularza.
+Stan weryfikacji i odbiór na urządzeniach: [raport wdrożenia](wdrozenie-po-audycie.md).
+Aktualne wyniki: 89/89 testów Node, 20/20 Playwright, TypeScript i lint zaliczone. [Odbiór integracji](auth-handoff.md) oddziela testy automatyczne od procesu na fizycznym urządzeniu i rzeczywistych mailach. [Konfiguracja Auth i SMTP](supabase-setup.md) rozróżnia ustawienia chmury od pliku CLI.

@@ -20,6 +20,8 @@ export default function StoresScreen() {
   const selected = useMemo(() => filtered.find(s => s.id === selectedId) ?? null, [filtered, selectedId]);
   const counts = useMemo(() => Object.fromEntries(CHAINS.map(chain => [chain,
     catalog?.stores.filter(s => s.chain === chain).length ?? 0])), [catalog]);
+  // Remove the previous selection when filters or the session remove that store.
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { if (!selected) { setSelectedId(null); setNavigationError(null); } }, [selected]);
 
   const toggleChain = (chain: Chain) => setChains(current => current.includes(chain) ? current.filter(c => c !== chain) : [...current, chain]);

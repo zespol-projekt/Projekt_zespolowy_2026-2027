@@ -1,6 +1,6 @@
 import { defineConfig } from '@playwright/test';
 
-const port = process.env.MAP_TEST_PORT ?? '8081';
+const port = process.env.MAP_TEST_PORT ?? '8091';
 export default defineConfig({
   testDir: './tests/browser',
   timeout: 45_000,
@@ -14,7 +14,7 @@ export default defineConfig({
     screenshot: 'only-on-failure',
   },
   webServer: {
-    command: `npx expo start --web --port ${port}`,
+    command: `node node_modules/expo/bin/cli start --web --port ${port}`,
     url: `http://localhost:${port}/stores`,
     // Always start with isolated credentials, never reuse a developer's real project.
     reuseExistingServer: false,

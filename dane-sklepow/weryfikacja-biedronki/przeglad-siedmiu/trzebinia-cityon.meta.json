@@ -6,6 +6,18 @@
   "final_url": "https://cityon.pl/miejsce/biedronka-trzebinia-mloszowska-47",
   "content_type": "text/html;charset=utf-8",
   "file": "weryfikacja-biedronki/przeglad-siedmiu/trzebinia-cityon.html",
-  "sha256": "b69ea01aa71cb7c36d0aad8bd3467b4f03f8b01b1717babcf76532d88855acd8",
-  "bytes": 245540
+  "sha256": "741203c9dea638ac9dd7078949278381515c6ed9772954e04353734691d7684c",
+  "bytes": 245523,
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/przeglad-siedmiu/trzebinia-cityon.html",
+      "fields": [
+        "cartoKey"
+      ],
+      "count": 1,
+      "original_sha256": "b69ea01aa71cb7c36d0aad8bd3467b4f03f8b01b1717babcf76532d88855acd8",
+      "sanitized_sha256": "741203c9dea638ac9dd7078949278381515c6ed9772954e04353734691d7684c"
+    }
+  ]
 }

@@ -1,0 +1,29 @@
+title = "SMARTCART publication scan"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "smartcart-supabase-key"
+description = "Supabase keys must remain outside published files, including publishable keys"
+regex = '''sb_(?:publishable|secret)_[A-Za-z0-9_-]{12,}'''
+keywords = ["sb_publishable_", "sb_secret_"]
+  [[rules.allowlists]]
+  description = "Exact nonfunctional browser test fixture"
+  regexes = ['''^sb_publishable_browser_test_only$''']
+
+[[rules]]
+id = "generic-api-key"
+  [[rules.allowlists]]
+  description = "Public evidence identifiers, verified against source filenames; not credentials"
+  condition = "AND"
+  paths = [
+    '''(?:^|/)dane-sklepow/weryfikacja-biedronki/.*\.json$''',
+    '''(?:^|/)dane-sklepow/przyjmij-propozycje01\.mjs$''',
+    '''(?:^|/)smart_cart/docs/utrzymanie-katalogu\.md$'''
+  ]
+  regexTarget = "secret"
+  regexes = [
+    '''^[0-9]{3,5}-(?:gugik-(?:osm|pierwotny|sprawdzony|wgs84)|oficjalna|oficjalny-komunikat)$''',
+    '''^milk-uht-3\.2-lactose$'''
+  ]

@@ -6,12 +6,29 @@
   "final_url": "https://www.zyn.com/pl/pl/storedetails?path=stary-dzik%C3%B3w.html",
   "content_type": "text/html;charset=UTF-8",
   "file": "weryfikacja-biedronki/proba-20/stary-dzikow-zyn.html",
-  "sha256": "fde845e6c202ad1b8d9fe7fa1155ee124f2467473af67eee3889185eba628dc7",
-  "bytes": 242649,
+  "sha256": "84088b9812367f9215824a97cbe4174479dda3ba3e6b65c7c2254271568ec584",
+  "bytes": 241690,
   "sanitization": {
     "field": "TWILIO_ACCOUNT_ID",
     "replacement": "[REDACTED_TWILIO_ACCOUNT_ID]",
     "original_sha256": "c116eb7188931d8ddba0c5a0b243dca88da6f1469e712aa884506c223ad5ee4c",
     "reason": "Third-party service account identifier removed from archived HTML before publication. Store address evidence is unchanged."
-  }
+  },
+  "sanitizations": [
+    {
+      "reason": "Publication removes third-party API/license values; store evidence is retained.",
+      "file": "dane-sklepow/weryfikacja-biedronki/proba-20/stary-dzikow-zyn.html",
+      "fields": [
+        "window.BOOMR_API_key",
+        "c_searchExperienceAPIKey",
+        "SCANDIT_LICENSE_KEY",
+        "adyenOriginKey",
+        "adyenClientKey",
+        "RECAPTCHA_SITE_KEY"
+      ],
+      "count": 7,
+      "original_sha256": "fde845e6c202ad1b8d9fe7fa1155ee124f2467473af67eee3889185eba628dc7",
+      "sanitized_sha256": "84088b9812367f9215824a97cbe4174479dda3ba3e6b65c7c2254271568ec584"
+    }
+  ]
 }

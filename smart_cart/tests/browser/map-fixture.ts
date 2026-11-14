@@ -47,6 +47,8 @@ export async function changeSession(page: Page, session: TestSession | null, eve
 }
 
 async function mockAuth(page: Page, session: TestSession | null) {
+  await page.route('**/rest/v1/**', route => new URL(route.request().url()).origin === AUTH_URL
+    ? route.fulfill({ json: [] }) : route.abort());
   await page.addInitScript(({ key, session }) => {
     if (window !== window.top || location.hostname !== 'localhost') return;
     if (session) localStorage.setItem(key, JSON.stringify(session));
