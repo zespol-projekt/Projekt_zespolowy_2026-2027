@@ -52,3 +52,7 @@ Poniższe punkty nie zostały potwierdzone w tej sesji na rzeczywistych urządze
 - Zapis list na jednym urządzeniu i odczyt po zalogowaniu na drugim; równoczesne zmiany wymagają odświeżenia.
 
 Historyczne testy prawdziwych kont i maili z 8–9 listopada są w [auth-operations.md](auth-operations.md). Nie ponawiano ich automatycznie.
+
+## Aktualizacja Filipa — 17 listopada 2026
+
+Nowe chronione widoki, menu, motyw i Profil: [powłoka aplikacji](app-shell.md). Docelowa nawigacja nie zmienia ścieżek `/products`, `/cart`, `/stores`. Formularz hasła ma dedykowaną operację i ochronę późnej odpowiedzi, zachowuje recovery. Odbiór maila reauthentication, egzekwowania nonce przez chmurę i fizycznych urządzeń pozostaje otwarty. [Raport bieżącej implementacji](filip-implementation-report.md) odróżnia wyniki testów od tych zależności.

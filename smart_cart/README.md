@@ -7,6 +7,10 @@ Wdrożono ustalenia [ankiety](docs/plan-napraw-po-ankiecie.md): wyszukiwanie gru
 [Baza produktów i cen](docs/database-context.md) jest osobna od katalogu placówek mapy. `supabase-schema.sql` odświeżono po wdrożeniu. [Utrzymanie katalogu](docs/utrzymanie-katalogu.md) opisuje migracje, eksport oraz uzupełnianie zweryfikowanych grup, dat i warunków promocji.
 Źródła nie zawierają wszystkich metadanych: niepewne zamienniki pozostają osobnymi produktami, nieznany sposób sprzedaży wyłącza wycenę, a promocje bez dowodów nie są naliczane. [Audyt sprzed napraw](docs/stan-projektu.md) zachowuje historię wykrytych błędów.
 
+## Home, menu i gazetki — 17 listopada 2026
+
+[Powłoka aplikacji](docs/app-shell.md): Home · Ulubione · Koszyk · Szukaj · Mapa, menu z Profilem/Pomocą/Zasadami i zapamiętywany motyw. Profil ma zmianę hasła z kodem email, z ograniczeniami chmury opisanymi w kontrakcie Auth. Czytnik stron obrazowych jest przygotowany; rzeczywiste API i materiały oczekują na Damiana — [propozycja kontraktu](docs/leaflets-contract.md). [Wyniki i ograniczenia bieżącej pracy](docs/filip-implementation-report.md).
+
 ## Logowanie — integracja Supabase
 
 [Kontrakt modułu auth](docs/auth-contract.md) opisuje typy, operacje i podział pracy.
@@ -58,7 +62,7 @@ W terminalu 2, również w katalogu `smart_cart`, uruchom aplikację:
 npm.cmd start
 ```
 
-Otwórz projekt w Expo Go kodem QR albo naciśnij `w`, aby uruchomić przeglądarkę. Mapa jest w zakładce **Sklepy**. Telefon i komputer powinny być w tej samej sieci; port 8787 komputera musi być dostępny dla telefonu.
+Otwórz projekt w Expo Go kodem QR albo naciśnij `w`, aby uruchomić przeglądarkę. Mapa jest w zakładce **Mapa**. Telefon i komputer powinny być w tej samej sieci; port 8787 komputera musi być dostępny dla telefonu.
 
 W trybie deweloperskim aplikacja używa hosta przeglądarki lub komputera z Expo, z portem 8787. Opcjonalnie ustaw pełny adres endpointu w `.env.local` i uruchom Expo ponownie:
 

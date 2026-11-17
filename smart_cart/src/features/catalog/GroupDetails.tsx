@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { ActivityIndicator, Image, Text, View } from 'react-native';
-import { Button, Field, Notice, ui } from '@/components/ui/Controls';
+import { Button, Field, Notice, useUI } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { useSessionAction, useSessionQuery } from './hooks';
 import { useShopping } from './ShoppingProvider';
 import { amount, money, quantityInput, type Offer, type ProductGroup } from './types';
 
 export function OfferInfo({ offer }: { offer: Offer }) {
+  const ui = useUI();
   return <View style={{ gap: 5 }}>
     <Text style={ui.heading}>{offer.product_name}</Text>
     <Text style={ui.text}>{offer.store_name} · {offer.gramatura_norm ?? 'Brak danych o ilości'}</Text>
@@ -21,6 +22,7 @@ export function OfferInfo({ offer }: { offer: Offer }) {
   </View>;
 }
 export function GroupDetails({ group, onClose }: { group: ProductGroup; onClose: () => void }) {
+  const ui = useUI();
   const [quantity, setQuantity] = useState(String(group.default_quantity ?? (group.unit === 'szt' ? 1 : 1000)));
   const [offset, setOffset] = useState(0);
   const offers = useSessionQuery(signal => catalogApi.offers(group.id, signal, offset), [group.id, offset]);

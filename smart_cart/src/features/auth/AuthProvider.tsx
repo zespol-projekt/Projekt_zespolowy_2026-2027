@@ -21,6 +21,8 @@ export function AuthProvider({ children }: PropsWithChildren) {
     signIn: authService.signIn,
     sendPasswordResetCode: authService.sendPasswordResetCode,
     verifyPasswordResetCode: authService.verifyPasswordResetCode,
+    sendPasswordChangeCode: authService.sendPasswordChangeCode,
+    changePassword: authService.changePassword,
     setNewPassword: authService.setNewPassword,
     signOut: async () => {
       clearDestination(); setAccountNotice(null);

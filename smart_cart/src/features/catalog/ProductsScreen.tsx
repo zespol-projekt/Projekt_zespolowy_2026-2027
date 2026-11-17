@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLocalSearchParams } from 'expo-router';
 import { ActivityIndicator, Text, View } from 'react-native';
-import { Button, Field, Notice, Screen, ui } from '@/components/ui/Controls';
+import { Button, Field, Notice, Screen, useUI } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { useDebounced, useSessionKey, useSessionQuery } from './hooks';
 import { GroupDetails } from './GroupDetails';
@@ -13,6 +13,7 @@ export default function ProductsScreen() {
   return key ? <ProductSearch key={`${key}:${params.q ?? ''}`} initialQuery={params.q ?? ''} /> : null;
 }
 function ProductSearch({ initialQuery }: { initialQuery: string }) {
+  const ui = useUI();
   const [query, setQuery] = useState(initialQuery);
   const debounced = useDebounced(query.trim());
   const [offset, setOffset] = useState(0);

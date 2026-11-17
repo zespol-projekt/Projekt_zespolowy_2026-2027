@@ -96,3 +96,8 @@ ma własne zliczane wywołanie `start()`, ale obecnie działa wewnątrz podłąc
 Źródła: [AsyncStorage w Expo SDK 58](https://docs.expo.dev/versions/v58.0.0/sdk/async-storage/),
 [Supabase w React Native](https://supabase.com/docs/guides/auth/quickstarts/react-native),
 [AppState](https://reactnative.dev/docs/appstate).
+
+
+## Profil i anulowanie — 17 listopada 2026
+
+Nowa operacja zmiany hasła nadal korzysta z jednej kolejki i klucza sesji. `passwordRequests` wiąże PUT wykonywany przez istniejący SDK z AbortSignal formularza oraz utratą klucza sesji. Anulowana odpowiedź nie dociera do zapisu sesji/zdarzenia USER_UPDATED SDK. Formularz wyczyszcza sekrety po opuszczeniu Profilu i przy zmianie konta. Recovery oraz `cancelOperation` w formularzach logowania zachowują dotychczasowe znaczenie; anulowanie formularza Profilu nie wylogowuje. [Kontrakt i ograniczenia chmury](auth-contract.md#profil--rozszerzenie-17-listopada-2026).

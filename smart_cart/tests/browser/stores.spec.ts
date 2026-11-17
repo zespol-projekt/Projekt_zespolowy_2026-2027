@@ -62,7 +62,7 @@ test('jasna mapa ma jeden podpis, który zwija się po 5 sekundach i daje się p
   await info.click();
   await expect(credits).toBeHidden();
   await page.getByRole('link', { name: 'SMARTCART — ekran startowy' }).click();
-  await page.getByRole('tab', { name: 'Sklepy', exact: true }).click();
+  await page.getByRole('tab', { name: 'Mapa', exact: true }).click();
   await waitForStores(page, 4);
   await expect(info).toHaveAttribute('aria-expanded', 'false');
   expect(modules).toBe(1);
@@ -162,7 +162,7 @@ test('na małym ekranie mapa mieści się nad nawigacją', async ({ page }) => {
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
   await waitForStores(page, 4);
   const map = await page.getByTestId('stores-map').boundingBox();
-  const tabs = await page.getByRole('tab', { name: 'Sklepy', exact: true }).boundingBox();
+  const tabs = await page.getByRole('tab', { name: 'Mapa', exact: true }).boundingBox();
   expect(map!.height).toBeGreaterThanOrEqual(200);
   expect(map!.y + map!.height).toBeLessThan(tabs!.y);
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(320);

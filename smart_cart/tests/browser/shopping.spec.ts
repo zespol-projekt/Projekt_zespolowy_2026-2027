@@ -76,13 +76,14 @@ test('grupy, oferty, prywatne listy i edycja przeliczają koszyk, niepełna sie�
 test('logowanie wraca do celu, jawne wylogowanie czyści cel', async ({ page }) => {
   await mockMap(page, null);
   await page.route(`${AUTH_URL}/auth/v1/token?grant_type=password`, route => route.fulfill({ json: testSession() }));
-  await page.goto('/settings');
+  await page.goto('/rules');
   await page.getByRole('textbox', { name: 'Email', exact: true }).fill('map-test@example.invalid');
   await page.getByLabel('Hasło', { exact: true }).fill('test-password');
   await page.getByRole('button', { name: 'Zaloguj się', exact: true }).click();
-  await expect(page.getByText('Ustawienia i zasady porównania', { exact: true })).toBeVisible();
-  await expect(page).toHaveURL(/\/settings$/);
-  await page.getByText('Otwórz profil i wylogowanie →', { exact: true }).click();
+  await expect(page.getByText('Zasady porównywania', { exact: true })).toBeVisible();
+  await expect(page).toHaveURL(/\/rules$/);
+  await page.getByRole('button', { name: 'Otwórz menu' }).click();
+  await page.getByRole('button', { name: 'Profil', exact: true }).click();
   await page.getByRole('button', { name: 'Wyloguj się', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Zaloguj się', exact: true })).toBeVisible();
   await expect(page).toHaveURL(/\/$/);
