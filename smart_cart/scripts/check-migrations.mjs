@@ -3,6 +3,8 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { metadataSql } from './catalog-metadata.mjs';
+import { pozycjeZObserwacji, sqlImportu } from './import/import-katalogu.mjs';
+import { obserwacjaKodyzbiedry, obserwacjaTanszykoszyk } from './import/zrodla.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const container = process.env.SMARTCART_TEST_DB_CONTAINER ?? 'smartcart-pg17-check';
@@ -81,4 +83,49 @@ sql(`BEGIN;
      RAISE EXCEPTION 'Generated metadata transaction failed'; END IF;
  END $verify$;
  ROLLBACK;`);
+// Import katalogu: wygenerowany SQL wykonany dwa razy na "starych" produktach (dopasowanie, zastąpienie, nietknięte rekordy).
+sql(`
+INSERT INTO public.stores(slug, name) VALUES ('biedronka', 'Biedronka'), ('lidl', 'Lidl') ON CONFLICT (slug) DO NOTHING;
+INSERT INTO public.base_products(id, category_id, name) SELECT 93001, id, 'Mleko UHT 3,2%' FROM public.categories WHERE slug = 'nabial';
+INSERT INTO public.products(id, product_key, base_product_id, ean, canonical_name, quantity_value, quantity_unit) VALUES
+  (93101, 'ean:5900000000017', 93001, '5900000000017', 'Stara nazwa mleka 1 l', 1000, 'ml'),
+  (93102, 'name:stary', 93001, NULL, 'Mleko UHT 3,2% Pilos 1l', 1000, 'ml'),
+  (93103, 'name:nietkniety', 93001, NULL, 'Mleko stare inne 1l', 1000, 'ml');
+INSERT INTO public.store_offers(offer_key, store_id, product_id, store_product_name, regular_price, price_status, price_source)
+SELECT 'old:1', id, 93101, 'Stara nazwa mleka 1 l', 9.99, 'prawdziwa', 'kodyzbiedry' FROM public.stores WHERE slug = 'biedronka' UNION ALL
+SELECT 'old:2', id, 93102, 'Mleko UHT 3,2% Pilos 1l', 1.99, 'prawdziwa', 'tanszykoszyk' FROM public.stores WHERE slug = 'lidl' UNION ALL
+SELECT 'old:3', id, 93103, 'Mleko stare inne 1l', 2.49, 'prawdziwa', 'antonka' FROM public.stores WHERE slug = 'lidl';
+`);
+const { pozycje } = pozycjeZObserwacji([
+  obserwacjaKodyzbiedry({ ean: '5900000000017', nazwa: 'Mleko UHT 3,2% Łaciate 1 l', cena: '3.79', cena_widziana: '2026-11-18T18:00:00Z' }),
+  obserwacjaTanszykoszyk({ id_zrodla: 'a', nazwa: 'Mleko UHT 3,2% Pilos 1l', gramatura: '1l', cena_promocyjna: '2.25', typ_promocji: 'obniżka',
+    wazne_od: '2026-11-17', wazne_do: '2026-11-21', link_zrodla: '/produkt/a', ostatnio_widziane: '2026-11-18T18:00:00Z' }, 'lidl'),
+  obserwacjaTanszykoszyk({ id_zrodla: 'b', nazwa: "Mleko UHT 3,2% Mlekovita 1 l", gramatura: '1 l', cena_promocyjna: '2.99', typ_promocji: 'przy zakupie 3',
+    warunek: "cena za 1 szt. poza promocją: 3,49 zł", wazne_od: '2026-11-17', wazne_do: '2026-11-21', link_zrodla: '/produkt/b',
+    ostatnio_widziane: '2026-11-18T18:00:00Z' }, 'lidl'),
+]);
+const importSql = sqlImportu(pozycje, { tryb: 'zapis', pliki: [{ sciezka: 'test.csv', sha256: '0'.repeat(64), wiersze: 3 }] });
+for (const przebieg of [1, 2]) {
+  sql(importSql);
+  sql(`DO $verify$ DECLARE lidl integer := (SELECT id FROM public.stores WHERE slug = 'lidl'); BEGIN
+    IF (SELECT canonical_name FROM public.products WHERE id = 93101) <> 'Mleko UHT 3,2% Łaciate 1 l' THEN RAISE EXCEPTION 'Produkt po EAN nie zastąpiony'; END IF;
+    IF NOT EXISTS (SELECT 1 FROM public.store_offers WHERE offer_key = 'old:1' AND regular_price = 3.79 AND price_source = 'kodyzbiedry'
+      AND (regular_price_observed_at AT TIME ZONE 'Europe/Warsaw')::date = '2026-11-18') THEN RAISE EXCEPTION 'Oferta po EAN nie zastąpiona'; END IF;
+    IF NOT EXISTS (SELECT 1 FROM public.store_offers WHERE offer_key = 'old:2' AND regular_price IS NULL AND price_status = 'brak'
+      AND promo_price = 2.25 AND promo_scope = 'nationwide' AND promo_rule = '{"kind":"unit"}' AND valid_to = '2026-11-21'
+      AND promo_evidence_url = 'https://tanszykoszyk.pl/produkt/a') THEN RAISE EXCEPTION 'Oferta po nazwie nie zastąpiona'; END IF;
+    IF NOT EXISTS (SELECT 1 FROM public.store_offers WHERE offer_key = 'old:3' AND regular_price = 2.49 AND price_source = 'antonka' AND last_import_run_id IS NULL)
+      THEN RAISE EXCEPTION 'Niedopasowana stara oferta została zmieniona'; END IF;
+    IF (SELECT count(*) FROM public.products WHERE canonical_name = 'Mleko UHT 3,2% Mlekovita 1 l') <> 1 THEN RAISE EXCEPTION 'Nowy produkt zdublowany'; END IF;
+    IF NOT EXISTS (SELECT 1 FROM public.catalog_offers WHERE product_name = 'Mleko UHT 3,2% Mlekovita 1 l' AND store_id = lidl
+      AND regular_price = 3.49 AND promo_rule = '{"kind":"min_quantity","min_quantity":3}' AND group_name = 'Mleko UHT 3,2% · z laktozą')
+      THEN RAISE EXCEPTION 'Nowy produkt bez oferty lub grupy mleka'; END IF;
+    IF (SELECT count(*) FROM public.store_offers) <> 4 THEN RAISE EXCEPTION 'Oczekiwano 4 ofert, jest %', (SELECT count(*) FROM public.store_offers); END IF;
+    IF (SELECT count(*) FROM public.import_runs) <> ${przebieg} THEN RAISE EXCEPTION 'Brak wpisu w rejestrze importów'; END IF;
+  END $verify$;`);
+}
+const proba = sqlImportu(pozycje, { tryb: 'proba' });
+sql(proba);
+sql(`DO $verify$ BEGIN IF (SELECT count(*) FROM public.import_runs) <> 2 THEN RAISE EXCEPTION 'Tryb próbny zapisał dane'; END IF; END $verify$;`);
+console.log('Catalog import: EAN/name matching, replacement, untouched old offers, idempotent rerun and dry-run rollback passed.');
 console.log('Database migration and RLS scenarios passed.');

@@ -19,6 +19,8 @@ export function wyrazenie(wzorzec) {
 }
 
 const CZARNA_LISTA = wyrazenie(SLOWNIK.czarna_lista);
+// Uzupełnienie czarnej listy po przeglądzie importu z 19.11.2026 (np. worki "Magnum" trafiały do lodów).
+const DODATKOWE_WYKLUCZENIA = wyrazenie(String.raw`\b(worki|worek na|woda perfumowana|woda toaletowa|perfumy|zabawka)\b`);
 const PRZETWORZONE = wyrazenie(SLOWNIK.przetworzone_nie_swieze);
 const REGULY = SLOWNIK.reguly.map(r => ({
   nazwa: r.nazwa,
@@ -32,7 +34,7 @@ const REGULY = SLOWNIK.reguly.map(r => ({
 /** Zwraca { nazwa, kategoria } produktu bazowego albo null, gdy nazwa nie pasuje do żadnej reguły. */
 export function produktBazowy(nazwaProduktu) {
   const n = String(nazwaProduktu ?? '').trim();
-  if (!n || CZARNA_LISTA.test(n)) return null;
+  if (!n || CZARNA_LISTA.test(n) || DODATKOWE_WYKLUCZENIA.test(n)) return null;
   for (const r of REGULY) {
     if (r.kategoria === 'Warzywa i Owoce' && r.nazwa !== SLOWNIK.wyjatek_swieze && PRZETWORZONE.test(n)) continue;
     if (r.exc && r.exc.test(n)) continue;
