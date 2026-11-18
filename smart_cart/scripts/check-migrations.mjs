@@ -63,7 +63,10 @@ for (const file of fs.readdirSync(path.join(root, 'supabase/migrations')).filter
   console.log(`Applied to isolated container: ${file}`);
 }
 if (process.env.SMARTCART_CHECK_INVENTORY) sql('SELECT classification_source,sale_mode,count(*) FROM public.products GROUP BY 1,2 ORDER BY 1,2; SELECT count(*) AS comparison_groups FROM public.comparison_groups;');
-sql(fs.readFileSync(path.join(root, 'tests/database.sql'), 'utf8'));
+// tests/database.sql first, then further scenario files (tests/database-*.sql) in name order.
+for (const file of ['database.sql', ...fs.readdirSync(path.join(root, 'tests')).filter(f => /^database-.+\.sql$/.test(f)).sort()]) {
+  sql(fs.readFileSync(path.join(root, 'tests', file), 'utf8'));
+}
 const reviewed = metadataSql({ groups: [{ key: "test'$$", base_product_id: 91500, name: "Test's $$ reviewed", unit: 'g', products: [{ id: 91500, sale_mode: 'package' }] }] })
   .replace(/^BEGIN;\n/, '').replace(/\nCOMMIT;\n$/, '\n');
 sql(`BEGIN;
