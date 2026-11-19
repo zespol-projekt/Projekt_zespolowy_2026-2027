@@ -51,6 +51,10 @@ docker run --rm -it -v "C:\Users\good1\Desktop\Dane_sklepy_current\raporty_impor
 
 Raport pokazuje liczbę pozycji według dopasowania, nowe i zastąpione oferty oraz pokrycie grup mleka w sieciach. Zapis (`--zapis`, `COMMIT`) wykonujemy dopiero po przejrzeniu próby, po wdrożeniu migracji i za zgodą właściciela danych.
 
+## Raport stanu katalogu
+
+`scripts/raport-katalogu.sql` tylko odczytuje dane (transakcja `READ ONLY`, na końcu `ROLLBACK`): liczby ofert w sieciach (z ceną regularną, z promocją, z ceną do porównania dziś), kategorie × sieci, produkty z EAN, porównywalność grup między sieciami i ostatnie importy. Uruchomienie jak import, z `-f /repo/scripts/raport-katalogu.sql` i folderem repo podłączonym jako `/repo`.
+
 ## Testy
 
 - `node --test tests/import-zrodla.test.mjs tests/import-katalogu.test.mjs` — odczyt źródeł, ilości, typy cen, reguły promocji, cytowanie SQL.
