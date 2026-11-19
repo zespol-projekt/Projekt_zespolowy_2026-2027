@@ -145,7 +145,20 @@ npx.cmd supabase@3.1.0 db dump --remote --file supabase-schema.sql   # aktualny 
 
 Przed `db push` zawsze `--dry-run` i sprawdzenie, że lista zawiera dokładnie nowe migracje. Wdrożonych migracji nie edytujemy — każda zmiana to nowy plik migracji.
 
-## 8. Typowy cykl odświeżenia danych
+## 8. Gazetki
+
+Pełny opis: `docs/gazetki.md`. Klucz `service_role` w `smart_cart\.env.admin.local` (poza gitem).
+
+```powershell
+$arch = "C:\Users\good1\Desktop\Dane_sklepy_current\gazetki_archiwum"
+node scripts/gazetki/gazetki.mjs pobierz --archiwum $arch     # Biedronka, Lidl, Dino -> archiwum lokalne
+node scripts/gazetki/gazetki.mjs wgraj --archiwum $arch --proba
+node scripts/gazetki/gazetki.mjs wgraj --archiwum $arch       # Storage + publikacja
+node scripts/gazetki/gazetki.mjs sprzataj                     # usunięcie dzień po końcu (archiwum zostaje)
+npx.cmd supabase@3.1.0 functions deploy leaflets              # wdrożenie Edge Function (po zmianie jej kodu)
+```
+
+## 9. Typowy cykl odświeżenia danych
 
 1. Aktualne pliki danych w folderze danych (poza repozytorium; ich przygotowanie nie jest częścią repo).
 2. `npm.cmd test` (punkt 2).
