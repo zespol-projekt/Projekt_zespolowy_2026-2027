@@ -103,7 +103,11 @@ const { pozycje } = pozycjeZObserwacji([
   obserwacjaTanszykoszyk({ id_zrodla: 'b', nazwa: "Mleko UHT 3,2% Mlekovita 1 l", gramatura: '1 l', cena_promocyjna: '2.99', typ_promocji: 'przy zakupie 3',
     warunek: "cena za 1 szt. poza promocją: 3,49 zł", wazne_od: '2026-11-17', wazne_do: '2026-11-21', link_zrodla: '/produkt/b',
     ostatnio_widziane: '2026-11-18T18:00:00Z' }, 'lidl'),
+  obserwacjaTanszykoszyk({ id_zrodla: 'c', nazwa: 'Mleko UHT 3,2% Ponad Limit 1 l', gramatura: '1 l', cena_promocyjna: '2.79', typ_promocji: 'obniżka',
+    wazne_od: '2026-11-17', wazne_do: '2026-11-21', link_zrodla: '/produkt/c', ostatnio_widziane: '2026-11-18T18:00:00Z' }, 'lidl'),
 ]);
+// Limit: nowa pozycja ponad limitem nie powstaje, istniejąca ponad limitem nadal jest aktualizowana.
+for (const p of pozycje) p.poza_limitem = /Ponad Limit|Pilos/.test(p.nazwa);
 const importSql = sqlImportu(pozycje, { tryb: 'zapis', pliki: [{ sciezka: 'test.csv', sha256: '0'.repeat(64), wiersze: 3 }] });
 for (const przebieg of [1, 2]) {
   sql(importSql);
@@ -120,6 +124,7 @@ for (const przebieg of [1, 2]) {
     IF NOT EXISTS (SELECT 1 FROM public.catalog_offers WHERE product_name = 'Mleko UHT 3,2% Mlekovita 1 l' AND store_id = lidl
       AND regular_price = 3.49 AND promo_rule = '{"kind":"min_quantity","min_quantity":3}' AND group_name = 'Mleko UHT 3,2% · z laktozą')
       THEN RAISE EXCEPTION 'Nowy produkt bez oferty lub grupy mleka'; END IF;
+    IF EXISTS (SELECT 1 FROM public.products WHERE canonical_name LIKE '%Ponad Limit%') THEN RAISE EXCEPTION 'Pozycja ponad limitem utworzyła produkt'; END IF;
     IF (SELECT count(*) FROM public.store_offers) <> 4 THEN RAISE EXCEPTION 'Oczekiwano 4 ofert, jest %', (SELECT count(*) FROM public.store_offers); END IF;
     IF (SELECT count(*) FROM public.import_runs) <> ${przebieg} THEN RAISE EXCEPTION 'Brak wpisu w rejestrze importów'; END IF;
   END $verify$;`);
@@ -127,5 +132,5 @@ for (const przebieg of [1, 2]) {
 const proba = sqlImportu(pozycje, { tryb: 'proba' });
 sql(proba);
 sql(`DO $verify$ BEGIN IF (SELECT count(*) FROM public.import_runs) <> 2 THEN RAISE EXCEPTION 'Tryb próbny zapisał dane'; END IF; END $verify$;`);
-console.log('Catalog import: EAN/name matching, replacement, untouched old offers, idempotent rerun and dry-run rollback passed.');
+console.log('Catalog import: EAN/name matching, replacement, untouched old offers, per-category limit, idempotent rerun and dry-run rollback passed.');
 console.log('Database migration and RLS scenarios passed.');

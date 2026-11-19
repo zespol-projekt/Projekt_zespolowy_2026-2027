@@ -4,7 +4,10 @@ DO $$ BEGIN
   IF (SELECT string_agg(name, '|' ORDER BY display_order) FROM public.categories WHERE slug IS NOT NULL)
      <> 'Warzywa i Owoce|Pieczywo|Nabiał|Mięso i Ryby|Mrożonki i Gotowe|Sypkie i Makarony|Tłuszcze i Przetwory|Przyprawy i Pieczenie|Napoje|Słodycze i Przekąski'
   THEN RAISE EXCEPTION 'Kolejność kategorii niezgodna z ustaleniem'; END IF;
-  IF (SELECT count(*) FROM public.catalog_subcategories) <> 51 THEN RAISE EXCEPTION 'Oczekiwano 51 podkategorii'; END IF;
+  IF (SELECT count(*) FROM public.catalog_subcategories) <> 50 THEN RAISE EXCEPTION 'Oczekiwano 50 podkategorii (bez piwa)'; END IF;
+  IF EXISTS (SELECT 1 FROM public.catalog_subcategories WHERE slug = 'napoje-piwo') THEN RAISE EXCEPTION 'Piwo nadal w drzewie'; END IF;
+  IF (SELECT count(*) FROM public.base_products WHERE name LIKE 'Pozostał%' AND subcategory_id IS NOT NULL) <> 40 THEN
+    RAISE EXCEPTION 'Nowe produkty bazowe bez podkategorii'; END IF;
   IF (SELECT verification_status FROM public.catalog_subcategories WHERE slug = 'nabial-mleko') <> 'in_progress' THEN
     RAISE EXCEPTION 'Mleko powinno mieć status in_progress'; END IF;
   IF EXISTS (SELECT 1 FROM public.catalog_subcategories s JOIN public.categories c ON c.id = s.category_id
@@ -68,7 +71,7 @@ END $$;
 SELECT set_config('request.jwt.claims', '{"sub":"44444444-4444-4444-8444-444444444444","role":"authenticated"}', true);
 SET LOCAL ROLE authenticated;
 DO $$ BEGIN
-  IF (SELECT count(*) FROM public.catalog_subcategories) <> 51 THEN RAISE EXCEPTION 'Potwierdzone konto nie widzi podkategorii'; END IF;
+  IF (SELECT count(*) FROM public.catalog_subcategories) <> 50 THEN RAISE EXCEPTION 'Potwierdzone konto nie widzi podkategorii'; END IF;
   BEGIN PERFORM 1 FROM public.comparison_group_redirects; RAISE EXCEPTION 'Przekierowania widoczne dla konta';
   EXCEPTION WHEN insufficient_privilege THEN NULL; END;
   BEGIN PERFORM 1 FROM public.import_runs; RAISE EXCEPTION 'Rejestr importów widoczny dla konta';

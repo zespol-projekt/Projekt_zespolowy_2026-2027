@@ -16,11 +16,41 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normTekst } from './normalizacja.mjs';
-import { produktBazowy, ZRODLO_SLOWNIKA } from './slownik.mjs';
+import { kategoriaNiespozywcza, produktBazowy, ZRODLO_SLOWNIKA } from './slownik.mjs';
 import { wczytajZrodla } from './zrodla.mjs';
 
 export const NARZEDZIE = 'scripts/import/import-katalogu.mjs v1';
 const PRIORYTET = { kodyzbiedry: 4, antonka: 3, tanszykoszyk: 2, antonka_historia: 1 };
+
+// Limit nowych produktów na parę sieć × produkt bazowy (decyzja z 19.11.2026: 25).
+export const LIMIT_NA_PRODUKT_BAZOWY = 25;
+// Wyjątek 1: produkty bazowe, z których baza tworzy grupy porównania koszyka - bez limitu.
+export const BEZ_LIMITU = new Set([
+  'Mleko UHT 3,2%', 'Mleko 1,5% - 2,0%', 'Mleko bez laktozy', 'Masło ekstra 82%', 'Mąka pszenna uniwersalna',
+  'Mąka ziemniaczana (Skrobia)', 'Ryż Basmati / Jaśminowy', 'Ryż biały / Parboiled', 'Cukier biały 1kg',
+  'Jajka rozmiar L (10 szt.)', 'Jajka rozmiar M (10 szt.)',
+]);
+
+/** Oznacza pozycje ponad limit (poza_limitem = true). Takie pozycje mogą tylko zaktualizować produkt już istniejący w bazie. */
+export function zastosujLimit(pozycje, limit = LIMIT_NA_PRODUKT_BAZOWY) {
+  const grupy = new Map();
+  for (const p of pozycje) {
+    p.poza_limitem = false;
+    if (BEZ_LIMITU.has(p.produkt_bazowy)) continue;
+    const k = `${p.siec}|${p.produkt_bazowy}`;
+    if (!grupy.has(k)) grupy.set(k, []);
+    grupy.get(k).push(p);
+  }
+  let poza = 0;
+  for (const lista of grupy.values()) {
+    lista.sort((a, b) => (b.cena_regularna !== null) - (a.cena_regularna !== null)
+      || (b.obserwacja_regularnej ?? '').localeCompare(a.obserwacja_regularnej ?? '')
+      || (b.ilosc !== null) - (a.ilosc !== null) || (b.ean !== null) - (a.ean !== null)
+      || (b.zdjecie !== null) - (a.zdjecie !== null) || a.nazwa.localeCompare(b.nazwa, 'pl'));
+    for (const p of lista.slice(limit)) { p.poza_limitem = true; poza++; }
+  }
+  return poza;
+}
 
 const kluczIlosci = o => (o.ilosc ? `${o.ilosc.value}${o.ilosc.unit}` : o.za_wage ? `waga:${o.za_wage.value}${o.za_wage.unit}` : '?');
 const nowsza = (a, b) => (a?.obserwacja ?? '') > (b?.obserwacja ?? '');
@@ -54,6 +84,7 @@ export function pozycjeZObserwacji(obserwacje) {
   };
   for (const o of obserwacje) {
     if (!o.cena_regularna && !(o.oferta_okresowa && o.oferta_okresowa.kwota !== null)) { pomin('brak_uzytecznej_ceny', o); continue; }
+    if (kategoriaNiespozywcza(o.kategoria_zrodla)) { pomin('kategoria_niespozywcza_zrodla', o); continue; }
     const bazowy = produktBazowy(o.nazwa);
     if (!bazowy) { pomin('brak_produktu_bazowego', o); continue; }
     const tozsamosc = o.ean ? `ean:${o.ean}` : `nazwa:${normTekst(o.nazwa)}|${kluczIlosci(o)}`;
@@ -109,7 +140,10 @@ const poleCsv = v => {
 const csv = (naglowek, wiersze) => '\uFEFF' + [naglowek, ...wiersze].map(w => w.map(poleCsv).join(';')).join('\r\n') + '\r\n';
 
 /** Podgląd do Excela: co trafi do bazy i co zostanie pominięte (z powodem). */
-export function podgladCsv(pozycje, listaPominietych) {
+export function podgladCsv(pozycjeWszystkie, listaPominietychWejscie) {
+  const pozycje = pozycjeWszystkie.filter(p => !p.poza_limitem);
+  const listaPominietych = [...listaPominietychWejscie, ...pozycjeWszystkie.filter(p => p.poza_limitem).map(p => ({
+    powod: 'ponad_limit_tylko_aktualizacja_istniejacego', siec: p.siec, zrodlo: p.zrodlo_ceny, nazwa: p.nazwa, cena: p.cena_regularna ?? p.promocja?.kwota ?? null }))];
   const liczba = v => (v === null || v === undefined ? '' : String(v).replace('.', ','));
   const doBazy = csv(['siec', 'kategoria', 'produkt_bazowy', 'nazwa', 'ean', 'opakowanie', 'sposob_sprzedazy', 'cena_regularna',
     'data_ceny', 'zrodlo_ceny', 'promocja', 'promocja_od', 'promocja_do', 'promocja_typ', 'promocja_naliczana', 'zrodla'],
@@ -132,7 +166,7 @@ function wiersz(p, nr) {
   return `(${nr},${lit(p.siec)},${lit(p.ean)},${lit(p.nazwa)},${lit(p.produkt_bazowy)},${num(p.ilosc?.value)},${lit(p.ilosc?.unit)},${lit(gramatura)},`
     + `${lit(p.sposob_sprzedazy)},${num(p.cena_regularna)},${lit(p.obserwacja_regularnej)},${lit(p.zrodlo_ceny)},${lit(p.zdjecie)},`
     + `${num(pr?.kwota)},${lit(pr?.typ)},${lit(pr?.warunek)},${lit(pr?.wazne_od)},${lit(pr?.wazne_do)},${lit(pr?.status)},`
-    + `${lit(pr?.zasieg)},${json(pr?.regula)},${lit(pr?.dowod)})`;
+    + `${lit(pr?.zasieg)},${json(pr?.regula)},${lit(pr?.dowod)},${p.poza_limitem ? 'true' : 'false'})`;
 }
 
 /** Pełny skrypt SQL importu. tryb: 'proba' (ROLLBACK) albo 'zapis' (COMMIT). */
@@ -155,7 +189,7 @@ CREATE TEMP TABLE imp (
   nr integer PRIMARY KEY, siec text NOT NULL, ean text, nazwa text NOT NULL, produkt_bazowy text NOT NULL,
   ilosc numeric, jednostka text, gramatura text, sposob text NOT NULL, regularna numeric, obserwacja date, zrodlo text NOT NULL, zdjecie text,
   promo numeric, promo_typ text, promo_warunek text, promo_od date, promo_do date, promo_status text,
-  promo_zasieg text, promo_regula jsonb, promo_dowod text
+  promo_zasieg text, promo_regula jsonb, promo_dowod text, poza_limitem boolean NOT NULL DEFAULT false
 ) ON COMMIT DROP;
 ${paczki.join('\n')}
 
@@ -190,6 +224,8 @@ UPDATE imp_dop SET product_id = coalesce(po_ean, po_nazwie),
 WITH dubel AS (SELECT nr, row_number() OVER (PARTITION BY store_id, product_id ORDER BY (dopasowanie = 'ean') DESC, nr) AS n
   FROM imp_dop WHERE product_id IS NOT NULL)
 UPDATE imp_dop d SET product_id = NULL, dopasowanie = 'nowy' FROM dubel WHERE dubel.nr = d.nr AND dubel.n > 1;
+-- Limit: pozycje ponad limit nie tworzą nowych produktów; istniejące produkty nadal dostają nowe dane.
+UPDATE imp_dop SET dopasowanie = 'pominiete_limit' WHERE poza_limitem AND dopasowanie = 'nowy';
 
 -- Nowe produkty (klasyfikację do grup wykonuje istniejący wyzwalacz).
 INSERT INTO public.products(product_key, base_product_id, ean, canonical_name, gramatura_norm, quantity_value, quantity_unit, image_url, sale_mode)
@@ -259,12 +295,17 @@ function main() {
   const i = process.argv.indexOf('--dane');
   if (i < 0 || !process.argv[i + 1]) throw new Error('Użycie: node scripts/import/import-katalogu.mjs --dane <folder> [--zapis]');
   const tryb = process.argv.includes('--zapis') ? 'zapis' : 'proba';
-  const m = process.argv.indexOf('--z-migracja');
-  const migracja = m >= 0 ? fs.readFileSync(path.resolve(process.argv[m + 1]), 'utf8') : null;
+  // --z-migracja można podać kilka razy; pliki są dołączane w podanej kolejności.
+  const pliki_migracji = process.argv.flatMap((a, k) => (a === '--z-migracja' ? [process.argv[k + 1]] : []));
+  const migracja = pliki_migracji.length
+    ? pliki_migracji.map(f => `-- ${path.basename(f)}\n${fs.readFileSync(path.resolve(f), 'utf8')}`).join('\n') : null;
   const dane = path.resolve(process.argv[i + 1]);
   const { obserwacje, pliki } = wczytajZrodla(dane);
   const { pozycje, pominiete, listaPominietych } = pozycjeZObserwacji(obserwacje);
+  const pozaLimitem = zastosujLimit(pozycje);
   const podsumowanie = { obserwacje: obserwacje.length, pozycje: pozycje.length, pominiete, slownik: ZRODLO_SLOWNIKA,
+    limit: { na_siec_i_produkt_bazowy: LIMIT_NA_PRODUKT_BAZOWY, poza_limitem: pozaLimitem, bez_limitu: [...BEZ_LIMITU] },
+    w_limicie_na_siec: Object.fromEntries(['biedronka', 'lidl', 'kaufland', 'carrefour', 'dino'].map(s => [s, pozycje.filter(p => p.siec === s && !p.poza_limitem).length])),
     pozycje_na_siec: Object.fromEntries(['biedronka', 'lidl', 'kaufland', 'carrefour', 'dino'].map(s => [s, pozycje.filter(p => p.siec === s).length])),
     z_cena_regularna: pozycje.filter(p => p.cena_regularna !== null).length,
     z_promocja: pozycje.filter(p => p.promocja).length,

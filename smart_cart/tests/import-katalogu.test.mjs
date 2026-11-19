@@ -87,3 +87,39 @@ test('podgląd CSV: pozycje z kategorią i pominięte z powodem', async () => {
   assert.match(doBazy, /biedronka;Nabiał;Mleko UHT 3,2%;"Mleko UHT 3,2% ""Łaciate"" 1 l";5900000000017;1000 ml;package;3,79;2026-11-18;kodyzbiedry/);
   assert.match(pominiete, /brak_produktu_bazowego;biedronka;kodyzbiedry;Płyn do naczyń 500 ml;5,99/);
 });
+
+test('rozszerzenie słownika: każda reguła ma produkt bazowy w migracji, alkohol jest wykluczony', async () => {
+  const fs = await import('node:fs');
+  const { ROZSZERZENIE, produktBazowy } = await import('../scripts/import/slownik.mjs');
+  const migracja = fs.readFileSync(new URL('../supabase/migrations/20261119000100_extended_base_products.sql', import.meta.url), 'utf8');
+  for (const r of ROZSZERZENIE) assert.ok(migracja.includes(`('${r.nazwa.replace(/'/g, "''")}', '${r.kategoria}',`), r.nazwa);
+  for (const n of ['Piwo Tyskie 0,5 l', 'Piwo bezalkoholowe 0,0%', 'WÓDKA ŻUREK ŻYTNI 40% 0,5 l', 'BROWAR FORTUNA Komes Porter Malinowy', 'Wino czerwone 0,75 l'])
+    assert.equal(produktBazowy(n), null, n);
+  assert.equal(produktBazowy('OCET Z WINA 500ml')?.kategoria, 'Tłuszcze i Przetwory');
+  assert.equal(produktBazowy('NAPÓJ BEZALKOHOLOWY 0,5l')?.kategoria, 'Napoje');
+  assert.equal(produktBazowy('Kupiec Fasola biała drobna 400 g')?.nazwa === 'Pozostały drób', false);
+});
+
+test('piwo rozpoznane po marce nie trafia do bazy, a woda Żywiec Zdrój tak', async () => {
+  const { produktBazowy } = await import('../scripts/import/slownik.mjs');
+  for (const n of ['Lech Premium 0,5 l', 'Tyskie Gronie puszka 0,5l', 'Żubr 4x0,5l']) assert.equal(produktBazowy(n), null, n);
+  assert.equal(produktBazowy('Żywiec Zdrój woda niegazowana 1,5 l')?.kategoria, 'Napoje');
+});
+
+test('limit 25 na sieć i produkt bazowy: priorytet ceny i daty, produkty koszykowe bez limitu', async () => {
+  const { zastosujLimit, BEZ_LIMITU } = await import('../scripts/import/import-katalogu.mjs');
+  const p = (siec, bazowy, i, extra = {}) => ({ siec, produkt_bazowy: bazowy, nazwa: `P${String(i).padStart(3, '0')}`, cena_regularna: 1,
+    obserwacja_regularnej: '2026-11-01', ilosc: { value: 1, unit: 'szt' }, ean: null, zdjecie: null, ...extra });
+  const czipsy = Array.from({ length: 30 }, (_, i) => p('biedronka', 'Chipsy ziemniaczane', i));
+  czipsy[29].obserwacja_regularnej = '2026-11-18';
+  czipsy[28].cena_regularna = null;
+  const mleko = Array.from({ length: 40 }, (_, i) => p('biedronka', 'Mleko UHT 3,2%', i));
+  const lidl = Array.from({ length: 30 }, (_, i) => p('lidl', 'Chipsy ziemniaczane', i));
+  assert.ok(BEZ_LIMITU.has('Mleko UHT 3,2%'));
+  assert.equal(zastosujLimit([...czipsy, ...mleko, ...lidl], 25), 10);
+  assert.equal(czipsy.filter(x => !x.poza_limitem).length, 25);
+  assert.equal(czipsy[29].poza_limitem, false); // najnowsza cena wygrywa
+  assert.equal(czipsy[28].poza_limitem, true);  // brak ceny regularnej przegrywa
+  assert.ok(mleko.every(x => !x.poza_limitem));
+  assert.equal(lidl.filter(x => x.poza_limitem).length, 5);
+});

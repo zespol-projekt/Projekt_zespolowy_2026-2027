@@ -104,3 +104,11 @@ test('wczytanie folderu danych: pomija pliki starszych wersji i liczy sumy kontr
   assert.match(pliki[0].sha256, /^[0-9a-f]{64}$/);
   fs.rmSync(dane, { recursive: true, force: true });
 });
+
+test('słownik produktów bazowych: spożywcze przechodzą, niespożywcze nie', async () => {
+  const { produktBazowy } = await import('../scripts/import/slownik.mjs');
+  assert.equal(produktBazowy('Mleko UHT 3,2% Łaciate 1l')?.nazwa, 'Mleko UHT 3,2%');
+  assert.equal(produktBazowy('KREM DO SMAROWANIA NUTELLA 350g')?.kategoria, 'Tłuszcze i Przetwory');
+  for (const nie of ['WORKI MAGNUM FLEX JAN NIEZB. 35L 12 szt.', 'Płyn do naczyń 500 ml', 'Woda perfumowana damska Elissé',
+    'MUS DAWTONA HALLOWEN MIX 4x100G+ZABAWKA', 'Proszek do prania 1 kg', 'Karma dla kota 85 g']) assert.equal(produktBazowy(nie), null, nie);
+});
