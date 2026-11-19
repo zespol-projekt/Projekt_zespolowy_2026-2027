@@ -84,7 +84,7 @@ test('podgląd CSV: pozycje z kategorią i pominięte z powodem', async () => {
   ]);
   const { doBazy, pominiete } = podgladCsv(pozycje, listaPominietych);
   assert.match(doBazy, /^﻿siec;kategoria;/);
-  assert.match(doBazy, /biedronka;Nabiał;Mleko UHT 3,2%;"Mleko UHT 3,2% ""Łaciate"" 1 l";5900000000017;1000 ml;package;3,79;2026-11-18;kodyzbiedry/);
+  assert.match(doBazy, /biedronka;Nabiał;Mleko UHT 3,2%;"Mleko UHT 3,2% ""Łaciate"" 1 l";5900000000017;5900000000017;1000 ml;package;3,79;2026-11-18;kodyzbiedry/);
   assert.match(pominiete, /brak_produktu_bazowego;biedronka;kodyzbiedry;Płyn do naczyń 500 ml;5,99/);
 });
 
@@ -122,4 +122,49 @@ test('limit 25 na sieć i produkt bazowy: priorytet ceny i daty, produkty koszyk
   assert.equal(czipsy[28].poza_limitem, true);  // brak ceny regularnej przegrywa
   assert.ok(mleko.every(x => !x.poza_limitem));
   assert.equal(lidl.filter(x => x.poza_limitem).length, 5);
+});
+
+test('duble: kilka EAN pod jedną nazwą, nazwa z ilością i bez, identyczna nazwa z inną gramaturą w polu', () => {
+  const kody = (ean, cena) => obserwacjaKodyzbiedry({ ean, nazwa: 'ALPRO JOG. SOJOWY KOKOS 400g', cena, cena_widziana: '2026-11-18T18:00:00Z' });
+  const { pozycje } = pozycjeZObserwacji([
+    kody('5411188138051', '6.00'), kody('5411188099154', '6.00'), kody('5411188119098', '5.49'),
+    obserwacjaAntonka({ nazwa: 'Awokado Hass', cena: '3.99', ilosc_gramatura: '1 szt', data_obserwacji: '2026-11-01' }, 'carrefour', true),
+    obserwacjaAntonka({ nazwa: 'Awokado Hass 1 szt.', cena: '4.29', ilosc_gramatura: '', data_obserwacji: '2026-11-10' }, 'carrefour', true),
+    obserwacjaAntonka({ nazwa: 'Barilla Makaron Spaghetti 400 g', cena: '7.99', ilosc_gramatura: '500 g', data_obserwacji: '2026-11-10' }, 'carrefour', true),
+    obserwacjaAntonka({ nazwa: 'Barilla Makaron Spaghetti 400 g', cena: '8.49', ilosc_gramatura: '400 g', data_obserwacji: '2026-11-12' }, 'carrefour', true),
+    obserwacjaAntonka({ nazwa: 'Mleko UHT 2% Łaciate 1 l', cena: '3.49', ilosc_gramatura: '1 l', data_obserwacji: '2026-11-12' }, 'carrefour', true),
+    obserwacjaAntonka({ nazwa: 'Mleko UHT 3,2% Łaciate 1 l', cena: '3.69', ilosc_gramatura: '1 l', data_obserwacji: '2026-11-12' }, 'carrefour', true),
+  ]);
+  const alpro = pozycje.filter(p => p.siec === 'biedronka');
+  assert.equal(alpro.length, 1);
+  assert.deepEqual(alpro[0].eany, ['5411188099154', '5411188119098', '5411188138051']);
+  assert.equal(alpro[0].ean, '5411188099154');
+  assert.equal(alpro[0].cena_regularna, 6, 'przy tej samej dacie cena najczęstsza');
+  const awokado = pozycje.filter(p => p.nazwa.startsWith('Awokado'));
+  assert.equal(awokado.length, 1);
+  assert.equal(awokado[0].cena_regularna, 4.29);
+  assert.equal(pozycje.filter(p => p.nazwa.startsWith('Mleko')).length, 2, 'mleko 2% i 3,2% to różne produkty');
+  const barilla = pozycje.filter(p => p.nazwa.startsWith('Barilla'));
+  assert.equal(barilla.length, 1);
+  assert.equal(barilla[0].cena_regularna, 8.49);
+  assert.deepEqual(barilla[0].ilosc, { value: 400, unit: 'g' }, 'ilość z nazwy ma pierwszeństwo przed polem');
+});
+
+test('rdzeń nazwy: bez ilości opakowania, procenty i typ mąki zostają', async () => {
+  const { rdzenNazwy } = await import('../scripts/import/normalizacja.mjs');
+  assert.equal(rdzenNazwy('Awokado Hass 1 szt.'), rdzenNazwy('Awokado Hass'));
+  assert.equal(rdzenNazwy('KASZA BULGUR PLONY NATURY 4X100 g'), rdzenNazwy('Kasza bulgur Plony Natury 400g'));
+  assert.equal(rdzenNazwy('GROCH ŁUSKANY PLONY NATURY 0,5 kg'), 'groch luskany plony natury');
+  assert.notEqual(rdzenNazwy('Mleko 2% 1l'), rdzenNazwy('Mleko 3,2% 1l'));
+  assert.notEqual(rdzenNazwy('Mąka pszenna typ 450 1 kg'), rdzenNazwy('Mąka pszenna typ 650 1kg'));
+});
+
+test('SQL: sprzątanie tylko na żądanie, z blokadą list zakupów', () => {
+  const { pozycje } = pozycjeZObserwacji([tanszy({ nazwa: 'Mleko UHT 3,2% Pilos 1l', cena_promocyjna: '2.25', typ_promocji: 'obniżka' })]);
+  assert.doesNotMatch(sqlImportu(pozycje), /DELETE FROM/);
+  const s = sqlImportu(pozycje, { sprzatanie: true });
+  assert.match(s, /Sprzątanie przerwane/);
+  assert.match(s, /DELETE FROM public\.store_offers/);
+  assert.ok(s.indexOf('Sprzątanie przerwane') < s.indexOf('DELETE FROM public.store_offers'), 'blokada przed usuwaniem');
+  assert.match(s, /ROLLBACK;/);
 });

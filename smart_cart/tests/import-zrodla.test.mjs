@@ -21,6 +21,11 @@ test('ilość opakowania: jednostki, przecinki, wielopaki, masa brutto, procenty
   for (const brak of ['', 'Mleko 3.2% Pilos', '1 zestaw', 'kg', '10rolek', 'Mleko 1 laktoza']) assert.equal(ilosc(brak), null, brak);
 });
 
+test('ilość po kropce skrótu w nazwie (SPIŻ.340/285g)', () => {
+  assert.deepEqual(ilosc('KUKURYDZA SŁODKA NASZA SPIŻ.340/285g'), { value: 340, unit: 'g' });
+  assert.deepEqual(ilosc('Mleko 1.5l'), { value: 1500, unit: 'ml' });
+});
+
 test('cena za wagę tylko z jednoznacznych oznaczeń', () => {
   assert.deepEqual(cenaZaWage('Cytryna kg'), { value: 1000, unit: 'g' });
   assert.deepEqual(cenaZaWage('Szynka', '100g'), { value: 100, unit: 'g' });

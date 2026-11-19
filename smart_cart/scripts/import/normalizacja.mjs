@@ -46,7 +46,7 @@ export function ilosc(tekst) {
     if (!jedna || Number(ile) < 1) return null;
     return { value: Math.round(jedna.value * Number(ile) * 100) / 100, unit: jedna.unit, opakowania: Number(ile) };
   }
-  const trafienia = [...t.matchAll(new RegExp(String.raw`(?<![\d.,])${LICZBA}\s*${JEDN}\.?(?![a-ząćęłńóśźż])`, 'g'))];
+  const trafienia = [...t.matchAll(new RegExp(String.raw`(?<![\d,]|\d\.)${LICZBA}\s*${JEDN}\.?(?![a-ząćęłńóśźż])`, 'g'))];
   if (!trafienia.length) return null;
   const [, wartosc, jednostka] = trafienia.at(-1);
   return przelicz(wartosc, jednostka);
@@ -76,4 +76,15 @@ export function warunkiPromocji(tekst) {
     mieszanie_produktow: /mieszaj|dowoln\w* produkt|rozne rodzaje|rozne smaki|rozne warianty/.test(t),
     limit: /\blimit\w*\b/.test(t),
   };
+}
+
+/**
+ * Wzorzec ilości w nazwie ('500 g', '1,5 l', '4x100 g', '340/285g', '10 szt.'). Ten sam tekst jest używany w SQL
+ * (pg_temp.rdzen w imporcie), więc zawiera tylko składnię wspólną dla JavaScriptu i PostgreSQL.
+ */
+export const WZORZEC_ILOSCI_W_NAZWIE = String.raw`(?<![0-9,])([0-9]+\s*/\s*)?([0-9]+\s*[x×*]\s*)?[0-9]+([.,][0-9]+)?\s*(kg|dag|gr|g|ml|cl|l|szt|sztuk|op)\.?(?![a-z0-9ąćęłńóśźż])`;
+
+/** Nazwa bez ilości opakowania, znormalizowana: 'Awokado Hass 1 szt.' i 'Awokado Hass' dają 'awokado hass'. Procenty zostają. */
+export function rdzenNazwy(nazwa) {
+  return normTekst(String(nazwa ?? '').toLowerCase().replace(new RegExp(WZORZEC_ILOSCI_W_NAZWIE, 'g'), ' '));
 }

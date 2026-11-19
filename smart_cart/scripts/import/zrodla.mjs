@@ -49,7 +49,8 @@ const pusty = v => (v ?? '').trim() === '';
 const dzien = iso => (/^\d{4}-\d{2}-\d{2}/.test(iso ?? '') ? iso.slice(0, 10) : null);
 
 function bazowa(zrodlo, siec, klucz, w, { nazwa, marka = '', gramatura = '', ean = null, kategoria = '', zdjecie = '', link = '', jednostka = '' }) {
-  const ilosc_ = ilosc(gramatura) ?? ilosc(nazwa);
+  // Ilość z nazwy ma pierwszeństwo: pole gramatury w źródle bywa sprzeczne z nazwą (np. nazwa 400 g, pole 500 g).
+  const ilosc_ = ilosc(nazwa) ?? ilosc(gramatura);
   return {
     zrodlo, siec, klucz_zrodla: `${zrodlo}:${siec}:${klucz}`,
     ean: ean && /^\d{8,14}$/.test(ean) ? ean : null,
