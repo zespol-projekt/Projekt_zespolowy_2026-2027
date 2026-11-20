@@ -6,6 +6,7 @@ import { metadataSql } from './catalog-metadata.mjs';
 import { pozycjeZObserwacji, sqlImportu } from './import/import-katalogu.mjs';
 import { obserwacjaKodyzbiedry, obserwacjaTanszykoszyk } from './import/zrodla.mjs';
 import { rdzenNazwy, WZORZEC_ILOSCI_W_NAZWIE } from './import/normalizacja.mjs';
+import { czytajTekst, decyzja, parsujCsv, sqlPrzegladu } from './mleko/przeglad-mleka.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const container = process.env.SMARTCART_TEST_DB_CONTAINER ?? 'smartcart-pg17-check';
@@ -17,6 +18,14 @@ function sql(input) {
   });
   if (result.status !== 0) throw new Error(result.stderr || result.error?.message || 'Migration check failed');
   if (result.stdout.trim()) process.stdout.write(result.stdout);
+}
+// Wynik zapytania (stdout) - np. CSV z \copy ... TO STDOUT.
+function sqlOut(input) {
+  const result = spawnSync('docker', ['exec', '-i', container, 'psql', '-U', container.includes('pg17') ? 'supabase_admin' : 'postgres', '-d', 'postgres', '-v', 'ON_ERROR_STOP=1', '-X', '-q'], {
+    input, encoding: 'utf8', maxBuffer: 4 * 1024 * 1024,
+  });
+  if (result.status !== 0) throw new Error(result.stderr || result.error?.message || 'Query failed');
+  return result.stdout;
 }
 // Skrypt, który ma się nie udać (z komunikatem pasującym do wzorca).
 function sqlFails(input, pattern) {
@@ -203,5 +212,53 @@ for (const przebieg of [3, 4]) {
   END $verify$;`);
 }
 console.log('Catalog import cleanup: shopping-list guard, stale offers/products/empty groups removed, other chains untouched, idempotent.');
+
+// Przegląd mleka: lista z bazy -> decyzje -> wygenerowany SQL wykonany w izolowanej bazie (próba, potem zapis).
+sql(`
+INSERT INTO public.base_products(id, category_id, name) SELECT 97001, id, 'Mleko przegląd' FROM public.categories WHERE slug = 'nabial';
+INSERT INTO public.products(id, product_key, base_product_id, canonical_name, quantity_value, quantity_unit) VALUES
+  (97101, 'mp:1', 97001, 'MLEKO ŁOWICKIE 3,2% EKO KARTON 1 l', 1000, 'ml'),
+  (97102, 'mp:2', 97001, 'Mlekovita Wydojone mleko bez laktozy 2% tł. 1l', 1000, 'ml'),
+  (97103, 'mp:3', 97001, 'MLEKO SPOŻYWCZE POLSKIE 2% 1l', 1000, 'ml'),
+  (97104, 'mp:4', 97001, 'Mleko UHT 3,2% Testowe 1 l', 1000, 'ml'),
+  (97105, 'mp:5', 97001, 'Mleko o smaku truskawkowym 1 l', 1000, 'ml');
+INSERT INTO auth.users(id, email, email_confirmed_at) VALUES ('97000000-0000-4000-8000-000000000001', 'przeglad@example.invalid', now());
+INSERT INTO public.shopping_lists(id, owner_id, name) VALUES ('97000000-0000-4000-8000-000000000002', '97000000-0000-4000-8000-000000000001', 'Mleko');
+INSERT INTO public.shopping_list_items(list_id, group_id, quantity, unit)
+SELECT '97000000-0000-4000-8000-000000000002', comparison_group_id, 1000, 'ml' FROM public.products WHERE id = 97101;
+`);
+const zapytanieListy = fs.readFileSync(path.join(root, 'scripts/mleko/mleko-do-przegladu.sql'), 'utf8')
+  .replace("TO '/sql/mleko-do-przegladu.csv'", 'TO STDOUT');
+const lista = parsujCsv(czytajTekst(Buffer.from(sqlOut(zapytanieListy), 'utf8')));
+const naLiscie = lista.map(w => Number(w.produkt_id)).filter(id => id >= 97101 && id <= 97105).sort();
+if (naLiscie.join() !== '97101,97102,97103') throw new Error(`Lista przeglądu: oczekiwano 97101-97103, jest ${naLiscie.join()}`);
+const wiersz = id => lista.find(w => Number(w.produkt_id) === id);
+if (wiersz(97102).laktoza !== 'bez laktozy' || wiersz(97101).tluszcz !== '3,2') throw new Error('Lista przeglądu: zła propozycja laktozy/tłuszczu');
+const wypelnione = { 97101: 'UHT', 97102: 'świeże', 97103: 'pomiń' };
+const decyzjePrzegladu = lista.filter(w => wypelnione[w.produkt_id]).map((w, i) => decyzja({ ...w, rodzaj: wypelnione[w.produkt_id] }, i + 2));
+sql(sqlPrzegladu(decyzjePrzegladu, { tryb: 'proba', zrodlo: 'test-proba' }));
+sql(`DO $verify$ BEGIN
+  IF EXISTS (SELECT 1 FROM public.catalog_reviews) OR (SELECT classification_source FROM public.products WHERE id = 97101) = 'reviewed'
+    THEN RAISE EXCEPTION 'Próba przeglądu mleka coś zapisała'; END IF;
+END $verify$;`);
+sql(sqlPrzegladu(decyzjePrzegladu, { tryb: 'zapis', zrodlo: 'test-zapis' }));
+sql(`DO $verify$ DECLARE uht bigint := (SELECT id FROM public.comparison_groups WHERE group_key = 'milk:uht:3.2:z laktozą');
+BEGIN
+  IF (SELECT comparison_group_id FROM public.products WHERE id = 97101) IS DISTINCT FROM uht
+    OR (SELECT classification_source FROM public.products WHERE id = 97101) <> 'reviewed' THEN RAISE EXCEPTION 'Mleko UHT nie trafiło do grupy'; END IF;
+  IF (SELECT g.group_key FROM public.products p JOIN public.comparison_groups g ON g.id = p.comparison_group_id WHERE p.id = 97102) <> 'milk:świeże:2:bez laktozy'
+    THEN RAISE EXCEPTION 'Mleko świeże bez laktozy nie trafiło do grupy'; END IF;
+  IF (SELECT g.group_key FROM public.products p JOIN public.comparison_groups g ON g.id = p.comparison_group_id WHERE p.id = 97103) NOT LIKE 'product:%'
+    OR NOT EXISTS (SELECT 1 FROM public.catalog_reviews WHERE product_id = 97103 AND decision = 'skip') THEN RAISE EXCEPTION 'Pominięte mleko zmieniło grupę'; END IF;
+  IF NOT EXISTS (SELECT 1 FROM public.shopping_list_items WHERE list_id = '97000000-0000-4000-8000-000000000002' AND group_id = uht)
+    THEN RAISE EXCEPTION 'Pozycja listy nie przeszła do nowej grupy'; END IF;
+  IF (SELECT count(*) FROM public.catalog_reviews WHERE source = 'test-zapis') <> 3 THEN RAISE EXCEPTION 'Brak wpisów w rejestrze przeglądu'; END IF;
+  -- Import zmieniający nazwę nie cofa decyzji.
+  UPDATE public.products SET canonical_name = 'MLEKO ŁOWICKIE 3,2% EKO KARTON 1 l (zmiana)' WHERE id = 97101;
+  IF (SELECT comparison_group_id FROM public.products WHERE id = 97101) IS DISTINCT FROM uht THEN RAISE EXCEPTION 'Zmiana nazwy cofnęła decyzję'; END IF;
+END $verify$;`);
+const poPrzegladzie = parsujCsv(czytajTekst(Buffer.from(sqlOut(zapytanieListy), 'utf8'))).filter(w => Number(w.produkt_id) >= 97101 && Number(w.produkt_id) <= 97105);
+if (poPrzegladzie.length) throw new Error('Mleka z decyzją wróciły na listę przeglądu');
+console.log('Milk review: list export, dry-run rollback, UHT/fresh/skip decisions in rule groups, list items kept, reviewed decisions survive renames.');
 console.log('Catalog import: EAN/name matching, duplicate merging, replacement, untouched old offers, per-category limit, idempotent rerun and dry-run rollback passed.');
 console.log('Database migration and RLS scenarios passed.');

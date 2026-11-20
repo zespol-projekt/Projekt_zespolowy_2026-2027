@@ -162,7 +162,17 @@ node scripts/gazetki/gazetki.mjs usun --id <id> --proba                    # usu
 npx.cmd supabase@3.1.0 functions deploy leaflets                           # wdrożenie Edge Function (po zmianie jej kodu)
 ```
 
-## 9. Typowy cykl odświeżenia danych
+## 9. Mleko: przegląd ręczny
+
+Pełny opis: `docs/mleko.md`. Lista mlek bez rodzaju (UHT/świeże) → uzupełnienie kolumny `rodzaj` → SQL z decyzji (próba, potem `--zapis`) → uruchomienie jak w punkcie 4.
+
+```powershell
+docker run --rm -it -v "C:\Users\good1\Desktop\Projekt\Projekt_zespolowy_2026-2027\smart_cart:/repo:ro" -v "C:\Users\good1\Desktop\Dane_sklepy_current\raporty_importu:/sql" postgres:17 psql "host=HOST port=5432 dbname=postgres user=USER sslmode=require" -X -f /repo/scripts/mleko/mleko-do-przegladu.sql
+node scripts/mleko/przeglad-mleka.mjs C:\Users\good1\Desktop\Dane_sklepy_current\raporty_importu\mleko-do-przegladu.csv            # próba
+node scripts/mleko/przeglad-mleka.mjs C:\Users\good1\Desktop\Dane_sklepy_current\raporty_importu\mleko-do-przegladu.csv --zapis    # zapis
+```
+
+## 10. Typowy cykl odświeżenia danych
 
 1. Aktualne pliki danych w folderze danych (poza repozytorium; ich przygotowanie nie jest częścią repo).
 2. `npm.cmd test` (punkt 2).
