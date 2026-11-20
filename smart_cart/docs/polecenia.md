@@ -158,6 +158,7 @@ node scripts/gazetki/gazetki.mjs dodaj-pobrane --archiwum $arch --folder $pob   
 node scripts/gazetki/gazetki.mjs wgraj --archiwum $arch --proba
 node scripts/gazetki/gazetki.mjs wgraj --archiwum $arch                    # Storage + publikacja
 node scripts/gazetki/gazetki.mjs sprzataj                                  # usunięcie dzień po końcu (archiwum zostaje)
+node scripts/gazetki/gazetki.mjs usun --id <id> --proba                    # usunięcie wskazanej gazetki (np. duplikatu), potem bez --proba
 npx.cmd supabase@3.1.0 functions deploy leaflets                           # wdrożenie Edge Function (po zmianie jej kodu)
 ```
 

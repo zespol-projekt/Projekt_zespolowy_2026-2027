@@ -1,13 +1,13 @@
 # Gazetki: dane dla czytnika w aplikacji
 
-Stan: 19–20 listopada 2026. Odpowiedź na propozycję kontraktu Filipa (`leaflets-contract.md`, 17.11.2026). Gazetki są oglądane **wewnątrz SMARTCART** jako obrazy stron (wymaganie z `Damian.MD`, pkt 14); nie przekierowujemy na strony sklepów.
+Stan: 20 listopada 2026 (pierwsze gazetki wgrane i opublikowane). Odpowiedź na propozycję kontraktu Filipa (`leaflets-contract.md`, 17.11.2026). Gazetki są oglądane **wewnątrz SMARTCART** jako obrazy stron (wymaganie z `Damian.MD`, pkt 14); nie przekierowujemy na strony sklepów.
 
 ## Dla Filipa: endpoint i odpowiedź
 
 - Adres: `GET <EXPO_PUBLIC_SUPABASE_URL>/functions/v1/leaflets` — Edge Function `leaflets` we wspólnym projekcie Supabase. Ustaw `EXPO_PUBLIC_LEAFLETS_API_URL` na ten adres (po wdrożeniu funkcji).
 - Nagłówki jak w Twojej propozycji: `Accept: application/json`, `Authorization: Bearer <access token bieżącej sesji>`. Funkcja sprawdza sesję, potwierdzony email i to, że konto nie jest anonimowe. Klucz administracyjny nie jest potrzebny po stronie klienta.
 - Odpowiedź 200 dokładnie w formacie `version: 1` z Twojej propozycji: `id`, `chain {id, name}`, `title`, `validFrom`, `validTo`, `format: "images"`, `cover`, `pages[] {url, width, height, mimeType}`. `chain.id` to slug sieci (`biedronka`, `lidl`, `dino`, …). `cover` to pierwsza strona.
-- Strony są w kolejności czytania, JPEG/PNG/WebP (głównie WebP i JPEG, ok. 1150–1420 × 1800–2400 px, ok. 300 KB), każda do 8 MiB, bok do 8192 px, do 30 mln pikseli. Do 200 gazetek, odpowiedź do 1 MiB.
+- Strony są w kolejności czytania, WebP albo JPEG (stan 20.11.2026: Lidl 710×1200, Biedronka 1146×1800, Kaufland i Carrefour ok. 1200×1750–1950, Dino ok. 1750×2500; zwykle 100–700 KB), każda do 8 MiB, bok do 8192 px, do 30 mln pikseli. `width` i `height` w odpowiedzi to prawdziwe wymiary pliku. Do 200 gazetek, odpowiedź do 1 MiB.
 - Adresy obrazów są **podpisane i ważne 1 godzinę** (prywatny bucket Storage). Obraz nie potrzebuje nagłówków aplikacji; JWT, apikey i cookies nie są do niego wysyłane. Po wygaśnięciu podpisu Storage odpowiada 400/403 — wtedy klient ponownie pobiera listę (te same `id` i kolejność stron, nowe adresy).
 - Błędy: `401 {"error":"unauthorized"}` (brak/zła sesja), `403 {"error":"email_not_confirmed"}`, `405` (inna metoda niż GET/OPTIONS), `503 {"error":"unavailable"}` (chwilowa niedostępność bazy/Storage). Treść błędu nie zawiera szczegółów serwera.
 - CORS: `GET, OPTIONS`, nagłówki `authorization, accept, apikey, x-client-info, content-type`. Domyślnie `Access-Control-Allow-Origin: *` (bez cookies); można zawęzić sekretem `LEAFLETS_ALLOWED_ORIGINS` (lista originów po przecinku).
@@ -95,6 +95,8 @@ node scripts/gazetki/gazetki.mjs sprzataj
 - **Daty:** Lidl i Dino podają okres ważności — nazwa folderu jest od razu poprawna. **Biedronka podaje tylko początek**; koniec jest szacowany i skrypt wypisuje przy takiej gazetce „KONIEC SZACOWANY”. Jeśli w gazetce jest inna data końca, popraw ją w nazwie folderu **przed** `dodaj-pobrane`. Gazetka z niezmienioną szacowaną datą jest w bazie oznaczona jako szacowana.
 - `dodaj-pobrane` bierze sieć i daty z nazwy, a dla folderów z `pobierz` dokładny tytuł i adres źródła z `zrodlo.json`. Pliki o nazwie niezgodnej ze wzorem pomija z powodem (np. oryginalna nazwa pliku z Kauflanda). Gazetek już w archiwum nie dodaje drugi raz, więc folder można trzymać w całości albo czyścić po dodaniu. Datę zmieniamy przed dodaniem — zmiana daty „od” po dodaniu utworzy nową gazetkę.
 - Wygasła gazetka trafia tylko do archiwum.
+
+Usunięcie wskazanej gazetki z bazy i Storage (np. duplikatu albo błędnie dodanej; archiwum lokalne zostaje): `usun --id <id>[,<id>...]`, najpierw z `--proba`. Identyfikatory widać w wyniku `wgraj` albo w tabeli `leaflets`.
 
 Pojedynczo, bez zmiany nazwy pliku, działa też `reczna` (`--siec`, `--tytul`, `--od`, `--do`, `--pdf` albo `--obrazy`, opcjonalnie `--zrodlo`). Przegląd archiwum: `lista --archiwum $arch`.
 

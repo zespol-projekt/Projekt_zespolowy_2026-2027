@@ -8,7 +8,7 @@ import {
   dataBezRoku, datyBiedronki, idGazetki, parsujGazetkeLidla, parsujGazetkiDino, parsujIdPrzegladarkiBiedronki,
   parsujListeBiedronki, parsujListeLidla, parsujTytulBiedronki, parsujStronyBiedronki, rozpakujNuxt, ZRODLA,
 } from '../scripts/gazetki/zrodla.mjs';
-import { czytajArchiwum, czytajNazwePobranej, dodajPobrane, dodajRecznie, pobierzGazetki, sprzataj, wczytajDostep, wgraj } from '../scripts/gazetki/gazetki.mjs';
+import { czytajArchiwum, czytajNazwePobranej, dodajPobrane, dodajRecznie, pobierzGazetki, sprzataj, usun, wczytajDostep, wgraj } from '../scripts/gazetki/gazetki.mjs';
 import { naglowkiCors, zbudujOdpowiedz } from '../supabase/functions/leaflets/odpowiedz.ts';
 
 // Minimalne nagłówki obrazów (wystarczą do rozpoznania typu i wymiarów).
@@ -147,7 +147,11 @@ function atrapa(stan) {
         if (operacja.kolumny.includes('leaflet_pages(')) for (const w of rows) w.leaflet_pages = stan.leaflet_pages.filter(p => p.leaflet_id === w.id);
         return { data: rows, error: null };
       }
-      if (operacja.rodzaj === 'delete') stan[tabela] = stan[tabela].filter(w => !pasuje(w));
+      if (operacja.rodzaj === 'delete') {
+        stan[tabela] = stan[tabela].filter(w => !pasuje(w));
+        // jak ON DELETE CASCADE w bazie
+        if (tabela === 'leaflets') stan.leaflet_pages = stan.leaflet_pages.filter(p => stan.leaflets.some(l => l.id === p.leaflet_id));
+      }
       if (operacja.rodzaj === 'update') stan[tabela].filter(pasuje).forEach(w => Object.assign(w, operacja.zmiany));
       return { data: null, error: null };
     };
@@ -199,6 +203,14 @@ test('wgranie: strony do Storage, publikacja po komplecie, ponowne wgranie bez d
   assert.equal(stan.leaflets.length, 0);
   assert.equal(klient.pliki.usuniete.length, 2);
   assert.equal(czytajArchiwum(archiwum).length, 1, 'archiwum lokalne zostaje');
+  // Usunięcie wskazanej gazetki (np. duplikatu).
+  await wgraj({ archiwum, klient, dzis: '2026-11-19', log: () => {} });
+  const id = stan.leaflets[0].id;
+  assert.equal((await usun({ klient, ids: [id, 'nie-ma-takiej'], proba: true, log: () => {} }))[1].stan, 'brak w bazie');
+  assert.equal(stan.leaflets.length, 1);
+  await usun({ klient, ids: [id], log: () => {} });
+  assert.deepEqual([stan.leaflets.length, stan.leaflet_pages.length], [0, 0]);
+  assert.equal(czytajArchiwum(archiwum).length, 1);
 });
 
 test('dostęp: tylko klucz service_role, nigdy klucz publiczny', () => {

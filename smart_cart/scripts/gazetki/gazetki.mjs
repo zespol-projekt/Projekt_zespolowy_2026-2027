@@ -9,6 +9,7 @@
 //                                             [--zrodlo https://...] (--obrazy <folder ze stronami> | --pdf <plik.pdf>)
 //   node scripts/gazetki/gazetki.mjs wgraj    --archiwum <folder> [--proba]
 //   node scripts/gazetki/gazetki.mjs sprzataj [--proba]
+//   node scripts/gazetki/gazetki.mjs usun     --id <id>[,<id>...] [--proba]      (np. duplikaty; archiwum zostaje)
 //   node scripts/gazetki/gazetki.mjs lista    --archiwum <folder>
 //
 // Zasady (19.11.2026):
@@ -363,6 +364,23 @@ export async function sprzataj({ klient, proba = false, dzis = dzisWPolsce(), lo
   return raport;
 }
 
+/** Usuwa wskazane gazetki z bazy i Storage (np. duplikaty). Archiwum lokalne zostaje. */
+export async function usun({ klient, ids, proba = false, log = console.log }) {
+  const raport = [];
+  for (const id of ids) {
+    const { data, error } = await klient.from('leaflets').select('id, leaflet_pages(storage_path)').eq('id', id);
+    if (error) throw new Error(`leaflets: ${error.message}`);
+    if (!data?.length) { raport.push({ id, stan: 'brak w bazie' }); log(`${id}: brak w bazie`); continue; }
+    const pliki = (data[0].leaflet_pages ?? []).map(p => p.storage_path);
+    raport.push({ id, pliki: pliki.length, stan: proba ? 'do usunięcia' : 'usunięta' });
+    if (proba) { log(`[próba] usunęłabym ${id} (${pliki.length} plików)`); continue; }
+    for (let i = 0; i < pliki.length; i += 500) sprawdz(await klient.storage.from(BUCKET).remove(pliki.slice(i, i + 500)), `Storage ${id}`);
+    sprawdz(await klient.from('leaflets').delete().eq('id', id), `leaflets ${id}`);
+    log(`${id}: usunięta z bazy i Storage (${pliki.length} plików)`);
+  }
+  return raport;
+}
+
 // ---------- CLI ----------
 
 function argumenty(argv) {
@@ -399,11 +417,15 @@ async function main() {
     wynik = await wgraj({ archiwum, klient: a.proba ? null : await klientSupabase(), proba: Boolean(a.proba) });
   } else if (polecenie === 'sprzataj') {
     wynik = await sprzataj({ klient: await klientSupabase(), proba: Boolean(a.proba) });
+  } else if (polecenie === 'usun') {
+    const ids = String(a.id ?? '').split(',').map(x => x.trim()).filter(Boolean);
+    if (!ids.length) throw new Error('Podaj --id <id gazetki>[,<id>...] (id z bazy, np. z polecenia "lista")');
+    wynik = await usun({ klient: await klientSupabase(), ids, proba: Boolean(a.proba) });
   } else if (polecenie === 'lista') {
     wymagajArchiwum();
     wynik = czytajArchiwum(archiwum).map(m => ({ id: m.id, siec: m.siec, od: m.wazne_od, do: m.wazne_do, strony: m.strony.length }));
   } else {
-    throw new Error('Polecenia: pobierz | dodaj-pobrane | reczna | wgraj | sprzataj | lista (opis na początku pliku)');
+    throw new Error('Polecenia: pobierz | dodaj-pobrane | reczna | wgraj | sprzataj | usun | lista (opis na początku pliku)');
   }
   console.log(JSON.stringify(wynik, null, 2));
   if (Array.isArray(wynik) && wynik.some(x => x.blad)) process.exitCode = 1;
