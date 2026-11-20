@@ -1,14 +1,20 @@
 // Gazetki: pobranie z oficjalnych stron, archiwum lokalne, wgranie do Supabase Storage i usuwanie wygasłych.
 // Uruchamia administrator (Damian) na swoim komputerze. Nie jest częścią aplikacji.
 //
-//   node scripts/gazetki/gazetki.mjs pobierz  --archiwum <folder> [--sieci biedronka,lidl,dino]
+//   node scripts/gazetki/gazetki.mjs pobierz  --folder <folder pobranych> [--archiwum <folder>] [--sieci biedronka,lidl,dino]
+//   node scripts/gazetki/gazetki.mjs dodaj-pobrane --archiwum <folder> --folder <folder z pobranymi PDF>
+//        nazwy plików: <sieć>_<od RRRR-MM-DD>_<do RRRR-MM-DD>_<tytuł>.pdf, np. kaufland_2026-11-19_2026-11-25_gazetka-tygodnia.pdf
+//        (albo folder o takiej nazwie z obrazami stron 1.jpg, 2.jpg, ...)
 //   node scripts/gazetki/gazetki.mjs reczna   --archiwum <folder> --siec kaufland --tytul "Gazetka" --od 2026-11-20 --do 2026-11-26
-//                                             --zrodlo https://... (--obrazy <folder ze stronami> | --pdf <plik.pdf>)
+//                                             [--zrodlo https://...] (--obrazy <folder ze stronami> | --pdf <plik.pdf>)
 //   node scripts/gazetki/gazetki.mjs wgraj    --archiwum <folder> [--proba]
 //   node scripts/gazetki/gazetki.mjs sprzataj [--proba]
 //   node scripts/gazetki/gazetki.mjs lista    --archiwum <folder>
 //
 // Zasady (19.11.2026):
+// - wszystkie gazetki przechodzą przez folder pobranych: "pobierz" zapisuje tam Biedronkę, Lidla i Dino (foldery
+//   <sieć>_<od>_<do>_<tytuł> ze stronami), Kaufland i Carrefour to PDF-y pobrane ręcznie; daty można poprawić w nazwie,
+//   a "dodaj-pobrane" przenosi je do archiwum (strony jako obrazy);
 // - w bazie i Storage są gazetki aktualne i przyszłe; usuwamy je dzień po dacie końca (sprzataj);
 // - archiwum lokalne (poza repo) zostaje na zawsze: <archiwum>/<siec>/<id>/meta.json + 001.jpg ...;
 // - strony są obrazami (JPEG/PNG/WebP, do 8 MiB, bok do 8192 px, do 30 mln pikseli), PDF jest zamieniany na obrazy;
@@ -88,27 +94,55 @@ export function zapiszWArchiwum(archiwum, g, strony, sprawdzono = new Date().toI
   return meta;
 }
 
-export async function pobierzGazetki({ archiwum, sieci, http, dzis = dzisWPolsce(), log = console.log }) {
+/** Wszystkie pliki zrodlo.json w folderze pobranych (do 3 poziomów) - żeby nie pobierać drugi raz tej samej gazetki. */
+function znanePobrane(folder, archiwum) {
+  const znane = new Set();
+  const przejdz = (kat, gl) => {
+    if (!fs.existsSync(kat)) return;
+    for (const w of fs.readdirSync(kat, { withFileTypes: true })) {
+      const p = path.join(kat, w.name);
+      if (w.isFile() && w.name === 'zrodlo.json') {
+        try { const z = JSON.parse(fs.readFileSync(p, 'utf8')); if (z.zrodlo_ref) znane.add(`${z.siec}|${z.zrodlo_ref}`); } catch { /* uszkodzony plik pomijamy */ }
+      } else if (w.isDirectory() && gl < 3) przejdz(p, gl + 1);
+    }
+  };
+  przejdz(folder, 0);
+  if (archiwum) for (const m of czytajArchiwum(archiwum)) if (m.zrodlo_ref) znane.add(`${m.siec}|${m.zrodlo_ref}`);
+  return znane;
+}
+
+/** Nazwa folderu pobranej gazetki według wzoru <sieć>_<od>_<do>_<tytuł> (tytuł skrócony, bez znaków zakazanych w Windows). */
+export const nazwaPobranej = g => `${g.siec}_${g.wazne_od}_${g.wazne_do}_${idGazetki(g.tytul).slice(0, 60) || 'gazetka'}`;
+
+/**
+ * Pobiera aktualne gazetki (Biedronka, Lidl, Dino) do folderu pobranych: <folder>/<sieć>/<sieć>_<od>_<do>_<tytuł>/
+ * ze stronami 001.webp, 002.webp... i plikiem zrodlo.json. Daty w nazwie folderu można poprawić przed "dodaj-pobrane".
+ * Gazetek już pobranych (także po zmianie nazwy folderu) albo już w archiwum nie pobiera ponownie.
+ */
+export async function pobierzGazetki({ folder, archiwum = null, sieci, http, dzis = dzisWPolsce(), log = console.log }) {
   const raport = [];
-  const istniejace = new Map(czytajArchiwum(archiwum).map(m => [m.id, m]));
+  const znane = znanePobrane(folder, archiwum);
   for (const siec of sieci) {
-    if (!ZNAJDZ[siec]) { raport.push({ siec, blad: 'brak automatycznego źródła - użyj polecenia "reczna"' }); continue; }
+    if (!ZNAJDZ[siec]) { raport.push({ siec, blad: 'brak automatycznego źródła - pobierz PDF ręcznie' }); continue; }
     try {
       const gazetki = await ZNAJDZ[siec]({ ...http, dzis });
       log(`${siec}: aktualne gazetki: ${gazetki.length}`);
       for (const g of gazetki) {
-        const stara = istniejace.get(g.id);
-        if (stara && stara.strony.length === g.strony.length && stara.strony.every((s, i) => s.url_zrodla === g.strony[i])
-          && stara.strony.every(s => fs.existsSync(path.join(stara.katalog, s.plik)))) {
-          zapiszMeta(stara, { ...g, sprawdzono: new Date().toISOString() });
-          raport.push({ siec, id: g.id, strony: g.strony.length, stan: 'bez zmian' });
-          continue;
+        const ref = String(g.zrodlo_ref ?? g.id);
+        if (znane.has(`${siec}|${ref}`)) { raport.push({ siec, gazetka: g.tytul, stan: 'juz_pobrana' }); continue; }
+        const kat = path.join(folder, siec, nazwaPobranej(g));
+        fs.mkdirSync(kat, { recursive: true });
+        let nr = 0;
+        for (const url of g.strony) {
+          const bufor = await http.pobierzBajty(url);
+          const o = opiszObraz(bufor);
+          fs.writeFileSync(path.join(kat, `${String(++nr).padStart(3, '0')}.${o.rozszerzenie}`), bufor);
         }
-        const strony = [];
-        for (const url of g.strony) strony.push({ bufor: await http.pobierzBajty(url), url_zrodla: url });
-        zapiszWArchiwum(archiwum, g, strony);
-        raport.push({ siec, id: g.id, strony: strony.length, stan: stara ? 'zaktualizowana' : 'nowa' });
-        log(`  ${g.id}: ${strony.length} stron (${g.wazne_od} - ${g.wazne_do}${g.koniec_szacowany ? ', koniec szacowany' : ''})`);
+        fs.writeFileSync(path.join(kat, 'zrodlo.json'), JSON.stringify({ wersja: 1, siec, tytul: g.tytul, wazne_od: g.wazne_od, wazne_do: g.wazne_do,
+          koniec_szacowany: Boolean(g.koniec_szacowany), zrodlo_url: g.zrodlo_url, zrodlo_ref: ref, pobrano: new Date().toISOString(), strony: g.strony }, null, 2) + '\n');
+        znane.add(`${siec}|${ref}`);
+        raport.push({ siec, folder: path.relative(folder, kat), strony: nr, stan: 'pobrana', ...(g.koniec_szacowany ? { uwaga: 'data końca szacowana - sprawdź i popraw w nazwie folderu' } : {}) });
+        log(`  ${path.relative(folder, kat)}: ${nr} stron${g.koniec_szacowany ? ' (KONIEC SZACOWANY - sprawdź datę "do" w gazetce)' : ''}`);
       }
     } catch (e) {
       raport.push({ siec, blad: e.message });
@@ -118,35 +152,118 @@ export async function pobierzGazetki({ archiwum, sieci, http, dzis = dzisWPolsce
   return raport;
 }
 
-function zapiszMeta(stara, nowa) {
-  const { katalog, ...meta } = stara;
-  Object.assign(meta, { tytul: nowa.tytul, wazne_od: nowa.wazne_od, wazne_do: nowa.wazne_do,
-    koniec_szacowany: Boolean(nowa.koniec_szacowany), sprawdzono: nowa.sprawdzono });
-  fs.writeFileSync(path.join(katalog, 'meta.json'), JSON.stringify(meta, null, 2) + '\n');
+// ---------- gazetki dodawane ręcznie (Kaufland, Carrefour) ----------
+
+export const SIECI = ['biedronka', 'lidl', 'kaufland', 'carrefour', 'dino'];
+// Strona gazetek sieci - zapisywana jako źródło, gdy gazetka jest dodana z pobranego pliku.
+export const STRONY_GAZETEK = {
+  biedronka: 'https://www.biedronka.pl/pl/gazetki',
+  lidl: 'https://www.lidl.pl/c/nasze-gazetki/s10008614',
+  kaufland: 'https://www.kaufland.pl/gazeta-reklamowa.html',
+  carrefour: 'https://www.carrefour.pl/promocje/gazetka-promocyjna',
+  dino: 'https://marketdino.pl/gazetki/lista/standard',
+};
+const OBRAZ = /\.(jpe?g|png|webp)$/i;
+
+/** Strony PDF jako obrazy WebP o szerokości do 1240 px (pakiety pdf-to-img i @napi-rs/canvas, instalowane na żądanie). */
+export async function pdfNaStrony(plik) {
+  let pdf; let canvas;
+  try {
+    ({ pdf } = await import('pdf-to-img'));
+    canvas = await import('@napi-rs/canvas');
+  } catch {
+    throw new Error('Do PDF potrzebne są pakiety: npm.cmd install --no-save pdf-to-img @napi-rs/canvas');
+  }
+  const strony = [];
+  for await (const png of await pdf(path.resolve(plik), { scale: 2.5 })) {
+    const obraz = await canvas.loadImage(Buffer.from(png));
+    const skala = Math.min(1, 1240 / obraz.width);
+    const c = canvas.createCanvas(Math.round(obraz.width * skala), Math.round(obraz.height * skala));
+    c.getContext('2d').drawImage(obraz, 0, 0, c.width, c.height);
+    strony.push({ bufor: Buffer.from(await c.encode('webp', 82)) });
+  }
+  return strony;
 }
 
+const stronyZFolderu = folder => fs.readdirSync(folder).filter(f => OBRAZ.test(f))
+  .sort((a, b) => a.localeCompare(b, 'pl', { numeric: true })).map(f => ({ bufor: fs.readFileSync(path.join(folder, f)) }));
+
 /** Gazetka dodana ręcznie: obrazy stron z folderu albo PDF zamieniony na obrazy. */
-export async function dodajRecznie({ archiwum, siec, tytul, od, doo, zrodlo, obrazy, pdf }) {
-  if (!/^[a-z0-9-]{2,32}$/.test(siec ?? '')) throw new Error('Podaj --siec (np. kaufland)');
+export async function dodajRecznie({ archiwum, siec, tytul, od, doo, zrodlo, obrazy, pdf, konwerterPdf = pdfNaStrony, zrodloRef = null, koniecSzacowany = false }) {
+  if (!SIECI.includes(siec)) throw new Error(`Podaj --siec: ${SIECI.join(', ')}`);
   if (!tytul) throw new Error('Podaj --tytul');
   if (!/^\d{4}-\d{2}-\d{2}$/.test(od ?? '') || !/^\d{4}-\d{2}-\d{2}$/.test(doo ?? '') || od > doo) throw new Error('Podaj poprawne --od i --do (RRRR-MM-DD)');
+  zrodlo = zrodlo ?? STRONY_GAZETEK[siec];
   if (!/^https:\/\//.test(zrodlo ?? '')) throw new Error('Podaj --zrodlo (adres https strony gazetki)');
   let strony;
-  if (obrazy) {
-    const pliki = fs.readdirSync(obrazy).filter(f => /\.(jpe?g|png|webp)$/i.test(f))
-      .sort((a, b) => a.localeCompare(b, 'pl', { numeric: true }));
-    strony = pliki.map(f => ({ bufor: fs.readFileSync(path.join(obrazy, f)) }));
-  } else if (pdf) {
-    let pdfNaObrazy;
-    try { ({ pdf: pdfNaObrazy } = await import('pdf-to-img')); } catch {
-      throw new Error('Do PDF potrzebny jest pakiet pdf-to-img: npm.cmd install --no-save pdf-to-img');
-    }
-    strony = [];
-    for await (const strona of await pdfNaObrazy(path.resolve(pdf), { scale: 2 })) strony.push({ bufor: Buffer.from(strona) });
-  } else throw new Error('Podaj --obrazy <folder> albo --pdf <plik>');
+  if (obrazy) strony = stronyZFolderu(obrazy);
+  else if (pdf) strony = await konwerterPdf(pdf);
+  else throw new Error('Podaj --obrazy <folder> albo --pdf <plik>');
   if (!strony.length || strony.length > 200) throw new Error(`Gazetka musi mieć 1-200 stron (jest ${strony.length})`);
-  const g = { siec, id: idGazetki(siec, od, tytul), tytul, wazne_od: od, wazne_do: doo, koniec_szacowany: false, zrodlo_url: zrodlo, zrodlo_ref: null };
+  const g = { siec, id: idGazetki(siec, od, tytul), tytul, wazne_od: od, wazne_do: doo, koniec_szacowany: koniecSzacowany, zrodlo_url: zrodlo, zrodlo_ref: zrodloRef };
   return zapiszWArchiwum(archiwum, g, strony);
+}
+
+/**
+ * Nazwa pobranej gazetki: <sieć>_<od RRRR-MM-DD>_<do RRRR-MM-DD>[_<tytuł>].pdf albo folder o takiej nazwie z obrazami stron.
+ * Zwraca { siec, od, doo, tytul } albo { blad }.
+ */
+export function czytajNazwePobranej(nazwa) {
+  const m = nazwa.replace(/\.pdf$/i, '').match(/^([a-z]+)_(\d{4}-\d{2}-\d{2})_(\d{4}-\d{2}-\d{2})(?:_(.+))?$/i);
+  if (!m) return { blad: 'nazwa nie pasuje do wzoru <sieć>_<od RRRR-MM-DD>_<do RRRR-MM-DD>_<tytuł>.pdf' };
+  const [, siecWNazwie, od, doo, tytulWNazwie] = m;
+  const siec = siecWNazwie.toLowerCase();
+  if (!SIECI.includes(siec)) return { blad: `nieznana sieć "${siecWNazwie}" (dozwolone: ${SIECI.join(', ')})` };
+  const poprawna = d => !Number.isNaN(Date.parse(`${d}T12:00:00Z`)) && new Date(`${d}T12:00:00Z`).toISOString().slice(0, 10) === d;
+  if (!poprawna(od) || !poprawna(doo)) return { blad: 'niepoprawna data' };
+  if (od > doo) return { blad: 'data "od" jest późniejsza niż "do"' };
+  const t = (tytulWNazwie ?? '').replace(/[-_]+/g, ' ').trim();
+  return { siec, od, doo, tytul: t ? (t.charAt(0).toUpperCase() + t.slice(1)).slice(0, 200) : 'Gazetka' };
+}
+
+/** Wszystkie pobrane gazetki z folderu (i jego podfolderów) do archiwum; już dodane są pomijane. */
+export async function dodajPobrane({ archiwum, folder, dzis = dzisWPolsce(), konwerterPdf = pdfNaStrony, log = console.log }) {
+  if (!fs.existsSync(folder)) throw new Error(`Brak folderu ${folder}`);
+  const kandydaci = [];
+  const przejdz = (kat, glebokosc) => {
+    for (const wpis of fs.readdirSync(kat, { withFileTypes: true })) {
+      const sciezka = path.join(kat, wpis.name);
+      if (wpis.isFile() && /\.pdf$/i.test(wpis.name)) kandydaci.push({ sciezka, nazwa: wpis.name, pdf: true });
+      else if (wpis.isDirectory()) {
+        if (!czytajNazwePobranej(wpis.name).blad) kandydaci.push({ sciezka, nazwa: wpis.name, pdf: false });
+        else if (glebokosc < 2) przejdz(sciezka, glebokosc + 1);
+      }
+    }
+  };
+  przejdz(folder, 0);
+  const wArchiwum = new Set(czytajArchiwum(archiwum).map(m => m.id));
+  const raport = [];
+  for (const k of kandydaci.sort((a, b) => a.nazwa.localeCompare(b.nazwa))) {
+    const n = czytajNazwePobranej(k.nazwa);
+    if (n.blad) { raport.push({ plik: k.nazwa, stan: 'pominiety', powod: n.blad }); log(`POMINIĘTY ${k.nazwa}: ${n.blad}`); continue; }
+    // Folder pobrany przez "pobierz": dokładny tytuł i źródło z zrodlo.json, daty zawsze z nazwy (mogły zostać poprawione).
+    let z = null;
+    if (!k.pdf && fs.existsSync(path.join(k.sciezka, 'zrodlo.json'))) z = JSON.parse(fs.readFileSync(path.join(k.sciezka, 'zrodlo.json'), 'utf8'));
+    if (z && z.siec !== n.siec) { raport.push({ plik: k.nazwa, stan: 'pominiety', powod: `sieć w nazwie (${n.siec}) różni się od pobranej (${z.siec})` }); continue; }
+    const tytul = z?.tytul ?? n.tytul;
+    const id = idGazetki(n.siec, n.od, tytul);
+    if (wArchiwum.has(id)) { raport.push({ plik: k.nazwa, id, stan: 'juz_w_archiwum' }); continue; }
+    try {
+      const m = await dodajRecznie({ archiwum, siec: n.siec, tytul, od: n.od, doo: n.doo, konwerterPdf,
+        zrodlo: z?.zrodlo_url, zrodloRef: z?.zrodlo_ref ?? null,
+        // Koniec zostaje "szacowany" tylko, jeśli źródło go nie podało, a data w nazwie nie została zmieniona.
+        koniecSzacowany: Boolean(z?.koniec_szacowany && z.wazne_do === n.doo),
+        ...(k.pdf ? { pdf: k.sciezka } : { obrazy: k.sciezka }) });
+      wArchiwum.add(m.id);
+      const wygasla = n.doo < dzis;
+      raport.push({ plik: k.nazwa, id: m.id, stan: 'dodana', strony: m.strony.length, ...(wygasla ? { uwaga: 'wygasła - zostaje tylko w archiwum' } : {}) });
+      log(`DODANA ${m.id}: ${m.strony.length} stron, ${n.od} - ${n.doo}${wygasla ? ' (wygasła, nie trafi do bazy)' : ''}`);
+    } catch (e) {
+      raport.push({ plik: k.nazwa, stan: 'blad', blad: e.message });
+      log(`BŁĄD ${k.nazwa}: ${e.message}`);
+    }
+  }
+  return raport;
 }
 
 // ---------- Supabase ----------
@@ -266,13 +383,17 @@ async function main() {
   const wymagajArchiwum = () => { if (!archiwum) throw new Error('Podaj --archiwum <folder archiwum gazetek>'); };
   let wynik;
   if (polecenie === 'pobierz') {
-    wymagajArchiwum();
+    if (!a.folder) throw new Error('Podaj --folder <folder pobranych gazetek>');
     const sieci = String(a.sieci ?? 'biedronka,lidl,dino').split(',').map(s => s.trim()).filter(Boolean);
-    wynik = await pobierzGazetki({ archiwum, sieci, http: pobieracz() });
+    wynik = await pobierzGazetki({ folder: path.resolve(a.folder), archiwum, sieci, http: pobieracz() });
   } else if (polecenie === 'reczna') {
     wymagajArchiwum();
     const m = await dodajRecznie({ archiwum, siec: a.siec, tytul: a.tytul, od: a.od, doo: a.do, zrodlo: a.zrodlo, obrazy: a.obrazy, pdf: a.pdf });
     wynik = { id: m.id, strony: m.strony.length };
+  } else if (polecenie === 'dodaj-pobrane') {
+    wymagajArchiwum();
+    if (!a.folder) throw new Error('Podaj --folder <folder z pobranymi gazetkami>');
+    wynik = await dodajPobrane({ archiwum, folder: path.resolve(a.folder) });
   } else if (polecenie === 'wgraj') {
     wymagajArchiwum();
     wynik = await wgraj({ archiwum, klient: a.proba ? null : await klientSupabase(), proba: Boolean(a.proba) });
@@ -282,7 +403,7 @@ async function main() {
     wymagajArchiwum();
     wynik = czytajArchiwum(archiwum).map(m => ({ id: m.id, siec: m.siec, od: m.wazne_od, do: m.wazne_do, strony: m.strony.length }));
   } else {
-    throw new Error('Polecenia: pobierz | reczna | wgraj | sprzataj | lista (opis na początku pliku)');
+    throw new Error('Polecenia: pobierz | dodaj-pobrane | reczna | wgraj | sprzataj | lista (opis na początku pliku)');
   }
   console.log(JSON.stringify(wynik, null, 2));
   if (Array.isArray(wynik) && wynik.some(x => x.blad)) process.exitCode = 1;

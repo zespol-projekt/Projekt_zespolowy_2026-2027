@@ -44,7 +44,12 @@ Domyślnie pobierane są główne gazetki spożywcze (filtry w `scripts/gazetki/
 
 ## Administrator: pobieranie i wgrywanie
 
-Skrypt: `scripts/gazetki/gazetki.mjs` (Node, uruchamiany na komputerze administratora). Archiwum lokalne gazetek trzymamy poza repozytorium, np. `C:\Users\good1\Desktop\Dane_sklepy_current\gazetki_archiwum` — zostaje na zawsze, także po usunięciu gazetki z bazy.
+Skrypt: `scripts/gazetki/gazetki.mjs` (Node, uruchamiany na komputerze administratora). Dwa foldery poza repozytorium:
+
+| Folder | Co w nim jest |
+|---|---|
+| `Dane_sklepy_current\gazetki_pobrane` | gazetki do sprawdzenia: foldery pobrane przez skrypt (Biedronka, Lidl, Dino) i PDF-y pobrane ręcznie (Kaufland, Carrefour) |
+| `Dane_sklepy_current\gazetki_archiwum` | gazetki przetworzone (strony jako obrazy + `meta.json`); zostają na zawsze, także po usunięciu z bazy |
 
 Jednorazowo: plik `smart_cart\.env.admin.local` (jest w `.gitignore`, nie commitujemy go):
 
@@ -53,29 +58,47 @@ SUPABASE_URL=https://REF.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=<klucz service_role / secret z panelu Supabase → Settings → API Keys>
 ```
 
-Skrypt odrzuca klucz publiczny (anon). Klucza nie wpisujemy do żadnej zmiennej `EXPO_PUBLIC_*`.
+Skrypt odrzuca klucz publiczny (anon). Klucza nie wpisujemy do żadnej zmiennej `EXPO_PUBLIC_*`. Do PDF-ów jednorazowo (i po każdym `npm.cmd ci`): `npm.cmd install --no-save pdf-to-img @napi-rs/canvas`.
+
+### Wzór nazwy
+
+Każda gazetka w `gazetki_pobrane` (plik PDF albo folder z obrazami stron) ma nazwę:
+
+```
+<sieć>_<od RRRR-MM-DD>_<do RRRR-MM-DD>_<tytuł>
+```
+
+Przykłady: `kaufland_2026-11-19_2026-11-25_gazetka-tygodnia.pdf`, `carrefour_2026-11-16_2026-11-21_gazetka.pdf`, folder `lidl_2026-11-19_2026-11-21_gazetka-19-11`. Sieć: `biedronka`, `lidl`, `kaufland`, `carrefour`, `dino`. Tytuł jest opcjonalny (bez niego „Gazetka”). Mogą być podfoldery sieci (`kaufland\`, `carrefour\`, …).
+
+### Krok po kroku
 
 ```powershell
+$pob  = "C:\Users\good1\Desktop\Dane_sklepy_current\gazetki_pobrane"
 $arch = "C:\Users\good1\Desktop\Dane_sklepy_current\gazetki_archiwum"
-node scripts/gazetki/gazetki.mjs pobierz --archiwum $arch                    # Biedronka, Lidl, Dino -> archiwum
-node scripts/gazetki/gazetki.mjs pobierz --archiwum $arch --sieci lidl       # tylko wybrane sieci
-node scripts/gazetki/gazetki.mjs lista   --archiwum $arch                    # co jest w archiwum
-node scripts/gazetki/gazetki.mjs wgraj   --archiwum $arch --proba            # co zostałoby wgrane (bez łączenia z bazą)
-node scripts/gazetki/gazetki.mjs wgraj   --archiwum $arch                    # wgranie aktualnych i przyszłych do Storage + publikacja
-node scripts/gazetki/gazetki.mjs sprzataj --proba                            # które wygasłe zostałyby usunięte
-node scripts/gazetki/gazetki.mjs sprzataj                                    # usunięcie z bazy i Storage dzień po końcu
+
+# 1. Biedronka, Lidl, Dino -> gazetki_pobrane\<sieć>\<sieć>_<od>_<do>_<tytuł>\001.webp ... + zrodlo.json
+node scripts/gazetki/gazetki.mjs pobierz --folder $pob --archiwum $arch
+
+# 2. Ręcznie: PDF Kauflanda i Carrefoura do gazetki_pobrane, nazwa według wzoru (daty: Kaufland w nazwie pobranego pliku,
+#    Carrefour na pierwszej stronie). Sprawdzenie dat Biedronki (patrz niżej) i ewentualna zmiana nazwy folderu.
+
+# 3. Wszystko z gazetki_pobrane -> archiwum (PDF zamieniany na obrazy WebP do 1240 px)
+node scripts/gazetki/gazetki.mjs dodaj-pobrane --archiwum $arch --folder $pob
+
+# 4. Do bazy i Storage (aktualne i przyszłe), potem usunięcie wygasłych
+node scripts/gazetki/gazetki.mjs wgraj --archiwum $arch --proba
+node scripts/gazetki/gazetki.mjs wgraj --archiwum $arch
+node scripts/gazetki/gazetki.mjs sprzataj
 ```
 
-Kaufland i Carrefour (ręcznie): otwórz gazetkę w swojej przeglądarce, zapisz PDF albo obrazy stron, potem:
+- `pobierz` nie pobiera drugi raz gazetki już pobranej (także po zmianie nazwy folderu) ani już będącej w archiwum. Pomija gazetki alkoholowe i katalogi nieżywnościowe. Odpowiedź 403/429 przerywa daną sieć (blokad nie omijamy).
+- **Daty:** Lidl i Dino podają okres ważności — nazwa folderu jest od razu poprawna. **Biedronka podaje tylko początek**; koniec jest szacowany i skrypt wypisuje przy takiej gazetce „KONIEC SZACOWANY”. Jeśli w gazetce jest inna data końca, popraw ją w nazwie folderu **przed** `dodaj-pobrane`. Gazetka z niezmienioną szacowaną datą jest w bazie oznaczona jako szacowana.
+- `dodaj-pobrane` bierze sieć i daty z nazwy, a dla folderów z `pobierz` dokładny tytuł i adres źródła z `zrodlo.json`. Pliki o nazwie niezgodnej ze wzorem pomija z powodem (np. oryginalna nazwa pliku z Kauflanda). Gazetek już w archiwum nie dodaje drugi raz, więc folder można trzymać w całości albo czyścić po dodaniu. Datę zmieniamy przed dodaniem — zmiana daty „od” po dodaniu utworzy nową gazetkę.
+- Wygasła gazetka trafia tylko do archiwum.
 
-```powershell
-node scripts/gazetki/gazetki.mjs reczna --archiwum $arch --siec kaufland --tytul "Gazetka tygodniowa" --od 2026-11-20 --do 2026-11-26 --zrodlo https://www.kaufland.pl/... --pdf C:\Users\good1\Downloads\gazetka.pdf
-node scripts/gazetki/gazetki.mjs reczna --archiwum $arch --siec carrefour --tytul "Gazetka" --od 2026-11-18 --do 2026-11-24 --zrodlo https://www.carrefour.pl/... --obrazy C:\folder\ze\stronami
-```
+Pojedynczo, bez zmiany nazwy pliku, działa też `reczna` (`--siec`, `--tytul`, `--od`, `--do`, `--pdf` albo `--obrazy`, opcjonalnie `--zrodlo`). Przegląd archiwum: `lista --archiwum $arch`.
 
-PDF wymaga jednorazowo `npm.cmd install --no-save pdf-to-img`. Obrazy z folderu są brane w kolejności numerów w nazwach plików.
-
-Rytm: po wyjściu nowych gazetek (zwykle poniedziałek i czwartek) `pobierz` → `wgraj` → `sprzataj`.
+Rytm: po wyjściu nowych gazetek (zwykle poniedziałek i czwartek) kroki 1–4.
 
 ## Wdrożenie (jednorazowo)
 

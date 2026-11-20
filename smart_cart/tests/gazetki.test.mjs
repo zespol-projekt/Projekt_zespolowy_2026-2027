@@ -8,7 +8,7 @@ import {
   dataBezRoku, datyBiedronki, idGazetki, parsujGazetkeLidla, parsujGazetkiDino, parsujIdPrzegladarkiBiedronki,
   parsujListeBiedronki, parsujListeLidla, parsujTytulBiedronki, parsujStronyBiedronki, rozpakujNuxt, ZRODLA,
 } from '../scripts/gazetki/zrodla.mjs';
-import { czytajArchiwum, dodajRecznie, pobierzGazetki, sprzataj, wczytajDostep, wgraj } from '../scripts/gazetki/gazetki.mjs';
+import { czytajArchiwum, czytajNazwePobranej, dodajPobrane, dodajRecznie, pobierzGazetki, sprzataj, wczytajDostep, wgraj } from '../scripts/gazetki/gazetki.mjs';
 import { naglowkiCors, zbudujOdpowiedz } from '../supabase/functions/leaflets/odpowiedz.ts';
 
 // Minimalne nagłówki obrazów (wystarczą do rozpoznania typu i wymiarów).
@@ -78,8 +78,8 @@ test('Dino: rozpakowanie danych Nuxt i gazetki ze stronami w kolejności', () =>
   assert.deepEqual(g.strony, ['https://api.marketdino.pl/p1.webp', 'https://api.marketdino.pl/p2.webp']);
 });
 
-test('pobieranie do archiwum: nowa gazetka, ponowne bez zmian, blokada przerywa sieć', async () => {
-  const archiwum = tmp();
+test('pobieranie do folderu pobranych: folder <sieć>_<od>_<do>_<tytuł> ze stronami, bez ponownego pobierania, blokada', async () => {
+  const folder = tmp();
   let pobranStron = 0;
   const http = {
     pobierzJson: async url => { assert.equal(url, ZRODLA.dinoDane); return DINO; },
@@ -87,20 +87,40 @@ test('pobieranie do archiwum: nowa gazetka, ponowne bez zmian, blokada przerywa 
     pobierzBajty: async url => { pobranStron++; return webp(1000, 1500, url.endsWith('p1.webp') ? 1 : 2); },
   };
   const log = () => {};
-  const r1 = await pobierzGazetki({ archiwum, sieci: ['dino', 'kaufland'], http, dzis: '2026-11-19', log });
-  assert.deepEqual(r1.map(x => x.stan ?? 'blad'), ['nowa', 'blad']);
-  const [meta] = czytajArchiwum(archiwum);
-  assert.deepEqual([meta.id, meta.strony.length, meta.strony[0].plik, meta.strony[1].url_zrodla], ['dino-367-2026-11-20', 2, '001.webp', 'https://api.marketdino.pl/p2.webp']);
-  assert.ok(fs.existsSync(path.join(archiwum, 'dino', 'dino-367-2026-11-20', '002.webp')));
-  const r2 = await pobierzGazetki({ archiwum, sieci: ['dino'], http, dzis: '2026-11-19', log });
-  assert.equal(r2[0].stan, 'bez zmian');
-  assert.equal(pobranStron, 2, 'niezmienionej gazetki nie pobieramy drugi raz');
-  const r3 = await pobierzGazetki({ archiwum, sieci: ['dino'], dzis: '2026-11-22', log, http }); // po wygaśnięciu: nic do pobrania
-  assert.equal(r3.length, 0);
+  const r1 = await pobierzGazetki({ folder, sieci: ['dino', 'kaufland'], http, dzis: '2026-11-19', log });
+  assert.deepEqual(r1.map(x => x.stan ?? 'blad'), ['pobrana', 'blad']);
+  const kat = path.join(folder, 'dino', 'dino_2026-11-20_2026-11-21_weekendowe-okazje');
+  assert.deepEqual(fs.readdirSync(kat).sort(), ['001.webp', '002.webp', 'zrodlo.json']);
+  const z = JSON.parse(fs.readFileSync(path.join(kat, 'zrodlo.json'), 'utf8'));
+  assert.deepEqual([z.tytul, z.zrodlo_ref, z.koniec_szacowany], ['Weekendowe okazje', '367', false]);
+  // Po zmianie nazwy folderu (poprawione daty) gazetka nadal jest rozpoznana jako pobrana.
+  fs.renameSync(kat, path.join(folder, 'dino', 'dino_2026-11-20_2026-11-22_weekendowe-okazje'));
+  const r2 = await pobierzGazetki({ folder, sieci: ['dino'], http, dzis: '2026-11-19', log });
+  assert.equal(r2[0].stan, 'juz_pobrana');
+  assert.equal(pobranStron, 2, 'pobranej gazetki nie pobieramy drugi raz');
+  assert.equal((await pobierzGazetki({ folder, sieci: ['dino'], http, dzis: '2026-11-22', log })).length, 0, 'po wygaśnięciu nic');
   const { pobieracz } = await import('../scripts/gazetki/gazetki.mjs');
-  const zablokowany = pobieracz(async () => ({ status: 403, ok: false }), 0);
-  const r4 = await pobierzGazetki({ archiwum, sieci: ['dino'], http: zablokowany, dzis: '2026-11-19', log });
+  const r4 = await pobierzGazetki({ folder: tmp(), sieci: ['dino'], http: pobieracz(async () => ({ status: 403, ok: false }), 0), dzis: '2026-11-19', log });
   assert.match(r4[0].blad, /403 \(blokada\)/);
+});
+
+test('dodaj-pobrane z folderu z pobierz: tytuł i źródło z zrodlo.json, daty z nazwy, poprawiony koniec przestaje być szacowany', async () => {
+  const folder = tmp(); const archiwum = tmp();
+  const kat = path.join(folder, 'biedronka', 'biedronka_2026-11-19_2026-11-25_codziennie-niskie-ceny');
+  fs.mkdirSync(kat, { recursive: true });
+  fs.writeFileSync(path.join(kat, '001.webp'), webp(1146, 1800, 1));
+  const zrodlo = { wersja: 1, siec: 'biedronka', tytul: 'Codziennie niskie ceny P - oferta od 19.11', wazne_od: '2026-11-19', wazne_do: '2026-11-25',
+    koniec_szacowany: true, zrodlo_url: 'https://www.biedronka.pl/pl/press,id,j39k145ri,title,x', zrodlo_ref: '86288712' };
+  fs.writeFileSync(path.join(kat, 'zrodlo.json'), JSON.stringify(zrodlo));
+  const kat2 = path.join(folder, 'biedronka', 'biedronka_2026-11-17_2026-11-22_festiwal');
+  fs.mkdirSync(kat2);
+  fs.writeFileSync(path.join(kat2, '001.webp'), webp(1146, 1800, 2));
+  fs.writeFileSync(path.join(kat2, 'zrodlo.json'), JSON.stringify({ ...zrodlo, tytul: 'Festiwal wędlin od 17.11', wazne_od: '2026-11-17', wazne_do: '2026-11-23', zrodlo_ref: 'b2' }));
+  await dodajPobrane({ archiwum, folder, dzis: '2026-11-19', log: () => {} });
+  const a = Object.fromEntries(czytajArchiwum(archiwum).map(m => [m.zrodlo_ref, m]));
+  assert.deepEqual([a['86288712'].tytul, a['86288712'].koniec_szacowany, a['86288712'].zrodlo_url],
+    ['Codziennie niskie ceny P - oferta od 19.11', true, 'https://www.biedronka.pl/pl/press,id,j39k145ri,title,x']);
+  assert.deepEqual([a.b2.wazne_do, a.b2.koniec_szacowany], ['2026-11-22', false], 'data poprawiona w nazwie folderu');
 });
 
 test('gazetka ręczna z folderu obrazów (kolejność numeryczna) i walidacja parametrów', async () => {
@@ -154,9 +174,10 @@ function atrapa(stan) {
 }
 
 test('wgranie: strony do Storage, publikacja po komplecie, ponowne wgranie bez duplikatów; sprzątanie dzień po końcu', async () => {
-  const archiwum = tmp();
+  const archiwum = tmp(); const folder = tmp();
   const http = { pobierzJson: async () => DINO, pobierzBajty: async url => webp(1000, 1500, url.endsWith('p1.webp') ? 1 : 2) };
-  await pobierzGazetki({ archiwum, sieci: ['dino'], http, dzis: '2026-11-19', log: () => {} });
+  await pobierzGazetki({ folder, sieci: ['dino'], http, dzis: '2026-11-19', log: () => {} });
+  await dodajPobrane({ archiwum, folder, dzis: '2026-11-19', log: () => {} });
   const stan = { stores: [{ id: 5, slug: 'dino' }], leaflets: [], leaflet_pages: [] };
   const klient = atrapa(stan);
   const proba = await wgraj({ archiwum, klient: null, proba: true, dzis: '2026-11-19', log: () => {} });
@@ -165,7 +186,7 @@ test('wgranie: strony do Storage, publikacja po komplecie, ponowne wgranie bez d
   assert.equal(stan.leaflets.length, 1);
   assert.deepEqual([stan.leaflets[0].published, stan.leaflets[0].page_count, stan.leaflets[0].store_id], [true, 2, 5]);
   assert.equal(stan.leaflet_pages.length, 2);
-  assert.match(stan.leaflet_pages[0].storage_path, /^dino\/dino-367-2026-11-20\/001-[0-9a-f]{12}\.webp$/);
+  assert.match(stan.leaflet_pages[0].storage_path, /^dino\/dino-2026-11-20-weekendowe-okazje\/001-[0-9a-f]{12}\.webp$/);
   assert.equal(klient.pliki.wgrane.length, 2);
   await wgraj({ archiwum, klient, dzis: '2026-11-19', log: () => {} });
   assert.equal(stan.leaflet_pages.length, 2, 'bez duplikatów stron');
@@ -215,4 +236,42 @@ test('Edge Function: odpowiedź w formacie czytnika, bez wygasłych i niekomplet
   assert.equal(naglowkiCors('https://app.example', undefined)['Access-Control-Allow-Origin'], '*');
   assert.equal(naglowkiCors('https://app.example', 'https://app.example,https://b.example')['Access-Control-Allow-Origin'], 'https://app.example');
   assert.equal(naglowkiCors('https://zly.example', 'https://app.example')['Access-Control-Allow-Origin'], 'https://app.example');
+});
+
+test('nazwy pobranych gazetek: sieć, daty od-do i tytuł z nazwy pliku', () => {
+  assert.deepEqual(czytajNazwePobranej('kaufland_2026-11-19_2026-11-25_gazetka-tygodnia.pdf'),
+    { siec: 'kaufland', od: '2026-11-19', doo: '2026-11-25', tytul: 'Gazetka tygodnia' });
+  assert.deepEqual(czytajNazwePobranej('Carrefour_2026-11-16_2026-11-21.pdf'), { siec: 'carrefour', od: '2026-11-16', doo: '2026-11-21', tytul: 'Gazetka' });
+  assert.match(czytajNazwePobranej('Gazetka-tygodnia-19-11-2026-25-11-2026-00.pdf').blad, /nie pasuje do wzoru/);
+  assert.match(czytajNazwePobranej('auchan_2026-11-16_2026-11-21.pdf').blad, /nieznana sieć/);
+  assert.match(czytajNazwePobranej('kaufland_2026-11-31_2026-12-02.pdf').blad, /niepoprawna data/);
+  assert.match(czytajNazwePobranej('kaufland_2026-11-25_2026-11-19.pdf').blad, /późniejsza/);
+});
+
+test('dodaj-pobrane: PDF i foldery obrazów z podfolderów, pominięte złe nazwy, bez ponownego dodawania', async () => {
+  const archiwum = tmp(); const pobrane = tmp();
+  fs.mkdirSync(path.join(pobrane, 'kaufland'));
+  fs.writeFileSync(path.join(pobrane, 'kaufland', 'kaufland_2026-11-19_2026-11-25_gazetka-tygodnia.pdf'), '%PDF');
+  fs.writeFileSync(path.join(pobrane, 'kaufland', 'Gazetka-tygodnia-19-11-2026-25-11-2026-00.pdf'), '%PDF');
+  const strony = path.join(pobrane, 'carrefour_2026-11-16_2026-11-21_gazetka');
+  fs.mkdirSync(strony);
+  fs.writeFileSync(path.join(strony, '2.png'), png(900, 1400));
+  fs.writeFileSync(path.join(strony, '1.png'), png(901, 1400));
+  let konwersji = 0;
+  const konwerterPdf = async () => { konwersji++; return [{ bufor: webp(1240, 1750, 1) }, { bufor: webp(1240, 1750, 2) }]; };
+  const log = () => {};
+  const r1 = await dodajPobrane({ archiwum, folder: pobrane, dzis: '2026-11-22', konwerterPdf, log });
+  const wg = Object.fromEntries(r1.map(x => [x.plik, x]));
+  assert.equal(wg['kaufland_2026-11-19_2026-11-25_gazetka-tygodnia.pdf'].stan, 'dodana');
+  assert.equal(wg['kaufland_2026-11-19_2026-11-25_gazetka-tygodnia.pdf'].strony, 2);
+  assert.equal(wg['carrefour_2026-11-16_2026-11-21_gazetka'].stan, 'dodana');
+  assert.match(wg['carrefour_2026-11-16_2026-11-21_gazetka'].uwaga, /wygasła/);
+  assert.equal(wg['Gazetka-tygodnia-19-11-2026-25-11-2026-00.pdf'].stan, 'pominiety');
+  const arch = Object.fromEntries(czytajArchiwum(archiwum).map(m => [m.id, m]));
+  const k = arch['kaufland-2026-11-19-gazetka-tygodnia'];
+  assert.deepEqual([k.tytul, k.wazne_od, k.wazne_do, k.zrodlo_url], ['Gazetka tygodnia', '2026-11-19', '2026-11-25', 'https://www.kaufland.pl/gazeta-reklamowa.html']);
+  assert.deepEqual(arch['carrefour-2026-11-16-gazetka'].strony.map(x => x.szerokosc), [901, 900]);
+  const r2 = await dodajPobrane({ archiwum, folder: pobrane, dzis: '2026-11-22', konwerterPdf, log });
+  assert.equal(r2.filter(x => x.stan === 'juz_w_archiwum').length, 2);
+  assert.equal(konwersji, 1, 'raz dodany PDF nie jest przetwarzany ponownie');
 });

@@ -147,15 +147,18 @@ Przed `db push` zawsze `--dry-run` i sprawdzenie, że lista zawiera dokładnie n
 
 ## 8. Gazetki
 
-Pełny opis: `docs/gazetki.md`. Klucz `service_role` w `smart_cart\.env.admin.local` (poza gitem).
+Pełny opis: `docs/gazetki.md`. Klucz `service_role` w `smart_cart\.env.admin.local` (poza gitem). Wszystkie gazetki przechodzą przez folder `gazetki_pobrane`; nazwy: `<sieć>_<od RRRR-MM-DD>_<do RRRR-MM-DD>_<tytuł>` (PDF albo folder ze stronami).
 
 ```powershell
+$pob  = "C:\Users\good1\Desktop\Dane_sklepy_current\gazetki_pobrane"
 $arch = "C:\Users\good1\Desktop\Dane_sklepy_current\gazetki_archiwum"
-node scripts/gazetki/gazetki.mjs pobierz --archiwum $arch     # Biedronka, Lidl, Dino -> archiwum lokalne
+node scripts/gazetki/gazetki.mjs pobierz --folder $pob --archiwum $arch    # Biedronka, Lidl, Dino -> gazetki_pobrane
+# ręcznie: PDF Kauflanda i Carrefoura do gazetki_pobrane (nazwa według wzoru), sprawdzenie dat Biedronki
+node scripts/gazetki/gazetki.mjs dodaj-pobrane --archiwum $arch --folder $pob   # -> archiwum (obrazy stron)
 node scripts/gazetki/gazetki.mjs wgraj --archiwum $arch --proba
-node scripts/gazetki/gazetki.mjs wgraj --archiwum $arch       # Storage + publikacja
-node scripts/gazetki/gazetki.mjs sprzataj                     # usunięcie dzień po końcu (archiwum zostaje)
-npx.cmd supabase@3.1.0 functions deploy leaflets              # wdrożenie Edge Function (po zmianie jej kodu)
+node scripts/gazetki/gazetki.mjs wgraj --archiwum $arch                    # Storage + publikacja
+node scripts/gazetki/gazetki.mjs sprzataj                                  # usunięcie dzień po końcu (archiwum zostaje)
+npx.cmd supabase@3.1.0 functions deploy leaflets                           # wdrożenie Edge Function (po zmianie jej kodu)
 ```
 
 ## 9. Typowy cykl odświeżenia danych
