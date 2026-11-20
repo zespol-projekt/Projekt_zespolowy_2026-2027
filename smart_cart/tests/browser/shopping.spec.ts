@@ -5,6 +5,35 @@ const listId = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa';
 const itemId = 'bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb';
 const group = { id: 17, name: 'Mleko UHT 3,2% · z laktozą', unit: 'ml', default_quantity: 1000, offer_count: 1, lowest_price: 6 };
 
+test('zmiana frazy od razu ukrywa stare wyniki i czeka na odpowiedź nowego wyszukiwania', async ({ page }) => {
+  await page.clock.install({ time: new Date('2026-11-20T12:00:00Z') });
+  await mockMap(page);
+  const queries: string[] = [];
+  const nextGroup = { ...group, id: 18, name: 'Ryż biały', unit: 'g' };
+  let release!: () => void;
+  const held = new Promise<void>(resolve => { release = resolve; });
+  await page.route(`${AUTH_URL}/rest/v1/rpc/search_product_groups`, async route => {
+    const phrase = route.request().postDataJSON().search_query;
+    queries.push(phrase);
+    if (phrase === 'ryż') await held;
+    await route.fulfill({ json: phrase === 'ryż' ? [nextGroup] : [group] });
+  });
+  await page.goto('/products');
+  const previousResult = page.getByRole('button', { name: `Rozwiń oferty: ${group.name}` });
+  await expect(previousResult).toBeVisible();
+  await page.clock.pauseAt(new Date('2026-11-20T12:05:00Z'));
+  await page.getByRole('textbox', { name: 'Szukaj grupy produktów' }).fill('ryż');
+  await expect(previousResult).not.toBeVisible();
+  expect(queries).toEqual(['']);
+  await page.clock.runFor(300);
+  await expect.poll(() => queries).toEqual(['', 'ryż']);
+  await expect(previousResult).not.toBeVisible();
+  await expect(page.getByText('Nie znaleziono grup produktów. Spróbuj innej nazwy.')).not.toBeVisible();
+  release();
+  await expect(page.getByRole('button', { name: `Rozwiń oferty: ${nextGroup.name}` })).toBeVisible();
+  await expect(previousResult).not.toBeVisible();
+});
+
 test('grupy, oferty, prywatne listy i edycja przeliczają koszyk, niepełna sieć nie ma sumy', async ({ page }) => {
   await mockMap(page);
   const errors: string[] = [];

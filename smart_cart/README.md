@@ -7,6 +7,16 @@ Wdrożono ustalenia [ankiety](docs/plan-napraw-po-ankiecie.md): wyszukiwanie gru
 [Baza produktów i cen](docs/database-context.md) jest osobna od katalogu placówek mapy. `supabase-schema.sql` odświeżono po wdrożeniu. [Utrzymanie katalogu](docs/utrzymanie-katalogu.md) opisuje migracje, eksport oraz uzupełnianie zweryfikowanych grup, dat i warunków promocji.
 Źródła nie zawierają wszystkich metadanych: niepewne zamienniki pozostają osobnymi produktami, nieznany sposób sprzedaży wyłącza wycenę, a promocje bez dowodów nie są naliczane. [Audyt sprzed napraw](docs/stan-projektu.md) zachowuje historię wykrytych błędów.
 
+## Katalog — etap 1 prac Radka
+
+Przegląd z 20 listopada 2026 obejmuje istniejący przepływ `/products` → `GroupDetails` → `ShoppingProvider` → API list i `compare_basket`, a także `/favorites`. Zachowujemy tworzenie listy „Zakupy”, wybór aktywnej listy, atomowe dodawanie grupy lub konkretnego produktu oraz ponowne porównanie po edycji.
+
+Po zmianie frazy katalog od razu ukrywa poprzednie wyniki i pokazuje ładowanie. Dotyczy to również 300 ms oczekiwania przed wysłaniem zapytania. Zapobiega to otwarciu starej karty i utracie komunikatu zapisu po nadejściu nowych wyników. Test w `tests/browser/shopping.spec.ts` sprawdza ten odstęp oraz opóźnioną odpowiedź; dotychczasowy scenariusz zakupowy sprawdza potwierdzenie dodania i przeliczenie koszyka.
+
+Do kolejnego etapu potrzebne są ustalenia z Damianem. Lokalny kontrakt `search_product_groups` nie udostępnia ścieżki kategorii ani liczby różnych produktów w całej grupie. `offer_count` liczy oferty, a strona 50 wierszy `catalog_offers` nie wystarcza do rozpoznania grupy jednoelementowej. Odczyt Ulubionych pobiera tylko ID, nazwę i jednostkę grupy; domyślna ilość jest obecnie wyznaczana w aplikacji. Należy uzgodnić drzewo, pełne liczności, źródło domyślnej ilości oraz stronicowanie produktów i Ulubionych. Nie zweryfikowano w tym etapie nowych kontraktów w chmurze; lokalnie nadal jest pięć migracji z 14 listopada.
+
+Z Filipem pozostają do uzgodnienia jedno pole wyszukiwania na ekranie Szukaj, przekazywanie parametru `q` i komponenty motywu. Obecny nagłówek i katalog wyświetlają osobne pola. Hierarchia kategorii, bezpośrednie karty pojedynczych produktów i nowy układ Ulubionych pozostają kolejnymi etapami.
+
 ## Logowanie — integracja Supabase
 
 [Kontrakt modułu auth](docs/auth-contract.md) opisuje typy, operacje i podział pracy.
