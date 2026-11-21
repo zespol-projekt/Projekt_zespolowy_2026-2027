@@ -1,5 +1,5 @@
 // Budowa odpowiedzi GET /functions/v1/leaflets w formacie czytnika (leaflets-contract.md, version 1).
-// Czysta logika bez Supabase i Deno: testowana w Node (tests/gazetki-funkcja.test.mjs).
+// Czysta logika bez Supabase i Deno: testowana w Node (tests/gazetki.test.mjs).
 
 export interface WierszStrony {
   page_no: number;

@@ -37,7 +37,7 @@ product: (id: number, signal: AbortSignal) => call<CatalogProduct>('rpc/catalog_
 |---|---|
 | `regular_price` | cena regularna **za 1 opakowanie** (dla produktów luzem: za `package.quantity`, zwykle 1000 g) |
 | `regular_price_status` | `prawdziwa` — potwierdzona w źródle; `brak` — brak ceny regularnej; `estymowana` — szacunek (nie jest używany w porównaniu) |
-| `regular_price_observed_at` | kiedy cenę faktycznie widziano w źródle (nie czas importu) |
+| `regular_price_observed_at` | data obserwacji ceny ze źródła; dla Biedronki (źródło kodyzbiedry nie podaje daty ceny) to dzień naszego pobrania danych, więc cena może być starsza |
 | `promotion` | promocja ze źródła albo `null`: cena, typ, warunek, okres, zasięg, reguła; `applies_today: true` — promocja jest **naliczana automatycznie dziś** (porównanie koszyka ją uwzględnia); `false` — tylko informacja (niepotwierdzona, wygasła, złożony warunek) |
 | `requires_card`, `requires_activation` | warunki promocji do pokazania w UI (karta / aktywacja kuponu) |
 | `price_today` | cena **1 opakowania dziś**: niższa z regularnej `prawdziwa` i promocji naliczanej dziś; `null` — dziś brak ceny |
@@ -51,11 +51,11 @@ product: (id: number, signal: AbortSignal) => call<CatalogProduct>('rpc/catalog_
 
 - `product_count` — liczba **różnych produktów** elementu; `offer_count` — liczba ofert sieci; `store_count` — w ilu sieciach jest oferta; `stores_with_price_today` — w ilu sieciach jest dziś cena. Wszystkie liczone z **wszystkich** ofert, nie ze strony wyników.
 - `total` — liczba wszystkich wyników zapytania/gałęzi; `limit` i `offset` — zastosowane (limit ograniczony do 1–100). Następna strona: `offset + limit < total`. Strona poza końcem: `items: []` z tym samym `total`.
-- Kolejność w gałęzi: najpierw grupy, potem pojedyncze produkty, alfabetycznie. W wyszukiwaniu: najpierw dokładne i zaczynające się od zapytania nazwy grup, grupy przed pojedynczymi produktami, potem alfabetycznie.
+- Kolejność w gałęzi: najpierw grupy, potem pojedyncze produkty, alfabetycznie. W wyszukiwaniu: najpierw dokładne i zaczynające się od zapytania nazwy grup, grupy przed pojedynczymi produktami, przy równym dopasowaniu większe grupy (więcej produktów) wyżej, potem alfabetycznie.
 
 ## Wyszukiwanie
 
-Wszystkie słowa zapytania muszą wystąpić w nazwie grupy, nazwie któregoś produktu grupy albo nazwie produktu bazowego. Bez znaczenia są wielkość liter, polskie znaki (`łaciate` = `ŁACIATE` = `laciate`) i zapis procentów (`3,2%` = `3.2%` = `3,2 %`). Puste zapytanie → `total: 0`. Pole `query` zwraca znormalizowane zapytanie (do debugowania). Znormalizowany tekst do wyszukiwania (`products.search_text`, `comparison_groups.search_name`) baza liczy sama przy zapisie produktu i grupy. Czas w bazie: wyszukiwanie ok. 0,05 s, gałąź ok. 0,2 s przy ~12 tys. produktów (plus czas sieci).
+Wszystkie słowa zapytania muszą wystąpić w nazwie grupy, nazwie któregoś produktu grupy albo nazwie produktu bazowego. Bez znaczenia są wielkość liter, polskie znaki (`łaciate` = `ŁACIATE` = `laciate`) i zapis procentów (`3,2%` = `3.2%` = `3,2 %`). Puste zapytanie → `total: 0`. Pole `query` zwraca znormalizowane zapytanie (do debugowania). Czas odpowiedzi (zmierzony na wspólnej bazie, ~11,5 tys. produktów, z połączeniem): wyszukiwanie ok. 0,15 s, gałąź ok. 0,1 s, drzewo ok. 0,3 s. Warto opóźnić wyszukiwanie o ~300 ms od ostatniego wpisanego znaku i przerywać poprzednie zapytanie (`AbortSignal`).
 
 ## Błędy
 
@@ -191,3 +191,5 @@ export type CatalogProduct = { version: 1; product: CatalogProductBase & { group
 - Lidl, Kaufland i Dino mają w danych głównie promocje z gazetek — wiele ofert ma dziś `price_today: null`. Pomaga cotygodniowe odświeżanie danych.
 - Poza Nabiał → Mleko większość produktów to jeszcze pojedyncze produkty (`kind: "product"`); wspólne grupy powstają dla mleka, masła, mąki, ryżu, cukru i jajek oraz dla produktów z tym samym EAN w kilku sieciach. Kolejne kategorie porządkujemy etapami.
 - `image_url` bywa `null`.
+- Produkty bez ilości w nazwie (np. „Mleko w proszku pełne”) nie mają ceny jednostkowej: `unit_price_today: null` i nie liczą się do `price_from`.
+- Ceny Biedronki pochodzą głównie z katalogu kodyzbiedry, w którym większość wpisów powstała w lutym–marcu 2026; część jest nieaktualna albo podejrzanie niska (np. mleko 0,99–1,49 zł/l). Poprawiamy to w kolejnym etapie; do tego czasu `price_from` może je pokazywać.
