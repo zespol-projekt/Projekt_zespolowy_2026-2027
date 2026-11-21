@@ -55,7 +55,7 @@ product: (id: number, signal: AbortSignal) => call<CatalogProduct>('rpc/catalog_
 
 ## Wyszukiwanie
 
-Wszystkie słowa zapytania muszą wystąpić w nazwie grupy, nazwie któregoś produktu grupy albo nazwie produktu bazowego. Bez znaczenia są wielkość liter, polskie znaki (`łaciate` = `ŁACIATE` = `laciate`) i zapis procentów (`3,2%` = `3.2%` = `3,2 %`). Puste zapytanie → `total: 0`. Pole `query` zwraca znormalizowane zapytanie (do debugowania). Czas odpowiedzi: ok. 0,3–0,4 s przy ~12 tys. produktów.
+Wszystkie słowa zapytania muszą wystąpić w nazwie grupy, nazwie któregoś produktu grupy albo nazwie produktu bazowego. Bez znaczenia są wielkość liter, polskie znaki (`łaciate` = `ŁACIATE` = `laciate`) i zapis procentów (`3,2%` = `3.2%` = `3,2 %`). Puste zapytanie → `total: 0`. Pole `query` zwraca znormalizowane zapytanie (do debugowania). Znormalizowany tekst do wyszukiwania (`products.search_text`, `comparison_groups.search_name`) baza liczy sama przy zapisie produktu i grupy. Czas w bazie: wyszukiwanie ok. 0,05 s, gałąź ok. 0,2 s przy ~12 tys. produktów (plus czas sieci).
 
 ## Błędy
 
