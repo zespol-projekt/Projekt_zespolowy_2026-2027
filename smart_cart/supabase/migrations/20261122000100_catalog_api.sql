@@ -15,6 +15,40 @@ LANGUAGE sql STABLE SET search_path = '' AS $$
   SELECT regexp_replace(public.norm_text(t), ' %', '%', 'g');
 $$;
 
+-- Wydajność wyszukiwania: znormalizowany tekst liczony przy zapisie (nie przy każdym zapytaniu) i indeks ofert po produkcie.
+CREATE INDEX IF NOT EXISTS store_offers_product ON public.store_offers(product_id);
+ALTER TABLE public.products ADD COLUMN search_text text;
+ALTER TABLE public.comparison_groups ADD COLUMN search_name text;
+
+CREATE FUNCTION public.products_search_text() RETURNS trigger
+LANGUAGE plpgsql SET search_path = '' AS $$
+BEGIN
+  NEW.search_text := public.catalog_search_norm(NEW.canonical_name || ' ' ||
+    coalesce((SELECT name FROM public.base_products WHERE id = NEW.base_product_id), ''));
+  RETURN NEW;
+END;
+$$;
+CREATE TRIGGER products_search_text BEFORE INSERT OR UPDATE OF canonical_name, base_product_id ON public.products
+  FOR EACH ROW EXECUTE FUNCTION public.products_search_text();
+
+CREATE FUNCTION public.groups_search_name() RETURNS trigger
+LANGUAGE plpgsql SET search_path = '' AS $$
+BEGIN
+  NEW.search_name := public.catalog_search_norm(NEW.name);
+  RETURN NEW;
+END;
+$$;
+CREATE TRIGGER groups_search_name BEFORE INSERT OR UPDATE OF name ON public.comparison_groups
+  FOR EACH ROW EXECUTE FUNCTION public.groups_search_name();
+
+-- Uzupełnienie istniejących wierszy (bez zmiany updated_at i bez ponownej klasyfikacji).
+ALTER TABLE public.products DISABLE TRIGGER trg_products_updated_at;
+UPDATE public.products p SET search_text = public.catalog_search_norm(p.canonical_name || ' ' || coalesce(bp.name, ''))
+FROM public.base_products bp WHERE bp.id = p.base_product_id;
+UPDATE public.products SET search_text = public.catalog_search_norm(canonical_name) WHERE search_text IS NULL;
+ALTER TABLE public.products ENABLE TRIGGER trg_products_updated_at;
+UPDATE public.comparison_groups SET search_name = public.catalog_search_norm(name);
+
 CREATE FUNCTION public.catalog_require_reader() RETURNS void
 LANGUAGE plpgsql STABLE SET search_path = '' AS $$
 BEGIN
@@ -164,23 +198,22 @@ BEGIN
     RETURN jsonb_build_object('version', 1, 'query', q, 'total', 0, 'limit', lim, 'offset', off, 'items', '[]'::jsonb);
   END IF;
   WITH kandydaci AS (
-    SELECT g.id, g.name, g.group_key, public.catalog_search_norm(g.name) AS gn,
-      public.catalog_search_norm(string_agg(p.canonical_name || ' ' || bp.name, ' ')) AS txt
+    SELECT g.id, g.name, g.group_key, coalesce(g.search_name, '') AS gn, string_agg(coalesce(p.search_text, ''), ' ') AS txt, count(*) AS n
     FROM public.comparison_groups g
     JOIN public.products p ON p.comparison_group_id = g.id
     JOIN public.base_products bp ON bp.id = p.base_product_id AND bp.subcategory_id IS NOT NULL
     WHERE EXISTS (SELECT 1 FROM public.store_offers so JOIN public.stores st ON st.id = so.store_id AND st.is_active WHERE so.product_id = p.id)
     GROUP BY g.id
   ), trafienia AS (
-    SELECT k.id, k.name, (CASE WHEN k.gn = q THEN 200 WHEN k.gn LIKE q || '%' THEN 150
+    SELECT k.id, k.name, k.n, (CASE WHEN k.gn = q THEN 200 WHEN k.gn LIKE q || '%' THEN 150
         WHEN NOT EXISTS (SELECT 1 FROM unnest(toks) t WHERE position(t IN k.gn) = 0) THEN 120 ELSE 60 END
       + CASE WHEN k.group_key LIKE 'product:%' THEN 0 ELSE 40 END) AS score
     FROM kandydaci k
     WHERE NOT EXISTS (SELECT 1 FROM unnest(toks) t WHERE position(t IN (k.gn || ' ' || k.txt)) = 0)
   )
   SELECT (SELECT count(*) FROM trafienia),
-    (SELECT coalesce(jsonb_agg(public.catalog_item(x.id) ORDER BY x.score DESC, x.name, x.id), '[]'::jsonb)
-     FROM (SELECT * FROM trafienia ORDER BY score DESC, name, id LIMIT lim OFFSET off) x)
+    (SELECT coalesce(jsonb_agg(public.catalog_item(x.id) ORDER BY x.score DESC, x.n DESC, x.name, x.id), '[]'::jsonb)
+     FROM (SELECT * FROM trafienia ORDER BY score DESC, n DESC, name, id LIMIT lim OFFSET off) x)
   INTO total, items;
   RETURN jsonb_build_object('version', 1, 'query', q, 'total', total, 'limit', lim, 'offset', off, 'items', items);
 END;
