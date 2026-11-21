@@ -8,8 +8,8 @@ DO $$ BEGIN
   IF EXISTS (SELECT 1 FROM public.catalog_subcategories WHERE slug = 'napoje-piwo') THEN RAISE EXCEPTION 'Piwo nadal w drzewie'; END IF;
   IF (SELECT count(*) FROM public.base_products WHERE name LIKE 'Pozostał%' AND subcategory_id IS NOT NULL) <> 40 THEN
     RAISE EXCEPTION 'Nowe produkty bazowe bez podkategorii'; END IF;
-  IF (SELECT verification_status FROM public.catalog_subcategories WHERE slug = 'nabial-mleko') <> 'in_progress' THEN
-    RAISE EXCEPTION 'Mleko powinno mieć status in_progress'; END IF;
+  IF (SELECT verification_status FROM public.catalog_subcategories WHERE slug = 'nabial-mleko') <> 'reviewed' THEN
+    RAISE EXCEPTION 'Mleko powinno mieć status reviewed (etap mleka zakończony 21.11.2026)'; END IF;
   IF EXISTS (SELECT 1 FROM public.catalog_subcategories s JOIN public.categories c ON c.id = s.category_id
              GROUP BY s.category_id HAVING count(*) <> max(s.display_order)) THEN
     RAISE EXCEPTION 'Kolejność podkategorii ma luki'; END IF;
