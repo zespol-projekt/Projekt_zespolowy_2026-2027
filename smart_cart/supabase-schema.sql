@@ -111,26 +111,316 @@ $$;
 ALTER FUNCTION "public"."can_read_catalog"() OWNER TO "postgres";
 
 
+CREATE OR REPLACE FUNCTION "public"."catalog_branch"("p_subcategory" "text", "p_limit" integer DEFAULT 30, "p_offset" integer DEFAULT 0) RETURNS "jsonb"
+    LANGUAGE "plpgsql" STABLE
+    SET "search_path" TO ''
+    AS $$
+DECLARE sc record; lim integer := greatest(1, least(coalesce(p_limit, 30), 100)); off integer := greatest(coalesce(p_offset, 0), 0);
+  total bigint; items jsonb;
+BEGIN
+  PERFORM public.catalog_require_reader();
+  SELECT s.id, s.slug, s.name, s.verification_status, c.slug AS category_slug, c.name AS category_name INTO sc
+  FROM public.catalog_subcategories s JOIN public.categories c ON c.id = s.category_id WHERE s.slug = p_subcategory;
+  IF NOT FOUND THEN RAISE EXCEPTION 'Nie ma takiej podkategorii.' USING ERRCODE = 'PT404'; END IF;
+  WITH grupy AS (
+    SELECT g.id, g.name, g.group_key FROM public.comparison_groups g
+    WHERE EXISTS (SELECT 1 FROM public.products p JOIN public.base_products bp ON bp.id = p.base_product_id
+      JOIN public.store_offers so ON so.product_id = p.id JOIN public.stores st ON st.id = so.store_id AND st.is_active
+      WHERE p.comparison_group_id = g.id AND bp.subcategory_id = sc.id)
+  )
+  SELECT (SELECT count(*) FROM grupy),
+    (SELECT coalesce(jsonb_agg(public.catalog_item(x.id) ORDER BY x.produkt, x.name, x.id), '[]'::jsonb)
+     FROM (SELECT id, name, group_key LIKE 'product:%' AS produkt FROM grupy ORDER BY 3, name, id LIMIT lim OFFSET off) x)
+  INTO total, items;
+  RETURN jsonb_build_object('version', 1,
+    'subcategory', jsonb_build_object('id', sc.id, 'slug', sc.slug, 'name', sc.name, 'verification_status', sc.verification_status,
+      'category', jsonb_build_object('slug', sc.category_slug, 'name', sc.category_name)),
+    'total', total, 'limit', lim, 'offset', off, 'items', items);
+END;
+$$;
+
+
+ALTER FUNCTION "public"."catalog_branch"("p_subcategory" "text", "p_limit" integer, "p_offset" integer) OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."catalog_group"("p_group_id" bigint) RETURNS "jsonb"
+    LANGUAGE "plpgsql" STABLE
+    SET "search_path" TO ''
+    AS $$
+DECLARE item jsonb; produkty jsonb; sciezka jsonb;
+BEGIN
+  PERFORM public.catalog_require_reader();
+  item := public.catalog_item(p_group_id);
+  IF item IS NULL OR (item->>'offer_count')::int = 0 THEN RAISE EXCEPTION 'Nie ma takiej grupy.' USING ERRCODE = 'PT404'; END IF;
+  SELECT jsonb_build_object('category', jsonb_build_object('slug', c.slug, 'name', c.name),
+    'subcategory', jsonb_build_object('slug', s.slug, 'name', s.name, 'verification_status', s.verification_status))
+  INTO sciezka
+  FROM public.products p JOIN public.base_products bp ON bp.id = p.base_product_id
+  JOIN public.catalog_subcategories s ON s.id = bp.subcategory_id JOIN public.categories c ON c.id = s.category_id
+  WHERE p.comparison_group_id = p_group_id GROUP BY c.slug, c.name, s.slug, s.name, s.verification_status
+  ORDER BY count(*) DESC, s.slug LIMIT 1;
+  SELECT coalesce(jsonb_agg(jsonb_build_object(
+    'product_id', p.id, 'name', p.canonical_name, 'ean', p.ean,
+    'package', jsonb_build_object('quantity', p.quantity_value, 'unit', p.quantity_unit, 'label', p.gramatura_norm),
+    'sale_mode', p.sale_mode, 'image_url', p.image_url,
+    'offers', (SELECT coalesce(jsonb_agg(public.catalog_offer(o.offer_id) ORDER BY o.single_price NULLS LAST, o.store_id), '[]'::jsonb)
+               FROM public.catalog_offers o WHERE o.product_id = p.id))
+    ORDER BY (SELECT min(o.single_price / nullif(p.quantity_value, 0)) FROM public.catalog_offers o WHERE o.product_id = p.id) NULLS LAST, p.canonical_name, p.id), '[]'::jsonb)
+  INTO produkty
+  FROM public.products p JOIN public.base_products bp ON bp.id = p.base_product_id AND bp.subcategory_id IS NOT NULL
+  WHERE p.comparison_group_id = p_group_id AND EXISTS (SELECT 1 FROM public.catalog_offers o WHERE o.product_id = p.id);
+  RETURN jsonb_build_object('version', 1, 'group', item || jsonb_build_object('path', sciezka), 'products', produkty);
+END;
+$$;
+
+
+ALTER FUNCTION "public"."catalog_group"("p_group_id" bigint) OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."catalog_item"("p_group_id" bigint) RETURNS "jsonb"
+    LANGUAGE "sql" STABLE
+    SET "search_path" TO ''
+    AS $$
+  WITH o AS (
+    SELECT c.*, CASE WHEN c.single_price IS NOT NULL AND c.quantity_value > 0
+      THEN round(c.single_price / c.quantity_value * CASE WHEN c.quantity_unit IN ('g', 'ml') THEN 1000 ELSE 1 END, 2) END AS unit_price
+    FROM public.catalog_offers c
+    JOIN public.base_products bp ON bp.id = c.base_product_id AND bp.subcategory_id IS NOT NULL
+    WHERE c.group_id = p_group_id
+  ), best AS (
+    SELECT * FROM o WHERE unit_price IS NOT NULL ORDER BY unit_price, single_price, offer_id LIMIT 1
+  )
+  SELECT jsonb_build_object(
+    'kind', CASE WHEN g.group_key LIKE 'product:%' THEN 'product' ELSE 'group' END,
+    'group_id', g.id,
+    'product_id', CASE WHEN g.group_key LIKE 'product:%' THEN (SELECT min(product_id) FROM o) END,
+    'name', g.name,
+    'unit', g.unit,
+    'default_quantity', CASE WHEN g.unit IN ('g', 'ml') THEN 1000 ELSE 1 END,
+    'product_count', (SELECT count(DISTINCT product_id) FROM o),
+    'offer_count', (SELECT count(*) FROM o),
+    'store_count', (SELECT count(DISTINCT store_id) FROM o),
+    'stores_with_price_today', (SELECT count(DISTINCT store_id) FROM o WHERE single_price IS NOT NULL),
+    'price_from', (SELECT jsonb_build_object('unit_price', b.unit_price, 'unit_price_per', public.catalog_unit_label(b.quantity_unit),
+        'package_price', b.single_price, 'package_quantity', b.quantity_value, 'package_unit', b.quantity_unit,
+        'store', jsonb_build_object('id', b.store_id, 'slug', b.store_slug, 'name', b.store_name),
+        'offer_id', b.offer_id) FROM best b),
+    'image_url', (SELECT image_url FROM o WHERE image_url IS NOT NULL ORDER BY single_price NULLS LAST, offer_id LIMIT 1))
+  FROM public.comparison_groups g WHERE g.id = p_group_id;
+$$;
+
+
+ALTER FUNCTION "public"."catalog_item"("p_group_id" bigint) OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."catalog_offer"("p_offer_id" bigint) RETURNS "jsonb"
+    LANGUAGE "sql" STABLE
+    SET "search_path" TO ''
+    AS $$
+  SELECT jsonb_build_object(
+    'offer_id', o.offer_id,
+    'product_id', o.product_id,
+    'store', jsonb_build_object('id', o.store_id, 'slug', o.store_slug, 'name', o.store_name),
+    'store_product_name', o.product_name,
+    'regular_price', o.regular_price,
+    'regular_price_status', o.price_status,
+    'regular_price_observed_at', o.regular_price_observed_at,
+    'price_source', o.price_source,
+    'promotion', CASE WHEN o.promo_price IS NOT NULL OR o.promo_type IS NOT NULL THEN jsonb_build_object(
+      'price', o.promo_price, 'type', o.promo_type, 'condition', o.promo_condition,
+      'valid_from', o.valid_from, 'valid_to', o.valid_to, 'scope', o.promo_scope, 'price_status', o.promo_price_status,
+      'rule', o.promo_rule, 'evidence_url', o.promo_evidence_url,
+      'applies_today', o.verified_promotion,
+      'requires_card', coalesce((o.promo_rule->>'requires_card')::boolean, false),
+      'requires_activation', coalesce((o.promo_rule->>'requires_activation')::boolean, false)) END,
+    'price_today', o.single_price,
+    'price_today_basis', CASE WHEN o.single_price IS NULL THEN NULL
+      WHEN o.verified_promotion AND (o.price_status <> 'prawdziwa' OR o.regular_price IS NULL OR o.single_price < o.regular_price) THEN 'promotion'
+      ELSE 'regular' END,
+    'unit_price_today', CASE WHEN o.single_price IS NOT NULL AND o.quantity_value > 0
+      THEN round(o.single_price / o.quantity_value * CASE WHEN o.quantity_unit IN ('g', 'ml') THEN 1000 ELSE 1 END, 2) END,
+    'unit_price_per', public.catalog_unit_label(o.quantity_unit),
+    'image_url', o.image_url)
+  FROM public.catalog_offers o WHERE o.offer_id = p_offer_id;
+$$;
+
+
+ALTER FUNCTION "public"."catalog_offer"("p_offer_id" bigint) OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."catalog_product"("p_product_id" bigint) RETURNS "jsonb"
+    LANGUAGE "plpgsql" STABLE
+    SET "search_path" TO ''
+    AS $$
+DECLARE p record; oferty jsonb;
+BEGIN
+  PERFORM public.catalog_require_reader();
+  SELECT pr.*, g.name AS group_name, g.group_key, g.unit AS group_unit,
+    c.slug AS category_slug, c.name AS category_name, s.slug AS sub_slug, s.name AS sub_name, s.verification_status
+  INTO p FROM public.products pr JOIN public.comparison_groups g ON g.id = pr.comparison_group_id
+  JOIN public.base_products bp ON bp.id = pr.base_product_id
+  JOIN public.catalog_subcategories s ON s.id = bp.subcategory_id JOIN public.categories c ON c.id = s.category_id
+  WHERE pr.id = p_product_id;
+  IF NOT FOUND THEN RAISE EXCEPTION 'Nie ma takiego produktu.' USING ERRCODE = 'PT404'; END IF;
+  SELECT coalesce(jsonb_agg(public.catalog_offer(o.offer_id) || jsonb_build_object('history',
+      (SELECT coalesce(jsonb_agg(jsonb_build_object('regular_price', h.regular_price, 'promo_price', h.promo_price,
+         'price_source', h.price_source, 'recorded_at', h.recorded_at) ORDER BY h.recorded_at DESC), '[]'::jsonb)
+       FROM (SELECT * FROM public.price_history ph WHERE ph.store_offer_id = o.offer_id ORDER BY ph.recorded_at DESC LIMIT 10) h))
+    ORDER BY o.single_price NULLS LAST, o.store_id), '[]'::jsonb)
+  INTO oferty FROM public.catalog_offers o WHERE o.product_id = p_product_id;
+  RETURN jsonb_build_object('version', 1, 'product', jsonb_build_object(
+    'product_id', p.id, 'name', p.canonical_name, 'ean', p.ean,
+    'package', jsonb_build_object('quantity', p.quantity_value, 'unit', p.quantity_unit, 'label', p.gramatura_norm),
+    'sale_mode', p.sale_mode, 'image_url', p.image_url,
+    'group', jsonb_build_object('group_id', p.comparison_group_id, 'name', p.group_name, 'unit', p.group_unit,
+      'kind', CASE WHEN p.group_key LIKE 'product:%' THEN 'product' ELSE 'group' END),
+    'path', jsonb_build_object('category', jsonb_build_object('slug', p.category_slug, 'name', p.category_name),
+      'subcategory', jsonb_build_object('slug', p.sub_slug, 'name', p.sub_name, 'verification_status', p.verification_status))),
+    'offers', oferty);
+END;
+$$;
+
+
+ALTER FUNCTION "public"."catalog_product"("p_product_id" bigint) OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."catalog_require_reader"() RETURNS "void"
+    LANGUAGE "plpgsql" STABLE
+    SET "search_path" TO ''
+    AS $$
+BEGIN
+  -- Administrator (service_role, połączenie psql jako postgres) też może czytać, np. do raportów i przykładów kontraktu.
+  IF NOT (public.can_read_catalog() OR current_user IN ('service_role', 'postgres', 'supabase_admin')) THEN
+    RAISE EXCEPTION 'Zaloguj się potwierdzonym kontem, aby przeglądać katalog.' USING ERRCODE = '42501';
+  END IF;
+END;
+$$;
+
+
+ALTER FUNCTION "public"."catalog_require_reader"() OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."catalog_search"("p_query" "text", "p_limit" integer DEFAULT 30, "p_offset" integer DEFAULT 0) RETURNS "jsonb"
+    LANGUAGE "plpgsql" STABLE
+    SET "search_path" TO ''
+    AS $$
+DECLARE q text := public.catalog_search_norm(left(coalesce(p_query, ''), 200)); toks text[];
+  lim integer := greatest(1, least(coalesce(p_limit, 30), 100)); off integer := greatest(coalesce(p_offset, 0), 0);
+  total bigint; items jsonb;
+BEGIN
+  PERFORM public.catalog_require_reader();
+  toks := array_remove(string_to_array(q, ' '), '');
+  IF coalesce(array_length(toks, 1), 0) = 0 THEN
+    RETURN jsonb_build_object('version', 1, 'query', q, 'total', 0, 'limit', lim, 'offset', off, 'items', '[]'::jsonb);
+  END IF;
+  WITH kandydaci AS (
+    SELECT g.id, g.name, g.group_key, coalesce(g.search_name, '') AS gn, string_agg(coalesce(p.search_text, ''), ' ') AS txt, count(*) AS n
+    FROM public.comparison_groups g
+    JOIN public.products p ON p.comparison_group_id = g.id
+    JOIN public.base_products bp ON bp.id = p.base_product_id AND bp.subcategory_id IS NOT NULL
+    WHERE EXISTS (SELECT 1 FROM public.store_offers so JOIN public.stores st ON st.id = so.store_id AND st.is_active WHERE so.product_id = p.id)
+    GROUP BY g.id
+  ), trafienia AS (
+    SELECT k.id, k.name, k.n, (CASE WHEN k.gn = q THEN 200 WHEN k.gn LIKE q || '%' THEN 150
+        WHEN NOT EXISTS (SELECT 1 FROM unnest(toks) t WHERE position(t IN k.gn) = 0) THEN 120 ELSE 60 END
+      + CASE WHEN k.group_key LIKE 'product:%' THEN 0 ELSE 40 END) AS score
+    FROM kandydaci k
+    WHERE NOT EXISTS (SELECT 1 FROM unnest(toks) t WHERE position(t IN (k.gn || ' ' || k.txt)) = 0)
+  )
+  SELECT (SELECT count(*) FROM trafienia),
+    (SELECT coalesce(jsonb_agg(public.catalog_item(x.id) ORDER BY x.score DESC, x.n DESC, x.name, x.id), '[]'::jsonb)
+     FROM (SELECT * FROM trafienia ORDER BY score DESC, n DESC, name, id LIMIT lim OFFSET off) x)
+  INTO total, items;
+  RETURN jsonb_build_object('version', 1, 'query', q, 'total', total, 'limit', lim, 'offset', off, 'items', items);
+END;
+$$;
+
+
+ALTER FUNCTION "public"."catalog_search"("p_query" "text", "p_limit" integer, "p_offset" integer) OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."catalog_search_norm"("t" "text") RETURNS "text"
+    LANGUAGE "sql" STABLE
+    SET "search_path" TO ''
+    AS $$
+  -- „3,2%”, „3.2%” i „3,2 %” dają to samo; polskie znaki i wielkość liter bez znaczenia (norm_text).
+  SELECT regexp_replace(public.norm_text(t), ' %', '%', 'g');
+$$;
+
+
+ALTER FUNCTION "public"."catalog_search_norm"("t" "text") OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."catalog_tree"() RETURNS "jsonb"
+    LANGUAGE "plpgsql" STABLE
+    SET "search_path" TO ''
+    AS $$
+DECLARE wynik jsonb;
+BEGIN
+  PERFORM public.catalog_require_reader();
+  WITH liczby AS (
+    SELECT bp.subcategory_id, count(DISTINCT so.product_id) AS products, count(*) AS offers
+    FROM public.store_offers so JOIN public.stores s ON s.id = so.store_id AND s.is_active
+    JOIN public.products p ON p.id = so.product_id JOIN public.base_products bp ON bp.id = p.base_product_id
+    WHERE bp.subcategory_id IS NOT NULL GROUP BY 1
+  ), podkat AS (
+    SELECT sc.category_id, jsonb_agg(jsonb_build_object(
+      'id', sc.id, 'slug', sc.slug, 'parent_slug', c.slug, 'name', sc.name, 'order', sc.display_order,
+      'verification_status', sc.verification_status,
+      'product_count', coalesce(l.products, 0), 'offer_count', coalesce(l.offers, 0),
+      'has_items', coalesce(l.products, 0) > 0) ORDER BY sc.display_order, sc.name) AS dzieci,
+      sum(coalesce(l.products, 0)) AS products, sum(coalesce(l.offers, 0)) AS offers
+    FROM public.catalog_subcategories sc JOIN public.categories c ON c.id = sc.category_id
+    LEFT JOIN liczby l ON l.subcategory_id = sc.id GROUP BY sc.category_id
+  )
+  SELECT jsonb_build_object('version', 1, 'categories', coalesce(jsonb_agg(jsonb_build_object(
+    'id', c.id, 'slug', c.slug, 'parent_slug', NULL, 'name', c.name, 'order', c.display_order,
+    'product_count', coalesce(pk.products, 0), 'offer_count', coalesce(pk.offers, 0),
+    'children', coalesce(pk.dzieci, '[]'::jsonb)) ORDER BY c.display_order NULLS LAST, c.name), '[]'::jsonb))
+  INTO wynik
+  FROM public.categories c LEFT JOIN podkat pk ON pk.category_id = c.id
+  WHERE c.slug IS NOT NULL;
+  RETURN wynik;
+END;
+$$;
+
+
+ALTER FUNCTION "public"."catalog_tree"() OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."catalog_unit_label"("u" "text") RETURNS "text"
+    LANGUAGE "sql" IMMUTABLE
+    SET "search_path" TO ''
+    AS $$
+  SELECT CASE u WHEN 'g' THEN '1 kg' WHEN 'ml' THEN '1 l' ELSE '1 szt' END;
+$$;
+
+
+ALTER FUNCTION "public"."catalog_unit_label"("u" "text") OWNER TO "postgres";
+
+
 CREATE OR REPLACE FUNCTION "public"."classify_comparison_product"() RETURNS "trigger"
     LANGUAGE "plpgsql"
     SET "search_path" TO ''
     AS $$
 DECLARE n text := public.norm_text(NEW.canonical_name); k text; label text;
-  fat text; kind text; lactose text; base_name text; base_norm text; token text; variants text[] := '{}';
+  fat text; kind text; lactose text; base_name text; base_norm text; mg text[];
   u text := coalesce(NEW.quantity_unit,'szt');
 BEGIN
   IF TG_OP = 'UPDATE' AND NEW.classification_source = 'reviewed' THEN RETURN NEW; END IF;
   k := 'product:' || NEW.id; label := NEW.canonical_name;
   SELECT name INTO base_name FROM public.base_products WHERE id=NEW.base_product_id;
   base_norm := public.norm_text(base_name);
-  IF n ~ '\mmleko\M' AND n !~ '(kokos|soj|owsian|migdal|czekolad|wanili|w proszku|skondens|kondens)' THEN
+  IF n ~ '\mmleko\M' AND n !~ '(kokos|soj|owsian|migdal|czekolad|wanili|w proszku|skondens|kondens|zageszcz|fermentowan|\mnie mleko\M|roslinn)' THEN
     fat := substring(replace(NEW.canonical_name,',','.') FROM '([0-9]+(?:\.[0-9]+)?)\s*%');
     kind := CASE WHEN n ~ '\muht\M' THEN 'UHT' WHEN n ~ 'swiez' THEN 'świeże' END;
-    lactose := CASE WHEN n ~ 'bez laktozy|bez lektozy' THEN 'bez laktozy' ELSE 'z laktozą' END;
-    IF fat IS NOT NULL AND kind IS NOT NULL AND u = 'ml' THEN
-      fat := trim(trailing '.' FROM trim(trailing '0' FROM (fat::numeric)::text || CASE WHEN position('.' IN fat) = 0 THEN '.0' ELSE '' END));
-      k := 'milk:' || lower(kind) || ':' || fat || ':' || lactose;
-      label := 'Mleko ' || kind || ' ' || replace(fat,'.',',') || '% · ' || lactose;
+    lactose := CASE WHEN n ~ 'bez lakt|bezlakt|bez lektozy' THEN 'bez laktozy' ELSE 'z laktozą' END;
+    IF fat IS NOT NULL AND kind IS NOT NULL AND u = 'ml'
+      -- Warianty smakowe, proteinowe i barista to inne produkty; „Mazurski Smak” jest marką.
+      AND n !~ '(protein|barista|banan|truskawk|kaka|kawow)' AND NOT (n ~ 'smak' AND n !~ 'mazurski smak')
+      AND NOT (n ~ 'uht' AND n ~ 'swiez') THEN
+      mg := public.milk_group(kind, fat::numeric, lactose, NEW.canonical_name);
+      IF mg IS NOT NULL THEN k := mg[1]; label := mg[2]; END IF;
     END IF;
   ELSIF n ~ '\mcukier bialy\M' AND n !~ '(wanili|zeluj|trzcin)' AND u='g' THEN
     k := 'sugar:white:g'; label := 'Cukier biały';
@@ -155,13 +445,12 @@ BEGIN
     lactose := CASE WHEN n ~ 'ekolog|bio' THEN 'ekologiczne' WHEN n ~ 'woln.*wybie' THEN 'wolny wybieg' WHEN n ~ 'sciolk' THEN 'ściółkowe' WHEN n ~ 'klatkow' THEN 'klatkowe' END;
     IF lactose IS NOT NULL THEN k := 'eggs:'||kind||':'||lactose; label := 'Jajka '||kind||' · '||lactose; END IF;
   END IF;
-  -- Distinct ingredients and processing must not collapse into one equivalent.
-  IF k NOT LIKE 'product:%' THEN
+  -- Distinct ingredients and processing must not collapse into one equivalent (mleko: sprawdzone wyżej, z dopiskami w milk_group).
+  IF k NOT LIKE 'product:%' AND k NOT LIKE 'milk:%' THEN
     IF (k LIKE 'rice:%' AND (n ~ '(mix|mieszank|gotow|wafl|chrup|makaron|napoj|warzyw|kurcz|pomidor|sos|zup|danie)' OR (n ~ 'basmati' AND n ~ 'jasmin')))
       OR (k LIKE 'sugar:%' AND n ~ '(puder|kostk|smak|trzcino|wanili)')
       OR (k LIKE 'eggs:%' AND (n ~ '(kacz|gesi|strusi)' OR (n ~ '\mm\M' AND n ~ '\ml\M')))
-      OR (k LIKE 'milk:%' AND (n ~ '(smak|protein|barista|banan|truskawk|kaka|kawow)' OR (n ~ 'uht' AND n ~ 'swiez')))
-      OR (k NOT LIKE 'milk:%' AND n ~ 'bez laktozy|bez lektozy')
+      OR n ~ 'bez laktozy|bez lektozy|bez lakt'
       OR (n ~ 'kozi' AND n ~ 'owcz') THEN
       k:='product:'||NEW.id; label:=NEW.canonical_name;
     ELSE
@@ -169,6 +458,8 @@ BEGIN
       ELSIF n ~ 'owcz' THEN k:=k||':sheep'; label:=label||' · owcze'; END IF;
       IF n ~ '\mbio\M|ekolog|organic' THEN k:=k||':organic'; label:=label||' · ekologiczne'; END IF;
     END IF;
+  ELSIF k LIKE 'milk:%' AND n ~ 'kozi' AND n ~ 'owcz' THEN
+    k:='product:'||NEW.id; label:=NEW.canonical_name;
   END IF;
   -- No category-wide fallback: broad categories do not prove equivalence.
   -- An administrator can explicitly review remaining products and groups.
@@ -187,7 +478,7 @@ BEGIN
     VALUES(k,NEW.base_product_id,label,public.norm_text(label),u) ON CONFLICT(group_key)
     DO UPDATE SET name=excluded.name,normalized_name=excluded.normalized_name;
   SELECT id INTO NEW.comparison_group_id FROM public.comparison_groups WHERE group_key=k;
-  NEW.classification_source := CASE WHEN k LIKE 'product:%' THEN 'exact_product' ELSE 'name_rule_v2' END;
+  NEW.classification_source := CASE WHEN k LIKE 'product:%' THEN 'exact_product' ELSE 'name_rule_v3' END;
   RETURN NEW;
 END;
 $$;
@@ -281,6 +572,96 @@ $$;
 
 
 ALTER FUNCTION "public"."fn_set_updated_at"() OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."groups_search_name"() RETURNS "trigger"
+    LANGUAGE "plpgsql"
+    SET "search_path" TO ''
+    AS $$
+BEGIN
+  NEW.search_name := public.catalog_search_norm(NEW.name);
+  RETURN NEW;
+END;
+$$;
+
+
+ALTER FUNCTION "public"."groups_search_name"() OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."merge_comparison_group"("p_old" bigint, "p_new" bigint, "p_reason" "text") RETURNS "jsonb"
+    LANGUAGE "plpgsql"
+    SET "search_path" TO ''
+    AS $$
+DECLARE u_old text; u_new text; r record;
+  n_products integer := 0; n_moved integer := 0; n_merged integer := 0; n_favorites integer := 0;
+BEGIN
+  IF p_old IS NULL OR p_new IS NULL OR p_old = p_new THEN
+    RAISE EXCEPTION 'Podaj dwie różne grupy.' USING ERRCODE = '22023'; END IF;
+  IF coalesce(length(trim(p_reason)), 0) = 0 THEN
+    RAISE EXCEPTION 'Podaj powód scalenia.' USING ERRCODE = '22023'; END IF;
+  SELECT unit INTO u_old FROM public.comparison_groups WHERE id = p_old FOR UPDATE;
+  SELECT unit INTO u_new FROM public.comparison_groups WHERE id = p_new FOR UPDATE;
+  IF u_old IS NULL OR u_new IS NULL THEN RAISE EXCEPTION 'Nie ma takiej grupy.' USING ERRCODE = '23503'; END IF;
+  IF u_old <> u_new THEN RAISE EXCEPTION 'Grupy mają różne jednostki.' USING ERRCODE = '22023'; END IF;
+  IF EXISTS (SELECT 1 FROM public.comparison_group_redirects WHERE old_group_id = p_new) THEN
+    RAISE EXCEPTION 'Grupa docelowa została już przekierowana.' USING ERRCODE = '22023'; END IF;
+
+  -- Produkty najpierw: wybrane na listach konkretne produkty muszą należeć do grupy docelowej.
+  UPDATE public.products SET comparison_group_id = p_new, classification_source = 'reviewed' WHERE comparison_group_id = p_old;
+  GET DIAGNOSTICS n_products = ROW_COUNT;
+
+  FOR r IN SELECT id, list_id, quantity FROM public.shopping_list_items WHERE group_id = p_old ORDER BY created_at, id FOR UPDATE LOOP
+    IF EXISTS (SELECT 1 FROM public.shopping_list_items WHERE list_id = r.list_id AND group_id = p_new) THEN
+      UPDATE public.shopping_list_items SET quantity = least(quantity + r.quantity, 100000) WHERE list_id = r.list_id AND group_id = p_new;
+      DELETE FROM public.shopping_list_items WHERE id = r.id;
+      n_merged := n_merged + 1;
+    ELSE
+      UPDATE public.shopping_list_items SET group_id = p_new WHERE id = r.id;
+      n_moved := n_moved + 1;
+    END IF;
+  END LOOP;
+
+  INSERT INTO public.favorite_groups(owner_id, group_id, created_at)
+  SELECT owner_id, p_new, created_at FROM public.favorite_groups WHERE group_id = p_old
+  ON CONFLICT DO NOTHING;
+  DELETE FROM public.favorite_groups WHERE group_id = p_old;
+  GET DIAGNOSTICS n_favorites = ROW_COUNT;
+
+  INSERT INTO public.comparison_group_redirects(old_group_id, new_group_id, reason, moved_products, moved_items, merged_items, moved_favorites)
+  VALUES (p_old, p_new, trim(p_reason), n_products, n_moved, n_merged, n_favorites);
+  -- Bez łańcuchów: wcześniejsze przekierowania na starą grupę wskazują od razu nową.
+  UPDATE public.comparison_group_redirects SET new_group_id = p_new WHERE new_group_id = p_old;
+  RETURN jsonb_build_object('products', n_products, 'moved_items', n_moved, 'merged_items', n_merged, 'favorites', n_favorites);
+END;
+$$;
+
+
+ALTER FUNCTION "public"."merge_comparison_group"("p_old" bigint, "p_new" bigint, "p_reason" "text") OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."milk_group"("p_kind" "text", "p_fat" numeric, "p_lactose" "text", "p_name" "text") RETURNS "text"[]
+    LANGUAGE "plpgsql" STABLE
+    SET "search_path" TO ''
+    AS $$
+DECLARE n text := public.norm_text(p_name); f text; kind text; k text; label text;
+BEGIN
+  IF p_fat IS NULL OR p_fat < 0 OR p_fat > 10 THEN RETURN NULL; END IF;
+  kind := CASE lower(p_kind) WHEN 'uht' THEN 'UHT' WHEN 'świeże' THEN 'świeże' WHEN 'swieze' THEN 'świeże' END;
+  IF kind IS NULL OR p_lactose NOT IN ('z laktozą', 'bez laktozy') THEN RETURN NULL; END IF;
+  f := p_fat::text;
+  IF position('.' IN f) > 0 THEN f := rtrim(rtrim(f, '0'), '.'); END IF;
+  k := 'milk:' || lower(kind) || ':' || f || ':' || p_lactose;
+  label := 'Mleko ' || kind || ' ' || replace(f, '.', ',') || '% · ' || p_lactose;
+  -- Te same dopiski co w regule ogólnej (kozie/owcze, ekologiczne).
+  IF n ~ 'kozi' THEN k := k || ':goat'; label := label || ' · kozie';
+  ELSIF n ~ 'owcz' THEN k := k || ':sheep'; label := label || ' · owcze'; END IF;
+  IF n ~ '\mbio\M|ekolog|organic' THEN k := k || ':organic'; label := label || ' · ekologiczne'; END IF;
+  RETURN ARRAY[k, label];
+END;
+$$;
+
+
+ALTER FUNCTION "public"."milk_group"("p_kind" "text", "p_fat" numeric, "p_lactose" "text", "p_name" "text") OWNER TO "postgres";
 
 
 CREATE OR REPLACE FUNCTION "public"."norm_text"("t" "text") RETURNS "text"
@@ -381,6 +762,21 @@ $$;
 ALTER FUNCTION "public"."plan_group_purchase"("gid" bigint, "sid" integer, "needed" numeric, "wanted_unit" "text", "pinned" bigint, "extra" boolean) OWNER TO "postgres";
 
 
+CREATE OR REPLACE FUNCTION "public"."products_search_text"() RETURNS "trigger"
+    LANGUAGE "plpgsql"
+    SET "search_path" TO ''
+    AS $$
+BEGIN
+  NEW.search_text := public.catalog_search_norm(NEW.canonical_name || ' ' ||
+    coalesce((SELECT name FROM public.base_products WHERE id = NEW.base_product_id), ''));
+  RETURN NEW;
+END;
+$$;
+
+
+ALTER FUNCTION "public"."products_search_text"() OWNER TO "postgres";
+
+
 CREATE OR REPLACE FUNCTION "public"."promotion_usable"("o" "jsonb") RETURNS boolean
     LANGUAGE "sql" STABLE
     SET "search_path" TO ''
@@ -431,6 +827,29 @@ $$;
 ALTER FUNCTION "public"."purchase_price"("o" "jsonb", "n" numeric) OWNER TO "postgres";
 
 
+CREATE OR REPLACE FUNCTION "public"."reclassify_milk"("p_reason" "text") RETURNS "jsonb"
+    LANGUAGE "plpgsql"
+    SET "search_path" TO ''
+    AS $$
+DECLARE moves jsonb; n_all integer; wynik jsonb;
+BEGIN
+  CREATE TEMP TABLE IF NOT EXISTS milk_before(id bigint, old_group bigint) ON COMMIT DROP;
+  DELETE FROM milk_before;
+  INSERT INTO milk_before SELECT id, comparison_group_id FROM public.products
+    WHERE coalesce(classification_source, '') <> 'reviewed' AND public.norm_text(canonical_name) ~ '\mmleko\M';
+  GET DIAGNOSTICS n_all = ROW_COUNT;
+  UPDATE public.products p SET canonical_name = p.canonical_name FROM milk_before b WHERE p.id = b.id;
+  SELECT coalesce(jsonb_agg(jsonb_build_object('old', b.old_group, 'new', p.comparison_group_id)), '[]')
+    INTO moves FROM milk_before b JOIN public.products p ON p.id = b.id WHERE b.old_group IS DISTINCT FROM p.comparison_group_id;
+  wynik := public.settle_regrouped(moves, p_reason);
+  RETURN wynik || jsonb_build_object('checked_products', n_all, 'changed_group', jsonb_array_length(moves));
+END;
+$$;
+
+
+ALTER FUNCTION "public"."reclassify_milk"("p_reason" "text") OWNER TO "postgres";
+
+
 CREATE OR REPLACE FUNCTION "public"."search_offers"("search_query" "text" DEFAULT ''::"text", "result_limit" integer DEFAULT 40) RETURNS TABLE("id" bigint, "name" "text", "regular_price" numeric, "promo_price" numeric, "normalized_weight" "text", "image_url" "text", "kcal_100g" numeric, "store_name" "text", "base_product_name" "text", "relevance_score" numeric)
     LANGUAGE "plpgsql" STABLE
     SET "search_path" TO ''
@@ -477,6 +896,38 @@ $$;
 
 
 ALTER FUNCTION "public"."search_product_groups"("search_query" "text", "result_limit" integer, "result_offset" integer) OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."settle_regrouped"("p_moves" "jsonb", "p_reason" "text") RETURNS "jsonb"
+    LANGUAGE "plpgsql"
+    SET "search_path" TO ''
+    AS $$
+DECLARE r record; n_merged integer := 0; n_deleted integer := 0;
+BEGIN
+  FOR r IN
+    SELECT old_id, (array_agg(new_id ORDER BY cnt DESC, new_id))[1] AS new_id
+    FROM (SELECT (m->>'old')::bigint AS old_id, (m->>'new')::bigint AS new_id, count(*) AS cnt
+          FROM jsonb_array_elements(p_moves) m
+          WHERE (m->>'old') IS NOT NULL AND (m->>'old') <> (m->>'new') GROUP BY 1, 2) x
+    GROUP BY old_id
+  LOOP
+    CONTINUE WHEN EXISTS (SELECT 1 FROM public.products WHERE comparison_group_id = r.old_id);
+    IF EXISTS (SELECT 1 FROM public.shopping_list_items WHERE group_id = r.old_id)
+      OR EXISTS (SELECT 1 FROM public.favorite_groups WHERE group_id = r.old_id) THEN
+      PERFORM public.merge_comparison_group(r.old_id, r.new_id, p_reason);
+      n_merged := n_merged + 1;
+    ELSIF EXISTS (SELECT 1 FROM public.comparison_groups WHERE id = r.old_id AND group_key LIKE 'product:%')
+      AND NOT EXISTS (SELECT 1 FROM public.comparison_group_redirects WHERE r.old_id IN (old_group_id, new_group_id)) THEN
+      DELETE FROM public.comparison_groups WHERE id = r.old_id;
+      n_deleted := n_deleted + 1;
+    END IF;
+  END LOOP;
+  RETURN jsonb_build_object('merged_groups', n_merged, 'deleted_empty_groups', n_deleted);
+END;
+$$;
+
+
+ALTER FUNCTION "public"."settle_regrouped"("p_moves" "jsonb", "p_reason" "text") OWNER TO "postgres";
 
 
 CREATE OR REPLACE FUNCTION "public"."touch_list_from_item"() RETURNS "trigger"
@@ -568,6 +1019,7 @@ CREATE TABLE IF NOT EXISTS "public"."base_products" (
     "median_fat_100g" numeric(5,1),
     "median_carbs_100g" numeric(5,1),
     "created_at" timestamp with time zone DEFAULT "now"() NOT NULL,
+    "subcategory_id" bigint,
     CONSTRAINT "base_products_default_shelf_life_days_check" CHECK (("default_shelf_life_days" > 0)),
     CONSTRAINT "base_products_median_carbs_100g_check" CHECK ((("median_carbs_100g" >= (0)::numeric) AND ("median_carbs_100g" <= (100)::numeric))),
     CONSTRAINT "base_products_median_fat_100g_check" CHECK ((("median_fat_100g" >= (0)::numeric) AND ("median_fat_100g" <= (100)::numeric))),
@@ -603,6 +1055,7 @@ CREATE TABLE IF NOT EXISTS "public"."comparison_groups" (
     "normalized_name" "text" NOT NULL,
     "unit" "text" NOT NULL,
     "created_at" timestamp with time zone DEFAULT "now"() NOT NULL,
+    "search_name" "text",
     CONSTRAINT "comparison_groups_name_check" CHECK ((("length"("name") >= 1) AND ("length"("name") <= 500))),
     CONSTRAINT "comparison_groups_unit_check" CHECK (("unit" = ANY (ARRAY['g'::"text", 'ml'::"text", 'szt'::"text"])))
 );
@@ -631,6 +1084,7 @@ CREATE TABLE IF NOT EXISTS "public"."products" (
     "comparison_group_id" bigint,
     "sale_mode" "text" DEFAULT 'unknown'::"text" NOT NULL,
     "classification_source" "text",
+    "search_text" "text",
     CONSTRAINT "products_carbs_100g_check" CHECK ((("carbs_100g" >= (0)::numeric) AND ("carbs_100g" <= (100)::numeric))),
     CONSTRAINT "products_fat_100g_check" CHECK ((("fat_100g" >= (0)::numeric) AND ("fat_100g" <= (100)::numeric))),
     CONSTRAINT "products_kcal_100g_check" CHECK ((("kcal_100g" >= (0)::numeric) AND ("kcal_100g" <= (905)::numeric))),
@@ -667,6 +1121,7 @@ CREATE TABLE IF NOT EXISTS "public"."store_offers" (
     "promo_evidence_url" "text",
     "promo_rule" "jsonb",
     "promo_price_status" "text" DEFAULT 'unknown'::"text" NOT NULL,
+    "last_import_run_id" bigint,
     CONSTRAINT "chk_promo_lt_regular" CHECK ((("promo_price" IS NULL) OR ("regular_price" IS NULL) OR ("promo_price" < "regular_price"))),
     CONSTRAINT "nationwide_evidence" CHECK ((("promo_scope" <> 'nationwide'::"text") OR (("promo_evidence_url" IS NOT NULL) AND ("promo_evidence_url" ~ '^https://'::"text") AND ("promo_rule" IS NOT NULL)))),
     CONSTRAINT "store_offers_price_status_check" CHECK ((("price_status")::"text" = ANY ((ARRAY['prawdziwa'::character varying, 'estymowana'::character varying, 'brak'::character varying])::"text"[]))),
@@ -740,11 +1195,73 @@ CREATE OR REPLACE VIEW "public"."catalog_offers" WITH ("security_invoker"='true'
 ALTER VIEW "public"."catalog_offers" OWNER TO "postgres";
 
 
+CREATE TABLE IF NOT EXISTS "public"."catalog_reviews" (
+    "id" bigint NOT NULL,
+    "product_id" bigint NOT NULL,
+    "topic" "text" NOT NULL,
+    "decision" "text" NOT NULL,
+    "group_key" "text",
+    "details" "jsonb" DEFAULT '{}'::"jsonb" NOT NULL,
+    "source" "text" NOT NULL,
+    "reviewed_at" timestamp with time zone DEFAULT "now"() NOT NULL,
+    CONSTRAINT "catalog_reviews_check" CHECK ((("decision" = 'group'::"text") = ("group_key" IS NOT NULL))),
+    CONSTRAINT "catalog_reviews_decision_check" CHECK (("decision" = ANY (ARRAY['group'::"text", 'skip'::"text"]))),
+    CONSTRAINT "catalog_reviews_details_check" CHECK (("jsonb_typeof"("details") = 'object'::"text")),
+    CONSTRAINT "catalog_reviews_source_check" CHECK ((("length"("source") >= 1) AND ("length"("source") <= 200))),
+    CONSTRAINT "catalog_reviews_topic_check" CHECK (("topic" = 'milk'::"text"))
+);
+
+
+ALTER TABLE "public"."catalog_reviews" OWNER TO "postgres";
+
+
+ALTER TABLE "public"."catalog_reviews" ALTER COLUMN "id" ADD GENERATED BY DEFAULT AS IDENTITY (
+    SEQUENCE NAME "public"."catalog_reviews_id_seq"
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+
+CREATE TABLE IF NOT EXISTS "public"."catalog_subcategories" (
+    "id" bigint NOT NULL,
+    "category_id" integer NOT NULL,
+    "slug" "text" NOT NULL,
+    "name" "text" NOT NULL,
+    "display_order" smallint NOT NULL,
+    "verification_status" "text" DEFAULT 'preliminary'::"text" NOT NULL,
+    "created_at" timestamp with time zone DEFAULT "now"() NOT NULL,
+    CONSTRAINT "catalog_subcategories_display_order_check" CHECK (("display_order" > 0)),
+    CONSTRAINT "catalog_subcategories_name_check" CHECK ((("length"("name") >= 1) AND ("length"("name") <= 80))),
+    CONSTRAINT "catalog_subcategories_slug_check" CHECK ((("slug" ~ '^[a-z0-9]+(-[a-z0-9]+)*$'::"text") AND ("length"("slug") <= 80))),
+    CONSTRAINT "catalog_subcategories_verification_status_check" CHECK (("verification_status" = ANY (ARRAY['preliminary'::"text", 'in_progress'::"text", 'reviewed'::"text"])))
+);
+
+
+ALTER TABLE "public"."catalog_subcategories" OWNER TO "postgres";
+
+
+ALTER TABLE "public"."catalog_subcategories" ALTER COLUMN "id" ADD GENERATED BY DEFAULT AS IDENTITY (
+    SEQUENCE NAME "public"."catalog_subcategories_id_seq"
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+
 CREATE TABLE IF NOT EXISTS "public"."categories" (
     "id" integer NOT NULL,
     "name" character varying(64) NOT NULL,
     "display_order" smallint DEFAULT 0 NOT NULL,
-    "created_at" timestamp with time zone DEFAULT "now"() NOT NULL
+    "created_at" timestamp with time zone DEFAULT "now"() NOT NULL,
+    "slug" "text",
+    CONSTRAINT "categories_slug_check" CHECK ((("slug" IS NULL) OR (("slug" ~ '^[a-z0-9]+(-[a-z0-9]+)*$'::"text") AND ("length"("slug") <= 80))))
 );
 
 
@@ -767,6 +1284,23 @@ ALTER SEQUENCE "public"."categories_id_seq" OWNED BY "public"."categories"."id";
 
 
 
+CREATE TABLE IF NOT EXISTS "public"."comparison_group_redirects" (
+    "old_group_id" bigint NOT NULL,
+    "new_group_id" bigint NOT NULL,
+    "reason" "text" NOT NULL,
+    "moved_products" integer DEFAULT 0 NOT NULL,
+    "moved_items" integer DEFAULT 0 NOT NULL,
+    "merged_items" integer DEFAULT 0 NOT NULL,
+    "moved_favorites" integer DEFAULT 0 NOT NULL,
+    "created_at" timestamp with time zone DEFAULT "now"() NOT NULL,
+    CONSTRAINT "comparison_group_redirects_check" CHECK (("old_group_id" <> "new_group_id")),
+    CONSTRAINT "comparison_group_redirects_reason_check" CHECK ((("length"("reason") >= 1) AND ("length"("reason") <= 500)))
+);
+
+
+ALTER TABLE "public"."comparison_group_redirects" OWNER TO "postgres";
+
+
 ALTER TABLE "public"."comparison_groups" ALTER COLUMN "id" ADD GENERATED BY DEFAULT AS IDENTITY (
     SEQUENCE NAME "public"."comparison_groups_id_seq"
     START WITH 1
@@ -786,6 +1320,82 @@ CREATE TABLE IF NOT EXISTS "public"."favorite_groups" (
 
 
 ALTER TABLE "public"."favorite_groups" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."import_runs" (
+    "id" bigint NOT NULL,
+    "started_at" timestamp with time zone DEFAULT "now"() NOT NULL,
+    "tool" "text" NOT NULL,
+    "source_files" "jsonb" DEFAULT '[]'::"jsonb" NOT NULL,
+    "summary" "jsonb" DEFAULT '{}'::"jsonb" NOT NULL,
+    CONSTRAINT "import_runs_source_files_check" CHECK (("jsonb_typeof"("source_files") = 'array'::"text")),
+    CONSTRAINT "import_runs_summary_check" CHECK (("jsonb_typeof"("summary") = 'object'::"text")),
+    CONSTRAINT "import_runs_tool_check" CHECK ((("length"("tool") >= 1) AND ("length"("tool") <= 100)))
+);
+
+
+ALTER TABLE "public"."import_runs" OWNER TO "postgres";
+
+
+ALTER TABLE "public"."import_runs" ALTER COLUMN "id" ADD GENERATED BY DEFAULT AS IDENTITY (
+    SEQUENCE NAME "public"."import_runs_id_seq"
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+
+CREATE TABLE IF NOT EXISTS "public"."leaflet_pages" (
+    "leaflet_id" "text" NOT NULL,
+    "page_no" smallint NOT NULL,
+    "storage_path" "text" NOT NULL,
+    "width" integer NOT NULL,
+    "height" integer NOT NULL,
+    "mime_type" "text" NOT NULL,
+    "bytes" integer NOT NULL,
+    "sha256" "text" NOT NULL,
+    CONSTRAINT "leaflet_pages_bytes_check" CHECK ((("bytes" >= 1) AND ("bytes" <= 8388608))),
+    CONSTRAINT "leaflet_pages_check" CHECK (((("width")::bigint * "height") <= 30000000)),
+    CONSTRAINT "leaflet_pages_height_check" CHECK ((("height" >= 1) AND ("height" <= 8192))),
+    CONSTRAINT "leaflet_pages_mime_type_check" CHECK (("mime_type" = ANY (ARRAY['image/jpeg'::"text", 'image/png'::"text", 'image/webp'::"text"]))),
+    CONSTRAINT "leaflet_pages_page_no_check" CHECK ((("page_no" >= 1) AND ("page_no" <= 200))),
+    CONSTRAINT "leaflet_pages_sha256_check" CHECK (("sha256" ~ '^[0-9a-f]{64}$'::"text")),
+    CONSTRAINT "leaflet_pages_storage_path_check" CHECK ((("storage_path" ~ '^[a-z0-9][a-z0-9_/.-]{0,250}$'::"text") AND ("storage_path" !~ '\.\.'::"text"))),
+    CONSTRAINT "leaflet_pages_width_check" CHECK ((("width" >= 1) AND ("width" <= 8192)))
+);
+
+
+ALTER TABLE "public"."leaflet_pages" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."leaflets" (
+    "id" "text" NOT NULL,
+    "store_id" integer NOT NULL,
+    "title" "text" NOT NULL,
+    "valid_from" "date" NOT NULL,
+    "valid_to" "date" NOT NULL,
+    "valid_to_estimated" boolean DEFAULT false NOT NULL,
+    "source_url" "text" NOT NULL,
+    "source_ref" "text",
+    "checked_at" timestamp with time zone NOT NULL,
+    "published" boolean DEFAULT false NOT NULL,
+    "page_count" smallint DEFAULT 0 NOT NULL,
+    "created_at" timestamp with time zone DEFAULT "now"() NOT NULL,
+    "updated_at" timestamp with time zone DEFAULT "now"() NOT NULL,
+    CONSTRAINT "leaflets_check" CHECK (("valid_from" <= "valid_to")),
+    CONSTRAINT "leaflets_check1" CHECK (((NOT "published") OR ("page_count" >= 1))),
+    CONSTRAINT "leaflets_id_check" CHECK (("id" ~ '^[a-z0-9][a-z0-9_-]{0,79}$'::"text")),
+    CONSTRAINT "leaflets_page_count_check" CHECK ((("page_count" >= 0) AND ("page_count" <= 200))),
+    CONSTRAINT "leaflets_source_ref_check" CHECK ((("source_ref" IS NULL) OR ("length"("source_ref") <= 200))),
+    CONSTRAINT "leaflets_source_url_check" CHECK (("source_url" ~ '^https://'::"text")),
+    CONSTRAINT "leaflets_title_check" CHECK ((("length"("btrim"("title")) >= 1) AND ("length"("btrim"("title")) <= 200)))
+);
+
+
+ALTER TABLE "public"."leaflets" OWNER TO "postgres";
 
 
 CREATE TABLE IF NOT EXISTS "public"."price_history" (
@@ -968,6 +1578,31 @@ ALTER TABLE ONLY "public"."base_products"
 
 
 
+ALTER TABLE ONLY "public"."catalog_reviews"
+    ADD CONSTRAINT "catalog_reviews_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."catalog_subcategories"
+    ADD CONSTRAINT "catalog_subcategories_category_id_name_key" UNIQUE ("category_id", "name");
+
+
+
+ALTER TABLE ONLY "public"."catalog_subcategories"
+    ADD CONSTRAINT "catalog_subcategories_id_category_id_key" UNIQUE ("id", "category_id");
+
+
+
+ALTER TABLE ONLY "public"."catalog_subcategories"
+    ADD CONSTRAINT "catalog_subcategories_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."catalog_subcategories"
+    ADD CONSTRAINT "catalog_subcategories_slug_key" UNIQUE ("slug");
+
+
+
 ALTER TABLE ONLY "public"."categories"
     ADD CONSTRAINT "categories_name_key" UNIQUE ("name");
 
@@ -975,6 +1610,16 @@ ALTER TABLE ONLY "public"."categories"
 
 ALTER TABLE ONLY "public"."categories"
     ADD CONSTRAINT "categories_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."categories"
+    ADD CONSTRAINT "categories_slug_key" UNIQUE ("slug");
+
+
+
+ALTER TABLE ONLY "public"."comparison_group_redirects"
+    ADD CONSTRAINT "comparison_group_redirects_pkey" PRIMARY KEY ("old_group_id");
 
 
 
@@ -990,6 +1635,26 @@ ALTER TABLE ONLY "public"."comparison_groups"
 
 ALTER TABLE ONLY "public"."favorite_groups"
     ADD CONSTRAINT "favorite_groups_pkey" PRIMARY KEY ("owner_id", "group_id");
+
+
+
+ALTER TABLE ONLY "public"."import_runs"
+    ADD CONSTRAINT "import_runs_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."leaflet_pages"
+    ADD CONSTRAINT "leaflet_pages_pkey" PRIMARY KEY ("leaflet_id", "page_no");
+
+
+
+ALTER TABLE ONLY "public"."leaflet_pages"
+    ADD CONSTRAINT "leaflet_pages_storage_path_key" UNIQUE ("storage_path");
+
+
+
+ALTER TABLE ONLY "public"."leaflets"
+    ADD CONSTRAINT "leaflets_pkey" PRIMARY KEY ("id");
 
 
 
@@ -1058,6 +1723,14 @@ ALTER TABLE ONLY "public"."store_offers"
 
 
 
+CREATE INDEX "base_products_subcategory" ON "public"."base_products" USING "btree" ("subcategory_id");
+
+
+
+CREATE INDEX "catalog_reviews_product" ON "public"."catalog_reviews" USING "btree" ("product_id", "topic");
+
+
+
 CREATE INDEX "comparison_groups_search" ON "public"."comparison_groups" USING "gin" ("normalized_name" "public"."gin_trgm_ops");
 
 
@@ -1094,6 +1767,10 @@ CREATE INDEX "idx_store_offers_store_product" ON "public"."store_offers" USING "
 
 
 
+CREATE INDEX "leaflets_visible" ON "public"."leaflets" USING "btree" ("valid_to", "store_id") WHERE "published";
+
+
+
 CREATE INDEX "products_comparison_group" ON "public"."products" USING "btree" ("comparison_group_id");
 
 
@@ -1106,7 +1783,23 @@ CREATE INDEX "shopping_lists_owner" ON "public"."shopping_lists" USING "btree" (
 
 
 
+CREATE INDEX "store_offers_product" ON "public"."store_offers" USING "btree" ("product_id");
+
+
+
 CREATE OR REPLACE TRIGGER "classify_product" BEFORE INSERT OR UPDATE OF "canonical_name", "quantity_value", "quantity_unit", "base_product_id" ON "public"."products" FOR EACH ROW EXECUTE FUNCTION "public"."classify_comparison_product"();
+
+
+
+CREATE OR REPLACE TRIGGER "groups_search_name" BEFORE INSERT OR UPDATE OF "name" ON "public"."comparison_groups" FOR EACH ROW EXECUTE FUNCTION "public"."groups_search_name"();
+
+
+
+CREATE OR REPLACE TRIGGER "leaflets_updated" BEFORE UPDATE ON "public"."leaflets" FOR EACH ROW EXECUTE FUNCTION "public"."fn_set_updated_at"();
+
+
+
+CREATE OR REPLACE TRIGGER "products_search_text" BEFORE INSERT OR UPDATE OF "canonical_name", "base_product_id" ON "public"."products" FOR EACH ROW EXECUTE FUNCTION "public"."products_search_text"();
 
 
 
@@ -1143,6 +1836,31 @@ ALTER TABLE ONLY "public"."base_products"
 
 
 
+ALTER TABLE ONLY "public"."base_products"
+    ADD CONSTRAINT "base_products_subcategory_fkey" FOREIGN KEY ("subcategory_id", "category_id") REFERENCES "public"."catalog_subcategories"("id", "category_id") ON DELETE RESTRICT;
+
+
+
+ALTER TABLE ONLY "public"."catalog_reviews"
+    ADD CONSTRAINT "catalog_reviews_product_id_fkey" FOREIGN KEY ("product_id") REFERENCES "public"."products"("id") ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."catalog_subcategories"
+    ADD CONSTRAINT "catalog_subcategories_category_id_fkey" FOREIGN KEY ("category_id") REFERENCES "public"."categories"("id") ON DELETE RESTRICT;
+
+
+
+ALTER TABLE ONLY "public"."comparison_group_redirects"
+    ADD CONSTRAINT "comparison_group_redirects_new_group_id_fkey" FOREIGN KEY ("new_group_id") REFERENCES "public"."comparison_groups"("id") ON DELETE RESTRICT;
+
+
+
+ALTER TABLE ONLY "public"."comparison_group_redirects"
+    ADD CONSTRAINT "comparison_group_redirects_old_group_id_fkey" FOREIGN KEY ("old_group_id") REFERENCES "public"."comparison_groups"("id") ON DELETE RESTRICT;
+
+
+
 ALTER TABLE ONLY "public"."comparison_groups"
     ADD CONSTRAINT "comparison_groups_base_product_id_fkey" FOREIGN KEY ("base_product_id") REFERENCES "public"."base_products"("id") ON DELETE RESTRICT;
 
@@ -1155,6 +1873,16 @@ ALTER TABLE ONLY "public"."favorite_groups"
 
 ALTER TABLE ONLY "public"."favorite_groups"
     ADD CONSTRAINT "favorite_groups_owner_id_fkey" FOREIGN KEY ("owner_id") REFERENCES "auth"."users"("id") ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."leaflet_pages"
+    ADD CONSTRAINT "leaflet_pages_leaflet_id_fkey" FOREIGN KEY ("leaflet_id") REFERENCES "public"."leaflets"("id") ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."leaflets"
+    ADD CONSTRAINT "leaflets_store_id_fkey" FOREIGN KEY ("store_id") REFERENCES "public"."stores"("id") ON DELETE RESTRICT;
 
 
 
@@ -1194,6 +1922,11 @@ ALTER TABLE ONLY "public"."shopping_lists"
 
 
 ALTER TABLE ONLY "public"."store_offers"
+    ADD CONSTRAINT "store_offers_last_import_run_id_fkey" FOREIGN KEY ("last_import_run_id") REFERENCES "public"."import_runs"("id") ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."store_offers"
     ADD CONSTRAINT "store_offers_product_id_fkey" FOREIGN KEY ("product_id") REFERENCES "public"."products"("id") ON DELETE CASCADE;
 
 
@@ -1207,6 +1940,10 @@ ALTER TABLE "public"."base_products" ENABLE ROW LEVEL SECURITY;
 
 
 CREATE POLICY "catalog_read" ON "public"."base_products" FOR SELECT TO "authenticated" USING (( SELECT "public"."can_read_catalog"() AS "can_read_catalog"));
+
+
+
+CREATE POLICY "catalog_read" ON "public"."catalog_subcategories" FOR SELECT TO "authenticated" USING (( SELECT "public"."can_read_catalog"() AS "can_read_catalog"));
 
 
 
@@ -1234,13 +1971,41 @@ CREATE POLICY "catalog_read" ON "public"."stores" FOR SELECT TO "authenticated" 
 
 
 
+ALTER TABLE "public"."catalog_reviews" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."catalog_subcategories" ENABLE ROW LEVEL SECURITY;
+
+
 ALTER TABLE "public"."categories" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."comparison_group_redirects" ENABLE ROW LEVEL SECURITY;
 
 
 ALTER TABLE "public"."comparison_groups" ENABLE ROW LEVEL SECURITY;
 
 
 ALTER TABLE "public"."favorite_groups" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."import_runs" ENABLE ROW LEVEL SECURITY;
+
+
+ALTER TABLE "public"."leaflet_pages" ENABLE ROW LEVEL SECURITY;
+
+
+CREATE POLICY "leaflet_pages_read" ON "public"."leaflet_pages" FOR SELECT TO "authenticated" USING ((( SELECT "public"."can_read_catalog"() AS "can_read_catalog") AND (EXISTS ( SELECT 1
+   FROM "public"."leaflets" "l"
+  WHERE (("l"."id" = "leaflet_pages"."leaflet_id") AND "l"."published")))));
+
+
+
+ALTER TABLE "public"."leaflets" ENABLE ROW LEVEL SECURITY;
+
+
+CREATE POLICY "leaflets_read" ON "public"."leaflets" FOR SELECT TO "authenticated" USING (("published" AND ( SELECT "public"."can_read_catalog"() AS "can_read_catalog")));
+
 
 
 CREATE POLICY "own_favorites" ON "public"."favorite_groups" TO "authenticated" USING ((("owner_id" = ( SELECT "auth"."uid"() AS "uid")) AND ( SELECT "public"."can_read_catalog"() AS "can_read_catalog"))) WITH CHECK ((("owner_id" = ( SELECT "auth"."uid"() AS "uid")) AND ( SELECT "public"."can_read_catalog"() AS "can_read_catalog")));
@@ -1467,6 +2232,66 @@ GRANT ALL ON FUNCTION "public"."can_read_catalog"() TO "service_role";
 
 
 
+REVOKE ALL ON FUNCTION "public"."catalog_branch"("p_subcategory" "text", "p_limit" integer, "p_offset" integer) FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."catalog_branch"("p_subcategory" "text", "p_limit" integer, "p_offset" integer) TO "authenticated";
+GRANT ALL ON FUNCTION "public"."catalog_branch"("p_subcategory" "text", "p_limit" integer, "p_offset" integer) TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."catalog_group"("p_group_id" bigint) FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."catalog_group"("p_group_id" bigint) TO "authenticated";
+GRANT ALL ON FUNCTION "public"."catalog_group"("p_group_id" bigint) TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."catalog_item"("p_group_id" bigint) FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."catalog_item"("p_group_id" bigint) TO "authenticated";
+GRANT ALL ON FUNCTION "public"."catalog_item"("p_group_id" bigint) TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."catalog_offer"("p_offer_id" bigint) FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."catalog_offer"("p_offer_id" bigint) TO "authenticated";
+GRANT ALL ON FUNCTION "public"."catalog_offer"("p_offer_id" bigint) TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."catalog_product"("p_product_id" bigint) FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."catalog_product"("p_product_id" bigint) TO "authenticated";
+GRANT ALL ON FUNCTION "public"."catalog_product"("p_product_id" bigint) TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."catalog_require_reader"() FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."catalog_require_reader"() TO "authenticated";
+GRANT ALL ON FUNCTION "public"."catalog_require_reader"() TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."catalog_search"("p_query" "text", "p_limit" integer, "p_offset" integer) FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."catalog_search"("p_query" "text", "p_limit" integer, "p_offset" integer) TO "authenticated";
+GRANT ALL ON FUNCTION "public"."catalog_search"("p_query" "text", "p_limit" integer, "p_offset" integer) TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."catalog_search_norm"("t" "text") FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."catalog_search_norm"("t" "text") TO "authenticated";
+GRANT ALL ON FUNCTION "public"."catalog_search_norm"("t" "text") TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."catalog_tree"() FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."catalog_tree"() TO "authenticated";
+GRANT ALL ON FUNCTION "public"."catalog_tree"() TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."catalog_unit_label"("u" "text") FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."catalog_unit_label"("u" "text") TO "authenticated";
+GRANT ALL ON FUNCTION "public"."catalog_unit_label"("u" "text") TO "service_role";
+
+
+
 REVOKE ALL ON FUNCTION "public"."classify_comparison_product"() FROM PUBLIC;
 GRANT ALL ON FUNCTION "public"."classify_comparison_product"() TO "service_role";
 
@@ -1581,6 +2406,16 @@ GRANT ALL ON FUNCTION "public"."gtrgm_union"("internal", "internal") TO "service
 
 
 
+REVOKE ALL ON FUNCTION "public"."merge_comparison_group"("p_old" bigint, "p_new" bigint, "p_reason" "text") FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."merge_comparison_group"("p_old" bigint, "p_new" bigint, "p_reason" "text") TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."milk_group"("p_kind" "text", "p_fat" numeric, "p_lactose" "text", "p_name" "text") FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."milk_group"("p_kind" "text", "p_fat" numeric, "p_lactose" "text", "p_name" "text") TO "service_role";
+
+
+
 REVOKE ALL ON FUNCTION "public"."norm_text"("t" "text") FROM PUBLIC;
 GRANT ALL ON FUNCTION "public"."norm_text"("t" "text") TO "service_role";
 GRANT ALL ON FUNCTION "public"."norm_text"("t" "text") TO "authenticated";
@@ -1605,6 +2440,11 @@ GRANT ALL ON FUNCTION "public"."purchase_price"("o" "jsonb", "n" numeric) TO "se
 
 
 
+REVOKE ALL ON FUNCTION "public"."reclassify_milk"("p_reason" "text") FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."reclassify_milk"("p_reason" "text") TO "service_role";
+
+
+
 REVOKE ALL ON FUNCTION "public"."search_offers"("search_query" "text", "result_limit" integer) FROM PUBLIC;
 GRANT ALL ON FUNCTION "public"."search_offers"("search_query" "text", "result_limit" integer) TO "authenticated";
 GRANT ALL ON FUNCTION "public"."search_offers"("search_query" "text", "result_limit" integer) TO "service_role";
@@ -1621,6 +2461,11 @@ GRANT ALL ON FUNCTION "public"."set_limit"(real) TO "postgres";
 GRANT ALL ON FUNCTION "public"."set_limit"(real) TO "anon";
 GRANT ALL ON FUNCTION "public"."set_limit"(real) TO "authenticated";
 GRANT ALL ON FUNCTION "public"."set_limit"(real) TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."settle_regrouped"("p_moves" "jsonb", "p_reason" "text") FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."settle_regrouped"("p_moves" "jsonb", "p_reason" "text") TO "service_role";
 
 
 
@@ -1822,6 +2667,23 @@ GRANT SELECT ON TABLE "public"."catalog_offers" TO "authenticated";
 
 
 
+GRANT ALL ON TABLE "public"."catalog_reviews" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "public"."catalog_reviews_id_seq" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."catalog_subcategories" TO "service_role";
+GRANT SELECT ON TABLE "public"."catalog_subcategories" TO "authenticated";
+
+
+
+GRANT ALL ON SEQUENCE "public"."catalog_subcategories_id_seq" TO "service_role";
+
+
+
 GRANT ALL ON TABLE "public"."categories" TO "service_role";
 GRANT SELECT ON TABLE "public"."categories" TO "authenticated";
 
@@ -1831,12 +2693,34 @@ GRANT ALL ON SEQUENCE "public"."categories_id_seq" TO "service_role";
 
 
 
+GRANT ALL ON TABLE "public"."comparison_group_redirects" TO "service_role";
+
+
+
 GRANT ALL ON SEQUENCE "public"."comparison_groups_id_seq" TO "service_role";
 
 
 
 GRANT ALL ON TABLE "public"."favorite_groups" TO "service_role";
 GRANT SELECT,INSERT,DELETE ON TABLE "public"."favorite_groups" TO "authenticated";
+
+
+
+GRANT ALL ON TABLE "public"."import_runs" TO "service_role";
+
+
+
+GRANT ALL ON SEQUENCE "public"."import_runs_id_seq" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."leaflet_pages" TO "service_role";
+GRANT SELECT ON TABLE "public"."leaflet_pages" TO "authenticated";
+
+
+
+GRANT ALL ON TABLE "public"."leaflets" TO "service_role";
+GRANT SELECT ON TABLE "public"."leaflets" TO "authenticated";
 
 
 

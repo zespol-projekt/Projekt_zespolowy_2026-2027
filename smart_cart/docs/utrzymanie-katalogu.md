@@ -94,3 +94,7 @@ docker rm -f smartcart-pg17-check
 Poczekaj, aż Postgres będzie gotowy przed uruchomieniem testu. To test migracji, nie dodatkowy lokalny Supabase z Auth. Dodatkowo można podać `SMARTCART_CHECK_INVENTORY` wskazujące lokalny raport katalogu o formacie użytym w audycie; test nie pobiera go samodzielnie.
 
 `scripts/verify-cloud.sql` wykonuje kontrolę katalogu jako istniejące potwierdzone konto w jawnej transakcji `BEGIN READ ONLY … ROLLBACK`. Wymaga administratora z prawem przełączania ról; tryb `db query --read-only` CLI używa ograniczonej roli, która nie może wykonać tego przełączenia. Uruchom `supabase db query --remote --file scripts/verify-cloud.sql`; wynik nie zawiera kont ani prywatnych list. Osobno `node scripts/check-anonymous.mjs` sprawdza odmowę publicznego REST, korzystając wyłącznie z publicznej konfiguracji `.env.local`.
+
+## Import produktów i cen
+
+Nowy importer z plików scraperów, zasady dopasowania i uruchomienie próby: [import katalogu](import-katalogu.md).
