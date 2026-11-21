@@ -15,7 +15,35 @@ Po zmianie frazy katalog od razu ukrywa poprzednie wyniki i pokazuje ładowanie.
 
 Do kolejnego etapu potrzebne są ustalenia z Damianem. Lokalny kontrakt `search_product_groups` nie udostępnia ścieżki kategorii ani liczby różnych produktów w całej grupie. `offer_count` liczy oferty, a strona 50 wierszy `catalog_offers` nie wystarcza do rozpoznania grupy jednoelementowej. Odczyt Ulubionych pobiera tylko ID, nazwę i jednostkę grupy; domyślna ilość jest obecnie wyznaczana w aplikacji. Należy uzgodnić drzewo, pełne liczności, źródło domyślnej ilości oraz stronicowanie produktów i Ulubionych. Nie zweryfikowano w tym etapie nowych kontraktów w chmurze; lokalnie nadal jest pięć migracji z 14 listopada.
 
-Z Filipem pozostają do uzgodnienia jedno pole wyszukiwania na ekranie Szukaj, przekazywanie parametru `q` i komponenty motywu. Obecny nagłówek i katalog wyświetlają osobne pola. Hierarchia kategorii, bezpośrednie karty pojedynczych produktów i nowy układ Ulubionych pozostają kolejnymi etapami.
+Z Filipem pozostają do uzgodnienia jedno pole wyszukiwania na ekranie Szukaj, przekazywanie parametru `q` i komponenty motywu. Obecny nagłówek i katalog wyświetlają osobne pola. Hierarchia kategorii i bezpośrednie karty pojedynczych produktów pozostają kolejnymi etapami. Część Ulubionych możliwą do wykonania na obecnym kontrakcie opisano poniżej.
+
+Weryfikacja tego etapu: TypeScript i lint zaliczone; testy Node — 92 zaliczone, 1 pominięty z powodu braku Gitleaks; cztery testy zakupowe Playwright zaliczone. Test nawigacji przekroczył limit 45 s przy pierwszym budowaniu po odtworzeniu zależności (pobranie pakietu aplikacji zajęło około 35 s); osobne ponowienie z niezmienionym limitem zakończyło się powodzeniem w 9,6 s. Zależności odtworzono z istniejącego lockfile, bez zmiany wersji. Testy przeglądarkowe korzystały z fikcyjnego Supabase. Nie wykonywano migracji, importów ani odbioru na fizycznym telefonie.
+
+## Ulubione — interfejs na istniejącym API
+
+`FavoritesScreen` pokazuje zwarte wiersze `FavoriteRow`: neutralną ikonę grupy, pełną nazwę, serduszko usuwania i przycisk dodania do listy. Kliknięcie nazwy otwiera oferty bezpośrednio pod właściwą grupą; dane ofert pobierane są dopiero po rozwinięciu i korzystają z istniejącej paginacji po 50 wierszy. Widok zachowuje opisy cen i promocji z `OfferInfo`; nie wyznacza liczby różnych produktów z liczby ofert.
+
+Dodawanie wymaga ręcznego wpisania ilości w jednostce grupy. Nie podstawiamy domyślnego litra ani kilograma, których endpoint Ulubionych nie zwraca. Użytkownik widzi docelową listę i może wybrać inną istniejącą listę; przy braku list nadal działa tworzenie „Zakupy” w `ShoppingProvider`. Dodanie grupy przekazuje `selected_product_id=null`; przy ofercie można świadomie wybrać konkretny produkt. Zapis korzysta z dotychczasowego atomowego RPC, walidacji ilości i ochrony sesji. W trakcie operacji formularz i usuwanie są zablokowane; błąd zachowuje wpisaną ilość, a sukces podaje ilość i nazwę listy.
+
+Serduszko usuwa wyłącznie wpis `favorite_groups`, następnie odświeża widok. Nie zmienia pozycji zakupowych. Ponowne wejście odświeża dane, a zmiana sesji odcina poprzednie dane i wyniki operacji. Pusty widok prowadzi do katalogu; błędy pobierania Ulubionych, ofert i list mają ponowienie i nie są przedstawiane jako brak danych.
+
+Zakres oczekujący na uzgodnienia: wyszukiwanie po pełnym zbiorze Ulubionych i jego stronicowanie, domyślne ilości z kontraktu, docelowe ikony oraz integracja ze wspólnym motywem Filipa. Widok korzysta z obecnych `Controls` i nie wprowadza drugiego mechanizmu motywu. API, typy wspólne, SQL i zależności nie zostały zmienione.
+
+`tests/browser/favorites.spec.ts` sprawdza dodanie grupy i konkretnego produktu, wybór listy, ilość i jednostkę, blokadę kolejnego zapisu, błędy z ponowieniem, usunięcie bez zmiany zakupów, ponowne wejście/reload, stan serduszka w katalogu i wylogowanie podczas zapisu. Scenariusz na szerokości 320 px zapisuje zrzuty widoku zwartego i rozwiniętego do `test-results`; wszystkie dane kont i katalogu są fikcyjne.
+
+Weryfikacja z 20 listopada 2026: sześć testów Ulubionych zaliczonych, cztery istniejące testy zakupowe zaliczone, TypeScript i lint zaliczone, Node — 92 zaliczone i jeden pominięty z powodu braku Gitleaks. Pierwsze otwarcie aplikacji przekroczyło limit testu podczas budowania; długi scenariusz dodawania i usuwania rozdzielono na dwa niezależne przypadki bez zwiększania limitu czasu. Końcowy przebieg sześciu testów Ulubionych trwał 22,5 s. Zrzuty na szerokości 320 px obejrzano; nie wykonano odbioru na fizycznym telefonie, migracji ani zapisów do wspólnej bazy.
+
+### Dostępność Ulubionych
+
+Szybkie dodawanie ustawia fokus w polu ilości. Enter kończy wpisywanie i zamyka klawiaturę bez zapisu; zakup nadal wymaga przycisku dodania. „Anuluj dodawanie” zamyka formularz również przy rozwiniętych ofertach i pozostawia fokus na przycisku otwierającym. Zwijanie ofert przywraca fokus do nazwy grupy. Wpisana ilość pozostaje dostępna po ponownym otwarciu. Stan rozwinięcia odpowiada widoczności formularza.
+
+Przyciski wewnątrz wiersza korzystają z kolorów i minimalnej wysokości wspólnych `Controls`, z zawijaniem długich etykiet. Dodawanie pokazuje krótkie „Dodaj grupę” lub „Dodaj ten produkt”, zachowując pełną nazwę w etykiecie dostępności; nie powtarza długiej nazwy na całym przycisku. Wybór listy ma oznaczenie dla technologii asystujących (`aria-pressed` w WWW i stan `selected` natywnie). Dekoracyjne symbole grupy i serduszka zachowują rozmiar, a tekst użytkowy podlega skalowaniu. Wspólne pliki nawigacji i `Controls.tsx` pozostają poza tą zmianą.
+
+Testy w `tests/browser/favorites.spec.ts` obejmują dodatkowo obsługę przez Tab, Enter i spację, przenoszenie fokusu, anulowanie, stan wyboru listy i układ 320 × 480 px z dwukrotnie większym tekstem w karcie. Sprawdzają brak poziomego przepełnienia, pole dotyku serduszka co najmniej 44 × 44 px i pełną widoczność przycisku dodania po przewinięciu. Powiększenie jest kontrolowanym testem przeglądarkowym; nie zastępuje odbioru systemowego skalowania czcionek, TalkBack/VoiceOver ani klawiatury ekranowej na telefonie. Zrzut `favorites-large-text.png` trafia do katalogu wyników testu.
+
+Kontrole po poprawkach dostępności: TypeScript i lint zaliczone. Siedem scenariuszy Ulubionych przeszło w przebiegu zestawu, a scenariusz klawiatury przeszedł po poprawieniu semantyki WWW w osobnym uruchomieniu. Próba z zimnym pakietem przekroczyła limit przy pierwszym otwieraniu strony; limitów i oczekiwań dotyczących zachowania nie osłabiano. Stan rozwinięcia jest przekazywany jawnie przez `aria-expanded`, ponieważ użyta wersja WWW nie przenosiła go z samego `accessibilityState`.
+
+Po skróceniu widocznych napisów końcowe kontrole TypeScript i lint ponownie przeszły. Oba nowe scenariusze (klawiatura oraz większy tekst) zaliczono razem w 39,8 s; zrzut końcowego widoku z większym tekstem obejrzano.
 
 ## Logowanie — integracja Supabase
 
