@@ -99,6 +99,55 @@ $$;
 ALTER FUNCTION "public"."add_shopping_item"("p_list_id" "uuid", "p_group_id" bigint, "p_quantity" numeric, "p_unit" "text", "p_selected_product_id" bigint) OWNER TO "postgres";
 
 
+CREATE OR REPLACE FUNCTION "public"."align_milk_base_products"() RETURNS integer
+    LANGUAGE "plpgsql"
+    SET "search_path" TO ''
+    AS $$
+DECLARE bez bigint; uht32 bigint; m15 bigint; n integer;
+BEGIN
+  SELECT min(id) INTO bez FROM public.base_products WHERE name = 'Mleko bez laktozy' HAVING count(*) = 1;
+  SELECT min(id) INTO uht32 FROM public.base_products WHERE name = 'Mleko UHT 3,2%' HAVING count(*) = 1;
+  SELECT min(id) INTO m15 FROM public.base_products WHERE name = 'Mleko 1,5% - 2,0%' HAVING count(*) = 1;
+  IF bez IS NULL OR uht32 IS NULL OR m15 IS NULL THEN RAISE NOTICE 'Brak jednoznacznych produktów bazowych mleka - bez zmian.'; RETURN 0; END IF;
+  IF (SELECT count(DISTINCT subcategory_id) FROM public.base_products WHERE id IN (bez, uht32, m15)) <> 1
+    OR EXISTS (SELECT 1 FROM public.base_products WHERE id IN (bez, uht32, m15) AND subcategory_id IS NULL)
+    THEN RAISE EXCEPTION 'Produkty bazowe mleka są w różnych podkategoriach - poprawka przerwana.'; END IF;
+  WITH zmiany AS (
+    SELECT p.id, CASE
+        WHEN g.group_key LIKE '%:bez laktozy%' THEN bez
+        WHEN split_part(g.group_key, ':', 3) = '3.2' THEN uht32
+        WHEN split_part(g.group_key, ':', 3) IN ('1.5', '2') THEN m15 END AS nowy
+    FROM public.products p JOIN public.comparison_groups g ON g.id = p.comparison_group_id
+    JOIN public.base_products b ON b.id = p.base_product_id
+    WHERE g.group_key LIKE 'milk:%' AND b.subcategory_id = (SELECT subcategory_id FROM public.base_products WHERE id = bez)
+      AND ((g.group_key LIKE '%:bez laktozy%' AND p.base_product_id <> bez)
+        OR (g.group_key LIKE '%:z laktozą%' AND p.base_product_id = bez))
+  )
+  UPDATE public.products p SET base_product_id = z.nowy FROM zmiany z WHERE p.id = z.id AND z.nowy IS NOT NULL AND z.nowy <> p.base_product_id;
+  GET DIAGNOSTICS n = ROW_COUNT;
+  IF n > 50 THEN RAISE EXCEPTION 'Poprawka produktów bazowych mleka zmieniłaby % produktów - przerwana, sprawdź dane.', n; END IF;
+  RETURN n;
+END;
+$$;
+
+
+ALTER FUNCTION "public"."align_milk_base_products"() OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."base_products_search_name"() RETURNS "trigger"
+    LANGUAGE "plpgsql"
+    SET "search_path" TO ''
+    AS $$
+BEGIN
+  NEW.search_name := public.catalog_search_norm(NEW.name);
+  RETURN NEW;
+END;
+$$;
+
+
+ALTER FUNCTION "public"."base_products_search_name"() OWNER TO "postgres";
+
+
 CREATE OR REPLACE FUNCTION "public"."can_read_catalog"() RETURNS boolean
     LANGUAGE "sql" STABLE SECURITY DEFINER
     SET "search_path" TO ''
@@ -314,7 +363,9 @@ BEGIN
     RETURN jsonb_build_object('version', 1, 'query', q, 'total', 0, 'limit', lim, 'offset', off, 'items', '[]'::jsonb);
   END IF;
   WITH kandydaci AS (
-    SELECT g.id, g.name, g.group_key, coalesce(g.search_name, '') AS gn, string_agg(coalesce(p.search_text, ''), ' ') AS txt, count(*) AS n
+    SELECT g.id, g.name, g.group_key, coalesce(g.search_name, '') AS gn, count(*) AS n,
+      bool_or(public.catalog_search_match(coalesce(g.search_name, '') || ' ' || coalesce(p.search_text, '')
+        || CASE WHEN g.group_key LIKE 'product:%' THEN ' ' || coalesce(bp.search_name, '') ELSE '' END, toks)) AS w_produkcie
     FROM public.comparison_groups g
     JOIN public.products p ON p.comparison_group_id = g.id
     JOIN public.base_products bp ON bp.id = p.base_product_id AND bp.subcategory_id IS NOT NULL
@@ -322,10 +373,10 @@ BEGIN
     GROUP BY g.id
   ), trafienia AS (
     SELECT k.id, k.name, k.n, (CASE WHEN k.gn = q THEN 200 WHEN k.gn LIKE q || '%' THEN 150
-        WHEN NOT EXISTS (SELECT 1 FROM unnest(toks) t WHERE position(t IN k.gn) = 0) THEN 120 ELSE 60 END
+        WHEN public.catalog_search_match(k.gn, toks) THEN 120 ELSE 60 END
       + CASE WHEN k.group_key LIKE 'product:%' THEN 0 ELSE 40 END) AS score
     FROM kandydaci k
-    WHERE NOT EXISTS (SELECT 1 FROM unnest(toks) t WHERE position(t IN (k.gn || ' ' || k.txt)) = 0)
+    WHERE k.w_produkcie
   )
   SELECT (SELECT count(*) FROM trafienia),
     (SELECT coalesce(jsonb_agg(public.catalog_item(x.id) ORDER BY x.score DESC, x.n DESC, x.name, x.id), '[]'::jsonb)
@@ -337,6 +388,20 @@ $$;
 
 
 ALTER FUNCTION "public"."catalog_search"("p_query" "text", "p_limit" integer, "p_offset" integer) OWNER TO "postgres";
+
+
+CREATE OR REPLACE FUNCTION "public"."catalog_search_match"("p_text" "text", "p_tokens" "text"[]) RETURNS boolean
+    LANGUAGE "sql" IMMUTABLE
+    SET "search_path" TO ''
+    AS $$
+  SELECT NOT EXISTS (
+    SELECT 1 FROM unnest(p_tokens) WITH ORDINALITY AS t(tok, nr)
+    WHERE position(' ' || t.tok || CASE WHEN t.nr < cardinality(p_tokens) THEN ' ' ELSE '' END
+                   IN ' ' || coalesce(p_text, '') || ' ') = 0);
+$$;
+
+
+ALTER FUNCTION "public"."catalog_search_match"("p_text" "text", "p_tokens" "text"[]) OWNER TO "postgres";
 
 
 CREATE OR REPLACE FUNCTION "public"."catalog_search_norm"("t" "text") RETURNS "text"
@@ -414,7 +479,8 @@ BEGIN
   IF n ~ '\mmleko\M' AND n !~ '(kokos|soj|owsian|migdal|czekolad|wanili|w proszku|skondens|kondens|zageszcz|fermentowan|\mnie mleko\M|roslinn)' THEN
     fat := substring(replace(NEW.canonical_name,',','.') FROM '([0-9]+(?:\.[0-9]+)?)\s*%');
     kind := CASE WHEN n ~ '\muht\M' THEN 'UHT' WHEN n ~ 'swiez' THEN 'świeże' END;
-    lactose := CASE WHEN n ~ 'bez lakt|bezlakt|bez lektozy' THEN 'bez laktozy' ELSE 'z laktozą' END;
+    -- „bez lak” obejmuje też skrót „BEZ LAK.” (Biedronka, 22.11.2026), nie tylko „BEZ LAKT.” i pełny zapis.
+    lactose := CASE WHEN n ~ '\mbez lak|bezlakt|bez lektozy' THEN 'bez laktozy' ELSE 'z laktozą' END;
     IF fat IS NOT NULL AND kind IS NOT NULL AND u = 'ml'
       -- Warianty smakowe, proteinowe i barista to inne produkty; „Mazurski Smak” jest marką.
       AND n !~ '(protein|barista|banan|truskawk|kaka|kawow)' AND NOT (n ~ 'smak' AND n !~ 'mazurski smak')
@@ -450,7 +516,7 @@ BEGIN
     IF (k LIKE 'rice:%' AND (n ~ '(mix|mieszank|gotow|wafl|chrup|makaron|napoj|warzyw|kurcz|pomidor|sos|zup|danie)' OR (n ~ 'basmati' AND n ~ 'jasmin')))
       OR (k LIKE 'sugar:%' AND n ~ '(puder|kostk|smak|trzcino|wanili)')
       OR (k LIKE 'eggs:%' AND (n ~ '(kacz|gesi|strusi)' OR (n ~ '\mm\M' AND n ~ '\ml\M')))
-      OR n ~ 'bez laktozy|bez lektozy|bez lakt'
+      OR n ~ 'bez laktozy|bez lektozy|\mbez lak'
       OR (n ~ 'kozi' AND n ~ 'owcz') THEN
       k:='product:'||NEW.id; label:=NEW.canonical_name;
     ELSE
@@ -717,7 +783,7 @@ BEGIN
             'package_count',n,'quantity',n*q,'unit',wanted_unit,'sale_mode','package','total_price',(priced->>'cost')::numeric,
             'regular_total',(priced->>'regular_total')::numeric,'promotion_applied',(priced->>'promotion_applied')::boolean,
             'requires_activation',(priced->>'requires_activation')::boolean,'requires_card',(priced->>'requires_card')::boolean,
-            'condition',o.promo_condition,'observed_at',o.regular_price_observed_at,'valid_from',o.valid_from,'valid_to',o.valid_to);
+            'condition',o.promo_condition,'observed_at',o.regular_price_observed_at,'price_source',o.price_source,'valid_from',o.valid_from,'valid_to',o.valid_to);
           next_states:=jsonb_set(next_states,ARRAY[state_key],jsonb_build_object('cost',cost,'amount',actual,'picks',(st.value->'picks')||jsonb_build_array(pick)));
         END IF;
       END LOOP;
@@ -743,7 +809,7 @@ BEGIN
           'package_count',NULL,'quantity',needed-qty,'unit',wanted_unit,'sale_mode','bulk','total_price',(priced->>'cost')::numeric,
           'regular_total',(priced->>'regular_total')::numeric,'promotion_applied',(priced->>'promotion_applied')::boolean,
           'requires_activation',(priced->>'requires_activation')::boolean,'requires_card',(priced->>'requires_card')::boolean,
-          'condition',o.promo_condition,'observed_at',o.regular_price_observed_at,'valid_from',o.valid_from,'valid_to',o.valid_to);
+          'condition',o.promo_condition,'observed_at',o.regular_price_observed_at,'price_source',o.price_source,'valid_from',o.valid_from,'valid_to',o.valid_to);
         best:=jsonb_build_object('cost',cost,'amount',needed,'picks',(st.value->'picks')||jsonb_build_array(pick));
       END IF;
     END LOOP;
@@ -767,8 +833,7 @@ CREATE OR REPLACE FUNCTION "public"."products_search_text"() RETURNS "trigger"
     SET "search_path" TO ''
     AS $$
 BEGIN
-  NEW.search_text := public.catalog_search_norm(NEW.canonical_name || ' ' ||
-    coalesce((SELECT name FROM public.base_products WHERE id = NEW.base_product_id), ''));
+  NEW.search_text := public.catalog_search_norm(NEW.canonical_name);
   RETURN NEW;
 END;
 $$;
@@ -1020,6 +1085,7 @@ CREATE TABLE IF NOT EXISTS "public"."base_products" (
     "median_carbs_100g" numeric(5,1),
     "created_at" timestamp with time zone DEFAULT "now"() NOT NULL,
     "subcategory_id" bigint,
+    "search_name" "text",
     CONSTRAINT "base_products_default_shelf_life_days_check" CHECK (("default_shelf_life_days" > 0)),
     CONSTRAINT "base_products_median_carbs_100g_check" CHECK ((("median_carbs_100g" >= (0)::numeric) AND ("median_carbs_100g" <= (100)::numeric))),
     CONSTRAINT "base_products_median_fat_100g_check" CHECK ((("median_fat_100g" >= (0)::numeric) AND ("median_fat_100g" <= (100)::numeric))),
@@ -1787,6 +1853,10 @@ CREATE INDEX "store_offers_product" ON "public"."store_offers" USING "btree" ("p
 
 
 
+CREATE OR REPLACE TRIGGER "base_products_search_name" BEFORE INSERT OR UPDATE OF "name" ON "public"."base_products" FOR EACH ROW EXECUTE FUNCTION "public"."base_products_search_name"();
+
+
+
 CREATE OR REPLACE TRIGGER "classify_product" BEFORE INSERT OR UPDATE OF "canonical_name", "quantity_value", "quantity_unit", "base_product_id" ON "public"."products" FOR EACH ROW EXECUTE FUNCTION "public"."classify_comparison_product"();
 
 
@@ -2226,6 +2296,15 @@ GRANT ALL ON FUNCTION "public"."add_shopping_item"("p_list_id" "uuid", "p_group_
 
 
 
+REVOKE ALL ON FUNCTION "public"."align_milk_base_products"() FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."align_milk_base_products"() TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."base_products_search_name"() FROM PUBLIC;
+
+
+
 REVOKE ALL ON FUNCTION "public"."can_read_catalog"() FROM PUBLIC;
 GRANT ALL ON FUNCTION "public"."can_read_catalog"() TO "authenticated";
 GRANT ALL ON FUNCTION "public"."can_read_catalog"() TO "service_role";
@@ -2271,6 +2350,12 @@ GRANT ALL ON FUNCTION "public"."catalog_require_reader"() TO "service_role";
 REVOKE ALL ON FUNCTION "public"."catalog_search"("p_query" "text", "p_limit" integer, "p_offset" integer) FROM PUBLIC;
 GRANT ALL ON FUNCTION "public"."catalog_search"("p_query" "text", "p_limit" integer, "p_offset" integer) TO "authenticated";
 GRANT ALL ON FUNCTION "public"."catalog_search"("p_query" "text", "p_limit" integer, "p_offset" integer) TO "service_role";
+
+
+
+REVOKE ALL ON FUNCTION "public"."catalog_search_match"("p_text" "text", "p_tokens" "text"[]) FROM PUBLIC;
+GRANT ALL ON FUNCTION "public"."catalog_search_match"("p_text" "text", "p_tokens" "text"[]) TO "authenticated";
+GRANT ALL ON FUNCTION "public"."catalog_search_match"("p_text" "text", "p_tokens" "text"[]) TO "service_role";
 
 
 
