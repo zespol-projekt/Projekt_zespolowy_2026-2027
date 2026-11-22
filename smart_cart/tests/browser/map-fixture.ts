@@ -69,6 +69,7 @@ export async function localLibrary(filename: string) {
 }
 export async function mockMap(page: Page, session: TestSession | null = testSession()) {
   await mockAuth(page, session);
+  await page.route('**/functions/v1/leaflets', route => route.fulfill({ json: { version: 1, leaflets: [] } }));
   // Use real MapLibre/worker code, without downloading public tiles or fonts.
   await page.route(`${MAPLIBRE_ASSETS}**`, async route => {
     const filename = new URL(route.request().url()).pathname.split('/').pop()!;

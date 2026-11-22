@@ -99,3 +99,15 @@ powrót z recovery oraz utrzymanie trasy. `AuthContextValue` zawiera też `accou
 i `clearAccountNotice()` do prezentacji błędu wylogowania po przejściu do formularza.
 Stan weryfikacji i odbiór na urządzeniach: [raport wdrożenia](wdrozenie-po-audycie.md).
 Aktualne wyniki: 89/89 testów Node, 20/20 Playwright, TypeScript i lint zaliczone. [Odbiór integracji](auth-handoff.md) oddziela testy automatyczne od procesu na fizycznym urządzeniu i rzeczywistych mailach. [Konfiguracja Auth i SMTP](supabase-setup.md) rozróżnia ustawienia chmury od pliku CLI.
+
+## Profil — rozszerzenie 17 listopada 2026
+
+- `sendPasswordChangeCode(signal?: AbortSignal): Promise<AuthResult>` — tylko potwierdzona zwykła sesja; używa `reauthenticate()`, limit ponowienia 60 s.
+- `changePassword(password, nonce, signal?: AbortSignal): Promise<AuthResult>` — dedykowana operacja zwykłej sesji; wymagany uprzednio wysłany kod dla tego klucza sesji, minimum 8 znaków i sześć cyfr nonce. Używa `updateUser({ password, nonce })` i pozostawia sesję.
+- `setNewPassword` pozostaje wyłącznie dla recovery i kończy sesję jak wcześniej.
+
+Użytkownik wybrał kod email i zachowanie sesji. Kod jest przekazywany do serwera, nie weryfikowany lokalnie. **Egzekwowanie nonce przez serwer zależy od konfiguracji Supabase Secure password change oraz wieku sesji**; według SDK ostatnie 24 godziny mogą być traktowane jako niedawne logowanie. Nie potwierdzono ustawień chmury ani doręczenia maila reauthentication w tej implementacji. Jeśli wymagany jest kod przy absolutnie każdej zmianie, sam standardowy `reauthenticate + updateUser` nie stanowi dowodu takiej gwarancji — politykę musi potwierdzić właściciel Auth. Nie zmieniano konfiguracji.
+
+Nowe bezpieczne błędy: `reauthentication_required`, `invalid_reauthentication_code`, `current_password_required`. Jeśli serwer wymaga również obecnego hasła, UI opisuje brak obsługi tej polityki i wskazuje odzyskiwanie; nie omija wymagań.
+
+Anulowanie/opuszczenie Profilu usuwa hasło, potwierdzenie i kod z UI. Dedykowany zakres żądania SDK (`passwordRequests`) przerywa PUT i blokuje spóźniony zapis starej sesji po anulowaniu/zmianie konta/wylogowaniu. Nie obiecuje cofnięcia zapisu wykonanego już na serwerze. Operacje nadal korzystają z istniejącej kolejki i klucza sesji; formularz nie tworzy klienta SDK. Wylogowanie zachowuje `accountNotice` także po przejściu do logowania.

@@ -1,12 +1,14 @@
+import { useTheme } from '@/features/theme/ThemeProvider';
+import type { ThemeColors } from '@/features/theme/palette';
 import type { BottomTabBarProps } from "expo-router/js-tabs";
 import { SymbolView } from "expo-symbols";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 const items = [
   {
-    name: "stores",
-    label: "Sklepy",
-    icon: { ios: "storefront", android: "storefront", web: "storefront" },
+    name: "index",
+    label: "Home",
+    icon: { ios: "house", android: "home", web: "home" },
   },
   {
     name: "favorites",
@@ -20,13 +22,13 @@ const items = [
   },
   {
     name: "products",
-    label: "Produkty",
-    icon: { ios: "cube", android: "deployed_code", web: "deployed_code" },
+    label: "Szukaj",
+    icon: { ios: "magnifyingglass", android: "search", web: "search" },
   },
   {
-    name: "profile",
-    label: "Profil",
-    icon: { ios: "person", android: "person", web: "person" },
+    name: "stores",
+    label: "Mapa",
+    icon: { ios: "map", android: "map", web: "map" },
   },
 ] as const;
 
@@ -35,6 +37,8 @@ export default function BottomBar({
   emitter,
   navigateToTab,
 }: BottomTabBarProps) {
+  const { colors } = useTheme();
+  const styles = createStyles(colors);
   return (
     <View style={styles.bar}>
       {items.map((item) => {
@@ -46,7 +50,7 @@ export default function BottomBar({
 
         const selected = state.routes[state.index].key === route.key;
         const isCart = item.name === "cart";
-        const color = selected ? "#252B30" : "#606660";
+        const color = selected ? colors.text : colors.muted;
 
         const handlePress = () => {
           const event = emitter.emit({
@@ -66,6 +70,7 @@ export default function BottomBar({
             style={styles.item}
             accessibilityRole="tab"
             accessibilityLabel={item.label}
+            aria-selected={selected}
             accessibilityState={{ selected }}
             onPress={handlePress}
             onLongPress={() =>
@@ -79,7 +84,7 @@ export default function BottomBar({
               <SymbolView
                 name={item.icon}
                 size={isCart ? 28 : 24}
-                tintColor={isCart ? "#FFFFFF" : color}
+                tintColor={isCart ? colors.onPrimary : color}
               />
             </View>
 
@@ -99,7 +104,7 @@ export default function BottomBar({
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: ThemeColors) => StyleSheet.create({
   bar: {
     flexDirection: "row",
     alignItems: "center",
@@ -109,9 +114,9 @@ const styles = StyleSheet.create({
     paddingBottom: 4,
     paddingHorizontal: 4,
     borderWidth: 1,
-    borderColor: "#DDDFD7",
+    borderColor: colors.border,
     borderRadius: 28,
-    backgroundColor: "#F7F7F2",
+    backgroundColor: colors.background,
   },
   item: {
     flex: 1,
@@ -125,7 +130,7 @@ const styles = StyleSheet.create({
   },
   cartCircle: {
     borderRadius: 22,
-    backgroundColor: "#252B30",
+    backgroundColor: colors.cart,
   },
   label: {
     marginTop: 2,

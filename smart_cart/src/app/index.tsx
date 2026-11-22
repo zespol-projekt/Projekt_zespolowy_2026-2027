@@ -1,156 +1,30 @@
-import { Link } from "expo-router";
-import { useState } from "react";
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
-
-const CARD_GAP = 12;
-const MIN_CARD_WIDTH = 144;
+import { Link } from 'expo-router';
+import { Pressable, ScrollView, Text, View } from 'react-native';
+import { useTheme } from '@/features/theme/ThemeProvider';
 
 const shortcuts = [
-  {
-    title: "Listy zakupów",
-    description: "Planuj zakupy w jednym miejscu",
-    action: "Otwórz koszyk",
-    href: "/cart",
-  },
-  {
-    title: "Ulubione",
-    description: "Produkty, które lubisz",
-    action: "Zobacz ulubione",
-    href: "/favorites",
-  },
-  {
-    title: "Sklepy i mapa",
-    description: "Znajdź sklep w okolicy",
-    action: "Zobacz sklepy",
-    href: "/stores",
-  },
-  {
-    title: "Produkty i ceny",
-    description: "Porównaj oferty sieci",
-    action: "Przeglądaj",
-    href: "/products",
-  },
+  { title: 'Listy zakupów', description: 'Zaplanuj kolejne zakupy', href: '/cart' },
+  { title: 'Ulubione', description: 'Twoje zapisane grupy', href: '/favorites' },
+  { title: 'Gazetki', description: 'Przeglądaj strony gazetek w aplikacji', href: '/leaflets' },
+  { title: 'Mapa sklepów', description: 'Znajdź sklep w okolicy', href: '/stores' },
+  { title: 'Produkty', description: 'Sprawdź produkty i ceny sieci', href: '/products' },
 ] as const;
-
-export default function Index() {
-  const [gridWidth, setGridWidth] = useState(0);
-  const cardWidth =
-    gridWidth >= MIN_CARD_WIDTH * 2 + CARD_GAP
-      ? (gridWidth - CARD_GAP) / 2
-      : "100%";
-
-  return (
-    <ScrollView
-      style={styles.screen}
-      contentContainerStyle={styles.content}
-      showsVerticalScrollIndicator={false}
-    >
-      <View
-        style={styles.shortcutGrid}
-        onLayout={(event) => setGridWidth(event.nativeEvent.layout.width)}
-      >
-        {shortcuts.map((shortcut) => (
-          <Link
-            key={shortcut.title}
-            href={shortcut.href}
-            style={[styles.shortcut, { width: cardWidth }]}
-            asChild
-          >
-            <Pressable
-              accessibilityRole="link"
-              accessibilityLabel={`${shortcut.title}: ${shortcut.action}`}
-              android_ripple={{ color: "#E5E8E2" }}
-            >
-              <Text style={styles.shortcutTitle}>{shortcut.title}</Text>
-              <Text style={styles.shortcutDescription}>
-                {shortcut.description}
-              </Text>
-              <View style={styles.shortcutAction}>
-                <Text style={styles.shortcutActionText}>{shortcut.action}</Text>
-              </View>
-            </Pressable>
-          </Link>
-        ))}
-      </View>
-
-      <View style={styles.productsPanel}>
-        <Text style={styles.productsTitle}>ZAPLANUJ ZAKUPY</Text>
-        <Text>Dodaj produkty do prywatnej listy i porównaj koszt zakupu w sieciach. Przy brakujących cenach pokażemy, których danych nie ma w bazie.</Text>
-        <Link href="/products" style={{ paddingVertical: 16, color: '#087F5D', fontWeight: '700' }}>Wyszukaj produkty →</Link>
-      </View>
-    </ScrollView>
-  );
+export default function Home() {
+  const { colors } = useTheme();
+  return <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 28 }}>
+    <View style={{ gap: 12 }} testID="home-grid">
+      {[shortcuts.slice(0, 2), shortcuts.slice(2, 3), shortcuts.slice(3)].map((row, index) => <View key={index} style={{ flexDirection: 'row', gap: 12 }}>
+      {row.map(item => <Link key={item.href} href={item.href} asChild>
+        <Pressable accessibilityRole="link" accessibilityLabel={item.title}
+          style={{ flex: 1, minWidth: 0, minHeight: 148,
+            padding: 16, borderRadius: 20, borderWidth: 1, borderColor: colors.border,
+            backgroundColor: colors.surface, justifyContent: 'space-between', gap: 12 }}>
+          <Text style={{ color: colors.text, fontSize: 20, fontWeight: '800' }}>{item.title}</Text>
+          <Text style={{ color: colors.muted, fontSize: 14, lineHeight: 20 }}>{item.description}</Text>
+          <Text style={{ color: colors.link, fontWeight: '700' }}>Otwórz →</Text>
+        </Pressable>
+      </Link>)}
+      </View>)}
+    </View>
+  </ScrollView>;
 }
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-  },
-  content: {
-    paddingHorizontal: 18,
-    paddingTop: 12,
-    paddingBottom: 4,
-  },
-  shortcutGrid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "space-between",
-    gap: CARD_GAP,
-  },
-  shortcut: {
-    minHeight: 164,
-    justifyContent: "space-between",
-    padding: 14,
-    borderRadius: 22,
-    borderWidth: 1,
-    borderColor: "#E5E8E2",
-    backgroundColor: "#FFFFFF",
-    shadowColor: "#152D43",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 3,
-  },
-  shortcutTitle: {
-    fontSize: 21,
-    fontWeight: "800",
-    lineHeight: 25,
-    color: "#152D43",
-  },
-  shortcutDescription: {
-    marginTop: 6,
-    fontSize: 13,
-    lineHeight: 18,
-    color: "#606660",
-  },
-  shortcutAction: {
-    minHeight: 36,
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: 10,
-    paddingHorizontal: 6,
-    borderRadius: 11,
-    backgroundColor: "#07966D",
-  },
-  shortcutActionText: {
-    fontSize: 13,
-    fontWeight: "700",
-    color: "#FFFFFF",
-    textAlign: "center",
-  },
-  productsPanel: {
-    marginTop: 14,
-    minHeight: 190,
-    paddingTop: 12,
-    paddingBottom: 12,
-    borderRadius: 22,
-    backgroundColor: "#07966D",
-  },
-  productsTitle: {
-    marginHorizontal: 12,
-    marginBottom: 8,
-    fontSize: 19,
-    fontWeight: "800",
-    color: "#FFFFFF",
-  },
-});

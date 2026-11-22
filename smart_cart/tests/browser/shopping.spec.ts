@@ -5,6 +5,100 @@ const listId = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa';
 const itemId = 'bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb';
 const group = { id: 17, name: 'Mleko UHT 3,2% · z laktozą', unit: 'ml', default_quantity: 1000, offer_count: 1, lowest_price: 6 };
 
+test('koszyk rozpoznaje daty cen w wycenie i propozycji, zachowując zgodność ze starszym API', async ({ page }) => {
+  await mockMap(page);
+  const item = { id: itemId, list_id: listId, group_id: group.id, quantity: 1000, unit: 'ml',
+    selected_product_id: null, extra_store_ids: [], group, selected_product: null };
+  const pick = { offer_id: 1, product_id: 91, name: 'Produkt testowy', package_count: 1, quantity: 1000, unit: 'ml',
+    sale_mode: 'package', total_price: 6, regular_total: 6, promotion_applied: false, requires_activation: false,
+    requires_card: false, condition: null, observed_at: '2026-11-22T10:00:00Z', valid_from: null, valid_to: null };
+  const picks = [
+    { ...pick, offer_id: 1, price_source: 'antonka', observed_at: '2026-11-20T23:00:00Z' },
+    { ...pick, offer_id: 2, price_source: 'antonka_historia', observed_at: '2026-11-10T10:00:00Z' },
+    { ...pick, offer_id: 3, price_source: 'tanszykoszyk', observed_at: '2026-11-20T10:00:00Z' },
+    { ...pick, offer_id: 4, price_source: 'kodyzbiedry' },
+    { ...pick, offer_id: 5 },
+    { ...pick, offer_id: 6, price_source: 'antonka', observed_at: null },
+    { ...pick, offer_id: 7, price_source: 'antonka_historia', observed_at: '2026-02-30' },
+    { ...pick, offer_id: 8, price_source: 'unknown-source' },
+  ];
+  const quote = { status: 'priced', name: group.name, required_quantity: 1000, unit: 'ml', total_price: 48,
+    purchased_quantity: 8000, surplus: 7000, picks };
+  await page.route(`${AUTH_URL}/rest/v1/shopping_lists?**`, route => route.fulfill({ json: [
+    { id: listId, name: 'Test dat koszyka', updated_at: '2026-11-22T10:00:00Z' },
+  ] }));
+  await page.route(`${AUTH_URL}/rest/v1/shopping_list_items?**`, route => route.fulfill({ json: [item] }));
+  await page.route(`${AUTH_URL}/rest/v1/rpc/compare_basket`, route => route.fulfill({ json: { version: 2, stores: [
+    { store_id: 1, store_name: 'Sieć testowa', complete: true, available_count: 1, requested_count: 1, total_price: 48,
+      items: [{ ...quote, item_id: itemId, group_id: group.id, extra_selected: false,
+        alternative: { ...quote, total_price: 40, purchased_quantity: 10000, surplus: 9000, picks: [
+          { ...pick, offer_id: 9, quantity: 5000, package_count: 5, total_price: 20, regular_total: 30,
+            price_source: 'antonka_historia', observed_at: '2026-11-09T10:00:00Z', promotion_applied: true },
+          { ...pick, offer_id: 10, quantity: 5000, package_count: 5, total_price: 20, regular_total: 30,
+            price_source: 'kodyzbiedry', promotion_applied: true },
+        ] } }],
+    },
+  ] } }));
+  await page.goto('/cart');
+  await expect(page.getByText('48,00 zł · Najtańszy pełny koszyk', { exact: true })).toBeVisible();
+  for (const date of ['21.11.2026', '10.11.2026', '20.11.2026', '09.11.2026']) {
+    await expect(page.getByText(`Cena widziana ${date}`, { exact: true })).toHaveCount(1);
+  }
+  await expect(page.getByText('Data ceny nieznana.', { exact: true })).toHaveCount(6);
+  await expect(page.getByText(/22\.11\.2026|30\.02\.2026/)).toHaveCount(0);
+  await expect(page.getByText('Kup 10 000 ml za 40,00 zł.', { exact: true })).toBeVisible();
+});
+
+test('stary podgląd ofert rozpoznaje źródło daty i nie pokazuje dat pobrania', async ({ page }) => {
+  await mockMap(page);
+  await page.route(`${AUTH_URL}/rest/v1/rpc/search_product_groups`, route => route.fulfill({ json: [{ ...group, offer_count: 5 }] }));
+  const offer = { product_id: 91, group_id: group.id, store_id: 1, store_name: 'Sieć testowa',
+    product_name: 'Mleko testowe 1 l', gramatura_norm: '1 l', quantity_value: 1000, quantity_unit: 'ml', sale_mode: 'package',
+    regular_price: 6, single_price: 6, price_status: 'prawdziwa', promo_price: null, verified_promotion: false };
+  await page.route(`${AUTH_URL}/rest/v1/catalog_offers?**`, route => route.fulfill({ json: [
+    { ...offer, offer_id: 1, price_source: 'antonka', regular_price_observed_at: '2026-11-21T10:00:00Z' },
+    { ...offer, offer_id: 2, price_source: 'tanszykoszyk', regular_price_observed_at: '2026-11-20T10:00:00Z' },
+    { ...offer, offer_id: 3, price_source: 'kodyzbiedry', regular_price_observed_at: '2026-11-22T10:00:00Z' },
+    { ...offer, offer_id: 4, regular_price_observed_at: '2026-11-22T10:00:00Z' },
+    { ...offer, offer_id: 5, price_source: 'antonka', regular_price_observed_at: null },
+  ] }));
+  await page.goto('/products?catalog=0');
+  await page.getByRole('button', { name: `Rozwiń oferty: ${group.name}` }).click();
+  await expect(page.getByText('Dane sieciowe · Cena widziana 21.11.2026', { exact: true })).toBeVisible();
+  await expect(page.getByText('Dane sieciowe · Cena widziana 20.11.2026', { exact: true })).toBeVisible();
+  await expect(page.getByText('Dane sieciowe · Data ceny nieznana.', { exact: true })).toHaveCount(3);
+  await expect(page.getByText(/22\.11\.2026|Cena potwierdzona:/)).toHaveCount(0);
+});
+
+test('zmiana frazy od razu ukrywa stare wyniki i czeka na odpowiedź nowego wyszukiwania', async ({ page }) => {
+  await page.clock.install({ time: new Date('2026-11-20T12:00:00Z') });
+  await mockMap(page);
+  const queries: string[] = [];
+  const nextGroup = { ...group, id: 18, name: 'Ryż biały', unit: 'g' };
+  let release!: () => void;
+  const held = new Promise<void>(resolve => { release = resolve; });
+  await page.route(`${AUTH_URL}/rest/v1/rpc/search_product_groups`, async route => {
+    const phrase = route.request().postDataJSON().search_query;
+    queries.push(phrase);
+    if (phrase === 'ryż') await held;
+    await route.fulfill({ json: phrase === 'ryż' ? [nextGroup] : [group] });
+  });
+  await page.goto('/products?catalog=0');
+  const previousResult = page.getByRole('button', { name: `Rozwiń oferty: ${group.name}` });
+  await expect(previousResult).toBeVisible();
+  await page.clock.pauseAt(new Date('2026-11-20T12:05:00Z'));
+  await page.getByRole('textbox', { name: 'Szukaj grupy produktów' }).fill('ryż');
+  await expect(previousResult).not.toBeVisible();
+  expect(queries).toEqual(['']);
+  await page.clock.runFor(300);
+  await expect.poll(() => queries).toEqual(['', 'ryż']);
+  await expect(previousResult).not.toBeVisible();
+  await expect(page.getByText('Nie znaleziono grup produktów. Spróbuj innej nazwy.')).not.toBeVisible();
+  release();
+  await expect(page.getByRole('button', { name: `Rozwiń oferty: ${nextGroup.name}` })).toBeVisible();
+  await expect(previousResult).not.toBeVisible();
+});
+
 test('grupy, oferty, prywatne listy i edycja przeliczają koszyk, niepełna sieć nie ma sumy', async ({ page }) => {
   await mockMap(page);
   const errors: string[] = [];
@@ -44,7 +138,7 @@ test('grupy, oferty, prywatne listy i edycja przeliczają koszyk, niepełna sie�
     }
     return route.fulfill({ json: [] });
   });
-  await page.goto('/products');
+  await page.goto('/products?catalog=0');
   await page.getByRole('textbox', { name: 'Szukaj grupy produktów' }).fill('mleko');
   await page.getByRole('button', { name: `Rozwiń oferty: ${group.name}` }).click();
   await expect(page.getByText('Marka Test 1 l', { exact: true })).toBeVisible();
@@ -76,13 +170,14 @@ test('grupy, oferty, prywatne listy i edycja przeliczają koszyk, niepełna sie�
 test('logowanie wraca do celu, jawne wylogowanie czyści cel', async ({ page }) => {
   await mockMap(page, null);
   await page.route(`${AUTH_URL}/auth/v1/token?grant_type=password`, route => route.fulfill({ json: testSession() }));
-  await page.goto('/settings');
+  await page.goto('/rules');
   await page.getByRole('textbox', { name: 'Email', exact: true }).fill('map-test@example.invalid');
   await page.getByLabel('Hasło', { exact: true }).fill('test-password');
   await page.getByRole('button', { name: 'Zaloguj się', exact: true }).click();
-  await expect(page.getByText('Ustawienia i zasady porównania', { exact: true })).toBeVisible();
-  await expect(page).toHaveURL(/\/settings$/);
-  await page.getByText('Otwórz profil i wylogowanie →', { exact: true }).click();
+  await expect(page.getByText('Zasady porównywania', { exact: true })).toBeVisible();
+  await expect(page).toHaveURL(/\/rules$/);
+  await page.getByRole('button', { name: 'Otwórz menu' }).click();
+  await page.getByRole('button', { name: 'Profil', exact: true }).click();
   await page.getByRole('button', { name: 'Wyloguj się', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Zaloguj się', exact: true })).toBeVisible();
   await expect(page).toHaveURL(/\/$/);
@@ -93,7 +188,7 @@ test('anulowane logowanie nie otwiera aplikacji po spóźnionej odpowiedzi', asy
   let release!: () => void;
   const held = new Promise<void>(resolve => { release = resolve; });
   await page.route(`${AUTH_URL}/auth/v1/token?grant_type=password`, async route => { await held; await route.fulfill({ json: testSession() }); });
-  await page.goto('/products');
+  await page.goto('/products?catalog=0');
   await page.getByRole('textbox', { name: 'Email', exact: true }).fill('map-test@example.invalid');
   await page.getByLabel('Hasło', { exact: true }).fill('test-password');
   const request = page.waitForRequest(`${AUTH_URL}/auth/v1/token?grant_type=password`);

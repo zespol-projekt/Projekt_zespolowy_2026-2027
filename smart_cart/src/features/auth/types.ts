@@ -8,6 +8,9 @@ export type AuthErrorCode =
   | 'invalid_email'
   | 'invalid_credentials'
   | 'weak_password'
+  | 'reauthentication_required'
+  | 'invalid_reauthentication_code'
+  | 'current_password_required'
   | 'invalid_or_expired_code'
   | 'rate_limited'
   | 'session_expired'
@@ -51,6 +54,8 @@ export interface AuthActions {
   sendPasswordResetCode(email: string): Promise<AuthResult>;
   verifyPasswordResetCode(email: string, code: string): Promise<AuthResult>;
   setNewPassword(password: string): Promise<AuthResult>;
+  sendPasswordChangeCode(signal?: AbortSignal): Promise<AuthResult>;
+  changePassword(password: string, nonce: string, signal?: AbortSignal): Promise<AuthResult>;
   signOut(): Promise<AuthResult>;
   cancelOperation(): Promise<AuthResult>;
   retrySession(): Promise<AuthResult>;

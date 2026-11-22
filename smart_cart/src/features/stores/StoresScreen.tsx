@@ -1,3 +1,5 @@
+import { useTheme } from '@/features/theme/ThemeProvider';
+import type { ThemeColors } from '@/features/theme/palette';
 import { useEffect, useMemo, useState } from 'react';
 import { ActivityIndicator, Linking, Platform, Pressable, StyleSheet, Text, TextInput, View, useWindowDimensions } from 'react-native';
 import StoreMap from './StoreMap';
@@ -7,6 +9,8 @@ import { useMyLocation } from './useMyLocation';
 import { useStores } from './useStores';
 
 export default function StoresScreen() {
+  const { colors, dark } = useTheme();
+  const styles = createStyles(colors);
   const compact = useWindowDimensions().height < 720;
   const { catalog, loading, error, retry } = useStores();
   const { location, requesting, message, locate, dismissMessage } = useMyLocation();
@@ -62,7 +66,7 @@ export default function StoresScreen() {
       </View>
       <Pressable style={[styles.locationButton, requesting && styles.disabled]} onPress={showMyLocation}
         accessibilityRole="button" accessibilityLabel="Moja lokalizacja" accessibilityState={{ disabled: requesting, busy: requesting }} disabled={requesting}>
-        {requesting ? <ActivityIndicator size="small" color="#FFFFFF" /> : <Text style={styles.locationIcon}>◎</Text>}
+        {requesting ? <ActivityIndicator size="small" color={colors.surface} /> : <Text style={styles.locationIcon}>◎</Text>}
         <Text style={styles.locationText}>{requesting ? 'Ustalanie…' : 'Moja lokalizacja'}</Text>
       </Pressable>
     </View>
@@ -74,13 +78,13 @@ export default function StoresScreen() {
           accessibilityLabel={`${brand.name}, ${counts[chain]} sklepów`} accessibilityState={{ checked: active }} aria-checked={active}
           style={[styles.filter, active && { borderColor: brand.color, backgroundColor: `${brand.color}12` }]}>
           <View style={[styles.filterDot, { backgroundColor: active ? brand.color : '#B0B8B1' }]} />
-          <Text style={[styles.filterText, active && { color: brand.color }]} numberOfLines={1}>{brand.name}</Text>
+          <Text style={[styles.filterText, active && { color: dark ? colors.text : brand.color }]} numberOfLines={1}>{brand.name}</Text>
         </Pressable>;
       })}
     </View>
 
     <View style={styles.search}>
-      <TextInput style={styles.searchInput} placeholder="Miasto lub adres sklepu" placeholderTextColor="#7A827D"
+      <TextInput style={styles.searchInput} placeholder="Miasto lub adres sklepu" placeholderTextColor={colors.muted}
         accessibilityLabel="Miasto lub adres sklepu" value={query} onChangeText={setQuery} onSubmitEditing={showResults}
         autoCorrect={false} returnKeyType="search" underlineColorAndroid="transparent" />
       {!!query && <Pressable style={styles.searchAction} onPress={() => setQuery('')} accessibilityRole="button" accessibilityLabel="Wyczyść wyszukiwanie">
@@ -101,7 +105,7 @@ export default function StoresScreen() {
     <View style={styles.mapFrame}>
       {catalog ? <StoreMap stores={filtered} selectedId={selectedId} onSelect={setSelectedId} userLocation={location} focus={focus} />
         : <View style={styles.loading}>
-          {loading ? <><ActivityIndicator size="large" color="#07966D" /><Text style={styles.loadingText}>Wczytywanie sklepów…</Text></>
+          {loading ? <><ActivityIndicator size="large" color={colors.primary} /><Text style={styles.loadingText}>Wczytywanie sklepów…</Text></>
             : <><Text style={styles.errorTitle}>Sklepy są chwilowo niedostępne</Text><Text style={styles.loadingText}>{error}</Text>
               <Pressable style={styles.retryButton} onPress={retry} accessibilityRole="button"><Text style={styles.retryButtonText}>Spróbuj ponownie</Text></Pressable></>}
         </View>}
@@ -137,43 +141,43 @@ export default function StoresScreen() {
   </View>;
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: ThemeColors) => StyleSheet.create({
   compactScreen: { gap: 6, paddingTop: 8 }, compactTitle: { fontSize: 19 },
   screen: { flex: 1, paddingHorizontal: 14, paddingTop: 12, paddingBottom: 4, gap: 10 },
   heading: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 },
-  headingText: { flex: 1, minWidth: 0 }, title: { fontSize: 23, fontWeight: '800', color: '#152D43' },
-  subtitle: { fontSize: 12, color: '#6F7772', marginTop: 3 },
-  locationButton: { minHeight: 42, borderRadius: 14, backgroundColor: '#07966D', paddingHorizontal: 11, flexDirection: 'row', alignItems: 'center', gap: 5 },
-  locationIcon: { color: '#FFFFFF', fontSize: 22 }, locationText: { color: '#FFFFFF', fontSize: 11, fontWeight: '700' },
+  headingText: { flex: 1, minWidth: 0 }, title: { fontSize: 23, fontWeight: '800', color: colors.text },
+  subtitle: { fontSize: 12, color: colors.muted, marginTop: 3 },
+  locationButton: { minHeight: 42, borderRadius: 14, backgroundColor: colors.primary, paddingHorizontal: 11, flexDirection: 'row', alignItems: 'center', gap: 5 },
+  locationIcon: { color: colors.onPrimary, fontSize: 22 }, locationText: { color: colors.onPrimary, fontSize: 11, fontWeight: '700' },
   disabled: { opacity: 0.6 }, filters: { flexDirection: 'row', gap: 6 },
   filter: { flexGrow: 1, minHeight: 42, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 5, paddingHorizontal: 6,
-    borderWidth: 1, borderColor: '#DDE2DA', borderRadius: 13, backgroundColor: '#FFFFFF' },
-  filterDot: { width: 7, height: 7, borderRadius: 4 }, filterText: { color: '#747D75', fontSize: 12, fontWeight: '700' },
-  search: { minHeight: 44, flexDirection: 'row', alignItems: 'center', borderWidth: 1, borderColor: '#DEE3DB', borderRadius: 14, backgroundColor: '#FFFFFF', paddingLeft: 12 },
-  searchInput: { flex: 1, minWidth: 0, fontSize: 14, color: '#152D43', paddingVertical: 10 },
+    borderWidth: 1, borderColor: colors.border, borderRadius: 13, backgroundColor: colors.surface },
+  filterDot: { width: 7, height: 7, borderRadius: 4 }, filterText: { color: colors.muted, fontSize: 12, fontWeight: '700' },
+  search: { minHeight: 44, flexDirection: 'row', alignItems: 'center', borderWidth: 1, borderColor: colors.border, borderRadius: 14, backgroundColor: colors.surface, paddingLeft: 12 },
+  searchInput: { flex: 1, minWidth: 0, fontSize: 14, color: colors.text, paddingVertical: 10 },
   searchAction: { minHeight: 44, justifyContent: 'center', alignItems: 'center', paddingHorizontal: 12 },
-  searchButton: { color: '#087F5D', fontSize: 13, fontWeight: '700' }, clear: { fontSize: 24, color: '#66726B', lineHeight: 26 },
-  notice: { padding: 10, borderRadius: 12, backgroundColor: '#FFF2D5', flexDirection: 'row', alignItems: 'center', gap: 10 },
-  noticeText: { flex: 1, color: '#6F4A14', fontSize: 12, lineHeight: 17 },
-  mapFrame: { flex: 1, minHeight: 220, borderRadius: 20, overflow: 'hidden', borderWidth: 1, borderColor: '#DDE3DA', position: 'relative', backgroundColor: '#E8EEE8' },
+  searchButton: { color: colors.link, fontSize: 13, fontWeight: '700' }, clear: { fontSize: 24, color: colors.muted, lineHeight: 26 },
+  notice: { padding: 10, borderRadius: 12, backgroundColor: colors.warning, flexDirection: 'row', alignItems: 'center', gap: 10 },
+  noticeText: { flex: 1, color: colors.warningText, fontSize: 12, lineHeight: 17 },
+  mapFrame: { flex: 1, minHeight: 220, borderRadius: 20, overflow: 'hidden', borderWidth: 1, borderColor: colors.border, position: 'relative', backgroundColor: colors.input },
   loading: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 24, gap: 12 },
-  loadingText: { fontSize: 14, lineHeight: 20, color: '#627067', textAlign: 'center' },
-  errorTitle: { fontSize: 18, fontWeight: '700', color: '#152D43', textAlign: 'center' },
-  retryButton: { backgroundColor: '#07966D', minHeight: 44, justifyContent: 'center', paddingHorizontal: 18, borderRadius: 12 },
-  retryButtonText: { color: '#FFFFFF', fontWeight: '700' }, retryText: { color: '#087F5D', fontWeight: '700', fontSize: 13 },
+  loadingText: { fontSize: 14, lineHeight: 20, color: colors.muted, textAlign: 'center' },
+  errorTitle: { fontSize: 18, fontWeight: '700', color: colors.text, textAlign: 'center' },
+  retryButton: { backgroundColor: colors.primary, minHeight: 44, justifyContent: 'center', paddingHorizontal: 18, borderRadius: 12 },
+  retryButtonText: { color: colors.onPrimary, fontWeight: '700' }, retryText: { color: colors.link, fontWeight: '700', fontSize: 13 },
   mapControls: { position: 'absolute', top: 12, right: 12, gap: 8 },
-  mapControl: { backgroundColor: '#FFFFFF', borderRadius: 11, minHeight: 40, paddingHorizontal: 12,
-    justifyContent: 'center', borderWidth: 1, borderColor: '#DDE3DA', elevation: 3 },
-  mapControlText: { color: '#304939', fontSize: 12, fontWeight: '700' },
-  empty: { position: 'absolute', left: 16, right: 16, bottom: 28, padding: 16, borderRadius: 16, backgroundColor: '#FFFFFF', alignItems: 'center' },
-  emptyTitle: { fontWeight: '700', color: '#152D43', fontSize: 16 }, emptyText: { color: '#657268', textAlign: 'center', fontSize: 13, marginTop: 5 },
+  mapControl: { backgroundColor: colors.surface, borderRadius: 11, minHeight: 40, paddingHorizontal: 12,
+    justifyContent: 'center', borderWidth: 1, borderColor: colors.border, elevation: 3 },
+  mapControlText: { color: colors.text, fontSize: 12, fontWeight: '700' },
+  empty: { position: 'absolute', left: 16, right: 16, bottom: 28, padding: 16, borderRadius: 16, backgroundColor: colors.surface, alignItems: 'center' },
+  emptyTitle: { fontWeight: '700', color: colors.text, fontSize: 16 }, emptyText: { color: colors.muted, textAlign: 'center', fontSize: 13, marginTop: 5 },
   emptyAction: { minHeight: 44, justifyContent: 'center' },
-  card: { position: 'absolute', bottom: 25, left: 10, right: 10, padding: 14, borderRadius: 18, backgroundColor: '#FFFFFF', elevation: 5,
-    shadowColor: '#152D43', shadowOpacity: 0.15, shadowRadius: 10, shadowOffset: { width: 0, height: 3 } },
+  card: { position: 'absolute', bottom: 25, left: 10, right: 10, padding: 14, borderRadius: 18, backgroundColor: colors.surface, elevation: 5,
+    shadowColor: colors.shadow, shadowOpacity: 0.15, shadowRadius: 10, shadowOffset: { width: 0, height: 3 } },
   cardHeading: { flexDirection: 'row', gap: 10, alignItems: 'center' }, brandBadge: { width: 34, height: 34, borderRadius: 11, alignItems: 'center', justifyContent: 'center' },
-  brandLetter: { color: '#FFFFFF', fontWeight: '800', fontSize: 18 }, cardTitleArea: { flex: 1 },
-  cardTitle: { color: '#152D43', fontSize: 18, fontWeight: '800' }, distance: { color: '#66726B', fontSize: 11, marginTop: 2 },
-  closeCard: { width: 36, height: 36, alignItems: 'center', justifyContent: 'center' }, address: { color: '#48574D', fontSize: 13, lineHeight: 18, marginTop: 9, marginBottom: 12 },
-  navigate: { minHeight: 42, borderRadius: 12, backgroundColor: '#07966D', justifyContent: 'center', alignItems: 'center' },
-  navigateText: { color: '#FFFFFF', fontWeight: '700', fontSize: 14 }, navigationError: { fontSize: 12, color: '#9A3428', marginTop: 7 },
+  brandLetter: { color: colors.onPrimary, fontWeight: '800', fontSize: 18 }, cardTitleArea: { flex: 1 },
+  cardTitle: { color: colors.text, fontSize: 18, fontWeight: '800' }, distance: { color: colors.muted, fontSize: 11, marginTop: 2 },
+  closeCard: { width: 36, height: 36, alignItems: 'center', justifyContent: 'center' }, address: { color: colors.text, fontSize: 13, lineHeight: 18, marginTop: 9, marginBottom: 12 },
+  navigate: { minHeight: 42, borderRadius: 12, backgroundColor: colors.primary, justifyContent: 'center', alignItems: 'center' },
+  navigateText: { color: colors.onPrimary, fontWeight: '700', fontSize: 14 }, navigationError: { fontSize: 12, color: colors.danger, marginTop: 7 },
 });

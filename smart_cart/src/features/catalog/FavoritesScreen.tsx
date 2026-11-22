@@ -1,31 +1,35 @@
 import { useCallback, useState } from 'react';
-import { useFocusEffect } from 'expo-router';
+import { Link, useFocusEffect } from 'expo-router';
 import { ActivityIndicator, Text, View } from 'react-native';
-import { Button, Notice, Screen, ui } from '@/components/ui/Controls';
+import { Button, Field, Notice, Screen, useUI } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { useSessionKey, useSessionQuery } from './hooks';
-import { GroupDetails } from './GroupDetails';
-import type { ProductGroup } from './types';
+import { normalizeCatalogQuery } from './catalogPresentation';
+import { FavoriteRow } from './FavoriteRow';
 
 export default function FavoritesScreen() {
   const key = useSessionKey();
   return key ? <Favorites key={key} /> : null;
 }
 function Favorites() {
+  const [search, setSearch] = useState('');
+  const ui = useUI();
   const query = useSessionQuery(catalogApi.favorites, []);
-  const [selected, setSelected] = useState<ProductGroup | null>(null);
   const reload = query.reload;
   useFocusEffect(useCallback(() => { reload(); }, [reload]));
-  return <Screen title="Ulubione produkty">
-    <Text style={ui.muted}>Twoje prywatne grupy produktów zapisane na koncie.</Text>
+  const rows = query.data?.filter(row => normalizeCatalogQuery(row.group.name).includes(normalizeCatalogQuery(search)));
+  return <Screen title="Ulubione">
+    <Text style={ui.muted}>Zapisane grupy, niezależnie od sklepu. Dodaj potrzebną ilość do listy lub sprawdź produkty i ceny.</Text>
+    <View><Field label="Szukaj w Ulubionych" value={search} onChangeText={setSearch} placeholder="Nazwa grupy" /></View>
     <Button secondary title="Odśwież ulubione" onPress={query.reload} disabled={query.loading} />
-    {query.loading && <ActivityIndicator />}
-    {query.error && <Notice>{query.error}</Notice>}
-    {!query.loading && query.data?.length === 0 && <Text style={ui.text}>Dodaj grupę do ulubionych na ekranie Produkty.</Text>}
-    {selected && query.data?.some(row => row.group_id === selected.id) && <GroupDetails key={selected.id} group={selected} onClose={() => { setSelected(null); query.reload(); }} />}
-    {query.data?.map(row => <View key={row.group_id} style={ui.card}>
-      <Text style={ui.heading}>{row.group.name}</Text>
-      <Button secondary title={`Oferty: ${row.group.name}`} onPress={() => setSelected({ ...row.group, default_quantity: row.group.unit === 'szt' ? 1 : 1000, offer_count: 0, lowest_price: null })} />
-    </View>)}
+    {query.loading && <ActivityIndicator accessibilityLabel="Wczytywanie ulubionych" />}
+    {query.error && <><Notice>{query.error}</Notice><Button secondary title="Ponów pobieranie ulubionych" onPress={query.reload} /></>}
+    {!query.loading && !query.error && query.data?.length === 0 && <>
+      <Text style={ui.heading}>Nie masz jeszcze ulubionych grup.</Text>
+      <Text style={ui.text}>Otwórz katalog i zapisz grupy, do których chcesz wracać.</Text>
+      <Link href="/products" style={[ui.text, { paddingVertical: 12, fontWeight: '700' }]}>Przejdź do katalogu →</Link>
+    </>}
+    {!query.loading && !query.error && !!query.data?.length && rows?.length === 0 && <Text style={ui.text}>Brak ulubionych pasujących do wyszukiwania.</Text>}
+    {rows?.map(row => <FavoriteRow key={row.group_id} group={row.group} onRemoved={query.reload} disabled={query.loading || !!query.error} />)}
   </Screen>;
 }

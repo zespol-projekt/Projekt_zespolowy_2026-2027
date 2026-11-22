@@ -77,3 +77,9 @@ a końcowe lokalne wylogowanie usunęło sesję SDK. Odrzucony kod resetu pozost
 `signedOut`. Pełny zestaw 27 testów automatycznych (w tym 17 auth) oraz sprawdzenie
 TypeScript zakończyły się powodzeniem.
 Nie zapisujemy w raporcie adresu skrzynki testowej, haseł, kodów ani tokenów.
+
+## Zmiana hasła z Profilu — 17 listopada 2026
+
+Profil używa odrębnych `sendPasswordChangeCode` i `changePassword`, a nie recovery `setNewPassword`. Wybrano email nonce i zachowanie zalogowania po sukcesie. Szczegóły, ograniczenie wymuszania kodu przez konfigurację chmury, zachowanie anulowania i nowe błędy opisuje [kontrakt](auth-contract.md#profil--rozszerzenie-17-listopada-2026). Testy SDK używają fikcyjnego transportu; nie wysyłano rzeczywistych wiadomości i nie zmieniano haseł istniejących użytkowników.
+
+Integracja zgodna z dokumentacją [reauthenticate](https://supabase.com/docs/reference/javascript/auth-reauthenticate) i [updateUser](https://supabase.com/docs/reference/javascript/auth-updateuser), sprawdzoną również w zainstalowanym SDK. Ewentualne zmiany SMTP/Secure password change należą do właściciela wspólnego projektu.

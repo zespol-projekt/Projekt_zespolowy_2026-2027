@@ -1,6 +1,9 @@
 import type { AuthError, AuthErrorCode, AuthResult } from './types.ts';
 
 const messages: Record<AuthErrorCode, string> = {
+  reauthentication_required: 'Potwierdź zmianę hasła kodem email. Wyślij nowy kod i spróbuj ponownie.',
+  invalid_reauthentication_code: 'Kod potwierdzenia jest nieprawidłowy lub wygasł. Wyślij nowy kod.',
+  current_password_required: 'Ustawienia konta wymagają także obecnego hasła. Ta metoda zmiany jest niedostępna; skorzystaj z odzyskiwania hasła po wylogowaniu.',
   invalid_email: 'Podaj poprawny adres email.',
   invalid_credentials: 'Nieprawidłowy email lub hasło.',
   weak_password: 'Hasło musi mieć co najmniej 8 znaków.',
@@ -31,6 +34,12 @@ export function mapAuthError(error: unknown): AuthError {
     mapped = 'service_unavailable';
   } else if (name === 'AuthRetryableFetchError' || name === 'TypeError') {
     mapped = 'network_error';
+  } else if (code === 'reauthentication_needed') {
+    mapped = 'reauthentication_required';
+  } else if (code === 'reauthentication_not_valid') {
+    mapped = 'invalid_reauthentication_code';
+  } else if (code === 'current_password_required' || code === 'current_password_invalid') {
+    mapped = 'current_password_required';
   } else if (code === 'invalid_credentials') {
     mapped = 'invalid_credentials';
   } else if (code === 'email_address_invalid') {
