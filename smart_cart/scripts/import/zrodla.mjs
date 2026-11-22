@@ -108,14 +108,18 @@ export function obserwacjaTanszykoszyk(w, siec) {
   return o;
 }
 
-/** kodyzbiedry: katalog Biedronki po EAN. Źródło nie podaje daty ceny - datą jest nasze pobranie. */
+/** kodyzbiedry: katalog Biedronki po EAN (wpisy dodawane przez użytkowników serwisu).
+ *  Datą ceny jest data aktualizacji wpisu, a gdy jej nie ma - data dodania wpisu w źródle (22.11.2026).
+ *  Dzień naszego pobrania nie jest datą ceny: większość wpisów powstała miesiące wcześniej. Bez daty w źródle - brak daty. */
 export function obserwacjaKodyzbiedry(w) {
   const o = bazowa('kodyzbiedry', 'biedronka', `ean:${w.ean}`, w, { nazwa: w.nazwa, marka: w.marka, ean: w.ean,
     kategoria: w.kategorie_wszystkie || w.kategoria, zdjecie: w.zdjecie, link: w.link_zrodla, jednostka: '' });
   const kwota = cena(w.cena);
   if (kwota === null) { o.uwagi.push('brak_ceny'); return o; }
-  o.cena_regularna = { kwota, obserwacja: dzien(w.cena_widziana), podstawa: 'katalog_bez_daty_zrodla' };
-  o.uwagi.push('data_z_pobrania');
+  const aktualizacja = dzien(w.aktualizacja_zrodla);
+  const obserwacja = aktualizacja ?? dzien(w.utworzono_zrodlo);
+  o.cena_regularna = { kwota, obserwacja, podstawa: aktualizacja ? 'katalog_aktualizacja_wpisu' : 'katalog_dodanie_wpisu' };
+  if (!obserwacja) o.uwagi.push('brak_daty_obserwacji');
   return o;
 }
 

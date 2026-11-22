@@ -26,8 +26,9 @@ import { fileURLToPath } from 'node:url';
 import { normTekst, rdzenNazwy, WZORZEC_ILOSCI_W_NAZWIE } from './normalizacja.mjs';
 import { kategoriaNiespozywcza, produktBazowy, ZRODLO_SLOWNIKA } from './slownik.mjs';
 import { wczytajZrodla } from './zrodla.mjs';
+import { wspolczynniki, wyliczRegularna, ZRODLO_WYLICZONEJ } from './wyliczanie.mjs';
 
-export const NARZEDZIE = 'scripts/import/import-katalogu.mjs v2';
+export const NARZEDZIE = 'scripts/import/import-katalogu.mjs v3';
 const PRIORYTET = { kodyzbiedry: 4, antonka: 3, tanszykoszyk: 2, antonka_historia: 1 };
 
 // Limit nowych produktów na parę sieć × produkt bazowy (decyzja z 19.11.2026: 25).
@@ -38,6 +39,8 @@ export const BEZ_LIMITU = new Set([
   'Mąka ziemniaczana (Skrobia)', 'Ryż Basmati / Jaśminowy', 'Ryż biały / Parboiled', 'Cukier biały 1kg',
   'Jajka rozmiar L (10 szt.)', 'Jajka rozmiar M (10 szt.)',
 ]);
+
+const potwierdzona = p => p.cena_regularna !== null && !p.wyliczenie;
 
 /** Oznacza pozycje ponad limit (poza_limitem = true). Takie pozycje mogą tylko zaktualizować produkt już istniejący w bazie. */
 export function zastosujLimit(pozycje, limit = LIMIT_NA_PRODUKT_BAZOWY) {
@@ -51,8 +54,9 @@ export function zastosujLimit(pozycje, limit = LIMIT_NA_PRODUKT_BAZOWY) {
   }
   let poza = 0;
   for (const lista of grupy.values()) {
-    lista.sort((a, b) => (b.cena_regularna !== null) - (a.cena_regularna !== null)
-      || (b.obserwacja_regularnej ?? '').localeCompare(a.obserwacja_regularnej ?? '')
+    // Kolejność liczy tylko potwierdzone ceny: tryb z wyliczonymi cenami nie zmienia, które produkty mieszczą się w limicie.
+    const data = p => (potwierdzona(p) ? p.obserwacja_regularnej ?? '' : '');
+    lista.sort((a, b) => potwierdzona(b) - potwierdzona(a) || data(b).localeCompare(data(a))
       || (b.ilosc !== null) - (a.ilosc !== null) || (b.ean !== null) - (a.ean !== null)
       || (b.zdjecie !== null) - (a.zdjecie !== null) || a.nazwa.localeCompare(b.nazwa, 'pl'));
     for (const p of lista.slice(limit)) { p.poza_limitem = true; poza++; }
@@ -95,8 +99,11 @@ export function regulaPromocji(oferta) {
   return rule;
 }
 
-/** Łączy obserwacje w pozycje "produkt w sieci". Zwraca { pozycje, pominiete }. */
-export function pozycjeZObserwacji(obserwacje) {
+/** Łączy obserwacje w pozycje "produkt w sieci". Zwraca { pozycje, pominiete, listaPominietych, wyliczenia }.
+ *  regularneZPromocji (tryb testowy): pozycja bez potwierdzonej ceny regularnej dostaje cenę wyliczoną z promocji. */
+export function pozycjeZObserwacji(obserwacje, { regularneZPromocji = false } = {}) {
+  const wsp = regularneZPromocji ? wspolczynniki(obserwacje) : null;
+  const bledy = [];
   const grupy = new Map();
   const pominiete = {};
   const listaPominietych = [];
@@ -170,10 +177,41 @@ export function pozycjeZObserwacji(obserwacje) {
       };
       if (p.cena_regularna !== null && of.kwota >= p.cena_regularna) { p.promocja = null; pomin('promocja_nie_nizsza_od_regularnej', p); }
     }
+    if (wsp && p.promocja) {
+      const wyl = wyliczRegularna(promo.oferta_okresowa, g.siec, wsp);
+      if (wyl && p.cena_regularna === null) {
+        p.cena_regularna = wyl.kwota;
+        p.obserwacja_regularnej = promo.oferta_okresowa.obserwacja ?? null;
+        p.zrodlo_ceny = ZRODLO_WYLICZONEJ;
+        p.wyliczenie = wyl.metoda;
+      } else if (wyl && ['tanszykoszyk', 'antonka'].includes(regularna?.zrodlo)) {
+        // Sprawdzenie na pozycjach z potwierdzoną, aktualną ceną regularną: jak daleko jest wyliczona.
+        bledy.push({ siec: g.siec, metoda: wyl.metoda.split(' ')[0], blad: (wyl.kwota - p.cena_regularna) / p.cena_regularna });
+      }
+    }
     pozycje.push(p);
   }
   pozycje.sort((a, b) => (a.siec + a.nazwa).localeCompare(b.siec + b.nazwa, 'pl'));
-  return { pozycje, pominiete, listaPominietych };
+  return { pozycje, pominiete, listaPominietych, wyliczenia: wsp ? podsumujWyliczenia(pozycje, wsp, bledy) : null };
+}
+
+/** Raport trybu testowego: ile cen wyliczono (sieć, metoda), współczynniki i błąd na pozycjach z ceną potwierdzoną. */
+function podsumujWyliczenia(pozycje, wsp, bledy) {
+  const naSiec = {}; const metody = {};
+  for (const p of pozycje.filter(x => x.wyliczenie && !x.poza_limitem)) {
+    naSiec[p.siec] = (naSiec[p.siec] ?? 0) + 1;
+    const m = p.wyliczenie.split(' ')[0];
+    metody[m] = (metody[m] ?? 0) + 1;
+  }
+  const sprawdzenie = {};
+  for (const b of bledy) (sprawdzenie[`${b.siec}|${b.metoda}`] ??= []).push(b.blad);
+  const opis = a => {
+    const s = a.map(Math.abs).sort((x, y) => x - y);
+    return { pozycji: a.length, mediana_bledu_proc: Math.round(s[Math.floor(s.length / 2)] * 1000) / 10,
+      w_granicy_10_proc: Math.round(s.filter(x => x <= 0.1).length / s.length * 100) };
+  };
+  return { wyliczone_na_siec: naSiec, metody, wspolczynniki: wsp,
+    sprawdzenie: Object.fromEntries(Object.entries(sprawdzenie).sort().map(([k, a]) => [k, opis(a)])) };
 }
 
 const poleCsv = v => {
@@ -189,9 +227,9 @@ export function podgladCsv(pozycjeWszystkie, listaPominietychWejscie) {
     powod: 'ponad_limit_tylko_aktualizacja_istniejacego', siec: p.siec, zrodlo: p.zrodlo_ceny, nazwa: p.nazwa, cena: p.cena_regularna ?? p.promocja?.kwota ?? null }))];
   const liczba = v => (v === null || v === undefined ? '' : String(v).replace('.', ','));
   const doBazy = csv(['siec', 'kategoria', 'produkt_bazowy', 'nazwa', 'ean', 'wszystkie_ean', 'opakowanie', 'sposob_sprzedazy', 'cena_regularna',
-    'data_ceny', 'zrodlo_ceny', 'promocja', 'promocja_od', 'promocja_do', 'promocja_typ', 'promocja_naliczana', 'zrodla'],
+    'data_ceny', 'zrodlo_ceny', 'wyliczenie', 'promocja', 'promocja_od', 'promocja_do', 'promocja_typ', 'promocja_naliczana', 'zrodla'],
   pozycje.map(p => [p.siec, p.kategoria, p.produkt_bazowy, p.nazwa, p.ean, (p.eany ?? []).join(' '), p.ilosc ? `${p.ilosc.value} ${p.ilosc.unit}` : '',
-    p.sposob_sprzedazy, liczba(p.cena_regularna), p.obserwacja_regularnej, p.zrodlo_ceny, liczba(p.promocja?.kwota),
+    p.sposob_sprzedazy, liczba(p.cena_regularna), p.obserwacja_regularnej, p.zrodlo_ceny, p.wyliczenie ?? '', liczba(p.promocja?.kwota),
     p.promocja?.wazne_od, p.promocja?.wazne_do, p.promocja?.typ, p.promocja ? (p.promocja.zasieg === 'nationwide' ? 'tak' : 'nie') : '',
     p.zrodla.join(' | ')]));
   const pominiete = csv(['powod', 'siec', 'zrodlo', 'nazwa', 'cena'],
@@ -394,6 +432,10 @@ SELECT s.slug AS siec, count(o.id) AS oferty_po_imporcie, count(DISTINCT o.produ
   count(o.id) FILTER (WHERE o.last_import_run_id IS DISTINCT FROM (SELECT id FROM imp_przebieg)) AS oferty_stare_nietkniete
 FROM public.stores s LEFT JOIN public.store_offers o ON o.store_id = s.id
 WHERE s.is_active GROUP BY s.id, s.slug ORDER BY s.id;
+SELECT s.slug AS siec, coalesce(o.price_source, '(brak)') AS zrodlo_ceny_regularnej,
+  count(*) FILTER (WHERE o.price_status = 'prawdziwa') AS z_cena_regularna, count(*) FILTER (WHERE o.price_status <> 'prawdziwa') AS bez_ceny_regularnej
+FROM public.store_offers o JOIN public.stores s ON s.id = o.store_id
+WHERE s.is_active GROUP BY 1, 2 ORDER BY 1, 2;
 SELECT g.name AS grupa_mleka, s.slug AS siec, count(DISTINCT c.product_id) AS produkty,
   count(*) FILTER (WHERE c.price_status = 'prawdziwa') AS z_cena_regularna,
   count(*) FILTER (WHERE c.verified_promotion) AS z_promocja_do_naliczenia
@@ -403,31 +445,40 @@ ${tryb === 'zapis' ? 'COMMIT;' : 'ROLLBACK;\nSELECT \'Tryb próbny: wszystkie zm
 `;
 }
 
+/** Liczba wyliczonych cen po zastosowaniu limitu (tyle trafi do bazy). */
+function podsumujPoLimicie(pozycje) {
+  const w = pozycje.filter(p => p.wyliczenie && !p.poza_limitem);
+  return { wyliczone_razem: w.length, wyliczone_na_siec: Object.fromEntries(['biedronka', 'lidl', 'kaufland', 'carrefour', 'dino']
+    .map(s => [s, w.filter(p => p.siec === s).length])) };
+}
+
 function main() {
   const i = process.argv.indexOf('--dane');
   if (i < 0 || !process.argv[i + 1]) throw new Error('Użycie: node scripts/import/import-katalogu.mjs --dane <folder> [--zapis]');
   const tryb = process.argv.includes('--zapis') ? 'zapis' : 'proba';
   const sprzatanie = process.argv.includes('--sprzatanie');
+  const regularneZPromocji = process.argv.includes('--regularne-z-promocji');
   // --z-migracja można podać kilka razy; pliki są dołączane w podanej kolejności.
   const pliki_migracji = process.argv.flatMap((a, k) => (a === '--z-migracja' ? [process.argv[k + 1]] : []));
   const migracja = pliki_migracji.length
     ? pliki_migracji.map(f => `-- ${path.basename(f)}\n${fs.readFileSync(path.resolve(f), 'utf8')}`).join('\n') : null;
   const dane = path.resolve(process.argv[i + 1]);
   const { obserwacje, pliki } = wczytajZrodla(dane);
-  const { pozycje, pominiete, listaPominietych } = pozycjeZObserwacji(obserwacje);
+  const { pozycje, pominiete, listaPominietych, wyliczenia } = pozycjeZObserwacji(obserwacje, { regularneZPromocji });
   const pozaLimitem = zastosujLimit(pozycje);
-  const podsumowanie = { sprzatanie, obserwacje: obserwacje.length, pozycje: pozycje.length, pominiete, slownik: ZRODLO_SLOWNIKA,
+  const podsumowanie = { sprzatanie, regularne_z_promocji: regularneZPromocji, obserwacje: obserwacje.length, pozycje: pozycje.length, pominiete, slownik: ZRODLO_SLOWNIKA,
     limit: { na_siec_i_produkt_bazowy: LIMIT_NA_PRODUKT_BAZOWY, poza_limitem: pozaLimitem, bez_limitu: [...BEZ_LIMITU] },
     w_limicie_na_siec: Object.fromEntries(['biedronka', 'lidl', 'kaufland', 'carrefour', 'dino'].map(s => [s, pozycje.filter(p => p.siec === s && !p.poza_limitem).length])),
     pozycje_na_siec: Object.fromEntries(['biedronka', 'lidl', 'kaufland', 'carrefour', 'dino'].map(s => [s, pozycje.filter(p => p.siec === s).length])),
     z_cena_regularna: pozycje.filter(p => p.cena_regularna !== null).length,
     pozycje_z_kilkoma_ean: pozycje.filter(p => p.eany.length > 1).length,
     z_promocja: pozycje.filter(p => p.promocja).length,
-    promocje_do_naliczenia: pozycje.filter(p => p.promocja?.zasieg === 'nationwide').length };
+    promocje_do_naliczenia: pozycje.filter(p => p.promocja?.zasieg === 'nationwide').length,
+    ...(wyliczenia ? { wyliczenia: { ...wyliczenia, ...podsumujPoLimicie(pozycje) } } : {}) };
   const katalog = path.join(dane, 'raporty_importu');
   fs.mkdirSync(katalog, { recursive: true });
   const stempel = new Date().toISOString().replace(/[:.]/g, '-');
-  const plikSql = path.join(katalog, `import-${stempel}-${tryb}${sprzatanie ? '-sprzatanie' : ''}.sql`);
+  const plikSql = path.join(katalog, `import-${stempel}-${tryb}${sprzatanie ? '-sprzatanie' : ''}${regularneZPromocji ? '-wyliczone' : ''}.sql`);
   const plikiWzgledne = pliki.map(p => ({ ...p, sciezka: path.relative(dane, p.sciezka).replace(/\\/g, '/') }));
   fs.writeFileSync(plikSql, sqlImportu(pozycje, { tryb, pliki: plikiWzgledne, podsumowanie, migracja, sprzatanie }), { flag: 'wx' });
   fs.writeFileSync(plikSql.replace(/\.sql$/, '.json'), JSON.stringify({ podsumowanie, pliki: plikiWzgledne }, null, 2) + '\n', { flag: 'wx' });

@@ -84,11 +84,17 @@ test('tanszykoszyk: pole regular_price nie jest ceną regularną; regularna tylk
   assert.ok(odniesienie.uwagi.includes('cena_odniesienia_nie_jest_regularna'));
 });
 
-test('kodyzbiedry: EAN jest kluczem, datą ceny jest pobranie', () => {
-  const o = obserwacjaKodyzbiedry({ ean: '5900820000011', nazwa: 'Mleko Łaciate 2% 1 l', cena: '3.79', cena_widziana: '2026-11-18T18:15:40Z' });
+test('kodyzbiedry: EAN jest kluczem, datą ceny jest data wpisu w źródle, nie nasze pobranie', () => {
+  const w = { ean: '5900820000011', nazwa: 'Mleko Łaciate 2% 1 l', cena: '3.79', cena_widziana: '2026-11-18T18:15:40Z', utworzono_zrodlo: '2026-02-10' };
+  const o = obserwacjaKodyzbiedry(w);
   assert.equal(o.klucz_zrodla, 'kodyzbiedry:biedronka:ean:5900820000011');
   assert.equal(o.ean, '5900820000011');
-  assert.deepEqual(o.cena_regularna, { kwota: 3.79, obserwacja: '2026-11-18', podstawa: 'katalog_bez_daty_zrodla' });
+  assert.deepEqual(o.cena_regularna, { kwota: 3.79, obserwacja: '2026-02-10', podstawa: 'katalog_dodanie_wpisu' });
+  assert.deepEqual(obserwacjaKodyzbiedry({ ...w, aktualizacja_zrodla: '2026-05-04' }).cena_regularna,
+    { kwota: 3.79, obserwacja: '2026-05-04', podstawa: 'katalog_aktualizacja_wpisu' });
+  const bezDaty = obserwacjaKodyzbiedry({ ...w, utworzono_zrodlo: '' });
+  assert.equal(bezDaty.cena_regularna.obserwacja, null, 'bez daty w źródle nie wstawiamy dnia pobrania');
+  assert.ok(bezDaty.uwagi.includes('brak_daty_obserwacji'));
   assert.equal(obserwacjaKodyzbiedry({ ean: 'abc', nazwa: 'X', cena: '1' }).ean, null);
 });
 

@@ -66,6 +66,10 @@ node scripts/import/import-katalogu.mjs --dane $dane --zapis             # zapis
 node scripts/import/import-katalogu.mjs --dane $dane --sprzatanie        # próba ze sprzątaniem
 node scripts/import/import-katalogu.mjs --dane $dane --zapis --sprzatanie   # zapis + usunięcie ofert, których import nie odświeżył
 node scripts/import/import-katalogu.mjs --dane $dane --z-migracja supabase/migrations/PLIK_MIGRACJI.sql   # próba z niewdrożoną migracją
+# TRYB TESTOWY (gałąź feat/damian-ceny-regularne): ceny regularne wyliczone z promocji, opis w docs/import-katalogu.md
+node scripts/import/import-katalogu.mjs --dane $dane --regularne-z-promocji --podglad         # próba + CSV z kolumną "wyliczenie"
+node scripts/import/import-katalogu.mjs --dane $dane --regularne-z-promocji --zapis           # zapis wyliczonych cen
+node scripts/import/import-katalogu.mjs --dane $dane --zapis                                  # powrót: zwykły import usuwa wyliczone ceny
 ```
 
 | Opcja | Znaczenie |

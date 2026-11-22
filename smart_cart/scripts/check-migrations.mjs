@@ -118,7 +118,8 @@ SELECT 'old:4', id, 93104, 'Mleko UHT 3,2% Wiejskie 1 l', 2.00, 'prawdziwa', 'an
 SELECT 'old:5', id, 93105, 'Mleko UHT 3,2% Zmienne 1 l', 2.00, 'prawdziwa', 'antonka' FROM public.stores WHERE slug = 'lidl';
 `);
 const { pozycje } = pozycjeZObserwacji([
-  obserwacjaKodyzbiedry({ ean: '5900000000017', nazwa: 'Mleko UHT 3,2% Łaciate 1 l', cena: '3.79', cena_widziana: '2026-11-18T18:00:00Z' }),
+  obserwacjaKodyzbiedry({ ean: '5900000000017', nazwa: 'Mleko UHT 3,2% Łaciate 1 l', cena: '3.79', cena_widziana: '2026-11-19T18:00:00Z',
+    utworzono_zrodlo: '2026-11-18' }),
   obserwacjaTanszykoszyk({ id_zrodla: 'a', nazwa: 'Mleko UHT 3,2% Pilos 1l', gramatura: '1l', cena_promocyjna: '2.25', typ_promocji: 'obniżka',
     wazne_od: '2026-11-17', wazne_do: '2026-11-21', link_zrodla: '/produkt/a', ostatnio_widziane: '2026-11-18T18:00:00Z' }, 'lidl'),
   obserwacjaTanszykoszyk({ id_zrodla: 'b', nazwa: "Mleko UHT 3,2% Mlekovita 1 l", gramatura: '1 l', cena_promocyjna: '2.99', typ_promocji: 'przy zakupie 3',
@@ -212,6 +213,27 @@ for (const przebieg of [3, 4]) {
   END $verify$;`);
 }
 console.log('Catalog import cleanup: shopping-list guard, stale offers/products/empty groups removed, other chains untouched, idempotent.');
+// Tryb testowy --regularne-z-promocji: wyliczona cena regularna jest oznaczona źródłem, a zwykły import ją wycofuje.
+const zWyliczona = pozycjeZObserwacji([obserwacjaTanszykoszyk({ id_zrodla: 'a', nazwa: 'Mleko UHT 3,2% Pilos 1l', gramatura: '1l',
+  cena_promocyjna: '2.25', typ_promocji: '1+1 gratis', wazne_od: '2026-11-17', wazne_do: '2026-11-21', link_zrodla: '/produkt/a',
+  ostatnio_widziane: '2026-11-18T18:00:00Z' }, 'lidl')], { regularneZPromocji: true }).pozycje;
+sql(sqlImportu(zWyliczona, { tryb: 'zapis' }));
+sql(`DO $verify$ BEGIN
+  IF NOT EXISTS (SELECT 1 FROM public.store_offers WHERE offer_key = 'old:2' AND regular_price = 4.50 AND price_status = 'prawdziwa'
+    AND price_source = 'wyliczona_z_promocji' AND (regular_price_observed_at AT TIME ZONE 'Europe/Warsaw')::date = '2026-11-18')
+    THEN RAISE EXCEPTION 'Brak wyliczonej ceny regularnej'; END IF;
+  IF (SELECT single_price FROM public.catalog_offers WHERE product_name = 'Mleko UHT 3,2% Pilos 1l') <> 4.50
+    THEN RAISE EXCEPTION 'Wyliczona cena nie jest ceną dziś'; END IF;
+  IF (SELECT count(*) FROM public.store_offers) <> 7 THEN RAISE EXCEPTION 'Tryb testowy zmienił liczbę ofert'; END IF;
+END $verify$;`);
+sql(importSql);
+sql(`DO $verify$ BEGIN
+  IF NOT EXISTS (SELECT 1 FROM public.store_offers WHERE offer_key = 'old:2' AND regular_price IS NULL AND price_status = 'brak'
+    AND price_source = 'tanszykoszyk') THEN RAISE EXCEPTION 'Zwykły import nie wycofał wyliczonej ceny'; END IF;
+  IF EXISTS (SELECT 1 FROM public.store_offers WHERE price_source = 'wyliczona_z_promocji') THEN RAISE EXCEPTION 'Została wyliczona cena'; END IF;
+  IF (SELECT count(*) FROM public.import_runs) <> 6 THEN RAISE EXCEPTION 'Brak wpisów w rejestrze importów'; END IF;
+END $verify$;`);
+console.log('Catalog import test mode: calculated regular price marked by source and reverted by a normal import.');
 
 // Przegląd mleka: lista z bazy -> decyzje -> wygenerowany SQL wykonany w izolowanej bazie (próba, potem zapis).
 sql(`
