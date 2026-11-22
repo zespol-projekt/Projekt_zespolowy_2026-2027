@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { Link, useFocusEffect } from 'expo-router';
 import { ActivityIndicator, Text, View } from 'react-native';
-import { Button, Field, Notice, Screen, ui } from '@/components/ui/Controls';
+import { Button, Field, Notice, Screen, useUI } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { useSessionAction, useSessionKey, useSessionQuery } from './hooks';
 import { useShopping } from './ShoppingProvider';
@@ -9,6 +9,7 @@ import { OfferInfo } from './GroupDetails';
 import { amount, money, quantityInput, type ComparisonItem, type ShoppingItem } from './types';
 
 function ItemEditor({ item, reload }: { item: ShoppingItem; reload: () => void }) {
+  const ui = useUI();
   const [input, setInput] = useState({ saved: item.quantity, value: String(item.quantity) });
   const quantity = input.saved === item.quantity ? input.value : String(item.quantity);
   const [choosing, setChoosing] = useState(false);
@@ -43,6 +44,7 @@ function ItemEditor({ item, reload }: { item: ShoppingItem; reload: () => void }
 }
 
 function ComparedItem({ row, storeId, items, reload }: { row: ComparisonItem; storeId: number; items: ShoppingItem[]; reload: () => void }) {
+  const ui = useUI();
   const action = useSessionAction();
   const original = items.find(item => item.id === row.item_id);
   const toggle = (value: boolean) => {
@@ -90,6 +92,7 @@ export default function CartScreen() {
   return key ? <Cart key={key} /> : null;
 }
 function Cart() {
+  const ui = useUI();
   const shopping = useShopping();
   const [name, setName] = useState('');
   const [rename, setRename] = useState<{ id: string; value: string } | null>(null);
@@ -130,7 +133,7 @@ function Cart() {
         <Button secondary title="Anuluj usuwanie" onPress={() => setDeleting(null)} />
       </View></>}
     </View>}
-    <Link href="/products" style={[ui.text, { color: '#087F5D', fontWeight: '700', padding: 10 }]}>Dodaj produkty do listy →</Link>
+    <Link href="/products" style={[ui.text, { fontWeight: '700', padding: 10 }]}>Dodaj produkty do listy →</Link>
     {items.loading && <ActivityIndicator accessibilityLabel="Wczytywanie listy" />}
     {items.error && <Notice>{items.error}</Notice>}
     {active && !items.loading && items.data?.length === 0 && <Text style={ui.text}>Lista jest pusta. Wybierz grupę na ekranie Produkty.</Text>}

@@ -1,6 +1,6 @@
 import { useRef, useState, type ComponentRef } from 'react';
 import { ActivityIndicator, Keyboard, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
-import { Field, Notice, ui } from '@/components/ui/Controls';
+import { Field, Notice, useUI } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { CatalogProductCard } from './CatalogProductCard';
 import { catalogV1Api, CatalogNotFound } from './catalogV1Api';
@@ -13,6 +13,8 @@ type FavoriteGroup = Pick<ProductGroup, 'id' | 'name' | 'unit'>;
 export function FavoriteRow({ group, onRemoved, disabled }: {
   group: FavoriteGroup; onRemoved: () => void; disabled: boolean;
 }) {
+  const ui = useUI();
+  const styles = createStyles(ui);
   const [adding, setAdding] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const groupButton = useRef<ComponentRef<typeof View>>(null);
@@ -92,6 +94,8 @@ export function FavoriteRow({ group, onRemoved, disabled }: {
 function FavoriteOffers({ groupId, disabled, onAdd, onClose }: {
   groupId: number; disabled: boolean; onAdd: (productId: number) => void; onClose: () => void;
 }) {
+  const ui = useUI();
+  const styles = createStyles(ui);
   const offers = useSessionQuery(async signal => {
     try {
       const result = await catalogV1Api.group(groupId, signal);
@@ -117,6 +121,8 @@ function FavoriteOffers({ groupId, disabled, onAdd, onClose }: {
 function FavoriteButton({ title, label = title, onPress, disabled = false, busy = false, secondary = false, selected }: {
   title: string; label?: string; onPress: () => void; disabled?: boolean; busy?: boolean; secondary?: boolean; selected?: boolean;
 }) {
+  const ui = useUI();
+  const styles = createStyles(ui);
   const webSelection = Platform.OS === 'web' && selected !== undefined ? { 'aria-pressed': selected } : {};
   return <Pressable accessibilityRole="button" accessibilityLabel={title} disabled={disabled || busy}
     aria-busy={busy}
@@ -127,7 +133,7 @@ function FavoriteButton({ title, label = title, onPress, disabled = false, busy 
   </Pressable>;
 }
 
-const styles = StyleSheet.create({
+const createStyles = (ui: ReturnType<typeof useUI>) => StyleSheet.create({
   card: { padding: 12, gap: 10 },
   header: { flexDirection: 'row', alignItems: 'flex-start', gap: 8 },
   group: { flex: 1, minWidth: 0, minHeight: 44, flexDirection: 'row', alignItems: 'center', gap: 10 },

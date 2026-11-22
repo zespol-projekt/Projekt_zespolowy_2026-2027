@@ -81,7 +81,7 @@ Użytkownik sam zalogował się w osobnym, tymczasowym oknie Chrome. Korzystano 
 
 Uwaga do Damiana: w wynikach `mleko 3,2% bez laktozy` była też grupa „Mleko świeże 3,2% · z laktozą”. Trzeba ustalić, czy to zamierzone dopasowanie do nazw ofert, problem przypisania produktu, czy błąd wyszukiwania. Frontend wyświetla odpowiedź serwera bez ukrywania tej niezgodności.
 
-Przy kontroli kodu wykryto stare etykiety „Cena potwierdzona” w `GroupDetails` i Koszyku. Usunięto je: dotychczasowy kontrakt `Offer` i `compare_basket.picks` nie dokumentuje źródła potrzebnego do rozróżnienia daty pobrania i obserwacji. Te widoki pokazują „Data ceny nieznana”; nowy katalog nadal korzysta z reguł `price_source`. Przywrócenie dat w starych widokach wymaga uzgodnionego źródła dat w ich kontrakcie, bez zgadywania po nazwie sieci.
+Przy pierwszej kontroli kodu wykryto stare etykiety „Cena potwierdzona” w `GroupDetails` i Koszyku. Początkowo oba widoki przełączono na „Data ceny nieznana”, ponieważ źródło nie było opisane w typie `Offer`. Dalsza weryfikacja SQL wykazała jednak, że `catalog_offers` już zwraca `price_source` (`20261114000200_search_and_basket.sql`, definicja widoku), więc brak dotyczył typu aplikacji, a nie backendu. Aktualną obsługę starego widoku opisano poniżej. `compare_basket.picks` nadal nie przekazuje źródła, dlatego Koszyk zachowuje brak daty; nie zgadujemy jej znaczenia po nazwie sieci.
 
 Nie testowano bezpośrednio `catalog_product` (UI nie otwiera historii cen), RLS na drugim koncie, awarii chmury, 401 ani 404 na rzeczywistych danych. Nie modyfikowano schematu, migracji ani danych katalogu; zapisy dotyczyły wyłącznie własnej listy i Ulubionych w ramach aplikacji. Do pełnego zakończenia pozostają integracja Home/Szukaj/motywu z Filipem, odbiór wyglądu i telefonu, synchronizacja plików backendu i nierozstrzygnięty test globalnej nawigacji.
 
@@ -96,6 +96,28 @@ Do uzgodnienia z Filipem: docelowe wejście z Home i zakładki Szukaj do wspóln
 Wiadomość do Filipa:
 
 > Katalog Radka jest przygotowany i przeszedł podstawowy test prawdziwego Supabase. Obecne wejście: `/products?catalog=1`, fraza wyszukiwania: parametr `q`. Potrzebujemy uzgodnić podłączenie Home/Produkty i zakładki Szukaj do tego samego katalogu oraz docelowe przełączenie `/products`. W nagłówku i katalogu są teraz dwa pola — proponuję jedno pole na Home/Szukaj, zarządzane przez Ciebie, z przekazaniem frazy do katalogu. Ulubione zachowują osobne wyszukiwanie zapisanych grup; Koszyk, Profil i pozostałe widoki nie powinny mieć dużego globalnego pola. Podeślij proszę stan/gałąź swoich zmian oraz kontrakt motywu (hook i tokeny kolorów), żebym dostosował moduł katalogu bez drugiego ThemeProvidera. Potwierdź też, które pliki wspólne możemy zmienić i jak podzielimy wdrożenie.
+
+### Daty w dotychczasowym widoku ofert — 22 listopada 2026
+
+`OfferInfo` przyjmuje istniejące pole `price_source` jako lokalne, opcjonalne rozszerzenie `Offer` i korzysta ze wspólnego `priceDateLabel`. Dla `antonka` i `tanszykoszyk` pokazuje „Cena widziana DD.MM.RRRR”; dla `kodyzbiedry`, brakującego/nierozpoznanego źródła i niepoprawnej lub pustej daty — „Data ceny nieznana”. Brak pola jest obsługiwany także dla starszych odpowiedzi i wywołań. Nie zmieniano wspólnych `api.ts`/`types.ts`, kontraktu SQL, wyceny ani promocji. Daty w Koszyku nadal wymagają rozszerzenia wyniku `compare_basket` przez Damiana.
+
+Weryfikacja: TypeScript i lint zaliczone; siedem testów Node kontraktu/prezentacji zaliczonych. Wszystkie pięć scenariuszy zakupowych Playwright przeszło w jednym przebiegu (33,1 s). Nowy scenariusz sprawdza pięć ofert: dwa źródła obserwacji, datę pobrania `kodyzbiedry`, brak pola źródła i pustą datę. Testy używają fikcyjnego API; nie otwierano ponownie rzeczywistej sesji ani nie zapisywano nic w chmurze.
+
+### Integracja powłoki Filipa z katalogiem — 22 listopada 2026
+
+Połączono gałąź `feat/Home_globalna_nawigacja_itd` (`228d4b1`) z modułem Radka. `/products` otwiera teraz domyślnie katalog v1; wcześniejsze linki `?catalog=1` zachowują działanie. Stary ekran pozostaje wyłącznie pod jawnym adresem zgodności `/products?catalog=0`, m.in. dla regresji dotychczasowego widoku ofert. Home i Szukaj prowadzą do jednego katalogu, a wyszukiwanie Home przekazuje `q` z polskimi znakami i znakami specjalnymi. Nagłówek pokazuje pole tylko na Home; katalog i Ulubione mają własne pola odpowiednich zakresów.
+
+Zachowano gotowy układ Filipa: Home · Ulubione · Koszyk · Szukaj · Mapa, pięć kafelków Home, menu z Profilem/Pomocą/Zasadami/wylogowaniem i jeden `ThemeProvider`. Komponenty katalogu, kart i Ulubionych używają `useUI()`, także w lokalnych przyciskach i ikonach. Preferencja jasna/ciemna/systemowa jest wspólna i zapamiętywana mechanizmem Filipa. Layout Produktów łączy kolory motywu z istniejącym `CatalogDraftProvider`; zmiana motywu i zakładki nie zeruje wpisanych ilości. Zachowano wyszukiwanie, błędy, źródła dat i ochronę sesji Radka.
+
+W ramach rzeczywistego scalania dołączono również istniejący Profil, Pomoc/Zasady, czytnik gazetek, poprawki Auth oraz izolację testowego Metro z gałęzi Filipa. To nie jest nowe potwierdzenie działania gazetek ani zmiany hasła na rzeczywistym backendzie — pozostają zależności opisane w jego dokumentacji. Nie zmieniano SQL, katalogu w chmurze, API list ani wersji zależności. Wcześniejsze lokalne zmiany README, dat ofert i testów zakupowych zabezpieczono i zachowano. Dwa konflikty scalania rozwiązano, łącząc motyw z nowszym modułem, bez zastępowania katalogu jego dawną wersją.
+
+Nowy scenariusz integracyjny sprawdza Home → wyszukiwanie → katalog, brak drugiego pola, przełączenie ciemnego/jasnego motywu, zachowanie ilości po przejściu do Ulubionych i z powrotem oraz wejście kafelkiem Produkty. Testy starego interfejsu korzystają z jawnego adresu zgodności; testy powłoki sprawdzają nowe RPC katalogu. Dawne wpisy o oczekiwaniu na kontrakt motywu i integrację Filipa opisują stan sprzed tego scalania. Nadal pozostają sprawy wyszukiwania i dat Koszyka z Damianem oraz odbiór fizycznego telefonu i końcowego wyglądu.
+
+Weryfikacja po scaleniu: końcowy TypeScript i lint zaliczone. Node: **116 zaliczonych, jeden pominięty** (brak Gitleaks). `server:check`: poprawny zastany JSON 7753 placówek, bez potwierdzania docelowego transportu mapy z bazy. Pełny przebieg przeglądarkowy: 50/52 zaliczonych; dwa nieudane scenariusze zaliczono po poprawkach testów. Scenariusz logowania przechodzi teraz do Profilu przez rzeczywiste menu zamiast usuniętego linku. Test rozwijania grupy punktów mapy rejestruje krótką zmianę `aria-busy` obserwatorem DOM w przeglądarce zamiast próbować trafić w 400 ms animacji z procesu testowego; nadal wymaga rozpoczęcia ruchu, stanu spoczynku, braku przedwczesnego wyboru sklepu i wyboru po drugim kliknięciu. Nie zmieniano kodu mapy ani limitów testów. Łącznie wszystkie **52 scenariusze** mają zaliczony wynik. Ponownie przeszedł też scenariusz integracji katalogu po doprecyzowaniu oczekiwania na zamknięcie menu przed screenshotem; obejrzano ciemny katalog na 320 px.
+
+Eksport `expo export --platform all --max-workers 2 --output-dir .expo/radek-filip-export` zaliczony dla WWW, Android i iOS. Nie instalowano nowych zależności. Eksport potwierdza poprawność pakowania, nie zastępuje testu na fizycznym urządzeniu.
+
+Nie otwierano rzeczywistej sesji Supabase ponownie po połączeniu powłoki. Testy korzystają z fikcyjnego API i izolacji `.env` Filipa. Nie wykonano migracji, importu, publikacji ani zapisu do wspólnego katalogu. Scalanie jest przygotowane bez commita i pusha, zgodnie z ustaleniem, że wykonuje je Radek. Kopia trzech wcześniejszych lokalnych zmian pozostała w stashu `codex-before-filip-integration-2026-11-22` oraz w ignorowanym `.expo/filip-integration-backup`.
 
 ## Logowanie — integracja Supabase
 
@@ -245,3 +267,6 @@ Przed publikacją dodano cztery testy kontroli sekretów: aktualny zestaw Node m
 `npm.cmd test` obejmuje również `tests/server.test.mjs`: konfigurację ścieżki danych i działanie API na fikcyjnych rekordach. `server:check` odczytuje prawdziwy plik danych z repozytorium. Instrukcje kontroli i ponownego przygotowania całego zbioru są w `../dane-sklepow/README.md`.
 
 Eksport sprawdza pakowanie kodu na trzy platformy; test przeglądarkowy nie zastępuje testowania gestów, uprawnień i płynności na fizycznych telefonach.
+
+
+Powłoka aplikacji: [kontrakt Filipa](docs/app-shell.md), [raport Filipa](docs/filip-implementation-report.md), [gazetki](docs/leaflets-contract.md).

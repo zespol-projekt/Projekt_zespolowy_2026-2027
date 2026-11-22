@@ -5,6 +5,27 @@ const listId = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa';
 const itemId = 'bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb';
 const group = { id: 17, name: 'Mleko UHT 3,2% · z laktozą', unit: 'ml', default_quantity: 1000, offer_count: 1, lowest_price: 6 };
 
+test('stary podgląd ofert rozpoznaje źródło daty i nie pokazuje dat pobrania', async ({ page }) => {
+  await mockMap(page);
+  await page.route(`${AUTH_URL}/rest/v1/rpc/search_product_groups`, route => route.fulfill({ json: [{ ...group, offer_count: 5 }] }));
+  const offer = { product_id: 91, group_id: group.id, store_id: 1, store_name: 'Sieć testowa',
+    product_name: 'Mleko testowe 1 l', gramatura_norm: '1 l', quantity_value: 1000, quantity_unit: 'ml', sale_mode: 'package',
+    regular_price: 6, single_price: 6, price_status: 'prawdziwa', promo_price: null, verified_promotion: false };
+  await page.route(`${AUTH_URL}/rest/v1/catalog_offers?**`, route => route.fulfill({ json: [
+    { ...offer, offer_id: 1, price_source: 'antonka', regular_price_observed_at: '2026-11-21T10:00:00Z' },
+    { ...offer, offer_id: 2, price_source: 'tanszykoszyk', regular_price_observed_at: '2026-11-20T10:00:00Z' },
+    { ...offer, offer_id: 3, price_source: 'kodyzbiedry', regular_price_observed_at: '2026-11-22T10:00:00Z' },
+    { ...offer, offer_id: 4, regular_price_observed_at: '2026-11-22T10:00:00Z' },
+    { ...offer, offer_id: 5, price_source: 'antonka', regular_price_observed_at: null },
+  ] }));
+  await page.goto('/products?catalog=0');
+  await page.getByRole('button', { name: `Rozwiń oferty: ${group.name}` }).click();
+  await expect(page.getByText('Dane sieciowe · Cena widziana 21.11.2026', { exact: true })).toBeVisible();
+  await expect(page.getByText('Dane sieciowe · Cena widziana 20.11.2026', { exact: true })).toBeVisible();
+  await expect(page.getByText('Dane sieciowe · Data ceny nieznana.', { exact: true })).toHaveCount(3);
+  await expect(page.getByText(/22\.11\.2026|Cena potwierdzona:/)).toHaveCount(0);
+});
+
 test('zmiana frazy od razu ukrywa stare wyniki i czeka na odpowiedź nowego wyszukiwania', async ({ page }) => {
   await page.clock.install({ time: new Date('2026-11-20T12:00:00Z') });
   await mockMap(page);
@@ -18,7 +39,7 @@ test('zmiana frazy od razu ukrywa stare wyniki i czeka na odpowiedź nowego wysz
     if (phrase === 'ryż') await held;
     await route.fulfill({ json: phrase === 'ryż' ? [nextGroup] : [group] });
   });
-  await page.goto('/products');
+  await page.goto('/products?catalog=0');
   const previousResult = page.getByRole('button', { name: `Rozwiń oferty: ${group.name}` });
   await expect(previousResult).toBeVisible();
   await page.clock.pauseAt(new Date('2026-11-20T12:05:00Z'));
@@ -73,7 +94,7 @@ test('grupy, oferty, prywatne listy i edycja przeliczają koszyk, niepełna sie�
     }
     return route.fulfill({ json: [] });
   });
-  await page.goto('/products');
+  await page.goto('/products?catalog=0');
   await page.getByRole('textbox', { name: 'Szukaj grupy produktów' }).fill('mleko');
   await page.getByRole('button', { name: `Rozwiń oferty: ${group.name}` }).click();
   await expect(page.getByText('Marka Test 1 l', { exact: true })).toBeVisible();
@@ -105,13 +126,14 @@ test('grupy, oferty, prywatne listy i edycja przeliczają koszyk, niepełna sie�
 test('logowanie wraca do celu, jawne wylogowanie czyści cel', async ({ page }) => {
   await mockMap(page, null);
   await page.route(`${AUTH_URL}/auth/v1/token?grant_type=password`, route => route.fulfill({ json: testSession() }));
-  await page.goto('/settings');
+  await page.goto('/rules');
   await page.getByRole('textbox', { name: 'Email', exact: true }).fill('map-test@example.invalid');
   await page.getByLabel('Hasło', { exact: true }).fill('test-password');
   await page.getByRole('button', { name: 'Zaloguj się', exact: true }).click();
-  await expect(page.getByText('Ustawienia i zasady porównania', { exact: true })).toBeVisible();
-  await expect(page).toHaveURL(/\/settings$/);
-  await page.getByText('Otwórz profil i wylogowanie →', { exact: true }).click();
+  await expect(page.getByText('Zasady porównywania', { exact: true })).toBeVisible();
+  await expect(page).toHaveURL(/\/rules$/);
+  await page.getByRole('button', { name: 'Otwórz menu' }).click();
+  await page.getByRole('button', { name: 'Profil', exact: true }).click();
   await page.getByRole('button', { name: 'Wyloguj się', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Zaloguj się', exact: true })).toBeVisible();
   await expect(page).toHaveURL(/\/$/);
@@ -122,7 +144,7 @@ test('anulowane logowanie nie otwiera aplikacji po spóźnionej odpowiedzi', asy
   let release!: () => void;
   const held = new Promise<void>(resolve => { release = resolve; });
   await page.route(`${AUTH_URL}/auth/v1/token?grant_type=password`, async route => { await held; await route.fulfill({ json: testSession() }); });
-  await page.goto('/products');
+  await page.goto('/products?catalog=0');
   await page.getByRole('textbox', { name: 'Email', exact: true }).fill('map-test@example.invalid');
   await page.getByLabel('Hasło', { exact: true }).fill('test-password');
   const request = page.waitForRequest(`${AUTH_URL}/auth/v1/token?grant_type=password`);

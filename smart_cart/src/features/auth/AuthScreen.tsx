@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { KeyboardAvoidingView, Platform, Text, View } from 'react-native';
 import { AuthShell } from '@/components/auth/AuthShell';
-import { Button, Field, Notice, ui } from '@/components/ui/Controls';
+import { Button, Field, Notice, useUI } from '@/components/ui/Controls';
 import { useAuth } from './AuthProvider';
 import { authPolicy } from './service';
 import type { AuthResult } from './types';
@@ -10,6 +10,7 @@ type Mode = 'signin' | 'signup' | 'confirm' | 'reset' | 'resetCode' | 'newPasswo
 const titles: Record<Mode, string> = { signin: 'Zaloguj się', signup: 'Utwórz konto', confirm: 'Potwierdź email', reset: 'Reset hasła', resetCode: 'Kod odzyskiwania', newPassword: 'Nowe hasło' };
 
 export default function AuthScreen() {
+  const ui = useUI();
   const auth = useAuth();
   const [mode, setMode] = useState<Mode>('signin');
   const [email, setEmail] = useState('');

@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { ActivityIndicator, Text, View } from 'react-native';
-import { Field, Notice, Screen, ui } from '@/components/ui/Controls';
+import { Field, Notice, Screen, useUI } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { catalogV1Api } from './catalogV1Api';
 import type { CatalogPage, Verification } from './catalogV1';
@@ -21,6 +21,7 @@ export default function CatalogScreen() {
 
 const verificationText: Record<Verification, string> = { reviewed: 'Grupy sprawdzone', in_progress: 'Dane w trakcie porządkowania', preliminary: 'Dane wstępne' };
 function Catalog({ categorySlug, subcategorySlug, initialQuery }: { categorySlug: string; subcategorySlug: string; initialQuery: string }) {
+  const ui = useUI();
   const tree = useSessionQuery(catalogV1Api.tree, []);
   const [query, setQuery] = useState(initialQuery);
   const debounced = useDebounced(query.trim());

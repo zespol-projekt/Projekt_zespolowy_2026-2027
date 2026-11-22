@@ -1,5 +1,5 @@
 import { ActivityIndicator, Image, Text, View } from 'react-native';
-import { Notice, ui } from '@/components/ui/Controls';
+import { Notice, useUI } from '@/components/ui/Controls';
 import { amount, money } from './types';
 import type { CatalogOffer, CatalogProduct } from './catalogV1';
 import { priceDateLabel } from './catalogPresentation';
@@ -12,6 +12,7 @@ export function ProductImage({ name, url }: { name: string; url: string | null }
 }
 
 function OfferPrice({ offer, product }: { offer: CatalogOffer; product: CatalogProduct }) {
+  const ui = useUI();
   const pack = product.package;
   const basis = pack.quantity !== null && pack.quantity > 0 && pack.unit
     ? `${product.sale_mode === 'bulk' ? 'za' : 'za opakowanie'} ${amount(pack.quantity, pack.unit)}`
@@ -36,6 +37,7 @@ function OfferPrice({ offer, product }: { offer: CatalogOffer; product: CatalogP
 export function CatalogProductCard({ product, onAdd, disabled, showAdd = true, showHeading = true }: {
   product: CatalogProduct; onAdd: (id: number) => void; disabled: boolean; showAdd?: boolean; showHeading?: boolean;
 }) {
+  const ui = useUI();
   const pack = product.package;
   return <View style={ui.card}>
     {showHeading && <Text accessibilityRole="header" style={ui.heading}>{product.name}</Text>}

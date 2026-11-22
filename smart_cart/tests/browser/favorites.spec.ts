@@ -116,7 +116,7 @@ test('reload zachowuje ulubione, a usunięcie odświeża serduszko w katalogu be
   await expect(page.getByRole('button', { name: `Produkty i ceny: ${milk.name}` })).not.toBeVisible();
   expect(state.saved).toEqual([{ p_group_id: milk.id, p_quantity: 500, p_unit: 'ml', p_selected_product_id: null, p_list_id: firstList }]);
   expect(state.deletes).toEqual(['favorite_groups']);
-  await page.goto('/products');
+  await page.goto('/products?catalog=0');
   await page.getByRole('button', { name: `Rozwiń oferty: ${milk.name}` }).click();
   await expect(page.getByRole('button', { name: 'Dodaj do ulubionych', exact: true })).toBeVisible();
 });

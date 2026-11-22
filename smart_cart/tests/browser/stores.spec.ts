@@ -62,7 +62,7 @@ test('jasna mapa ma jeden podpis, który zwija się po 5 sekundach i daje się p
   await info.click();
   await expect(credits).toBeHidden();
   await page.getByRole('link', { name: 'SMARTCART — ekran startowy' }).click();
-  await page.getByRole('tab', { name: 'Sklepy', exact: true }).click();
+  await page.getByRole('tab', { name: 'Mapa', exact: true }).click();
   await waitForStores(page, 4);
   await expect(info).toHaveAttribute('aria-expanded', 'false');
   expect(modules).toBe(1);
@@ -149,8 +149,20 @@ test('kliknięcie grupy przybliża mapę, a kolejne otwiera sklep', async ({ pag
   await page.getByRole('button', { name: 'Pokaż wyniki na mapie' }).click();
   const region = embedded(page).locator('#map');
   await expect(region).toHaveAttribute('data-focus-request', '1');
+  // Capture the 400 ms animation in the browser, even if the test runner resumes
+  // after it finishes. Keep checking both motion start and the final idle state.
+  await region.evaluate(element => {
+    element.setAttribute('data-test-motion-started', 'false');
+    const observer = new MutationObserver(records => {
+      if (element.getAttribute('aria-busy') === 'true' || records.some(record => record.oldValue === 'true')) {
+        element.setAttribute('data-test-motion-started', 'true');
+        observer.disconnect();
+      }
+    });
+    observer.observe(element, { attributes: true, attributeFilter: ['aria-busy'], attributeOldValue: true });
+  });
   await embedded(page).locator('canvas').click();
-  await expect(region).toHaveAttribute('aria-busy', 'true');
+  await expect(region).toHaveAttribute('data-test-motion-started', 'true');
   await expect(region).toHaveAttribute('aria-busy', 'false');
   await expect(page.getByTestId('store-card')).toHaveCount(0);
   await embedded(page).locator('canvas').click();
@@ -162,7 +174,7 @@ test('na małym ekranie mapa mieści się nad nawigacją', async ({ page }) => {
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
   await waitForStores(page, 4);
   const map = await page.getByTestId('stores-map').boundingBox();
-  const tabs = await page.getByRole('tab', { name: 'Sklepy', exact: true }).boundingBox();
+  const tabs = await page.getByRole('tab', { name: 'Mapa', exact: true }).boundingBox();
   expect(map!.height).toBeGreaterThanOrEqual(200);
   expect(map!.y + map!.height).toBeLessThan(tabs!.y);
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(320);

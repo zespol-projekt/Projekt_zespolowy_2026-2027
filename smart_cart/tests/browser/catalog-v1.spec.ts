@@ -49,6 +49,40 @@ async function openMilk(page: Page) {
   await expect(page.getByRole('heading', { name: groupItem.name, exact: true })).toBeVisible();
 }
 
+test('Home i Szukaj otwierają wspólny katalog, a motyw zachowuje wpisaną ilość', async ({ page }, info) => {
+  await setup(page);
+  await page.setViewportSize({ width: 320, height: 740 });
+  await page.goto('/');
+  await page.getByRole('textbox', { name: 'Szukaj produktów', exact: true }).fill('mleko 3,2%');
+  await page.getByRole('textbox', { name: 'Szukaj produktów', exact: true }).press('Enter');
+  const search = page.getByRole('textbox', { name: 'Szukaj w całym katalogu', exact: true });
+  await expect(search).toHaveValue('mleko 3,2%');
+  await expect(page.getByRole('textbox', { name: 'Szukaj produktów', exact: true })).toHaveCount(0);
+  const quantity = page.getByRole('textbox', { name: `Potrzebna ilość: ${groupItem.name} (ml)` });
+  await quantity.fill('750');
+  await page.getByRole('button', { name: 'Otwórz menu' }).click();
+  await page.getByRole('radio', { name: 'Ciemny', exact: true }).click();
+  await page.getByRole('button', { name: 'Zamknij menu', exact: true }).click();
+  await expect(page.getByLabel('Menu SMARTCART', { exact: true })).toHaveCount(0);
+  await expect(quantity).toHaveValue('750');
+  await expect(page.getByRole('heading', { name: groupItem.name, exact: true })).toHaveCSS('color', 'rgb(237, 244, 239)');
+  await page.screenshot({ path: info.outputPath('catalog-dark.png'), fullPage: true });
+  await page.getByRole('tab', { name: 'Ulubione', exact: true }).click();
+  await expect(page.getByRole('textbox', { name: 'Szukaj w Ulubionych' })).toBeVisible();
+  await page.getByRole('tab', { name: 'Szukaj', exact: true }).click();
+  await expect(quantity).toHaveValue('750');
+  await page.getByRole('button', { name: 'Otwórz menu' }).click();
+  await page.getByRole('radio', { name: 'Jasny', exact: true }).click();
+  await page.getByRole('button', { name: 'Zamknij menu', exact: true }).click();
+  await expect(page.getByLabel('Menu SMARTCART', { exact: true })).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: groupItem.name, exact: true })).toHaveCSS('color', 'rgb(21, 45, 67)');
+  await page.getByRole('tab', { name: 'Home', exact: true }).click();
+  await page.getByRole('link', { name: 'Produkty', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Katalog kategorii', exact: true })).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole('heading', { name: 'Katalog kategorii', exact: true })).toHaveCSS('color', 'rgb(21, 45, 67)');
+});
+
 test('karta katalogu mieści długą nazwę i duży tekst, a dodawanie działa z klawiatury', async ({ page }, testInfo) => {
   const state = await setup(page);
   const name = 'Mleko UHT 3,2% bez laktozy w opakowaniu zwrotnym — szczegółowa nazwa grupy o zgodnych cechach';
@@ -119,7 +153,7 @@ test('drzewo, powrót, stronicowanie pełnych liczności i zachowanie wpisanej i
   page.on('pageerror', error => errors.push(error.message));
   page.on('console', message => { if (message.type() === 'error' && message.text().includes('Unexpected text node')) errors.push(message.text()); });
   await page.setViewportSize({ width: 320, height: 740 });
-  await page.goto('/products');
+  await page.goto('/products?catalog=0');
   await page.getByRole('link', { name: 'Otwórz katalog kategorii →' }).click();
   await expect(page.getByRole('button', { name: 'Kategoria: Nabiał', exact: true })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath('catalog-categories.png'), fullPage: true });

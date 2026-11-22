@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Text, View } from 'react-native';
-import { Field, Notice, ui } from '@/components/ui/Controls';
+import { Field, Notice, useUI } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { catalogV1Api } from './catalogV1Api';
 import type { CatalogItem } from './catalogV1';
@@ -13,6 +13,7 @@ import { amount, money, quantityInput } from './types';
 export function CatalogItemCard({ item, favorite, onFavoriteChanged, quantity, onQuantityChanged }: {
   item: CatalogItem; favorite: boolean | undefined; onFavoriteChanged: () => void; quantity: string; onQuantityChanged: (value: string) => void;
 }) {
+  const ui = useUI();
   const [expanded, setExpanded] = useState(false);
   const action = useSessionAction();
   const shopping = useShopping();

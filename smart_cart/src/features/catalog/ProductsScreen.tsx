@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocalSearchParams } from 'expo-router';
 import { ActivityIndicator, Text, View } from 'react-native';
-import { Button, Field, Notice, Screen, ui } from '@/components/ui/Controls';
+import { Button, Field, Notice, Screen, useUI } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { useDebounced, useSessionKey, useSessionQuery } from './hooks';
 import { GroupDetails } from './GroupDetails';
@@ -11,10 +11,11 @@ import CatalogScreen from './CatalogScreen';
 export default function ProductsScreen() {
   const params = useLocalSearchParams<{ q?: string; catalog?: string }>();
   const key = useSessionKey();
-  if (params.catalog === '1') return <CatalogScreen />;
+  if (params.catalog !== '0') return <CatalogScreen />;
   return key ? <ProductSearch key={`${key}:${params.q ?? ''}`} initialQuery={params.q ?? ''} /> : null;
 }
 function ProductSearch({ initialQuery }: { initialQuery: string }) {
+  const ui = useUI();
   const [query, setQuery] = useState(initialQuery);
   const debounced = useDebounced(query.trim());
   const [offset, setOffset] = useState(0);

@@ -4,6 +4,7 @@ import type { AuthActions, AuthResult, AuthSessionAccess, AuthState, AuthUser, S
 
 type AuthClient = SupabaseClient['auth'];
 type ServiceOptions = {
+  passwordRequests?: { run<T>(signal: AbortSignal, operation: () => Promise<T>): Promise<T> };
   storage?: {
     beginRecovery(): Promise<void>;
     endRecovery(): void;
@@ -68,12 +69,16 @@ export function createAuthService(getAuth: () => AuthClient | null, options: Ser
   let identity: string | null = null;
   let sessionGeneration = 0;
   let refreshing: { key: string; promise: Promise<AuthResult<string>> } | null = null;
+  let passwordAbort: AbortController | null = null;
+  let passwordChallenge: { key: string; sentAt: number } | null = null;
   const listeners = new Set<() => void>();
 
   function publish(next: AuthState, operationRevision: number, session?: Session) {
     if (operationRevision !== revision) return;
     const previousKey = sessionKey;
     if (next.status !== 'signedIn') {
+      passwordAbort?.abort();
+      passwordChallenge = null;
       sessionKey = null;
       identity = null;
     } else if (session) {
@@ -357,6 +362,53 @@ export function createAuthService(getAuth: () => AuthClient | null, options: Ser
           return failure(closed.error.code, 'Hasło zostało zmienione. Nie udało się potwierdzić zakończenia sesji na serwerze. Zaloguj się nowym hasłem.');
         } catch (error) {
           return failure(mapAuthError(error).code, 'Hasło zostało zmienione, ale zakończenie sesji nie powiodło się. Ponów wylogowanie.');
+        }
+      });
+    },
+
+    sendPasswordChangeCode(signal) {
+      return runWithSession(async (auth, current, key) => {
+        if (signal?.aborted) return failure('cancelled');
+        const before = await currentSession(auth, current, key);
+        if (!before.ok) return before;
+        if (signal?.aborted) return failure('cancelled');
+        if (passwordChallenge?.key === key && Date.now() - passwordChallenge.sentAt < authPolicy.resendIntervalSeconds * 1000) return failure('rate_limited');
+        try {
+          const { error } = await auth.reauthenticate();
+          if (signal?.aborted || current !== revision || sessionKey !== key) return failure('cancelled');
+          if (error) return { ok: false, error: mapAuthError(error) };
+          passwordChallenge = { key, sentAt: Date.now() };
+          return success();
+        } catch (error) { return { ok: false, error: mapAuthError(error) }; }
+      });
+    },
+
+    changePassword(password, nonce, signal) {
+      return runWithSession(async (auth, current, key) => {
+        if (signal?.aborted) return failure('cancelled');
+        if (password.length < authPolicy.minimumPasswordLength) return failure('weak_password');
+        if (!validCode(nonce)) return failure('invalid_reauthentication_code');
+        if (passwordChallenge?.key !== key) return failure('reauthentication_required');
+        const before = await currentSession(auth, current, key);
+        if (!before.ok) return before;
+        if (signal?.aborted) return failure('cancelled');
+        const controller = new AbortController();
+        passwordAbort = controller;
+        const abort = () => controller.abort();
+        signal?.addEventListener('abort', abort);
+        try {
+          const update = () => auth.updateUser({ password, nonce });
+          const { error } = await (options.passwordRequests ? options.passwordRequests.run(controller.signal, update) : update());
+          if (controller.signal.aborted || current !== revision || sessionKey !== key) return failure('cancelled');
+          if (error) return { ok: false, error: mapAuthError(error) };
+          passwordChallenge = null;
+          // The SDK retains this session. Recovery continues to use setNewPassword.
+          return success();
+        } catch (error) {
+          return controller.signal.aborted || current !== revision || sessionKey !== key ? failure('cancelled') : { ok: false, error: mapAuthError(error) };
+        } finally {
+          signal?.removeEventListener('abort', abort);
+          if (passwordAbort === controller) passwordAbort = null;
         }
       });
     },

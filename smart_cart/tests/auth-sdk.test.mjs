@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createClient } from '@supabase/supabase-js';
 import { createAuthService } from '../src/features/auth/service.ts';
+import { createPasswordRequests } from '../src/features/auth/passwordRequests.ts';
 import { createSessionStorage } from '../src/features/auth/storage.ts';
 
 const user = {
@@ -41,6 +42,7 @@ function fixture(t, key) {
     const parsed = new URL(url);
     const body = options.body ? JSON.parse(options.body) : undefined;
     requests.push({ path: parsed.pathname, grant: parsed.searchParams.get('grant_type'), body });
+    if (parsed.pathname.endsWith('/reauthenticate')) return Response.json({});
     if (parsed.pathname.endsWith('/logout')) return new Response(null, { status: 204 });
     if (parsed.pathname.endsWith('/user')) return Response.json(user);
     if (parsed.pathname.endsWith('/token') || parsed.pathname.endsWith('/verify')) return Response.json(fresh);
@@ -48,11 +50,12 @@ function fixture(t, key) {
   }
   function open() {
     const storage = createSessionStorage(durable, key);
+    const passwordRequests = createPasswordRequests(fetch);
     const client = createClient('https://project.example.test', 'fixture-public-key', {
-      global: { fetch },
+      global: { fetch: passwordRequests.fetch },
       auth: { storage, storageKey: key, persistSession: true, autoRefreshToken: false, detectSessionInUrl: false },
     });
-    const service = createAuthService(() => client.auth, { storage });
+    const service = createAuthService(() => client.auth, { storage, passwordRequests });
     clients.push(client);
     releases.push(service.start());
     return { client, storage, service };
@@ -107,4 +110,19 @@ test('SDK odświeża wygasłą zapisaną sesję przed odtworzeniem użytkownika'
   assert.equal(restored.service.getState().status, 'signedIn');
   assert.equal(requests.filter(request => request.grant === 'refresh_token').length, 1);
   assert.equal(JSON.parse(await durable.getItem('sdk-refresh')).access_token, fresh.access_token);
+});
+
+
+test('SDK Profil wysyła reauthenticate i nonce, zachowuje zwykłą sesję', async t => {
+  const { open, requests, durable } = fixture(t, 'sdk-profile');
+  const { service } = open();
+  await service.initialize(); await service.signIn(user.email, 'fixture-password');
+  const key = service.getSessionKey();
+  assert.equal((await service.sendPasswordChangeCode()).ok, true);
+  assert.equal((await service.changePassword('fixture-new-password', '123456')).ok, true);
+  assert.equal(service.getState().status, 'signedIn');
+  assert.equal(service.getSessionKey(), key);
+  assert.ok(await durable.getItem('sdk-profile'));
+  assert.ok(requests.some(request => request.path.endsWith('/reauthenticate')));
+  assert.deepEqual(requests.find(request => request.body?.nonce)?.body, { password: 'fixture-new-password', nonce: '123456', code_challenge: null, code_challenge_method: null });
 });

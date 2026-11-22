@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { Link, useFocusEffect } from 'expo-router';
 import { ActivityIndicator, Text, View } from 'react-native';
-import { Button, Field, Notice, Screen, ui } from '@/components/ui/Controls';
+import { Button, Field, Notice, Screen, useUI } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { useSessionKey, useSessionQuery } from './hooks';
 import { normalizeCatalogQuery } from './catalogPresentation';
@@ -13,6 +13,7 @@ export default function FavoritesScreen() {
 }
 function Favorites() {
   const [search, setSearch] = useState('');
+  const ui = useUI();
   const query = useSessionQuery(catalogApi.favorites, []);
   const reload = query.reload;
   useFocusEffect(useCallback(() => { reload(); }, [reload]));
