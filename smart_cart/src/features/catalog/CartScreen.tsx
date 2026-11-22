@@ -6,7 +6,8 @@ import { catalogApi } from './api';
 import { useSessionAction, useSessionKey, useSessionQuery } from './hooks';
 import { useShopping } from './ShoppingProvider';
 import { OfferInfo } from './GroupDetails';
-import { amount, money, quantityInput, type ComparisonItem, type ShoppingItem } from './types';
+import { priceDateLabel } from './catalogPresentation';
+import { amount, money, quantityHelp, quantityInput, type ComparisonItem, type ShoppingItem } from './types';
 
 function ItemEditor({ item, reload }: { item: ShoppingItem; reload: () => void }) {
   const ui = useUI();
@@ -22,6 +23,7 @@ function ItemEditor({ item, reload }: { item: ShoppingItem; reload: () => void }
     <Text style={ui.heading}>{item.group.name}</Text>
     <Text style={ui.muted}>{item.selected_product ? `Wybrany produkt: ${item.selected_product.canonical_name}` : 'Najtańszy równoważny produkt, dowolna marka'}</Text>
     <Field label={`Ilość dla ${item.group.name} (${item.unit})`} value={quantity} onChangeText={value => setInput({ saved: item.quantity, value })} keyboardType="decimal-pad" editable={!action.busy} />
+    <Text style={ui.muted}>{quantityHelp[item.unit]}</Text>
     <View style={ui.row}>
       <Button title="Zapisz ilość" busy={action.busy} onPress={save} />
       <Button secondary title="Zmień produkt" disabled={action.busy} onPress={() => setChoosing(!choosing)} />
@@ -60,7 +62,7 @@ function ComparedItem({ row, storeId, items, reload }: { row: ComparisonItem; st
       {!!row.surplus && <Text style={ui.muted}>Nadwyżka: {amount(row.surplus, row.unit)}</Text>}
       {row.picks.map(pick => <View key={pick.offer_id} style={{ gap: 4 }}>
         <Text style={ui.text}>{pick.package_count == null ? amount(pick.quantity, pick.unit) : `${pick.package_count} opak. · ${amount(pick.quantity, pick.unit)}`} · {pick.name} · {money(pick.total_price)}</Text>
-        <Text style={ui.muted}>{pick.observed_at ? `Cena regularna potwierdzona: ${new Date(pick.observed_at).toLocaleDateString('pl-PL')}` : 'Data potwierdzenia ceny regularnej niedostępna'}</Text>
+        <Text style={ui.muted}>{priceDateLabel({ price_source: pick.price_source ?? null, regular_price_observed_at: pick.observed_at })}</Text>
         {pick.requires_activation && <Notice>Wymaga aktywacji w aplikacji sklepu.</Notice>}
         {pick.requires_card && <Text style={ui.muted}>Wymaga karty lub aplikacji sieci.</Text>}
         {pick.promotion_applied && pick.condition && <Text style={ui.muted}>{pick.condition}</Text>}
@@ -75,6 +77,7 @@ function ComparedItem({ row, storeId, items, reload }: { row: ComparisonItem; st
         {row.total_price != null && row.alternative.total_price != null ? ` Wydatek mniejszy o ${money(row.total_price - row.alternative.total_price)}.` : ''}</Text>
       {row.alternative.picks.map(pick => <View key={pick.offer_id}>
         <Text style={ui.text}>{pick.package_count ?? ''} opak. · {pick.name} · {money(pick.total_price)}</Text>
+        <Text style={ui.muted}>{priceDateLabel({ price_source: pick.price_source ?? null, regular_price_observed_at: pick.observed_at })}</Text>
         {pick.requires_activation && <Notice>Wymaga aktywacji w aplikacji sklepu.</Notice>}
         {pick.requires_card && <Text style={ui.muted}>Wymaga karty lub aplikacji sieci.</Text>}
         {pick.promotion_applied && pick.condition && <Text style={ui.muted}>{pick.condition}</Text>}

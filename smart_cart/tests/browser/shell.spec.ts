@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { tree } from '../fixtures/catalog-v1';
 import { AUTH_URL, changeSession, mockMap, testSession } from './map-fixture';
 
 test('Home ma pięć kafelków we właściwych rzędach i pięć zakładek', async ({ page }, info) => {
@@ -28,12 +29,13 @@ test('Home ma pięć kafelków we właściwych rzędach i pięć zakładek', asy
 
 test('wyszukiwanie Home przekazuje znaki specjalne, katalog ma jedno pole', async ({ page }) => {
   await mockMap(page); let query = '';
-  await page.route(`${AUTH_URL}/rest/v1/rpc/search_product_groups`, route => { query = route.request().postDataJSON().search_query; return route.fulfill({ json: [] }); });
+  await page.route(`${AUTH_URL}/rest/v1/rpc/catalog_tree`, route => route.fulfill({ json: tree }));
+  await page.route(`${AUTH_URL}/rest/v1/rpc/catalog_search`, route => { query = route.request().postDataJSON().p_query; return route.fulfill({ json: { version: 1, total: 0, limit: 30, offset: 0, items: [] } }); });
   await page.goto('/');
   const value = 'Mleko 3,2% & Łódź + / ?';
   await page.getByRole('textbox', { name: 'Szukaj produktów', exact: true }).fill(value);
   await page.getByRole('textbox', { name: 'Szukaj produktów', exact: true }).press('Enter');
-  await expect(page.getByRole('textbox', { name: 'Szukaj grupy produktów' })).toHaveValue(value);
+  await expect(page.getByRole('textbox', { name: 'Szukaj w całym katalogu' })).toHaveValue(value);
   await expect(page.getByRole('textbox')).toHaveCount(1);
   await expect.poll(() => query).toBe(value);
   for (const path of ['/profile', '/help', '/rules', '/cart', '/leaflets', '/favorites', '/stores']) {

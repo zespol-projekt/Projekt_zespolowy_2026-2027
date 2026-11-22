@@ -149,8 +149,20 @@ test('kliknięcie grupy przybliża mapę, a kolejne otwiera sklep', async ({ pag
   await page.getByRole('button', { name: 'Pokaż wyniki na mapie' }).click();
   const region = embedded(page).locator('#map');
   await expect(region).toHaveAttribute('data-focus-request', '1');
+  // Capture the 400 ms animation in the browser, even if the test runner resumes
+  // after it finishes. Keep checking both motion start and the final idle state.
+  await region.evaluate(element => {
+    element.setAttribute('data-test-motion-started', 'false');
+    const observer = new MutationObserver(records => {
+      if (element.getAttribute('aria-busy') === 'true' || records.some(record => record.oldValue === 'true')) {
+        element.setAttribute('data-test-motion-started', 'true');
+        observer.disconnect();
+      }
+    });
+    observer.observe(element, { attributes: true, attributeFilter: ['aria-busy'], attributeOldValue: true });
+  });
   await embedded(page).locator('canvas').click();
-  await expect(region).toHaveAttribute('aria-busy', 'true');
+  await expect(region).toHaveAttribute('data-test-motion-started', 'true');
   await expect(region).toHaveAttribute('aria-busy', 'false');
   await expect(page.getByTestId('store-card')).toHaveCount(0);
   await embedded(page).locator('canvas').click();

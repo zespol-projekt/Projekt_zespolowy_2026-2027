@@ -18,7 +18,9 @@ Stan: 17 listopada 2026. Zachowano Expo Router `js-tabs` i jeden AuthProvider. T
 
 Dolny pasek ma dokładnie: Home · Ulubione · Koszyk · Szukaj · Mapa. Profil i ustawienia motywu dostępne są z menu. Zamknięcie menu nie nawiguje. Wstecz na osobnych widokach wykorzystuje historię; przy braku historii wraca na Home. Nieznana trasa WWW wraca na Home; native pokazuje komunikat i link. Dozwolone dynamiczne ID gazetek waliduje `auth/navigation.ts`.
 
-Home przekazuje `q` przez obiekt parametrów routera, zachowując znaki specjalne. Właścicielem pola na `/products` pozostaje `ProductsScreen`: nie ma drugiego pola w nagłówku. Wspólny nagłówek pokazuje duże pole wyłącznie na Home. Mapa zachowuje lokalny filtr. Zastany moduł Ulubionych nie posiada jeszcze własnego filtra ani docelowej zwartej listy — to zadanie Radka; tej logiki nie wdrażano w zakresie Filipa.
+Home przekazuje `q` przez obiekt parametrów routera, zachowując znaki specjalne. Właścicielem pola na `/products` pozostaje moduł katalogu Radka: nie ma drugiego pola w nagłówku. Wspólny nagłówek pokazuje duże pole wyłącznie na Home. Mapa zachowuje lokalny filtr.
+
+Aktualizacja integracji z 22 listopada 2026: `/products` otwiera domyślnie nowy katalog kategorii, a Ulubione mają zwartą listę, własne wyszukiwanie i podgląd produktów. Te komponenty korzystają z tego samego `useUI()` i `ThemeProvider`. Layout Produktów zachowuje `CatalogDraftProvider`, więc przełączenie motywu i zakładek nie usuwa wpisanych ilości. Stary ekran pozostaje pod jawnym `/products?catalog=0`; starsze linki `catalog=1` nadal działają. Odbiór całej integracji opisuje README Radka; raport Filipa z 17 listopada pozostaje raportem historycznym jego etapu.
 
 ## Kontrakt motywu dla Radka i Kowala
 

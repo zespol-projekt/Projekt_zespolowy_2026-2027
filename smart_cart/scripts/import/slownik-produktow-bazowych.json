@@ -1,0 +1,3560 @@
+{
+ "zrodlo": "Dane_sklepy_current/base_dictionary.py",
+ "sha256": "b49294c09a304c6aefbbe943d59ffac4bb7d810c61d2acadf115aab4ce79fec2",
+ "uwaga": "Wygenerowane jednorazowo z base_dictionary.py (reguły przypisania do produktów bazowych). Kolejność reguł ma znaczenie: wygrywa pierwsza pasująca.",
+ "czarna_lista": "\\b(karma|dla psa|dla psów|dla kota|dla kotów|przysmak dla|mieszanka paszowa|activ pet|k-carinura|whiskas|pedigree|purina|friskies|sheba|8in1|party mix|dolina noteci|rafi\\b|orlando|chappi|gerber|bobovita|hipp|bebiko|bebilon|nan optipro|dla niemowląt|miesiącu|miesiąca|kicia kocia|żwirek|proszek do prania|płyn do płukania|płyn do naczyń|płyn do mycia|pianka do kuchni|kapsułki do prania|tabletki do zmywarki|kapsułki do zmywarki|nabłyszczacz|płyn do szyb|płyn do spryskiwaczy|szampon|szamponetka|koloryzując|farba do włosów|l'oréal|loreal|joanna\\b|odżywka|maska odżywcza|żel pod prysznic|żel pod pr|mydło|gąbka kąpielowa|pilnik|beautylook|antyperspirant|dezodorant|pasta do zębów|płyn do płukania jamy|krem do twarzy|krem do rąk|krem do obuwia|pasta do butów|zamsz i nubuk|pomadka|balsam|mleczko do ciała|mleczko do czyszczenia|air wick|pachnące patyczki|spray ajax|znicz|wkład do zniczy|świeca|podgrzewacze|skarpetki|rajstopy|baterie|pieluchy|papier toaletowy|ręcznik papierowy|chusteczki|odświeżacz|kostka do wc|wc\\b|do kąpieli|o zapachu|worki na śmieci|folia aluminiowa|papier do pieczenia|węgiel drzewny|brykiet drzewny|podpałka|cif|spray uniwersalny|masło do ciała|do ciała|dada|trociny|chipsi|łyżka do|forma do pieczenia|silvercrest|świeczka)\\b",
+ "przetworzone_nie_swieze": "(\\b\\d+(?:[.,]\\d+)?\\s*(ml|l)\\b|\\b(smak|smaku|smoothie|lemoniada|radler|piwo|likier|cydr|cider|herbata|herbatka|herbatek|matcha|yerba|rooibos|torebek|lipton|loyd|big-active|teekanne|vitax|napój|nektar|naktar|syrop|mus\\b|przecier|kisiel|galaretka|dżem|konfitura|kompot|deser|deserek|owsianka|ryżanka|jogurt|yogurt|yoghurt|oatjogu|skyr|kefir|maślanka|vegangurt|lassi|danonki|jogobella|fruvita|mleczna dolina|go vege|govege|vitanella|crunchy|plony natury|nasza spiżarnia|mroźna kraina|mroźny ogród|serek|pilos|solevita|vemondo|vital fresh|tymbark|hortex|frosta|kubuś|kubus|owolovo|bob snail|fruit mood|herbapol|fuzetea|fuze tea|nestea|oshee|dr witt|żywiec zdrój|zywiec zdroj|zbyszko|piccolo|somersby|warka|okocim|soplica|lubelska|plusssz|suplement|drażetki|tic tac|lizak|chupa chups|halls|cukierek|cukierki|karmelki|zozole|landryny|żelki|mochi|guma|baton|batonik|pawełek|przekąska|przekąski|chrupki|cheetos|krakersy|paluszki|precelki|ciastka|babeczki|lody|sorbet|kaktus|zupa|nudle|zapiefix|fix|pomysł na|przepis na|przyprawa|młynek|kamis|prymat|knorr|winiary|bakalland|pasta|pastella|ketchup|majonez|sos|surówka|śledzik|w zalewie|w oleju|w occie|zasmażan|smażon|prażon|prażone|susz\\b|suszone|suszona|liście|skórka|mieszanka|produkt owocowy|owoce w żelu|w słoiku|tarte|wiórki|purée|puree|czekoladzie|czekoladą|franui|wafle|tastino|kiszony|kiszona|kandyzowan|rollsy|nadzieniem|polewie|crownfield|chef select|freshona)\\b)",
+ "wyjatek_swieze": "Ogórki kiszone / konserwowe",
+ "reguly": [
+  {
+   "nazwa": "Mleko bez laktozy",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bmleko\\b"
+   ],
+   "also": [
+    "bez laktozy|laktozy"
+   ],
+   "exc": [
+    "czekoladow",
+    "waniliow",
+    "w proszku",
+    "kondensowan",
+    "jogurt",
+    "serek",
+    "protein"
+   ]
+  },
+  {
+   "nazwa": "Mleko UHT 3,2%",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bmleko\\b"
+   ],
+   "also": [
+    "3[.,]2%"
+   ],
+   "exc": [
+    "bez laktozy",
+    "laktozy",
+    "czekoladow",
+    "waniliow",
+    "truskawkow",
+    "kondensowan",
+    "kokosow",
+    "sojow",
+    "owsian",
+    "migdałow",
+    "w proszku",
+    "w tubce",
+    "modyfikowan",
+    "protein"
+   ]
+  },
+  {
+   "nazwa": "Mleko 1,5% - 2,0%",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bmleko\\b"
+   ],
+   "also": [
+    "1[.,]5%|2%|2[.,]0%"
+   ],
+   "exc": [
+    "bez laktozy",
+    "laktozy",
+    "czekoladow",
+    "waniliow",
+    "kondensowan",
+    "kokosow",
+    "sojow",
+    "owsian",
+    "w proszku",
+    "modyfikowan",
+    "protein"
+   ]
+  },
+  {
+   "nazwa": "Napój roślinny (Owsiany / Sojowy / Migdałowy)",
+   "kategoria": "Nabiał",
+   "must": [
+    "napój\\s+(roślinny\\s+)?(owsiany|sojowy|migdałowy|ryżowy)",
+    "mleko\\s+(owsiane|sojowe|migdałowe)",
+    "\\balpro\\b|\\binka\\s+oat\\b|\\bvemondo\\s+napój\\b"
+   ],
+   "also": [],
+   "exc": [
+    "jogurt",
+    "deser",
+    "kawa",
+    "śmietanka",
+    "czekolada"
+   ]
+  },
+  {
+   "nazwa": "Masło ekstra 82%",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bmasło\\b|\\bosełka\\b"
+   ],
+   "also": [
+    "ekstra|extra|82%|83%|osełka|polskie"
+   ],
+   "exc": [
+    "orzechow",
+    "arachidow",
+    "roślinn",
+    "kakaow",
+    "klarowan",
+    "miks",
+    "czosnkow",
+    "ziołow",
+    "z indyka",
+    "z kurczaka",
+    "pikok"
+   ]
+  },
+  {
+   "nazwa": "Margaryna do pieczenia / smarowania",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bmargaryna\\b|\\bkasia\\b|\\bpalma\\b|\\brama\\b|\\bdelma\\b|\\bfinello\\b"
+   ],
+   "also": [],
+   "exc": [
+    "ciasto",
+    "ciastka",
+    "bułka"
+   ]
+  },
+  {
+   "nazwa": "Jajka rozmiar L (10 szt.)",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bjaja\\b|\\bjajka\\b"
+   ],
+   "also": [
+    "\\bl\\b|rozmiar\\s*l|klasa\\s*l|duże"
+   ],
+   "exc": [
+    "czekoladow",
+    "kinder",
+    "przepiórcz",
+    "niespodziank",
+    "majonez",
+    "makaron",
+    "likier",
+    "żelki"
+   ]
+  },
+  {
+   "nazwa": "Jajka rozmiar M (10 szt.)",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bjaja\\b|\\bjajka\\b"
+   ],
+   "also": [
+    "\\bm\\b|rozmiar\\s*m|klasa\\s*m|średnie|10\\s*szt|6\\s*szt|20\\s*szt"
+   ],
+   "exc": [
+    "czekoladow",
+    "kinder",
+    "przepiórcz",
+    "niespodziank",
+    "majonez",
+    "makaron",
+    "likier",
+    "żelki"
+   ]
+  },
+  {
+   "nazwa": "Mozzarella Light / Serek wiejski lekki",
+   "kategoria": "Nabiał",
+   "must": [
+    "mozzarella\\s+light|serek\\s+wiejski\\s+lekki"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Ser żółty Gouda",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bser\\b|\\bgouda\\b"
+   ],
+   "also": [
+    "\\bgouda\\b"
+   ],
+   "exc": [
+    "topion",
+    "pleśniow",
+    "kozi",
+    "wegańsk",
+    "chipsy",
+    "chrupki",
+    "sos",
+    "bułka",
+    "zapiekanka",
+    "kanapka"
+   ]
+  },
+  {
+   "nazwa": "Ser żółty (Edamski / Podlaski / Morski / Królewski / Cheddar)",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bser\\b"
+   ],
+   "also": [
+    "edamski|podlaski|morski|królewski|salami|tylżycki|złoty mazur|cheddar|sokół|radamer"
+   ],
+   "exc": [
+    "topion",
+    "pleśniow",
+    "chipsy",
+    "chrupki",
+    "sos",
+    "bułka",
+    "zapiekanka",
+    "kanapka"
+   ]
+  },
+  {
+   "nazwa": "Ser Mozzarella",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bmozzarella\\b"
+   ],
+   "also": [],
+   "exc": [
+    "light",
+    "pizza",
+    "zapiekanka",
+    "paluszki",
+    "sałatka",
+    "pomidory z",
+    "bagietka"
+   ]
+  },
+  {
+   "nazwa": "Twaróg półtłusty / chudy",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\btwaróg\\b|\\bser twarogowy\\b"
+   ],
+   "also": [
+    "półtłusty|chudy|tłusty|klinek|kostka|sernikowy"
+   ],
+   "exc": [
+    "sernik",
+    "pierogi",
+    "naleśniki",
+    "wędzon",
+    "z czosnkiem",
+    "z rzodkiewką",
+    "almette"
+   ]
+  },
+  {
+   "nazwa": "Serek wiejski",
+   "kategoria": "Nabiał",
+   "must": [
+    "serek wiejski"
+   ],
+   "also": [],
+   "exc": [
+    "lekki",
+    "light",
+    "z dżemem",
+    "z truskawkami",
+    "z brzoskwinią",
+    "z miodem",
+    "z czekoladą"
+   ]
+  },
+  {
+   "nazwa": "Śmietana 18%",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bśmietana\\b"
+   ],
+   "also": [
+    "18%"
+   ],
+   "exc": [
+    "zupka",
+    "chipsy",
+    "sos",
+    "śledź",
+    "fix"
+   ]
+  },
+  {
+   "nazwa": "Śmietanka 30% / 36%",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bśmietanka\\b|\\bśmietana\\b"
+   ],
+   "also": [
+    "30%|36%"
+   ],
+   "exc": [
+    "kawa",
+    "lody",
+    "deser",
+    "likier",
+    "krówka",
+    "kokosowa"
+   ]
+  },
+  {
+   "nazwa": "Jogurt naturalny",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bjogurt\\b"
+   ],
+   "also": [
+    "naturalny|grecki|bałkański"
+   ],
+   "exc": [
+    "protein",
+    "białkow",
+    "owocow",
+    "truskawk",
+    "waniliow",
+    "pitny",
+    "z musli",
+    "z płatkami",
+    "fantasia",
+    "biskwit"
+   ]
+  },
+  {
+   "nazwa": "Skyr naturalny",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bskyr\\b"
+   ],
+   "also": [
+    "naturalny"
+   ],
+   "exc": [
+    "waniliow",
+    "truskawk",
+    "jagodow",
+    "malinow",
+    "mango",
+    "brzoskwin",
+    "pitny"
+   ]
+  },
+  {
+   "nazwa": "Skyr owocowy / waniliowy / pitny",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bskyr\\b"
+   ],
+   "also": [
+    "waniliow|truskawk|jagodow|malinow|mango|brzoskwin|owocow|pitny"
+   ],
+   "exc": [
+    "naturalny"
+   ]
+  },
+  {
+   "nazwa": "Chleb pszenno-żytni / zwykły",
+   "kategoria": "Pieczywo",
+   "must": [
+    "\\bchleb\\b"
+   ],
+   "also": [
+    "pszenno|żytni|baltonowski|wiejski|krojony|zwykły|mieszany|słowiański|pradawny|włoski"
+   ],
+   "exc": [
+    "razowy",
+    "pełnoziarnisty",
+    "100%",
+    "ziaren",
+    "z ziarnami",
+    "słonecznikowy",
+    "orkiszowy",
+    "tostowy",
+    "chrupki",
+    "wasa",
+    "ryżowy",
+    "mieszanka do wypieku",
+    "kwas chlebowy"
+   ]
+  },
+  {
+   "nazwa": "Chleb tostowy",
+   "kategoria": "Pieczywo",
+   "must": [
+    "\\bchleb\\b|\\bpieczywo\\b"
+   ],
+   "also": [
+    "tostow"
+   ],
+   "exc": [
+    "toster",
+    "opiekacz",
+    "ser tostowy"
+   ]
+  },
+  {
+   "nazwa": "Bułka kajzerka / pszenna",
+   "kategoria": "Pieczywo",
+   "must": [
+    "\\bbułka\\b|\\bkajzerka\\b|\\bbułki\\b"
+   ],
+   "also": [
+    "kajzerka|pszenna|poznańska|poranna|sznytka|wrocławska|śniadaniowa"
+   ],
+   "exc": [
+    "tarta",
+    "słodka",
+    "z czekoladą",
+    "z budyniem",
+    "do burger",
+    "burger",
+    "do hot-dog",
+    "hot dog",
+    "brioche",
+    "grahamka"
+   ]
+  },
+  {
+   "nazwa": "Bułka grahamka",
+   "kategoria": "Pieczywo",
+   "must": [
+    "\\bgrahamka\\b|\\bgraham\\b"
+   ],
+   "also": [
+    "\\bgrahamka\\b|\\bbułka\\b|\\bbułki\\b|\\bpaluch\\b"
+   ],
+   "exc": [
+    "mąka",
+    "chleb"
+   ]
+  },
+  {
+   "nazwa": "Tortilla pszenna (Wrapy)",
+   "kategoria": "Pieczywo",
+   "must": [
+    "\\btortilla\\b|\\bwrapy\\b|\\bwrap\\b"
+   ],
+   "also": [],
+   "exc": [
+    "chips",
+    "nachos",
+    "sos",
+    "danie gotowe",
+    "z kurczakiem",
+    "sushi",
+    "łosoś",
+    "sakura",
+    "tuńczyk",
+    "gyros",
+    "kebab",
+    "air fryer",
+    "mexicana",
+    "drosed"
+   ]
+  },
+  {
+   "nazwa": "Pierś z kurczaka (Filet)",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "pierś|filet|piersi"
+   ],
+   "also": [
+    "kurczak"
+   ],
+   "exc": [
+    "wędzon",
+    "gotowan",
+    "pieczon",
+    "szynka",
+    "polędwica",
+    "kabanos",
+    "parówki",
+    "kiełbasa",
+    "panierowan",
+    "w panierce",
+    "nuggets",
+    "strips",
+    "zupka",
+    "danie",
+    "sałatka",
+    "gyros"
+   ]
+  },
+  {
+   "nazwa": "Mięso mielone wieprzowe",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "mięso mielone|mielone z łopatki|mielone z szynki|mielone z karkówki"
+   ],
+   "also": [
+    "wieprzow|łopatki|szynki|karkówki"
+   ],
+   "exc": [
+    "wołowe",
+    "drobiowe",
+    "z indyka",
+    "z kurczaka",
+    "przyprawa",
+    "sos",
+    "gołąbki",
+    "roślinne"
+   ]
+  },
+  {
+   "nazwa": "Mięso mielone wołowe",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "mięso mielone|mielone wołowe|burger wołowy"
+   ],
+   "also": [
+    "wołow"
+   ],
+   "exc": [
+    "wieprzow",
+    "przyprawa",
+    "sos",
+    "z sosem",
+    "bułka"
+   ]
+  },
+  {
+   "nazwa": "Mięso mielone drobiowe / z indyka",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "mięso mielone|mielone z indyka|mielone drobiowe|mielone z kurczaka"
+   ],
+   "also": [
+    "indyk|drobiow|kurczak"
+   ],
+   "exc": [
+    "przyprawa",
+    "sos",
+    "kotlet"
+   ]
+  },
+  {
+   "nazwa": "Boczek wędzony / parzony",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bboczek\\b"
+   ],
+   "also": [],
+   "exc": [
+    "chipsy",
+    "chrupki",
+    "zupka",
+    "przyprawa",
+    "sos",
+    "fasolka po bretońsku",
+    "żelki"
+   ]
+  },
+  {
+   "nazwa": "Kiełbasa śląska / podwawelska",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bkiełbasa\\b"
+   ],
+   "also": [
+    "śląska|podwawelska|toruńska|zwyczajna|głogowska|morlińska|żywiecka|krakowska"
+   ],
+   "exc": [
+    "biała",
+    "chorizo",
+    "salami",
+    "kabanos",
+    "pasztet",
+    "leczo"
+   ]
+  },
+  {
+   "nazwa": "Parówki",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bparówki\\b|\\bberlinki\\b"
+   ],
+   "also": [],
+   "exc": [
+    "w cieście",
+    "hot-dog",
+    "dla psa"
+   ]
+  },
+  {
+   "nazwa": "Szynka wieprzowa / z indyka (plastry)",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bszynka\\b|\\bpolędwica\\b"
+   ],
+   "also": [
+    "konserwowa|gotowana|wędzona|z indyka|z kurczaka|sopocka|krakowska|babuni|plastry"
+   ],
+   "exc": [
+    "pizza",
+    "zapiekanka",
+    "surowa",
+    "mięso mielone",
+    "pasztet",
+    "sałatka",
+    "zupka",
+    "bez kości"
+   ]
+  },
+  {
+   "nazwa": "Kabanosy",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bkabanosy\\b|\\bkabanos\\b"
+   ],
+   "also": [],
+   "exc": [
+    "ser",
+    "chipsy",
+    "schab",
+    "szynka",
+    "kiełbasa",
+    "boczek",
+    "polędwica"
+   ]
+  },
+  {
+   "nazwa": "Łosoś wędzony",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\błosoś\\b|\\błososia\\b"
+   ],
+   "also": [
+    "wędzon"
+   ],
+   "exc": [
+    "pasta",
+    "sałatka",
+    "sushi",
+    "krem",
+    "tatar"
+   ]
+  },
+  {
+   "nazwa": "Tuńczyk w puszce",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\btuńczyk\\b"
+   ],
+   "also": [
+    "w sosie własnym|w oleju|w wodzie|kawałki|rozdrobniony|pusz"
+   ],
+   "exc": [
+    "pasta",
+    "sałatka",
+    "pizza",
+    "steki"
+   ]
+  },
+  {
+   "nazwa": "Ziemniaki",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bziemniaki\\b|\\bziemniak\\b"
+   ],
+   "also": [],
+   "exc": [
+    "chipsy",
+    "frytki",
+    "puree",
+    "placki",
+    "pyzy",
+    "kopytka",
+    "skrobia",
+    "mąka",
+    "przyprawa",
+    "sałatka",
+    "z pieca"
+   ]
+  },
+  {
+   "nazwa": "Pomidory",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bpomidor\\b|\\bpomidory\\b"
+   ],
+   "also": [
+    "malinow|gałązk|śliwkow|rzymsk|czerwon|polski|luz|kg\\b"
+   ],
+   "exc": [
+    "koktajlow",
+    "cherry",
+    "daktylow",
+    "puszk",
+    "passata",
+    "przecier",
+    "koncentrat",
+    "ketchup",
+    "zupa",
+    "sos",
+    "sok",
+    "suszon",
+    "chipsy",
+    "serek",
+    "pasta",
+    "krojon",
+    "pelati"
+   ]
+  },
+  {
+   "nazwa": "Pomidory koktajlowe / Cherry",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bpomidor\\b|\\bpomidory\\b|\\bpomidorki\\b"
+   ],
+   "also": [
+    "koktajlow|cherry|daktylow|papryczkow"
+   ],
+   "exc": [
+    "puszk",
+    "sos",
+    "zupa",
+    "suszon"
+   ]
+  },
+  {
+   "nazwa": "Ogórek zielony (świeży)",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bogórek\\b|\\bogórki\\b"
+   ],
+   "also": [
+    "zielon|szklarniow|długi|gruntow|szt\\b|kg\\b|świeży"
+   ],
+   "exc": [
+    "kiszon",
+    "kwaszon",
+    "konserwow",
+    "korniszon",
+    "małosoln",
+    "zupa",
+    "sos",
+    "sałatka",
+    "mizeria",
+    "krem"
+   ]
+  },
+  {
+   "nazwa": "Ogórki kiszone / konserwowe",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bogórek\\b|\\bogórki\\b|\\bkorniszony\\b"
+   ],
+   "also": [
+    "kiszon|kwaszon|konserwow|korniszon|małosoln"
+   ],
+   "exc": [
+    "zupa",
+    "sałatka",
+    "sos",
+    "chipsy"
+   ]
+  },
+  {
+   "nazwa": "Papryka czerwona (świeża)",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bpapryka\\b"
+   ],
+   "also": [
+    "czerwona|luz|kg\\b|słodka świeża"
+   ],
+   "exc": [
+    "mielon",
+    "przyprawa",
+    "wędzon",
+    "konserwow",
+    "marynowan",
+    "chipsy",
+    "chrupki",
+    "pasta",
+    "pasztet",
+    "serek",
+    "hummus",
+    "sos"
+   ]
+  },
+  {
+   "nazwa": "Cebula żółta",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bcebula\\b"
+   ],
+   "also": [],
+   "exc": [
+    "czerwona",
+    "dymka",
+    "szalotka",
+    "prażona",
+    "granulowana",
+    "przyprawa",
+    "chipsy",
+    "krążki",
+    "bułka",
+    "zupa",
+    "serek",
+    "śledź",
+    "marynowan"
+   ]
+  },
+  {
+   "nazwa": "Czosnek świeży",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bczosnek\\b"
+   ],
+   "also": [],
+   "exc": [
+    "granulowan",
+    "suszon",
+    "mielon",
+    "przyprawa",
+    "sos",
+    "bagietka",
+    "masło",
+    "serek",
+    "w proszku",
+    "marynowan"
+   ]
+  },
+  {
+   "nazwa": "Marchew",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bmarchew\\b|\\bmarchewka\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sok",
+    "nektar",
+    "z groszkiem",
+    "mrożon",
+    "surówka",
+    "krem",
+    "zupa",
+    "słoiczek",
+    "ciasto"
+   ]
+  },
+  {
+   "nazwa": "Pieczarki świeże",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bpieczarki\\b|\\bpieczarka\\b"
+   ],
+   "also": [],
+   "exc": [
+    "marynowan",
+    "konserwow",
+    "zupa",
+    "sos",
+    "krokiety",
+    "pierogi",
+    "zapiekanka",
+    "pizza",
+    "pasztet"
+   ]
+  },
+  {
+   "nazwa": "Mix sałat / Rukola / Szpinak / Sałata",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bmix sałat\\b|\\brukola\\b|\\bszpinak\\b|\\broszponka\\b|\\bsałata\\b"
+   ],
+   "also": [],
+   "exc": [
+    "mrożon",
+    "brykiet",
+    "zupa",
+    "pierogi",
+    "makaron",
+    "naleśniki",
+    "sos",
+    "tarta",
+    "serek"
+   ]
+  },
+  {
+   "nazwa": "Banany",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bbanan\\b|\\bbanany\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sok",
+    "nektar",
+    "mus",
+    "jogurt",
+    "płatki",
+    "suszon",
+    "chipsy",
+    "czekolad",
+    "żelki",
+    "likier"
+   ]
+  },
+  {
+   "nazwa": "Jabłka",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bjabłka\\b|\\bjabłko\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sok",
+    "nektar",
+    "napój",
+    "mus",
+    "ocet",
+    "cydr",
+    "chipsy",
+    "suszon",
+    "szarlotka",
+    "ciasto",
+    "dżem",
+    "herbata",
+    "mięta"
+   ]
+  },
+  {
+   "nazwa": "Cytryny",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bcytryna\\b|\\bcytryny\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sok",
+    "napój",
+    "woda",
+    "herbata",
+    "kwasek",
+    "kwas",
+    "koncentrat",
+    "galaretka",
+    "ciasto",
+    "płyn",
+    "żelki"
+   ]
+  },
+  {
+   "nazwa": "Awokado",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bawokado\\b"
+   ],
+   "also": [],
+   "exc": [
+    "olej",
+    "pasta",
+    "guacamole",
+    "krem",
+    "szampon"
+   ]
+  },
+  {
+   "nazwa": "Ryż Basmati / Jaśminowy",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\bryż\\b"
+   ],
+   "also": [
+    "basmati|jaśminowy"
+   ],
+   "exc": [
+    "wafle",
+    "danie",
+    "z kurczakiem"
+   ]
+  },
+  {
+   "nazwa": "Ryż biały / Parboiled",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\bryż\\b"
+   ],
+   "also": [
+    "biały|parboiled|długoziarnisty|brązowy"
+   ],
+   "exc": [
+    "wafle",
+    "płatki",
+    "mleko",
+    "napój",
+    "dmuchany",
+    "z warzywami",
+    "z kurczakiem",
+    "danie",
+    "na mleku",
+    "basmati",
+    "jaśminowy"
+   ]
+  },
+  {
+   "nazwa": "Kasza gryczana",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\bkasza\\b"
+   ],
+   "also": [
+    "gryczana"
+   ],
+   "exc": [
+    "kaszanka",
+    "zupa",
+    "danie"
+   ]
+  },
+  {
+   "nazwa": "Kasza jęczmienna / jaglana / kuskus",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\bkasza\\b|\\bkuskus\\b"
+   ],
+   "also": [
+    "jęczmienna|jaglana|pęczak|wiejska|kuskus|manna|bulgur"
+   ],
+   "exc": [
+    "zupa",
+    "krupnik",
+    "deser",
+    "na mleku"
+   ]
+  },
+  {
+   "nazwa": "Makaron Spaghetti",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\bmakaron\\b|\\bspaghetti\\b"
+   ],
+   "also": [
+    "spaghetti"
+   ],
+   "exc": [
+    "sos",
+    "fix",
+    "danie",
+    "zupka",
+    "bolognese",
+    "żelki"
+   ]
+  },
+  {
+   "nazwa": "Makaron Penne / Świderki / Kokardki",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\bmakaron\\b"
+   ],
+   "also": [
+    "penne|rurki|świderki|fusilli|kokardki|farfalle|kolanka|muszelki|pióra"
+   ],
+   "exc": [
+    "sos",
+    "danie",
+    "zupka",
+    "sałatka"
+   ]
+  },
+  {
+   "nazwa": "Mąka pszenna uniwersalna",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\bmąka\\b"
+   ],
+   "also": [
+    "pszenna|typ\\s*450|typ\\s*500|typ\\s*550|typ\\s*650|tortowa|uniwersalna|wrocławska|poznańska|szymanowska|krupczatka"
+   ],
+   "exc": [
+    "żytnia",
+    "orkiszowa",
+    "kokosowa",
+    "migdałowa",
+    "ziemniaczana",
+    "ryżowa",
+    "kukurydziana",
+    "pełnoziarnista"
+   ]
+  },
+  {
+   "nazwa": "Płatki owsiane",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "płatki owsiane"
+   ],
+   "also": [],
+   "exc": [
+    "ciastka",
+    "baton",
+    "owsianka w kubku",
+    "z owocami",
+    "czekolad"
+   ]
+  },
+  {
+   "nazwa": "Cukier biały 1kg",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\bcukier\\b"
+   ],
+   "also": [
+    "biały|kryształ|1\\s*kg|1000\\s*g"
+   ],
+   "exc": [
+    "wanilinowy",
+    "waniliowy",
+    "puder",
+    "trzcinowy",
+    "kostka",
+    "żelujący"
+   ]
+  },
+  {
+   "nazwa": "Bułka tarta",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "bułka tarta"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Olej rzepakowy / słonecznikowy",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bolej\\b"
+   ],
+   "also": [
+    "rzepakowy|kujawski|wielkopolski|słonecznikowy"
+   ],
+   "exc": [
+    "lniany",
+    "kokosowy",
+    "z pestek",
+    "tuńczyk",
+    "śledź",
+    "pomidory",
+    "oliwki"
+   ]
+  },
+  {
+   "nazwa": "Oliwa z oliwek",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\boliwa z oliwek\\b|\\boliwa\\s+extra\\s+virgin\\b"
+   ],
+   "also": [],
+   "exc": [
+    "tuńczyk",
+    "sardynki",
+    "pomidory",
+    "krem",
+    "mydło",
+    "chleb"
+   ]
+  },
+  {
+   "nazwa": "Passata pomidorowa / Przecier",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bpassata\\b|\\bprzecier pomidorowy\\b"
+   ],
+   "also": [],
+   "exc": [
+    "zupa"
+   ]
+  },
+  {
+   "nazwa": "Pomidory w puszce (Krojone / Całe)",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bpomidory\\b"
+   ],
+   "also": [
+    "krojon|całe|pelati|w puszce|w soku pomidorowym|bez skórki"
+   ],
+   "exc": [
+    "zupa",
+    "świeże"
+   ]
+  },
+  {
+   "nazwa": "Koncentrat pomidorowy",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "koncentrat pomidorowy"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Kukurydza konserwowa w puszce",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bkukurydza\\b"
+   ],
+   "also": [
+    "konserwow|złocista|w puszce|słodka|\\d+\\s*g"
+   ],
+   "exc": [
+    "wafle",
+    "chrupki",
+    "chipsy",
+    "popcorn",
+    "do prażenia",
+    "mąka",
+    "płatki",
+    "kolba"
+   ]
+  },
+  {
+   "nazwa": "Groszek konserwowy w puszce",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bgroszek\\b"
+   ],
+   "also": [
+    "konserwow|zielony"
+   ],
+   "exc": [
+    "mrożon",
+    "ptysiowy",
+    "z marchewką",
+    "zupa"
+   ]
+  },
+  {
+   "nazwa": "Fasola czerwona w puszce",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bfasola\\b"
+   ],
+   "also": [
+    "czerwona"
+   ],
+   "exc": [
+    "po bretońsku",
+    "szparagowa",
+    "zupa"
+   ]
+  },
+  {
+   "nazwa": "Ciecierzyca w puszce / słoiku",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bciecierzyca\\b|\\bcieciorka\\b"
+   ],
+   "also": [],
+   "exc": [
+    "hummus",
+    "chipsy",
+    "mąka",
+    "sucha"
+   ]
+  },
+  {
+   "nazwa": "Ketchup",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bketchup\\b|\\bkeczup\\b"
+   ],
+   "also": [],
+   "exc": [
+    "chipsy",
+    "chrupki",
+    "parówki",
+    "kiełbasa"
+   ]
+  },
+  {
+   "nazwa": "Majonez",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bmajonez\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sałatka",
+    "jajka w"
+   ]
+  },
+  {
+   "nazwa": "Musztarda",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bmusztarda\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sos",
+    "śledź",
+    "kiełbasa"
+   ]
+  },
+  {
+   "nazwa": "Sos zimny (Czosnkowy / Tatarski / Tysiąca Wysp / BBQ)",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "sos czosnkowy|sos tatarski|sos tysiąca wysp|sos barbecue|sos bbq|sos burgerowy|sos koperkowo"
+   ],
+   "also": [],
+   "exc": [
+    "chipsy",
+    "orzeszki",
+    "danie",
+    "w proszku"
+   ]
+  },
+  {
+   "nazwa": "Sól kuchenna",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "\\bsól\\b"
+   ],
+   "also": [
+    "kuchenna|jodowana|morska|himalajska|1\\s*kg"
+   ],
+   "exc": [
+    "do zmywarki",
+    "do kąpieli",
+    "chipsy",
+    "paluszki",
+    "orzeszki",
+    "pistacje",
+    "wafle",
+    "pieprz"
+   ]
+  },
+  {
+   "nazwa": "Pieprz czarny",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "\\bpieprz\\b"
+   ],
+   "also": [
+    "czarny|mielony|ziarnisty|w młynku"
+   ],
+   "exc": [
+    "serek",
+    "camembert",
+    "szynka",
+    "kabanosy",
+    "salami",
+    "sos",
+    "chipsy",
+    "stek",
+    "wafle"
+   ]
+  },
+  {
+   "nazwa": "Papryka słodka / ostra (przyprawa)",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "\\bpapryka\\b"
+   ],
+   "also": [
+    "mielona|(słodka|wędzona|ostra).*\\b\\d+\\s*g\\b|\\b(prymat|kamis|appetita|kotanyi|kotányi|culineo|kania)\\b"
+   ],
+   "exc": [
+    "świeża",
+    "kg",
+    "chipsy",
+    "chrupki",
+    "orzeszki",
+    "serek",
+    "konserwow",
+    "w zalewie",
+    "w occie"
+   ]
+  },
+  {
+   "nazwa": "Proszek do pieczenia",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "proszek do pieczenia"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Cukier wanilinowy / waniliowy",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "cukier wanilinowy|cukier waniliowy"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Kakao ciemne",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "\\bkakao\\b"
+   ],
+   "also": [],
+   "exc": [
+    "napój",
+    "puchatek",
+    "nesquik",
+    "ciasto",
+    "ciastka",
+    "hit",
+    "granola",
+    "płatki",
+    "wafle",
+    "wafelek",
+    "daktyle",
+    "rolada",
+    "superballs",
+    "czekolada",
+    "krem",
+    "rogalik",
+    "rogal",
+    "7days",
+    "rozpuszczaln"
+   ]
+  },
+  {
+   "nazwa": "Woda niegazowana",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bwoda\\b"
+   ],
+   "also": [
+    "niegazowan|niegaz\\b|źródlana|mineralna"
+   ],
+   "exc": [
+    "gazowan",
+    "lekko gaz",
+    "delik. gaz",
+    "mocny gaz",
+    "musując",
+    "delik. mus",
+    "woda gaz",
+    "smakowa",
+    "witaminowa",
+    "cytrynow",
+    "truskawk",
+    "mango",
+    "liczi",
+    "soku",
+    "kokosowa",
+    "po goleniu",
+    "toaletowa",
+    "perfumowana",
+    "micelarna",
+    "utleniona"
+   ]
+  },
+  {
+   "nazwa": "Woda gazowana",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bwoda\\b"
+   ],
+   "also": [
+    "\\bgazowana\\b|\\bgazowany\\b|lekko gaz|delik\\.?\\s*gaz|\\bwoda\\s+gaz\\b|mocny gaz|musując|delik\\.?\\s*mus|niskonasycona|\\bmuszynianka\\b"
+   ],
+   "exc": [
+    "niegazowan",
+    "niegaz",
+    "smakowa",
+    "witaminowa",
+    "soku",
+    "kokosowa",
+    "perfumowana",
+    "toaletowa"
+   ]
+  },
+  {
+   "nazwa": "Sok pomarańczowy 100%",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bsok\\b"
+   ],
+   "also": [
+    "pomarańcz"
+   ],
+   "exc": [
+    "nektar",
+    "napój",
+    "syrop",
+    "żelki"
+   ]
+  },
+  {
+   "nazwa": "Sok jabłkowy 100%",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bsok\\b"
+   ],
+   "also": [
+    "jabłk"
+   ],
+   "exc": [
+    "nektar",
+    "napój",
+    "syrop",
+    "mus"
+   ]
+  },
+  {
+   "nazwa": "Nektar / Napój owocowy (np. Tymbark / Kubuś / Hortex)",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bnektar\\b|\\btymbark\\b|\\bkubuś\\b|\\bcaprio\\b|\\bcappy\\b|napój\\s+(jabłkow|pomarańczow|wieloowocow|brzoskwiniow)"
+   ],
+   "also": [],
+   "exc": [
+    "mus",
+    "woda",
+    "żelki",
+    "ciastka"
+   ]
+  },
+  {
+   "nazwa": "Herbata mrożona (Ice Tea - np. Lipton / FuzeTea)",
+   "kategoria": "Napoje",
+   "must": [
+    "ice tea|iced tea|\\bfuzetea\\b|herbata mrożona|lipton\\s+(peach|lemon|green\\s+ice)"
+   ],
+   "also": [],
+   "exc": [
+    "torebk",
+    "expresow"
+   ]
+  },
+  {
+   "nazwa": "Napój gazowany typu Cola",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bcoca-cola\\b|\\bpepsi\\b|\\bcola\\b"
+   ],
+   "also": [],
+   "exc": [
+    "żelki",
+    "lizak",
+    "cukierki",
+    "energetic"
+   ]
+  },
+  {
+   "nazwa": "Napój gazowany owocowy (Fanta / Sprite / Mirinda / 7Up / Tonik)",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bfanta\\b|\\bsprite\\b|\\bmirinda\\b|\\b7up\\b|\\bschweppes\\b|\\btonik\\b|\\btonic\\b|\\boranżada\\b"
+   ],
+   "also": [],
+   "exc": [
+    "żelki",
+    "cukierki"
+   ]
+  },
+  {
+   "nazwa": "Kawa ziarnista",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bkawa\\b"
+   ],
+   "also": [
+    "ziarnista"
+   ],
+   "exc": [
+    "mielona",
+    "rozpuszczalna",
+    "zbożowa",
+    "napój",
+    "cukierki"
+   ]
+  },
+  {
+   "nazwa": "Kawa mielona",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bkawa\\b"
+   ],
+   "also": [
+    "mielona"
+   ],
+   "exc": [
+    "ziarnista",
+    "rozpuszczalna",
+    "zbożowa",
+    "napój"
+   ]
+  },
+  {
+   "nazwa": "Herbata czarna (w torebkach)",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bherbata\\b|\\bherbatka\\b"
+   ],
+   "also": [
+    "czarna|lipton|earl grey|assam|minutka|saga"
+   ],
+   "exc": [
+    "mrożona",
+    "ice tea",
+    "iced tea",
+    "napój",
+    "zielona",
+    "miętowa",
+    "rumiankowa",
+    "owocowa"
+   ]
+  },
+  {
+   "nazwa": "Czekolada mleczna",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "\\bczekolada\\b"
+   ],
+   "also": [
+    "mleczna"
+   ],
+   "exc": [
+    "do picia",
+    "krem",
+    "płatki",
+    "ciastka",
+    "lody",
+    "budyń"
+   ]
+  },
+  {
+   "nazwa": "Czekolada gorzka / deserowa",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "\\bczekolada\\b"
+   ],
+   "also": [
+    "gorzka|ciemna|deserowa|[5-9]\\d%"
+   ],
+   "exc": [
+    "mleczna",
+    "biała",
+    "do picia",
+    "ciastka",
+    "lody"
+   ]
+  },
+  {
+   "nazwa": "Ptasie Mleczko / Pianki w czekoladzie",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "ptasie mleczko|pianki w czekoladzie|alpejskie mleczko"
+   ],
+   "also": [],
+   "exc": [
+    "syrop",
+    "monin",
+    "lody"
+   ]
+  },
+  {
+   "nazwa": "Bombonierka / Czekoladki (np. Merci / Raffaello)",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "\\bmerci\\b|\\braffaello\\b|\\bferrero rocher\\b|\\btoffifee\\b|\\bczekoladki\\b"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Chipsy ziemniaczane",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "\\bchipsy\\b|\\blays\\b|\\blay's\\b|\\bcrunchips\\b|\\bwiejskie ziemniaczki\\b|\\btop chips\\b|\\bpringles\\b"
+   ],
+   "also": [],
+   "exc": [
+    "kokosowe",
+    "jabłkowe",
+    "bananowe",
+    "tortilla"
+   ]
+  },
+  {
+   "nazwa": "Śmietana 12%",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bśmietana\\b|\\bśmietanka\\b"
+   ],
+   "also": [
+    "12%"
+   ],
+   "exc": [
+    "zupka",
+    "sos",
+    "śledź"
+   ]
+  },
+  {
+   "nazwa": "Kefir / Maślanka naturalna",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bkefir\\b|\\bmaślanka\\b"
+   ],
+   "also": [],
+   "exc": [
+    "truskawk",
+    "owocow",
+    "jagodow",
+    "malinow",
+    "pieczywo",
+    "chleb",
+    "owoce leśne",
+    "dynia",
+    "pomarańcz"
+   ]
+  },
+  {
+   "nazwa": "Jogurt owocowy / pitny",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bjogurt\\b"
+   ],
+   "also": [
+    "truskawk|malin|brzoskwin|jagod|wiśni|owoc|pitny|fantasia|jogobella"
+   ],
+   "exc": [
+    "naturalny",
+    "grecki",
+    "protein",
+    "białkow",
+    "lody",
+    "ciasto",
+    "baton"
+   ]
+  },
+  {
+   "nazwa": "Serek homogenizowany (np. waniliowy)",
+   "kategoria": "Nabiał",
+   "must": [
+    "serek homogenizowany|\\bdanio\\b|\\brolmlecz\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sernik"
+   ]
+  },
+  {
+   "nazwa": "Serek śmietankowy do smarowania (np. Almette)",
+   "kategoria": "Nabiał",
+   "must": [
+    "serek śmietankowy|serek twarogowy|\\balmette\\b|\\bphiladelphia\\b|\\bturek figura\\b|\\bmój ulubiony\\b|\\błaciate serek\\b"
+   ],
+   "also": [],
+   "exc": [
+    "topion",
+    "wiejski",
+    "homogenizowany",
+    "deser"
+   ]
+  },
+  {
+   "nazwa": "Serek topiony",
+   "kategoria": "Nabiał",
+   "must": [
+    "serek topiony|ser topiony|\\bhochland\\b"
+   ],
+   "also": [
+    "topion|krążki|plastry|kostka"
+   ],
+   "exc": [
+    "gouda w plastrach",
+    "sos serowy"
+   ]
+  },
+  {
+   "nazwa": "Ser Feta / Sałatkowy typu greckiego",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bfeta\\b|\\bfetina\\b|\\bfavita\\b|ser sałatkowy|typu greckiego"
+   ],
+   "also": [],
+   "exc": [
+    "sałatka",
+    "z oliwkami",
+    "pierogi",
+    "tarta"
+   ]
+  },
+  {
+   "nazwa": "Ser Mascarpone",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bmascarpone\\b"
+   ],
+   "also": [],
+   "exc": [
+    "lody",
+    "deser",
+    "ciasto",
+    "sos",
+    "piątnica śmietana"
+   ]
+  },
+  {
+   "nazwa": "Ser pleśniowy (Camembert / Brie / Lazur)",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bcamembert\\b|\\bbrie\\b|\\blazur\\b|\\bgorgonzola\\b|ser pleśniowy"
+   ],
+   "also": [],
+   "exc": [
+    "panierowan",
+    "żurawiną",
+    "sos",
+    "zupa",
+    "chipsy"
+   ]
+  },
+  {
+   "nazwa": "Ser twardy (Parmezan / Grana Padano / Bursztyn)",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bparmezan\\b|\\bparmigiano\\b|\\bgrana padano\\b|\\bcorregio\\b|ser.*bursztyn|bursztyn.*ser|\\bskarby serowara\\b|\\bdziugas\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sos",
+    "pesto",
+    "zupa",
+    "chipsy",
+    "farba",
+    "włosów"
+   ]
+  },
+  {
+   "nazwa": "Ser Halloumi",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bhalloumi\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sałatka",
+    "burger"
+   ]
+  },
+  {
+   "nazwa": "Chleb żytni razowy / pełnoziarnisty",
+   "kategoria": "Pieczywo",
+   "must": [
+    "\\bchleb\\b"
+   ],
+   "also": [
+    "razowy|pełnoziarnisty|100%|słonecznikowy|z ziarnami|\\d+\\s*ziaren|orkiszowy|\\big\\b"
+   ],
+   "exc": [
+    "tostowy",
+    "chrupki",
+    "wasa",
+    "mąka"
+   ]
+  },
+  {
+   "nazwa": "Bagietka (zwykła / czosnkowa)",
+   "kategoria": "Pieczywo",
+   "must": [
+    "\\bbagietka\\b"
+   ],
+   "also": [],
+   "exc": [
+    "zapiekanka z szynką"
+   ]
+  },
+  {
+   "nazwa": "Bułki do burgerów / hot-dogów",
+   "kategoria": "Pieczywo",
+   "must": [
+    "\\bbułki\\b|\\bbułka\\b"
+   ],
+   "also": [
+    "burger|hamburger|hot-dog|hot dog|brioche"
+   ],
+   "exc": [
+    "mięso",
+    "wołowy",
+    "drobiowy",
+    "sos"
+   ]
+  },
+  {
+   "nazwa": "Pieczywo chrupkie / Wafle ryżowe",
+   "kategoria": "Pieczywo",
+   "must": [
+    "pieczywo chrupkie|wafle ryżowe|wafle kukurydziane|wafle.*zbożowe|\\bwasa\\b|\\bsonko\\b"
+   ],
+   "also": [],
+   "exc": [
+    "w czekoladzie",
+    "z kremem",
+    "polewą"
+   ]
+  },
+  {
+   "nazwa": "Drożdżówka / Croissant / Pączek",
+   "kategoria": "Pieczywo",
+   "must": [
+    "\\bdrożdżówka\\b|\\bcroissant\\b|\\brogal\\b|\\brogalik\\b|\\bpączek\\b|\\bdonut\\b"
+   ],
+   "also": [],
+   "exc": [
+    "masło",
+    "proszek",
+    "salami",
+    "kiełbasa",
+    "szynka"
+   ]
+  },
+  {
+   "nazwa": "Udka / Podudzia z kurczaka",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\budka\\b|\\budko\\b|\\budo\\b|\\bpodudzia\\b|\\bpodudzie\\b|\\bćwiartki\\b|\\bćwiartka\\b|\\budziec\\b"
+   ],
+   "also": [
+    "kurczak"
+   ],
+   "exc": [
+    "wędzon",
+    "pieczon",
+    "przyprawa",
+    "karma",
+    "ziemnia"
+   ]
+  },
+  {
+   "nazwa": "Filet z indyka (Pierś z indyka)",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "filet|pierś|piersi"
+   ],
+   "also": [
+    "indyk"
+   ],
+   "exc": [
+    "wędzon",
+    "szynka",
+    "polędwica",
+    "parówki",
+    "kabanos",
+    "pasztet",
+    "karma",
+    "mielon"
+   ]
+  },
+  {
+   "nazwa": "Schab wieprzowy (bez kości)",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bschab\\b"
+   ],
+   "also": [],
+   "exc": [
+    "wędzon",
+    "pieczon",
+    "plastry",
+    "w galarecie",
+    "kotlet",
+    "danie"
+   ]
+  },
+  {
+   "nazwa": "Karkówka wieprzowa",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bkarkówka\\b"
+   ],
+   "also": [],
+   "exc": [
+    "przyprawa",
+    "wędzon",
+    "plastry"
+   ]
+  },
+  {
+   "nazwa": "Łopatka / Szynka wieprzowa surowa / Gulaszowe",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\błopatka wieprzowa\\b|mięso z szynki|szynka wieprzowa bez kości|mięso na gulasz|polędwiczki wieprzowe"
+   ],
+   "also": [],
+   "exc": [
+    "mielon",
+    "wędzon",
+    "konserwow",
+    "plastry"
+   ]
+  },
+  {
+   "nazwa": "Kiełbasa biała (surowa / parzona)",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "kiełbasa biała|biała surowa|biała parzona"
+   ],
+   "also": [],
+   "exc": [
+    "żurek",
+    "barszcz"
+   ]
+  },
+  {
+   "nazwa": "Salami / Chorizo (w plastrach)",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bsalami\\b|\\bchorizo\\b|\\bpepperoni\\b"
+   ],
+   "also": [],
+   "exc": [
+    "pizza",
+    "guseppe",
+    "zapiekanka",
+    "kanapka",
+    "bagietka",
+    "ser",
+    "cheese",
+    "pilos",
+    "camembert"
+   ]
+  },
+  {
+   "nazwa": "Pasztet drobiowy / wieprzowy",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bpasztet\\b"
+   ],
+   "also": [],
+   "exc": [
+    "dla kota",
+    "dla psa",
+    "z soczewicy",
+    "z ciecierzycy"
+   ]
+  },
+  {
+   "nazwa": "Łosoś świeży (Filet / Dzwonko)",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\błosoś\\b|\\błososia\\b"
+   ],
+   "also": [
+    "filet|świeży|dzwonko|porcja|atlantycki"
+   ],
+   "exc": [
+    "wędzon",
+    "pasta",
+    "sałatka",
+    "krem",
+    "puszk",
+    "karma"
+   ]
+  },
+  {
+   "nazwa": "Dorsz / Miruna / Mintaj (Filet)",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bdorsz\\b|\\bmiruna\\b|\\bmintaj\\b|\\bmorszczuk\\b"
+   ],
+   "also": [
+    "filet|polędwiczki|kostka"
+   ],
+   "exc": [
+    "panierowan",
+    "paluszki rybne",
+    "po grecku",
+    "w galarecie",
+    "sałatka",
+    "wątróbki"
+   ]
+  },
+  {
+   "nazwa": "Paluszki rybne / Filety rybne panierowane",
+   "kategoria": "Mrożonki i Gotowe",
+   "must": [
+    "paluszki rybne|filety rybne panierowane|\\bfrosta\\s+złote\\s+paluszki\\b|ryba z pieca"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Makrela wędzona",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bmakrela\\b"
+   ],
+   "also": [
+    "wędzon|tusza|filet"
+   ],
+   "exc": [
+    "w sosie pomidorowym",
+    "w oleju",
+    "puszk",
+    "pasta"
+   ]
+  },
+  {
+   "nazwa": "Śledzie (filety w oleju / śmietanie)",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bśledź\\b|\\bśledzie\\b|\\bśledziowe\\b|\\bśledzik\\b|\\bmatjas\\b|\\bmatias\\b"
+   ],
+   "also": [],
+   "exc": [
+    "żelki",
+    "sałatka warzywna",
+    "pastella"
+   ]
+  },
+  {
+   "nazwa": "Cebula czerwona",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bcebula\\b"
+   ],
+   "also": [
+    "czerwona"
+   ],
+   "exc": [
+    "marynowan",
+    "konfitura",
+    "serek"
+   ]
+  },
+  {
+   "nazwa": "Szczypiorek / Cebula dymka",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bszczypiorek\\b|\\bdymka\\b"
+   ],
+   "also": [],
+   "exc": [
+    "serek",
+    "twarożek",
+    "chipsy",
+    "zupka",
+    "suszon"
+   ]
+  },
+  {
+   "nazwa": "Papryka żółta / zielona / mix",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bpapryka\\b"
+   ],
+   "also": [
+    "żółta|zielona|mix|tricolor"
+   ],
+   "exc": [
+    "konserwow",
+    "marynowan",
+    "przyprawa",
+    "chipsy",
+    "pasta"
+   ]
+  },
+  {
+   "nazwa": "Brokuł świeży",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bbrokuł\\b|\\bbrokuły\\b"
+   ],
+   "also": [],
+   "exc": [
+    "mrożon",
+    "zupa",
+    "krem",
+    "sałatka",
+    "tarta",
+    "słoiczek",
+    "kalafior",
+    "warzywa na patelnię",
+    "bukiet"
+   ]
+  },
+  {
+   "nazwa": "Kalafior świeży",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bkalafior\\b"
+   ],
+   "also": [],
+   "exc": [
+    "mrożon",
+    "zupa",
+    "krem"
+   ]
+  },
+  {
+   "nazwa": "Cukinia",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bcukinia\\b|\\bcukinie\\b"
+   ],
+   "also": [],
+   "exc": [
+    "leczo",
+    "placki",
+    "zupa",
+    "krem",
+    "słoiczek"
+   ]
+  },
+  {
+   "nazwa": "Bakłażan",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bbakłażan\\b|\\boberżyna\\b"
+   ],
+   "also": [],
+   "exc": [
+    "pasta",
+    "krem"
+   ]
+  },
+  {
+   "nazwa": "Kapusta biała / młoda / pekińska",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bkapusta\\b"
+   ],
+   "also": [
+    "biała|młoda|pekińska|włoska|czerwona"
+   ],
+   "exc": [
+    "kiszon",
+    "kwaszon",
+    "gołąbki",
+    "pierogi",
+    "krokiety",
+    "surówka",
+    "z grzybami",
+    "bigos"
+   ]
+  },
+  {
+   "nazwa": "Kapusta kiszona",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bkapusta\\b"
+   ],
+   "also": [
+    "kiszon|kwaszon"
+   ],
+   "exc": [
+    "pierogi",
+    "krokiety",
+    "bigos",
+    "paszteciki",
+    "zupa",
+    "kapuśniak"
+   ]
+  },
+  {
+   "nazwa": "Buraki czerwone (surowe / gotowane)",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bburak\\b|\\bburaki\\b|\\bburaczki\\b"
+   ],
+   "also": [],
+   "exc": [
+    "barszcz",
+    "zupa",
+    "sok",
+    "chipsy",
+    "chrzan z"
+   ]
+  },
+  {
+   "nazwa": "Włoszczyzna / Seler / Pietruszka korzeń",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bwłoszczyzna\\b|\\bseler\\b|pietruszka korzeń|\\bpor\\b"
+   ],
+   "also": [],
+   "exc": [
+    "mrożon",
+    "suszon",
+    "konserwow",
+    "sałatka",
+    "zupa",
+    "przyprawa",
+    "natka"
+   ]
+  },
+  {
+   "nazwa": "Natka pietruszki / Koperek / Bazylia świeża",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "natka pietruszki|\\bkoperek\\b|bazylia w doniczce|mięta w doniczce|kolendra świeża"
+   ],
+   "also": [],
+   "exc": [
+    "suszon",
+    "przyprawa",
+    "sos",
+    "pesto",
+    "serek",
+    "masło"
+   ]
+  },
+  {
+   "nazwa": "Pomarańcze / Mandarynki",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bpomarańcze\\b|\\bpomarańcza\\b|\\bmandarynki\\b|\\bmandarynka\\b|\\bklementynki\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sok",
+    "nektar",
+    "napój",
+    "dżem",
+    "czekolada",
+    "żelki",
+    "herbata",
+    "ciastka",
+    "delicje"
+   ]
+  },
+  {
+   "nazwa": "Limonka",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\blimonka\\b|\\blimonki\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sok",
+    "napój",
+    "woda",
+    "piwo",
+    "mięta",
+    "żelki",
+    "płyn"
+   ]
+  },
+  {
+   "nazwa": "Winogrona (jasne / ciemne)",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bwinogrona\\b|\\bwinogrono\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sok",
+    "napój",
+    "rodzynki",
+    "wino\\b",
+    "olej z pestek"
+   ]
+  },
+  {
+   "nazwa": "Truskawki / Borówki / Maliny (świeże)",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\btruskawki\\b|\\bborówki\\b|\\bborówka amerykańska\\b|\\bmaliny\\b"
+   ],
+   "also": [],
+   "exc": [
+    "mrożon",
+    "dżem",
+    "konfitura",
+    "jogurt",
+    "serek",
+    "kefir",
+    "sok",
+    "syrop",
+    "herbata",
+    "czekolada",
+    "galaretka",
+    "kisiel",
+    "lody",
+    "mus"
+   ]
+  },
+  {
+   "nazwa": "Gruszki",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bgruszka\\b|\\bgruszki\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sok",
+    "napój",
+    "mus",
+    "kompot",
+    "herbata",
+    "czekolada",
+    "słoiczek"
+   ]
+  },
+  {
+   "nazwa": "Kiwi",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bkiwi\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sok",
+    "napój",
+    "galaretka",
+    "pasta do butów"
+   ]
+  },
+  {
+   "nazwa": "Mąka ziemniaczana (Skrobia)",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "mąka ziemniaczana|skrobia ziemniaczana"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Mąka żytnia / pełnoziarnista / orkiszowa",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\bmąka\\b"
+   ],
+   "also": [
+    "żytnia|pełnoziarnista|orkiszowa|graham|typ\\s*720|typ\\s*1850|typ\\s*2000"
+   ],
+   "exc": [
+    "chleb",
+    "bułka",
+    "makaron"
+   ]
+  },
+  {
+   "nazwa": "Makaron nitki / rosołowy (do zupy)",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\bmakaron\\b"
+   ],
+   "also": [
+    "nitki|rosołowy|krajanka|gwiazdki|zacierka"
+   ],
+   "exc": [
+    "zupka",
+    "instant",
+    "rosół z"
+   ]
+  },
+  {
+   "nazwa": "Płatki śniadaniowe / Musli / Granola",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "płatki kukurydziane|\\bcorn flakes\\b|\\bmusli\\b|\\bgranola\\b|\\bcini minis\\b|\\bnesquik\\b|\\bchocapic\\b|\\bkangus\\b"
+   ],
+   "also": [],
+   "exc": [
+    "baton",
+    "jogurt z",
+    "kakao"
+   ]
+  },
+  {
+   "nazwa": "Soczewica / Ciecierzyca sucha / Fasola sucha",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\bsoczewica\\b|fasola jaś|groch łuskany"
+   ],
+   "also": [],
+   "exc": [
+    "zupa",
+    "pasztet",
+    "pasta",
+    "chipsy",
+    "wafle",
+    "w puszce"
+   ]
+  },
+  {
+   "nazwa": "Orzechy (Włoskie / Laskowe / Nerkowca / Migdały)",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "orzechy włoskie|orzechy laskowe|orzechy nerkowca|\\bmigdały\\b|mieszanka studencka"
+   ],
+   "also": [],
+   "exc": [
+    "czekolad",
+    "mleko",
+    "napój",
+    "krem",
+    "masło",
+    "ciastka",
+    "lody",
+    "olej"
+   ]
+  },
+  {
+   "nazwa": "Słonecznik / Pestki dyni / Sezam / Siemię lniane",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "słonecznik łuskany|pestki dyni|\\bsezam\\b|siemię lniane|nasiona chia"
+   ],
+   "also": [],
+   "exc": [
+    "chleb",
+    "bułka",
+    "olej",
+    "chałwa",
+    "paluszki"
+   ]
+  },
+  {
+   "nazwa": "Rodzynki / Żurawina suszona / Daktyle / Śliwki",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "\\brodzynki\\b|żurawina suszona|daktyle suszone|śliwki suszone|morele suszone"
+   ],
+   "also": [],
+   "exc": [
+    "w czekoladzie",
+    "musli",
+    "ciasto",
+    "schab"
+   ]
+  },
+  {
+   "nazwa": "Drożdże (świeże / suszone instant)",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "\\bdrożdże\\b"
+   ],
+   "also": [
+    "piekarskie|świeże|instant|suszone|babuni|dr\\.?\\s*oetker"
+   ],
+   "exc": [
+    "drożdżówka",
+    "bułka",
+    "ciasto",
+    "piwo",
+    "płatki drożdżowe"
+   ]
+  },
+  {
+   "nazwa": "Budyń / Kisiel / Galaretka (w proszku)",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "\\bbudyń\\b|\\bkisiel\\b|\\bgalaretka\\b"
+   ],
+   "also": [],
+   "exc": [
+    "drożdżówka",
+    "czekolada",
+    "ciastka",
+    "delicje",
+    "mięso w"
+   ]
+  },
+  {
+   "nazwa": "Masło orzechowe (Krem arachidowy)",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "masło orzechowe|krem orzechowy|krem arachidowy|pasta arachidowa|peanut butter"
+   ],
+   "also": [],
+   "exc": [
+    "lody",
+    "baton",
+    "snickers",
+    "ciastka",
+    "ciasteczko",
+    "chrupki",
+    "czekolad"
+   ]
+  },
+  {
+   "nazwa": "Krem czekoladowo-orzechowy (np. Nutella)",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bnutella\\b|\\bnusfin\\b|\\bchocofini\\b|krem czekoladow"
+   ],
+   "also": [],
+   "exc": [
+    "rogalik",
+    "ciastka",
+    "biscuits",
+    "b-ready",
+    "naleśniki",
+    "lody",
+    "do twarzy"
+   ]
+  },
+  {
+   "nazwa": "Dżem / Konfitura / Powidła",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bdżem\\b|\\bkonfitura\\b|\\bpowidła\\b"
+   ],
+   "also": [],
+   "exc": [
+    "pączek",
+    "drożdżówka",
+    "serek",
+    "jogurt"
+   ]
+  },
+  {
+   "nazwa": "Miód pszczeli",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bmiód\\b"
+   ],
+   "also": [
+    "wielokwiatowy|lipowy|rzepakowy|spadziowy|akacjowy|gryczany|pszczeli|nektarowy"
+   ],
+   "exc": [
+    "pitny",
+    "piwo",
+    "musztarda",
+    "orzeszki",
+    "płatki",
+    "ciastka",
+    "szynka",
+    "mydło"
+   ]
+  },
+  {
+   "nazwa": "Hummus",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bhummus\\b|\\bhumus\\b"
+   ],
+   "also": [],
+   "exc": [
+    "chipsy"
+   ]
+  },
+  {
+   "nazwa": "Pesto (zielone / czerwone)",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bpesto\\b"
+   ],
+   "also": [],
+   "exc": [
+    "ser",
+    "sałatka",
+    "makaron z"
+   ]
+  },
+  {
+   "nazwa": "Sos sojowy",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "sos sojowy"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Oliwki (zielone / czarne)",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\boliwki\\b"
+   ],
+   "also": [
+    "zielone|czarne|drylowane|hiszpańskie|w zalewie"
+   ],
+   "exc": [
+    "oliwa",
+    "chleb",
+    "bułka",
+    "ser",
+    "pizza",
+    "sałatka"
+   ]
+  },
+  {
+   "nazwa": "Suszone pomidory (w oleju)",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "pomidory suszone|suszone pomidory"
+   ],
+   "also": [],
+   "exc": [
+    "serek",
+    "hummus",
+    "pasztet",
+    "pesto",
+    "szynka",
+    "kabanosy",
+    "chipsy",
+    "przyprawa"
+   ]
+  },
+  {
+   "nazwa": "Ocet (spirytusowy / jabłkowy / balsamiczny)",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bocet\\b"
+   ],
+   "also": [
+    "spirytusowy|jabłkowy|balsamiczny|winny"
+   ],
+   "exc": [
+    "śledzie",
+    "grzybki",
+    "ogórki",
+    "chipsy"
+   ]
+  },
+  {
+   "nazwa": "Czosnek granulowany / suszony",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "\\bczosnek\\b"
+   ],
+   "also": [
+    "granulowany|suszony|mielony"
+   ],
+   "exc": [
+    "sos",
+    "bagietka",
+    "masło"
+   ]
+  },
+  {
+   "nazwa": "Zioła suszone (Oregano / Bazylia / Majeranek / Prowansalskie)",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "zioła prowansalskie|\\boregano\\b|\\bmajeranek\\b|\\btymianek\\b|bazylia suszona|bazylia otarta"
+   ],
+   "also": [],
+   "exc": [
+    "sos",
+    "pesto",
+    "serek",
+    "szynka",
+    "kiełbasa",
+    "chipsy",
+    "doniczce",
+    "pinsa"
+   ]
+  },
+  {
+   "nazwa": "Cynamon / Curry / Kurkuma / Przyprawa do kurczaka",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "\\bcynamon\\b|\\bcurry\\b|\\bkurkuma\\b|przyprawa do kurczaka|przyprawa do gyrosa"
+   ],
+   "also": [],
+   "exc": [
+    "płatki",
+    "owsianka",
+    "owsiany",
+    "vemondo",
+    "rogalik",
+    "drożdżówki",
+    "ciastka",
+    "sos",
+    "danie",
+    "herbata",
+    "guma",
+    "pizza",
+    "zupa",
+    "spread",
+    "pasta",
+    "ogórki",
+    "fix",
+    "chicken",
+    "ryż",
+    "rice",
+    "kiełbaski",
+    "peanuts",
+    "orzeszki"
+   ]
+  },
+  {
+   "nazwa": "Kostki rosołowe / Bulion",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "kostki rosołowe|bulion drobiowy|bulion warzywny|bulion wołowy|\\bwiniary bulion\\b|\\bknorr bulion\\b"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Liść laurowy / Ziele angielskie",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "liść laurowy|liście laurowe|ziele angielskie"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Warzywa na patelnię / Mieszanka mrożona",
+   "kategoria": "Mrożonki i Gotowe",
+   "must": [
+    "warzywa na patelnię|mieszanka warzywna|zupa mrożona|włoszczyzna mrożona|bukiet jarzyn"
+   ],
+   "also": [],
+   "exc": [
+    "przyprawa"
+   ]
+  },
+  {
+   "nazwa": "Szpinak / Brokuły / Fasolka (mrożone)",
+   "kategoria": "Mrożonki i Gotowe",
+   "must": [
+    "\\bszpinak\\b|\\bbrokuły\\b|fasolka szparagowa"
+   ],
+   "also": [
+    "mrożon|mroźna kraina|mroźny ogród|brykiet|rozdrobniony|450\\s*g"
+   ],
+   "exc": [
+    "pierogi",
+    "zupa",
+    "tarta"
+   ]
+  },
+  {
+   "nazwa": "Frytki mrożone",
+   "kategoria": "Mrożonki i Gotowe",
+   "must": [
+    "\\bfrytki\\b"
+   ],
+   "also": [],
+   "exc": [
+    "przyprawa",
+    "ketchup",
+    "sos",
+    "żelki",
+    "chrupki"
+   ]
+  },
+  {
+   "nazwa": "Owoce mrożone (Truskawki / Mix owoców)",
+   "kategoria": "Mrożonki i Gotowe",
+   "must": [
+    "truskawki mrożone|maliny mrożone|owoce mrożone|mieszanka kompotowa|owoce leśne mrożone|(truskawki|maliny|borówki|borówka|brzoskwinia|brzoskwinie|wiśnie|owoce).*mroźna kraina|mroźna kraina.*(truskawki|maliny|borówki|brzoskwinia|owoce)"
+   ],
+   "also": [],
+   "exc": [
+    "lody"
+   ]
+  },
+  {
+   "nazwa": "Pizza (mrożona / chłodzona)",
+   "kategoria": "Mrożonki i Gotowe",
+   "must": [
+    "\\bpizza\\b|\\bguseppe\\b|\\bfeliciana\\b|\\bristorante\\b|\\bdonatello\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sos",
+    "przyprawa",
+    "mąka",
+    "spód do pizzy",
+    "ciasto na pizzę",
+    "żelki",
+    "chrupki"
+   ]
+  },
+  {
+   "nazwa": "Pierogi / Uszka / Krokiety (gotowe)",
+   "kategoria": "Mrożonki i Gotowe",
+   "must": [
+    "\\bpierogi\\b|\\buszka\\b|\\bkrokiety\\b|\\bnaleśniki\\b"
+   ],
+   "also": [],
+   "exc": [
+    "mąka",
+    "przyprawa"
+   ]
+  },
+  {
+   "nazwa": "Kopytka / Kluski śląskie / Pyzy / Gnocchi",
+   "kategoria": "Mrożonki i Gotowe",
+   "must": [
+    "\\bkopytka\\b|kluski śląskie|\\bpyzy\\b|\\bgnocchi\\b"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Lody",
+   "kategoria": "Mrożonki i Gotowe",
+   "must": [
+    "\\blody\\b|\\bkoral\\b|\\bgrycan\\b|\\bmagnum\\b|\\bcarte d'or\\b|\\bmanhattan\\b|\\balgida\\b|\\bgelatelli\\b|\\bbon gelati\\b|\\bmarletto\\b"
+   ],
+   "also": [],
+   "exc": [
+    "wafelek",
+    "polewa",
+    "proszek",
+    "krewetki",
+    "łosoś",
+    "śledź",
+    "filet"
+   ]
+  },
+  {
+   "nazwa": "Kawa rozpuszczalna",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bkawa\\b|\\bnescafe\\b|\\bjacobs cronat\\b|\\bjacobs velvet\\b"
+   ],
+   "also": [
+    "rozpuszczalna|crema|gold|cronat|velvet"
+   ],
+   "exc": [
+    "ziarnista",
+    "mielona",
+    "3w1",
+    "2w1",
+    "napój"
+   ]
+  },
+  {
+   "nazwa": "Herbata zielona / owocowa / ziołowa",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bherbata\\b|\\bherbatka\\b"
+   ],
+   "also": [
+    "zielona|miętowa|mięta|rumianek|rumiankowa|malinowa|owocowa|melisa"
+   ],
+   "exc": [
+    "mrożona",
+    "ice tea",
+    "iced tea",
+    "napój",
+    "syrop"
+   ]
+  },
+  {
+   "nazwa": "Napój energetyczny (Energy Drink)",
+   "kategoria": "Napoje",
+   "must": [
+    "napój energetyczny|\\bred bull\\b|\\bmonster energy\\b|\\btiger\\b|\\bblack energy\\b|\\bbe power\\b"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Piwo (klasyczne / bezalkoholowe 0,0%)",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bpiwo\\b|\\blech\\b|\\bżywiec\\b|\\btyskie\\b|\\bharnaś\\b|\\bkasztelan\\b|\\bperła\\b|\\bheineken\\b|\\bżubr\\b|\\błomża\\b|\\bokocim\\b|\\bwarka\\b"
+   ],
+   "also": [],
+   "exc": [
+    "zdrój",
+    "zdroj",
+    "woda",
+    "kiełbasa",
+    "orzeszki",
+    "szklanka",
+    "kufel"
+   ]
+  },
+  {
+   "nazwa": "Baton proteinowy (wysokobiałkowy)",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "baton.*protein|baton wysokobiałkowy|baton białkowy|\\bgo active\\s+baton\\b"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Mus owocowy w tubce (np. Kubuś Mus / Owolovo)",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "\\bmus\\b|\\bowolovo\\b|kubuś\\s+mus|tymbarczek\\s+mus"
+   ],
+   "also": [
+    "owocow|jabłk|truskawk|banan|mango|brzoskwin|tubce|100\\s*g|120\\s*g|200\\s*g|\\bowolovo\\b"
+   ],
+   "exc": [
+    "do ciała",
+    "chrzan",
+    "sok",
+    "pomidor"
+   ]
+  },
+  {
+   "nazwa": "Herbatniki / Ciastka / Biszkopty",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "\\bherbatniki\\b|\\bbiszkopty\\b|\\bciastka\\b|\\bdelicje\\b|\\boreo\\b|\\bpieguski\\b|\\bjeżyki\\b|\\bhit\\b"
+   ],
+   "also": [],
+   "exc": [
+    "lody",
+    "czekolada z",
+    "deser"
+   ]
+  },
+  {
+   "nazwa": "Baton czekoladowy / Wafelek",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "\\bbaton\\b|\\bbatonik\\b|\\bwafelek\\b|\\bprince polo\\b|\\bgrześki\\b|\\bgóralki\\b|\\bsnickers\\b|\\bmars\\b|\\btwix\\b|\\bkitkat\\b|\\bknoppers\\b|\\bkinder bueno\\b"
+   ],
+   "also": [],
+   "exc": [
+    "protein",
+    "białkow",
+    "wysokobiałkow",
+    "lody",
+    "krem",
+    "płatki"
+   ]
+  },
+  {
+   "nazwa": "Paluszki słone / Krakersy / Precelki",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "\\bpaluszki\\b|\\bkrakersy\\b|\\bprecelki\\b|\\blajkonik\\b"
+   ],
+   "also": [],
+   "exc": [
+    "rybne",
+    "krabowe",
+    "surimi",
+    "serowe mozzarella"
+   ]
+  },
+  {
+   "nazwa": "Orzeszki ziemne (solone / w puszce / chrupki)",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "orzeszki ziemne|orzeszki solone|orzeszki z pieca|orzeszki w karmelu|\\bnic nac|\\bpistacje\\b"
+   ],
+   "also": [],
+   "exc": [
+    "masło",
+    "krem"
+   ]
+  },
+  {
+   "nazwa": "Mleczko kokosowe / Napój kokosowy w puszce",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "mleczko kokosowe|napój kokosowy.*pusz|śmietanka kokosowa|krem kokosowy"
+   ],
+   "also": [],
+   "exc": [
+    "czekolada",
+    "baton",
+    "lody",
+    "szampon",
+    "żel"
+   ]
+  },
+  {
+   "nazwa": "Tofu (naturalne / wędzone / marynowane)",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\btofu\\b"
+   ],
+   "also": [],
+   "exc": [
+    "pasta",
+    "kabanosy"
+   ]
+  },
+  {
+   "nazwa": "Ciasto francuskie (chłodzone)",
+   "kategoria": "Mrożonki i Gotowe",
+   "must": [
+    "ciasto francuskie"
+   ],
+   "also": [],
+   "exc": [
+    "rogalik",
+    "ciastka",
+    "przekąska z"
+   ]
+  },
+  {
+   "nazwa": "Makaron ryżowy / sojowy / azjatycki (Chow Mein / Udon)",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "makaron ryżowy|makaron sojowy|makaron chow mein|makaron udon|makaron mie"
+   ],
+   "also": [],
+   "exc": [
+    "zupka",
+    "danie"
+   ]
+  },
+  {
+   "nazwa": "Zupka błyskawiczna / Ramen instant (np. Vifon / Knorr)",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "zupa błyskawiczna|zupka chińska|\\bvifon\\b|\\boyakata\\b|\\bbuldak\\b|nudle knorr|amino zupa"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Pasta curry / Sos chili / Sriracha / Teriyaki",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "pasta curry|\\bsriracha\\b|sos teriyaki|sos słodko-kwaśny|sos chili|sos sojowo-grzybowy"
+   ],
+   "also": [],
+   "exc": [
+    "chipsy",
+    "orzeszki",
+    "danie"
+   ]
+  },
+  {
+   "nazwa": "Kukurydza / Czerwona fasola / Meksykańska mieszanka",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "mieszanka meksykańska|fasola biała konserwowa"
+   ],
+   "also": [],
+   "exc": [
+    "mrożon"
+   ]
+  },
+  {
+   "nazwa": "Nachosy / Chipsy tortilla",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "\\bnachos\\b|\\bnachosy\\b|chipsy tortilla|\\bdoritos\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sos"
+   ]
+  },
+  {
+   "nazwa": "Pudding proteinowy / Deser białkowy (High Protein)",
+   "kategoria": "Nabiał",
+   "must": [
+    "\\bpudding\\b|deser.*protein|kaszka.*protein"
+   ],
+   "also": [
+    "protein|białkow|\\bgo active\\b"
+   ],
+   "exc": [
+    "proszek",
+    "baton"
+   ]
+  },
+  {
+   "nazwa": "Jogurt / Napój proteinowy (High Protein)",
+   "kategoria": "Nabiał",
+   "must": [
+    "jogurt.*protein|napój.*protein|shake.*protein|mleko.*protein"
+   ],
+   "also": [],
+   "exc": [
+    "baton",
+    "proszek"
+   ]
+  },
+  {
+   "nazwa": "Odżywka białkowa (WPC) / Kreatyna",
+   "kategoria": "Sypkie i Makarony",
+   "must": [
+    "odżywka białkowa|koncentrat białka serwatkowego|\\bwpc\\b|\\bkreatyna\\b"
+   ],
+   "also": [],
+   "exc": [
+    "baton"
+   ]
+  },
+  {
+   "nazwa": "Żurek / Barszcz biały (w butelce / zakwas / torebce)",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bżurek\\b|barszcz biały|zakwas na żurek"
+   ],
+   "also": [],
+   "exc": [
+    "kiełbasa"
+   ]
+  },
+  {
+   "nazwa": "Barszcz czerwony (koncentrat / karton / torebka)",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "barszcz czerwony|koncentrat barszczu"
+   ],
+   "also": [],
+   "exc": [
+    "uszka",
+    "krokiety"
+   ]
+  },
+  {
+   "nazwa": "Chrzan tarty / Ćwikła z chrzanem",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bchrzan\\b|\\bćwikła\\b"
+   ],
+   "also": [],
+   "exc": [
+    "serek",
+    "szynka"
+   ]
+  },
+  {
+   "nazwa": "Porcja rosołowa / Skrzydełka z kurczaka",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "porcja rosołowa|skrzydełka z kurczaka|szyjki z indyka|korpus z kurczaka"
+   ],
+   "also": [],
+   "exc": [
+    "przyprawa",
+    "pieczon",
+    "panierowan",
+    "karma"
+   ]
+  },
+  {
+   "nazwa": "Wątróbka drobiowa",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bwątróbka\\b|\\bwątróbki\\b"
+   ],
+   "also": [
+    "drobiow|z kurczaka|z indyka"
+   ],
+   "exc": [
+    "z dorsza",
+    "pasztet",
+    "karma",
+    "dla kota"
+   ]
+  },
+  {
+   "nazwa": "Żeberka wieprzowe / Golonka",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bżeberka\\b|\\bgolonka\\b"
+   ],
+   "also": [],
+   "exc": [
+    "przyprawa",
+    "chipsy"
+   ]
+  },
+  {
+   "nazwa": "Kaszanka / Kiełbasa na grilla",
+   "kategoria": "Mięso i Ryby",
+   "must": [
+    "\\bkaszanka\\b|krupniok"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Smalec",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "\\bsmalec\\b"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Fasolka po bretońsku / Gołąbki / Flaki / Dania w słoiku",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "fasolka po bretońsku|gołąbki w sosie|\\bflaki\\b|\\bbigos\\b|\\bpulpety w sosie\\b|\\bleczo\\b"
+   ],
+   "also": [],
+   "exc": [
+    "przyprawa"
+   ]
+  },
+  {
+   "nazwa": "Rzodkiewka",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\brzodkiewka\\b|\\brzodkiewki\\b"
+   ],
+   "also": [],
+   "exc": [
+    "serek",
+    "twarożek",
+    "nasiona"
+   ]
+  },
+  {
+   "nazwa": "Imbir świeży",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bimbir\\b"
+   ],
+   "also": [
+    "kg\\b|luz|świeży|korzeń"
+   ],
+   "exc": [
+    "herbata",
+    "piwo",
+    "napój",
+    "syrop",
+    "mielony",
+    "przyprawa",
+    "ciastka",
+    "shot"
+   ]
+  },
+  {
+   "nazwa": "Kalarepa / Rzepa",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bkalarepa\\b|\\brzepa\\b"
+   ],
+   "also": [],
+   "exc": [
+    "szampon"
+   ]
+  },
+  {
+   "nazwa": "Szparagi (zielone / białe)",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bszparagi\\b"
+   ],
+   "also": [],
+   "exc": [
+    "zupa",
+    "krem",
+    "w słoiku",
+    "konserwow"
+   ]
+  },
+  {
+   "nazwa": "Dynia",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bdynia\\b"
+   ],
+   "also": [
+    "hokkaido|piżmowa|zwykła|kg\\b"
+   ],
+   "exc": [
+    "pestki",
+    "olej",
+    "zupa",
+    "krem",
+    "mus",
+    "słoiczek"
+   ]
+  },
+  {
+   "nazwa": "Mango / Ananas (świeże)",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bmango\\b|\\bananas\\b"
+   ],
+   "also": [],
+   "exc": [
+    "puszk",
+    "w plastrach",
+    "krojony",
+    "w kawałkach",
+    "w syropie",
+    "w soku",
+    "syrop",
+    "sok",
+    "napój",
+    "jogurt",
+    "serek",
+    "mus",
+    "suszon",
+    "żelki",
+    "herbata",
+    "donut",
+    "deska",
+    "chutney",
+    "hummus",
+    "curry"
+   ]
+  },
+  {
+   "nazwa": "Ananas / Brzoskwinie w puszce",
+   "kategoria": "Tłuszcze i Przetwory",
+   "must": [
+    "ananas w plastrach|ananas krojony|ananas w puszce|brzoskwinie połówki|brzoskwinie w syropie|brzoskwinie w puszce"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Brzoskwinie / Nektarynki / Morele / Śliwki (świeże)",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bbrzoskwinia\\b|\\bbrzoskwinie\\b|\\bnektarynki\\b|\\bnektarynka\\b|\\bmorele\\b|\\bśliwki\\b"
+   ],
+   "also": [],
+   "exc": [
+    "suszon",
+    "w puszce",
+    "w syropie",
+    "dżem",
+    "powidła",
+    "sok",
+    "napój",
+    "jogurt",
+    "czekolad",
+    "kompot"
+   ]
+  },
+  {
+   "nazwa": "Arbuz / Melon",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\barbuz\\b|\\bmelon\\b"
+   ],
+   "also": [],
+   "exc": [
+    "napój",
+    "sok",
+    "woda",
+    "lody",
+    "żelki",
+    "guma"
+   ]
+  },
+  {
+   "nazwa": "Grejpfrut / Pomelo / Granat",
+   "kategoria": "Warzywa i Owoce",
+   "must": [
+    "\\bgrejpfrut\\b|\\bpomelo\\b|\\bgranat\\b"
+   ],
+   "also": [],
+   "exc": [
+    "sok",
+    "napój",
+    "piwo",
+    "nektar"
+   ]
+  },
+  {
+   "nazwa": "Soda oczyszczona",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "soda oczyszczona"
+   ],
+   "also": [],
+   "exc": [
+    "środek czyszczący"
+   ]
+  },
+  {
+   "nazwa": "Cukier puder",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "cukier puder"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Wiórki kokosowe",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "wiórki kokosowe"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Masa makowa / Masa krówkowa (Kajmak)",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "masa makowa|masa krówkowa|\\bkajmak\\b"
+   ],
+   "also": [],
+   "exc": [
+    "ciasto",
+    "lody",
+    "wafelek"
+   ]
+  },
+  {
+   "nazwa": "Żelatyna spożywcza",
+   "kategoria": "Przyprawy i Pieczenie",
+   "must": [
+    "\\bżelatyna\\b"
+   ],
+   "also": [],
+   "exc": []
+  },
+  {
+   "nazwa": "Syrop owocowy (np. Malinowy / Herbapol / Paola)",
+   "kategoria": "Napoje",
+   "must": [
+    "\\bsyrop\\b"
+   ],
+   "also": [
+    "malinow|truskawk|wiśniow|z czarnego bzu|\\bherbapol\\b|\\bpaola\\b|\\błowicz\\b"
+   ],
+   "exc": [
+    "na kaszel",
+    "klonowy",
+    "z agawy",
+    "glukozowo"
+   ]
+  },
+  {
+   "nazwa": "Napój izotoniczny (np. Oshee / 4Move)",
+   "kategoria": "Napoje",
+   "must": [
+    "napój izotoniczny|\\boshee\\b|\\b4move\\b|\\bpowerade\\b"
+   ],
+   "also": [],
+   "exc": [
+    "baton"
+   ]
+  },
+  {
+   "nazwa": "Kawa zbożowa (np. Inka) / Kakao rozpuszczalne (np. Nesquik)",
+   "kategoria": "Napoje",
+   "must": [
+    "kawa zbożowa|\\binka\\b|napój kakaowy|\\bpuchatek\\b|\\bnesquik kakao\\b"
+   ],
+   "also": [],
+   "exc": [
+    "płatki",
+    "baton",
+    "mleko roślinne"
+   ]
+  },
+  {
+   "nazwa": "Żelki / Cukierki / Draże (np. Haribo / M&M's / Skittles)",
+   "kategoria": "Słodycze i Przekąski",
+   "must": [
+    "\\bżelki\\b|\\bharibo\\b|\\bm&m's\\b|\\bskittles\\b|\\bmentos\\b|\\bkorsarze\\b|\\bmichałki\\b|\\bkrówki\\b"
+   ],
+   "also": [],
+   "exc": [
+    "witamin",
+    "lody"
+   ]
+  }
+ ]
+}
