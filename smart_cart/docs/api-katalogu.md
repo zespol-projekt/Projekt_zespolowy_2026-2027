@@ -55,7 +55,25 @@ product: (id: number, signal: AbortSignal) => call<CatalogProduct>('rpc/catalog_
 
 ## Wyszukiwanie
 
-Wszystkie słowa zapytania muszą wystąpić w nazwie grupy, nazwie któregoś produktu grupy albo nazwie produktu bazowego. Bez znaczenia są wielkość liter, polskie znaki (`łaciate` = `ŁACIATE` = `laciate`) i zapis procentów (`3,2%` = `3.2%` = `3,2 %`). Puste zapytanie → `total: 0`. Pole `query` zwraca znormalizowane zapytanie (do debugowania). Czas odpowiedzi (zmierzony na wspólnej bazie, ~11,5 tys. produktów, z połączeniem): wyszukiwanie ok. 0,15 s, gałąź ok. 0,1 s, drzewo ok. 0,3 s. Warto opóźnić wyszukiwanie o ~300 ms od ostatniego wpisanego znaku i przerywać poprzednie zapytanie (`AbortSignal`).
+Reguły (od migracji `20261123000100_search_and_basket_fixes.sql`):
+
+- Wszystkie słowa zapytania muszą wystąpić **w jednym produkcie** elementu: w tekście „nazwa grupy + nazwa tego produktu”. Słowa z dwóch różnych produktów grupy nie są łączone.
+- W **grupach zamienników** (`kind: "group"`) nazwa produktu bazowego nie jest przeszukiwana: cechy opisuje nazwa grupy. W pojedynczych produktach (`kind: "product"`) jest: „ser gouda” znajduje „Gouda plastry”, której produktem bazowym jest „Ser żółty”.
+- Słowa wpisane w całości muszą być **całymi wyrazami**, a ostatnie słowo (jeszcze wpisywane) **początkiem wyrazu**. „bez gouda” nie trafia w „bezglutenowa”, „łaci” trafia w „Łaciate”, „mlek uht” nic nie znajduje.
+- Nazwy ofert w sieciach (`store_product_name`) nie są przeszukiwane.
+
+Bez znaczenia są wielkość liter, polskie znaki (`łaciate` = `ŁACIATE` = `laciate`) i zapis procentów (`3,2%` = `3.2%` = `3,2 %`). Puste zapytanie → `total: 0`. Pole `query` zwraca znormalizowane zapytanie (do debugowania). Czas odpowiedzi (zmierzony na wspólnej bazie, ~11,5 tys. produktów, z połączeniem): wyszukiwanie ok. 0,15–0,2 s, gałąź ok. 0,1 s, drzewo ok. 0,3 s. Warto opóźnić wyszukiwanie o ~300 ms od ostatniego wpisanego znaku i przerywać poprzednie zapytanie (`AbortSignal`).
+
+## Koszyk: źródło ceny w `compare_basket`
+
+Od migracji `20261123000100_search_and_basket_fixes.sql` każdy wybór `stores[].items[].picks[]` (oraz `alternative.picks[]`) ma pole `price_source`: to samo źródło co w `catalog_offers` i w ofertach katalogu. `observed_at` to `regular_price_observed_at` oferty i dotyczy ceny regularnej, także gdy naliczono promocję. Podpis daty jak w katalogu (`price_source: "kodyzbiedry"` albo `observed_at: null` → „Data ceny nieznana”). Pozostałe pola i sumy porównania bez zmian.
+
+```json
+{ "offer_id": 41250, "product_id": 5521, "name": "MLEKO UHT 3,2% MLECZNA DOLINA 1 l", "package_count": 2, "quantity": 2000, "unit": "ml",
+  "sale_mode": "package", "total_price": 2.98, "regular_total": 2.98, "promotion_applied": false, "requires_activation": false,
+  "requires_card": false, "condition": null, "observed_at": "2026-11-18T00:00:00+00:00", "price_source": "kodyzbiedry",
+  "valid_from": null, "valid_to": null }
+```
 
 ## Błędy
 
