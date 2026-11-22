@@ -6,7 +6,7 @@ export function normalizeCatalogQuery(value: string): string {
 
 export function priceDateLabel(offer: Pick<CatalogOffer, 'price_source' | 'regular_price_observed_at'>): string {
   const unknown = 'Data ceny nieznana.';
-  if (!['antonka', 'tanszykoszyk'].includes(offer.price_source ?? '')) return unknown;
+  if (!['antonka', 'antonka_historia', 'tanszykoszyk'].includes(offer.price_source ?? '')) return unknown;
   const match = /^(\d{4})-(\d{2})-(\d{2})(?:T|$)/.exec(offer.regular_price_observed_at ?? '');
   if (!match) return unknown;
   const [, year, month, day] = match;

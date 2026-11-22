@@ -6,9 +6,11 @@ import { normalizeCatalogQuery, priceDateLabel } from '../src/features/catalog/c
 
 test('price dates identify observations without exposing ingestion dates or inventing missing dates', () => {
   const dated = { regular_price_observed_at: '2026-11-21T01:31:48+01:00' };
-  for (const price_source of ['antonka', 'tanszykoszyk']) assert.equal(priceDateLabel({ ...dated, price_source }), 'Cena widziana 21.11.2026');
+  for (const price_source of ['antonka', 'antonka_historia', 'tanszykoszyk']) {
+    assert.equal(priceDateLabel({ ...dated, price_source }), 'Cena widziana 21.11.2026');
+    for (const regular_price_observed_at of [null, 'invalid', '2026-02-30']) assert.equal(priceDateLabel({ price_source, regular_price_observed_at }), 'Data ceny nieznana.');
+  }
   for (const price_source of ['kodyzbiedry', 'new-source', null]) assert.equal(priceDateLabel({ ...dated, price_source }), 'Data ceny nieznana.');
-  for (const regular_price_observed_at of [null, 'invalid', '2026-02-30']) assert.equal(priceDateLabel({ price_source: 'antonka', regular_price_observed_at }), 'Data ceny nieznana.');
   assert.equal(parseProduct(single).offers[0].price_source, 'antonka');
 });
 
