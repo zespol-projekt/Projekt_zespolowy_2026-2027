@@ -5,7 +5,7 @@ import { Button, Notice, Screen, useUI } from '@/components/ui/Controls';
 import BackButton from '@/components/navigation/BackButton';
 import { useSessionKey, useSessionQuery } from '@/features/catalog/hooks';
 import { loadLeaflets } from './api';
-import { displayDate } from './model';
+import { displayValidity } from './model';
 
 export default function LeafletsScreen() {
   const key = useSessionKey();
@@ -28,7 +28,7 @@ function Leaflets() {
     </View>
     {result.data?.leaflets.filter(item => !chain || item.chain.id === chain).map(item => <View style={ui.card} key={item.id}>
       <Text style={ui.heading}>{item.chain.name} · {item.title}</Text>
-      <Text style={ui.text}>{displayDate(item.validFrom)} – {displayDate(item.validTo)} · {item.pages.length} stron</Text>
+      <Text style={ui.text}>{displayValidity(item)} · {item.pages.length} stron</Text>
       <Button title={`Czytaj: ${item.title}`} onPress={() => router.push({ pathname: '/leaflets/[id]', params: { id: item.id } })} />
     </View>)}
   </Screen>;

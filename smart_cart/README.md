@@ -9,6 +9,12 @@ Wdrożono ustalenia [ankiety](docs/plan-napraw-po-ankiecie.md): wyszukiwanie gru
 [Baza produktów i cen](docs/database-context.md) jest osobna od katalogu placówek mapy. `supabase-schema.sql` odświeżono po wdrożeniu. [Utrzymanie katalogu](docs/utrzymanie-katalogu.md) opisuje migracje, eksport oraz uzupełnianie zweryfikowanych grup, dat i warunków promocji.
 Źródła nie zawierają wszystkich metadanych: niepewne zamienniki pozostają osobnymi produktami, nieznany sposób sprzedaży wyłącza wycenę, a promocje bez dowodów nie są naliczane. [Audyt sprzed napraw](docs/stan-projektu.md) zachowuje historię wykrytych błędów.
 
+## Powłoka aplikacji i gazetki
+
+Powłoka obejmuje Home, Ulubione, Koszyk, Szukaj, Mapę, menu z Profilem, Pomocą i Zasadami oraz zapamiętywanie motywu. Profil obsługuje zmianę hasła z kodem e-mail. [Opis powłoki](docs/app-shell.md) · [Raport Filipa z 17 listopada](docs/filip-implementation-report.md)
+
+Czytnik pobiera gazetki ze wspólnego projektu Supabase. Po wygaśnięciu podpisanego adresu odświeża katalog i ponawia pobranie tej samej strony. [Konfiguracja i kontrakt czytnika](docs/leaflets-contract.md) · [Publikacja gazetek](docs/gazetki.md)
+
 ## Katalog — etap 1 prac Radka
 
 Przegląd z 20 listopada 2026 obejmuje istniejący przepływ `/products` → `GroupDetails` → `ShoppingProvider` → API list i `compare_basket`, a także `/favorites`. Zachowujemy tworzenie listy „Zakupy”, wybór aktywnej listy, atomowe dodawanie grupy lub konkretnego produktu oraz ponowne porównanie po edycji.
@@ -153,7 +159,8 @@ npm.cmd ci
 
 Przed pierwszym uruchomieniem skopiuj `.env.example` do `.env.local` i uzupełnij
 `EXPO_PUBLIC_SUPABASE_URL`, `EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY` oraz `SUPABASE_URL`.
-Oba adresy muszą wskazywać ten sam projekt; publiczny klucz ma postać `sb_publishable_…`.
+Oba adresy muszą wskazywać ten sam projekt. Publiczny klucz ma postać `sb_publishable_…`.
+Dla czytnika ustaw `EXPO_PUBLIC_LEAFLETS_API_URL` na ten sam adres projektu z dopisaną ścieżką `/functions/v1/leaflets`.
 `.env.local` jest ignorowany przez Git.
 
 W terminalu 1, w katalogu `smart_cart`, uruchom serwer danych:

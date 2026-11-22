@@ -1,12 +1,12 @@
 import { Image } from 'expo-image';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { router, useIsFocused, useLocalSearchParams } from 'expo-router';
 import { ActivityIndicator, ScrollView, Text, View } from 'react-native';
 import { Button, Notice, useUI } from '@/components/ui/Controls';
 import { useSessionKey, useSessionQuery } from '@/features/catalog/hooks';
 import { loadLeaflets } from './api';
-import { displayDate, pageIndex, validLeafletId, type LeafletImage } from './model';
-import { fetchPage } from './transport';
+import { displayValidity, pageIndex, validLeafletId, type LeafletImage } from './model';
+import { fetchPage, LeafletPageAccessError } from './transport';
 
 export default function ReaderScreen() {
   const params = useLocalSearchParams<{ id: string; page?: string }>();
@@ -32,7 +32,7 @@ function Reader({ id, page }: { id: string; page?: string }) {
       <Button secondary title="Odśwież dostęp do gazetki" disabled={query.loading} onPress={query.reload} />
       {leaflet && <>
         <Text accessibilityRole="header" style={ui.heading}>{leaflet.chain.name} · {leaflet.title}</Text>
-        <Text style={ui.muted}>{displayDate(leaflet.validFrom)} – {displayDate(leaflet.validTo)}</Text>
+        <Text style={ui.muted}>{displayValidity(leaflet)}</Text>
         <Text accessibilityLiveRegion="polite" style={ui.text}>Strona {index + 1} z {leaflet.pages.length} · {Math.round(zoom * 100)}%</Text>
         <View style={ui.row}>
           <Button secondary title="Poprzednia strona" disabled={index === 0} onPress={() => { setZoom(1); router.setParams({ page: String(index) }); }} />
@@ -42,27 +42,45 @@ function Reader({ id, page }: { id: string; page?: string }) {
         </View>
       </>}
     </ScrollView>
-    {focused && leaflet && !query.loading && !query.error && <PageImage key={`${id}:${index}:${leaflet.pages[index].url}`} page={leaflet.pages[index]} width={width} zoom={zoom} number={index + 1} />}
+    {focused && leaflet && <PageImage key={index} page={leaflet.pages[index]} width={width} zoom={zoom} number={index + 1}
+      catalogReady={!query.loading && !query.error} refreshCatalog={query.reload} />}
   </View>;
 }
-function PageImage({ page, width, zoom, number }: { page: LeafletImage; width: number; zoom: number; number: number }) {
+function PageImage({ page, width, zoom, number, catalogReady, refreshCatalog }: {
+  page: LeafletImage; width: number; zoom: number; number: number; catalogReady: boolean; refreshCatalog: () => void;
+}) {
   const [attempt, setAttempt] = useState(0);
-  const [result, setResult] = useState<{ attempt: number; uri?: string; error?: string } | null>(null);
+  const [result, setResult] = useState<{ page: LeafletImage; attempt: number; uri?: string; error?: string; expired?: boolean } | null>(null);
+  const refreshed = useRef(false);
   useEffect(() => {
+    if (!catalogReady) return;
     const controller = new AbortController();
-    void fetchPage(page, controller.signal).then(uri => { if (!controller.signal.aborted) setResult({ attempt, uri }); })
-      .catch((error: unknown) => { if (!controller.signal.aborted) setResult({ attempt, error: error instanceof Error ? error.message : 'Nie udało się wczytać strony.' }); });
+    void fetchPage(page, controller.signal).then(uri => {
+      if (controller.signal.aborted) return;
+      refreshed.current = false;
+      setResult({ page, attempt, uri });
+    }).catch((error: unknown) => {
+      if (controller.signal.aborted) return;
+      const expired = error instanceof LeafletPageAccessError;
+      if (expired && !refreshed.current) {
+        refreshed.current = true;
+        refreshCatalog();
+        return;
+      }
+      setResult({ page, attempt, expired, error: error instanceof Error ? error.message : 'Nie udało się wczytać strony.' });
+    });
     return () => controller.abort();
-  }, [page, attempt]);
-  const current = result?.attempt === attempt ? result : null;
+  }, [page, attempt, catalogReady, refreshCatalog]);
+  if (!catalogReady) return null;
+  const current = result?.page === page && result.attempt === attempt ? result : null;
   return <View style={{ flex: 1, minHeight: 100 }}>
     {!current && <ActivityIndicator accessibilityLabel="Wczytywanie strony" />}
-    {current?.error && <><Notice>{current.error}</Notice><Button title="Ponów pobranie strony" onPress={() => setAttempt(n => n + 1)} /></>}
+    {current?.error && <><Notice>{current.error}</Notice>{!current.expired && <Button title="Ponów pobranie strony" onPress={() => setAttempt(n => n + 1)} />}</>}
     {current?.uri && <ScrollView key={attempt} nestedScrollEnabled style={{ flex: 1 }}>
       <ScrollView horizontal nestedScrollEnabled>
         <Image accessibilityLabel={`Strona ${number} gazetki`} accessible source={{ uri: current.uri }} contentFit="contain" cachePolicy="none"
           style={{ width: width * zoom, height: width * zoom * page.height / page.width, backgroundColor: '#FFFFFF' }}
-          onError={() => setResult({ attempt, error: 'Plik jest uszkodzony lub nieobsługiwany. Spróbuj ponownie.' })} />
+          onError={() => setResult({ page, attempt, error: 'Plik jest uszkodzony lub nieobsługiwany. Spróbuj ponownie.' })} />
       </ScrollView>
     </ScrollView>}
   </View>;

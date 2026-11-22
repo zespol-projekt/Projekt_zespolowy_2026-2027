@@ -1,12 +1,12 @@
-# Gazetki — propozycja kontraktu dla Damiana
+# Gazetki w SMARTCART
 
-Stan: 17 listopada 2026. To **propozycja klienta do uzgodnienia**, nie opis istniejącego endpointu ani zakończonej integracji. Filip przygotował czytnik obrazów za zgodą użytkownika. W repozytorium nie ma rzeczywistej gazetki ani API gazetek. Damian pozostaje właścicielem danych, przygotowania stron, ich aktualizacji i magazynowania. Nie dodano tabel, RPC, importerów ani polityk Storage.
+Czytnik wyświetla strony gazetek w aplikacji. Funkcja Edge `leaflets` we wspólnym projekcie Supabase udostępnia katalog i podpisane adresy obrazów. Za przygotowanie i publikację materiałów odpowiada Damian.
 
 ## Żądanie i dostęp
 
-Klient czyta `EXPO_PUBLIC_LEAFLETS_API_URL`, bez domyślnego adresu produkcyjnego. Proponowany endpoint: Edge Function `GET /functions/v1/leaflets` we **wspólnym projekcie Supabase**, na tym samym origin co `EXPO_PUBLIC_SUPABASE_URL`. Nazwa i hosting wymagają potwierdzenia Damiana przed ustawieniem zmiennej. Ta propozycja nie tworzy funkcji.
+Ustaw `EXPO_PUBLIC_LEAFLETS_API_URL` w `.env.local` na adres `EXPO_PUBLIC_SUPABASE_URL` z dopisaną ścieżką `/functions/v1/leaflets`. Użyj tej samej wartości w środowisku budowania aplikacji. Klient wysyła żądanie GET i sprawdza zgodność originu z `EXPO_PUBLIC_SUPABASE_URL`.
 
-Nagłówki: `Accept: application/json`, `Authorization: Bearer <bieżąca sesja użytkownika>`. Wspólny serwis Auth udostępnia token i obsługuje jednokrotne odświeżenie po 401. Backend musi sprawdzić sesję oraz potwierdzony email. Obsługa CORS musi dopuścić origin aplikacji, GET/OPTIONS i Authorization. Klient nie potrzebuje ani nie wysyła klucza administracyjnego. Metadata i pliki pobierane są bez cookies, automatycznych redirectów i trwałego cache.
+Klient wysyła `Accept: application/json` i `Authorization: Bearer <bieżąca sesja użytkownika>`. Wspólny serwis Auth jednokrotnie odświeża sesję po 401. Funkcja wymaga zalogowanego konta z potwierdzonym adresem e-mail. Zwraca 403 dla niepotwierdzonego adresu i 503 przy chwilowej niedostępności danych. CORS dopuszcza GET, OPTIONS i nagłówek Authorization. Odpowiedź katalogu ma `Cache-Control: no-store`.
 
 ## Odpowiedź 200
 
@@ -22,7 +22,7 @@ Nagłówki: `Accept: application/json`, `Authorization: Bearer <bieżąca sesja 
     "validFrom": "2026-11-17",
     "validTo": "2026-11-23",
     "format": "images",
-    "cover": null,
+    "cover": { "url": "https://assets.example.invalid/strona-1.jpg", "width": 1200, "height": 1800, "mimeType": "image/jpeg" },
     "pages": [
       { "url": "https://assets.example.invalid/strona-1.jpg", "width": 1200, "height": 1800, "mimeType": "image/jpeg" },
       { "url": "https://assets.example.invalid/strona-2.jpg", "width": 1200, "height": 1800, "mimeType": "image/jpeg" }
@@ -32,18 +32,18 @@ Nagłówki: `Accept: application/json`, `Authorization: Bearer <bieżąca sesja 
 ```
 
 - `id` i `chain.id`: stabilne małe ASCII `[a-z0-9][a-z0-9_-]{0,79}`. ID gazetki jest unikalne i nie zmienia się przy odświeżeniu URL. Nazwy i tytuły: niepuste, do 200 znaków.
-- Daty: rzeczywiste dni `YYYY-MM-DD`, początek nie późniejszy niż koniec. UI pokazuje dokładny okres, bez deklarowania, że każda pozycja z gazetki ma już cenę w katalogu.
+- Daty mają format `YYYY-MM-DD`. Katalog zawiera opublikowane gazetki aktualne i przyszłe, których `validTo` przypada dziś lub później według czasu polskiego. Jeśli API zwróci opcjonalne `validToEstimated: true`, aplikacja oznaczy datę końcową jako szacowaną.
 - `pages`: 1–200 stron w **kolejności czytania**. Nie sortujemy URL leksykograficznie.
-- `cover`: `null` lub taki sam opis obrazu jak strona. Klient waliduje metadane okładki; bieżąca lista prezentuje tytuł, sieć, daty i liczbę stron bez pobierania wszystkich okładek.
+- `cover` opisuje pierwszą stronę. Klient akceptuje też `null`. Lista pokazuje tytuł, sieć, daty i liczbę stron.
 - Obrazy: PNG, JPEG lub WebP, zgodny `Content-Type` i faktyczne bajty. Do 8 MiB na stronę, boki do 8192 px, maksymalnie 30 mln pikseli. Zalecane mniejsze obrazy (np. 1200×1800), aby działały na słabszym telefonie.
 - PDF i HTML nie są obsługiwane. PDF wymaga przygotowania stron przez właściciela danych lub nowego uzgodnienia integracji; klient nie wysyła dokumentów do usług konwersji.
 
 ## Zasoby obrazowe
 
-Publiczne lub podpisane, czasowe URL HTTPS, bez danych logowania w URL. Plik nie może wymagać nagłówków Auth aplikacji. Obraz otrzymuje wyłącznie `Accept`; **JWT, apikey i cookies nie są przekazywane**. CORS musi pozwalać aplikacji odczytać bajty i Content-Type. Zalecany poprawny Content-Length; natywny fetch bez strumieni odczytuje odpowiedź przed sprawdzeniem jej końcowego rozmiaru, więc backend/CDN musi rzeczywiście respektować limit pliku. Nie wolno podmieniać adresu na HTML logowania ani przekierowywać do strony sklepu.
+Adresy HTTPS są podpisane na godzinę i prowadzą do prywatnego bucketa Storage. Klient pobiera obraz z nagłówkiem `Accept` oraz pomija JWT sesji, apikey i cookies. CORS musi pozwalać aplikacji odczytać bajty i Content-Type. Gdy natywny transport odczytuje całą odpowiedź naraz, limit pliku musi egzekwować również Storage.
 
-Wygasły podpis: 401/403. Usunięty plik: 404/410. Niedostępność: 5xx. Odświeżenie metadanych ma zwrócić świeże podpisane URL przy tych samych ID i kolejności stron. UI zachowuje numer strony i pozwala odświeżyć dostęp. Nie odczytuje ani nie pokazuje surowych odpowiedzi błędów serwera.
+Po odpowiedzi Storage 400 lub 403 czytnik jednokrotnie pobiera ponownie katalog i próbuje wczytać tę samą stronę pod nowym adresem. Odczyt zachowuje ID gazetki i numer strony. Przycisk „Odśwież dostęp do gazetki” umożliwia ponowienie ręczne. Usunięty plik może zwrócić 404 lub 410, a chwilowa niedostępność 5xx.
 
 ## Kryterium odbioru danych
 
-Damian dostarcza URL uzgodnionego endpointu i co najmniej jedną rzeczywistą, legalnie udostępnioną gazetkę wielostronicową z datami i źródłem. Sprawdzamy WWW oraz docelowe Expo Go/Android/iOS: CORS, MIME, kolejność, rozmiary, wygasanie podpisów, 404/403, odświeżenie dostępu i brak tokenów w żądaniach obrazów. Odbiór urządzeń i rzeczywistego materiału pozostaje otwarty. Testy PNG w `tests/fixtures/leaflets` są syntetyczne i dostępne wyłącznie przez transport Playwright.
+Odbiór na WWW i w Expo Go (Android/iOS) obejmuje pobranie rzeczywistej gazetki na zalogowanym koncie, CORS katalogu i obrazów, MIME, kolejność i rozmiary stron, sesje 401/403, wygaśnięcie podpisu i odświeżenie katalogu. Testy Playwright używają syntetycznych obrazów z `tests/fixtures/leaflets`.
