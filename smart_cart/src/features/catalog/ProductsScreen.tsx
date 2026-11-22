@@ -1,15 +1,17 @@
 import { useState } from 'react';
-import { useLocalSearchParams } from 'expo-router';
+import { Link, useLocalSearchParams } from 'expo-router';
 import { ActivityIndicator, Text, View } from 'react-native';
 import { Button, Field, Notice, Screen, ui } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { useDebounced, useSessionKey, useSessionQuery } from './hooks';
 import { GroupDetails } from './GroupDetails';
 import type { ProductGroup } from './types';
+import CatalogScreen from './CatalogScreen';
 
 export default function ProductsScreen() {
-  const params = useLocalSearchParams<{ q?: string }>();
+  const params = useLocalSearchParams<{ q?: string; catalog?: string }>();
   const key = useSessionKey();
+  if (params.catalog === '1') return <CatalogScreen />;
   return key ? <ProductSearch key={`${key}:${params.q ?? ''}`} initialQuery={params.q ?? ''} /> : null;
 }
 function ProductSearch({ initialQuery }: { initialQuery: string }) {
@@ -23,6 +25,7 @@ function ProductSearch({ initialQuery }: { initialQuery: string }) {
   const loading = waitingForQuery || result.loading;
   const groups = waitingForQuery ? undefined : result.data;
   return <Screen title="Produkty i ceny">
+    <Link href={{ pathname: '/products', params: { catalog: '1' } }} style={[ui.text, { paddingVertical: 12, fontWeight: '700' }]}>Otwórz katalog kategorii →</Link>
     <Field label="Szukaj grupy produktów" placeholder="Np. mleko 3,2%, ryż, masło" value={query} onChangeText={value => { setQuery(value); setOffset(0); setSelected(null); }} autoCorrect={false} autoCapitalize="none" />
     <Text style={ui.muted}>Najpierw wybierz grupę, następnie sprawdź opakowania i oferty. Porównujemy dane sieciowe.</Text>
     {loading && <ActivityIndicator accessibilityLabel="Wyszukiwanie produktów" />}

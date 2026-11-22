@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
+import { group as catalogGroup, productA } from '../fixtures/catalog-v1';
 import { AUTH_URL, changeSession, mockMap } from './map-fixture';
 
 const milk = { id: 17, name: 'Mleko UHT 3,2% bez laktozy', unit: 'ml', default_quantity: 1000, offer_count: 1, lowest_price: 6 };
@@ -38,18 +39,40 @@ async function setup(page: Page) {
       if (state.holdSave) await state.holdSave;
       return route.fulfill({ json: [] });
     }
-    if (endpoint === 'catalog_offers') {
+    if (endpoint === 'catalog_group') {
       state.offerReads++;
       if (state.offerError) return fail();
-      return route.fulfill({ json: [{ offer_id: 1, product_id: 91, group_id: milk.id, store_id: 1, store_name: 'Sieć A',
-        product_name: 'Mleko testowe 500 ml', gramatura_norm: '500 ml', quantity_value: 500, quantity_unit: 'ml', sale_mode: 'package',
-        single_price: 6, regular_price: 6, price_status: 'prawdziwa', regular_price_observed_at: null, promo_price: null, verified_promotion: false }] });
+      const id = request.postDataJSON().p_group_id;
+      const favorite = state.groups.find(row => row.id === id)!;
+      return route.fulfill({ json: { ...catalogGroup, group: { ...catalogGroup.group, group_id: id, name: favorite.name, product_count: 1, offer_count: 1, store_count: 1, stores_with_price_today: 1 },
+        products: [{ ...productA, name: 'Mleko testowe 500 ml', package: { quantity: 500, unit: 'ml', label: null },
+          offers: [{ ...productA.offers[0], unit_price_today: 6 }] }] } });
     }
     if (endpoint === 'search_product_groups') return route.fulfill({ json: [milk] });
     return route.fulfill({ json: [] });
   });
   return state;
 }
+
+test('wyszukiwanie normalizuje polskie znaki i procenty, a 404 zachowuje ulubioną grupę', async ({ page }) => {
+  const state = await setup(page);
+  state.groups = [{ ...milk, name: 'Żółte mleko 3,2%' }, eggs];
+  await page.route(`${AUTH_URL}/rest/v1/rpc/catalog_group`, route => route.fulfill({ status: 404, json: { code: 'PT404', message: 'Nie ma takiej grupy.' } }));
+  await page.goto('/favorites');
+  const search = page.getByRole('textbox', { name: 'Szukaj w Ulubionych' });
+  await search.fill('ZOLTE mleko 3.2%');
+  await page.getByRole('button', { name: 'Produkty i ceny: Żółte mleko 3,2%' }).click();
+  await expect(page.getByText('Brak ofert w tej chwili.', { exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Usuń z ulubionych: Żółte mleko 3,2%' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Ponów pobieranie ofert' })).not.toBeVisible();
+  await expect(page.getByRole('button', { name: `Produkty i ceny: ${eggs.name}` })).not.toBeVisible();
+  expect(state.deletes).toEqual([]);
+  await search.fill('nieistniejąca');
+  await expect(page.getByText('Brak ulubionych pasujących do wyszukiwania.')).toBeVisible();
+  await expect(page.getByText('Nie masz jeszcze ulubionych grup.')).not.toBeVisible();
+  await search.fill('');
+  await expect(page.getByRole('button', { name: `Produkty i ceny: ${eggs.name}` })).toBeVisible();
+});
 
 test('ulubione: ręczna ilość, wybór listy i podgląd na małym ekranie', async ({ page }, testInfo) => {
   const state = await setup(page);
@@ -71,8 +94,8 @@ test('ulubione: ręczna ilość, wybór listy i podgląd na małym ekranie', asy
   expect(state.saved).toEqual([{ p_group_id: milk.id, p_quantity: 750.25, p_unit: 'ml', p_selected_product_id: null, p_list_id: secondList }]);
   await page.getByRole('button', { name: `Produkty i ceny: ${milk.name}` }).click();
   await expect(page.getByText('Mleko testowe 500 ml', { exact: true })).toBeVisible();
-  await expect(page.getByText('Data potwierdzenia ceny niedostępna')).toBeVisible();
-  await page.getByRole('button', { name: 'Dodaj ten produkt: Mleko testowe 500 ml' }).click();
+  await expect(page.getByText('Cena widziana 21.11.2026')).toBeVisible();
+  await page.getByRole('button', { name: 'Dodaj wybrany produkt: Mleko testowe 500 ml' }).click();
   await expect.poll(() => state.saved.length).toBe(2);
   expect(state.saved[1].p_selected_product_id).toBe(91);
   await page.screenshot({ path: testInfo.outputPath('favorites-expanded.png'), fullPage: true });

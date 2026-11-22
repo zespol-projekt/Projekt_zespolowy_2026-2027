@@ -2,7 +2,8 @@ import { useRef, useState, type ComponentRef } from 'react';
 import { ActivityIndicator, Keyboard, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Field, Notice, ui } from '@/components/ui/Controls';
 import { catalogApi } from './api';
-import { OfferInfo } from './GroupDetails';
+import { CatalogProductCard } from './CatalogProductCard';
+import { catalogV1Api, CatalogNotFound } from './catalogV1Api';
 import { useSessionAction, useSessionQuery } from './hooks';
 import { useShopping } from './ShoppingProvider';
 import { amount, quantityInput, type ProductGroup } from './types';
@@ -16,7 +17,7 @@ export function FavoriteRow({ group, onRemoved, disabled }: {
   const [expanded, setExpanded] = useState(false);
   const groupButton = useRef<ComponentRef<typeof View>>(null);
   const addButton = useRef<ComponentRef<typeof View>>(null);
-  // The favorites endpoint supplies no default quantity. Ask the user explicitly.
+  // The backend default is technical; keep the requested quantity explicit.
   const [quantity, setQuantity] = useState('');
   const action = useSessionAction();
   const shopping = useShopping();
@@ -91,23 +92,24 @@ export function FavoriteRow({ group, onRemoved, disabled }: {
 function FavoriteOffers({ groupId, disabled, onAdd, onClose }: {
   groupId: number; disabled: boolean; onAdd: (productId: number) => void; onClose: () => void;
 }) {
-  const [offset, setOffset] = useState(0);
-  const offers = useSessionQuery(signal => catalogApi.offers(groupId, signal, offset), [groupId, offset]);
+  const offers = useSessionQuery(async signal => {
+    try {
+      const result = await catalogV1Api.group(groupId, signal);
+      if (result.group.group_id !== groupId) throw new Error('Nieprawidłowa grupa w odpowiedzi katalogu.');
+      return result.products;
+    } catch (error) {
+      if (error instanceof CatalogNotFound) return [];
+      throw error;
+    }
+  }, [groupId]);
   return <View style={styles.details}>
     <Text accessibilityRole="header" style={ui.heading}>Produkty i ceny sieci</Text>
     {offers.loading && <ActivityIndicator accessibilityLabel="Wczytywanie ofert" />}
     {offers.error && <><Notice>{offers.error}</Notice><FavoriteButton secondary title="Ponów pobieranie ofert" onPress={offers.reload} disabled={disabled} /></>}
-    {!offers.loading && !offers.error && offers.data?.length === 0 && <Text style={ui.text}>Brak ofert w bazie.</Text>}
-    {offers.data?.map(offer => <View key={offer.offer_id} style={ui.card}>
-      <OfferInfo offer={offer} />
-      <FavoriteButton secondary title={`Dodaj ten produkt: ${offer.product_name}`} label="Dodaj ten produkt" disabled={disabled || offers.loading || !!offers.error}
-        onPress={() => onAdd(offer.product_id)} />
-    </View>)}
-    <View style={ui.row}>
-      {offset > 0 && <FavoriteButton secondary title="Poprzednie oferty" disabled={disabled || offers.loading} onPress={() => setOffset(value => Math.max(0, value - 50))} />}
-      {offers.data?.length === 50 && <FavoriteButton secondary title="Następne oferty" disabled={disabled || offers.loading} onPress={() => setOffset(value => value + 50)} />}
-      <FavoriteButton secondary title="Zwiń produkty i ceny" disabled={disabled} onPress={onClose} />
-    </View>
+    {!offers.loading && !offers.error && offers.data?.length === 0 && <Text style={ui.text}>Brak ofert w tej chwili.</Text>}
+    {!offers.loading && !offers.error && offers.data?.map(product => <CatalogProductCard key={product.product_id} product={product}
+      onAdd={onAdd} disabled={disabled} />)}
+    <FavoriteButton secondary title="Zwiń produkty i ceny" disabled={disabled} onPress={onClose} />
   </View>;
 }
 
