@@ -13,6 +13,7 @@ Klucz i nazwę grupy liczy jedna funkcja `public.milk_group(rodzaj, tłuszcz, la
 Produkt trafia do grupy mleka, gdy w nazwie jest „mleko”, zawartość tłuszczu (`3,2%`), rodzaj (`UHT` albo `świeże`), a opakowanie jest w ml. Poprawki względem v2:
 
 - skrót „BEZ LAKT.” (Biedronka) = bez laktozy — wcześniej takie mleko trafiało do grupy **z** laktozą;
+- skrót „BEZ LAK.” też = bez laktozy (migracja `20261123000200_milk_bez_lak.sql`, 22.11.2026; 2 produkty Biedronki przeniesione z grup „z laktozą”, produkt bazowy dopasowany do grupy przez `align_milk_base_products()`);
 - „Mazurski Smak” to marka, nie mleko smakowe;
 - zawsze osobno (nie są zwykłym mlekiem): smakowe („o smaku”, truskawkowe, kakao…), proteinowe, barista, zagęszczone, w proszku, fermentowane, roślinne / „nie-mleko”.
 
@@ -58,7 +59,7 @@ npx.cmd supabase@3.1.0 db push --remote
 
 ## Testy
 
-`tests/database-milk.sql` (grupy, skrót BEZ LAKT., marka vs smak, tłuszcz/UHT/świeże/eko/kozie osobno, wykluczenia, decyzja ręczna przetrwa zmianę nazwy, ponowna klasyfikacja nie porzuca list i ulubionych, uprawnienia), `tests/mleko.test.mjs` (CSV, kodowanie, decyzje, SQL), scenariusz w `scripts/check-migrations.mjs` (lista z bazy → decyzje → wygenerowany SQL wykonany w izolowanej bazie: próba i zapis).
+`tests/database-milk.sql` i `tests/database-milk-bez-lak.sql` (grupy, skróty BEZ LAKT. i BEZ LAK., marka vs smak, tłuszcz/UHT/świeże/eko/kozie osobno, wykluczenia, decyzja ręczna przetrwa zmianę nazwy, ponowna klasyfikacja nie porzuca list i ulubionych, uprawnienia), `tests/mleko.test.mjs` (CSV, kodowanie, decyzje, SQL), scenariusz w `scripts/check-migrations.mjs` (lista z bazy → decyzje → wygenerowany SQL wykonany w izolowanej bazie: próba i zapis).
 
 ## Czego reguły nie rozwiążą
 
