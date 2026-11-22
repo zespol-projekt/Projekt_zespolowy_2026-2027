@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseLeaflets, pageIndex, validLeafletId } from '../src/features/leaflets/model.ts';
-import { fetchPage, fetchLeaflets } from '../src/features/leaflets/transport.ts';
+import { displayValidity, parseLeaflets, pageIndex, validLeafletId } from '../src/features/leaflets/model.ts';
+import { fetchPage, fetchLeaflets, LeafletPageAccessError } from '../src/features/leaflets/transport.ts';
 const page = { url: 'https://assets.example.invalid/1.png', width: 100, height: 200, mimeType: 'image/png' };
 const manifest = () => ({ version: 1, leaflets: [{ id: 'test-1', chain: { id: 'test', name: 'Sieć' }, title: 'Żółta gazetka', validFrom: '2026-11-01', validTo: '2026-11-20', format: 'images', cover: null, pages: [page, { ...page, url: 'https://assets.example.invalid/2.png' }] }] });
 const png = Uint8Array.from([137,80,78,71,13,10,26,10]);
@@ -10,6 +10,10 @@ const auth = () => ({ getSessionKey: () => 'one', getAccessToken: async () => ({
 test('kontrakt zachowuje kolejność stron, daty i polskie znaki; waliduje identyfikatory', () => {
   const parsed = parseLeaflets(manifest());
   assert.equal(parsed.leaflets[0].title, 'Żółta gazetka'); assert.equal(parsed.leaflets[0].pages[1].url, 'https://assets.example.invalid/2.png');
+  assert.equal(displayValidity(parsed.leaflets[0]), '01.11.2026 – 20.11.2026');
+  const estimated = manifest();
+  estimated.leaflets[0].validToEstimated = true;
+  assert.equal(displayValidity(parseLeaflets(estimated).leaflets[0]), '01.11.2026 – 20.11.2026 (koniec szacowany)');
   for (const id of ['../profile', 'id/other', '%2f', '', 'A']) assert.equal(validLeafletId(id), false);
   assert.equal(pageIndex('200', 2), 1); assert.equal(pageIndex('-1', 2), 0);
 });
@@ -28,7 +32,8 @@ test('obrazy sprawdzają MIME i sygnaturę, nie przekazują tokenów', async () 
   await assert.rejects(fetchPage(page, signal(), async () => new Response('<html>', { headers: { 'Content-Type': 'image/png' } })), /prawidłowym/);
 });
 test('czytnik obsługuje brak pliku, wygasły URL, sieć, duży plik i timeout', async () => {
-  for (const status of [404, 410, 401, 403, 500]) await assert.rejects(fetchPage(page, signal(), async () => new Response(null, { status })));
+  for (const status of [400, 401, 403]) await assert.rejects(fetchPage(page, signal(), async () => new Response(null, { status })), LeafletPageAccessError);
+  for (const status of [404, 410, 500]) await assert.rejects(fetchPage(page, signal(), async () => new Response(null, { status })), error => !(error instanceof LeafletPageAccessError));
   await assert.rejects(fetchPage(page, signal(), async () => { throw new TypeError('network'); }), /połączenie/);
   await assert.rejects(fetchPage(page, signal(), async () => new Response(png, { headers: { 'Content-Type': 'image/png', 'Content-Length': String(9 * 1024 * 1024) } })), /duży/);
   await assert.rejects(fetchPage(page, signal(), () => new Promise(() => {}), 10), /czas oczekiwania/);
@@ -48,6 +53,8 @@ test('manifest wymaga JSON, pobiera tylko metadane i ponawia 401 raz', async () 
   });
   assert.equal(calls, 2); assert.equal(refreshes, 1); assert.equal(result.leaflets.length, 1);
   await assert.rejects(fetchLeaflets(url, url, auth(), signal(), async () => new Response('<html>', { headers: { 'content-type': 'text/html' } })), /katalogu/);
+  await assert.rejects(fetchLeaflets(url, url, auth(), signal(), async () => Response.json({ error: 'email_not_confirmed' }, { status: 403 })), /potwierdzonym adresem e-mail/);
+  await assert.rejects(fetchLeaflets(url, url, auth(), signal(), async () => Response.json({ error: 'unavailable' }, { status: 503 })), /chwilowo niedostępny/);
 });
 test('zmiana sesji anuluje pobieranie manifestu', async () => {
   let key = 'one', listener, release; const pending = new Promise(resolve => { release = resolve; });

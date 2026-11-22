@@ -32,7 +32,7 @@ Nagłówek otwiera modal z panelem bocznym. Panel ma safe area, przewijanie, mot
 
 ## Czytnik
 
-[Propozycja kontraktu](leaflets-contract.md). Brak endpointu oznacza jawny komunikat o oczekiwaniu na materiały. Nie ma danych demonstracyjnych w zwykłym uruchomieniu.
+Czytnik pobiera katalog ze wspólnego projektu Supabase, używając adresu `EXPO_PUBLIC_LEAFLETS_API_URL`. Instrukcja konfiguracji i format odpowiedzi są w [kontrakcie gazetek](leaflets-contract.md).
 
 Czytnik wybiera sieć/gazetkę, pokazuje daty, numer strony, nawigację oraz skalę 100–300%. Powiększoną stronę przewija się w obu osiach. Przyciski działają wspólnie na trzech platformach bez nowych zależności i zmiany rodzaju builda. Obsługa gestu pinch nie jest deklarowana. Numer strony jest parametrem URL i przetrwa reload; zoom pozostaje podczas zamknięcia menu, po reload wraca do 100%.
 

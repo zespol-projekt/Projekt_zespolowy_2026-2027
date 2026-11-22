@@ -1,5 +1,5 @@
 export type LeafletImage = { url: string; width: number; height: number; mimeType: 'image/png' | 'image/jpeg' | 'image/webp' };
-export type Leaflet = { id: string; chain: { id: string; name: string }; title: string; validFrom: string; validTo: string; cover: LeafletImage | null; pages: LeafletImage[] };
+export type Leaflet = { id: string; chain: { id: string; name: string }; title: string; validFrom: string; validTo: string; validToEstimated: boolean; cover: LeafletImage | null; pages: LeafletImage[] };
 export type LeafletCatalog = { version: 1; leaflets: Leaflet[] };
 export const validLeafletId = (id: string) => /^[a-z0-9][a-z0-9_-]{0,79}$/.test(id);
 export class LeafletError extends Error {}
@@ -42,7 +42,7 @@ export function parseLeaflets(value: unknown): LeafletCatalog {
     if (item.format !== 'images' || !Array.isArray(item.pages) || !item.pages.length || item.pages.length > 200) throw new LeafletError('Brak obsługiwanych stron gazetki. Potrzebne są uporządkowane obrazy.');
     const validFrom = date(item.validFrom); const validTo = date(item.validTo);
     if (validTo < validFrom) throw new LeafletError('Nieprawidłowy okres gazetki.');
-    return { id, chain: { id: chainId, name: label(chain.name) }, title: label(item.title), validFrom, validTo,
+    return { id, chain: { id: chainId, name: label(chain.name) }, title: label(item.title), validFrom, validTo, validToEstimated: item.validToEstimated === true,
       cover: item.cover == null ? null : image(item.cover), pages: item.pages.map(image) };
   });
   return { version: 1, leaflets };
@@ -51,4 +51,7 @@ export function pageIndex(value: unknown, count: number): number {
   const n = typeof value === 'string' && /^\d{1,3}$/.test(value) ? Number(value) : 1;
   return Math.max(0, Math.min(count - 1, n - 1));
 }
-export const displayDate = (value: string) => value.split('-').reverse().join('.');
+const displayDate = (value: string) => value.split('-').reverse().join('.');
+export function displayValidity({ validFrom, validTo, validToEstimated }: Leaflet): string {
+  return `${displayDate(validFrom)} – ${displayDate(validTo)}${validToEstimated ? ' (koniec szacowany)' : ''}`;
+}

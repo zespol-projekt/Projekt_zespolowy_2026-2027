@@ -1,15 +1,21 @@
 import { expect, test, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 import { AUTH_URL, mockMap } from './map-fixture';
-const image = (number: number) => ({ url: `https://leaflets.example.invalid/page-${number}.png`, width: 600, height: 900, mimeType: 'image/png' });
+const image = (number: number, signature = '') => ({ url: `https://leaflets.example.invalid/page-${number}.png${signature}`, width: 600, height: 900, mimeType: 'image/png' });
+const catalog = (signature = '') => {
+  const pages = [1, 2, 3].map(number => image(number, signature));
+  return { version: 1, leaflets: [
+    { id: 'test-1', chain: { id: 'test', name: 'Sieć testowa' }, title: 'Gazetka testowa', validFrom: '2026-11-01', validTo: '2026-11-20', format: 'images', cover: pages[0], pages },
+  ] };
+};
 async function fixture(page: Page) {
   await mockMap(page);
-  await page.route(`${AUTH_URL}/functions/v1/leaflets`, route => route.fulfill({ json: { version: 1, leaflets: [
-    { id: 'test-1', chain: { id: 'test', name: 'Sieć testowa' }, title: 'Gazetka testowa', validFrom: '2026-11-01', validTo: '2026-11-20', format: 'images', cover: image(1), pages: [image(1), image(2), image(3)] },
-  ] } }));
+  await page.route(`${AUTH_URL}/functions/v1/leaflets`, route => route.fulfill({ json: catalog() }));
   await page.route('https://leaflets.example.invalid/**', async route => {
-    expect(route.request().headers().authorization).toBeUndefined();
-    expect(route.request().headers().apikey).toBeUndefined();
+    const headers = await route.request().allHeaders();
+    expect(headers.authorization).toBeUndefined();
+    expect(headers.apikey).toBeUndefined();
+    expect(headers.cookie).toBeUndefined();
     const filename = new URL(route.request().url()).pathname.split('/').pop();
     await route.fulfill({ body: await readFile(`tests/fixtures/leaflets/${filename}`), contentType: 'image/png' });
   });
@@ -38,12 +44,39 @@ test('czytnik: wybór, daty, strony, zoom, menu, reload i powrót', async ({ pag
   await page.getByRole('button', { name: 'Wróć do gazetek' }).click();
   await expect(page.getByRole('button', { name: 'Czytaj: Gazetka testowa' })).toBeVisible();
 });
-test('czytnik: wygasły URL i HTML zamiast obrazu dają błąd oraz retry', async ({ page }) => {
-  await fixture(page); let status = 403;
-  await page.route('https://leaflets.example.invalid/page-1.png', route => route.fulfill({ status, body: '<html>expired</html>', contentType: 'text/html' }));
+for (const status of [400, 403]) {
+  test(`czytnik: Storage ${status} odświeża podpis i zachowuje stronę`, async ({ page }) => {
+    await fixture(page);
+    let catalogs = 0;
+    await page.route(`${AUTH_URL}/functions/v1/leaflets`, route => {
+      expect(route.request().headers().authorization).toMatch(/^Bearer /);
+      expect(route.request().headers().accept).toBe('application/json');
+      return route.fulfill({ json: catalog(`?token=${++catalogs === 1 ? 'expired' : 'fresh'}`) });
+    });
+    await page.route(`${image(2).url}?token=expired`, route => route.fulfill({ status }));
+    await page.goto('/leaflets/test-1?page=2');
+    await expect(page.getByRole('img', { name: 'Strona 2 gazetki' })).toBeVisible();
+    await expect(page).toHaveURL(/page=2/);
+    expect(catalogs).toBe(2);
+  });
+}
+test('czytnik: ponowny błąd podpisu pozwala ręcznie odświeżyć dostęp', async ({ page }) => {
+  await fixture(page);
+  let pageRequests = 0;
+  await page.route(image(1).url, route => ++pageRequests <= 2 ? route.fulfill({ status: 403 }) : route.fallback());
   await page.goto('/leaflets/test-1');
   await expect(page.getByText(/Dostęp do gazetki wygasł/)).toBeVisible();
-  status = 200; await page.getByRole('button', { name: 'Ponów pobranie strony' }).click();
+  expect(pageRequests).toBe(2);
+  await page.getByRole('button', { name: 'Odśwież dostęp do gazetki' }).click();
+  await expect(page.getByRole('img', { name: 'Strona 1 gazetki' })).toBeVisible();
+  expect(pageRequests).toBe(3);
+});
+test('czytnik: HTML zamiast obrazu daje błąd oraz retry', async ({ page }) => {
+  await fixture(page);
+  await page.route(image(1).url, route => route.fulfill({ body: '<html>expired</html>', contentType: 'text/html' }));
+  await page.goto('/leaflets/test-1');
+  await expect(page.getByText('Serwer zwrócił inny format zamiast obrazu strony.')).toBeVisible();
+  await page.getByRole('button', { name: 'Ponów pobranie strony' }).click();
   await expect(page.getByText('Serwer zwrócił inny format zamiast obrazu strony.')).toBeVisible();
   await expect(page.getByLabel('Wczytywanie strony')).toHaveCount(0);
 });

@@ -9,7 +9,7 @@ Wdrożono ustalenia [ankiety](docs/plan-napraw-po-ankiecie.md): wyszukiwanie gru
 
 ## Home, menu i gazetki — 17 listopada 2026
 
-[Powłoka aplikacji](docs/app-shell.md): Home · Ulubione · Koszyk · Szukaj · Mapa, menu z Profilem/Pomocą/Zasadami i zapamiętywany motyw. Profil ma zmianę hasła z kodem email, z ograniczeniami chmury opisanymi w kontrakcie Auth. Czytnik stron obrazowych jest przygotowany; rzeczywiste API i materiały oczekują na Damiana — [propozycja kontraktu](docs/leaflets-contract.md). [Wyniki i ograniczenia bieżącej pracy](docs/filip-implementation-report.md).
+[Powłoka aplikacji](docs/app-shell.md) obejmuje Home, Ulubione, Koszyk, Szukaj, Mapę, menu z Profilem, Pomocą i Zasadami oraz zapamiętywanie motywu. Profil obsługuje zmianę hasła z kodem e-mail. Czytnik pobiera gazetki ze wspólnego projektu Supabase. [Konfiguracja i kontrakt gazetek](docs/leaflets-contract.md). [Raport implementacji z 17 listopada](docs/filip-implementation-report.md).
 
 ## Logowanie — integracja Supabase
 

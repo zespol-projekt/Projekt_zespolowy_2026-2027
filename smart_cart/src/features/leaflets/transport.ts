@@ -1,6 +1,8 @@
 import type { AuthSessionAccess } from '../auth/types.ts';
 import { LeafletError, parseLeaflets, resourceUrl, type LeafletImage } from './model.ts';
 
+export class LeafletPageAccessError extends LeafletError {}
+
 async function boundedBytes(response: Response, maximum: number): Promise<Uint8Array> {
   if (Number(response.headers.get('content-length')) > maximum) throw new LeafletError('Plik gazetki jest zbyt duży.');
   // WWW supports streaming; native fetch can fall back to a bounded server response.
@@ -25,7 +27,6 @@ async function boundedBytes(response: Response, maximum: number): Promise<Uint8A
   return result;
 }
 function checkResponse(response: Response) {
-  if (response.status === 401 || response.status === 403) throw new LeafletError('Dostęp do gazetki wygasł lub został odmówiony. Odśwież gazetki i spróbuj ponownie.');
   if (response.status === 404 || response.status === 410) throw new LeafletError('Ta gazetka lub strona nie jest już dostępna.');
   if (!response.ok) throw new LeafletError('Serwer gazetek jest chwilowo niedostępny. Spróbuj ponownie.');
 }
@@ -72,6 +73,8 @@ export async function fetchLeaflets(endpoint: string | undefined, projectUrl: st
         token = refreshed.data; response = await send(); guard();
         if (response.status === 401) await auth.invalidateSession(token);
       }
+      if (response.status === 401) throw new LeafletError('Zaloguj się ponownie, aby przeglądać gazetki.');
+      if (response.status === 403) throw new LeafletError('Gazetki są dostępne dla kont z potwierdzonym adresem e-mail.');
       checkResponse(response);
       if (response.headers.get('content-type')?.split(';')[0].trim() !== 'application/json') throw new LeafletError('Serwer nie zwrócił katalogu gazetek.');
       const bytes = await boundedBytes(response, 1024 * 1024); guard();
@@ -83,6 +86,9 @@ export async function fetchPage(image: LeafletImage, signal: AbortSignal, reques
   return withTimeout(signal, async inner => {
     // Resources never receive the application's bearer token, apikey or cookies.
     const response = await request(resourceUrl(image.url), { signal: inner, credentials: 'omit', redirect: 'error', cache: 'no-store', headers: { Accept: image.mimeType } });
+    if (response.status === 400 || response.status === 401 || response.status === 403) {
+      throw new LeafletPageAccessError('Dostęp do gazetki wygasł lub został odmówiony. Odśwież dostęp do gazetki.');
+    }
     checkResponse(response);
     const mime = response.headers.get('content-type')?.split(';')[0].trim();
     if (mime !== image.mimeType) throw new LeafletError('Serwer zwrócił inny format zamiast obrazu strony.');
