@@ -5,6 +5,50 @@ const listId = 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa';
 const itemId = 'bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb';
 const group = { id: 17, name: 'Mleko UHT 3,2% · z laktozą', unit: 'ml', default_quantity: 1000, offer_count: 1, lowest_price: 6 };
 
+test('koszyk rozpoznaje daty cen w wycenie i propozycji, zachowując zgodność ze starszym API', async ({ page }) => {
+  await mockMap(page);
+  const item = { id: itemId, list_id: listId, group_id: group.id, quantity: 1000, unit: 'ml',
+    selected_product_id: null, extra_store_ids: [], group, selected_product: null };
+  const pick = { offer_id: 1, product_id: 91, name: 'Produkt testowy', package_count: 1, quantity: 1000, unit: 'ml',
+    sale_mode: 'package', total_price: 6, regular_total: 6, promotion_applied: false, requires_activation: false,
+    requires_card: false, condition: null, observed_at: '2026-11-22T10:00:00Z', valid_from: null, valid_to: null };
+  const picks = [
+    { ...pick, offer_id: 1, price_source: 'antonka', observed_at: '2026-11-20T23:00:00Z' },
+    { ...pick, offer_id: 2, price_source: 'antonka_historia', observed_at: '2026-11-10T10:00:00Z' },
+    { ...pick, offer_id: 3, price_source: 'tanszykoszyk', observed_at: '2026-11-20T10:00:00Z' },
+    { ...pick, offer_id: 4, price_source: 'kodyzbiedry' },
+    { ...pick, offer_id: 5 },
+    { ...pick, offer_id: 6, price_source: 'antonka', observed_at: null },
+    { ...pick, offer_id: 7, price_source: 'antonka_historia', observed_at: '2026-02-30' },
+    { ...pick, offer_id: 8, price_source: 'unknown-source' },
+  ];
+  const quote = { status: 'priced', name: group.name, required_quantity: 1000, unit: 'ml', total_price: 48,
+    purchased_quantity: 8000, surplus: 7000, picks };
+  await page.route(`${AUTH_URL}/rest/v1/shopping_lists?**`, route => route.fulfill({ json: [
+    { id: listId, name: 'Test dat koszyka', updated_at: '2026-11-22T10:00:00Z' },
+  ] }));
+  await page.route(`${AUTH_URL}/rest/v1/shopping_list_items?**`, route => route.fulfill({ json: [item] }));
+  await page.route(`${AUTH_URL}/rest/v1/rpc/compare_basket`, route => route.fulfill({ json: { version: 2, stores: [
+    { store_id: 1, store_name: 'Sieć testowa', complete: true, available_count: 1, requested_count: 1, total_price: 48,
+      items: [{ ...quote, item_id: itemId, group_id: group.id, extra_selected: false,
+        alternative: { ...quote, total_price: 40, purchased_quantity: 10000, surplus: 9000, picks: [
+          { ...pick, offer_id: 9, quantity: 5000, package_count: 5, total_price: 20, regular_total: 30,
+            price_source: 'antonka_historia', observed_at: '2026-11-09T10:00:00Z', promotion_applied: true },
+          { ...pick, offer_id: 10, quantity: 5000, package_count: 5, total_price: 20, regular_total: 30,
+            price_source: 'kodyzbiedry', promotion_applied: true },
+        ] } }],
+    },
+  ] } }));
+  await page.goto('/cart');
+  await expect(page.getByText('48,00 zł · Najtańszy pełny koszyk', { exact: true })).toBeVisible();
+  for (const date of ['21.11.2026', '10.11.2026', '20.11.2026', '09.11.2026']) {
+    await expect(page.getByText(`Cena widziana ${date}`, { exact: true })).toHaveCount(1);
+  }
+  await expect(page.getByText('Data ceny nieznana.', { exact: true })).toHaveCount(6);
+  await expect(page.getByText(/22\.11\.2026|30\.02\.2026/)).toHaveCount(0);
+  await expect(page.getByText('Kup 10 000 ml za 40,00 zł.', { exact: true })).toBeVisible();
+});
+
 test('stary podgląd ofert rozpoznaje źródło daty i nie pokazuje dat pobrania', async ({ page }) => {
   await mockMap(page);
   await page.route(`${AUTH_URL}/rest/v1/rpc/search_product_groups`, route => route.fulfill({ json: [{ ...group, offer_count: 5 }] }));

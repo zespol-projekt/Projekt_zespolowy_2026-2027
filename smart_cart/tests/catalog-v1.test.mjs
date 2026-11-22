@@ -11,6 +11,10 @@ test('price dates identify observations without exposing ingestion dates or inve
     for (const regular_price_observed_at of [null, 'invalid', '2026-02-30']) assert.equal(priceDateLabel({ price_source, regular_price_observed_at }), 'Data ceny nieznana.');
   }
   for (const price_source of ['kodyzbiedry', 'new-source', null]) assert.equal(priceDateLabel({ ...dated, price_source }), 'Data ceny nieznana.');
+  assert.equal(priceDateLabel({ price_source: 'antonka', regular_price_observed_at: '2026-11-17T23:00:00+00:00' }), 'Cena widziana 18.11.2026');
+  assert.equal(priceDateLabel({ price_source: 'antonka_historia', regular_price_observed_at: '2026-06-20T22:00:00Z' }), 'Cena widziana 21.06.2026');
+  assert.equal(priceDateLabel({ price_source: 'tanszykoszyk', regular_price_observed_at: '2026-11-18' }), 'Cena widziana 18.11.2026');
+  assert.equal(priceDateLabel({ price_source: 'antonka', regular_price_observed_at: '2026-11-18Tbroken' }), 'Data ceny nieznana.');
   assert.equal(parseProduct(single).offers[0].price_source, 'antonka');
 });
 

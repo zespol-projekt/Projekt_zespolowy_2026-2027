@@ -129,7 +129,7 @@ test('ilość sztuk jest całkowita, a drugi zapis jest blokowany podczas żąda
   await quantity.fill('1,5');
   const add = page.getByRole('button', { name: `Dodaj grupę: ${eggs.name}` });
   await add.click();
-  await expect(page.getByText(/Podaj całkowitą liczbę sztuk/)).toBeVisible();
+  await expect(page.getByText('Podaj całkowitą liczbę sztuk od 1 do 100000.', { exact: true })).toBeVisible();
   expect(state.saved).toEqual([]);
   let release!: () => void;
   state.holdSave = new Promise<void>(resolve => { release = resolve; });

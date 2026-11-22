@@ -5,7 +5,7 @@ import { catalogApi } from './api';
 import { priceDateLabel } from './catalogPresentation';
 import { useSessionAction, useSessionQuery } from './hooks';
 import { useShopping } from './ShoppingProvider';
-import { amount, money, quantityInput, type Offer, type ProductGroup } from './types';
+import { amount, money, quantityHelp, quantityInput, type Offer, type ProductGroup } from './types';
 
 export function OfferInfo({ offer }: { offer: Offer & { price_source?: string | null } }) {
   const ui = useUI();
@@ -39,6 +39,7 @@ export function GroupDetails({ group, onClose }: { group: ProductGroup; onClose:
     <Text accessibilityRole="header" style={ui.heading}>{group.name}</Text>
     <Text style={ui.muted}>Dobierzemy najtańszy równoważny produkt. Konkretny produkt możesz wybrać poniżej.</Text>
     <Field label={`Potrzebna ilość (${group.unit})`} value={quantity} onChangeText={setQuantity} keyboardType="decimal-pad" />
+    <Text style={ui.muted}>{quantityHelp[group.unit]}</Text>
     <Text style={ui.muted}>Lista: {shopping.lists.find(l => l.id === shopping.activeId)?.name ?? 'Nowa lista Zakupy'}</Text>
     {shopping.lists.length > 1 && <View style={ui.row}>{shopping.lists.map(list => <Button key={list.id} title={list.name} secondary={list.id !== shopping.activeId} onPress={() => shopping.select(list.id)} />)}</View>}
     <Button title="Dodaj do listy — najtańszy odpowiednik" busy={action.busy} disabled={shopping.loading || !!shopping.error} onPress={() => add(null)} />

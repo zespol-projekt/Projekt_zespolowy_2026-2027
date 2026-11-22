@@ -21,6 +21,7 @@ export type Pick = {
   sale_mode: 'package' | 'bulk'; total_price: number; regular_total: number | null;
   promotion_applied: boolean; requires_activation: boolean; requires_card: boolean;
   condition: string | null; observed_at: string | null; valid_from: string | null; valid_to: string | null;
+  price_source?: string | null;
 };
 export type Quote = {
   status: 'priced' | 'missing'; name: string; required_quantity: number; unit: Unit;
@@ -36,6 +37,11 @@ export type Comparison = { version: 2; calculated_at: string; stores: StoreCompa
 
 export const money = (value: number | null | undefined) => value == null ? 'Brak ceny' : `${Number(value).toFixed(2).replace('.', ',')} zł`;
 export const amount = (value: number, unit: Unit) => `${Number(value).toLocaleString('pl-PL', { maximumFractionDigits: 2 })} ${unit}`;
+export const quantityHelp: Record<Unit, string> = {
+  g: 'Podaj masę w gramach (g), np. 500 oznacza 500 g. To nie liczba opakowań.',
+  ml: 'Podaj objętość w mililitrach (ml), np. 1000 oznacza 1 litr. To nie liczba opakowań.',
+  szt: 'Podaj całkowitą liczbę sztuk (szt).',
+};
 export function quantityInput(value: string, unit: Unit): number {
   const trimmed = value.trim().replace(',', '.');
   if (!/^\d+(\.\d{1,2})?$/.test(trimmed)) throw new Error('Podaj dodatnią ilość, do dwóch miejsc po przecinku.');

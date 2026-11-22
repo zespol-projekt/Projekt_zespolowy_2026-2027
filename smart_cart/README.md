@@ -2,6 +2,8 @@
 
 Aplikacja Expo / React Native na Androida, iOS i WWW. Ekrany: `src/app`; mapa: `src/features/stores`.
 
+Aktualny odbiór zakresu Radka z 22 listopada 2026: [wykonane wymagania A–F, testy i pozostałe zgłoszenie backendu](docs/zrobione2.md). Zatwierdzono wygląd, doprecyzowano jednostki i podłączono daty koszyka z obsługą czasu polskiego. Test rzeczywistego API potwierdził poprawkę „bez laktozy” i pole `price_source`; pozostało zgłoszenie do Damiana dotyczące wyszukiwania 2% dopasowującego również 3,2%. Poniższe wpisy dokumentują kolejne, historyczne etapy prac. Końcowy merge, commit i push wykonuje Radek.
+
 Stan po wdrożeniu **14 listopada 2026**: [zmiany, testy i ograniczenia danych](docs/wdrozenie-po-audycie.md).
 Wdrożono ustalenia [ankiety](docs/plan-napraw-po-ankiecie.md): wyszukiwanie grup i ofert, prywatne nazwane listy, edycję produktów/ilości, porównanie pełnych opakowań i sprzedaży luzem oraz ulubione. Naprawiono formularze i zachowanie nawigacji przy zmianie sesji. Pięć migracji jest już we wspólnym Supabase.
 [Baza produktów i cen](docs/database-context.md) jest osobna od katalogu placówek mapy. `supabase-schema.sql` odświeżono po wdrożeniu. [Utrzymanie katalogu](docs/utrzymanie-katalogu.md) opisuje migracje, eksport oraz uzupełnianie zweryfikowanych grup, dat i warunków promocji.

@@ -49,6 +49,20 @@ async function openMilk(page: Page) {
   await expect(page.getByRole('heading', { name: groupItem.name, exact: true })).toBeVisible();
 }
 
+test('ilość w gramach ma wyjaśnienie i zapisuje masę zamiast liczby opakowań', async ({ page }) => {
+  const state = await setup(page);
+  const item = { ...groupItem, name: 'Ryż biały', unit: 'g', price_from: null, stores_with_price_today: 0 };
+  await page.route(`${AUTH_URL}/rest/v1/rpc/catalog_search`, route => route.fulfill({ json: {
+    version: 1, total: 1, limit: 30, offset: 0, items: [item],
+  } }));
+  await page.goto('/products?q=ryz');
+  await expect(page.getByText('Podaj masę w gramach (g), np. 500 oznacza 500 g. To nie liczba opakowań.', { exact: true })).toBeVisible();
+  await page.getByRole('textbox', { name: 'Potrzebna ilość: Ryż biały (g)', exact: true }).fill('500');
+  await page.getByRole('button', { name: 'Dodaj do listy: Ryż biały', exact: true }).click();
+  await expect(page.getByText('Dodano 500 g do listy: Zakupy testowe.', { exact: true })).toBeVisible();
+  expect(state.saved).toEqual([{ p_list_id: listId, p_group_id: item.group_id, p_quantity: 500, p_unit: 'g', p_selected_product_id: null }]);
+});
+
 test('Home i Szukaj otwierają wspólny katalog, a motyw zachowuje wpisaną ilość', async ({ page }, info) => {
   await setup(page);
   await page.setViewportSize({ width: 320, height: 740 });

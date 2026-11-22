@@ -6,7 +6,7 @@ import { CatalogProductCard } from './CatalogProductCard';
 import { catalogV1Api, CatalogNotFound } from './catalogV1Api';
 import { useSessionAction, useSessionQuery } from './hooks';
 import { useShopping } from './ShoppingProvider';
-import { amount, quantityInput, type ProductGroup } from './types';
+import { amount, quantityHelp, quantityInput, type ProductGroup } from './types';
 
 type FavoriteGroup = Pick<ProductGroup, 'id' | 'name' | 'unit'>;
 
@@ -74,6 +74,7 @@ export function FavoriteRow({ group, onRemoved, disabled }: {
         autoFocus={adding} returnKeyType="done" submitBehavior="blurAndSubmit" onSubmitEditing={Keyboard.dismiss}
         accessibilityHint={`Wpisz potrzebną ilość w jednostce ${group.unit}. Enter kończy wpisywanie; dodanie wymaga osobnego przycisku.`}
         editable={!locked} onChangeText={setQuantity} />
+      <Text style={ui.muted}>{quantityHelp[group.unit]}</Text>
       <Text style={ui.muted}>Lista: {targetName}</Text>
       {shopping.lists.length > 1 && <View style={ui.row}>
         {shopping.lists.map(list => <FavoriteButton key={list.id} title={`Lista: ${list.name}`} label={list.name} selected={list.id === shopping.activeId}

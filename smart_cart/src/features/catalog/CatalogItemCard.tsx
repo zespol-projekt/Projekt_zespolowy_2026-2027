@@ -8,7 +8,7 @@ import { CatalogButton, CatalogGroupIcon } from './CatalogControls';
 import { CatalogProductCard, DetailStatus } from './CatalogProductCard';
 import { useSessionAction, useSessionQuery } from './hooks';
 import { useShopping } from './ShoppingProvider';
-import { amount, money, quantityInput } from './types';
+import { amount, money, quantityHelp, quantityInput } from './types';
 
 export function CatalogItemCard({ item, favorite, onFavoriteChanged, quantity, onQuantityChanged }: {
   item: CatalogItem; favorite: boolean | undefined; onFavoriteChanged: () => void; quantity: string; onQuantityChanged: (value: string) => void;
@@ -45,6 +45,7 @@ export function CatalogItemCard({ item, favorite, onFavoriteChanged, quantity, o
     {item.price_from === null && item.stores_with_price_today > 0 && <Notice>Brak ceny jednostkowej. Opakowanie lub podstawa porównania może być nieznana — sprawdź szczegóły produktu.</Notice>}
     <Field label={`Potrzebna ilość: ${item.name} (${item.unit})`} value={quantity} placeholder="Wpisz ilość"
       keyboardType={item.unit === 'szt' ? 'number-pad' : 'decimal-pad'} editable={!action.busy} onChangeText={onQuantityChanged} />
+    <Text style={ui.muted}>{quantityHelp[item.unit]}</Text>
     <Text style={ui.muted}>Lista: {target}</Text>
     <CatalogButton title={`Dodaj do listy: ${item.name}`} label={item.kind === 'product' ? 'Dodaj produkt' : 'Dodaj grupę'} secondary={false}
       busy={action.busy} disabled={shopping.loading || !!shopping.error} onPress={() => add(item.kind === 'product' ? item.product_id : null)} />
