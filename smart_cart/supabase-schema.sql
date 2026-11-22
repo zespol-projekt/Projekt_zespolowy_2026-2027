@@ -479,7 +479,8 @@ BEGIN
   IF n ~ '\mmleko\M' AND n !~ '(kokos|soj|owsian|migdal|czekolad|wanili|w proszku|skondens|kondens|zageszcz|fermentowan|\mnie mleko\M|roslinn)' THEN
     fat := substring(replace(NEW.canonical_name,',','.') FROM '([0-9]+(?:\.[0-9]+)?)\s*%');
     kind := CASE WHEN n ~ '\muht\M' THEN 'UHT' WHEN n ~ 'swiez' THEN 'świeże' END;
-    lactose := CASE WHEN n ~ 'bez lakt|bezlakt|bez lektozy' THEN 'bez laktozy' ELSE 'z laktozą' END;
+    -- „bez lak” obejmuje też skrót „BEZ LAK.” (Biedronka, 22.11.2026), nie tylko „BEZ LAKT.” i pełny zapis.
+    lactose := CASE WHEN n ~ '\mbez lak|bezlakt|bez lektozy' THEN 'bez laktozy' ELSE 'z laktozą' END;
     IF fat IS NOT NULL AND kind IS NOT NULL AND u = 'ml'
       -- Warianty smakowe, proteinowe i barista to inne produkty; „Mazurski Smak” jest marką.
       AND n !~ '(protein|barista|banan|truskawk|kaka|kawow)' AND NOT (n ~ 'smak' AND n !~ 'mazurski smak')
@@ -515,7 +516,7 @@ BEGIN
     IF (k LIKE 'rice:%' AND (n ~ '(mix|mieszank|gotow|wafl|chrup|makaron|napoj|warzyw|kurcz|pomidor|sos|zup|danie)' OR (n ~ 'basmati' AND n ~ 'jasmin')))
       OR (k LIKE 'sugar:%' AND n ~ '(puder|kostk|smak|trzcino|wanili)')
       OR (k LIKE 'eggs:%' AND (n ~ '(kacz|gesi|strusi)' OR (n ~ '\mm\M' AND n ~ '\ml\M')))
-      OR n ~ 'bez laktozy|bez lektozy|bez lakt'
+      OR n ~ 'bez laktozy|bez lektozy|\mbez lak'
       OR (n ~ 'kozi' AND n ~ 'owcz') THEN
       k:='product:'||NEW.id; label:=NEW.canonical_name;
     ELSE
