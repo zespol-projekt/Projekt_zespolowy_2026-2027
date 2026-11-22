@@ -45,8 +45,10 @@ function Catalog({ categorySlug, subcategorySlug, initialQuery }: { categorySlug
   const navigate = (category = '', subcategory = '') => router.push({ pathname: '/products', params: { catalog: '1', category, subcategory } });
 
   return <Screen title="Katalog kategorii">
-    <Field label="Szukaj w całym katalogu" placeholder="Np. mleko 3,2% bez laktozy" value={query} autoCorrect={false} autoCapitalize="none"
-      onChangeText={value => { setQuery(value); setOffset(0); }} returnKeyType="search" />
+    <View>
+      <Field label="Szukaj w całym katalogu" placeholder="Np. mleko 3,2% bez laktozy" value={query} autoCorrect={false} autoCapitalize="none"
+        onChangeText={value => { setQuery(value); setOffset(0); }} returnKeyType="search" />
+    </View>
     <Text style={ui.muted}>{query.trim() ? 'Wyniki wyszukiwania w całym katalogu.' : ['Kategorie', category?.name, subcategory?.name].filter(Boolean).join(' → ')}</Text>
     <View style={ui.row}>
       {!!(categorySlug || query.trim()) && <CatalogButton title="Wszystkie kategorie" onPress={() => navigate()} />}

@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { Link, useFocusEffect } from 'expo-router';
-import { ActivityIndicator, Text } from 'react-native';
+import { ActivityIndicator, Text, View } from 'react-native';
 import { Button, Field, Notice, Screen, ui } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { useSessionKey, useSessionQuery } from './hooks';
@@ -19,7 +19,7 @@ function Favorites() {
   const rows = query.data?.filter(row => normalizeCatalogQuery(row.group.name).includes(normalizeCatalogQuery(search)));
   return <Screen title="Ulubione">
     <Text style={ui.muted}>Zapisane grupy, niezależnie od sklepu. Dodaj potrzebną ilość do listy lub sprawdź produkty i ceny.</Text>
-    <Field label="Szukaj w Ulubionych" value={search} onChangeText={setSearch} placeholder="Nazwa grupy" />
+    <View><Field label="Szukaj w Ulubionych" value={search} onChangeText={setSearch} placeholder="Nazwa grupy" /></View>
     <Button secondary title="Odśwież ulubione" onPress={query.reload} disabled={query.loading} />
     {query.loading && <ActivityIndicator accessibilityLabel="Wczytywanie ulubionych" />}
     {query.error && <><Notice>{query.error}</Notice><Button secondary title="Ponów pobieranie ulubionych" onPress={query.reload} /></>}

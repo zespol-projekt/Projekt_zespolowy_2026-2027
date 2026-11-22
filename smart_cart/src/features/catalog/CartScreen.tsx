@@ -58,7 +58,8 @@ function ComparedItem({ row, storeId, items, reload }: { row: ComparisonItem; st
       {!!row.surplus && <Text style={ui.muted}>Nadwyżka: {amount(row.surplus, row.unit)}</Text>}
       {row.picks.map(pick => <View key={pick.offer_id} style={{ gap: 4 }}>
         <Text style={ui.text}>{pick.package_count == null ? amount(pick.quantity, pick.unit) : `${pick.package_count} opak. · ${amount(pick.quantity, pick.unit)}`} · {pick.name} · {money(pick.total_price)}</Text>
-        <Text style={ui.muted}>{pick.observed_at ? `Cena regularna potwierdzona: ${new Date(pick.observed_at).toLocaleDateString('pl-PL')}` : 'Data potwierdzenia ceny regularnej niedostępna'}</Text>
+        {/* compare_basket does not yet document the source needed to interpret observed_at. */}
+        <Text style={ui.muted}>Data ceny nieznana.</Text>
         {pick.requires_activation && <Notice>Wymaga aktywacji w aplikacji sklepu.</Notice>}
         {pick.requires_card && <Text style={ui.muted}>Wymaga karty lub aplikacji sieci.</Text>}
         {pick.promotion_applied && pick.condition && <Text style={ui.muted}>{pick.condition}</Text>}

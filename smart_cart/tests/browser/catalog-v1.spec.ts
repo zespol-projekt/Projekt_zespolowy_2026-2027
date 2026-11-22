@@ -49,6 +49,44 @@ async function openMilk(page: Page) {
   await expect(page.getByRole('heading', { name: groupItem.name, exact: true })).toBeVisible();
 }
 
+test('karta katalogu mieści długą nazwę i duży tekst, a dodawanie działa z klawiatury', async ({ page }, testInfo) => {
+  const state = await setup(page);
+  const name = 'Mleko UHT 3,2% bez laktozy w opakowaniu zwrotnym — szczegółowa nazwa grupy o zgodnych cechach';
+  await page.route(`${AUTH_URL}/rest/v1/rpc/catalog_search`, route => route.fulfill({ json: {
+    version: 1, total: 1, limit: 30, offset: 0, items: [{ ...groupItem, name }],
+  } }));
+  await page.setViewportSize({ width: 320, height: 480 });
+  await page.goto('/products?catalog=1&q=mleko');
+  const heading = page.getByRole('heading', { name, exact: true });
+  await expect(heading).toBeVisible();
+  const card = heading.locator('..').locator('..');
+  await card.evaluate(element => {
+    const metrics = Array.from(element.querySelectorAll<HTMLElement>('[dir="auto"], input, textarea')).map(text => {
+      const style = getComputedStyle(text);
+      return { text, fontSize: parseFloat(style.fontSize), lineHeight: parseFloat(style.lineHeight) };
+    });
+    for (const { text, fontSize, lineHeight } of metrics) {
+      if (text.textContent === '▦') continue;
+      text.style.fontSize = `${fontSize * 2}px`;
+      if (Number.isFinite(lineHeight)) text.style.lineHeight = `${lineHeight * 2}px`;
+    }
+  });
+  expect(await card.evaluate(element => Array.from(element.querySelectorAll<HTMLElement>('*'))
+    .every(child => child.scrollWidth <= child.clientWidth + 1))).toBe(true);
+  const quantity = page.getByRole('textbox', { name: `Potrzebna ilość: ${name} (ml)` });
+  await quantity.focus();
+  await page.keyboard.type('750');
+  await page.keyboard.press('Tab');
+  const add = page.getByRole('button', { name: `Dodaj do listy: ${name}`, exact: true });
+  await expect(add).toBeFocused();
+  await add.scrollIntoViewIfNeeded();
+  await expect(add).toBeInViewport({ ratio: 1 });
+  await page.keyboard.press('Enter');
+  await expect(page.getByText('Dodano 750 ml do listy: Zakupy testowe.')).toBeVisible();
+  expect(state.saved[0]).toMatchObject({ p_group_id: groupItem.group_id, p_quantity: 750, p_unit: 'ml', p_selected_product_id: null });
+  await page.screenshot({ path: testInfo.outputPath('catalog-large-text.png'), fullPage: true });
+});
+
 test('jednoelementowa grupa ładuje produkt raz, pozostawia wybór grupy i ukrywa datę Biedronki', async ({ page }) => {
   const state = await setup(page);
   const item = { ...groupItem, unit: 'szt', default_quantity: 1, product_count: 1, price_from: null };

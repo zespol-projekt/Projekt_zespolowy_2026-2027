@@ -1,4 +1,4 @@
-import { ActivityIndicator, Pressable, StyleSheet, Text } from 'react-native';
+import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
 import { ui } from '@/components/ui/Controls';
 
 export function CatalogButton({ title, label = title, onPress, disabled = false, busy = false, secondary = true, expanded }: {
@@ -11,4 +11,14 @@ export function CatalogButton({ title, label = title, onPress, disabled = false,
     <Text style={[ui.buttonText, styles.text, secondary && ui.secondaryText]}>{label}</Text>
   </Pressable>;
 }
-const styles = StyleSheet.create({ button: { maxWidth: '100%', flexShrink: 1 }, text: { flexShrink: 1, textAlign: 'center' } });
+export function CatalogGroupIcon() {
+  return <View aria-hidden style={styles.icon}>
+    <Text allowFontScaling={false} style={styles.iconText}>▦</Text>
+  </View>;
+}
+
+const styles = StyleSheet.create({
+  button: { maxWidth: '100%', flexShrink: 1 }, text: { flexShrink: 1, textAlign: 'center' },
+  icon: { width: 40, height: 40, borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: ui.secondary.backgroundColor },
+  iconText: { fontSize: 26, color: ui.secondaryText.color },
+});

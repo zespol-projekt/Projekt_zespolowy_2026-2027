@@ -4,7 +4,7 @@ import { Field, Notice, ui } from '@/components/ui/Controls';
 import { catalogApi } from './api';
 import { catalogV1Api } from './catalogV1Api';
 import type { CatalogItem } from './catalogV1';
-import { CatalogButton } from './CatalogControls';
+import { CatalogButton, CatalogGroupIcon } from './CatalogControls';
 import { CatalogProductCard, DetailStatus } from './CatalogProductCard';
 import { useSessionAction, useSessionQuery } from './hooks';
 import { useShopping } from './ShoppingProvider';
@@ -34,9 +34,13 @@ export function CatalogItemCard({ item, favorite, onFavoriteChanged, quantity, o
   }, action.setMessage);
 
   return <View style={ui.card}>
-    <Text accessibilityRole="header" style={ui.heading}>{item.name}</Text>
+    <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+      {item.kind === 'group' && <CatalogGroupIcon />}
+      <Text accessibilityRole="header" style={[ui.heading, { flex: 1, minWidth: 0 }]}>{item.name}</Text>
+    </View>
     <Text style={ui.muted}>{item.product_count} produktów · {item.store_count} sieci · z ceną: {item.stores_with_price_today}</Text>
     <Text style={ui.text}>{item.price_from ? `Od ${money(item.price_from.unit_price)} / ${item.price_from.unit_price_per}` : 'Brak ceny jednostkowej do porównania.'}</Text>
+    {item.product_count === 0 && <Text style={ui.muted}>Brak aktualnych ofert tej grupy.</Text>}
     {item.price_from === null && item.stores_with_price_today > 0 && <Notice>Brak ceny jednostkowej. Opakowanie lub podstawa porównania może być nieznana — sprawdź szczegóły produktu.</Notice>}
     <Field label={`Potrzebna ilość: ${item.name} (${item.unit})`} value={quantity} placeholder="Wpisz ilość"
       keyboardType={item.unit === 'szt' ? 'number-pad' : 'decimal-pad'} editable={!action.busy} onChangeText={onQuantityChanged} />

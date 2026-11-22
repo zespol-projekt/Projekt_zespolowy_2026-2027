@@ -12,7 +12,8 @@ export function OfferInfo({ offer }: { offer: Offer }) {
     <Text style={ui.text}>{offer.store_name} · {offer.gramatura_norm ?? 'Brak danych o ilości'}</Text>
     {offer.image_url && /^https:\/\//.test(offer.image_url) && <Image source={{ uri: offer.image_url }} accessibilityLabel={offer.product_name} style={{ width: 80, height: 80, resizeMode: 'contain' }} />}
     <Text style={ui.text}>{money(offer.single_price)}{offer.sale_mode === 'bulk' ? ` za ${amount(offer.quantity_value ?? 1000, offer.quantity_unit ?? 'g')}` : ' za opakowanie / sztukę'}</Text>
-    <Text style={ui.muted}>Dane sieciowe · {offer.regular_price_observed_at ? `Cena potwierdzona: ${new Date(offer.regular_price_observed_at).toLocaleDateString('pl-PL')}` : 'Data potwierdzenia ceny niedostępna'}</Text>
+    {/* The legacy contract does not identify the date source. Do not label ingestion as observation. */}
+    <Text style={ui.muted}>Dane sieciowe · Data ceny nieznana.</Text>
     {offer.sale_mode === 'bulk' && <Text style={ui.muted}>Końcowy koszt zależy od faktycznie zważonej ilości.</Text>}
     {offer.sale_mode === 'unknown' && <Text style={ui.muted}>Brak potwierdzonego sposobu sprzedaży — oferta nie zostanie użyta do wyceny.</Text>}
     {offer.promo_price != null && <Text style={ui.muted}>{offer.verified_promotion ? `Promocja: ${money(offer.promo_price)}. ${offer.promo_condition ?? ''}` : 'Rabat nie został uwzględniony: brak potwierdzenia ogólnodostępności, warunków lub ważności promocji.'}</Text>}
