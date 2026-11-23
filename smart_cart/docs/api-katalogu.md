@@ -76,6 +76,85 @@ Od migracji `20261123000100_search_and_basket_fixes.sql` każdy wybór `stores[]
   "valid_from": null, "valid_to": null }
 ```
 
+## Rodzaje produktów (od migracji `20261124000100_product_types.sql`)
+
+Porównanie **po rodzaju produktu** zamiast po identycznym produkcie (decyzja zespołu z 23.11.2026). Klient dodaje do listy np. „Pomidory krojone w puszce”, a w każdej sieci liczymy **jeden produkt tego rodzaju**, który najtaniej pokrywa ilość. Model i reguły: `docs/rodzaje-produktow.md`. Pilot: Nabiał, Przetwory pomidorowe, Konserwy (86 rodzajów).
+
+Wszystko jest **dodane** — bez nowych parametrów funkcje odpowiadają jak dotąd.
+
+| Funkcja | Parametry | Zwraca |
+|---|---|---|
+| `catalog_search`, `catalog_branch` | jak dotąd + `p_with_types` (domyślnie `false`) | z `true`: najpierw elementy `kind: "type"`, potem grupy i produkty; grupy, których **wszystkie** produkty są w rodzajach, nie są pokazywane osobno |
+| `catalog_type` | `p_type_id`, `p_store_id` (opcjonalnie, filtr sieci), `p_limit` 1–100, `p_offset` | rodzaj (`type`, z `path` i `median_unit_price`) i jego produkty z ofertami, **od najtańszego za kg / l / szt dziś** (`total`, paginacja) |
+| `compare_basket` | pozycja `{id, type_id, quantity, unit, store_choices?}` obok dotychczasowych `{id, group_id, …}` | dla pozycji-rodzaju wiersz opisany niżej |
+| `basket_type_options` | `p_type_id`, `p_store_id`, `p_quantity`, `p_unit`, `p_limit`, `p_offset` | „Pokaż więcej”: wszystkie produkty rodzaju w sieci wycenione dla tej ilości (`options`, `total`) |
+| `add_shopping_type_item` | `p_list_id`, `p_type_id`, `p_quantity`, `p_unit` | pozycja listy wskazująca rodzaj (ta sama jednostka — ilości się sumują, inna — zastępuje) |
+| `set_item_store_choice` | `p_item_id`, `p_store_id`, `p_product_id` (`null` = usuń wybór) | pozycja z zaktualizowanym `store_choices` |
+| tabela `favorite_types` | `insert {product_type_id}` / `delete` (jak `favorite_groups`) | ulubione rodzaje |
+
+**Ilość i jednostka pozycji-rodzaju:** jednostka rodzaju (`unit`) albo `szt` = liczba opakowań, przeliczana na `szt × typical_package` (np. 2 szt pomidorów = 800 g). Rodzaje z `g_ml_equal: true` (płynny nabiał, napoje roślinne) przyjmują `g` i `ml` (1 g = 1 ml).
+
+**Wybór produktu w sieci** (`store_choices`, klucz = `store_id` jako tekst): w tej sieci liczymy wybrany produkt (`choice: "selected"`); w innej sieci, która ma **ten sam produkt** (to samo `product_id`), też on (`"same_product"`); w pozostałych najtańszy (`"cheapest"`). Wybór niedostępny w sieci (brak oferty z ceną) jest pomijany.
+
+**Cena podejrzana** (`suspicious: true` w ofertach `catalog_type`, w `pick` i w opcjach): cena za kg / l / szt poniżej 40% albo powyżej 300% mediany rodzaju (`median_unit_price`, liczona przy co najmniej 5 ofertach z ceną). Zwykle błąd w danych (gramatura, stara cena). Jest pokazywana, ale **nie wygrywa jako najtańsza** i nie liczy się do `price_from`. Warto ją oznaczyć w UI.
+
+```ts
+export type CatalogTypeItem = { kind: 'type'; type_id: number; group_id: null; product_id: null; name: string; unit: Unit; g_ml_equal: boolean;
+  default_quantity: number; typical_package: number | null; product_count: number; offer_count: number; store_count: number;
+  stores_with_price_today: number; price_from: PriceFrom | null; image_url: string | null;
+  parent: { type_id: number; name: string } | null;   // smak: jego rodzaj nadrzędny („dowolny smak”)
+  subtype_count: number };                             // rodzaj nadrzędny: liczba smaków (0 = brak podziału)
+export type CatalogType = { version: 1; type: CatalogTypeItem & { path: CatalogPath | null; median_unit_price: number | null };
+  subtypes: CatalogTypeItem[];   // smaki z ofertami (przy p_store_id: z ofertami w tej sieci), kolejno; pusta dla smaku i rodzaju bez podziału
+  store_id: number | null; total: number; limit: number; offset: number;
+  products: (CatalogProductBase & { offers: (CatalogOffer & { suspicious: boolean })[] })[] };
+export type BasketTypeOption = { offer_id: number; product_id: number; name: string; package: { quantity: number; unit: Unit; label: string | null };
+  package_count: number | null; quantity: number; unit: Unit; sale_mode: 'package' | 'bulk'; total_price: number; regular_total: number | null;
+  unit_price: number; unit_price_per: '1 kg' | '1 l' | '1 szt'; promotion_applied: boolean; requires_card: boolean; requires_activation: boolean;
+  condition: string | null; valid_from: string | null; valid_to: string | null; price_source: string | null; observed_at: string | null;
+  image_url: string | null; suspicious: boolean };
+export type BasketTypeRow = { item_id: string; type_id: number; group_id: null; status: 'priced' | 'missing';
+  requested: { quantity: number; unit: Unit; needed: number; needed_unit: Unit };      // needed: ilość w jednostce rodzaju
+  choice: 'cheapest' | 'selected' | 'same_product' | null; pick: BasketTypeOption | null; total_price: number | null; regular_total: number | null;
+  alternatives: BasketTypeOption[];   // do 5 kolejnych, rosnąco
+  alternatives_count: number };       // wszystkie pozostałe z ceną; > alternatives.length → „Pokaż więcej” (basket_type_options)
+```
+
+Uwagi:
+- `pick.quantity` może być większe od `requested.needed`: pełne opakowania albo promocja „przy zakupie N”, gdy tylko wtedy jest cena albo wychodzi taniej.
+- W jednej pozycji w danej sieci jest jeden produkt (bez mieszania marek).
+- **Smaki** (od `…000400`): rodzaj nadrzędny (`subtype_count > 0`) obejmuje produkty wszystkich smaków. Pozycja z nim to „dowolny smak”, a pozycja ze smakiem (`parent != null`) to tylko ten smak.
+  - Gałąź i wyszukiwarka zwracają popularne smaki (oferty w ≥ 2 sieciach) jako osobne elementy, zaraz za rodzajem nadrzędnym, od najpopularniejszego.
+  - Rzadkie smaki są w `subtypes` na ekranie rodzaju.
+  - W UI: rodzaj nadrzędny z dopiskiem „dowolny smak”, a smaki wcięte pod nim.
+- Błędy jak dotąd (`22023` — zła ilość, jednostka, rodzaj albo wybór produktu; `PT404` — nie ma rodzaju / pozycji).
+- **Trafność wyszukiwania** (od `…000500_search_relevance.sql`):
+  - Rodzaj pasuje **nazwą** albo **większością swoich produktów** (co najmniej połową), nie jednym produktem. Przykład: „pomidor” nie daje „Mozzarella (kulka)” przez „Minicalzone margherita z pomidorami”.
+  - Pasujące produkty z rodzajów, których nie ma w wynikach, są pokazywane jako zwykłe grupy / produkty, niżej.
+  - Przy rodzajach ostatnie słowo zapytania może być początkiem słowa, ale pokrywającym co najmniej 60% jego długości:
+    - „pomidor” → „Pomidory”, „kielb” → „Kiełbasa”;
+    - „kawa” nie daje „kawałkami”.
+  - Ilość w zapytaniu („woda 1,5 l”, „500 g”) nie zawęża rodzajów.
+  - Kolejność wyników: dokładna nazwa, potem nazwa zaczynająca się całymi słowami zapytania („ser” → „Ser Gouda”), potem początkiem słowa („Serek…”).
+  - Liczby dziesiętne są sklejane w zapytaniu i w zapisanych tekstach do wyszukiwania (`search_text`, `search_name`: „mleko uht 3,2%”). Przykład: „mleko 2%” nie trafia w „Mleko 3,2%”, a „3,2”, „3.2” i „3,2%” znaczą to samo.
+- **Od `…000700_product_types_quality.sql`** (wyszukiwanie z rodzajami):
+  - Rodzaj jest pokazywany także wtedy, gdy pasuje co najmniej 3 jego produkty i co najmniej 1/3 wszystkich. Przykład: „mleko” → „Mleko smakowe” (część produktów to „Napój mleczny Milka”). Jeden produkt „z pomidorami” nadal nie wystarcza.
+  - Produkt z rodzajem trafia do wyników tylko swoją nazwą, całymi słowami. Nie trafia przez nazwę produktu bazowego (dawniej „daktyle” dawało żurawinę z „Rodzynki / Żurawina / Daktyle”) ani przez początek marki („mleko” w „Mlekovita”). Produkty bez rodzaju i wyszukiwanie bez rodzajów działają jak wcześniej.
+  - Prosta odmiana: słowo zapytania bez końcówki (gdy zostaje co najmniej 5 liter) może być początkiem słowa w nazwie, np. „cytryna” → „Ice tea cytrynowa”, „jablka” → „Sok jabłkowy”, „banany” → „Mleko bananowe”. Krótsze słowa jak dotąd („kawa” nie daje „kawałków”).
+  - Nazwa zaczynająca się rdzeniem słowa jest wyżej („cytryna” → najpierw „Cytryny”).
+- **Od `…000800_search_primary.sql`** — trafienie główne:
+  - Rodzaje i produkty z rodzajem są pokazywane tylko wtedy, gdy słowo zapytania jest w nazwie samym produktem, a nie dodatkiem ani smakiem.
+  - Dodatkiem jest:
+    - przymiotnik od słowa zapytania („pomidor” → „sos pomidorowy”, „truskawki” → „mus truskawkowy”);
+    - słowo po „w”, „o”, „sosie”, „smaku”, „nadzieniem” itp. („gołąbki w sosie pomidorowym”, „orzechy w czekoladzie”);
+    - narzędnik po „z”, „ze”, „i” („pesto z suszonymi pomidorami”, „pierogi z serem”). „Filet z kurczaka” to trafienie główne.
+  - Dlatego „pomidor” nie daje już „Gołąbki”, „Pulpety”, „Owoce morza” ani „Pesto czerwone”.
+  - Rodzaj pasuje nazwą albo, jeśli jest rodzajem nadrzędnym, większością swoich produktów. Próg 1/3 z `…000700` jest usunięty.
+  - Smak (rodzaj podrzędny) jest pokazywany, gdy pasuje nazwą albo gdy w wynikach jest jego rodzaj nadrzędny. Nie wystarczą jego produkty („truskawki” nie daje „Mus owocowy truskawkowy”).
+  - Pełna nazwa smaku działa jak dotąd: „jogurt truskawkowy”, „chipsy paprykowe”.
+  - Produkty bez rodzaju i wyszukiwanie bez rodzajów działają bez zmian.
+- Czas (lokalnie, ~13 tys. produktów): wyszukiwanie z rodzajami ok. 0,25–0,75 s (960 rodzajów ze smakami), gałąź ok. 0,1 s, `catalog_type` ok. 0,05 s, `compare_basket` 3 rodzaje × 5 sieci ok. 0,1 s.
+
 ## Błędy
 
 | Sytuacja | HTTP | Treść (`message`) |

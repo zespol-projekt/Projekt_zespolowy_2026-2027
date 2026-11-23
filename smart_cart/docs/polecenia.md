@@ -183,3 +183,15 @@ node scripts/mleko/przeglad-mleka.mjs C:\Users\good1\Desktop\Dane_sklepy_current
 4. Przejrzenie raportu: dopasowania, nowe i zastąpione oferty, możliwe duble, mleko.
 5. Zapis `--zapis` (bez `--sprzatanie`) z tych samych danych i uruchomienie (punkt 4).
 6. Raport stanu katalogu (punkt 5).
+
+## 11. Rodzaje produktów
+
+Opis: `docs/rodzaje-produktow.md`. Po zmianie reguł (`product_type_rules`) albo decyzji (`product_type_reviews`) przeliczenie przypisań i typowych opakowań:
+
+```sql
+ALTER TABLE public.products DISABLE TRIGGER trg_products_updated_at;
+SELECT public.refresh_product_types();
+ALTER TABLE public.products ENABLE TRIGGER trg_products_updated_at;
+```
+
+Nowe produkty z importu dostają rodzaj same (wyzwalacz). Reguły generują skrypty poza repo (`Dane_sklepy_current\rodzaje_produktow`: `generuj_wszystkie.py`, `generuj_uzupelnienie.py`, `generuj_korekty.py`; spis w `docs/rodzaje-produktow.md`). Zmiana reguł we wspólnej bazie to nowa migracja. Przeliczenie trwa ok. 7 s.

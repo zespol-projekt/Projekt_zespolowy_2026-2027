@@ -35,7 +35,7 @@ FROM public.products p WHERE p.id BETWEEN 98601 AND 98606;
 DO $$ DECLARE g text; BEGIN
   SELECT name INTO g FROM public.comparison_groups WHERE id = (SELECT comparison_group_id FROM public.products WHERE id = 98601);
   IF g <> 'Mleko świeże 3,2% · z laktozą' THEN RAISE EXCEPTION 'Zła grupa fixture: %', g; END IF;
-  IF (SELECT search_text FROM public.products WHERE id = 98601) <> 'mleko swieze 3 2% dolina 1 l'
+  IF (SELECT search_text FROM public.products WHERE id = 98601) <> 'mleko swieze 3,2% dolina 1 l'
     THEN RAISE EXCEPTION 'Tekst wyszukiwania zawiera produkt bazowy: %', (SELECT search_text FROM public.products WHERE id = 98601); END IF;
 END $$;
 
