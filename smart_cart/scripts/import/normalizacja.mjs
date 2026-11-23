@@ -33,6 +33,7 @@ function przelicz(wartosc, jednostka) {
  * Ilość w opakowaniu z tekstu (gramatura lub nazwa).
  * Zwraca { value, unit: 'g'|'ml'|'szt', opakowania?: n } albo null, gdy nie da się jej jednoznacznie odczytać.
  * Obsługuje: '1l', '0,3 kg', '500 g', '4x100g', '(4 x 82,5 g)', '185/130g' (masa brutto), '10 szt.'.
+ * '450 g (15 sztuk)' to 450 g (poza jajami, słodzikiem i bulionem w kostkach, które zostają w sztukach).
  * Liczby z '%' (tłuszcz) są ignorowane. Sam 'kg' bez liczby to cena za kg, nie opakowanie - zwraca null.
  */
 export function ilosc(tekst) {
@@ -46,6 +47,10 @@ export function ilosc(tekst) {
     if (!jedna || Number(ile) < 1) return null;
     return { value: Math.round(jedna.value * Number(ile) * 100) / 100, unit: jedna.unit, opakowania: Number(ile) };
   }
+  // „450 g (15 sztuk)” (Carrefour): opakowanie to 450 g, liczba sztuk tylko je opisuje. Wyjątki liczone w sztukach:
+  // jaja, słodzik w tabletkach, bulion / rosół w kostkach.
+  const wagaISztuki = t.match(new RegExp(String.raw`(?<![\d,]|\d\.)${LICZBA}\s*(kg|dag|g|ml|cl|l)\.?\s*\(\s*\d+\s*(?:szt|sztuk)\.?\s*\)`));
+  if (wagaISztuki && !/jaj|słodzik|slodzik|bulion|rosół|rosol/.test(t)) return przelicz(wagaISztuki[1], wagaISztuki[2]);
   const trafienia = [...t.matchAll(new RegExp(String.raw`(?<![\d,]|\d\.)${LICZBA}\s*${JEDN}\.?(?![a-ząćęłńóśźż])`, 'g'))];
   if (!trafienia.length) return null;
   const [, wartosc, jednostka] = trafienia.at(-1);

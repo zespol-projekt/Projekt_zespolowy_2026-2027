@@ -17,6 +17,10 @@ test('ilość opakowania: jednostki, przecinki, wielopaki, masa brutto, procenty
   assert.deepEqual(ilosc('6x1,5l'), { value: 9000, unit: 'ml', opakowania: 6 });
   assert.deepEqual(ilosc('185/130g'), { value: 185, unit: 'g' });
   assert.deepEqual(ilosc('10 szt.'), { value: 10, unit: 'szt' });
+  assert.deepEqual(ilosc('FRoSTA Złote paluszki rybne 450 g (15 sztuk)'), { value: 450, unit: 'g' });
+  assert.deepEqual(ilosc('Kinder Zestaw słodyczy 290,5 g (10 sztuk)'), { value: 290.5, unit: 'g' });
+  assert.deepEqual(ilosc('Carrefour Extra Jaja przepiórcze 220 g (18 sztuk)'), { value: 18, unit: 'szt' });
+  assert.deepEqual(ilosc('Winiary Bulion warzywny 120 g (12 sztuk)'), { value: 12, unit: 'szt' });
   assert.deepEqual(ilosc('5 dag'), { value: 50, unit: 'g' });
   for (const brak of ['', 'Mleko 3.2% Pilos', '1 zestaw', 'kg', '10rolek', 'Mleko 1 laktoza']) assert.equal(ilosc(brak), null, brak);
 });
