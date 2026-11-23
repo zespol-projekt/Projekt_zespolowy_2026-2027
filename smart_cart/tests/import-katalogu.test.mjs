@@ -79,12 +79,12 @@ test('SQL: migrację można dołączyć tylko do próby i bez własnych transakc
 test('podgląd CSV: pozycje z kategorią i pominięte z powodem', async () => {
   const { podgladCsv } = await import('../scripts/import/import-katalogu.mjs');
   const { pozycje, listaPominietych } = pozycjeZObserwacji([
-    obserwacjaKodyzbiedry({ ean: '5900000000017', nazwa: 'Mleko UHT 3,2% "Łaciate" 1 l', cena: '3.79', cena_widziana: '2026-11-18T18:00:00Z' }),
+    obserwacjaKodyzbiedry({ ean: '5900000000017', nazwa: 'Mleko UHT 3,2% "Łaciate" 1 l', cena: '3.79', cena_widziana: '2026-11-18T18:00:00Z', utworzono_zrodlo: '2026-03-13' }),
     obserwacjaKodyzbiedry({ ean: '5900000000024', nazwa: 'Płyn do naczyń 500 ml', cena: '5.99', cena_widziana: '2026-11-18T18:00:00Z' }),
   ]);
   const { doBazy, pominiete } = podgladCsv(pozycje, listaPominietych);
   assert.match(doBazy, /^﻿siec;kategoria;/);
-  assert.match(doBazy, /biedronka;Nabiał;Mleko UHT 3,2%;"Mleko UHT 3,2% ""Łaciate"" 1 l";5900000000017;5900000000017;1000 ml;package;3,79;2026-11-18;kodyzbiedry/);
+  assert.match(doBazy, /biedronka;Nabiał;Mleko UHT 3,2%;"Mleko UHT 3,2% ""Łaciate"" 1 l";5900000000017;5900000000017;1000 ml;package;3,79;2026-03-13;kodyzbiedry;;/);
   assert.match(pominiete, /brak_produktu_bazowego;biedronka;kodyzbiedry;Płyn do naczyń 500 ml;5,99/);
 });
 
@@ -167,4 +167,44 @@ test('SQL: sprzątanie tylko na żądanie, z blokadą list zakupów', () => {
   assert.match(s, /DELETE FROM public\.store_offers/);
   assert.ok(s.indexOf('Sprzątanie przerwane') < s.indexOf('DELETE FROM public.store_offers'), 'blokada przed usuwaniem');
   assert.match(s, /ROLLBACK;/);
+});
+
+test('wyliczanie cen: cena regularna wyliczona z promocji tylko z opcją, z oznaczeniem źródła', async () => {
+  const { podgladCsv } = await import('../scripts/import/import-katalogu.mjs');
+  const tk = (nazwa, w) => obserwacjaTanszykoszyk({ nazwa, marka: '', gramatura: '', jednostka: 'szt', id_zrodla: nazwa, link_zrodla: '/produkt/x',
+    wazne_od: '2026-11-20', wazne_do: '2026-11-26', ostatnio_widziane: '2026-11-21T10:00:00Z', ...w }, 'lidl');
+  // 12 par do nauki współczynnika (promocja 8,00 przy cenie "przed obniżką" 10,00 -> 0,8)
+  const pary = Array.from({ length: 12 }, (_, i) => tk(`Mleko UHT 3,2% Test ${i} 1 l`, { cena_promocyjna: '8.00', typ_promocji: 'obniżka', cena_regularna: '10.00', etykieta_ceny: 'przed_obnizka' }));
+  const bez = tk('Mleko UHT 3,2% Bez Ceny 1 l', { cena_promocyjna: '2.40', typ_promocji: 'supercena' });
+  const gratis = tk('Mleko UHT 3,2% Gratis 1 l', { cena_promocyjna: '2.00', typ_promocji: '1+1 gratis' });
+  const procent = tk('Mleko UHT 3,2% Procent 1 l', { cena_promocyjna: '3.00', typ_promocji: 'przy zakupie 2 szt -25%' });
+  const obs = [...pary, bez, gratis, procent];
+  const domyslnie = pozycjeZObserwacji(obs).pozycje.find(p => /Bez Ceny/.test(p.nazwa));
+  assert.equal(domyslnie.cena_regularna, null, 'bez opcji cen nie wyliczamy');
+  const { pozycje, wyliczenia } = pozycjeZObserwacji(obs, { regularneZPromocji: true });
+  const znajdz = n => pozycje.find(p => p.nazwa.includes(n));
+  assert.equal(znajdz('Bez Ceny').cena_regularna, 3, 'współczynnik 0,8: 2,40 / 0,8');
+  assert.equal(znajdz('Bez Ceny').zrodlo_ceny, 'wyliczona_z_promocji');
+  assert.equal(znajdz('Bez Ceny').obserwacja_regularnej, '2026-11-21');
+  assert.match(znajdz('Bez Ceny').wyliczenie, /^wspolczynnik lidl\|jednostkowa 0\.8$/);
+  assert.equal(znajdz('Gratis').cena_regularna, 4, '1+1 gratis: 2 × 2,00');
+  assert.equal(znajdz('Procent').cena_regularna, 4, '-25%: 3,00 / 0,75');
+  // Cena "przed obniżką" nie jest przepisywana jako regularna; pozycja dostaje cenę wyliczoną tak samo jak inne.
+  assert.equal(znajdz('Test 0').zrodlo_ceny, 'wyliczona_z_promocji');
+  assert.equal(znajdz('Test 0').cena_regularna, 10);
+  assert.equal(wyliczenia.wspolczynniki['lidl|jednostkowa'].par, 12);
+  assert.match(podgladCsv(pozycje, []).doBazy, /3;2026-11-21;wyliczona_z_promocji;wspolczynnik lidl\|jednostkowa 0\.8;2,4/);
+});
+
+test('wyliczanie cen: wzory mechaniki promocji', async () => {
+  const { zMechaniki, rodzajPromocji } = await import('../scripts/import/wyliczanie.mjs');
+  assert.equal(zMechaniki(2, '2+1 gratis').kwota, 3);
+  assert.equal(zMechaniki(4, 'drugi 50% taniej').kwota.toFixed(2), '5.33');
+  assert.equal(zMechaniki(3, 'drugi za 1 zł').kwota, 5);
+  assert.equal(zMechaniki(1.505, '1+1 za grosz').kwota, 3);
+  assert.equal(zMechaniki(7.5, 'obniżka', 'rabat 25% przy kasie').kwota, 10);
+  assert.equal(zMechaniki(2, 'supercena'), null);
+  assert.equal(zMechaniki(2, 'drugi za 5 zł'), null, 'druga sztuka droższa od ceny promocyjnej: brak wzoru');
+  assert.equal(rodzajPromocji('przy zakupie 3'), 'przy_zakupie');
+  assert.equal(rodzajPromocji('Supercena'), 'jednostkowa');
 });

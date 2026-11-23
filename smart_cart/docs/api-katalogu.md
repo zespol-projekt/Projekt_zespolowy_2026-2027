@@ -37,7 +37,8 @@ product: (id: number, signal: AbortSignal) => call<CatalogProduct>('rpc/catalog_
 |---|---|
 | `regular_price` | cena regularna **za 1 opakowanie** (dla produktów luzem: za `package.quantity`, zwykle 1000 g) |
 | `regular_price_status` | `prawdziwa` — potwierdzona w źródle; `brak` — brak ceny regularnej; `estymowana` — szacunek (nie jest używany w porównaniu) |
-| `regular_price_observed_at` | data obserwacji ceny ze źródła; dla Biedronki (źródło kodyzbiedry nie podaje daty ceny) to dzień naszego pobrania danych, więc cena może być starsza |
+| `regular_price_observed_at` | data ceny ze źródła: antonka i tanszykoszyk — dzień obserwacji; kodyzbiedry (Biedronka) — data aktualizacji wpisu w katalogu źródła, a bez niej data dodania wpisu, więc cena może mieć kilka miesięcy; `wyliczona_z_promocji` — dzień obserwacji promocji, z której ją wyliczono; `null` — nieznana |
+| `price_source` | źródło ceny regularnej: `antonka`, `antonka_historia`, `tanszykoszyk`, `kodyzbiedry` albo `wyliczona_z_promocji` — cena regularna **wyliczona z ceny promocyjnej** (od 23.11.2026; status `prawdziwa`, liczy się w porównaniu; warto ją podpisać w UI, np. „cena wyliczona z promocji”) |
 | `promotion` | promocja ze źródła albo `null`: cena, typ, warunek, okres, zasięg, reguła; `applies_today: true` — promocja jest **naliczana automatycznie dziś** (porównanie koszyka ją uwzględnia); `false` — tylko informacja (niepotwierdzona, wygasła, złożony warunek) |
 | `requires_card`, `requires_activation` | warunki promocji do pokazania w UI (karta / aktywacja kuponu) |
 | `price_today` | cena **1 opakowania dziś**: niższa z regularnej `prawdziwa` i promocji naliczanej dziś; `null` — dziś brak ceny |
@@ -66,7 +67,7 @@ Bez znaczenia są wielkość liter, polskie znaki (`łaciate` = `ŁACIATE` = `la
 
 ## Koszyk: źródło ceny w `compare_basket`
 
-Od migracji `20261123000100_search_and_basket_fixes.sql` każdy wybór `stores[].items[].picks[]` (oraz `alternative.picks[]`) ma pole `price_source`: to samo źródło co w `catalog_offers` i w ofertach katalogu. `observed_at` to `regular_price_observed_at` oferty i dotyczy ceny regularnej, także gdy naliczono promocję. Podpis daty jak w katalogu (`price_source: "kodyzbiedry"` albo `observed_at: null` → „Data ceny nieznana”). Pozostałe pola i sumy porównania bez zmian.
+Od migracji `20261123000100_search_and_basket_fixes.sql` każdy wybór `stores[].items[].picks[]` (oraz `alternative.picks[]`) ma pole `price_source`: to samo źródło co w `catalog_offers` i w ofertach katalogu. `observed_at` to `regular_price_observed_at` oferty i dotyczy ceny regularnej, także gdy naliczono promocję. Podpis jak w katalogu: `price_source: "wyliczona_z_promocji"` → „Cena wyliczona z promocji”; `"kodyzbiedry"` albo `observed_at: null` → „Data ceny nieznana”. Pozostałe pola i sumy porównania bez zmian.
 
 ```json
 { "offer_id": 41250, "product_id": 5521, "name": "MLEKO UHT 3,2% MLECZNA DOLINA 1 l", "package_count": 2, "quantity": 2000, "unit": "ml",

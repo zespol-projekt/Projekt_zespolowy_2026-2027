@@ -66,6 +66,8 @@ node scripts/import/import-katalogu.mjs --dane $dane --zapis             # zapis
 node scripts/import/import-katalogu.mjs --dane $dane --sprzatanie        # próba ze sprzątaniem
 node scripts/import/import-katalogu.mjs --dane $dane --zapis --sprzatanie   # zapis + usunięcie ofert, których import nie odświeżył
 node scripts/import/import-katalogu.mjs --dane $dane --z-migracja supabase/migrations/PLIK_MIGRACJI.sql   # próba z niewdrożoną migracją
+# ceny regularne wyliczane z promocji są domyślne (od 23.11.2026), opis w docs/import-katalogu.md
+node scripts/import/import-katalogu.mjs --dane $dane --bez-wyliczania --podglad   # próba tylko z cenami potwierdzonymi w źródłach
 ```
 
 | Opcja | Znaczenie |
@@ -73,7 +75,8 @@ node scripts/import/import-katalogu.mjs --dane $dane --z-migracja supabase/migra
 | (brak) | próba: wszystko się wykonuje, na końcu `ROLLBACK` |
 | `--zapis` | `COMMIT`: ceny dopasowanych produktów są aktualizowane, nowe produkty dodawane (limit 25 na sieć × produkt bazowy), nic nie jest usuwane |
 | `--sprzatanie` | dodatkowo usuwa oferty sieci obecnych w imporcie, których ten import nie odświeżył, ich produkty bez ofert i puste grupy; przerywa całość, jeśli produkt jest na czyjejś liście zakupów |
-| `--podglad` | dodatkowo `…-do-bazy.csv` i `…-pominiete.csv` (do Excela) |
+| `--podglad` | dodatkowo `…-do-bazy.csv` i `…-pominiete.csv` (do Excela); kolumna `wyliczenie` podaje metodę wyliczenia ceny |
+| `--bez-wyliczania` | bez cen regularnych wyliczonych z promocji (tylko ceny potwierdzone w źródłach); zapis w tym trybie usuwa wcześniej wyliczone ceny |
 | `--z-migracja` | dołącza niewdrożoną migrację do próby (tylko próba) |
 
 Każde uruchomienie zapisuje też `…json` z podsumowaniem i sumami kontrolnymi plików danych. Zasady dopasowania i limitu: `docs/import-katalogu.md`.
