@@ -169,7 +169,7 @@ test('SQL: sprzątanie tylko na żądanie, z blokadą list zakupów', () => {
   assert.match(s, /ROLLBACK;/);
 });
 
-test('tryb testowy: cena regularna wyliczona z promocji tylko z opcją, z oznaczeniem źródła', async () => {
+test('wyliczanie cen: cena regularna wyliczona z promocji tylko z opcją, z oznaczeniem źródła', async () => {
   const { podgladCsv } = await import('../scripts/import/import-katalogu.mjs');
   const tk = (nazwa, w) => obserwacjaTanszykoszyk({ nazwa, marka: '', gramatura: '', jednostka: 'szt', id_zrodla: nazwa, link_zrodla: '/produkt/x',
     wazne_od: '2026-11-20', wazne_do: '2026-11-26', ostatnio_widziane: '2026-11-21T10:00:00Z', ...w }, 'lidl');
@@ -196,7 +196,7 @@ test('tryb testowy: cena regularna wyliczona z promocji tylko z opcją, z oznacz
   assert.match(podgladCsv(pozycje, []).doBazy, /3;2026-11-21;wyliczona_z_promocji;wspolczynnik lidl\|jednostkowa 0\.8;2,4/);
 });
 
-test('tryb testowy: wzory mechaniki promocji', async () => {
+test('wyliczanie cen: wzory mechaniki promocji', async () => {
   const { zMechaniki, rodzajPromocji } = await import('../scripts/import/wyliczanie.mjs');
   assert.equal(zMechaniki(2, '2+1 gratis').kwota, 3);
   assert.equal(zMechaniki(4, 'drugi 50% taniej').kwota.toFixed(2), '5.33');

@@ -1,7 +1,6 @@
-// TRYB TESTOWY (22.11.2026, gałąź feat/damian-ceny-regularne): cena regularna wyliczona z ceny promocyjnej.
-// Włączany tylko opcją importera --regularne-z-promocji. Domyślny import działa jak dotąd: cen nie wyliczamy.
-// Uwaga: Damian.MD wyklucza ceny szacowane z porównania. Ten tryb służy do testów i do pokazania pomysłu zespołowi;
-// wyliczone ceny są w bazie rozpoznawalne po price_source = 'wyliczona_z_promocji' i znikają po zwykłym imporcie.
+// Cena regularna wyliczona z ceny promocyjnej (od 22.11.2026; decyzja zespołu z 23.11.2026: wchodzi do aplikacji).
+// Importer liczy ją domyślnie; opcja --bez-wyliczania wyłącza. Wyliczone ceny są w bazie rozpoznawalne
+// po price_source = 'wyliczona_z_promocji'; import z --bez-wyliczania zastępuje je danymi ze źródeł.
 //
 // Kiedy liczymy: pozycja nie ma żadnej potwierdzonej ceny regularnej, a ma promocję z ceną.
 // Jak liczymy (w tej kolejności):

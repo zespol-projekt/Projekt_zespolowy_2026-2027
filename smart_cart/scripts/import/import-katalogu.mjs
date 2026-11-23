@@ -100,7 +100,8 @@ export function regulaPromocji(oferta) {
 }
 
 /** Łączy obserwacje w pozycje "produkt w sieci". Zwraca { pozycje, pominiete, listaPominietych, wyliczenia }.
- *  regularneZPromocji (tryb testowy): pozycja bez potwierdzonej ceny regularnej dostaje cenę wyliczoną z promocji. */
+ *  regularneZPromocji: pozycja bez potwierdzonej ceny regularnej dostaje cenę wyliczoną z promocji
+ *  (w imporcie z wiersza poleceń domyślnie od 23.11.2026; wyłącza opcja --bez-wyliczania). */
 export function pozycjeZObserwacji(obserwacje, { regularneZPromocji = false } = {}) {
   const wsp = regularneZPromocji ? wspolczynniki(obserwacje) : null;
   const bledy = [];
@@ -195,7 +196,7 @@ export function pozycjeZObserwacji(obserwacje, { regularneZPromocji = false } = 
   return { pozycje, pominiete, listaPominietych, wyliczenia: wsp ? podsumujWyliczenia(pozycje, wsp, bledy) : null };
 }
 
-/** Raport trybu testowego: ile cen wyliczono (sieć, metoda), współczynniki i błąd na pozycjach z ceną potwierdzoną. */
+/** Raport wyliczonych cen: ile cen wyliczono (sieć, metoda), współczynniki i błąd na pozycjach z ceną potwierdzoną. */
 function podsumujWyliczenia(pozycje, wsp, bledy) {
   const naSiec = {}; const metody = {};
   for (const p of pozycje.filter(x => x.wyliczenie && !x.poza_limitem)) {
@@ -454,10 +455,12 @@ function podsumujPoLimicie(pozycje) {
 
 function main() {
   const i = process.argv.indexOf('--dane');
-  if (i < 0 || !process.argv[i + 1]) throw new Error('Użycie: node scripts/import/import-katalogu.mjs --dane <folder> [--zapis]');
+  if (i < 0 || !process.argv[i + 1]) throw new Error('Użycie: node scripts/import/import-katalogu.mjs --dane <folder> [--zapis] [--bez-wyliczania]');
   const tryb = process.argv.includes('--zapis') ? 'zapis' : 'proba';
   const sprzatanie = process.argv.includes('--sprzatanie');
-  const regularneZPromocji = process.argv.includes('--regularne-z-promocji');
+  // Od 23.11.2026 (decyzja zespołu) ceny regularne wyliczamy z promocji domyślnie; --bez-wyliczania wyłącza.
+  // Dawna opcja --regularne-z-promocji jest dopuszczalna, ale nic już nie zmienia.
+  const regularneZPromocji = !process.argv.includes('--bez-wyliczania');
   // --z-migracja można podać kilka razy; pliki są dołączane w podanej kolejności.
   const pliki_migracji = process.argv.flatMap((a, k) => (a === '--z-migracja' ? [process.argv[k + 1]] : []));
   const migracja = pliki_migracji.length
@@ -478,7 +481,7 @@ function main() {
   const katalog = path.join(dane, 'raporty_importu');
   fs.mkdirSync(katalog, { recursive: true });
   const stempel = new Date().toISOString().replace(/[:.]/g, '-');
-  const plikSql = path.join(katalog, `import-${stempel}-${tryb}${sprzatanie ? '-sprzatanie' : ''}${regularneZPromocji ? '-wyliczone' : ''}.sql`);
+  const plikSql = path.join(katalog, `import-${stempel}-${tryb}${sprzatanie ? '-sprzatanie' : ''}${regularneZPromocji ? '' : '-bez-wyliczania'}.sql`);
   const plikiWzgledne = pliki.map(p => ({ ...p, sciezka: path.relative(dane, p.sciezka).replace(/\\/g, '/') }));
   fs.writeFileSync(plikSql, sqlImportu(pozycje, { tryb, pliki: plikiWzgledne, podsumowanie, migracja, sprzatanie }), { flag: 'wx' });
   fs.writeFileSync(plikSql.replace(/\.sql$/, '.json'), JSON.stringify({ podsumowanie, pliki: plikiWzgledne }, null, 2) + '\n', { flag: 'wx' });

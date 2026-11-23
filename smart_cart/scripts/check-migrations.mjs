@@ -213,7 +213,7 @@ for (const przebieg of [3, 4]) {
   END $verify$;`);
 }
 console.log('Catalog import cleanup: shopping-list guard, stale offers/products/empty groups removed, other chains untouched, idempotent.');
-// Tryb testowy --regularne-z-promocji: wyliczona cena regularna jest oznaczona źródłem, a zwykły import ją wycofuje.
+// Wyliczanie cen regularnych z promocji: wyliczona cena jest oznaczona źródłem, a import bez wyliczania (--bez-wyliczania) ją wycofuje.
 const zWyliczona = pozycjeZObserwacji([obserwacjaTanszykoszyk({ id_zrodla: 'a', nazwa: 'Mleko UHT 3,2% Pilos 1l', gramatura: '1l',
   cena_promocyjna: '2.25', typ_promocji: '1+1 gratis', wazne_od: '2026-11-17', wazne_do: '2026-11-21', link_zrodla: '/produkt/a',
   ostatnio_widziane: '2026-11-18T18:00:00Z' }, 'lidl')], { regularneZPromocji: true }).pozycje;
@@ -224,12 +224,12 @@ sql(`DO $verify$ BEGIN
     THEN RAISE EXCEPTION 'Brak wyliczonej ceny regularnej'; END IF;
   IF (SELECT single_price FROM public.catalog_offers WHERE product_name = 'Mleko UHT 3,2% Pilos 1l') <> 4.50
     THEN RAISE EXCEPTION 'Wyliczona cena nie jest ceną dziś'; END IF;
-  IF (SELECT count(*) FROM public.store_offers) <> 7 THEN RAISE EXCEPTION 'Tryb testowy zmienił liczbę ofert'; END IF;
+  IF (SELECT count(*) FROM public.store_offers) <> 7 THEN RAISE EXCEPTION 'Wyliczanie cen zmieniło liczbę ofert'; END IF;
 END $verify$;`);
 sql(importSql);
 sql(`DO $verify$ BEGIN
   IF NOT EXISTS (SELECT 1 FROM public.store_offers WHERE offer_key = 'old:2' AND regular_price IS NULL AND price_status = 'brak'
-    AND price_source = 'tanszykoszyk') THEN RAISE EXCEPTION 'Zwykły import nie wycofał wyliczonej ceny'; END IF;
+    AND price_source = 'tanszykoszyk') THEN RAISE EXCEPTION 'Import bez wyliczania nie wycofał wyliczonej ceny'; END IF;
   IF EXISTS (SELECT 1 FROM public.store_offers WHERE price_source = 'wyliczona_z_promocji') THEN RAISE EXCEPTION 'Została wyliczona cena'; END IF;
   IF (SELECT count(*) FROM public.import_runs) <> 6 THEN RAISE EXCEPTION 'Brak wpisów w rejestrze importów'; END IF;
 END $verify$;`);
