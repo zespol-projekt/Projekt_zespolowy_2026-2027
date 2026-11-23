@@ -43,7 +43,10 @@ export function zMechaniki(p, typ, warunek) {
     const y = liczba(m[1]);
     if (y < p) return { kwota: 2 * p - y, metoda: 'drugi_za_kwote' };
   }
-  if ((m = t.match(/-\s?(\d{1,2})\s?%|(\d{1,2})\s?%\s*taniej|rabat\w*\s+(\d{1,2})\s?%/))) {
+  // "-X%" przy promocji "przy zakupie N" jest niejednoznaczne: raz to rabat na każdą sztukę, raz tylko na drugą
+  // (dane z 23.11.2026: Biedronka "przy zakupie 2 szt -60%" = druga sztuka -60%, "-33%" = każda sztuka).
+  // Wtedy nie zgadujemy wzoru, tylko liczymy współczynnikiem.
+  if (!/przy\s+zakupie\s+\d/.test(t) && (m = t.match(/-\s?(\d{1,2})\s?%|(\d{1,2})\s?%\s*taniej|rabat\w*\s+(\d{1,2})\s?%/))) {
     const x = Number(m[1] ?? m[2] ?? m[3]) / 100;
     if (x > 0 && x < 0.9) return { kwota: p / (1 - x), metoda: 'rabat_procentowy' };
   }

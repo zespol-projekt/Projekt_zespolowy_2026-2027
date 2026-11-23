@@ -177,7 +177,7 @@ test('wyliczanie cen: cena regularna wyliczona z promocji tylko z opcją, z ozna
   const pary = Array.from({ length: 12 }, (_, i) => tk(`Mleko UHT 3,2% Test ${i} 1 l`, { cena_promocyjna: '8.00', typ_promocji: 'obniżka', cena_regularna: '10.00', etykieta_ceny: 'przed_obnizka' }));
   const bez = tk('Mleko UHT 3,2% Bez Ceny 1 l', { cena_promocyjna: '2.40', typ_promocji: 'supercena' });
   const gratis = tk('Mleko UHT 3,2% Gratis 1 l', { cena_promocyjna: '2.00', typ_promocji: '1+1 gratis' });
-  const procent = tk('Mleko UHT 3,2% Procent 1 l', { cena_promocyjna: '3.00', typ_promocji: 'przy zakupie 2 szt -25%' });
+  const procent = tk('Mleko UHT 3,2% Procent 1 l', { cena_promocyjna: '3.00', typ_promocji: 'obniżka -25%' });
   const obs = [...pary, bez, gratis, procent];
   const domyslnie = pozycjeZObserwacji(obs).pozycje.find(p => /Bez Ceny/.test(p.nazwa));
   assert.equal(domyslnie.cena_regularna, null, 'bez opcji cen nie wyliczamy');
@@ -204,6 +204,7 @@ test('wyliczanie cen: wzory mechaniki promocji', async () => {
   assert.equal(zMechaniki(1.505, '1+1 za grosz').kwota, 3);
   assert.equal(zMechaniki(7.5, 'obniżka', 'rabat 25% przy kasie').kwota, 10);
   assert.equal(zMechaniki(2, 'supercena'), null);
+  assert.equal(zMechaniki(3.49, 'przy zakupie 2 szt -60%', 'każda z 2 sztuk 3,49 zł'), null, '-X% przy zakupie N: niejednoznaczne');
   assert.equal(zMechaniki(2, 'drugi za 5 zł'), null, 'druga sztuka droższa od ceny promocyjnej: brak wzoru');
   assert.equal(rodzajPromocji('przy zakupie 3'), 'przy_zakupie');
   assert.equal(rodzajPromocji('Supercena'), 'jednostkowa');
