@@ -23,7 +23,7 @@ function session() {
   };
 }
 const load = (auth, request, controller = new AbortController()) =>
-  fetchCatalog('https://stores.example.invalid/v1/stores', auth, controller.signal, request);
+  fetchCatalog('https://stores.example.invalid/functions/v1/store-catalog', auth, controller.signal, request);
 
 test('katalog używa bieżącego tokenu, no-store i sprząta subskrypcję', async () => {
   const auth = session();
@@ -38,6 +38,24 @@ test('katalog używa bieżącego tokenu, no-store i sprząta subskrypcję', asyn
   assert.deepEqual(result, catalog);
   assert.equal(requests, 1);
   assert.equal(auth.listenerCount(), 0);
+});
+
+test('304 używa katalogu zapisanego dla bieżącej sesji', async () => {
+  const auth = session();
+  const signal = new AbortController().signal;
+  let cached;
+  const url = 'https://stores.example.invalid/functions/v1/store-catalog';
+  await fetchCatalog(url, auth, signal, async () => Response.json(catalog, {
+    headers: { ETag: '"v1"' },
+  }), null, value => { cached = value; });
+  assert.deepEqual(cached, { etag: '"v1"', catalog });
+
+  const result = await fetchCatalog(url, auth, signal, async (_, init) => {
+    assert.equal(init.headers['If-None-Match'], '"v1"');
+    assert.equal(init.headers.Authorization, 'Bearer first-token');
+    return new Response(null, { status: 304 });
+  }, cached);
+  assert.deepEqual(result, catalog);
 });
 
 test('bez normalnej sesji żądanie nie wychodzi do API', async () => {

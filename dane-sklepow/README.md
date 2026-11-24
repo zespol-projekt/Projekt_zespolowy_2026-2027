@@ -10,10 +10,8 @@ zaliczone; podział nadal wynosi **7753 gotowe / 580 do weryfikacji**.
 To kontrola zapisanej migawki, bez nowego pobierania i bez potwierdzenia bieżącego otwarcia placówek.
 [Audyt całego projektu](../smart_cart/docs/stan-projektu.md) rozróżnia ten katalog od bazy produktów i cen Supabase.
 
-Kod serwera HTTP i jego testy są w `smart_cart/server/serwer-mapy.mjs` oraz `smart_cart/tests/server.test.mjs`. Serwer uruchamia się z katalogu `smart_cart` poleceniem `npm.cmd run server`, a kontrolę danych bez uruchamiania serwera wykonuje `npm.cmd run server:check`. Domyślnie odczytuje `gotowe/sklepy.json` z tego katalogu. Można zmienić położenie danych przez `SMARTCART_DATA_DIR` w `smart_cart/.env.local`. Dane nie są importowane do pakietu Expo — aplikacja otrzymuje gotowy katalog przez API.
+Polecenie `npm.cmd run stores:check` w katalogu `smart_cart` sprawdza plik `gotowe/sklepy.json`. Aplikacja pobiera opublikowany katalog przez funkcję Supabase `store-catalog`.
 
-Obecne API wymaga sesji potwierdzonego użytkownika Supabase dla `GET` i `HEAD /v1/stores`.
-Publiczny `/health` oraz `server:check` pozwalają sprawdzić dane bez logowania.
 `public.stores` w bazie produktów oznacza sieci handlowe, nie te pojedyncze placówki.
 Nie ma automatycznej synchronizacji między tym katalogiem a zdalną bazą cen.
 
@@ -310,7 +308,7 @@ w dowodach. Nie są weryfikacją wejścia do sklepu ani potwierdzeniem jego otwa
 Poprawki zawierają oznaczenie **© OpenStreetMap contributors**, licencję **ODbL-1.0**
 oraz odnośnik do https://www.openstreetmap.org/copyright.
 
-Narzędzia przygotowania danych nie zmieniają kodu aplikacji. Mapa korzysta z gotowego katalogu udostępnianego przez serwer w `smart_cart/server/`.
+Narzędzia przygotowania danych nie zmieniają kodu aplikacji. Mapa korzysta z gotowego katalogu udostępnianego przez funkcję Supabase `store-catalog`.
 
 ### Przegląd 43 pozostałych Biedronek
 
