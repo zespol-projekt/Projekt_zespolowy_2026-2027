@@ -141,7 +141,7 @@ test('menu zamyka się Escape i tłem, zachowuje trasę i focus; motyw działa p
   await page.keyboard.press('Escape');
   await expect(panel).toBeHidden();
   await page.emulateMedia({ colorScheme: 'light' });
-  const cartHeading = page.getByRole('heading', { name: 'Koszyk', exact: true });
+  const cartHeading = page.getByRole('heading', { name: 'Twój Koszyk', exact: true });
   await expect(cartHeading).toHaveCSS('color', 'rgb(21, 45, 67)');
   await page.emulateMedia({ colorScheme: 'dark' });
   await expect(cartHeading).toHaveCSS('color', 'rgb(237, 244, 239)');

@@ -1,6 +1,6 @@
 import { useTheme } from '@/features/theme/ThemeProvider';
 import type { ThemeColors } from '@/features/theme/palette';
-import { useMemo, type PropsWithChildren } from 'react';
+import { useMemo, type PropsWithChildren, type ReactNode } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, TextInput, View, type TextInputProps } from 'react-native';
 
 export function Screen({ title, children }: PropsWithChildren<{ title: string }>) {
@@ -9,15 +9,15 @@ export function Screen({ title, children }: PropsWithChildren<{ title: string }>
     <Text accessibilityRole="header" style={ui.title}>{title}</Text>{children}
   </ScrollView>;
 }
-export function Button({ title, onPress, disabled = false, busy = false, secondary = false }: {
-  title: string; onPress: () => void; disabled?: boolean; busy?: boolean; secondary?: boolean;
+export function Button({ title, onPress, disabled = false, busy = false, secondary = false, icon }: {
+  title: string; onPress?: () => void; disabled?: boolean; busy?: boolean; secondary?: boolean; icon?: ReactNode;
 }) {
   const ui = useUI();
   const { colors } = useTheme();
   return <Pressable accessibilityRole="button" accessibilityLabel={title} disabled={disabled || busy}
     accessibilityState={{ disabled: disabled || busy, busy }} onPress={onPress}
     style={[ui.button, secondary && ui.secondary, (disabled || busy) && ui.disabled]}>
-    {busy && <ActivityIndicator color={secondary ? colors.link : colors.onPrimary} />}
+    {busy ? <ActivityIndicator color={secondary ? colors.link : colors.onPrimary} /> : icon}
     <Text style={[ui.buttonText, secondary && ui.secondaryText]}>{title}</Text>
   </Pressable>;
 }

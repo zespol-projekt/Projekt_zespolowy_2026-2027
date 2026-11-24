@@ -13,14 +13,17 @@ import { useShopping } from './ShoppingProvider';
 
 const first = (value: string | string[] | undefined) => Array.isArray(value) ? value[0] ?? '' : value ?? '';
 export default function CatalogScreen() {
-  const params = useLocalSearchParams<{ category?: string; subcategory?: string; q?: string }>();
+  const params = useLocalSearchParams<{ category?: string; subcategory?: string; q?: string; listId?: string }>();
   const session = useSessionKey();
   const category = first(params.category); const subcategory = first(params.subcategory); const query = first(params.q);
-  return session ? <Catalog key={`${session}:${category}:${subcategory}:${query}`} categorySlug={category} subcategorySlug={subcategory} initialQuery={query} /> : null;
+  return session ? <Catalog key={`${session}:${category}:${subcategory}:${query}:${params.listId ?? ''}`}
+    categorySlug={category} subcategorySlug={subcategory} initialQuery={query} listId={params.listId} /> : null;
 }
 
 const verificationText: Record<Verification, string> = { reviewed: 'Grupy sprawdzone', in_progress: 'Dane w trakcie porządkowania', preliminary: 'Dane wstępne' };
-function Catalog({ categorySlug, subcategorySlug, initialQuery }: { categorySlug: string; subcategorySlug: string; initialQuery: string }) {
+function Catalog({ categorySlug, subcategorySlug, initialQuery, listId }: {
+  categorySlug: string; subcategorySlug: string; initialQuery: string; listId?: string;
+}) {
   const ui = useUI();
   const tree = useSessionQuery(catalogV1Api.tree, []);
   const [query, setQuery] = useState(initialQuery);
@@ -43,7 +46,8 @@ function Catalog({ categorySlug, subcategorySlug, initialQuery }: { categorySlug
   const page = waiting ? undefined : result.data;
   const inResults = !!query.trim() || !!subcategory;
   const favoriteIds = favorites.data ? new Set(favorites.data.map(row => row.group_id)) : null;
-  const navigate = (category = '', subcategory = '') => router.push({ pathname: '/products', params: { catalog: '1', category, subcategory } });
+  const navigate = (category = '', subcategory = '') => router.push({ pathname: '/products',
+    params: { catalog: '1', category, subcategory, ...(listId !== undefined && { listId }) } });
 
   return <Screen title="Katalog kategorii">
     <View>
@@ -86,10 +90,10 @@ function Catalog({ categorySlug, subcategorySlug, initialQuery }: { categorySlug
         {page.items.length > 0 && <>
           {shopping.loading && <ActivityIndicator accessibilityLabel="Wczytywanie list zakupów" />}
           {shopping.error && <><Notice>{shopping.error}</Notice><CatalogButton title="Ponów pobieranie list" onPress={shopping.reload} /></>}
-          {shopping.lists.length > 1 && <View style={ui.row}>{shopping.lists.map(list => <CatalogButton key={list.id} title={`Wybierz listę: ${list.name}`} label={list.name}
+          {listId === undefined && shopping.lists.length > 1 && <View style={ui.row}>{shopping.lists.map(list => <CatalogButton key={list.id} title={`Wybierz listę: ${list.name}`} label={list.name}
             secondary={list.id !== shopping.activeId} disabled={shopping.loading || !!shopping.error} onPress={() => shopping.select(list.id)} />)}</View>}
           {favorites.error && <><Notice>Nie udało się sprawdzić Ulubionych.</Notice><CatalogButton title="Ponów sprawdzanie ulubionych" onPress={favorites.reload} /></>}
-          {page.items.map(item => <CatalogItemCard key={item.group_id} item={item}
+          {page.items.map(item => <CatalogItemCard key={item.group_id} item={item} listId={listId}
             favorite={favorites.loading || favorites.error || !favoriteIds ? undefined : favoriteIds.has(item.group_id)} onFavoriteChanged={favorites.reload}
             quantity={drafts.quantities[`${item.group_id}:${item.unit}`] ?? ''} onQuantityChanged={value => drafts.change(`${item.group_id}:${item.unit}`, value)} />)}
         </>}

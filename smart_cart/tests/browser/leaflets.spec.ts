@@ -22,12 +22,9 @@ async function fixture(page: Page) {
   });
 }
 
-async function showReaderControls(page: Page) {
-  await page.getByRole('button', { name: 'Pokaż sterowanie gazetką', exact: true }).click({ position: { x: 10, y: 10 } });
-}
 
 for (const [chain, name] of [['biedronka', 'Biedronka'], ['lidl', 'Lidl']] as const) {
-  test(`${name}: po zamknięciu gazetki jedno Wróć wraca na Start`, async ({ page }) => {
+  test(`${name}: po zamknięciu gazetki cofnięcie przeglądarki wraca na Start`, async ({ page }) => {
     await fixture(page);
     const template = catalog().leaflets[0];
     await page.route(`${AUTH_URL}/functions/v1/leaflets`, route => route.fulfill({ json: { version: 1, leaflets: [
@@ -44,7 +41,7 @@ for (const [chain, name] of [['biedronka', 'Biedronka'], ['lidl', 'Lidl']] as co
         await page.getByRole('button', { name: 'Zamknij gazetkę' }).click();
         await expect(page).toHaveURL(new RegExp(`/leaflets\\?chain=${chain}$`));
       }
-      await page.getByRole('button', { name: 'Wróć', exact: true }).click();
+      await page.goBack();
       await expect(page).toHaveURL(/\/$/);
       await expect(page.getByTestId('home-grid')).toBeVisible();
     }
@@ -67,16 +64,16 @@ test('każdy kafelek na Start otwiera gazetki swojej marki, a czytnik do nich wr
   for (const [id, name] of brands) {
     await page.getByRole('link', { name: `Gazetki: ${name}`, exact: true }).click();
     await expect(page).toHaveURL(new RegExp(`/leaflets\\?chain=${id}$`));
-    await expect(page.getByRole('heading', { name: `Gazetki – ${name}` })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Gazetki', exact: true })).toBeVisible();
+    await expect(page.getByRole('img', { name, exact: true })).toBeVisible();
     await expect(page.getByRole('button', { name: /^Czytaj:/ })).toHaveCount(1);
     await expect(page.getByRole('button', { name: `Czytaj: Oferta ${name}` })).toBeVisible();
     if (id === 'carrefour') {
       await page.getByRole('button', { name: 'Czytaj: Oferta Carrefour' }).click();
       await expect(page.getByRole('img', { name: 'Strona 1 gazetki' })).toBeVisible();
       await page.getByRole('button', { name: 'Zamknij gazetkę' }).click();
-      await expect(page.getByRole('heading', { name: 'Gazetki – Carrefour' })).toBeVisible();
-      await page.getByRole('button', { name: 'Wszystkie sieci' }).click();
-      await expect(page.getByRole('button', { name: /^Czytaj:/ })).toHaveCount(5);
+      await expect(page.getByRole('heading', { name: 'Gazetki', exact: true })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Wszystkie sieci' })).toHaveCount(0);
     }
     await page.getByRole('tab', { name: 'Start', exact: true }).click();
     await expect(page).toHaveURL(/\/$/);
@@ -86,21 +83,20 @@ test('każdy kafelek na Start otwiera gazetki swojej marki, a czytnik do nich wr
 test('czytnik: pełne okno, daty, strony, zoom, reload i zamknięcie', async ({ page }, info) => {
   await fixture(page); const requests: string[] = [];
   page.on('request', request => { if (request.url().startsWith('https://leaflets.example.invalid')) requests.push(request.url()); });
-  await page.goto('/leaflets');
-  await page.getByRole('button', { name: 'Sieć testowa', exact: true }).click();
-  await expect(page.getByText('Obowiązuje: 01.11.2026 – 20.11.2026')).toBeVisible();
+  await page.goto('/leaflets?chain=test');
+  await expect(page.getByText('01.11.2026 – 20.11.2026', { exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Czytaj: Gazetka testowa' }).locator('img')).toBeVisible();
   await page.getByRole('button', { name: 'Czytaj: Gazetka testowa' }).click();
   await expect(page.getByRole('img', { name: 'Strona 1 gazetki' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Otwórz menu' })).toHaveCount(0);
   await expect(page.getByRole('tab')).toHaveCount(0);
-  await expect(page.getByRole('button', { name: 'Następna strona' })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Poprzednia strona' })).toBeDisabled();
+  await expect(page.getByRole('button', { name: 'Następna strona' })).toBeEnabled();
   const close = page.getByRole('button', { name: 'Zamknij gazetkę' });
   await expect(close).toBeFocused();
   const closeBox = (await close.boundingBox())!;
   expect(closeBox.x).toBeGreaterThan(300);
   expect(closeBox.y).toBeLessThan(30);
-  await showReaderControls(page);
   expect(requests.length).toBeGreaterThanOrEqual(2); // Cover and the reader use the first page, never preload the whole leaflet.
   expect(requests.every(url => url.endsWith('/page-1.png'))).toBe(true);
   await page.getByRole('button', { name: 'Następna strona' }).click();
@@ -108,15 +104,13 @@ test('czytnik: pełne okno, daty, strony, zoom, reload i zamknięcie', async ({ 
   await expect(picture).toBeVisible();
   const before = await picture.boundingBox();
   await page.getByRole('button', { name: 'Powiększ', exact: true }).click();
-  await expect(page.getByText('Strona 2 z 3 · 150%')).toBeVisible();
+  await expect(page.getByTestId('leaflet-page-counter')).toHaveText('2/3');
   expect((await picture.boundingBox())!.width).toBeGreaterThan(before!.width * 1.4);
   await page.getByRole('button', { name: 'Pomniejsz', exact: true }).click();
-  await page.getByRole('button', { name: 'Ukryj sterowanie gazetką' }).click({ position: { x: 10, y: 10 } });
   await page.screenshot({ path: info.outputPath('reader.png'), fullPage: true });
   await page.reload();
   await expect(page.getByRole('img', { name: 'Strona 2 gazetki' })).toBeVisible();
-  await showReaderControls(page);
-  await expect(page.getByText('Strona 2 z 3 · 100%')).toBeVisible();
+  await expect(page.getByTestId('leaflet-page-counter')).toHaveText('2/3');
   await page.getByRole('button', { name: 'Zamknij gazetkę' }).click();
   await expect(page.getByRole('button', { name: 'Czytaj: Gazetka testowa' })).toBeVisible();
 });
@@ -146,10 +140,10 @@ test('kafelki pokazują pierwszą stronę i datę; pomijają przyszłe i zakońc
     { ...template, id: 'future', title: 'Przyszła', validFrom: '2026-11-16' },
   ] } }));
   await page.setViewportSize({ width: 320, height: 900 });
-  await page.goto('/leaflets');
+  await page.goto('/leaflets?chain=test');
   const tile = page.getByRole('button', { name: 'Czytaj: Gazetka testowa', exact: true });
   await expect(tile.locator('img')).toBeVisible();
-  await expect(tile).toContainText('Obowiązuje: 01.11.2026 – 20.11.2026');
+  await expect(tile).toHaveText('01.11.2026 – 20.11.2026');
   await expect(page.getByRole('button', { name: /^Czytaj:/ })).toHaveCount(1);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await page.screenshot({ path: info.outputPath('leaflet-tiles-320.png'), fullPage: true });
@@ -161,14 +155,14 @@ test('miniatura: błąd pobierania, ponowienie i pusta lista aktualnych gazetek'
   await fixture(page);
   let broken = true;
   await page.route(image(1).url, route => broken ? route.fulfill({ status: 500 }) : route.fallback());
-  await page.goto('/leaflets');
+  await page.goto('/leaflets?chain=test');
   await expect(page.getByText('Podgląd niedostępny. Możesz otworzyć gazetkę.')).toBeVisible();
   broken = false;
   await page.getByRole('button', { name: 'Ponów pobranie miniatury' }).click();
   await expect(page.getByRole('button', { name: 'Czytaj: Gazetka testowa' }).locator('img')).toBeVisible();
   await page.route(`${AUTH_URL}/functions/v1/leaflets`, route => route.fulfill({ json: { version: 1, leaflets: [] } }));
-  await page.getByRole('button', { name: 'Odśwież gazetki' }).click();
-  await expect(page.getByText('Brak aktualnych gazetek. Sprawdź ponownie później.')).toBeVisible();
+  await page.reload();
+  await expect(page.getByText('Brak aktualnych gazetek tej sieci.')).toBeVisible();
   await expect(page.getByRole('button', { name: /^Czytaj:/ })).toHaveCount(0);
 });
 
@@ -176,7 +170,6 @@ test('czytnik: przesuwanie stron, granice gazetki i zachowanie po powiększeniu'
   await fixture(page);
   await page.goto('/leaflets/test-1');
   await expect(page.getByRole('img', { name: 'Strona 1 gazetki' })).toBeVisible();
-  await showReaderControls(page);
   const swipe = async (direction: 'left' | 'right') => {
     const box = (await page.getByTestId('leaflet-page-viewport').boundingBox())!;
     const from = direction === 'left' ? 0.8 : 0.2;
@@ -187,19 +180,18 @@ test('czytnik: przesuwanie stron, granice gazetki i zachowanie po powiększeniu'
     await page.mouse.up();
   };
   await swipe('right');
-  await expect(page.getByText('Strona 1 z 3 · 100%')).toBeVisible();
+  await expect(page.getByTestId('leaflet-page-counter')).toHaveText('1/3');
   await swipe('left');
   await expect(page.getByRole('img', { name: 'Strona 2 gazetki' })).toBeVisible();
   await expect(page).toHaveURL(/page=2/);
   await page.getByRole('button', { name: 'Powiększ', exact: true }).click();
   await swipe('left');
-  await expect(page.getByText('Strona 2 z 3 · 150%')).toBeVisible();
+  await expect(page.getByTestId('leaflet-page-counter')).toHaveText('2/3');
   await page.getByRole('button', { name: 'Pomniejsz', exact: true }).click();
   await swipe('left');
   await expect(page.getByRole('img', { name: 'Strona 3 gazetki' })).toBeVisible();
   await swipe('left');
-  await expect(page.getByText('Strona 3 z 3 · 100%')).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Następna strona' })).toBeDisabled();
+  await expect(page.getByTestId('leaflet-page-counter')).toHaveText('3/3');
   await swipe('right');
   await expect(page.getByRole('img', { name: 'Strona 2 gazetki' })).toBeVisible();
 });
@@ -232,6 +224,45 @@ test('czytnik: gest dotykowy zmienia stronę', async ({ page }) => {
   await cdp.detach();
 });
 
+test('czytnik powiększa i pomniejsza stronę gestem dwóch palców', async ({ page }) => {
+  await fixture(page);
+  await page.goto('/leaflets/test-1');
+  const image = page.getByRole('img', { name: 'Strona 1 gazetki' });
+  await expect(image).toBeVisible();
+  const initialWidth = (await image.boundingBox())!.width;
+  const box = (await page.getByTestId('leaflet-page-viewport').boundingBox())!;
+  const cdp = await page.context().newCDPSession(page);
+  await cdp.send('Emulation.setTouchEmulationEnabled', { enabled: true, maxTouchPoints: 2 });
+  const points = (radius: number) => [-1, 1].map((direction, id) => ({
+    id, x: box.x + box.width / 2 + direction * radius, y: box.y + box.height / 2,
+  }));
+  let previousWidth = initialWidth;
+  for (const [start, end] of [[28, 75], [28, 95], [105, 12]]) {
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: points(start) });
+    for (let step = 1; step <= 8; step++) {
+      await cdp.send('Input.dispatchTouchEvent', {
+        type: 'touchMove', touchPoints: points(start + (end - start) * step / 8),
+      });
+    }
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    if (end > start) await expect.poll(async () => (await image.boundingBox())?.width ?? 0).toBeGreaterThan(previousWidth + 10);
+    else await expect.poll(async () => (await image.boundingBox())?.width ?? 0).toBeCloseTo(initialWidth, 0);
+    previousWidth = (await image.boundingBox())!.width;
+  }
+  const y = box.y + 70;
+  for (const [start, end, pageNumber] of [[0.8, 0.2, 2], [0.2, 0.8, 1]]) {
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: box.x + box.width * start, y }] });
+    for (let step = 1; step <= 12; step++) {
+      await cdp.send('Input.dispatchTouchEvent', {
+        type: 'touchMove', touchPoints: [{ x: box.x + box.width * (start + (end - start) * step / 12), y }],
+      });
+    }
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await expect(page.getByRole('img', { name: `Strona ${pageNumber} gazetki` })).toBeVisible();
+  }
+  await cdp.detach();
+});
+
 test('pełne okno gazetki: klawiatura, Escape i mały ekran', async ({ page }) => {
   await fixture(page);
   await page.setViewportSize({ width: 320, height: 480 });
@@ -254,7 +285,7 @@ test('pełne okno gazetki: klawiatura, Escape i mały ekran', async ({ page }) =
   await expect(picture).toBeVisible();
   await expect(counter).toHaveText('1/3');
   await page.keyboard.press('Escape');
-  await expect(page).toHaveURL(/\/leaflets$/);
+  await expect(page).toHaveURL(/\/$/);
   await expect(page.getByRole('button', { name: 'Zamknij gazetkę' })).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'Otwórz menu' })).toBeVisible();
 });
@@ -269,7 +300,7 @@ test('kafelki: wygasły podpis miniatury jest odświeżany; siatka działa w cie
   });
   await page.route(`${image(1).url}?token=expired`, route => route.fulfill({ status: 403 }));
   await page.setViewportSize({ width: 1100, height: 1000 });
-  await page.goto('/leaflets');
+  await page.goto('/leaflets?chain=test');
   const first = page.getByRole('button', { name: 'Czytaj: Gazetka testowa', exact: true });
   const second = page.getByRole('button', { name: 'Czytaj: Druga gazetka', exact: true });
   await expect(first.locator('img')).toBeVisible();

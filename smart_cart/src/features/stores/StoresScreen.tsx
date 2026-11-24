@@ -102,18 +102,14 @@ export default function StoresScreen() {
     } : undefined}>
     <View ref={searchRow} style={styles.searchRow}>
       <SearchField containerStyle={styles.search} placeholder="Miasto lub adres sklepu"
+        submit={showResults} submitLabel="Pokaż wyniki na mapie" submitDisabled={!filtered.length}
         accessibilityLabel="Miasto lub adres sklepu" value={query}
         onFocus={() => setSuggestionsOpen(true)}
         onChangeText={text => { setQuery(text); setSuggestionsOpen(true); }}
-        onKeyPress={({ nativeEvent }) => { if (nativeEvent.key === 'Escape') setSuggestionsOpen(false); }}
-        onSubmitEditing={showResults}>
+        onKeyPress={({ nativeEvent }) => { if (nativeEvent.key === 'Escape') setSuggestionsOpen(false); }}>
         {!!query && <Pressable style={styles.searchAction} onPress={() => setQuery('')} accessibilityRole="button" accessibilityLabel="Wyczyść wyszukiwanie">
           <Text style={styles.clear}>×</Text>
         </Pressable>}
-        <Pressable style={styles.searchAction} onPress={showResults} accessibilityRole="button" accessibilityLabel="Pokaż wyniki na mapie"
-          disabled={!filtered.length} accessibilityState={{ disabled: !filtered.length }}>
-          <Text style={styles.searchButton}>Szukaj</Text>
-        </Pressable>
       </SearchField>
       <Pressable style={[styles.locationButton, requesting && styles.disabled]} onPress={showMyLocation}
         accessibilityRole="button" accessibilityLabel="Moja lokalizacja" accessibilityState={{ disabled: requesting, busy: requesting }} disabled={requesting}>
@@ -204,9 +200,9 @@ const createStyles = (colors: ThemeColors) => StyleSheet.create({
   compactSuggestions: { maxHeight: 134 },
   suggestion: { minHeight: 44, justifyContent: 'center', paddingHorizontal: 12, paddingVertical: 6 },
   suggestionText: { color: colors.text, fontSize: 14, fontWeight: '600' },
-  search: { flex: 1, minWidth: 0, paddingRight: 4, gap: 2 },
+  search: { flex: 1, minWidth: 0 },
   searchAction: { minHeight: 44, justifyContent: 'center', alignItems: 'center', paddingHorizontal: 8 },
-  searchButton: { color: colors.link, fontSize: 13, fontWeight: '700' }, clear: { fontSize: 24, color: colors.muted, lineHeight: 26 },
+  clear: { fontSize: 24, color: colors.muted, lineHeight: 26 },
   notice: { padding: 10, borderRadius: 12, backgroundColor: colors.warning, flexDirection: 'row', alignItems: 'center', gap: 10 },
   noticeText: { flex: 1, color: colors.warningText, fontSize: 12, lineHeight: 17 },
   mapFrame: { flex: 1, minHeight: 220, borderRadius: 20, overflow: 'hidden', borderWidth: 1, borderColor: colors.border, position: 'relative', backgroundColor: colors.input },

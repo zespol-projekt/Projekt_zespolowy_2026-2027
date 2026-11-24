@@ -22,27 +22,29 @@ export function OfferInfo({ offer }: { offer: Offer & { price_source?: string | 
     {offer.verified_promotion && offer.promo_rule?.requires_card && <Text style={ui.muted}>Wymaga karty lub aplikacji sieci.</Text>}
   </View>;
 }
-export function GroupDetails({ group, onClose }: { group: ProductGroup; onClose: () => void }) {
+export function GroupDetails({ group, onClose, listId }: { group: ProductGroup; onClose: () => void; listId?: string }) {
   const ui = useUI();
   const [quantity, setQuantity] = useState(String(group.default_quantity ?? (group.unit === 'szt' ? 1 : 1000)));
   const [offset, setOffset] = useState(0);
   const offers = useSessionQuery(signal => catalogApi.offers(group.id, signal, offset), [group.id, offset]);
   const action = useSessionAction();
   const shopping = useShopping();
+  const target = shopping.lists.find(list => list.id === (listId ?? shopping.activeId));
+  const cannotAdd = shopping.loading || !!shopping.error || (listId !== undefined && !target);
   const favorites = useSessionQuery(catalogApi.favorites, []);
   const isFavorite = favorites.data?.some(row => row.group_id === group.id) ?? false;
   const add = (productId: number | null) => void action.run(async signal => {
     const parsed = quantityInput(quantity, group.unit);
-    await shopping.add(group.id, parsed, group.unit, productId, signal);
+    await shopping.add(group.id, parsed, group.unit, productId, signal, listId);
   }, () => action.setMessage('Dodano do listy zakupów.'));
   return <View style={ui.card}>
     <Text accessibilityRole="header" style={ui.heading}>{group.name}</Text>
     <Text style={ui.muted}>Dobierzemy najtańszy równoważny produkt. Konkretny produkt możesz wybrać poniżej.</Text>
     <Field label={`Potrzebna ilość (${group.unit})`} value={quantity} onChangeText={setQuantity} keyboardType="decimal-pad" />
     <Text style={ui.muted}>{quantityHelp[group.unit]}</Text>
-    <Text style={ui.muted}>Lista: {shopping.lists.find(l => l.id === shopping.activeId)?.name ?? 'Nowa lista Zakupy'}</Text>
-    {shopping.lists.length > 1 && <View style={ui.row}>{shopping.lists.map(list => <Button key={list.id} title={list.name} secondary={list.id !== shopping.activeId} onPress={() => shopping.select(list.id)} />)}</View>}
-    <Button title="Dodaj do listy — najtańszy odpowiednik" busy={action.busy} disabled={shopping.loading || !!shopping.error} onPress={() => add(null)} />
+    <Text style={ui.muted}>Lista: {target?.name ?? (listId === undefined ? 'Nowa lista Zakupy' : 'Wybrana lista jest niedostępna')}</Text>
+    {listId === undefined && shopping.lists.length > 1 && <View style={ui.row}>{shopping.lists.map(list => <Button key={list.id} title={list.name} secondary={list.id !== shopping.activeId} onPress={() => shopping.select(list.id)} />)}</View>}
+    <Button title="Dodaj do listy — najtańszy odpowiednik" busy={action.busy} disabled={cannotAdd} onPress={() => add(null)} />
     <Button title={isFavorite ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'} secondary disabled={action.busy || favorites.loading} onPress={() => void action.run(signal => catalogApi.favorite(group.id, !isFavorite, signal), favorites.reload)} />
     {action.message && <Notice>{action.message}</Notice>}
     {shopping.error && <Notice>{shopping.error}</Notice>}
@@ -52,7 +54,7 @@ export function GroupDetails({ group, onClose }: { group: ProductGroup; onClose:
     {!offers.loading && offers.data?.length === 0 && <Text style={ui.text}>Brak ofert w bazie.</Text>}
     {offers.data?.map(offer => <View key={offer.offer_id} style={ui.card}>
       <OfferInfo offer={offer} />
-      <Button secondary title={`Dodaj ten produkt: ${offer.product_name}`} disabled={action.busy || shopping.loading || !!shopping.error} onPress={() => add(offer.product_id)} />
+      <Button secondary title={`Dodaj ten produkt: ${offer.product_name}`} disabled={action.busy || cannotAdd} onPress={() => add(offer.product_id)} />
     </View>)}
     <View style={ui.row}>
       {offset > 0 && <Button secondary title="Poprzednie oferty" onPress={() => setOffset(Math.max(0, offset - 50))} />}

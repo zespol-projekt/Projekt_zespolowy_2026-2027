@@ -54,23 +54,17 @@ async function setup(page: Page) {
   return state;
 }
 
-test('wyszukiwanie normalizuje polskie znaki i procenty, a 404 zachowuje ulubioną grupę', async ({ page }) => {
+test('brak ofert zachowuje ulubioną grupę na liście', async ({ page }) => {
   const state = await setup(page);
   state.groups = [{ ...milk, name: 'Żółte mleko 3,2%' }, eggs];
   await page.route(`${AUTH_URL}/rest/v1/rpc/catalog_group`, route => route.fulfill({ status: 404, json: { code: 'PT404', message: 'Nie ma takiej grupy.' } }));
   await page.goto('/favorites');
-  const search = page.getByRole('textbox', { name: 'Szukaj w Ulubionych' });
-  await search.fill('ZOLTE mleko 3.2%');
   await page.getByRole('button', { name: 'Produkty i ceny: Żółte mleko 3,2%' }).click();
   await expect(page.getByText('Brak ofert w tej chwili.', { exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Usuń z ulubionych: Żółte mleko 3,2%' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Ponów pobieranie ofert' })).not.toBeVisible();
-  await expect(page.getByRole('button', { name: `Produkty i ceny: ${eggs.name}` })).not.toBeVisible();
   expect(state.deletes).toEqual([]);
-  await search.fill('nieistniejąca');
-  await expect(page.getByText('Brak ulubionych pasujących do wyszukiwania.')).toBeVisible();
-  await expect(page.getByText('Nie masz jeszcze ulubionych grup.')).not.toBeVisible();
-  await search.fill('');
+  await expect(page.getByText('Trochę tu pusto. Wyszukaj produkt i dodaj go do ulubionych.')).not.toBeVisible();
   await expect(page.getByRole('button', { name: `Produkty i ceny: ${eggs.name}` })).toBeVisible();
 });
 
@@ -144,20 +138,21 @@ test('ilość sztuk jest całkowita, a drugi zapis jest blokowany podczas żąda
   expect(state.saved).toHaveLength(1);
 });
 
-test('błąd pobierania nie udaje pustej listy, a ponowienie i pusty widok prowadzą do katalogu', async ({ page }) => {
+test('błąd pobierania pokazuje ponowienie, a pusta lista pokazuje komunikat', async ({ page }) => {
   const state = await setup(page);
   state.favoriteError = true;
   await page.goto('/favorites');
   await expect(page.getByRole('button', { name: 'Ponów pobieranie ulubionych' })).toBeVisible();
-  await expect(page.getByText('Nie masz jeszcze ulubionych grup.')).not.toBeVisible();
+  await expect(page.getByText('Trochę tu pusto. Wyszukaj produkt i dodaj go do ulubionych.')).not.toBeVisible();
   await expect(page.getByText('PRIVATE_BACKEND_DETAIL')).not.toBeVisible();
   state.favoriteError = false;
   await page.getByRole('button', { name: 'Ponów pobieranie ulubionych' }).click();
   await expect(page.getByRole('button', { name: `Usuń z ulubionych: ${milk.name}` })).toBeVisible();
   state.groups = [];
-  await page.getByRole('button', { name: 'Odśwież ulubione' }).click();
-  await expect(page.getByText('Nie masz jeszcze ulubionych grup.')).toBeVisible();
-  await page.getByRole('link', { name: 'Przejdź do katalogu →' }).click();
+  await page.reload();
+  await expect(page.getByText('Trochę tu pusto. Wyszukaj produkt i dodaj go do ulubionych.')).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Przejdź do wyszukiwarki produktów' })).toHaveCount(0);
+  await page.getByRole('tab', { name: 'Szukaj', exact: true }).click();
   await expect(page).toHaveURL(/\/products$/);
 });
 

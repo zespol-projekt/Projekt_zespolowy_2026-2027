@@ -1,12 +1,14 @@
 import { useRef, useState, type ComponentRef } from 'react';
+import { SymbolView } from 'expo-symbols';
 import { ActivityIndicator, Keyboard, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Field, Notice, useUI } from '@/components/ui/Controls';
+import { favoriteTileSize } from './EmptyProductGuide';
 import { catalogApi } from './api';
 import { CatalogProductCard } from './CatalogProductCard';
 import { catalogV1Api, CatalogNotFound } from './catalogV1Api';
 import { useSessionAction, useSessionQuery } from './hooks';
 import { useShopping } from './ShoppingProvider';
-import { amount, quantityHelp, quantityInput, type ProductGroup } from './types';
+import { amount, money, quantityHelp, quantityInput, type ProductGroup } from './types';
 
 type FavoriteGroup = Pick<ProductGroup, 'id' | 'name' | 'unit'>;
 
@@ -25,6 +27,18 @@ export function FavoriteRow({ group, onRemoved, disabled }: {
   const shopping = useShopping();
   const locked = disabled || action.busy;
   const formVisible = adding || expanded;
+  const offers = useSessionQuery(async signal => {
+    try {
+      const result = await catalogV1Api.group(group.id, signal);
+      if (result.group.group_id !== group.id) throw new Error('Nieprawidłowa grupa w odpowiedzi katalogu.');
+      return result;
+    } catch (error) {
+      if (error instanceof CatalogNotFound) return null;
+      throw error;
+    }
+  }, [group.id]);
+  const summary = offers.data?.group;
+  const price = summary?.price_from;
   const closeOffers = () => {
     setExpanded(false);
     Keyboard.dismiss();
@@ -37,17 +51,21 @@ export function FavoriteRow({ group, onRemoved, disabled }: {
     return `Dodano ${amount(parsed, group.unit)} do listy: ${targetName}.`;
   }, action.setMessage);
 
-  return <View style={[ui.card, styles.card]}>
-    <View style={styles.header}>
+  return <View style={[ui.card, styles.card, !formVisible && favoriteTileSize]}>
+    <View style={[styles.header, !formVisible && styles.compact]}>
       <Pressable ref={groupButton} accessibilityRole="button" accessibilityLabel={`Produkty i ceny: ${group.name}`}
         aria-expanded={expanded}
         accessibilityState={{ expanded, disabled: locked }} disabled={locked}
-        onPress={() => setExpanded(value => !value)} style={({ pressed }) => [styles.group, pressed && ui.disabled]}>
-        <View style={styles.icon} aria-hidden><Text allowFontScaling={false} style={styles.iconText}>▦</Text></View>
-        <View style={styles.name}>
-          <Text style={ui.heading}>{group.name}</Text>
-          <Text style={ui.muted}>{expanded ? 'Zwiń produkty i ceny' : 'Zobacz produkty i ceny'}</Text>
+        onPress={() => { if (!expanded) offers.reload(); setExpanded(!expanded); }}
+        style={({ pressed }) => [styles.group, !formVisible && styles.compact, pressed && ui.disabled]}>
+        <View style={[styles.photo, !formVisible && styles.compact]}>
+          <SymbolView name={{ ios: 'shippingbox', android: 'inventory_2', web: 'inventory_2' }}
+            size={42} tintColor={ui.muted.color} style={{ opacity: 0.42 }} />
         </View>
+        <Text numberOfLines={formVisible ? undefined : 1} style={ui.heading}>{group.name}</Text>
+        <Text numberOfLines={formVisible ? undefined : 1} style={[ui.text, { fontWeight: '700' }]}>
+          {price ? `Od ${money(price.unit_price)} / ${price.unit_price_per}` : offers.loading ? 'Wczytywanie ceny…' : 'Brak ceny'}
+        </Text>
       </Pressable>
       <Pressable accessibilityRole="button" accessibilityLabel={`Usuń z ulubionych: ${group.name}`}
         aria-busy={action.busy}
@@ -87,32 +105,24 @@ export function FavoriteRow({ group, onRemoved, disabled }: {
       {shopping.error && <><Notice>{shopping.error}</Notice><FavoriteButton secondary title="Ponów pobieranie list" onPress={shopping.reload} disabled={locked || shopping.loading} /></>}
     </View>}
     {action.message && <Notice>{action.message}</Notice>}
-    {expanded && <FavoriteOffers groupId={group.id} disabled={locked || shopping.loading || !!shopping.error}
+    {expanded && <FavoriteOffers offers={offers} disabled={locked || shopping.loading || !!shopping.error}
       onAdd={add} onClose={closeOffers} />}
   </View>;
 }
 
-function FavoriteOffers({ groupId, disabled, onAdd, onClose }: {
-  groupId: number; disabled: boolean; onAdd: (productId: number) => void; onClose: () => void;
+function FavoriteOffers({ offers, disabled, onAdd, onClose }: {
+  offers: ReturnType<typeof useSessionQuery<Awaited<ReturnType<typeof catalogV1Api.group>> | null>>;
+  disabled: boolean; onAdd: (productId: number) => void; onClose: () => void;
 }) {
   const ui = useUI();
   const styles = createStyles(ui);
-  const offers = useSessionQuery(async signal => {
-    try {
-      const result = await catalogV1Api.group(groupId, signal);
-      if (result.group.group_id !== groupId) throw new Error('Nieprawidłowa grupa w odpowiedzi katalogu.');
-      return result.products;
-    } catch (error) {
-      if (error instanceof CatalogNotFound) return [];
-      throw error;
-    }
-  }, [groupId]);
+  const products = offers.data?.products ?? [];
   return <View style={styles.details}>
     <Text accessibilityRole="header" style={ui.heading}>Produkty i ceny sieci</Text>
     {offers.loading && <ActivityIndicator accessibilityLabel="Wczytywanie ofert" />}
     {offers.error && <><Notice>{offers.error}</Notice><FavoriteButton secondary title="Ponów pobieranie ofert" onPress={offers.reload} disabled={disabled} /></>}
-    {!offers.loading && !offers.error && offers.data?.length === 0 && <Text style={ui.text}>Brak ofert w tej chwili.</Text>}
-    {!offers.loading && !offers.error && offers.data?.map(product => <CatalogProductCard key={product.product_id} product={product}
+    {!offers.loading && !offers.error && products.length === 0 && <Text style={ui.text}>Brak ofert w tej chwili.</Text>}
+    {!offers.loading && !offers.error && products.map(product => <CatalogProductCard key={product.product_id} product={product}
       onAdd={onAdd} disabled={disabled} />)}
     <FavoriteButton secondary title="Zwiń produkty i ceny" disabled={disabled} onPress={onClose} />
   </View>;
@@ -135,13 +145,12 @@ function FavoriteButton({ title, label = title, onPress, disabled = false, busy 
 }
 
 const createStyles = (ui: ReturnType<typeof useUI>) => StyleSheet.create({
-  card: { padding: 12, gap: 10 },
-  header: { flexDirection: 'row', alignItems: 'flex-start', gap: 8 },
-  group: { flex: 1, minWidth: 0, minHeight: 44, flexDirection: 'row', alignItems: 'center', gap: 10 },
-  name: { flex: 1, minWidth: 0, gap: 4 },
-  icon: { width: 40, height: 40, borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: ui.secondary.backgroundColor },
-  iconText: { fontSize: 26, color: ui.secondaryText.color },
-  heart: { minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center' },
+  card: { width: '100%', padding: 12, gap: 10 },
+  compact: { flex: 1, minHeight: 0 },
+  header: { position: 'relative' },
+  group: { minWidth: 0, gap: 8 },
+  photo: { height: 112, borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: ui.input.backgroundColor },
+  heart: { position: 'absolute', top: 0, right: 0, minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center' },
   heartText: { fontSize: 28, color: ui.secondaryText.color },
   details: { gap: 10 },
   button: { maxWidth: '100%', flexShrink: 1 },

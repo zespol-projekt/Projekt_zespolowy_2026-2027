@@ -1,12 +1,13 @@
 import { CART_TAB_RISE } from '@/components/navigation/BottomBar';
 import { SearchField } from '@/components/ui/SearchField';
+import { checklistIcon } from '@/components/ui/shoppingIcons';
 import { useSessionKey } from '@/features/catalog/hooks';
 import { CHAIN_LOGOS, CHAIN_TILE_COLORS, CHAIN_TILE_RADIUS } from '@/features/stores/chainLogos';
 import { BRANDS, CHAINS } from '@/features/stores/model';
 import { useTheme } from '@/features/theme/ThemeProvider';
 import { Link, router } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
-import { useRef, useState, type ComponentRef } from 'react';
+import { useEffect, useRef, useState, type ComponentRef } from 'react';
 import { Image, Keyboard, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const shortcuts = [
@@ -34,15 +35,9 @@ function HomeContent() {
 
   return <View testID="home-grid" style={[styles.screen, compact && styles.compactScreen, dense && styles.denseScreen]}
     onLayout={({ nativeEvent: { layout } }) => setSize({ width: layout.width, height: layout.height })}>
-    <SearchField containerStyle={[styles.search, { backgroundColor: colors.surface, borderColor: colors.border }]}
+    <SearchField submit={submit} submitLabel="Szukaj produktów"
       placeholder="Szukaj produktów..." accessibilityLabel="Szukaj produktów" autoCapitalize="none"
-      value={query} onChangeText={setQuery} onSubmitEditing={submit}
-      leading={<SymbolView name={{ ios: 'magnifyingglass', android: 'search', web: 'search' }} size={22} tintColor={colors.muted} />}>
-      <Pressable accessibilityRole="button" accessibilityLabel="Szukaj produktów" onPress={submit}
-        style={[styles.searchAction, { backgroundColor: colors.secondary }]}>
-        <SymbolView name={arrow} size={20} tintColor={colors.link} />
-      </Pressable>
-    </SearchField>
+      value={query} onChangeText={setQuery} />
     <View style={[styles.body, compact && styles.compactBody, wide && styles.wideBody, roomy && styles.roomyBody]}>
       <View style={[styles.shortcuts, compact && styles.compactBody, wide && styles.column]}>
         <Link href="/shopping-lists" asChild>
@@ -59,7 +54,7 @@ function HomeContent() {
             </View>
             <View style={[styles.checklist, compact && styles.compactChecklist, { backgroundColor: colors.surface, borderColor: colors.border },
               !compact && { boxShadow: `0 5px 0 ${colors.border}` }]}>
-              <SymbolView name={{ ios: 'checklist', android: 'checklist', web: 'checklist' }} size={compact ? 30 : 40} tintColor={colors.link} />
+              <SymbolView name={checklistIcon} size={compact ? 30 : 40} tintColor={colors.link} />
             </View>
           </Pressable>
         </Link>
@@ -95,22 +90,49 @@ function LeafletRail({ compact, roomy }: { compact: boolean; roomy: boolean }) {
   const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
   const [viewport, setViewport] = useState(0);
   const [offset, setOffset] = useState(0);
+  const settleTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const tileWidth = compact ? 72 : 98;
   const gap = 10;
-  const maxOffset = Math.max(0, CHAINS.length * (tileWidth + gap) - gap - viewport);
+  const step = tileWidth + gap;
+  const cycleWidth = CHAINS.length * step;
+  const canScroll = viewport > 0 && cycleWidth - gap > viewport + 1;
+  const copies = canScroll ? [0, 1, 2, 3, 4] : [0];
+
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => {
+      scroll.current?.scrollTo({ x: canScroll ? 2 * cycleWidth : 0, animated: false });
+    });
+    return () => {
+      cancelAnimationFrame(frame);
+      clearTimeout(settleTimer.current);
+    };
+  }, [canScroll, cycleWidth]);
+
+  const trackOffset = (x: number) => {
+    setOffset(x);
+    clearTimeout(settleTimer.current);
+    if (!canScroll || (x >= 2 * cycleWidth && x < 3 * cycleWidth)) return;
+    settleTimer.current = setTimeout(() => {
+      const wrapped = 2 * cycleWidth + ((x % cycleWidth) + cycleWidth) % cycleWidth;
+      scroll.current?.scrollTo({ x: wrapped, animated: false });
+      setOffset(wrapped);
+    }, 150);
+  };
+
   const move = (direction: number) => {
-    scroll.current?.scrollTo({ x: Math.max(0, Math.min(maxOffset, offset + direction * (tileWidth + gap))), animated: true });
+    clearTimeout(settleTimer.current);
+    scroll.current?.scrollTo({ x: offset + direction * step, animated: true });
   };
 
   return <View style={[styles.leaflets, compact && styles.compactLeaflets]}>
     <View style={styles.leafletHeading}>
       <View style={[styles.tileText, styles.column]}>
-        <Link href="/leaflets" accessibilityLabel="Gazetki" style={[styles.leafletTitle, { color: colors.text }]}>Gazetki</Link>
+        <Text accessibilityRole="header" style={[styles.leafletTitle, { color: colors.text }]}>Gazetki</Text>
         {!compact && <Text style={{ color: colors.muted }}>Co nowego w sklepach?</Text>}
       </View>
       <View style={styles.railControls}>
         {([-1, 1] as const).map(direction => {
-          const disabled = direction === -1 ? offset < 1 : offset >= maxOffset - 1;
+          const disabled = !canScroll;
           return <Pressable key={direction} style={styles.railButton} onPress={() => move(direction)} disabled={disabled}
             accessibilityRole="button" accessibilityState={{ disabled }} accessibilityLabel={direction === -1 ? 'Poprzednie sieci' : 'Następne sieci'}>
             <SymbolView name={direction === -1
@@ -123,17 +145,24 @@ function LeafletRail({ compact, roomy }: { compact: boolean; roomy: boolean }) {
     </View>
     <ScrollView ref={scroll} horizontal showsHorizontalScrollIndicator={false} keyboardShouldPersistTaps="handled"
       onLayout={event => setViewport(event.nativeEvent.layout.width)}
-      onScroll={event => setOffset(event.nativeEvent.contentOffset.x)} scrollEventThrottle={16}
+      onScroll={event => trackOffset(event.nativeEvent.contentOffset.x)} scrollEventThrottle={16}
       contentContainerStyle={{ gap }}>
-      {CHAINS.map(chain => <Link key={chain} href={{ pathname: '/leaflets', params: { chain } }} asChild>
-        <Pressable style={{ width: tileWidth, gap: 4 }} accessibilityRole="link" accessibilityLabel={`Gazetki: ${BRANDS[chain].name}`}>
+      {copies.flatMap(copy => CHAINS.map((chain, index) => {
+        const tileCenter = index * step + tileWidth / 2;
+        const nearestCopy = Math.max(0, Math.min(4, Math.round((offset + viewport / 2 - tileCenter) / cycleWidth)));
+        const duplicate = canScroll && copy !== nearestCopy;
+        return <Link key={`${copy}-${chain}`} href={{ pathname: '/leaflets', params: { chain } }} asChild>
+        <Pressable style={{ width: tileWidth, gap: 4 }} accessibilityRole="link" accessibilityLabel={`Gazetki: ${BRANDS[chain].name}`}
+          aria-hidden={duplicate} importantForAccessibility={duplicate ? 'no-hide-descendants' : 'auto'}
+          tabIndex={duplicate ? -1 : 0}>
           <View testID="leaflet-chain-tile"
             style={[styles.leafletTile, compact && styles.compactLeafletTile, roomy && styles.roomyLeafletTile, CHAIN_TILE_COLORS[chain]]}>
             <Image source={{ uri: CHAIN_LOGOS[chain] }} resizeMode="contain" accessible={false} style={styles.leafletLogo} />
           </View>
           <Text style={[styles.chainName, { color: colors.text }]}>{BRANDS[chain].name}</Text>
         </Pressable>
-      </Link>)}
+        </Link>;
+      }))}
     </ScrollView>
   </View>;
 }
@@ -142,8 +171,6 @@ const styles = StyleSheet.create({
   screen: { flex: 1, minHeight: 0, paddingHorizontal: 20, paddingTop: 8, paddingBottom: CART_TAB_RISE, gap: 14 },
   compactScreen: { paddingTop: 4, gap: 6 },
   denseScreen: { paddingTop: 2, gap: 5 },
-  search: { borderWidth: 1, paddingRight: 5 },
-  searchAction: { width: 44, height: 44, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
   body: { gap: 18 },
   compactBody: { gap: 6 },
   roomyBody: { gap: 24 },
@@ -160,7 +187,7 @@ const styles = StyleSheet.create({
   checklist: { width: 60, height: 74, marginRight: 2, borderRadius: 15, borderWidth: 1, alignItems: 'center', justifyContent: 'center', transform: [{ rotate: '8deg' }] },
   compactChecklist: { width: 38, height: 46, borderRadius: 8 },
   shortcutRow: { flexDirection: 'row', gap: 10 },
-  tile: { flex: 1, minWidth: 0, minHeight: 112, gap: 8, borderRadius: 18, borderWidth: 1, padding: 12, justifyContent: 'space-between' },
+  tile: { flex: 1, minWidth: 0, minHeight: 112, gap: 16, borderRadius: 18, borderWidth: 1, padding: 12 },
   compactTile: { flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', gap: 6, minHeight: 46, padding: 6 },
   roomyTile: { minHeight: 124 },
   tileTop: { flexDirection: 'row', justifyContent: 'space-between' },

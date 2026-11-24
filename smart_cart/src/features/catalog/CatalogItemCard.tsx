@@ -10,15 +10,17 @@ import { useSessionAction, useSessionQuery } from './hooks';
 import { useShopping } from './ShoppingProvider';
 import { amount, money, quantityHelp, quantityInput } from './types';
 
-export function CatalogItemCard({ item, favorite, onFavoriteChanged, quantity, onQuantityChanged }: {
-  item: CatalogItem; favorite: boolean | undefined; onFavoriteChanged: () => void; quantity: string; onQuantityChanged: (value: string) => void;
+export function CatalogItemCard({ item, favorite, onFavoriteChanged, quantity, onQuantityChanged, listId }: {
+  item: CatalogItem; favorite: boolean | undefined; onFavoriteChanged: () => void; quantity: string;
+  onQuantityChanged: (value: string) => void; listId?: string;
 }) {
   const ui = useUI();
   const [expanded, setExpanded] = useState(false);
   const action = useSessionAction();
   const shopping = useShopping();
-  const target = shopping.lists.find(list => list.id === shopping.activeId)?.name ?? 'Nowa lista Zakupy';
-  const disabled = shopping.loading || !!shopping.error || action.busy;
+  const targetList = shopping.lists.find(list => list.id === (listId ?? shopping.activeId));
+  const target = targetList?.name ?? (listId === undefined ? 'Nowa lista Zakupy' : 'Wybrana lista jest niedostępna');
+  const disabled = shopping.loading || !!shopping.error || action.busy || (listId !== undefined && !targetList);
   const detail = useSessionQuery(async signal => {
     if (item.product_count !== 1 && !expanded) return [];
     const result = await catalogV1Api.group(item.group_id, signal);
@@ -30,7 +32,7 @@ export function CatalogItemCard({ item, favorite, onFavoriteChanged, quantity, o
   }, [item.kind, item.group_id, item.product_id, item.product_count, expanded]);
   const add = (productId: number | null) => void action.run(async signal => {
     const parsed = quantityInput(quantity, item.unit);
-    await shopping.add(item.group_id, parsed, item.unit, productId, signal);
+    await shopping.add(item.group_id, parsed, item.unit, productId, signal, listId);
     return `Dodano ${amount(parsed, item.unit)} do listy: ${target}.`;
   }, action.setMessage);
 
@@ -48,7 +50,7 @@ export function CatalogItemCard({ item, favorite, onFavoriteChanged, quantity, o
     <Text style={ui.muted}>{quantityHelp[item.unit]}</Text>
     <Text style={ui.muted}>Lista: {target}</Text>
     <CatalogButton title={`Dodaj do listy: ${item.name}`} label={item.kind === 'product' ? 'Dodaj produkt' : 'Dodaj grupę'} secondary={false}
-      busy={action.busy} disabled={shopping.loading || !!shopping.error} onPress={() => add(item.kind === 'product' ? item.product_id : null)} />
+      busy={action.busy} disabled={disabled} onPress={() => add(item.kind === 'product' ? item.product_id : null)} />
     <CatalogButton title={`${favorite ? 'Usuń grupę z ulubionych' : 'Zapisz grupę w ulubionych'}: ${item.name}`}
       label={favorite ? '♥ Usuń grupę z ulubionych' : '♡ Zapisz grupę w ulubionych'} disabled={action.busy || favorite === undefined}
       onPress={() => void action.run(signal => catalogApi.favorite(item.group_id, !favorite, signal), onFavoriteChanged)} />

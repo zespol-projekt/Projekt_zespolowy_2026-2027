@@ -44,7 +44,7 @@ export default function SideMenu({ visible, onClose }: { visible: boolean; onClo
               })}
             </View>
             {error && <Notice>{error}</Notice>}
-            <Button secondary title="Profil" onPress={() => navigate('/profile')} />
+            <Button secondary title="Mój profil" onPress={() => navigate('/profile')} />
             <Button secondary title="Pomoc" onPress={() => navigate('/help')} />
             <Button secondary title="Zasady porównywania" onPress={() => navigate('/rules')} />
           </View>

@@ -1,8 +1,11 @@
 import { useTheme } from '@/features/theme/ThemeProvider';
 import type { ThemeColors } from '@/features/theme/palette';
 import type { BottomTabBarProps } from "expo-router/js-tabs";
+import { router, useGlobalSearchParams, usePathname } from 'expo-router';
 import { SymbolView } from "expo-symbols";
-import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
+import { basketIcon } from '@/components/ui/shoppingIcons';
+import { useShopping } from '@/features/catalog/ShoppingProvider';
 
 const TAB_ICON_AREA = 44;
 const CART_ICON_AREA = 60;
@@ -41,6 +44,10 @@ export default function BottomBar({
   navigateToTab,
 }: BottomTabBarProps) {
   const { colors } = useTheme();
+  const pathname = usePathname();
+  const { listId } = useGlobalSearchParams<{ listId?: string }>();
+  const { activeId } = useShopping();
+  const searchListId = pathname === '/cart/list' ? listId ?? activeId : null;
   const styles = createStyles(colors);
   const overMap = state.routes[state.index].name === "stores";
   return (
@@ -65,7 +72,11 @@ export default function BottomBar({
           });
 
           if (!selected && !event.defaultPrevented) {
-            navigateToTab(route.key);
+            if (item.name === "products" && searchListId) {
+              router.navigate({ pathname: '/products', params: { listId: searchListId } });
+            } else {
+              navigateToTab(route.key);
+            }
           }
         };
 
@@ -87,7 +98,7 @@ export default function BottomBar({
           >
             <View style={[styles.iconArea, isCart && styles.cartCircle]}>
               {isCart
-                ? <Image source={require("@/assets/images/cart-tab.png")} resizeMode="contain" accessible={false} style={styles.cartLogo} />
+                ? <SymbolView name={basketIcon} size={34} tintColor={color} />
                 : <SymbolView name={item.icon} size={32} tintColor={color} />}
             </View>
 
@@ -144,12 +155,8 @@ const createStyles = (colors: ThemeColors) => StyleSheet.create({
     borderRadius: CART_ICON_AREA / 2,
     borderWidth: 2,
     borderColor: colors.border,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: colors.surface,
     boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.16)",
-  },
-  cartLogo: {
-    width: 50,
-    height: 50,
   },
   label: {
     marginTop: 2,

@@ -1,8 +1,10 @@
 import { useCallback, useRef, useState } from 'react';
 import { router, useFocusEffect } from 'expo-router';
+import { SymbolView } from 'expo-symbols';
 import { KeyboardAvoidingView, Platform, Text, View } from 'react-native';
 import { Button, Field, Notice, Screen, useUI } from '@/components/ui/Controls';
-import BackButton from '@/components/navigation/BackButton';
+import { checklistIcon } from '@/components/ui/shoppingIcons';
+import { useTheme } from '@/features/theme/ThemeProvider';
 import { useAuth } from '@/features/auth';
 import { authPolicy } from '@/features/auth/service';
 import { useSessionKey } from '@/features/catalog/hooks';
@@ -14,6 +16,7 @@ export default function ProfileScreen() {
 function Profile() {
   const auth = useAuth();
   const ui = useUI();
+  const { colors } = useTheme();
   const [editing, setEditing] = useState(false);
   const [password, setPassword] = useState('');
   const [repeat, setRepeat] = useState('');
@@ -48,11 +51,20 @@ function Profile() {
     setMessage(pending ? 'Zamknięto formularz. Wysłanego żądania nie można cofnąć — hasło mogło już zostać zmienione.' : null);
   }
   return <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
-    <Screen title="Profil"><BackButton />
-      <View style={ui.card}><Text style={ui.muted}>Email</Text><Text selectable style={ui.heading}>{auth.state.status === 'signedIn' ? auth.state.user.email : ''}</Text></View>
-      <Button secondary title="Ulubione" onPress={() => router.navigate('/favorites')} />
-      <Button secondary title="Listy zakupów" onPress={() => router.navigate('/shopping-lists')} />
-      {!editing ? <Button title="Zmień hasło" onPress={() => { setEditing(true); setMessage(null); }} /> : <View style={ui.card}>
+    <Screen title="Mój profil">
+      <View style={[ui.card, { flexDirection: 'row', alignItems: 'center' }]}>
+        <View style={{ flex: 1, minWidth: 0, gap: 4 }}>
+          <Text style={ui.muted}>Email</Text>
+          <Text selectable style={ui.heading}>{auth.state.status === 'signedIn' ? auth.state.user.email : ''}</Text>
+        </View>
+        <Button secondary title="Zmień" disabled />
+      </View>
+      <Button secondary title="Ulubione" onPress={() => router.navigate('/favorites')}
+        icon={<SymbolView name={{ ios: 'heart', android: 'favorite_border', web: 'favorite_border' }} size={20} tintColor={colors.link} />} />
+      <Button secondary title="Listy zakupów" onPress={() => router.navigate('/shopping-lists')}
+        icon={<SymbolView name={checklistIcon} size={20} tintColor={colors.link} />} />
+      {!editing ? <Button title="Zmień hasło" onPress={() => { setEditing(true); setMessage(null); }}
+        icon={<SymbolView name={{ ios: 'lock', android: 'lock', web: 'lock' }} size={20} tintColor={colors.onPrimary} />} /> : <View style={ui.card}>
         <Text style={ui.heading}>Zmiana hasła</Text>
         <Text style={ui.text}>Wyślij kod potwierdzenia na email konta. Po zapisaniu nowego hasła pozostaniesz zalogowany.</Text>
         <Button secondary title={sent ? 'Wyślij kod ponownie' : 'Wyślij kod potwierdzenia'} busy={busy} onPress={() => void perform('send')} />
@@ -65,7 +77,8 @@ function Profile() {
         <Button secondary title="Anuluj zmianę hasła" onPress={cancel} />
       </View>}
       {message && <Notice>{message}</Notice>}
-      <Button secondary title="Wyloguj się" onPress={() => { cancel(); void auth.signOut(); }} />
+      <Button secondary title="Wyloguj się" onPress={() => { cancel(); void auth.signOut(); }}
+        icon={<SymbolView name={{ ios: 'rectangle.portrait.and.arrow.right', android: 'logout', web: 'logout' }} size={20} tintColor={colors.link} />} />
     </Screen>
   </KeyboardAvoidingView>;
 }

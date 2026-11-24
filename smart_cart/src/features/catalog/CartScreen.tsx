@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { Link, useFocusEffect } from 'expo-router';
+import { Link, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Button, Field, Notice, useUI } from '@/components/ui/Controls';
@@ -7,8 +7,10 @@ import { useTheme } from '@/features/theme/ThemeProvider';
 import { catalogApi } from './api';
 import { useSessionAction, useSessionKey, useSessionQuery } from './hooks';
 import { useShopping } from './ShoppingProvider';
-import { basketIcon, chevron, listsIcon, ShoppingAction, ShoppingPage } from './ShoppingPage';
+import { checklistIcon } from '@/components/ui/shoppingIcons';
+import { chevron, ShoppingAction, ShoppingPage } from './ShoppingPage';
 import { OfferInfo } from './GroupDetails';
+import { EmptyProductGuide } from './EmptyProductGuide';
 import { priceDateLabel } from './catalogPresentation';
 import { amount, money, quantityHelp, quantityInput, type ComparisonItem, type ShoppingItem } from './types';
 
@@ -105,14 +107,14 @@ function CartSummary() {
   const reload = shopping.reload;
   useFocusEffect(useCallback(() => { reload(); }, [reload]));
 
-  return <ShoppingPage title="Koszyk" icon={basketIcon} description="Aktualna lista zakupów i porównanie jej kosztu w sklepach.">
+  return <ShoppingPage title="Twój Koszyk" back={null} description="Aktualna lista zakupów i porównanie jej kosztu w sklepach.">
     {shopping.loading && !active && <ActivityIndicator accessibilityLabel="Wczytywanie list zakupów" />}
     {shopping.error && <><Notice>{shopping.error}</Notice><Button secondary title="Ponów wczytywanie" onPress={reload} /></>}
     {active ? <>
       <Link href="/cart/list" asChild>
         <Pressable accessibilityRole="link" accessibilityLabel={`Edytuj aktualną listę: ${active.name}`}
           style={StyleSheet.flatten([cartStyles.currentList, { backgroundColor: colors.secondary }])}>
-          <SymbolView name={basketIcon} tintColor={colors.link} size={25} />
+          <SymbolView name={checklistIcon} tintColor={colors.link} size={25} />
           <View style={cartStyles.listText}>
             <Text style={{ color: colors.link }}>Aktualna lista</Text>
             <Text style={[cartStyles.listName, { color: colors.text }]}>{active.name}</Text>
@@ -130,7 +132,8 @@ function CartSummary() {
 
 export function ShoppingListEditorScreen() {
   const key = useSessionKey();
-  return key ? <CartDetails key={key} mode="edit" /> : null;
+  const { listId } = useLocalSearchParams<{ listId?: string }>();
+  return key ? <CartDetails key={key} mode="edit" listId={listId} /> : null;
 }
 
 export function ComparisonScreen() {
@@ -138,54 +141,52 @@ export function ComparisonScreen() {
   return key ? <CartDetails key={key} mode="compare" /> : null;
 }
 
-function CartDetails({ mode }: { mode: 'edit' | 'compare' }) {
+function CartDetails({ mode, listId }: { mode: 'edit' | 'compare'; listId?: string }) {
   const ui = useUI();
+  const { colors } = useTheme();
   const shopping = useShopping();
-  const [rename, setRename] = useState<{ id: string; value: string } | null>(null);
-  const [deleting, setDeleting] = useState<string | null>(null);
-  const action = useSessionAction();
-  const activeId = shopping.activeId;
-  const active = shopping.lists.find(list => list.id === activeId);
-  const items = useSessionQuery(signal => activeId ? catalogApi.items(activeId, signal) : Promise.resolve([]), [activeId]);
+  const selectedId = listId ?? shopping.activeId;
+  const active = shopping.lists.find(list => list.id === selectedId);
+  const resolvedId = active?.id;
+  const items = useSessionQuery(signal => resolvedId ? catalogApi.items(resolvedId, signal) : Promise.resolve([]), [resolvedId]);
   const editing = mode === 'edit';
   const comparison = useSessionQuery(signal => !editing && items.data?.length
     ? catalogApi.compare(items.data, signal)
     : Promise.resolve({ version: 2 as const, calculated_at: '', stores: [] }), [mode, items.data]);
-  const editedName = active && rename?.id === active.id ? rename.value : active?.name ?? '';
   const reloadLists = shopping.reload;
   const reloadItems = items.reload;
   useFocusEffect(useCallback(() => { reloadLists(); reloadItems(); }, [reloadLists, reloadItems]));
   const complete = comparison.data?.stores.filter(store => store.complete && store.total_price != null) ?? [];
   const minimum = complete.length ? Math.min(...complete.map(store => store.total_price as number)) : null;
-  return <ShoppingPage title={editing ? 'Aktualna lista' : 'Porównanie sieci'} description={active?.name}
-    icon={editing ? listsIcon : basketIcon} back="/cart">
+  const itemCount = items.data?.length;
+  const itemCountLabel = itemCount === undefined ? undefined : `${itemCount} ${itemCount === 1 ? 'produkt'
+    : itemCount % 10 >= 2 && itemCount % 10 <= 4 && (itemCount % 100 < 12 || itemCount % 100 > 14) ? 'produkty' : 'produktów'}`;
+  return <ShoppingPage title={editing ? (active?.name ?? 'Aktualna lista') : 'Porównanie sieci'}
+    pageTitle={editing ? 'Twój Koszyk' : undefined}
+    description={editing ? (active ? itemCountLabel : undefined) : active?.name} headingCard={editing && !!active}
+    icon={editing ? checklistIcon : undefined} back={null}>
     {shopping.loading && !active && <ActivityIndicator accessibilityLabel="Wczytywanie list zakupów" />}
     {shopping.error && <><Notice>{shopping.error}</Notice><Button secondary title="Ponów wczytywanie" onPress={reloadLists} /></>}
     {!active && !shopping.loading && !shopping.error && <ShoppingAction href="/shopping-lists" label="Otwórz listy zakupów" />}
-    {action.message && <Notice>{action.message}</Notice>}
-    {editing && active && <View style={ui.card}>
-      <Field label="Zmień nazwę listy" value={editedName} onChangeText={value => setRename({ id: active.id, value })} maxLength={100} />
-      <View style={ui.row}>
-        <Button secondary title="Zapisz nazwę" disabled={action.busy || !editedName.trim()} onPress={() => void action.run(signal => catalogApi.renameList(active.id, editedName, signal), shopping.reload)} />
-        <Button secondary title="Usuń listę" disabled={action.busy} onPress={() => setDeleting(active.id)} />
-      </View>
-      {deleting === active.id && <><Notice>Usunąć tę listę i wszystkie jej pozycje?</Notice><View style={ui.row}>
-        <Button title="Potwierdź usunięcie listy" busy={action.busy} onPress={() => void action.run(signal => catalogApi.deleteList(active.id, signal), () => { setDeleting(null); shopping.reload(); items.reload(); })} />
-        <Button secondary title="Anuluj usuwanie" onPress={() => setDeleting(null)} />
-      </View></>}
-    </View>}
-    {editing && active && <ShoppingAction href="/products" label="Dodaj produkty do listy" />}
     {items.loading && <ActivityIndicator accessibilityLabel="Wczytywanie listy" />}
     {items.error && <><Notice>{items.error}</Notice><Button secondary title="Ponów wczytywanie produktów" onPress={reloadItems} /></>}
-    {active && !items.loading && !items.error && items.data?.length === 0 && <>
-      <Text style={ui.text}>Lista jest pusta. Wybierz grupę na ekranie Produkty.</Text>
-      {!editing && <ShoppingAction href="/products" label="Dodaj produkty do listy" />}
-    </>}
+    {active && !items.loading && !items.error && itemCount === 0 && (editing
+      ? <EmptyProductGuide message="Wyszukaj produkty i dodaj je do listy." />
+      : <>
+        <Text style={ui.text}>Wyszukaj produkty i dodaj je do listy.</Text>
+        <ShoppingAction href={{ pathname: '/products', params: { listId: active.id } }} label="Dodaj produkty do listy" />
+      </>)}
     {editing && items.data?.map(item => <ItemEditor key={item.id} item={item} reload={reloadItems} />)}
+    {editing && active && !!itemCount && <>
+      <Text style={[ui.text, cartStyles.emptyListText]}>Dodaj więcej produktów</Text>
+      <Link href={{ pathname: '/products', params: { listId: active.id } }} asChild>
+      <Pressable accessibilityRole="link" accessibilityLabel="Dodaj produkty do listy" style={cartStyles.addProduct}>
+        <SymbolView name={{ ios: 'plus', android: 'add', web: 'add' }} size={24} tintColor={colors.link} />
+      </Pressable>
+      </Link>
+    </>}
     {!editing && !!items.data?.length && <>
       <Text style={ui.muted}>Ceny sieciowe nie potwierdzają ceny w konkretnej placówce. Zakładamy posiadanie kart sieci. Uwzględniamy wyłącznie potwierdzone ceny i promocje ogólne.</Text>
-      <Button secondary title="Odśwież ceny" disabled={items.loading || comparison.loading}
-        onPress={() => { reloadItems(); comparison.reload(); }} />
       {(comparison.loading || items.loading) && <ActivityIndicator accessibilityLabel="Przeliczanie koszyka" />}
       {comparison.error && <><Notice>{comparison.error}</Notice><Button title="Ponów porównanie" onPress={comparison.reload} /></>}
       {!comparison.loading && !items.loading && !comparison.error && comparison.data?.stores.map(store => <View key={store.store_id} style={ui.card}>
@@ -200,6 +201,8 @@ function CartDetails({ mode }: { mode: 'edit' | 'compare' }) {
 }
 
 const cartStyles = StyleSheet.create({
+  emptyListText: { textAlign: 'center' },
+  addProduct: { alignSelf: 'center', width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
   currentList: { flexDirection: 'row', alignItems: 'center', gap: 14, padding: 18, minHeight: 86, borderRadius: 18 },
   listText: { flex: 1, minWidth: 0, gap: 4 },
   listName: { fontSize: 19, fontWeight: '800' },

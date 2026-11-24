@@ -49,6 +49,25 @@ async function openMilk(page: Page) {
   await expect(page.getByRole('heading', { name: groupItem.name, exact: true })).toBeVisible();
 }
 
+test('dodawanie z zapisanej listy kieruje produkt do niej zamiast do aktywnego koszyka', async ({ page }) => {
+  const state = await setup(page);
+  const savedListId = 'bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb';
+  await page.route(`${AUTH_URL}/rest/v1/shopping_lists?**`, route => route.fulfill({ json: [
+    { id: listId, name: 'Zakupy testowe', updated_at: '2026-11-21T10:00:00Z' },
+    { id: savedListId, name: 'Na weekend', updated_at: '2026-11-20T10:00:00Z' },
+  ] }));
+  await page.goto('/shopping-lists');
+  await page.getByRole('link', { name: 'Otwórz listę: Na weekend' }).click();
+  await expect(page.getByText('Wyszukaj produkty i dodaj je do listy.', { exact: true })).toBeVisible();
+  await page.getByRole('tab', { name: 'Szukaj', exact: true }).click();
+  await page.getByRole('button', { name: 'Kategoria: Nabiał', exact: true }).click();
+  await page.getByRole('button', { name: 'Podkategoria: Mleko', exact: true }).click();
+  await expect(page.getByText('Lista: Na weekend', { exact: true }).first()).toBeVisible();
+  await page.getByRole('textbox', { name: `Potrzebna ilość: ${groupItem.name} (ml)` }).fill('500');
+  await page.getByRole('button', { name: `Dodaj do listy: ${groupItem.name}`, exact: true }).click();
+  await expect.poll(() => state.saved.map(item => item.p_list_id)).toEqual([savedListId]);
+});
+
 test('ilość w gramach ma wyjaśnienie i zapisuje masę zamiast liczby opakowań', async ({ page }) => {
   const state = await setup(page);
   const item = { ...groupItem, name: 'Ryż biały', unit: 'g', price_from: null, stores_with_price_today: 0 };

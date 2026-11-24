@@ -9,12 +9,12 @@ import type { ProductGroup } from './types';
 import CatalogScreen from './CatalogScreen';
 
 export default function ProductsScreen() {
-  const params = useLocalSearchParams<{ q?: string; catalog?: string }>();
+  const params = useLocalSearchParams<{ q?: string; catalog?: string; listId?: string }>();
   const key = useSessionKey();
   if (params.catalog !== '0') return <CatalogScreen />;
-  return key ? <ProductSearch key={`${key}:${params.q ?? ''}`} initialQuery={params.q ?? ''} /> : null;
+  return key ? <ProductSearch key={`${key}:${params.q ?? ''}:${params.listId ?? ''}`} initialQuery={params.q ?? ''} listId={params.listId} /> : null;
 }
-function ProductSearch({ initialQuery }: { initialQuery: string }) {
+function ProductSearch({ initialQuery, listId }: { initialQuery: string; listId?: string }) {
   const ui = useUI();
   const [query, setQuery] = useState(initialQuery);
   const debounced = useDebounced(query.trim());
@@ -26,7 +26,7 @@ function ProductSearch({ initialQuery }: { initialQuery: string }) {
   const loading = waitingForQuery || result.loading;
   const groups = waitingForQuery ? undefined : result.data;
   return <Screen title="Produkty i ceny">
-    <Link href={{ pathname: '/products', params: { catalog: '1' } }} style={[ui.text, { paddingVertical: 12, fontWeight: '700' }]}>Otwórz katalog kategorii →</Link>
+    <Link href={{ pathname: '/products', params: { catalog: '1', ...(listId !== undefined && { listId }) } }} style={[ui.text, { paddingVertical: 12, fontWeight: '700' }]}>Otwórz katalog kategorii →</Link>
     <Field label="Szukaj grupy produktów" placeholder="Np. mleko 3,2%, ryż, masło" value={query} onChangeText={value => { setQuery(value); setOffset(0); setSelected(null); }} autoCorrect={false} autoCapitalize="none" />
     <Text style={ui.muted}>Najpierw wybierz grupę, następnie sprawdź opakowania i oferty. Porównujemy dane sieciowe.</Text>
     {loading && <ActivityIndicator accessibilityLabel="Wyszukiwanie produktów" />}
@@ -36,7 +36,7 @@ function ProductSearch({ initialQuery }: { initialQuery: string }) {
       <Text style={ui.heading}>{group.name}</Text>
       <Text style={ui.muted}>{group.offer_count} ofert · jednostka zapotrzebowania: {group.unit}</Text>
       <Button title={`Rozwiń oferty: ${group.name}`} secondary={selected?.id !== group.id} onPress={() => setSelected(group)} />
-      {selected?.id === group.id && <GroupDetails key={group.id} group={group} onClose={() => setSelected(null)} />}
+      {selected?.id === group.id && <GroupDetails key={group.id} group={group} listId={listId} onClose={() => setSelected(null)} />}
     </View>)}
     <View style={ui.row}>
       {offset > 0 && <Button secondary title="Poprzednie grupy" disabled={loading} onPress={() => setOffset(Math.max(0, offset - 30))} />}

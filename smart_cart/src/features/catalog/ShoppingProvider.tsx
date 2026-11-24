@@ -7,7 +7,7 @@ type ShoppingContextValue = {
   lists: ShoppingList[]; loading: boolean; error: string | null; reload: () => void;
   activeId: string | null; select: (id: string) => void;
   create: (name: string, signal: AbortSignal) => Promise<string>;
-  add: (groupId: number, quantity: number, unit: Unit, productId: number | null, signal: AbortSignal) => Promise<void>;
+  add: (groupId: number, quantity: number, unit: Unit, productId: number | null, signal: AbortSignal, listId?: string) => Promise<void>;
 };
 const ShoppingContext = createContext<ShoppingContextValue | null>(null);
 export function ShoppingProvider({ children }: PropsWithChildren) {
@@ -23,8 +23,11 @@ export function ShoppingProvider({ children }: PropsWithChildren) {
     if (!rows[0]) throw new Error('Nie udało się utworzyć listy.');
     select(rows[0].id); query.reload(); return rows[0].id;
   };
-  const add = async (groupId: number, quantity: number, unit: Unit, productId: number | null, signal: AbortSignal) => {
-    const id = activeId ?? await create('Zakupy', signal);
+  const add = async (groupId: number, quantity: number, unit: Unit, productId: number | null, signal: AbortSignal, listId?: string) => {
+    if (listId !== undefined && !lists.some(list => list.id === listId)) {
+      throw new Error('Wybrana lista zakupów jest niedostępna.');
+    }
+    const id = listId ?? activeId ?? await create('Zakupy', signal);
     await catalogApi.addItem(id, groupId, quantity, unit, productId, signal);
     query.reload();
   };
