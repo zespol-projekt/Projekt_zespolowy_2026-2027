@@ -8,7 +8,7 @@ import { applyReviewDecisions, loadReviewDecisions } from "./przeglad.mjs";
 
 export const SCHEMA_VERSION = 1;
 const CHAINS = ["lidl", "biedronka", "dino", "auchan"];
-const LABELS = { lidl: "Lidl", biedronka: "Biedronka", dino: "Dino", auchan: "Auchan" };
+const LABELS = { lidl: "Lidl", biedronka: "Biedronka", dino: "Dino", auchan: "Auchan", kaufland: "Kaufland", carrefour: "Carrefour" };
 const AUCHAN_FORMATS = { "Auchan Super": "supermarket", "Auchan Hiper": "hypermarket" };
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const text = (value) => typeof value === "string" || typeof value === "number"
@@ -52,6 +52,8 @@ function locationOf(feature, store) {
   return { latitude, longitude };
 }
 
+const byId = (a, b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+
 function groupsOf(stores, getKey) {
   const groups = new Map();
   for (const store of stores) {
@@ -69,12 +71,14 @@ function markGroup(group, code, message) {
 
 export function prepareData(manifest, datasets) {
   assert.equal(manifest.filters?.country, "PL", "Obsługiwany kraj: PL.");
-  assert.deepEqual([...manifest.filters.auchan_allowed_brands].sort(), Object.keys(AUCHAN_FORMATS).sort(),
-    "Zakres Auchan musi obejmować wyłącznie Super i Hiper.");
+  if (manifest.sources.some(({ chain }) => chain === "auchan")) {
+    assert.deepEqual([...manifest.filters.auchan_allowed_brands].sort(), Object.keys(AUCHAN_FORMATS).sort(),
+      "Zakres Auchan musi obejmować wyłącznie Super i Hiper.");
+  }
   const stores = [], summaries = [], sources = [];
   const occurrences = new Map();
-  for (const chain of CHAINS) {
-    const source = manifest.sources.find((entry) => entry.chain === chain);
+  for (const source of manifest.sources) {
+    const { chain } = source;
     const dataset = datasets[chain];
     assert.ok(source && dataset, `Brakuje źródła: ${chain}`);
     assert.equal(dataset.type, "FeatureCollection", `Nieprawidłowy GeoJSON: ${chain}`);
@@ -83,12 +87,17 @@ export function prepareData(manifest, datasets) {
       excluded_store_format: 0, selected_records: 0, ready_records: 0, review_records: 0 };
     summaries.push(summary);
     const collectedAt = dataset.dataset_attributes?.["spider:collection_time"] ?? null;
-    sources.push({ chain, file: source.file, url: source.url, sha256: source.sha256, collected_at: collectedAt });
+    sources.push({ chain, file: source.file, url: source.url, sha256: source.sha256, collected_at: collectedAt,
+      ...(source.downloaded_at ? { downloaded_at: source.downloaded_at } : {}) });
     for (const [index, feature] of dataset.features.entries()) {
       assert.equal(feature?.type, "Feature", `Nieprawidłowy obiekt: ${chain}, indeks ${index}`);
       const p = feature.properties ?? {};
       if (text(p["addr:country"])?.toUpperCase() !== "PL") { summary.excluded_country++; continue; }
-      if (chain === "auchan" && !Object.hasOwn(AUCHAN_FORMATS, p.brand)) { summary.excluded_store_format++; continue; }
+      if ((chain === "auchan" && !Object.hasOwn(AUCHAN_FORMATS, p.brand))
+        || (chain === "carrefour" && p.brand !== "Carrefour")) {
+        summary.excluded_store_format++;
+        continue;
+      }
       summary.selected_records++;
       const ref = text(p.ref), featureId = text(feature.id), sourceId = ref ?? featureId;
       const identity = `${chain}:${sourceId ?? `derived-${sha256(JSON.stringify(feature)).slice(0, 24)}`}`;
@@ -97,11 +106,11 @@ export function prepareData(manifest, datasets) {
       const store = {
         id: occurrence === 1 ? identity : `${identity}#occurrence-${occurrence}`,
         chain, name: text(p.name) ?? LABELS[chain], brand: text(p.brand) ?? LABELS[chain],
-        store_format: chain === "auchan" ? AUCHAN_FORMATS[p.brand] : "supermarket",
+        store_format: chain === "auchan" ? AUCHAN_FORMATS[p.brand] : chain === "carrefour" ? "hypermarket" : "supermarket",
         address: addressOf(p, chain), location: null, website: text(p.website),
-        source: { provider: "alltheplaces", store_id: sourceId,
+        source: { provider: source.provider ?? "alltheplaces", store_id: sourceId,
           id_kind: ref ? "ref" : featureId ? "feature_id" : "derived", feature_id: featureId,
-          dataset_file: source.file, feature_index: index, dataset_url: source.url,
+          dataset_file: source.file, feature_index: feature.source_index ?? index, dataset_url: source.url,
           original_url: text(p["@source_uri"]), collected_at: collectedAt },
         quality: { status: "ready", issues: [] },
       };
@@ -128,7 +137,7 @@ export function prepareData(manifest, datasets) {
     ? `${s.chain}|${key(s.address.city)}|${key(s.address.street_address)}` : null)) {
     markGroup(group, "possible_duplicate_address", "Powtórzony adres w tej samej sieci; nie scalono rekordów automatycznie.");
   }
-  stores.sort((a, b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+  stores.sort(byId);
   const ready = [], review = [], issueCounts = {};
   for (const store of stores) {
     store.quality.issues.sort((a, b) => a.code.localeCompare(b.code));
@@ -160,36 +169,221 @@ function localPath(baseDirectory, relativePath) {
   return resolved;
 }
 
+function kauflandFeatures(records) {
+  assert.ok(Array.isArray(records) && records.length, "Lokalizator Kauflandu nie zwrócił placówek.");
+  return { type: "FeatureCollection", features: records.map((store) => {
+    assert.match(store.n, /^PL[0-9]+$/u, "Oczekiwano identyfikatora placówki Kaufland w Polsce.");
+    return {
+      type: "Feature",
+      properties: {
+        ref: store.n, brand: "Kaufland", name: store.cn,
+        "addr:country": "PL", "addr:city": store.t, "addr:postcode": store.pc,
+        "addr:street_address": store.sn,
+        website: store.friendlyUrl ? `https://sklep.kaufland.pl/uslugi/sklepy/${store.friendlyUrl}.html` : null,
+      },
+      geometry: text(store.lng) && text(store.lat)
+        ? { type: "Point", coordinates: [Number(store.lng), Number(store.lat)] } : null,
+    };
+  }) };
+}
+
 export function loadSources(baseDirectory) {
   const manifest = JSON.parse(fs.readFileSync(localPath(baseDirectory, "zrodla.json"), "utf8").replace(/^\uFEFF/u, ""));
   assert.equal(manifest.sources.length, CHAINS.length, "Oczekiwane dokładnie cztery źródła.");
   assert.deepEqual(manifest.sources.map((s) => s.chain).sort(), [...CHAINS].sort());
   const datasets = {};
-  for (const source of manifest.sources) {
+  for (const source of [...manifest.sources, ...(manifest.additional_sources ?? [])]) {
     assert.ok(source.file.startsWith("surowe/"), "Źródła muszą pochodzić z surowe/.");
     const raw = fs.readFileSync(localPath(baseDirectory, source.file));
     assert.equal(sha256(raw), source.sha256, `Suma kontrolna nie zgadza się: ${source.file}. Zaktualizuj świadomie manifest źródeł.`);
-    datasets[source.chain] = JSON.parse(raw.toString("utf8"));
+    const data = JSON.parse(raw.toString("utf8"));
+    datasets[source.file] = source.chain === "kaufland" ? kauflandFeatures(data) : data;
   }
-  return { manifest, datasets };
+  return { manifest, datasets: Object.fromEntries(manifest.sources.map(source => [source.chain, datasets[source.file]])),
+    additionalDatasets: Object.fromEntries((manifest.additional_sources ?? []).map(source => [source.chain, datasets[source.file]])) };
 }
 
 export function buildOutputs(result, generatedAt) {
   const metadata = { schema_version: result.schema_version, generated_at: generatedAt,
     input_fingerprint: result.input_fingerprint, sources: result.sources,
+    ...(result.biedronka_lomnica_audit ? { biedronka_lomnica_audit: result.biedronka_lomnica_audit } : {}),
+    ...(result.biedronka_registry_audit ? { biedronka_registry_audit: result.biedronka_registry_audit } : {}),
+    ...(result.biedronka_site_audit ? { biedronka_site_audit: result.biedronka_site_audit } : {}),
+    ...(result.biedronka_building_audit ? { biedronka_building_audit: result.biedronka_building_audit } : {}),
+    ...(result.biedronka_location_audit ? { biedronka_location_audit: result.biedronka_location_audit } : {}),
+    ...(result.biedronka_recheck_audit ? { biedronka_recheck_audit: result.biedronka_recheck_audit } : {}),
+    ...(result.biedronka_remaining_audit ? { biedronka_remaining_audit: result.biedronka_remaining_audit } : {}),
+    ...(result.biedronka_individual_audit ? { biedronka_individual_audit: result.biedronka_individual_audit } : {}),
+    ...(result.biedronka_corrected_address_audit ? { biedronka_corrected_address_audit: result.biedronka_corrected_address_audit } : {}),
+    ...(result.biedronka_overture_audit ? { biedronka_overture_audit: result.biedronka_overture_audit } : {}),
+    ...(result.biedronka_osm_address_audit ? { biedronka_osm_address_audit: result.biedronka_osm_address_audit } : {}),
+    ...(result.biedronka_postcode_audit ? { biedronka_postcode_audit: result.biedronka_postcode_audit } : {}),
+    ...(result.biedronka_targeted_audit ? { biedronka_targeted_audit: result.biedronka_targeted_audit } : {}),
+    ...(result.biedronka_followup_audit ? { biedronka_followup_audit: result.biedronka_followup_audit } : {}),
+    ...(result.biedronka_address_audit ? { biedronka_address_audit: result.biedronka_address_audit } : {}),
+    ...(result.biedronka_audit ? { biedronka_audit: result.biedronka_audit } : {}),
     ...(result.review_metadata ? { source_review: result.review_metadata } : {}),
     ...(result.correction_metadata ? { corrections: result.correction_metadata,
       baseline_input_fingerprint: result.baseline_input_fingerprint } : {}) };
   return {
     "gotowe/sklepy.json": { ...metadata, count: result.ready.length, stores: result.ready },
-    "do-weryfikacji/sklepy.json": { ...metadata, count: result.review.length, stores: result.review },
+    "do-weryfikacji/sklepy.json": { ...metadata, count: result.review.length, stores: result.review,
+      ...(result.duplicateRecords ? { duplicate_count: result.duplicateRecords.length, duplicate_records: result.duplicateRecords } : {}) },
     "raport-przygotowania.json": { ...metadata, ...result.report },
   };
 }
 
-export function run(baseDirectory, checkOnly = false) {
-  const { manifest, datasets } = loadSources(baseDirectory);
+export function prepareCatalogue(baseDirectory, { auditCount = Infinity } = {}) {
+  const { manifest, datasets, additionalDatasets } = loadSources(baseDirectory);
   const result = applyReviewDecisions(applyCorrections(prepareData(manifest, datasets), loadCorrections(baseDirectory)), loadReviewDecisions(baseDirectory));
+  // Dawna migawka pozostaje podstawą weryfikacji podpisanych poprawek Biedronki.
+  // Zakres publikacji stosujemy po sprawdzeniu tych dowodów.
+  const publishedChains = ["lidl", "biedronka", "dino"];
+  const published = (entry) => publishedChains.includes(entry.chain);
+  const previousBiedronka = [...result.ready, ...result.review].filter(store => store.chain === "biedronka");
+  const knownIds = new Set(previousBiedronka.map(store => store.source.store_id));
+  const changedAddresses = new Set(manifest.biedronka_address_updates);
+  const update = additionalDatasets.biedronka;
+  const wanted = feature => !knownIds.has(text(feature.properties.ref))
+    || changedAddresses.has(text(feature.properties.ref));
+  const changes = { ...additionalDatasets, biedronka: { ...update, features: update.features
+    .map((feature, source_index) => ({ ...feature, source_index }))
+    .filter(wanted) } };
+  const additions = prepareData({ filters: { country: "PL" }, sources: manifest.additional_sources }, changes);
+  for (const store of additions.ready.filter(entry => entry.chain === "biedronka")) {
+    const matches = previousBiedronka.filter(previous =>
+      key(previous.address.city) === key(store.address.city)
+        && key(previous.address.street_address) === key(store.address.street_address));
+    if (matches.length) {
+      issue(store, "possible_duplicate_address", "Adres jest już w katalogu Biedronki.", matches.map(match => match.id));
+      store.quality.status = "needs_review";
+      additions.review.push(store);
+      const summary = additions.report.sources.find(source => source.chain === "biedronka");
+      summary.ready_records--;
+      summary.review_records++;
+    }
+  }
+  additions.ready = additions.ready.filter(store => store.quality.status === "ready");
+  for (const ref of changedAddresses) {
+    const previous = previousBiedronka.find(store => store.source.store_id === ref);
+    assert.ok(previous && additions.review.some(store => store.id === previous.id && store.location === null),
+      `Brakuje rekordu ze zmienionym adresem bez potwierdzonego punktu: ${ref}`);
+    const summary = result.report.sources.find(source => source.chain === "biedronka");
+    summary[previous.quality.status === "ready" ? "ready_records" : "review_records"]--;
+    summary.selected_records--;
+    summary.input_records--;
+  }
+  const keep = entry => published(entry)
+    && !(entry.chain === "biedronka" && changedAddresses.has(entry.source.store_id));
+  result.ready = [...result.ready.filter(keep), ...additions.ready];
+  result.review = [...result.review.filter(keep), ...additions.review];
+  result.sources = [...result.sources.filter(published), ...additions.sources];
+  const report = result.report;
+  report.sources = [...report.sources.filter(published), ...additions.report.sources];
+  report.input_records = report.sources.reduce((total, source) => total + source.input_records, 0);
+  report.ready_records = result.ready.length;
+  report.review_records = result.review.length;
+  report.selected_records = report.ready_records + report.review_records;
+  report.issue_counts = {};
+  for (const store of result.review) {
+    for (const { code } of store.quality.issues) report.issue_counts[code] = (report.issue_counts[code] ?? 0) + 1;
+  }
+  result.input_fingerprint = sha256(JSON.stringify({ snapshot: result.input_fingerprint, publishedChains, additions: additions.input_fingerprint }));
+  const auditKeys = ["biedronka_audit", "biedronka_address_audit", "biedronka_followup_audit", "biedronka_targeted_audit", "biedronka_postcode_audit", "biedronka_osm_address_audit", "biedronka_overture_audit", "biedronka_corrected_address_audit", "biedronka_individual_audit", "biedronka_remaining_audit", "biedronka_recheck_audit", "biedronka_location_audit", "biedronka_building_audit", "biedronka_site_audit", "biedronka_registry_audit", "biedronka_lomnica_audit"];
+  for (const key of auditKeys.slice(0, auditCount)) {
+    if (manifest[key]) result[key] = applyCatalogueAudit(result, baseDirectory, manifest[key]);
+  }
+  return result;
+}
+
+function applyCatalogueAudit(result, baseDirectory, auditFile) {
+  const report = result.report;
+  const auditRaw = fs.readFileSync(localPath(baseDirectory, auditFile));
+  const audit = JSON.parse(auditRaw);
+  assert.equal(audit.input_fingerprint, result.input_fingerprint, "Przegląd Biedronki dotyczy innej wersji katalogu.");
+  assert.deepEqual(audit.decisions.map(row => row.id).sort(), result.review.map(store => store.id).sort(),
+    "Przegląd musi obejmować aktualną listę rekordów do weryfikacji.");
+  const accepted = new Map(audit.decisions.filter(row => row.accepted).map(row => [row.id, row.accepted]));
+  result.review = result.review.filter(store => {
+    const correction = accepted.get(store.id);
+    if (!correction) return true;
+    const issues = store.quality.issues.map(entry => entry.code);
+    assert.deepEqual([...issues].sort(), correction.resolves ?? ["missing_geometry"]);
+    if (issues.includes("missing_geometry")) assert.equal(store.location, null);
+    for (const code of issues) {
+      report.issue_counts[code]--;
+      if (report.issue_counts[code] === 0) delete report.issue_counts[code];
+    }
+    store.location = locationOf({ geometry: { type: "Point", coordinates: [correction.location.longitude, correction.location.latitude] } }, store);
+    assert.ok(store.location && store.quality.issues.length === issues.length, `Nieprawidłowe współrzędne: ${store.id}`);
+    if (correction.address) store.address = correction.address;
+    if (store.source_review?.status === "requires_review") {
+      store.prior_source_review = store.source_review;
+      store.source_review = {
+        status: "corroborated",
+        reviewed_at: audit.retrieved_on,
+        report_file: auditFile,
+        reason: "Weryfikacja lokalizacji zakończona na podstawie dodatkowego źródła.",
+      };
+    }
+    store.quality = { status: "ready", issues: [] };
+    if (audit.overture_release || correction.overture_release || correction.precision === "official_shop_point") {
+      store.location_verification = {
+        evidence: correction.evidence, official_address: correction.official_address,
+        precision: correction.precision, retrieved_on: audit.retrieved_on,
+        ...(correction.alias_ids ? { alias_ids: correction.alias_ids } : {}),
+        ...(correction.overture_id ? { overture_id: correction.overture_id, overture_release: correction.overture_release ?? audit.overture_release } : {}),
+        ...(correction.address_evidence ? { address_evidence: correction.address_evidence } : {}),
+      };
+    } else {
+      store.location_verification = ["address_point", "building_footprint"].includes(correction.precision)
+        ? { evidence: correction.evidence, official_address: correction.official_address, precision: correction.precision, retrieved_on: audit.retrieved_on,
+          ...(correction.address_evidence ? { address_evidence: correction.address_evidence } : {}) }
+        : { evidence: correction.evidence, osm_observed_at: correction.osm_observed_at ?? audit.osm_observed_at,
+          ...(correction.address_evidence ? { official_address: correction.official_address, address_evidence: correction.address_evidence } : {}) };
+    }
+    result.ready.push(store);
+    const index = result.sources.findIndex(source => source.file === store.source.dataset_file);
+    assert.ok(index >= 0);
+    report.sources[index].ready_records++;
+    report.sources[index].review_records--;
+    return false;
+  });
+  const aliases = new Map(audit.decisions.filter(row => row.alias_of).map(row => [row.id, row]));
+  if (aliases.size) {
+    result.duplicateRecords ??= [];
+    const readyById = new Map(result.ready.map(store => [store.id, store]));
+    result.review = result.review.filter(store => {
+      const decision = aliases.get(store.id);
+      if (!decision) return true;
+      const published = readyById.get(decision.alias_of);
+      assert.ok(published && published.chain === store.chain && key(published.address.formatted) === key(store.address.formatted),
+        `Nie udało się powiązać rekordu ${store.id} z opublikowanym adresem.`);
+      published.source_aliases ??= [];
+      published.source_aliases.push({ id: store.id, evidence: decision.evidence, report_file: auditFile });
+      result.duplicateRecords.push({ ...store, duplicate_of: published.id, evidence: decision.evidence, report_file: auditFile });
+      const summary = report.sources[result.sources.findIndex(source => source.file === store.source.dataset_file)];
+      summary.review_records--;
+      summary.duplicate_records = (summary.duplicate_records ?? 0) + 1;
+      for (const { code } of store.quality.issues) {
+        report.issue_counts[code]--;
+        if (report.issue_counts[code] === 0) delete report.issue_counts[code];
+      }
+      return false;
+    });
+    report.duplicate_records = result.duplicateRecords.length;
+  }
+  report.ready_records = result.ready.length;
+  report.review_records = result.review.length;
+  assert.equal(report.selected_records, report.ready_records + report.review_records + (report.duplicate_records ?? 0));
+  const auditHash = sha256(auditRaw);
+  result.input_fingerprint = sha256(JSON.stringify({ before_audit: result.input_fingerprint, audit: auditHash }));
+  return { file: auditFile, sha256: auditHash, reviewed: audit.reviewed, accepted: accepted.size,
+    ...(aliases.size ? { aliases: aliases.size } : {}) };
+}
+
+export function run(baseDirectory, checkOnly = false) {
+  const result = prepareCatalogue(baseDirectory);
   const outputs = buildOutputs(result, new Date().toISOString());
   if (checkOnly) {
     const timestamps = new Set();

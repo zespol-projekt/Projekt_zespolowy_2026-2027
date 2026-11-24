@@ -1,0 +1,77 @@
+[
+  {
+    "id": 7505,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gorz%C3%B3w+Wielkopolski%2C+Szczeci%C5%84ska+8&exact_number=1&srid=4326",
+    "results": [
+      {
+        "city": "Gorzów Wielkopolski",
+        "citypart": null,
+        "street": "Szczecińska",
+        "number": "8",
+        "teryt": "086101",
+        "simc": "0935140",
+        "ulic": "21805",
+        "code": "66-400",
+        "jednostka": "{Polska,lubuskie,\"Gorzów Wielkopolski\",\"Gorzów Wielkopolski\"}",
+        "x": "15.1498615047865",
+        "y": "52.747301745214",
+        "geometry_wkt": "POINT(15.1498615047865 52.747301745214)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": 7856,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Papro%C4%87%2C+Handlowa+1&exact_number=1&srid=4326",
+    "results": [
+      {
+        "city": "Paproć",
+        "citypart": null,
+        "street": "Handlowa",
+        "number": "1",
+        "teryt": "301504",
+        "simc": "0591136",
+        "ulic": "06507",
+        "code": "64-300",
+        "jednostka": "{Polska,wielkopolskie,nowotomyski,\"Nowy Tomyśl\"}",
+        "x": "16.1395791651065",
+        "y": "52.305614869554",
+        "geometry_wkt": "POINT(16.1395791651065 52.305614869554)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": 3599,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Tuszynek+Majoracki%2C+Tysi%C4%85clecia+17&exact_number=1&srid=4326",
+    "results": [
+      {
+        "city": "Tuszynek Majoracki",
+        "citypart": null,
+        "street": "Tysiąclecia",
+        "number": "17",
+        "teryt": "100611",
+        "simc": "0554230",
+        "ulic": "23270",
+        "code": "95-080",
+        "jednostka": "{Polska,łódzkie,\"łódzki wschodni\",Tuszyn}",
+        "x": "19.5458552516117",
+        "y": "51.599789010796",
+        "geometry_wkt": "POINT(19.5458552516117 51.599789010796)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  }
+]

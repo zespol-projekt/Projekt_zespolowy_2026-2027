@@ -7,8 +7,9 @@ import { MAPLIBRE_ASSETS } from '../../src/features/stores/map/document';
 export const stores = [
   { id: 'lidl:test', chain: 'lidl', name: 'Lidl', address: 'Łódź, Żółta 1', latitude: 51.75, longitude: 19.45 },
   { id: 'biedronka:test', chain: 'biedronka', name: 'Biedronka', address: 'Warszawa, Testowa 2', latitude: 52.23, longitude: 21.01 },
-  { id: 'auchan:test', chain: 'auchan', name: 'Auchan', address: 'Gdańsk, Testowa 3', latitude: 54.35, longitude: 18.65 },
+  { id: 'kaufland:test', chain: 'kaufland', name: 'Kaufland', address: 'Gdańsk, Testowa 3', latitude: 54.35, longitude: 18.65 },
   { id: 'dino:test', chain: 'dino', name: 'Dino', address: 'Poznań, Długa 4', latitude: 52.4, longitude: 16.92 },
+  { id: 'carrefour:test', chain: 'carrefour', name: 'Carrefour', address: 'Kraków, Testowa 5', latitude: 50.05, longitude: 19.96 },
 ];
 export const catalog = (points = stores) => ({ version: 1, updatedAt: '2026-11-02T12:00:00Z', count: points.length, stores: points });
 export const embedded = (page: Page) => page.frameLocator('[data-testid="stores-map"]');

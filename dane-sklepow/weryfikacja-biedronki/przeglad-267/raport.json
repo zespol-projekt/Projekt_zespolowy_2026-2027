@@ -1,0 +1,2027 @@
+{
+  "input_fingerprint": "1c929788696a483599aac324dfe4e159f9292e267a2de8d0e0744ee50e58a536",
+  "reviewed": 267,
+  "retrieved_on": "2026-11-23",
+  "osm_observed_at": "2026-11-23T01:14:58Z",
+  "accepted": 27,
+  "totals": {
+    "no_osm_address_candidate": 202,
+    "confirmed": 27,
+    "no_independent_match": 38
+  },
+  "decisions": [
+    {
+      "id": "biedronka:1069",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1172",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1187",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1190",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1218",
+      "status": "confirmed",
+      "registry_distance_m": 10,
+      "registry_address": {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "ulica ppłk. Wacława Szadkowskiego",
+        "number": "1A",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "44365",
+        "code": "01-493",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "630940.59",
+        "y": "488979.03",
+        "geometry_wkt": "POINT(630940.59 488979.03)",
+        "accuracy": "0.576923",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.511111",
+        "street_accuracy": "0.511111",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.2513234,
+          "longitude": 20.9186988
+        },
+        "evidence": "https://www.openstreetmap.org/way/59421803",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Podpu%C5%82kownika+Wac%C5%82awa+Szadkowskiego+1A"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1221",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1229",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1251",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1257",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1270",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1279",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1282",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1284",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1305",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1311",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1314",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1340",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1369",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1380",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1390",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1401",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1403",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1420",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1421",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1432",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1439",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1444",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1449",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1453",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1488",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1489",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1500",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1514",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1521",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1523",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1536",
+      "status": "confirmed",
+      "registry_distance_m": 11,
+      "registry_address": {
+        "city": "Kędzierzyn-Koźle",
+        "citypart": null,
+        "street": "Aleja Jana Pawła II",
+        "number": "50A",
+        "teryt": "160301",
+        "simc": "0965424",
+        "ulic": "33262",
+        "code": "47-232",
+        "jednostka": "{Polska,opolskie,kędzierzyńsko-kozielski,Kędzierzyn-Koźle}",
+        "x": "445319.06",
+        "y": "276256.13",
+        "geometry_wkt": "POINT(445319.06 276256.13)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.3508135,
+          "longitude": 18.2312298
+        },
+        "evidence": "https://www.openstreetmap.org/way/194159686",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kedzierzyn-kozle",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=K%C4%99dzierzyn-Ko%C5%BAle%2C+Aleja+Jana+Paw%C5%82a+II+50A"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1542",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1548",
+      "status": "confirmed",
+      "registry_distance_m": 18,
+      "registry_address": {
+        "city": "Chojnice",
+        "citypart": null,
+        "street": "Marszałka Józefa Piłsudskiego",
+        "number": "38",
+        "teryt": "220201",
+        "simc": "0928854",
+        "ulic": "36029",
+        "code": "89-600",
+        "jednostka": "{Polska,pomorskie,chojnicki,Chojnice}",
+        "x": "405569.55",
+        "y": "648297.9",
+        "geometry_wkt": "POINT(405569.55 648297.9)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.690777,
+          "longitude": 17.5693554
+        },
+        "evidence": "https://www.openstreetmap.org/way/68337621",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=chojnice",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Chojnice%2C+Marsza%C5%82ka+J%C3%B3zefa+Pi%C5%82sudskiego+38"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1553",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1568",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1571",
+      "status": "confirmed",
+      "registry_distance_m": 17,
+      "registry_address": {
+        "city": "Pszów",
+        "citypart": null,
+        "street": "Romualda Traugutta",
+        "number": "6",
+        "teryt": "241501",
+        "simc": "0945083",
+        "ulic": "22965",
+        "code": "44-370",
+        "jednostka": "{Polska,śląskie,wodzisławski,Pszów}",
+        "x": "456858.47",
+        "y": "241600.67",
+        "geometry_wkt": "POINT(456858.47 241600.67)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.0399646,
+          "longitude": 18.3973924
+        },
+        "evidence": "https://www.openstreetmap.org/way/286295322",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pszow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Psz%C3%B3w%2C+Romualda+Traugutta+6"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1579",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1583",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1590",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1599",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1601",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1609",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1615",
+      "status": "confirmed",
+      "registry_distance_m": 22,
+      "registry_address": {
+        "city": "Miechów",
+        "citypart": null,
+        "street": "Stanisławy Daneckiej",
+        "number": "2",
+        "teryt": "120805",
+        "simc": "0947225",
+        "ulic": "03583",
+        "code": "32-200",
+        "jednostka": "{Polska,małopolskie,miechowski,Miechów}",
+        "x": "572616.67",
+        "y": "277014.61",
+        "geometry_wkt": "POINT(572616.67 277014.61)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.3558288,
+          "longitude": 20.0208211
+        },
+        "evidence": "https://www.openstreetmap.org/way/272626067",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=miechow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Miech%C3%B3w%2C+Stanis%C5%82awy+Daneckiej+2"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1618",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1620",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1625",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1658",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1661",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1682",
+      "status": "confirmed",
+      "registry_distance_m": 14,
+      "registry_address": {
+        "city": "Ruda Śląska",
+        "citypart": null,
+        "street": "ks. Józefa Niedzieli",
+        "number": "7",
+        "teryt": "247201",
+        "simc": "0942630",
+        "ulic": "14143",
+        "code": "41-711",
+        "jednostka": "{Polska,śląskie,\"Ruda Śląska\",\"Ruda Śląska\"}",
+        "x": "488138.16",
+        "y": "266818.44",
+        "geometry_wkt": "POINT(488138.16 266818.44)",
+        "accuracy": "0.825",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.730769",
+        "street_accuracy": "0.730769",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.268405,
+          "longitude": 18.8333118
+        },
+        "evidence": "https://www.openstreetmap.org/way/205271898",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ruda-slaska",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ruda+%C5%9Al%C4%85ska%2C+Ksi%C4%99dza+J%C3%B3zefa+Niedzieli+7"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1683",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1688",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1701",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1715",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1721",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1725",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1727",
+      "status": "confirmed",
+      "registry_distance_m": 67,
+      "registry_address": {
+        "city": "Świecie",
+        "citypart": null,
+        "street": "Gen. Władysława Sikorskiego",
+        "number": "2",
+        "teryt": "041409",
+        "simc": "0929664",
+        "ulic": "48859",
+        "code": "86-100",
+        "jednostka": "{Polska,kujawsko-pomorskie,świecki,Świecie}",
+        "x": "463602.45",
+        "y": "616636.37",
+        "geometry_wkt": "POINT(463602.45 616636.37)",
+        "accuracy": "0.837209",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.787879",
+        "street_accuracy": "0.787879",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.4129972,
+          "longitude": 18.4527348
+        },
+        "evidence": "https://www.openstreetmap.org/way/237723966",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=swiecie",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%9Awiecie%2C+Genera%C5%82a+W%C5%82adys%C5%82awa+Sikorskiego+2"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1729",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1757",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1762",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1768",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1771",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1787",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1789",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1807",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1819",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1827",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1829",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1839",
+      "status": "confirmed",
+      "registry_distance_m": 14,
+      "registry_address": {
+        "city": "Bobolice",
+        "citypart": null,
+        "street": "Plac Zwycięstwa",
+        "number": "7",
+        "teryt": "320903",
+        "simc": "0949804",
+        "ulic": "41645",
+        "code": "76-020",
+        "jednostka": "{Polska,zachodniopomorskie,koszaliński,Bobolice}",
+        "x": "341732.05",
+        "y": "679208.1",
+        "geometry_wkt": "POINT(341732.05 679208.1)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.9530401,
+          "longitude": 16.5874212
+        },
+        "evidence": "https://www.openstreetmap.org/relation/19915945",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bobolice",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bobolice%2C+Plac+Zwyci%C4%99stwa+7"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1843",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1868",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1875",
+      "status": "confirmed",
+      "registry_distance_m": 22,
+      "registry_address": {
+        "city": "Sosnowiec",
+        "citypart": null,
+        "street": "Gabriela Narutowicza",
+        "number": "56",
+        "teryt": "247501",
+        "simc": "0943428",
+        "ulic": "14018",
+        "code": "41-200",
+        "jednostka": "{Polska,śląskie,Sosnowiec,Sosnowiec}",
+        "x": "510510.76",
+        "y": "268475.55",
+        "geometry_wkt": "POINT(510510.76 268475.55)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.2833916,
+          "longitude": 19.1472614
+        },
+        "evidence": "https://www.openstreetmap.org/way/180841320",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sosnowiec",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sosnowiec%2C+Gabriela+Narutowicza+56"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1878",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1885",
+      "status": "confirmed",
+      "registry_distance_m": 22,
+      "registry_address": {
+        "city": "Nowa Sarzyna",
+        "citypart": null,
+        "street": "Janusza Korczaka",
+        "number": "5",
+        "teryt": "180805",
+        "simc": "0974788",
+        "ulic": "09329",
+        "code": "37-310",
+        "jednostka": "{Polska,podkarpackie,leżajski,\"Nowa Sarzyna\"}",
+        "x": "738190.11",
+        "y": "277825.29",
+        "geometry_wkt": "POINT(738190.11 277825.29)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.3192242,
+          "longitude": 22.3473393
+        },
+        "evidence": "https://www.openstreetmap.org/way/234868817",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nowa-sarzyna",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Nowa+Sarzyna%2C+Janusza+Korczaka+5"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1907",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1917",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1924",
+      "status": "confirmed",
+      "registry_distance_m": 12,
+      "registry_address": {
+        "city": "Giżycko",
+        "citypart": null,
+        "street": "Aleja 1 Maja",
+        "number": "38",
+        "teryt": "280601",
+        "simc": "0977692",
+        "ulic": "40237",
+        "code": "11-500",
+        "jednostka": "{Polska,warmińsko-mazurskie,giżycki,Giżycko}",
+        "x": "681857.36",
+        "y": "690507.06",
+        "geometry_wkt": "POINT(681857.36 690507.06)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 54.0467718,
+          "longitude": 21.7787734
+        },
+        "evidence": "https://www.openstreetmap.org/way/256336046",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gizycko",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gi%C5%BCycko%2C+Aleja+1+Maja+38"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1925",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:1932",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1963",
+      "status": "confirmed",
+      "registry_distance_m": 12,
+      "registry_address": {
+        "city": "Sosnowiec",
+        "citypart": null,
+        "street": "Aleja Zwycięstwa",
+        "number": "21a",
+        "teryt": "247501",
+        "simc": "0943428",
+        "ulic": "00209",
+        "code": "41-200",
+        "jednostka": "{Polska,śląskie,Sosnowiec,Sosnowiec}",
+        "x": "509399.4",
+        "y": "267857.56",
+        "geometry_wkt": "POINT(509399.4 267857.56)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.2777471,
+          "longitude": 19.1318276
+        },
+        "evidence": "https://www.openstreetmap.org/way/193768493",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sosnowiec",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sosnowiec%2C+Aleja+Zwyci%C4%99stwa+21a"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1971",
+      "status": "confirmed",
+      "registry_distance_m": 29,
+      "registry_address": {
+        "city": "Nowy Sącz",
+        "citypart": null,
+        "street": "Aleje Józefa Piłsudskiego",
+        "number": "106",
+        "teryt": "126201",
+        "simc": "0959435",
+        "ulic": "42515",
+        "code": "33-300",
+        "jednostka": "{Polska,małopolskie,\"Nowy Sącz\",\"Nowy Sącz\"}",
+        "x": "624687.45",
+        "y": "192766.4",
+        "geometry_wkt": "POINT(624687.45 192766.4)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 49.5896941,
+          "longitude": 20.725629
+        },
+        "evidence": "https://www.openstreetmap.org/way/290763297",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nowy-sacz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Nowy+S%C4%85cz%2C+Aleje+J%C3%B3zefa+Pi%C5%82sudskiego+106"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1973",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:1978",
+      "status": "confirmed",
+      "registry_distance_m": 25,
+      "registry_address": {
+        "city": "Zamość",
+        "citypart": null,
+        "street": "Prymasa Stefana Wyszyńskiego",
+        "number": "26",
+        "teryt": "066401",
+        "simc": "0987510",
+        "ulic": "25119",
+        "code": "22-400",
+        "jednostka": "{Polska,lubelskie,Zamość,Zamość}",
+        "x": "801485.58",
+        "y": "325121.63",
+        "geometry_wkt": "POINT(801485.58 325121.63)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.7145007,
+          "longitude": 23.2723315
+        },
+        "evidence": "https://www.openstreetmap.org/way/166535219",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zamosc",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zamo%C5%9B%C4%87%2C+Prymasa+Stefana+Wyszy%C5%84skiego+26"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1986",
+      "status": "confirmed",
+      "registry_distance_m": 12,
+      "registry_address": {
+        "city": "Strzegom",
+        "citypart": null,
+        "street": "Ignacego Jana Paderewskiego",
+        "number": "26",
+        "teryt": "021906",
+        "simc": "0984551",
+        "ulic": "15532",
+        "code": "58-150",
+        "jednostka": "{Polska,dolnośląskie,świdnicki,Strzegom}",
+        "x": "313757.47",
+        "y": "347175.51",
+        "geometry_wkt": "POINT(313757.47 347175.51)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.9613605,
+          "longitude": 16.3471607
+        },
+        "evidence": "https://www.openstreetmap.org/way/161757055",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=strzegom",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Strzegom%2C+Ignacego+Jana+Paderewskiego+26"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1998",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2004",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2006",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2011",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2017",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2024",
+      "status": "confirmed",
+      "registry_distance_m": 13,
+      "registry_address": {
+        "city": "Łódź",
+        "citypart": null,
+        "street": "Fiodora Dostojewskiego",
+        "number": "2",
+        "teryt": "106101",
+        "simc": "0957650",
+        "ulic": "04140",
+        "code": "92-507",
+        "jednostka": "{Polska,łódzkie,Łódź,Łódź}",
+        "x": "537170.16",
+        "y": "431944.78",
+        "geometry_wkt": "POINT(537170.16 431944.78)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.7526798,
+          "longitude": 19.5384582
+        },
+        "evidence": "https://www.openstreetmap.org/way/104410017",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lodz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81%C3%B3d%C5%BA%2C+Fiodora+Dostojewskiego+2"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:2033",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2038",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2043",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2047",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2058",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2067",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2069",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2080",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2095",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2100",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2114",
+      "status": "confirmed",
+      "registry_distance_m": 18,
+      "registry_address": {
+        "city": "Puławy",
+        "citypart": null,
+        "street": "gen. Fieldorfa \"Nila\"",
+        "number": "12",
+        "teryt": "061401",
+        "simc": "0956810",
+        "ulic": "35668",
+        "code": "24-100",
+        "jednostka": "{Polska,lubelskie,puławski,Puławy}",
+        "x": "706651.99",
+        "y": "398333.61",
+        "geometry_wkt": "POINT(706651.99 398333.61)",
+        "accuracy": "0.8",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.72",
+        "street_accuracy": "0.72",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.4137176,
+          "longitude": 21.9726853
+        },
+        "evidence": "https://www.openstreetmap.org/way/187219674",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pulawy",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pu%C5%82awy%2C+Genera%C5%82a+Fieldorfa+%22Nila%22+12"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:2122",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2136",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2149",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2157",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2162",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2188",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2202",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2211",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2220",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2230",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2247",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2256",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2279",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2287",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2295",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2313",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2316",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2325",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2327",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2335",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2338",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2344",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2355",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2358",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2359",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2378",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2393",
+      "status": "confirmed",
+      "registry_distance_m": 12,
+      "registry_address": {
+        "city": "Łódź",
+        "citypart": null,
+        "street": "Poli Gojawiczyńskiej",
+        "number": "20",
+        "teryt": "106101",
+        "simc": "0957650",
+        "ulic": "05713",
+        "code": "93-253",
+        "jednostka": "{Polska,łódzkie,Łódź,Łódź}",
+        "x": "534864.84",
+        "y": "429383.31",
+        "geometry_wkt": "POINT(534864.84 429383.31)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.7297214,
+          "longitude": 19.5051439
+        },
+        "evidence": "https://www.openstreetmap.org/way/125744173",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lodz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81%C3%B3d%C5%BA%2C+Poli+Gojawiczy%C5%84skiej+20"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:2398",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2411",
+      "status": "confirmed",
+      "registry_distance_m": 25,
+      "registry_address": {
+        "city": "Łódź",
+        "citypart": null,
+        "street": "Ary Sternfelda",
+        "number": "24",
+        "teryt": "106101",
+        "simc": "0957650",
+        "ulic": "21148",
+        "code": "93-325",
+        "jednostka": "{Polska,łódzkie,Łódź,Łódź}",
+        "x": "534230.41",
+        "y": "428117.76",
+        "geometry_wkt": "POINT(534230.41 428117.76)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.7184664,
+          "longitude": 19.4960219
+        },
+        "evidence": "https://www.openstreetmap.org/way/413600326",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lodz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81%C3%B3d%C5%BA%2C+Ary+Sternfelda+24"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:2421",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2437",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2443",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2444",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2456",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2474",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2477",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2478",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2479",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2496",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2498",
+      "status": "confirmed",
+      "registry_distance_m": 31,
+      "registry_address": {
+        "city": "Elbląg",
+        "citypart": null,
+        "street": "Generała Kazimierza Pułaskiego",
+        "number": "2A",
+        "teryt": "286101",
+        "simc": "0932703",
+        "ulic": "37885",
+        "code": "82-300",
+        "jednostka": "{Polska,warmińsko-mazurskie,Elbląg,Elbląg}",
+        "x": "527506.78",
+        "y": "699612.78",
+        "geometry_wkt": "POINT(527506.78 699612.78)",
+        "accuracy": "0.780488",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.709677",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 54.1601265,
+          "longitude": 19.420918
+        },
+        "evidence": "https://www.openstreetmap.org/way/233015694",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=elblag",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Elbl%C4%85g%2C+Kazimierza+Pu%C5%82askiego+2A"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:2508",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2519",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2522",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2545",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2550",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2577",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2641",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2643",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2682",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2698",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:2700",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2710",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2713",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2743",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2753",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2764",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:2769",
+      "status": "confirmed",
+      "registry_distance_m": 16,
+      "registry_address": {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "ulica gen. Romana Abrahama",
+        "number": "1",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "00091",
+        "code": "03-982",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "642247.3",
+        "y": "486564.63",
+        "geometry_wkt": "POINT(642247.3 486564.63)",
+        "accuracy": "0.697674",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.612903",
+        "street_accuracy": "0.59375",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.2267304,
+          "longitude": 21.0830861
+        },
+        "evidence": "https://www.openstreetmap.org/way/30957351",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Genera%C5%82a+Romana+Abrahama+1"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:2845",
+      "status": "confirmed",
+      "registry_distance_m": 15,
+      "registry_address": {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "Plac gen. Józefa Hallera",
+        "number": "6",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "45386",
+        "code": "03-464",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "638431.31",
+        "y": "490155.96",
+        "geometry_wkt": "POINT(638431.31 490155.96)",
+        "accuracy": "0.85",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.793103",
+        "street_accuracy": "0.793103",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.2598887,
+          "longitude": 21.0287977
+        },
+        "evidence": "https://www.openstreetmap.org/node/5455197921",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Plac+genera%C5%82a+J%C3%B3zefa+Hallera+6"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:2981",
+      "status": "confirmed",
+      "registry_distance_m": 17,
+      "registry_address": {
+        "city": "Białystok",
+        "citypart": null,
+        "street": "Prezydenta Ryszarda Kaczorowskiego",
+        "number": "7",
+        "teryt": "206101",
+        "simc": "0922410",
+        "ulic": "43071",
+        "code": "15-375",
+        "jednostka": "{Polska,podlaskie,Białystok,Białystok}",
+        "x": "777559.84",
+        "y": "592509.58",
+        "geometry_wkt": "POINT(777559.84 592509.58)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.125594,
+          "longitude": 23.150326
+        },
+        "evidence": "https://www.openstreetmap.org/node/4556855743",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bialystok",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bia%C5%82ystok%2C+Prezydenta+Ryszarda+Kaczorowskiego+7"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:3002",
+      "status": "confirmed",
+      "registry_distance_m": 23,
+      "registry_address": {
+        "city": "Sandomierz",
+        "citypart": null,
+        "street": "Eugeniusza Kwiatkowskiego",
+        "number": "67",
+        "teryt": "260901",
+        "simc": "0980926",
+        "ulic": "10559",
+        "code": "27-600",
+        "jednostka": "{Polska,świętokrzyskie,sandomierski,Sandomierz}",
+        "x": "693275.5",
+        "y": "318074.01",
+        "geometry_wkt": "POINT(693275.5 318074.01)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.6976655,
+          "longitude": 21.7378354
+        },
+        "evidence": "https://www.openstreetmap.org/way/692322628",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sandomierz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sandomierz%2C+Eugeniusza+Kwiatkowskiego+67"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:3018",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:3032",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3039",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3057",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3062",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:3074",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:3080",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3081",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:3083",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3090",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3106",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3116",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3191",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3357",
+      "status": "confirmed",
+      "registry_distance_m": 16,
+      "registry_address": {
+        "city": "Jadów",
+        "citypart": null,
+        "street": "Stanisława Augusta Poniatowskiego",
+        "number": "27b",
+        "teryt": "143406",
+        "simc": "0673220",
+        "ulic": "17116",
+        "code": "05-280",
+        "jednostka": "{Polska,mazowieckie,wołomiński,Jadów}",
+        "x": "678222.63",
+        "y": "515682.73",
+        "geometry_wkt": "POINT(678222.63 515682.73)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.4777104,
+          "longitude": 21.6251887
+        },
+        "evidence": "https://www.openstreetmap.org/way/586102390",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jadow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jad%C3%B3w%2C+Stanis%C5%82awa+Augusta+Poniatowskiego+27B"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:3404",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3435",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3462",
+      "status": "confirmed",
+      "registry_distance_m": 25,
+      "registry_address": {
+        "city": "Przasnysz",
+        "citypart": null,
+        "street": "Marszałka Józefa Piłsudskiego",
+        "number": "89",
+        "teryt": "142201",
+        "simc": "0966398",
+        "ulic": "36029",
+        "code": "06-300",
+        "jednostka": "{Polska,mazowieckie,przasnyski,Przasnysz}",
+        "x": "625881.31",
+        "y": "574209.51",
+        "geometry_wkt": "POINT(625881.31 574209.51)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.0182552,
+          "longitude": 20.8770862
+        },
+        "evidence": "https://www.openstreetmap.org/way/177242291",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=przasnysz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Przasnysz%2C+Marsza%C5%82ka+J%C3%B3zefa+Pi%C5%82sudskiego+89"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:3486",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3514",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3566",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3588",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3599",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3657",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3660",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3710",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3715",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3718",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3730",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3734",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:3797",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:459",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:561",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:664",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:6955",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:6961",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:6991",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7017",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7022",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7027",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7031",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7033",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7039",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7048",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7071",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7078",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7097",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7100",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7143",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7173",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7278",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7280",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7292",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7305",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7318",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7339",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7340",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7341",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7348",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7354",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7355",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7359",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7375",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7377",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7411",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7412",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7414",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7422",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7429",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7465",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7466",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:7505",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7518",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7561",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7582",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7583",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7594",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:7601",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7604",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7609",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7620",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7621",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7629",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7637",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7649",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7715",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7716",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7734",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7772",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7802",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7808",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7848",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7856",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7859",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7866",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7894",
+      "status": "confirmed",
+      "registry_distance_m": 16,
+      "registry_address": {
+        "city": "Głogów",
+        "citypart": null,
+        "street": "Generała Władysława Sikorskiego",
+        "number": "46",
+        "teryt": "020301",
+        "simc": "0954082",
+        "ulic": "38378",
+        "code": "67-200",
+        "jednostka": "{Polska,dolnośląskie,głogowski,Głogów}",
+        "x": "297245.72",
+        "y": "426157.41",
+        "geometry_wkt": "POINT(297245.72 426157.41)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.665333,
+          "longitude": 16.0671013
+        },
+        "evidence": "https://www.openstreetmap.org/way/1469238601",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=glogow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=G%C5%82og%C3%B3w%2C+Genera%C5%82a+W%C5%82adys%C5%82awa+Sikorskiego+46"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7902",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7906",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7912",
+      "status": "no_independent_match"
+    },
+    {
+      "id": "biedronka:7935",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:814",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7962",
+      "status": "no_osm_address_candidate"
+    },
+    {
+      "id": "biedronka:7953",
+      "status": "no_osm_address_candidate"
+    }
+  ]
+}

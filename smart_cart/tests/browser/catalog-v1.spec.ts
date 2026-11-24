@@ -76,7 +76,7 @@ test('Home i Szukaj otwierają wspólny katalog, a motyw zachowuje wpisaną ilo�
   await quantity.fill('750');
   await page.getByRole('button', { name: 'Otwórz menu' }).click();
   await page.getByRole('radio', { name: 'Ciemny', exact: true }).click();
-  await page.getByRole('button', { name: 'Zamknij menu', exact: true }).click();
+  await page.getByRole('button', { name: 'Zamknij menu przez tło' }).click();
   await expect(page.getByLabel('Menu SMARTCART', { exact: true })).toHaveCount(0);
   await expect(quantity).toHaveValue('750');
   await expect(page.getByRole('heading', { name: groupItem.name, exact: true })).toHaveCSS('color', 'rgb(237, 244, 239)');
@@ -87,10 +87,10 @@ test('Home i Szukaj otwierają wspólny katalog, a motyw zachowuje wpisaną ilo�
   await expect(quantity).toHaveValue('750');
   await page.getByRole('button', { name: 'Otwórz menu' }).click();
   await page.getByRole('radio', { name: 'Jasny', exact: true }).click();
-  await page.getByRole('button', { name: 'Zamknij menu', exact: true }).click();
+  await page.getByRole('button', { name: 'Zamknij menu przez tło' }).click();
   await expect(page.getByLabel('Menu SMARTCART', { exact: true })).toHaveCount(0);
   await expect(page.getByRole('heading', { name: groupItem.name, exact: true })).toHaveCSS('color', 'rgb(21, 45, 67)');
-  await page.getByRole('tab', { name: 'Home', exact: true }).click();
+  await page.getByRole('tab', { name: 'Start', exact: true }).click();
   await page.getByRole('link', { name: 'Produkty', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Katalog kategorii', exact: true })).toBeVisible();
   await page.reload();

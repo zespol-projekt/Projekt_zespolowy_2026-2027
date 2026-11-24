@@ -1,0 +1,1451 @@
+{
+  "input_fingerprint": "40b0ac51cb8860bfb3ffdb339a94b5173c5ca46632f39b91f60b0d528405b839",
+  "reviewed": 278,
+  "osm_observed_at": "2026-11-23T01:14:58Z",
+  "retrieved_on": "2026-11-23",
+  "accepted": 11,
+  "totals": {
+    "no_postcode_case": 262,
+    "confirmed": 11,
+    "no_confirmation": 5
+  },
+  "decisions": [
+    {
+      "id": "biedronka:1069",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1172",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1187",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1190",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1218",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1221",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1229",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1251",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1257",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1270",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1279",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1282",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1284",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1305",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1311",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1314",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1340",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1369",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1380",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1390",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1401",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1403",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1420",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1421",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1432",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1439",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1444",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1449",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1453",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1488",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1489",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1500",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1514",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1521",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1523",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1536",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1542",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1548",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1553",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1568",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1571",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1579",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1583",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1590",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1599",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1601",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1609",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1615",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1618",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1620",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1625",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1658",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1661",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1682",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1683",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1688",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1695",
+      "status": "confirmed",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,1695",
+        "title": "Ks. Jana Gałeczki 30,Chorzów - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Chorz%C3%B3w%2C+Ks.+Jana+Ga%C5%82eczki+30",
+      "postal_codes": [
+        "41-506",
+        "41-516"
+      ],
+      "distance_m": 29,
+      "accepted": {
+        "location": {
+          "latitude": 50.2870608,
+          "longitude": 18.9582423
+        },
+        "evidence": "https://www.openstreetmap.org/node/4389742190",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,1695",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Chorz%C3%B3w%2C+Ks.+Jana+Ga%C5%82eczki+30"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1701",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1715",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1721",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1725",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1727",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1729",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1757",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1762",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1768",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1771",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1787",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1789",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1807",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1819",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1827",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1829",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1839",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1843",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1868",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1875",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1878",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1885",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1907",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1917",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1924",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1925",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1932",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1942",
+      "status": "confirmed",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,1942",
+        "title": "Majakowskiego 48,Dąbrowa Górnicza - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%85browa+G%C3%B3rnicza%2C+Majakowskiego+48",
+      "postal_codes": [
+        "41-303",
+        "41-300"
+      ],
+      "distance_m": 14,
+      "accepted": {
+        "location": {
+          "latitude": 50.3216216,
+          "longitude": 19.215513
+        },
+        "evidence": "https://www.openstreetmap.org/way/333988217",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,1942",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%85browa+G%C3%B3rnicza%2C+Majakowskiego+48"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1963",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1971",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1973",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1978",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1986",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:1998",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2004",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2006",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2011",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2017",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2024",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2033",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2038",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2043",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2047",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2058",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2067",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2069",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2080",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2095",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2100",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2114",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2122",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2136",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2149",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2157",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2162",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2188",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2202",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2211",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2220",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2230",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2247",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2256",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2279",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2287",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2295",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2313",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2316",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2325",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2327",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2335",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2338",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2344",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2355",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2358",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2359",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2378",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2393",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2398",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2411",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2421",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2437",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2443",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2444",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2456",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2474",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2477",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2478",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2479",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2496",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2498",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2508",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2519",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2522",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2545",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2550",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2577",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2641",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2643",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2682",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2698",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2700",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2710",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2713",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2743",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2753",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2764",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2769",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2845",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:2981",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3002",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3018",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3032",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3039",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3057",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3062",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3074",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3078",
+      "status": "confirmed",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,3078",
+        "title": "Juliusza Słowackiego 16,Rzeszów - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rzesz%C3%B3w%2C+Juliusza+S%C5%82owackiego+16",
+      "postal_codes": [
+        "35-065",
+        "35-060"
+      ],
+      "distance_m": 61,
+      "accepted": {
+        "location": {
+          "latitude": 50.0364733,
+          "longitude": 22.0025632
+        },
+        "evidence": "https://www.openstreetmap.org/node/3007652477",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,3078",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rzesz%C3%B3w%2C+Juliusza+S%C5%82owackiego+16"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:3080",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3081",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3083",
+      "status": "no_confirmation",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,3083",
+        "title": "Gdańska 22,Przywidz - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Przywidz%2C+Gda%C5%84ska+22",
+      "postal_codes": [
+        "83-047",
+        "83-041"
+      ]
+    },
+    {
+      "id": "biedronka:3090",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3106",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3116",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3191",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3357",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3404",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3435",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3453",
+      "status": "confirmed",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,3453",
+        "title": "Żeromskiego 7B,Strawczyn - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Strawczyn%2C+%C5%BBeromskiego+7B",
+      "postal_codes": [
+        "26-052",
+        "26-067"
+      ],
+      "distance_m": 2,
+      "accepted": {
+        "location": {
+          "latitude": 50.9416654,
+          "longitude": 20.4243247
+        },
+        "evidence": "https://www.openstreetmap.org/way/872016273",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,3453",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Strawczyn%2C+%C5%BBeromskiego+7B"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:3462",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3486",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3514",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3566",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3588",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3599",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3657",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3660",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3710",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3715",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3718",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3730",
+      "status": "no_confirmation",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,3730",
+        "title": "Bałtycka 2,Mścice - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=M%C5%9Bcice%2C+Ba%C5%82tycka+2",
+      "postal_codes": [
+        "76-031",
+        "76-037"
+      ]
+    },
+    {
+      "id": "biedronka:3734",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:3797",
+      "status": "no_confirmation",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,3797",
+        "title": "Mińska 121,Siennica - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Siennica%2C+Mi%C5%84ska+121",
+      "postal_codes": [
+        "05-322",
+        "05-332"
+      ]
+    },
+    {
+      "id": "biedronka:459",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:561",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:664",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:6955",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:6961",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:6991",
+      "status": "no_confirmation",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,6991",
+        "title": "Tysiąclecia 2A,Płock - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=P%C5%82ock%2C+Tysi%C4%85clecia+2A",
+      "postal_codes": [
+        "09-402",
+        "09-400"
+      ]
+    },
+    {
+      "id": "biedronka:7017",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7022",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7027",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7031",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7033",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7039",
+      "status": "no_confirmation",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,7039",
+        "title": "Księcia Janusza I 21,Kolno - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kolno%2C+Ksi%C4%99cia+Janusza+I+21",
+      "postal_codes": [
+        "07-437",
+        "18-500"
+      ]
+    },
+    {
+      "id": "biedronka:7048",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7071",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7078",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7097",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7099",
+      "status": "confirmed",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,7099",
+        "title": "Okopowa 3,Lublin - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lublin%2C+Okopowa+3",
+      "postal_codes": [
+        "20-400",
+        "20-022"
+      ],
+      "distance_m": 17,
+      "accepted": {
+        "location": {
+          "latitude": 51.2453194,
+          "longitude": 22.5569962
+        },
+        "evidence": "https://www.openstreetmap.org/node/8288116827",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7099",
+        "resolves": [
+          "shared_coordinates_different_cities"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lublin%2C+Okopowa+3"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7100",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7143",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7173",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7278",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7280",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7292",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7305",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7318",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7339",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7340",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7341",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7348",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7354",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7355",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7359",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7375",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7377",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7411",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7412",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7414",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7422",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7429",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7440",
+      "status": "confirmed",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,7440",
+        "title": "Wieniawska 11,Lublin - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lublin%2C+Wieniawska+11",
+      "postal_codes": [
+        "20-400",
+        "20-071"
+      ],
+      "distance_m": 9,
+      "accepted": {
+        "location": {
+          "latitude": 51.2492744,
+          "longitude": 22.5524
+        },
+        "evidence": "https://www.openstreetmap.org/node/12670568141",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7440",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lublin%2C+Wieniawska+11",
+          "https://lublin24.pl/lublin/lublin-biedronka-otwiera-kolejny-sklep-w-centrum/CXGUHttJLrc2viWyNcpK"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7449",
+      "status": "confirmed",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,7449",
+        "title": "Szczecińska 57F,Koszalin - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Koszalin%2C+Szczeci%C5%84ska+57F",
+      "postal_codes": [
+        "75-135",
+        "75-122"
+      ],
+      "distance_m": 44,
+      "accepted": {
+        "location": {
+          "latitude": 54.1788286,
+          "longitude": 16.1438911
+        },
+        "evidence": "https://www.openstreetmap.org/way/1235495669",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7449",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Koszalin%2C+Szczeci%C5%84ska+57F",
+          "https://cdn.biedronka.pl/__2024/T11B/regulamin/Lista_sklepow_objetych_promocja_od_14_03.pdf"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7465",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7466",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7505",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7518",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7548",
+      "status": "confirmed",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,7548",
+        "title": "Kraczkowa 323,Kraczkowa - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kraczkowa+323",
+      "postal_codes": [
+        "37-123",
+        "37-124"
+      ],
+      "distance_m": 9,
+      "accepted": {
+        "location": {
+          "latitude": 50.03788295,
+          "longitude": 22.15913115
+        },
+        "evidence": "https://www.openstreetmap.org/way/256289347",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7548",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kraczkowa+323",
+          "https://api.openstreetmap.org/api/0.6/way/256289347/full.json"
+        ],
+        "osm_observed_at": "2026-11-23"
+      }
+    },
+    {
+      "id": "biedronka:7561",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7582",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7583",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7594",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7601",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7604",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7609",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7620",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7621",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7629",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7637",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7649",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7715",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7716",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7734",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7772",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7802",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7807",
+      "status": "confirmed",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,7807",
+        "title": "Szkolna 3,Mieroszyno - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Mieroszyno%2C+Szkolna+3",
+      "postal_codes": [
+        "84-103",
+        "84-100"
+      ],
+      "distance_m": 26,
+      "accepted": {
+        "location": {
+          "latitude": 54.800478,
+          "longitude": 18.312672
+        },
+        "evidence": "https://www.openstreetmap.org/way/1549620294",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7807",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Mieroszyno%2C+Szkolna+3"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7808",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7836",
+      "status": "confirmed",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,7836",
+        "title": "Pawła Eluarda 20,Wrocław - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wroc%C5%82aw%2C+Paw%C5%82a+Eluarda+20",
+      "postal_codes": [
+        "50-248",
+        "54-019"
+      ],
+      "distance_m": 11,
+      "accepted": {
+        "location": {
+          "latitude": 51.1475836,
+          "longitude": 16.8626371
+        },
+        "evidence": "https://www.openstreetmap.org/way/1446906953",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7836",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wroc%C5%82aw%2C+Paw%C5%82a+Eluarda+20",
+          "https://media.biedronka.pl/453144-wiosenne-przyspieszenie-biedronki"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7848",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7856",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7859",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7866",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7894",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7902",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7906",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7912",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7927",
+      "status": "confirmed",
+      "official": {
+        "url": "https://www.biedronka.pl/pl/shop,id,7927",
+        "title": "Opolska 37,Kraków - Biedronka.pl"
+      },
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Krak%C3%B3w%2C+Opolska+37",
+      "postal_codes": [
+        "31-323",
+        "31-277"
+      ],
+      "distance_m": 23,
+      "accepted": {
+        "location": {
+          "latitude": 50.0907627,
+          "longitude": 19.9262668
+        },
+        "evidence": "https://www.openstreetmap.org/node/11429005593",
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7927",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Krak%C3%B3w%2C+Opolska+37"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7935",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:814",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7962",
+      "status": "no_postcode_case"
+    },
+    {
+      "id": "biedronka:7953",
+      "status": "no_postcode_case"
+    }
+  ]
+}

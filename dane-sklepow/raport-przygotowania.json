@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-14T18:55:33.641Z",
-  "input_fingerprint": "6d56c0be40ec60fb663e07a9ceaccc1b8f478594df407ef56a0b58472c5de3c6",
+  "generated_at": "2026-11-23T16:53:06.981Z",
+  "input_fingerprint": "9f0dc95f6feaabc153350ce0bd55666eddd4fcb7aef50981c278e6ab3b128baa",
   "sources": [
     {
       "chain": "lidl",
@@ -14,12 +14,13 @@
     },
     {
       "chain": "biedronka",
-      "input_records": 3858,
+      "input_records": 3854,
       "excluded_country": 0,
       "excluded_store_format": 0,
-      "selected_records": 3858,
-      "ready_records": 3278,
-      "review_records": 580
+      "selected_records": 3854,
+      "ready_records": 3853,
+      "review_records": 0,
+      "duplicate_records": 1
     },
     {
       "chain": "dino",
@@ -31,15 +32,131 @@
       "review_records": 0
     },
     {
-      "chain": "auchan",
-      "input_records": 265,
+      "chain": "biedronka",
+      "input_records": 8,
       "excluded_country": 0,
-      "excluded_store_format": 119,
-      "selected_records": 146,
-      "ready_records": 146,
+      "excluded_store_format": 0,
+      "selected_records": 8,
+      "ready_records": 6,
+      "review_records": 0,
+      "duplicate_records": 2
+    },
+    {
+      "chain": "kaufland",
+      "input_records": 264,
+      "excluded_country": 0,
+      "excluded_store_format": 0,
+      "selected_records": 264,
+      "ready_records": 264,
+      "review_records": 0
+    },
+    {
+      "chain": "carrefour",
+      "input_records": 641,
+      "excluded_country": 0,
+      "excluded_store_format": 548,
+      "selected_records": 93,
+      "ready_records": 93,
       "review_records": 0
     }
   ],
+  "biedronka_lomnica_audit": {
+    "file": "weryfikacja-biedronki/przeglad-lomnicy/raport.json",
+    "sha256": "e1b6ad558eefc9ddc2a5b085f5fbacf4b7f701659ba0c0449a9c44bbb9ed8f58",
+    "reviewed": 1,
+    "accepted": 1
+  },
+  "biedronka_registry_audit": {
+    "file": "weryfikacja-biedronki/przeglad-2/raport.json",
+    "sha256": "7dac5a8f7cf9d4f4ebaaf1ef2146cb07bb994f1bce79458fef860c04f9a6681f",
+    "reviewed": 2,
+    "accepted": 1
+  },
+  "biedronka_site_audit": {
+    "file": "weryfikacja-biedronki/przeglad-5/raport.json",
+    "sha256": "39f59a75dbabd289a2b2678e6bf2fb44d166feb601bbd4aeb13ef955ae5b90bc",
+    "reviewed": 5,
+    "accepted": 3
+  },
+  "biedronka_building_audit": {
+    "file": "weryfikacja-biedronki/przeglad-10/raport.json",
+    "sha256": "c45aa9768520f77e38d65f1c288e7cd65c3edcab7432cc692eabd372fd183a85",
+    "reviewed": 10,
+    "accepted": 5
+  },
+  "biedronka_location_audit": {
+    "file": "weryfikacja-biedronki/przeglad-19/raport.json",
+    "sha256": "63835c14fac0ebe63050cbd92ab451291a226792e2449244e43e98f1a8dd4a25",
+    "reviewed": 19,
+    "accepted": 9
+  },
+  "biedronka_recheck_audit": {
+    "file": "weryfikacja-biedronki/przeglad-34/raport.json",
+    "sha256": "5314da254d0a8d74da31c6a5ed771fd84ab9fb7b196163cb205288c75a11ce29",
+    "reviewed": 34,
+    "accepted": 15
+  },
+  "biedronka_remaining_audit": {
+    "file": "weryfikacja-biedronki/przeglad-43/raport.json",
+    "sha256": "c8b9f5a33525e9cf74debc057e1e5c6b843ee22c8ae590387aedb0b4b127396f",
+    "reviewed": 43,
+    "accepted": 9
+  },
+  "biedronka_individual_audit": {
+    "file": "weryfikacja-biedronki/przeglad-66/raport.json",
+    "sha256": "cd0574cb9498acac739467ae539ae2db6c52896d300ea2e320147ea0794732fe",
+    "reviewed": 66,
+    "accepted": 20,
+    "aliases": 3
+  },
+  "biedronka_corrected_address_audit": {
+    "file": "weryfikacja-biedronki/przeglad-78/raport.json",
+    "sha256": "16eee91af340e59a2d60e13500bac90bd8fda54a2c3b4f344b584446972d5eed",
+    "reviewed": 78,
+    "accepted": 12
+  },
+  "biedronka_overture_audit": {
+    "file": "weryfikacja-biedronki/przeglad-240/raport.json",
+    "sha256": "c26d164642a19b297a0321d491c8c545dcff58e6edd44034cccc543cafe9c2c0",
+    "reviewed": 240,
+    "accepted": 162
+  },
+  "biedronka_osm_address_audit": {
+    "file": "weryfikacja-biedronki/przeglad-267/raport.json",
+    "sha256": "0d15703b5fa354763e7165f038f1201a3db9e496a3871ab699e48250cad9f270",
+    "reviewed": 267,
+    "accepted": 27
+  },
+  "biedronka_postcode_audit": {
+    "file": "weryfikacja-biedronki/przeglad-278/raport.json",
+    "sha256": "82d57fa588647200c1409de4117e1f3bb0af40df19381671d418a303cb9264dc",
+    "reviewed": 278,
+    "accepted": 11
+  },
+  "biedronka_targeted_audit": {
+    "file": "weryfikacja-biedronki/przeglad-303/raport.json",
+    "sha256": "b51a8d554f638a083e4d50ed0fae122a1e5f2dd138f71730b503f3c2e36eb815",
+    "reviewed": 303,
+    "accepted": 25
+  },
+  "biedronka_followup_audit": {
+    "file": "weryfikacja-biedronki/przeglad-396/raport.json",
+    "sha256": "ddc37da2adcb370634247813734e3720062a899160b2c8be12f93efe0ee42752",
+    "reviewed": 396,
+    "accepted": 93
+  },
+  "biedronka_address_audit": {
+    "file": "weryfikacja-biedronki/przeglad-582/raport.json",
+    "sha256": "2bf69b005fbf5f4cebb51814d9678eb480cd008537974711e0956f64cf3ef9c7",
+    "reviewed": 582,
+    "accepted": 186
+  },
+  "biedronka_audit": {
+    "file": "weryfikacja-biedronki/przeglad-586/raport.json",
+    "sha256": "48c05cbed35638716b6ee18b53279bbd1f98803655f83316919fcc05bbcab1d2",
+    "reviewed": 586,
+    "accepted": 4
+  },
   "source_review": {
     "file": "weryfikacja-biedronki/decyzje-przegladu.json",
     "sha256": "588f4d04f6f604e8beab2fb1652cf2933a2d403b5d0768675ec8d01ae31180ff",
@@ -67,17 +184,11 @@
     "license_url": "https://www.openstreetmap.org/copyright"
   },
   "baseline_input_fingerprint": "c57e8b7e4ab4c5c3c6dd57649d7d65d87ead9bb8a96b8014119d9c21bdab2d78",
-  "input_records": 20477,
-  "selected_records": 8333,
-  "ready_records": 7753,
-  "review_records": 580,
-  "issue_counts": {
-    "missing_geometry": 556,
-    "cross_source_address_conflict": 5,
-    "missing_street_address": 9,
-    "shared_coordinates_different_cities": 9,
-    "possible_duplicate_address": 2,
-    "shared_coordinates": 2
-  },
-  "limitation": "Gotowe oznacza przejście opisanych kontroli automatycznych. Nie potwierdza kompletności sieci ani zgodności każdego punktu z adresem."
+  "input_records": 21121,
+  "selected_records": 8548,
+  "ready_records": 8545,
+  "review_records": 0,
+  "issue_counts": {},
+  "limitation": "Gotowe oznacza przejście opisanych kontroli automatycznych. Nie potwierdza kompletności sieci ani zgodności każdego punktu z adresem.",
+  "duplicate_records": 3
 }

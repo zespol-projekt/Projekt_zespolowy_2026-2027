@@ -1,0 +1,20 @@
+[
+  {
+    "key": "gorzow",
+    "bbox": "15.1420000,52.7466500,15.1490000,52.7509900",
+    "StandardResolution_error": "The read operation timed out",
+    "HighResolution": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/HighResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=15.1420000%2C52.7466500%2C15.1490000%2C52.7509900&width=800&height=800&format=image%2Fjpeg&styles="
+  },
+  {
+    "key": "lubowidz",
+    "bbox": "19.8440687,53.1135553,19.8480687,53.1160353",
+    "StandardResolution": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=19.8440687%2C53.1135553%2C19.8480687%2C53.1160353&width=800&height=800&format=image%2Fjpeg&styles=",
+    "HighResolution": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/HighResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=19.8440687%2C53.1135553%2C19.8480687%2C53.1160353&width=800&height=800&format=image%2Fjpeg&styles="
+  },
+  {
+    "key": "paproc",
+    "bbox": "16.1376558,52.3046307,16.1416558,52.3071107",
+    "StandardResolution_error": "The read operation timed out",
+    "HighResolution": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/HighResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=16.1376558%2C52.3046307%2C16.1416558%2C52.3071107&width=800&height=800&format=image%2Fjpeg&styles="
+  }
+]

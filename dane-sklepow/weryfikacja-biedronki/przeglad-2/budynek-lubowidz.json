@@ -1,0 +1,12 @@
+{
+  "id": "143703_4.0001.1097_BUD",
+  "parcel": "143703_4.0001.864/5",
+  "egib_type": "h",
+  "wfs": "https://zuromin-powiat.geoportal2.pl/map/geoportal/wfse.php?service=WFS&request=GetFeature&version=2.0.0&typeNames=ewns%3Abudynki&bbox=53.1131%2C19.8435%2C53.1165%2C19.849%2CEPSG%3A4326&srsName=EPSG%3A4326",
+  "parcel_lookup": "https://uldk.gugik.gov.pl/?request=GetParcelByXY&xy=19.8460687%2C53.1147953%2C4326&result=teryt%2Cparcel%2Cregion%2Cgeom_wkt&srid=4326",
+  "location": {
+    "latitude": 53.1150511,
+    "longitude": 19.8458644
+  },
+  "distance_from_locker_m": 32
+}

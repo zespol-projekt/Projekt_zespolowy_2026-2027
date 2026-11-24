@@ -1,0 +1,3286 @@
+[
+  {
+    "id": "biedronka:1229",
+    "address": "Kordeckiego 56 58, 04-355 Warszawa",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Augustyna+Kordeckiego+56%2F58&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Warszawa",
+            "citypart": null,
+            "street": "ulica Augustyna Kordeckiego",
+            "number": "56/58",
+            "teryt": "146501",
+            "simc": "0918123",
+            "ulic": "09341",
+            "code": "04-355",
+            "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+            "x": "21.0963408114378",
+            "y": "52.2447632747472",
+            "geometry_wkt": "POINT(21.0963408114378 52.2447632747472)",
+            "accuracy": "0.857143",
+            "city_accuracy": "1",
+            "street_part_accuracy": "1",
+            "street_accuracy": "0.785714",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Augustyna+Kordeckiego+56&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=21.0948408%2C52.2437633%2C21.0978408%2C52.2457633",
+        "elements": [
+          {
+            "type": "node",
+            "id": 282141267,
+            "lat": 52.2448251,
+            "lon": 21.0960624,
+            "timestamp": "2026-06-12T16:08:53Z",
+            "tags": {
+              "addr:city": "Warszawa",
+              "addr:housenumber": "56/58",
+              "addr:postcode": "04-355",
+              "addr:street": "Augustyna Kordeckiego",
+              "brand": "Biedronka",
+              "brand:wikidata": "Q857182",
+              "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+              "check_date": "2026-06-12",
+              "email": "bok@biedronka.eu",
+              "name": "Biedronka",
+              "name:ru": "Бедронка",
+              "opening_hours": "Mo-Sa 06:00-23:30; Su 08:00-23:00",
+              "operator": "Jeronimo Martins Polska S.A.",
+              "shop": "supermarket",
+              "website": "https://www.biedronka.pl",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 282478350,
+            "lat": 52.2448554,
+            "lon": 21.0960782,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 282478351,
+            "lat": 52.2447402,
+            "lon": 21.096635,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 282673582,
+            "lat": 52.2445459,
+            "lon": 21.0964362,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 282673583,
+            "lat": 52.2446105,
+            "lon": 21.0961368,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 282673584,
+            "lat": 52.2446068,
+            "lon": 21.0961536,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 282673586,
+            "lat": 52.2444362,
+            "lon": 21.0960603,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 286835764,
+            "lat": 52.244439,
+            "lon": 21.0960489,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 286835765,
+            "lat": 52.2441497,
+            "lon": 21.0956869,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 286835767,
+            "lat": 52.2444206,
+            "lon": 21.0960385,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 286835768,
+            "lat": 52.2441745,
+            "lon": 21.095929,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 286835769,
+            "lat": 52.2440566,
+            "lon": 21.0960969,
+            "timestamp": "2021-05-21T13:04:50Z"
+          },
+          {
+            "type": "node",
+            "id": 286835770,
+            "lat": 52.2441306,
+            "lon": 21.0961395,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 301404849,
+            "lat": 52.2442252,
+            "lon": 21.0949155,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 301404850,
+            "lat": 52.2441701,
+            "lon": 21.0951778,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 301404858,
+            "lat": 52.2443226,
+            "lon": 21.094969,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 301404860,
+            "lat": 52.2443045,
+            "lon": 21.0950564,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 301404861,
+            "lat": 52.2442884,
+            "lon": 21.0951607,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 301404863,
+            "lat": 52.2442398,
+            "lon": 21.0952146,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 301404865,
+            "lat": 52.2442312,
+            "lon": 21.0952588,
+            "timestamp": "2021-04-21T20:00:12Z"
+          },
+          {
+            "type": "node",
+            "id": 717580945,
+            "lat": 52.2442569,
+            "lon": 21.0957476,
+            "timestamp": "2022-09-09T12:45:25Z",
+            "tags": {
+              "access": "private",
+              "entrance": "garage"
+            }
+          },
+          {
+            "type": "node",
+            "id": 947311619,
+            "lat": 52.2441775,
+            "lon": 21.0951405,
+            "timestamp": "2024-05-08T21:43:21Z",
+            "tags": {
+              "entrance": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 947311624,
+            "lat": 52.2442494,
+            "lon": 21.095268,
+            "timestamp": "2024-05-08T21:43:21Z",
+            "tags": {
+              "entrance": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3220263325,
+            "lat": 52.2448434,
+            "lon": 21.0960237,
+            "timestamp": "2026-06-12T16:08:53Z",
+            "tags": {
+              "amenity": "atm",
+              "check_date": "2026-06-12",
+              "indoor": "yes",
+              "opening_hours": "Mo-Fr 06:00-23:30",
+              "operator": "Euronet"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3234540010,
+            "lat": 52.2442025,
+            "lon": 21.0961865,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 3234540016,
+            "lat": 52.2442326,
+            "lon": 21.0960539,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 3234540023,
+            "lat": 52.2442805,
+            "lon": 21.0962335,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 3234540024,
+            "lat": 52.2442832,
+            "lon": 21.0951836,
+            "timestamp": "2021-04-21T20:00:12Z"
+          },
+          {
+            "type": "node",
+            "id": 3234540030,
+            "lat": 52.2443106,
+            "lon": 21.096101,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 3234540032,
+            "lat": 52.2443276,
+            "lon": 21.0953088,
+            "timestamp": "2014-12-14T16:16:45Z"
+          },
+          {
+            "type": "node",
+            "id": 3234540035,
+            "lat": 52.2443461,
+            "lon": 21.0952178,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 3234540036,
+            "lat": 52.2443761,
+            "lon": 21.0963418,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 3234540039,
+            "lat": 52.244382,
+            "lon": 21.0962229,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 3234540042,
+            "lat": 52.2443994,
+            "lon": 21.096233,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 3234540049,
+            "lat": 52.2445592,
+            "lon": 21.0961299,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 3234540050,
+            "lat": 52.2445632,
+            "lon": 21.0961116,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 8588075623,
+            "lat": 52.2448892,
+            "lon": 21.0960673,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 8753040251,
+            "lat": 52.2441012,
+            "lon": 21.0958876,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 8753040252,
+            "lat": 52.2441056,
+            "lon": 21.0958912,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011286415,
+            "lat": 52.2444503,
+            "lon": 21.0959043,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011286416,
+            "lat": 52.2445673,
+            "lon": 21.0959696,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308417,
+            "lat": 52.2445773,
+            "lon": 21.0960038,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308418,
+            "lat": 52.2445656,
+            "lon": 21.0960649,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308419,
+            "lat": 52.2445721,
+            "lon": 21.0960688,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308420,
+            "lat": 52.2446481,
+            "lon": 21.0959611,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308421,
+            "lat": 52.2446513,
+            "lon": 21.0959474,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308422,
+            "lat": 52.2446289,
+            "lon": 21.0958725,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308423,
+            "lat": 52.244474,
+            "lon": 21.0957865,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308424,
+            "lat": 52.24457,
+            "lon": 21.0963272,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308425,
+            "lat": 52.2443436,
+            "lon": 21.0957651,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308426,
+            "lat": 52.2443531,
+            "lon": 21.0957198,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308427,
+            "lat": 52.2443359,
+            "lon": 21.0957096,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308428,
+            "lat": 52.2442967,
+            "lon": 21.0957418,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308429,
+            "lat": 52.2442913,
+            "lon": 21.0957666,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308430,
+            "lat": 52.2442253,
+            "lon": 21.0957301,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308431,
+            "lat": 52.2442535,
+            "lon": 21.095965,
+            "timestamp": "2024-05-14T13:22:54Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308432,
+            "lat": 52.2442942,
+            "lon": 21.0957682,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308433,
+            "lat": 52.2443219,
+            "lon": 21.0957834,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308434,
+            "lat": 52.2441762,
+            "lon": 21.09592,
+            "timestamp": "2024-05-14T13:22:54Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308435,
+            "lat": 52.2442085,
+            "lon": 21.0957647,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 10011308436,
+            "lat": 52.2441428,
+            "lon": 21.0957247,
+            "timestamp": "2022-09-09T12:45:25Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832354,
+            "lat": 52.2448826,
+            "lon": 21.0960457,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832355,
+            "lat": 52.2448159,
+            "lon": 21.0960083,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832356,
+            "lat": 52.2447741,
+            "lon": 21.0962043,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832357,
+            "lat": 52.2447866,
+            "lon": 21.0962125,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832358,
+            "lat": 52.2447741,
+            "lon": 21.0962691,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832359,
+            "lat": 52.2447618,
+            "lon": 21.0962622,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832360,
+            "lat": 52.2447228,
+            "lon": 21.0964473,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832361,
+            "lat": 52.2447276,
+            "lon": 21.09647,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832362,
+            "lat": 52.2446977,
+            "lon": 21.0966122,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832363,
+            "lat": 52.2448846,
+            "lon": 21.0960921,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832364,
+            "lat": 52.2442071,
+            "lon": 21.0950027,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832365,
+            "lat": 52.2441844,
+            "lon": 21.0951058,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889832366,
+            "lat": 52.2442656,
+            "lon": 21.0952762,
+            "timestamp": "2024-05-08T21:43:21Z"
+          },
+          {
+            "type": "node",
+            "id": 11889971267,
+            "lat": 52.2448289,
+            "lon": 21.0960156,
+            "timestamp": "2024-05-08T23:34:11Z"
+          },
+          {
+            "type": "node",
+            "id": 11889974402,
+            "lat": 52.2448237,
+            "lon": 21.0960126,
+            "timestamp": "2024-05-08T23:34:11Z"
+          },
+          {
+            "type": "node",
+            "id": 11904078353,
+            "lat": 52.2444178,
+            "lon": 21.0960519,
+            "timestamp": "2024-05-14T13:22:54Z"
+          },
+          {
+            "type": "node",
+            "id": 11904078367,
+            "lat": 52.2442116,
+            "lon": 21.0959406,
+            "timestamp": "2024-05-14T13:22:54Z"
+          },
+          {
+            "type": "way",
+            "id": 25912447,
+            "timestamp": "2026-06-12T16:08:53Z",
+            "nodes": [
+              282673583,
+              282673584,
+              10011308424,
+              282673582,
+              3234540036,
+              3234540042,
+              3234540039,
+              11904078353,
+              286835767,
+              286835764,
+              282673586,
+              3234540049,
+              3234540050,
+              282673583
+            ],
+            "tags": {
+              "addr:city": "Warszawa",
+              "addr:city:simc": "0918123",
+              "addr:housenumber": "168A",
+              "addr:postcode": "04-357",
+              "addr:street": "Grochowska",
+              "brand": "Chrysler;Dodge;Jeep",
+              "building": "retail",
+              "building:levels": "3",
+              "check_date": "2026-06-12",
+              "name": "EdMark Auto",
+              "shop": "car",
+              "source": "www.geoportal.gov.pl",
+              "source:addr": "gugik.gov.pl"
+            }
+          },
+          {
+            "type": "way",
+            "id": 26195416,
+            "timestamp": "2023-04-03T17:46:35Z",
+            "nodes": [
+              286835768,
+              286835770,
+              286835769,
+              8753040251,
+              8753040252,
+              286835768
+            ],
+            "tags": {
+              "addr:city": "Warszawa",
+              "addr:city:simc": "0918123",
+              "addr:housenumber": "168",
+              "addr:postcode": "04-357",
+              "addr:street": "Grochowska",
+              "building": "retail",
+              "building:levels": "2",
+              "source": "www.geoportal.gov.pl",
+              "source:addr": "gugik.gov.pl"
+            }
+          },
+          {
+            "type": "way",
+            "id": 27450778,
+            "timestamp": "2026-06-12T16:10:47Z",
+            "nodes": [
+              11889832365,
+              301404861,
+              3234540024,
+              11889832366,
+              947311624,
+              301404865,
+              301404863,
+              301404850,
+              947311619,
+              11889832365
+            ],
+            "tags": {
+              "addr:city": "Warszawa",
+              "addr:city:simc": "0918123",
+              "addr:housenumber": "1",
+              "addr:postcode": "04-353",
+              "addr:street": "Wspólna Droga",
+              "amenity": "fast_food",
+              "building": "retail",
+              "building:levels": "2",
+              "check_date": "2026-06-12",
+              "cuisine": "asian",
+              "name": "Saigon",
+              "opening_hours": "Mo-Fr 10:00-20:00; Sa 11:00-20:00",
+              "roof:shape": "flat",
+              "source:addr": "gugik.gov.pl",
+              "source:building": "BDOT",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "way",
+            "id": 27450779,
+            "timestamp": "2026-06-12T16:10:47Z",
+            "nodes": [
+              301404860,
+              11889832364,
+              301404849,
+              301404858,
+              301404860
+            ],
+            "tags": {
+              "addr:city": "Warszawa",
+              "addr:city:simc": "0918123",
+              "addr:housenumber": "168C",
+              "addr:postcode": "04-357",
+              "addr:street": "Grochowska",
+              "building": "retail",
+              "building:levels": "1",
+              "check_date": "2026-06-12",
+              "name": "ATM",
+              "opening_hours": "24/7",
+              "roof:shape": "flat",
+              "shop": "alcohol",
+              "source:addr": "gugik.gov.pl",
+              "source:building": "BDOT",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 317214700,
+            "timestamp": "2026-06-12T16:10:47Z",
+            "nodes": [
+              3234540024,
+              3234540035,
+              3234540032,
+              11889832366,
+              3234540024
+            ],
+            "tags": {
+              "addr:city": "Warszawa",
+              "addr:city:simc": "0918123",
+              "addr:housenumber": "1A",
+              "addr:postcode": "04-353",
+              "addr:street": "Wspólna Droga",
+              "brand": "Putka",
+              "brand:wikidata": "Q113093586",
+              "building": "retail",
+              "building:levels": "1",
+              "check_date": "2026-06-12",
+              "name": "Putka",
+              "opening_hours": "Mo-Fr 06:00-19:00; Sa 07:00-14:00; Su off",
+              "phone": "+48 607 047 545",
+              "shop": "bakery",
+              "source:addr": "gugik.gov.pl",
+              "source:building": "BDOT",
+              "website": "https://www.putka.pl/sklepy-firmowe/12/6/79",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 317214701,
+            "timestamp": "2026-09-22T21:44:12Z",
+            "nodes": [
+              3234540023,
+              3234540010,
+              3234540016,
+              3234540030,
+              3234540023
+            ],
+            "tags": {
+              "addr:city": "Warszawa",
+              "addr:housenumber": "1",
+              "addr:street": "Nasielska",
+              "building": "retail",
+              "building:levels": "1",
+              "source:addr": "gugik.gov.pl",
+              "source:building": "BDOT"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1093139772,
+            "timestamp": "2022-09-09T12:45:25Z",
+            "nodes": [
+              10011308423,
+              10011308422,
+              10011308421,
+              10011308420,
+              282673583,
+              3234540050,
+              10011308419,
+              10011308418,
+              10011308417,
+              10011286416,
+              10011286415,
+              10011308423
+            ],
+            "tags": {
+              "building": "retail",
+              "building:levels": "1",
+              "source": "www.geoportal.gov.pl"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1093139773,
+            "timestamp": "2024-05-14T13:22:54Z",
+            "nodes": [
+              10011308433,
+              10011308432,
+              10011308431,
+              11904078367,
+              10011308434,
+              10011308435,
+              10011308436,
+              286835765,
+              10011308430,
+              717580945,
+              10011308429,
+              10011308428,
+              10011308427,
+              10011308426,
+              10011308425,
+              10011308433
+            ],
+            "tags": {
+              "building": "retail",
+              "building:levels": "1",
+              "source": "www.geoportal.gov.pl"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1093139774,
+            "timestamp": "2022-09-09T12:45:25Z",
+            "nodes": [
+              10011308436,
+              10011308435,
+              10011308434,
+              286835768,
+              8753040252,
+              10011308436
+            ],
+            "tags": {
+              "building": "retail",
+              "building:levels": "1",
+              "source": "www.geoportal.gov.pl"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1280976387,
+            "timestamp": "2024-05-08T23:34:11Z",
+            "nodes": [
+              8588075623,
+              11889832363,
+              282478350,
+              282478351,
+              11889832362,
+              11889832361,
+              11889832360,
+              11889832359,
+              11889832358,
+              11889832357,
+              11889832356,
+              11889832355,
+              11889974402,
+              11889971267,
+              3220263325,
+              11889832354,
+              8588075623
+            ],
+            "tags": {
+              "building": "retail",
+              "building:levels": "2",
+              "source:building": "BDOT"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1789",
+    "address": "Kościuszki 31 34, 88-150 Kruszwica",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kruszwica%2C+Tadeusza+Ko%C5%9Bciuszki+31&exact_number=1&srid=4326",
+        "results": []
+      },
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kruszwica%2C+Tadeusza+Ko%C5%9Bciuszki+34&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:1932",
+    "address": "Armii WP 12, 84-300 Lębork",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=L%C4%99bork%2C+Armii+Wojska+Polskiego+12&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Lębork",
+            "citypart": null,
+            "street": "Wojska Polskiego",
+            "number": "12",
+            "teryt": "220801",
+            "simc": "0977373",
+            "ulic": "24628",
+            "code": "84-300",
+            "jednostka": "{Polska,pomorskie,lęborski,Lębork}",
+            "x": "17.7439695792258",
+            "y": "54.5330366173813",
+            "geometry_wkt": "POINT(17.7439695792258 54.5330366173813)",
+            "accuracy": "0.818182",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.73913",
+            "street_accuracy": "0.73913",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=L%C4%99bork%2C+Wojska+Polskiego+12&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Lębork",
+            "citypart": null,
+            "street": "Wojska Polskiego",
+            "number": "12",
+            "teryt": "220801",
+            "simc": "0977373",
+            "ulic": "24628",
+            "code": "84-300",
+            "jednostka": "{Polska,pomorskie,lęborski,Lębork}",
+            "x": "17.7439695792258",
+            "y": "54.5330366173813",
+            "geometry_wkt": "POINT(17.7439695792258 54.5330366173813)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "street_part_accuracy": "1",
+            "street_accuracy": "1",
+            "id": 1
+          },
+          {
+            "city": "Lębork",
+            "citypart": null,
+            "street": "Opolska",
+            "number": "12",
+            "teryt": "220801",
+            "simc": "0977373",
+            "ulic": "15095",
+            "code": "84-300",
+            "jednostka": "{Polska,pomorskie,lęborski,Lębork}",
+            "x": "17.7418946492502",
+            "y": "54.5484542771848",
+            "geometry_wkt": "POINT(17.7418946492502 54.5484542771848)",
+            "accuracy": "0.5",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.25",
+            "street_accuracy": "0.25",
+            "id": 2
+          }
+        ]
+      }
+    ],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=17.7424696%2C54.5320366%2C17.7454696%2C54.5340366",
+        "elements": [
+          {
+            "type": "node",
+            "id": 3072240977,
+            "lat": 54.5327389,
+            "lon": 17.7437306,
+            "timestamp": "2021-11-30T21:09:29Z"
+          },
+          {
+            "type": "node",
+            "id": 3072240986,
+            "lat": 54.5329278,
+            "lon": 17.7435314,
+            "timestamp": "2021-11-30T21:09:29Z"
+          },
+          {
+            "type": "node",
+            "id": 3072241003,
+            "lat": 54.5330634,
+            "lon": 17.7444814,
+            "timestamp": "2021-11-30T21:09:29Z"
+          },
+          {
+            "type": "node",
+            "id": 3072241004,
+            "lat": 54.5330469,
+            "lon": 17.7445976,
+            "timestamp": "2021-11-30T21:09:29Z"
+          },
+          {
+            "type": "node",
+            "id": 3072241005,
+            "lat": 54.533089,
+            "lon": 17.7445533,
+            "timestamp": "2021-11-30T21:09:29Z"
+          },
+          {
+            "type": "node",
+            "id": 3072241021,
+            "lat": 54.5332101,
+            "lon": 17.7443266,
+            "timestamp": "2021-11-30T21:09:29Z"
+          },
+          {
+            "type": "way",
+            "id": 302942825,
+            "timestamp": "2021-11-30T21:09:29Z",
+            "nodes": [
+              3072240986,
+              3072240977,
+              3072241004,
+              3072241005,
+              3072241003,
+              3072241021,
+              3072240986
+            ],
+            "tags": {
+              "addr:city": "Lębork",
+              "addr:housenumber": "12",
+              "addr:postcode": "84-300",
+              "addr:street": "Wojska Polskiego",
+              "brand": "Biedronka",
+              "brand:wikidata": "Q857182",
+              "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+              "building": "retail",
+              "name": "Biedronka",
+              "operator": "Jeronimo Martins Polska S.A.",
+              "shop": "supermarket",
+              "wheelchair": "yes"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2220",
+    "address": "68-100 Żagań",
+    "queries": [],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=15.3032183%2C51.6151937%2C15.3062183%2C51.6171937",
+        "elements": [
+          {
+            "type": "node",
+            "id": 3995798868,
+            "lat": 51.6159134,
+            "lon": 15.3041767,
+            "timestamp": "2016-02-08T17:02:22Z"
+          },
+          {
+            "type": "node",
+            "id": 3995798870,
+            "lat": 51.6159259,
+            "lon": 15.304455,
+            "timestamp": "2016-02-08T17:02:22Z"
+          },
+          {
+            "type": "node",
+            "id": 3995798874,
+            "lat": 51.6159875,
+            "lon": 15.3044478,
+            "timestamp": "2016-02-08T17:02:23Z"
+          },
+          {
+            "type": "node",
+            "id": 3995798875,
+            "lat": 51.6160025,
+            "lon": 15.3047798,
+            "timestamp": "2016-02-08T17:02:23Z"
+          },
+          {
+            "type": "node",
+            "id": 3995798884,
+            "lat": 51.6161878,
+            "lon": 15.3041446,
+            "timestamp": "2016-02-08T17:02:23Z"
+          },
+          {
+            "type": "node",
+            "id": 3995798885,
+            "lat": 51.6162154,
+            "lon": 15.3047549,
+            "timestamp": "2016-02-08T17:02:23Z"
+          },
+          {
+            "type": "way",
+            "id": 396748904,
+            "timestamp": "2025-08-18T16:43:29Z",
+            "nodes": [
+              3995798868,
+              3995798884,
+              3995798885,
+              3995798875,
+              3995798874,
+              3995798870,
+              3995798868
+            ],
+            "tags": {
+              "brand": "Biedronka",
+              "brand:wikidata": "Q857182",
+              "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+              "building": "retail",
+              "name": "Biedronka",
+              "operator": "Jeronimo Martins Polska S.A.",
+              "shop": "supermarket",
+              "source:geometry": "geoportal.gov.pl:ortofoto",
+              "website": "https://www.biedronka.pl/pl/shop,id,2220"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2753",
+    "address": "Częstochowska 32-085, 32-085 Modlnica",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Modlnica%2C+Cz%C4%99stochowska+32&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:3191",
+    "address": "76-200 Jarosław",
+    "queries": [],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=22.6745509%2C50.0103743%2C22.6775509%2C50.0123743",
+        "elements": [
+          {
+            "type": "node",
+            "id": 3202154613,
+            "lat": 50.0112284,
+            "lon": 22.6769981,
+            "timestamp": "2014-11-23T20:05:58Z"
+          },
+          {
+            "type": "node",
+            "id": 3202154614,
+            "lat": 50.0112457,
+            "lon": 22.6769279,
+            "timestamp": "2014-11-23T20:05:58Z"
+          },
+          {
+            "type": "node",
+            "id": 3202154623,
+            "lat": 50.0114245,
+            "lon": 22.6771156,
+            "timestamp": "2014-11-23T20:05:58Z"
+          },
+          {
+            "type": "node",
+            "id": 3202154625,
+            "lat": 50.0114419,
+            "lon": 22.6770455,
+            "timestamp": "2014-11-23T20:05:58Z"
+          },
+          {
+            "type": "node",
+            "id": 8582744725,
+            "lat": 50.0115084,
+            "lon": 22.6754936,
+            "timestamp": "2022-12-28T15:56:11Z"
+          },
+          {
+            "type": "node",
+            "id": 8582744726,
+            "lat": 50.0112529,
+            "lon": 22.6753532,
+            "timestamp": "2022-12-28T15:56:11Z"
+          },
+          {
+            "type": "node",
+            "id": 8582744727,
+            "lat": 50.0110555,
+            "lon": 22.6767445,
+            "timestamp": "2022-12-28T15:56:11Z"
+          },
+          {
+            "type": "node",
+            "id": 8582744728,
+            "lat": 50.0112107,
+            "lon": 22.6768299,
+            "timestamp": "2022-12-28T15:56:11Z"
+          },
+          {
+            "type": "node",
+            "id": 8582744730,
+            "lat": 50.0114422,
+            "lon": 22.6769517,
+            "timestamp": "2022-12-28T15:56:11Z"
+          },
+          {
+            "type": "node",
+            "id": 8582744731,
+            "lat": 50.0112765,
+            "lon": 22.6768545,
+            "timestamp": "2022-12-28T15:56:11Z"
+          },
+          {
+            "type": "node",
+            "id": 8582744732,
+            "lat": 50.0113025,
+            "lon": 22.676727,
+            "timestamp": "2022-12-28T15:56:11Z"
+          },
+          {
+            "type": "node",
+            "id": 10291623714,
+            "lat": 50.0113026,
+            "lon": 22.6753805,
+            "timestamp": "2022-12-28T15:56:11Z"
+          },
+          {
+            "type": "node",
+            "id": 10291623724,
+            "lat": 50.0113922,
+            "lon": 22.6764658,
+            "timestamp": "2022-12-28T15:56:11Z"
+          },
+          {
+            "type": "node",
+            "id": 10291623726,
+            "lat": 50.0115053,
+            "lon": 22.6765245,
+            "timestamp": "2022-12-28T15:56:11Z"
+          },
+          {
+            "type": "node",
+            "id": 10858001259,
+            "lat": 50.0111208,
+            "lon": 22.6767804,
+            "timestamp": "2023-04-30T14:09:24Z"
+          },
+          {
+            "type": "node",
+            "id": 13103556625,
+            "lat": 50.0112218,
+            "lon": 22.6755723,
+            "timestamp": "2025-08-28T12:00:51Z"
+          },
+          {
+            "type": "node",
+            "id": 13103556626,
+            "lat": 50.0113272,
+            "lon": 22.6756297,
+            "timestamp": "2025-08-28T12:00:51Z"
+          },
+          {
+            "type": "node",
+            "id": 13103556627,
+            "lat": 50.0113682,
+            "lon": 22.6754166,
+            "timestamp": "2025-08-28T12:00:51Z"
+          },
+          {
+            "type": "node",
+            "id": 13103556628,
+            "lat": 50.0114597,
+            "lon": 22.6757122,
+            "timestamp": "2025-08-28T12:00:51Z"
+          },
+          {
+            "type": "node",
+            "id": 13103556629,
+            "lat": 50.0113303,
+            "lon": 22.6762931,
+            "timestamp": "2025-08-28T12:00:51Z"
+          },
+          {
+            "type": "node",
+            "id": 13103556630,
+            "lat": 50.0111315,
+            "lon": 22.6762086,
+            "timestamp": "2025-08-28T12:00:51Z"
+          },
+          {
+            "type": "node",
+            "id": 13103662712,
+            "lat": 50.0111129,
+            "lon": 22.6763399,
+            "timestamp": "2025-08-28T12:45:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13103662713,
+            "lat": 50.0113009,
+            "lon": 22.6764252,
+            "timestamp": "2025-08-28T12:45:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13103662714,
+            "lat": 50.0110971,
+            "lon": 22.6764514,
+            "timestamp": "2025-08-28T12:45:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13103662715,
+            "lat": 50.0112766,
+            "lon": 22.6765342,
+            "timestamp": "2025-08-28T12:45:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13103662716,
+            "lat": 50.0113539,
+            "lon": 22.6765774,
+            "timestamp": "2025-08-28T12:45:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13103662717,
+            "lat": 50.0114875,
+            "lon": 22.676645,
+            "timestamp": "2025-08-28T12:45:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13103662720,
+            "lat": 50.011465,
+            "lon": 22.6767976,
+            "timestamp": "2025-08-28T12:45:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13103662721,
+            "lat": 50.0113715,
+            "lon": 22.6769102,
+            "timestamp": "2025-08-28T12:45:01Z"
+          },
+          {
+            "type": "way",
+            "id": 314168135,
+            "timestamp": "2018-11-02T05:15:30Z",
+            "nodes": [
+              3202154625,
+              3202154623,
+              3202154613,
+              3202154614,
+              3202154625
+            ],
+            "tags": {
+              "building": "retail",
+              "building:levels": "1",
+              "roof:levels": "0"
+            }
+          },
+          {
+            "type": "way",
+            "id": 924791723,
+            "timestamp": "2025-08-28T12:45:01Z",
+            "nodes": [
+              8582744725,
+              13103556627,
+              10291623714,
+              8582744726,
+              13103556625,
+              13103556630,
+              13103662712,
+              13103662714,
+              8582744727,
+              10858001259,
+              8582744728,
+              13103662715,
+              13103662713,
+              13103556629,
+              13103556628,
+              8582744725
+            ],
+            "tags": {
+              "addr:city": "Jarosław",
+              "addr:city:simc": "0972192",
+              "addr:postcode": "37-500",
+              "addr:street": "Pruchnicka",
+              "building": "retail",
+              "source:addr": "gugik.gov.pl"
+            }
+          },
+          {
+            "type": "way",
+            "id": 924791724,
+            "timestamp": "2025-08-28T12:45:01Z",
+            "nodes": [
+              8582744730,
+              13103662721,
+              8582744731,
+              8582744732,
+              13103662716,
+              10291623724,
+              10291623726,
+              13103662717,
+              13103662720,
+              8582744730
+            ],
+            "tags": {
+              "addr:city": "Jarosław",
+              "addr:city:simc": "0972192",
+              "addr:housenumber": "1BB",
+              "addr:postcode": "37-500",
+              "addr:street": "Pruchnicka",
+              "building": "retail",
+              "building:levels": "1",
+              "roof:levels": "0",
+              "source:addr": "gugik.gov.pl"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1425566714,
+            "timestamp": "2025-10-18T22:51:18Z",
+            "nodes": [
+              13103556629,
+              13103556630,
+              13103556625,
+              13103556626,
+              13103556628,
+              13103556629
+            ],
+            "tags": {
+              "brand": "Biedronka",
+              "brand:wikidata": "Q857182",
+              "building:part": "yes",
+              "name": "Biedronka",
+              "shop": "supermarket"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1425574833,
+            "timestamp": "2025-10-18T22:51:18Z",
+            "nodes": [
+              13103662715,
+              13103662714,
+              8582744727,
+              10858001259,
+              8582744728,
+              13103662715
+            ],
+            "tags": {
+              "brand": "Biedronka",
+              "brand:wikidata": "Q857182",
+              "building:part": "yes",
+              "name": "Biedronka Outlet",
+              "shop": "supermarket"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:3435",
+    "address": "Łyskowskiego 41, 86-300 Grudziądz",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grudzi%C4%85dz%2C+%C5%81yskowskiego+41&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Grudziądz",
+            "citypart": null,
+            "street": "Jackowskiego",
+            "number": "41",
+            "teryt": "046201",
+            "simc": "0983333",
+            "ulic": "06999",
+            "code": "86-300",
+            "jednostka": "{Polska,kujawsko-pomorskie,Grudziądz,Grudziądz}",
+            "x": "18.7309352414838",
+            "y": "53.4649915121185",
+            "geometry_wkt": "POINT(18.7309352414838 53.4649915121185)",
+            "accuracy": "0.677419",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.444444",
+            "street_accuracy": "0.444444",
+            "id": 1
+          },
+          {
+            "city": "Grudziądz",
+            "citypart": null,
+            "street": "Jerzego Jalkowskiego",
+            "number": "41",
+            "teryt": "046201",
+            "simc": "0983333",
+            "ulic": "07094",
+            "code": "86-300",
+            "jednostka": "{Polska,kujawsko-pomorskie,Grudziądz,Grudziądz}",
+            "x": "18.8083793545",
+            "y": "53.4894534115565",
+            "geometry_wkt": "POINT(18.8083793545 53.4894534115565)",
+            "accuracy": "0.583333",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.444444",
+            "street_accuracy": "0.347826",
+            "id": 2
+          }
+        ]
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:3566",
+    "address": "05-180 Śniadowo",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%9Aniadowo%2C+Ostro%C5%82%C4%99cka+2&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Śniadowo",
+            "citypart": null,
+            "street": "Ostrołęcka",
+            "number": "2",
+            "teryt": "200707",
+            "simc": "0408600",
+            "ulic": "15382",
+            "code": "18-411",
+            "jednostka": "{Polska,podlaskie,łomżyński,Śniadowo}",
+            "x": "21.9892470209435",
+            "y": "53.0387281422768",
+            "geometry_wkt": "POINT(21.9892470209435 53.0387281422768)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "street_part_accuracy": "1",
+            "street_accuracy": "1",
+            "id": 1
+          }
+        ]
+      }
+    ],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=21.9870387%2C53.0442651%2C21.9900387%2C53.0462651",
+        "elements": [
+          {
+            "type": "node",
+            "id": 11584285472,
+            "lat": 53.0453188,
+            "lon": 21.9880692,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285473,
+            "lat": 53.0453222,
+            "lon": 21.9880729,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285474,
+            "lat": 53.0453211,
+            "lon": 21.9880755,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285475,
+            "lat": 53.0453993,
+            "lon": 21.9881597,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285476,
+            "lat": 53.0454068,
+            "lon": 21.9881411,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285477,
+            "lat": 53.0454396,
+            "lon": 21.9881776,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285478,
+            "lat": 53.0454321,
+            "lon": 21.9881962,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285479,
+            "lat": 53.045474,
+            "lon": 21.9882419,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285480,
+            "lat": 53.0454729,
+            "lon": 21.9882448,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285481,
+            "lat": 53.0452368,
+            "lon": 21.9888288,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285482,
+            "lat": 53.0452336,
+            "lon": 21.9888253,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285483,
+            "lat": 53.0452389,
+            "lon": 21.9888122,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285484,
+            "lat": 53.0451289,
+            "lon": 21.9886897,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285485,
+            "lat": 53.0451237,
+            "lon": 21.9887029,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 11584285486,
+            "lat": 53.0450818,
+            "lon": 21.9886563,
+            "timestamp": "2024-02-04T13:35:07Z"
+          },
+          {
+            "type": "node",
+            "id": 12248794155,
+            "lat": 53.0454599,
+            "lon": 21.9882741,
+            "timestamp": "2024-10-13T17:48:32Z"
+          },
+          {
+            "type": "way",
+            "id": 1246057084,
+            "timestamp": "2024-10-13T17:48:32Z",
+            "nodes": [
+              11584285472,
+              11584285473,
+              11584285474,
+              11584285475,
+              11584285476,
+              11584285477,
+              11584285478,
+              11584285479,
+              11584285480,
+              12248794155,
+              11584285481,
+              11584285482,
+              11584285483,
+              11584285484,
+              11584285485,
+              11584285486,
+              11584285472
+            ],
+            "tags": {
+              "addr:city": "Śniadowo",
+              "addr:city:simc": "0408600",
+              "addr:housenumber": "33c",
+              "addr:postcode": "18-411",
+              "addr:street": "Szosowa",
+              "building": "retail",
+              "building:levels": "1",
+              "source:addr": "gugik.gov.pl",
+              "source:building": "BDOT"
+            }
+          }
+        ]
+      },
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=21.9877470%2C53.0377281%2C21.9907470%2C53.0397281",
+        "elements": []
+      }
+    ]
+  },
+  {
+    "id": "biedronka:3599",
+    "address": "Tysiąclecia 17, 95-080 Tuszyn",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Tuszynek+Majoracki%2C+Tysi%C4%85clecia+17&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Tuszynek Majoracki",
+            "citypart": null,
+            "street": "Tysiąclecia",
+            "number": "17",
+            "teryt": "100611",
+            "simc": "0554230",
+            "ulic": "23270",
+            "code": "95-080",
+            "jednostka": "{Polska,łódzkie,\"łódzki wschodni\",Tuszyn}",
+            "x": "19.5458552516117",
+            "y": "51.599789010796",
+            "geometry_wkt": "POINT(19.5458552516117 51.599789010796)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "street_part_accuracy": "1",
+            "street_accuracy": "1",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Tuszyn%2C+Tysi%C4%85clecia+17&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.5443553%2C51.5987890%2C19.5473553%2C51.6007890",
+        "elements": [
+          {
+            "type": "node",
+            "id": 2603761716,
+            "lat": 51.6003897,
+            "lon": 19.5444269,
+            "timestamp": "2021-12-07T17:00:41Z"
+          },
+          {
+            "type": "node",
+            "id": 3666326364,
+            "lat": 51.6002533,
+            "lon": 19.5442826,
+            "timestamp": "2021-12-07T17:00:41Z"
+          },
+          {
+            "type": "node",
+            "id": 9318724440,
+            "lat": 51.6001536,
+            "lon": 19.5450021,
+            "timestamp": "2021-12-07T17:00:41Z"
+          },
+          {
+            "type": "node",
+            "id": 9318724441,
+            "lat": 51.6000172,
+            "lon": 19.5448577,
+            "timestamp": "2021-12-07T17:00:41Z"
+          },
+          {
+            "type": "way",
+            "id": 362299837,
+            "timestamp": "2021-12-07T17:00:41Z",
+            "nodes": [
+              2603761716,
+              3666326364,
+              9318724441,
+              9318724440,
+              2603761716
+            ],
+            "tags": {
+              "addr:city": "Tuszynek Majoracki",
+              "addr:housenumber": "17A",
+              "addr:postcode": "95-080",
+              "addr:street": "Tysiąclecia",
+              "brand": "Stokrotka",
+              "brand:wikidata": "Q9345945",
+              "brand:wikipedia": "pl:Stokrotka (sieć handlowa)",
+              "building": "yes",
+              "name": "Stokrotka",
+              "opening_hours": "Mo-Sa 06:00-22:00; Su 08:00-20:00",
+              "shop": "supermarket",
+              "source:addr": "EMUiA@iMPA (tuszyn.e-mapa.net)"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7039",
+    "address": "Księcia Janusza I 21, 07-437 Kolno",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kolno%2C+Ksi%C4%99cia+Janusza+I+21&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Kolno",
+            "citypart": null,
+            "street": "Księcia Janusza I",
+            "number": "21",
+            "teryt": "200601",
+            "simc": "0957420",
+            "ulic": "07226",
+            "code": "18-500",
+            "jednostka": "{Polska,podlaskie,kolneński,Kolno}",
+            "x": "21.9389244416221",
+            "y": "53.4029550382646",
+            "geometry_wkt": "POINT(21.9389244416221 53.4029550382646)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "street_part_accuracy": "1",
+            "street_accuracy": "1",
+            "id": 1
+          }
+        ]
+      }
+    ],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=21.9374244%2C53.4019550%2C21.9404244%2C53.4039550",
+        "elements": [
+          {
+            "type": "node",
+            "id": 10760025586,
+            "lat": 53.4034006,
+            "lon": 21.9393022,
+            "timestamp": "2024-05-27T10:34:27Z"
+          },
+          {
+            "type": "node",
+            "id": 10760025587,
+            "lat": 53.4033575,
+            "lon": 21.9392051,
+            "timestamp": "2024-05-27T10:34:27Z"
+          },
+          {
+            "type": "node",
+            "id": 10760025588,
+            "lat": 53.4034974,
+            "lon": 21.9390304,
+            "timestamp": "2024-05-27T10:34:27Z"
+          },
+          {
+            "type": "node",
+            "id": 10760025589,
+            "lat": 53.4032411,
+            "lon": 21.9384527,
+            "timestamp": "2024-05-27T10:34:27Z"
+          },
+          {
+            "type": "node",
+            "id": 10760025590,
+            "lat": 53.4032421,
+            "lon": 21.9384514,
+            "timestamp": "2024-05-27T10:34:27Z"
+          },
+          {
+            "type": "node",
+            "id": 10760025591,
+            "lat": 53.4032342,
+            "lon": 21.9384335,
+            "timestamp": "2024-05-27T10:34:27Z"
+          },
+          {
+            "type": "node",
+            "id": 10760025592,
+            "lat": 53.4032298,
+            "lon": 21.938439,
+            "timestamp": "2024-05-27T10:34:27Z"
+          },
+          {
+            "type": "node",
+            "id": 10760025593,
+            "lat": 53.4032343,
+            "lon": 21.938449,
+            "timestamp": "2024-05-27T10:34:27Z"
+          },
+          {
+            "type": "node",
+            "id": 10760025594,
+            "lat": 53.4030592,
+            "lon": 21.9386675,
+            "timestamp": "2023-03-24T20:40:33Z"
+          },
+          {
+            "type": "node",
+            "id": 10760025598,
+            "lat": 53.4030577,
+            "lon": 21.9386814,
+            "timestamp": "2024-05-27T10:34:27Z"
+          },
+          {
+            "type": "node",
+            "id": 10760025599,
+            "lat": 53.4033593,
+            "lon": 21.9393537,
+            "timestamp": "2024-05-27T10:34:27Z"
+          },
+          {
+            "type": "way",
+            "id": 1157058590,
+            "timestamp": "2024-05-27T10:34:27Z",
+            "nodes": [
+              10760025599,
+              10760025598,
+              10760025594,
+              10760025593,
+              10760025592,
+              10760025591,
+              10760025590,
+              10760025589,
+              10760025588,
+              10760025587,
+              10760025586,
+              10760025599
+            ],
+            "tags": {
+              "addr:city": "Kolno",
+              "addr:city:simc": "0957420",
+              "addr:housenumber": "1",
+              "addr:postcode": "18-500",
+              "addr:street": "Księcia Janusza I",
+              "addr:street:sym_ul": "07226",
+              "brand": "Biedronka",
+              "brand:wikidata": "Q857182",
+              "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+              "building": "supermarket",
+              "email": "bok@biedronka.eu",
+              "name": "Biedronka",
+              "name:ru": "Бедронка",
+              "opening_hours": "Mo-Sa 06:00-21:00",
+              "operator": "Jeronimo Martins Polska S.A.",
+              "shop": "supermarket",
+              "website": "https://www.biedronka.pl"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7078",
+    "address": "Grąbków 57, 62-709 Grąbków",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gr%C4%85bk%C3%B3w%2C+Gr%C4%85bk%C3%B3w+57&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=18.4084144%2C51.9587469%2C18.4114144%2C51.9607469",
+        "elements": [
+          {
+            "type": "node",
+            "id": 11745124896,
+            "lat": 51.9595245,
+            "lon": 18.4097737,
+            "timestamp": "2024-03-19T12:55:31Z"
+          },
+          {
+            "type": "node",
+            "id": 11745124897,
+            "lat": 51.9595377,
+            "lon": 18.410101,
+            "timestamp": "2024-03-19T12:55:31Z"
+          },
+          {
+            "type": "node",
+            "id": 11745124898,
+            "lat": 51.9599693,
+            "lon": 18.410055,
+            "timestamp": "2024-03-19T12:55:31Z"
+          },
+          {
+            "type": "node",
+            "id": 11745124899,
+            "lat": 51.9599561,
+            "lon": 18.4097278,
+            "timestamp": "2024-03-19T12:55:31Z"
+          },
+          {
+            "type": "way",
+            "id": 1264104158,
+            "timestamp": "2024-03-19T12:55:31Z",
+            "nodes": [
+              11745124899,
+              11745124898,
+              11745124897,
+              11745124896,
+              11745124899
+            ],
+            "tags": {
+              "addr:housenumber": "57",
+              "addr:place": "Grąbków",
+              "brand": "Biedronka",
+              "building": "yes",
+              "name": "Biedronka",
+              "operator": "Jeronimo Martins Polska S.A.",
+              "shop": "supermarket"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7173",
+    "address": "Generała Józefa Wybckiego 1, 77-200 Bytów",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Byt%C3%B3w%2C+gen.+J%C3%B3zefa+Wybickiego+1&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Bytów",
+            "citypart": null,
+            "street": "Gen. Józefa Wybickiego",
+            "number": "1",
+            "teryt": "220102",
+            "simc": "0977290",
+            "ulic": "48860",
+            "code": "77-100",
+            "jednostka": "{Polska,pomorskie,bytowski,Bytów}",
+            "x": "17.4876785585349",
+            "y": "54.187924292113",
+            "geometry_wkt": "POINT(17.4876785585349 54.187924292113)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "street_part_accuracy": "1",
+            "street_accuracy": "1",
+            "id": 1
+          }
+        ]
+      }
+    ],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=17.4861786%2C54.1869243%2C17.4891786%2C54.1889243",
+        "elements": []
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7280",
+    "address": "Ciechanowska 65, 06-406 Władysławowo",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=W%C5%82adys%C5%82awowo%2C+Ciechanowska+65&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7318",
+    "address": "Książąt Czartoryskich 27A, 37-500 Szówsko",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sz%C3%B3wsko%2C+Ksi%C4%85%C5%BC%C4%85t+Czartoryskich+27A&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7348",
+    "address": "Grodziczno 3a, 13-324 Grodziczno",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grodziczno%2C+Grodziczno+3a&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7354",
+    "address": "Zawadzkiego 20, 82-440 Dzierzgoń",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Dzierzgo%C5%84%2C+Aleksandra+Zawadzkiego+20&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Dzierzgoń",
+            "citypart": null,
+            "street": "Tadeusza Zawadzkiego \"Zośki\"",
+            "number": "20",
+            "teryt": "221601",
+            "simc": "0932726",
+            "ulic": "25829",
+            "code": "82-440",
+            "jednostka": "{Polska,pomorskie,sztumski,Dzierzgoń}",
+            "x": "19.3459024768874",
+            "y": "53.9173281734421",
+            "geometry_wkt": "POINT(19.3459024768874 53.9173281734421)",
+            "accuracy": "0.5",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.413793",
+            "street_accuracy": "0.324324",
+            "id": 1
+          }
+        ]
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7375",
+    "address": "Lubanów 12, 97-306 Błaszki",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=B%C5%82aszki%2C+Luban%C3%B3w+12&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7377",
+    "address": "Chojnicka 1, 77-400 Złotów",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Z%C5%82ot%C3%B3w%2C+Chojnicka+1&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7411",
+    "address": "Z. Nałkowskiej 2, 41-922 Radzionków",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Radzionk%C3%B3w%2C+Z.+Na%C5%82kowskiej+2&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Radzionków",
+            "citypart": null,
+            "street": "Zofii Nałkowskiej",
+            "number": "2",
+            "teryt": "241303",
+            "simc": "0938806",
+            "ulic": "13967",
+            "code": "41-922",
+            "jednostka": "{Polska,śląskie,tarnogórski,Radzionków}",
+            "x": "18.8998363940626",
+            "y": "50.3843751105679",
+            "geometry_wkt": "POINT(18.8998363940626 50.3843751105679)",
+            "accuracy": "0.8125",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.666667",
+            "street_accuracy": "0.684211",
+            "id": 1
+          }
+        ]
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7414",
+    "address": "Trzebieszów Drugi 62B, 21-404 Trzebieszów Drugi",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Trzebiesz%C3%B3w+Drugi%2C+Trzebiesz%C3%B3w+Drugi+62B&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7429",
+    "address": "64-050 Wielichowo",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wielichowo%2C+Podg%C3%B3rna+6A&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=16.3560509%2C52.1219300%2C16.3590509%2C52.1239300",
+        "elements": [
+          {
+            "type": "node",
+            "id": 12439903961,
+            "lat": 52.123294,
+            "lon": 16.358339,
+            "timestamp": "2024-12-21T23:17:44Z"
+          },
+          {
+            "type": "node",
+            "id": 12439903962,
+            "lat": 52.1236287,
+            "lon": 16.3579363,
+            "timestamp": "2024-12-21T23:17:44Z"
+          },
+          {
+            "type": "node",
+            "id": 12439903963,
+            "lat": 52.1235169,
+            "lon": 16.3576899,
+            "timestamp": "2024-12-21T23:17:44Z"
+          },
+          {
+            "type": "node",
+            "id": 12439903964,
+            "lat": 52.1231823,
+            "lon": 16.3580926,
+            "timestamp": "2024-12-21T23:17:44Z"
+          },
+          {
+            "type": "way",
+            "id": 1344657653,
+            "timestamp": "2026-06-29T14:34:04Z",
+            "nodes": [
+              12439903964,
+              12439903963,
+              12439903962,
+              12439903961,
+              12439903964
+            ],
+            "tags": {
+              "brand": "Biedronka",
+              "brand:wikidata": "Q857182",
+              "building": "yes",
+              "name": "Biedronka",
+              "shop": "supermarket"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7465",
+    "address": "Pociskowa 4B, 04-471 Warszawa",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Pociskowa+4B&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7505",
+    "address": "Szczecińska 5, 66-400 Gorzów Wielkopolski",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gorz%C3%B3w+Wielkopolski%2C+Szczeci%C5%84ska+5&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Gorzów Wielkopolski",
+            "citypart": null,
+            "street": "Sulęcińska",
+            "number": "5",
+            "teryt": "086101",
+            "simc": "0935140",
+            "ulic": "21550",
+            "code": "66-400",
+            "jednostka": "{Polska,lubuskie,\"Gorzów Wielkopolski\",\"Gorzów Wielkopolski\"}",
+            "x": "15.2595348477645",
+            "y": "52.7002574898895",
+            "geometry_wkt": "POINT(15.2595348477645 52.7002574898895)",
+            "accuracy": "0.717949",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.352941",
+            "street_accuracy": "0.352941",
+            "id": 1
+          }
+        ]
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7582",
+    "address": "Lubachowy 68B, 29-130 Moskorzew",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Moskorzew%2C+Lubachowy+68B&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7594",
+    "address": "Mickiewicza 9, 98-170 Widawa",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Widawa%2C+Adama+Mickiewicza+9&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Widawa",
+            "citypart": null,
+            "street": "Mickiewicza",
+            "number": "9",
+            "teryt": "100304",
+            "simc": "0717689",
+            "ulic": "12734",
+            "code": "98-170",
+            "jednostka": "{Polska,łódzkie,łaski,Widawa}",
+            "x": "18.9490744165432",
+            "y": "51.4384669759642",
+            "geometry_wkt": "POINT(18.9490744165432 51.4384669759642)",
+            "accuracy": "0.777778",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.666667",
+            "street_accuracy": "0.666667",
+            "id": 1
+          },
+          {
+            "city": "Widawa",
+            "citypart": null,
+            "street": "Mickiewicza",
+            "number": "9",
+            "teryt": "100304",
+            "simc": "0717689",
+            "ulic": "12734",
+            "code": "98-170",
+            "jednostka": "{Polska,łódzkie,łaski,Widawa}",
+            "x": "18.9494969936599",
+            "y": "51.4385596224516",
+            "geometry_wkt": "POINT(18.9494969936599 51.4385596224516)",
+            "accuracy": "0.777778",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.666667",
+            "street_accuracy": "0.666667",
+            "id": 2
+          }
+        ]
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7620",
+    "address": "ul. Gen. Sikorskiego 41A, 87-300 Brodnica",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Brodnica%2C+Genera%C5%82a+W%C5%82adys%C5%82awa+Sikorskiego+41A&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Brodnica",
+            "citypart": null,
+            "street": "gen. Władysława Sikorskiego",
+            "number": "41A",
+            "teryt": "040201",
+            "simc": "0982954",
+            "ulic": "19907",
+            "code": "87-300",
+            "jednostka": "{Polska,kujawsko-pomorskie,brodnicki,Brodnica}",
+            "x": "19.4362167402223",
+            "y": "53.2769169580787",
+            "geometry_wkt": "POINT(19.4362167402223 53.2769169580787)",
+            "accuracy": "0.847826",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.787879",
+            "street_accuracy": "0.787879",
+            "id": 1
+          }
+        ]
+      }
+    ],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.4347167%2C53.2759170%2C19.4377167%2C53.2779170",
+        "elements": [
+          {
+            "type": "node",
+            "id": 12375661199,
+            "lat": 53.2771049,
+            "lon": 19.435998,
+            "timestamp": "2024-11-26T06:50:57Z"
+          },
+          {
+            "type": "node",
+            "id": 12375661200,
+            "lat": 53.277146,
+            "lon": 19.4359661,
+            "timestamp": "2024-11-26T06:50:57Z"
+          },
+          {
+            "type": "node",
+            "id": 12375684901,
+            "lat": 53.2772134,
+            "lon": 19.4363955,
+            "timestamp": "2024-11-26T06:50:57Z"
+          },
+          {
+            "type": "node",
+            "id": 12375684902,
+            "lat": 53.2770097,
+            "lon": 19.4365564,
+            "timestamp": "2024-11-26T06:50:57Z"
+          },
+          {
+            "type": "node",
+            "id": 12375684903,
+            "lat": 53.2768182,
+            "lon": 19.4358605,
+            "timestamp": "2024-11-26T06:50:57Z"
+          },
+          {
+            "type": "node",
+            "id": 12375684904,
+            "lat": 53.277074,
+            "lon": 19.4356808,
+            "timestamp": "2024-11-26T06:50:57Z"
+          },
+          {
+            "type": "node",
+            "id": 13570304560,
+            "lat": 53.2768367,
+            "lon": 19.4359278,
+            "timestamp": "2026-02-16T16:32:11Z",
+            "tags": {
+              "access": "customers",
+              "entrance": "main",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1337925390,
+            "timestamp": "2026-02-16T16:32:11Z",
+            "nodes": [
+              12375684904,
+              12375661200,
+              12375661199,
+              12375684901,
+              12375684902,
+              13570304560,
+              12375684903,
+              12375684904
+            ],
+            "tags": {
+              "addr:city": "Brodnica",
+              "addr:housenumber": "41A",
+              "addr:street": "Generała Władysława Sikorskiego",
+              "brand": "Biedronka",
+              "building": "retail",
+              "name": "Biedronka",
+              "operator": "Jeronimo Martins Polska",
+              "shop": "supermarket"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7621",
+    "address": "95-070 Aleksandrów Łódzki",
+    "queries": [],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.3200209%2C51.8276688%2C19.3230209%2C51.8296688",
+        "elements": [
+          {
+            "type": "node",
+            "id": 12357932153,
+            "lat": 51.8277336,
+            "lon": 19.3212647,
+            "timestamp": "2026-11-13T19:33:27Z"
+          },
+          {
+            "type": "node",
+            "id": 12357932156,
+            "lat": 51.8271658,
+            "lon": 19.3213564,
+            "timestamp": "2026-11-13T19:33:27Z"
+          },
+          {
+            "type": "node",
+            "id": 14374626164,
+            "lat": 51.8277391,
+            "lon": 19.3213597,
+            "timestamp": "2026-11-13T19:33:27Z"
+          },
+          {
+            "type": "node",
+            "id": 14374626165,
+            "lat": 51.8276812,
+            "lon": 19.3213701,
+            "timestamp": "2026-11-13T19:33:27Z"
+          },
+          {
+            "type": "node",
+            "id": 14374626166,
+            "lat": 51.8271825,
+            "lon": 19.3216439,
+            "timestamp": "2026-11-13T19:33:27Z"
+          },
+          {
+            "type": "node",
+            "id": 14374626167,
+            "lat": 51.8276919,
+            "lon": 19.3215614,
+            "timestamp": "2026-11-13T19:33:27Z"
+          },
+          {
+            "type": "way",
+            "id": 1335932338,
+            "timestamp": "2026-11-13T19:33:27Z",
+            "nodes": [
+              12357932153,
+              14374626164,
+              14374626165,
+              14374626167,
+              14374626166,
+              12357932156,
+              12357932153
+            ],
+            "tags": {
+              "brand": "Biedronka",
+              "brand:wikidata": "Q857182",
+              "building": "yes",
+              "name": "Biedronka",
+              "shop": "supermarket"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7802",
+    "address": "księdza Biskupa Władysława Bandurskiego 90, 70-382 Szczecin",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szczecin%2C+ks.+bp.+W%C5%82adys%C5%82awa+Bandurskiego+90&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Szczecin",
+            "citypart": null,
+            "street": "Ks. bpa Władysława Bandurskiego",
+            "number": "90",
+            "teryt": "326201",
+            "simc": "0977976",
+            "ulic": "54426",
+            "code": "71-685",
+            "jednostka": "{Polska,zachodniopomorskie,Szczecin,Szczecin}",
+            "x": "14.5598961234376",
+            "y": "53.4552910712277",
+            "geometry_wkt": "POINT(14.5598961234376 53.4552910712277)",
+            "accuracy": "0.930233",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.903226",
+            "street_accuracy": "0.903226",
+            "id": 1
+          }
+        ]
+      }
+    ],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=14.5583961%2C53.4542911%2C14.5613961%2C53.4562911",
+        "elements": [
+          {
+            "type": "node",
+            "id": 707432584,
+            "lat": 53.4549169,
+            "lon": 14.5606542,
+            "timestamp": "2010-04-26T18:04:30Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707433660,
+            "lat": 53.4560898,
+            "lon": 14.5599013,
+            "timestamp": "2010-04-26T14:08:38Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707433840,
+            "lat": 53.454887,
+            "lon": 14.5605871,
+            "timestamp": "2010-04-26T18:04:00Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707434266,
+            "lat": 53.4544186,
+            "lon": 14.5622824,
+            "timestamp": "2010-04-26T18:04:17Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707434350,
+            "lat": 53.4547934,
+            "lon": 14.5607086,
+            "timestamp": "2010-04-26T18:04:45Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707434883,
+            "lat": 53.4561506,
+            "lon": 14.5600369,
+            "timestamp": "2010-04-26T14:09:03Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707436039,
+            "lat": 53.4562097,
+            "lon": 14.5596965,
+            "timestamp": "2010-04-26T14:09:28Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707436770,
+            "lat": 53.4547475,
+            "lon": 14.5613999,
+            "timestamp": "2010-04-26T18:03:28Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707437807,
+            "lat": 53.4547663,
+            "lon": 14.5618452,
+            "timestamp": "2010-04-26T18:04:45Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707438598,
+            "lat": 53.4547923,
+            "lon": 14.5607062,
+            "timestamp": "2010-04-26T18:04:12Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707439076,
+            "lat": 53.4547256,
+            "lon": 14.5618958,
+            "timestamp": "2010-04-26T18:04:11Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707439158,
+            "lat": 53.4546333,
+            "lon": 14.5609097,
+            "timestamp": "2010-04-26T18:04:29Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707439970,
+            "lat": 53.4561966,
+            "lon": 14.5599729,
+            "timestamp": "2010-04-26T14:10:45Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707441071,
+            "lat": 53.4547581,
+            "lon": 14.5619685,
+            "timestamp": "2010-04-26T18:03:48Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707441189,
+            "lat": 53.4547352,
+            "lon": 14.5611386,
+            "timestamp": "2010-04-26T18:04:13Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707442977,
+            "lat": 53.4542848,
+            "lon": 14.5619825,
+            "timestamp": "2010-04-26T18:04:37Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707443972,
+            "lat": 53.4548815,
+            "lon": 14.5617,
+            "timestamp": "2010-04-26T18:03:19Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707444773,
+            "lat": 53.4549152,
+            "lon": 14.5606563,
+            "timestamp": "2010-04-26T18:04:34Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707446127,
+            "lat": 53.4561006,
+            "lon": 14.5596836,
+            "timestamp": "2010-04-26T14:12:41Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707446805,
+            "lat": 53.4547986,
+            "lon": 14.5619175,
+            "timestamp": "2010-04-26T18:04:46Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 707446892,
+            "lat": 53.4549884,
+            "lon": 14.5608206,
+            "timestamp": "2010-04-26T18:04:31Z",
+            "tags": {
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3234546758,
+            "lat": 53.4542727,
+            "lon": 14.5619442,
+            "timestamp": "2014-12-14T16:25:20Z"
+          },
+          {
+            "type": "node",
+            "id": 3234546759,
+            "lat": 53.4542879,
+            "lon": 14.5619786,
+            "timestamp": "2014-12-14T16:25:20Z"
+          },
+          {
+            "type": "node",
+            "id": 3234546760,
+            "lat": 53.4543105,
+            "lon": 14.5618957,
+            "timestamp": "2014-12-14T16:25:20Z"
+          },
+          {
+            "type": "node",
+            "id": 3234548861,
+            "lat": 53.4543258,
+            "lon": 14.5619302,
+            "timestamp": "2014-12-14T16:25:20Z"
+          },
+          {
+            "type": "node",
+            "id": 3234548862,
+            "lat": 53.4543482,
+            "lon": 14.5617948,
+            "timestamp": "2014-12-14T16:25:20Z"
+          },
+          {
+            "type": "node",
+            "id": 3234548863,
+            "lat": 53.4543785,
+            "lon": 14.5618638,
+            "timestamp": "2014-12-14T16:25:20Z"
+          },
+          {
+            "type": "node",
+            "id": 3234548865,
+            "lat": 53.4546629,
+            "lon": 14.5613943,
+            "timestamp": "2026-06-28T20:35:51Z"
+          },
+          {
+            "type": "node",
+            "id": 13973115514,
+            "lat": 53.4546954,
+            "lon": 14.5614664,
+            "timestamp": "2026-06-28T20:35:51Z"
+          },
+          {
+            "type": "way",
+            "id": 56446522,
+            "timestamp": "2025-06-25T07:27:41Z",
+            "nodes": [
+              707436039,
+              707446127,
+              707433660,
+              707434883,
+              707439970,
+              707436039
+            ],
+            "tags": {
+              "addr:city": "Szczecin",
+              "addr:housenumber": "87a",
+              "addr:postcode": "71-685",
+              "addr:street": "Księdza biskupa Władysława Bandurskiego",
+              "building": "retail",
+              "building:levels": "1",
+              "building:usage:pl": "Handlowo-usługowy",
+              "height": "5.1",
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "way",
+            "id": 56446889,
+            "timestamp": "2026-06-24T09:17:23Z",
+            "nodes": [
+              707444773,
+              707432584,
+              707433840,
+              707438598,
+              707434350,
+              707439158,
+              707441189,
+              707446892,
+              707444773
+            ],
+            "tags": {
+              "addr:city": "Szczecin",
+              "addr:housenumber": "2",
+              "addr:street": "Przyjaciół Ronda",
+              "brand": "Point S",
+              "brand:wikidata": "Q3393358",
+              "building": "retail",
+              "building:levels": "1",
+              "building:usage:pl": "Handlowo-usługowy",
+              "height": "5.9",
+              "name": "Stanfex",
+              "opening_hours": "Mo-Fr 08:00-18:00; Sa 09:00-14:00",
+              "operator": "Stanfex",
+              "operator:website": "https://stanfex.com.pl",
+              "phone": "+48 668 684 597",
+              "shop": "car_repair",
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "way",
+            "id": 56447667,
+            "timestamp": "2026-11-09T02:15:51Z",
+            "nodes": [
+              707436770,
+              13973115514,
+              3234548865,
+              3234548862,
+              3234548863,
+              3234548861,
+              3234546760,
+              3234546758,
+              3234546759,
+              707442977,
+              707434266,
+              707439076,
+              707441071,
+              707446805,
+              707437807,
+              707443972,
+              707436770
+            ],
+            "tags": {
+              "addr:city": "Szczecin",
+              "addr:housenumber": "97",
+              "addr:postcode": "71-685",
+              "addr:street": "Księdza biskupa Władysława Bandurskiego",
+              "brand": "Lidl",
+              "brand:wikidata": "Q151954",
+              "building": "retail",
+              "building:levels": "1",
+              "building:usage:pl": "Handlowo-usługowy",
+              "height": "10.3",
+              "name": "Lidl",
+              "opening_hours": "Mo-Sa 07:00-22:00",
+              "operator": "Lidl Polska",
+              "payment:cards": "yes",
+              "payment:cash": "yes",
+              "payment:qr_code": "no",
+              "self_checkout": "yes",
+              "self_checkout:handheld": "no",
+              "self_checkout:self_scan": "yes",
+              "shop": "supermarket",
+              "source": "gis.um.szczecin.pl"
+            }
+          },
+          {
+            "type": "relation",
+            "id": 7631099,
+            "timestamp": "2026-11-09T02:14:49Z",
+            "tags": {
+              "addr:city": "Szczecin",
+              "addr:housenumber": "90",
+              "addr:postcode": "71-685",
+              "addr:street": "Księdza biskupa Władysława Bandurskiego",
+              "brand": "Biedronka",
+              "brand:wikidata": "Q857182",
+              "building": "retail",
+              "building:levels": "1",
+              "building:usage:pl": "Handlowo-usługowy",
+              "height": "5.4",
+              "name": "Biedronka",
+              "opening_hours": "Mo-Sa 06:00-22:00",
+              "operator": "Biedronka",
+              "payment:cards": "yes",
+              "payment:cash": "yes",
+              "payment:qr_code": "no",
+              "self_checkout": "yes",
+              "self_checkout:handheld": "no",
+              "self_checkout:self_scan": "yes",
+              "shop": "supermarket",
+              "type": "multipolygon"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7808",
+    "address": "Wólczyńska 121, 01-919 Warszawa",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+W%C3%B3lczy%C5%84ska+121&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Warszawa",
+            "citypart": null,
+            "street": "ulica Wólczyńska",
+            "number": "121",
+            "teryt": "146501",
+            "simc": "0918123",
+            "ulic": "24798",
+            "code": "01-931",
+            "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+            "x": "20.9169777562924",
+            "y": "52.2824405942077",
+            "geometry_wkt": "POINT(20.9169777562924 52.2824405942077)",
+            "accuracy": "0.793103",
+            "city_accuracy": "1",
+            "street_part_accuracy": "0.846154",
+            "street_accuracy": "0.647059",
+            "id": 1
+          }
+        ]
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7856",
+    "address": "Paproć 89, 64-300 Paproć",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Papro%C4%87%2C+Papro%C4%87+89&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7902",
+    "address": "Jana Pawła II 1A, 09-304 Lubowidz",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lubowidz%2C+Jana+Paw%C5%82a+II+1A&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7906",
+    "address": "ul. Widokowa 2, 58-531 Łomnica",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81omnica%2C+ul.+Widokowa+2&exact_number=1&srid=4326",
+        "results": []
+      }
+    ],
+    "osm": []
+  },
+  {
+    "id": "biedronka:7912",
+    "address": "Gliwicka 26, 44-164 Kleszczów",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kleszcz%C3%B3w%2C+Gliwicka+26&exact_number=1&srid=4326",
+        "results": []
+      },
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kleszcz%C3%B3w%2C+Gliwicka+32&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Kleszczów",
+            "citypart": null,
+            "street": "Gliwicka",
+            "number": "32",
+            "teryt": "240505",
+            "simc": "0221095",
+            "ulic": "05583",
+            "code": "44-164",
+            "jednostka": "{Polska,śląskie,gliwicki,Rudziniec}",
+            "x": "18.5335862626271",
+            "y": "50.3438201824006",
+            "geometry_wkt": "POINT(18.5335862626271 50.3438201824006)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "street_part_accuracy": "1",
+            "street_accuracy": "1",
+            "id": 1
+          }
+        ]
+      }
+    ],
+    "osm": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=18.5320863%2C50.3428202%2C18.5350863%2C50.3448202",
+        "elements": [
+          {
+            "type": "node",
+            "id": 13752199314,
+            "lat": 50.344061,
+            "lon": 18.533334,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13752199315,
+            "lat": 50.343944,
+            "lon": 18.533115,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13752199316,
+            "lat": 50.343608,
+            "lon": 18.533562,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13752199317,
+            "lat": 50.343606,
+            "lon": 18.533559,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13752199318,
+            "lat": 50.343594,
+            "lon": 18.533575,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13752199319,
+            "lat": 50.343597,
+            "lon": 18.53358,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13752199320,
+            "lat": 50.343605,
+            "lon": 18.533571,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13752199321,
+            "lat": 50.343723,
+            "lon": 18.533789,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13752199322,
+            "lat": 50.343717,
+            "lon": 18.533798,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13752199323,
+            "lat": 50.34372,
+            "lon": 18.533803,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13752199324,
+            "lat": 50.343731,
+            "lon": 18.533789,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 13752199325,
+            "lat": 50.34373,
+            "lon": 18.533786,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 14313199146,
+            "lat": 50.344063,
+            "lon": 18.533333,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 14313199147,
+            "lat": 50.344065,
+            "lon": 18.533337,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 14313199148,
+            "lat": 50.343947,
+            "lon": 18.533119,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "node",
+            "id": 14313199149,
+            "lat": 50.343945,
+            "lon": 18.533121,
+            "timestamp": "2026-10-23T16:26:01Z"
+          },
+          {
+            "type": "way",
+            "id": 1502438511,
+            "timestamp": "2026-10-23T16:26:01Z",
+            "nodes": [
+              14313199149,
+              14313199148,
+              13752199315,
+              13752199316,
+              13752199317,
+              13752199318,
+              13752199319,
+              13752199320,
+              13752199321,
+              13752199322,
+              13752199323,
+              13752199324,
+              13752199325,
+              14313199147,
+              14313199146,
+              13752199314,
+              14313199149
+            ],
+            "tags": {
+              "addr:city": "Kleszczów",
+              "addr:city:simc": "0221095",
+              "addr:housenumber": "32",
+              "addr:postcode": "44-164",
+              "addr:street": "Gliwicka",
+              "brand": "Biedronka",
+              "brand:wikidata": "Q857182",
+              "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+              "building": "retail",
+              "name": "Biedronka",
+              "opening_hours": "Mo-Sa 06:00-22:00",
+              "shop": "supermarket",
+              "source:addr": "gugik.gov.pl",
+              "source:building": "EGiB",
+              "website": "https://www.biedronka.pl/pl/sklepy/shop,id,7912"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7935",
+    "address": "Grobelno 68A, 82-200 Malbork",
+    "queries": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grobelno+68A&exact_number=1&srid=4326",
+        "results": [
+          {
+            "city": "Grobelno",
+            "citypart": null,
+            "street": null,
+            "number": "68A",
+            "teryt": "220904",
+            "simc": "0151880",
+            "ulic": null,
+            "code": "82-200",
+            "jednostka": "{Polska,pomorskie,malborski,Malbork}",
+            "x": "19.0094233696308",
+            "y": "54.0373022340132",
+            "geometry_wkt": "POINT(19.0094233696308 54.0373022340132)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grobelno+68A&exact_number=1&srid=4326",
+        "error": "'street_accuracy'"
+      }
+    ],
+    "osm": []
+  }
+]

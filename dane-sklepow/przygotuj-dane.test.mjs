@@ -30,6 +30,18 @@ test("Filtr Polski i formatów Auchan pozostawia wyłącznie Super i Hiper", () 
   assert.equal(result.report.sources.find((s) => s.chain === "auchan").excluded_store_format, 3);
 });
 
+test("Carrefour publikuje wyłącznie format hipermarket", () => {
+  const source = { chain: "carrefour", file: "surowe/carrefour_pl.geojson" };
+  const formats = ["Carrefour", "Carrefour Market", "Carrefour Express", "Globi", "Carrefour BIO"];
+  const features = formats.map((brand, index) => feature(String(index), { brand }));
+  const result = prepareData({ filters: { country: "PL" }, sources: [source] },
+    { carrefour: { type: "FeatureCollection", features } });
+
+  assert.deepEqual(result.ready.map(({ id, store_format }) => ({ id, store_format })),
+    [{ id: "carrefour:0", store_format: "hypermarket" }]);
+  assert.equal(result.report.sources[0].excluded_store_format, 4);
+});
+
 test("Kolejność longitude/latitude jest poprawnie przenoszona do nazwanych pól", () => {
   assert.deepEqual(prepare({ biedronka: [feature("1")] }).ready[0].location, { latitude: 52.23, longitude: 21.01 });
 });

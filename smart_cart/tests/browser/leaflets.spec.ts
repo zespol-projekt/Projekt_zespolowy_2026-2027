@@ -20,6 +20,39 @@ async function fixture(page: Page) {
     await route.fulfill({ body: await readFile(`tests/fixtures/leaflets/${filename}`), contentType: 'image/png' });
   });
 }
+
+test('każdy kafelek na Start otwiera gazetki swojej marki, a czytnik do nich wraca', async ({ page }) => {
+  await fixture(page);
+  const brands = [
+    ['lidl', 'Lidl'], ['biedronka', 'Biedronka'], ['dino', 'Dino'],
+    ['kaufland', 'Kaufland'], ['carrefour', 'Carrefour'],
+  ] as const;
+  const template = catalog().leaflets[0];
+  await page.route(`${AUTH_URL}/functions/v1/leaflets`, route => route.fulfill({
+    json: { version: 1, leaflets: brands.map(([id, name]) => ({
+      ...template, id: `gazetka-${id}`, chain: { id, name }, title: `Oferta ${name}`,
+    })) },
+  }));
+  await page.goto('/');
+  for (const [id, name] of brands) {
+    await page.getByRole('link', { name: `Gazetki: ${name}`, exact: true }).click();
+    await expect(page).toHaveURL(new RegExp(`/leaflets\\?chain=${id}$`));
+    await expect(page.getByRole('heading', { name: `Gazetki – ${name}` })).toBeVisible();
+    await expect(page.getByRole('button', { name: /^Czytaj:/ })).toHaveCount(1);
+    await expect(page.getByRole('button', { name: `Czytaj: Oferta ${name}` })).toBeVisible();
+    if (id === 'carrefour') {
+      await page.getByRole('button', { name: 'Czytaj: Oferta Carrefour' }).click();
+      await expect(page.getByRole('img', { name: 'Strona 1 gazetki' })).toBeVisible();
+      await page.getByRole('button', { name: 'Wróć do gazetek' }).click();
+      await expect(page.getByRole('heading', { name: 'Gazetki – Carrefour' })).toBeVisible();
+      await page.getByRole('button', { name: 'Wszystkie sieci' }).click();
+      await expect(page.getByRole('button', { name: /^Czytaj:/ })).toHaveCount(5);
+    }
+    await page.getByRole('tab', { name: 'Start', exact: true }).click();
+    await expect(page).toHaveURL(/\/$/);
+  }
+});
+
 test('czytnik: wybór, daty, strony, zoom, menu, reload i powrót', async ({ page }, info) => {
   await fixture(page); const requests: string[] = [];
   page.on('request', request => { if (request.url().startsWith('https://leaflets.example.invalid')) requests.push(request.url()); });

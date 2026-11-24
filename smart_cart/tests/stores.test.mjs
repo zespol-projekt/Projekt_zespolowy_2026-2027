@@ -1,15 +1,18 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseCatalog, filterStores, directionsUrl, distanceMeters } from '../src/features/stores/model.ts';
+import { parseCatalog, createStoreSearch, directionsUrl, distanceMeters } from '../src/features/stores/model.ts';
 
 const stores = [
-  { id: 'lidl:1', chain: 'lidl', name: 'Lidl', address: 'Łódź, Żółta 1', latitude: 51.75, longitude: 19.45 },
-  { id: 'dino:1', chain: 'dino', name: 'Dino', address: 'Poznań, Długa 2', latitude: 52.40, longitude: 16.92 },
+  { id: 'lidl:1', chain: 'lidl', name: 'Lidl', city: 'Łódź', address: 'Łódź, Żółta 1', latitude: 51.75, longitude: 19.45 },
+  { id: 'dino:1', chain: 'dino', name: 'Dino', city: 'Poznań', address: 'Poznań, Długa 2', latitude: 52.40, longitude: 16.92 },
 ];
 const catalog = () => ({ version: 1, updatedAt: '2026-11-02T12:00:00Z', count: 2, stores: structuredClone(stores) });
 
 test('katalog odrzuca błędne współrzędne, duplikaty i niezgodną liczbę punktów', () => {
-  assert.equal(parseCatalog(catalog()).stores.length, 2);
+  assert.deepEqual(parseCatalog(catalog()).stores, stores);
+  const legacy = catalog();
+  delete legacy.stores[0].city;
+  assert.equal(parseCatalog(legacy).stores[0].city, undefined);
   for (const mutate of [
     c => { c.stores[0].latitude = NaN; },
     c => { c.stores[0].longitude = 0; },
@@ -17,15 +20,28 @@ test('katalog odrzuca błędne współrzędne, duplikaty i niezgodną liczbę pu
     c => { c.count = 1; },
     c => { c.stores[0].chain = 'unknown'; },
     c => { c.stores[0].address = ''; },
+    c => { c.stores[0].city = ' '; },
   ]) {
     const value = catalog(); mutate(value);
     assert.throws(() => parseCatalog(value));
   }
 });
 test('filtry sieci i wyszukiwanie obsługują polskie litery i wiele słów', () => {
-  assert.deepEqual(filterStores(stores, ['lidl'], 'LODZ zolTa').map(s => s.id), ['lidl:1']);
-  assert.equal(filterStores(stores, ['dino'], 'Łódź').length, 0);
-  assert.equal(filterStores(stores, [], '').length, 0);
+  const { findStores } = createStoreSearch(stores);
+  assert.deepEqual(findStores(['lidl'], 'LODZ, zolTa').map(s => s.id), ['lidl:1']);
+  assert.equal(findStores(['dino'], 'Łódź').length, 0);
+  assert.equal(findStores([], '').length, 0);
+});
+test('dokładna nazwa miejscowości ma pierwszeństwo przed nazwą ulicy', () => {
+  const town = { ...stores[0], city: 'Bytów', address: 'ul. Długa 1, 77-100 Bytów' };
+  const street = { ...stores[1], city: 'Lębork', address: 'ul. Bytowska 2, 84-300 Lębork' };
+  const { findStores, suggestCities } = createStoreSearch([town, { ...town, id: 'lidl:2' }, street]);
+  assert.deepEqual(suggestCities('b'), []);
+  assert.deepEqual(suggestCities('by'), ['Bytów']);
+  assert.deepEqual(suggestCities('bytowska'), []);
+  assert.deepEqual(findStores(['lidl', 'dino'], ' BYTOW ').map(s => s.id), ['lidl:1', 'lidl:2']);
+  assert.deepEqual(findStores(['dino'], 'Bytów'), []);
+  assert.deepEqual(findStores(['dino'], 'bytowska 2'), [street]);
 });
 test('nawigacja przekazuje cel w kolejności szerokość/długość', () => {
   assert.equal(new URL(directionsUrl(stores[0], 'android')).searchParams.get('destination'), '51.75,19.45');

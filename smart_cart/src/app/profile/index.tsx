@@ -51,7 +51,7 @@ function Profile() {
     <Screen title="Profil"><BackButton />
       <View style={ui.card}><Text style={ui.muted}>Email</Text><Text selectable style={ui.heading}>{auth.state.status === 'signedIn' ? auth.state.user.email : ''}</Text></View>
       <Button secondary title="Ulubione" onPress={() => router.navigate('/favorites')} />
-      <Button secondary title="Listy zakupów" onPress={() => router.navigate('/cart')} />
+      <Button secondary title="Listy zakupów" onPress={() => router.navigate('/shopping-lists')} />
       {!editing ? <Button title="Zmień hasło" onPress={() => { setEditing(true); setMessage(null); }} /> : <View style={ui.card}>
         <Text style={ui.heading}>Zmiana hasła</Text>
         <Text style={ui.text}>Wyślij kod potwierdzenia na email konta. Po zapisaniu nowego hasła pozostaniesz zalogowany.</Text>

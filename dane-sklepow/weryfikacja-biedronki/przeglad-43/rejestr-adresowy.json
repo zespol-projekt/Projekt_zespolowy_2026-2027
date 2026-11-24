@@ -1,0 +1,52 @@
+[
+  {
+    "id": 2698,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Trzebinia%2C+M%C5%82oszowska+46&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":15,\"returned objects\":1,\"results\":{\"1\":{\"city\":\"Trzebinia\",\"citypart\":null,\"street\":\"M\\u0142oszowska\",\"number\":\"46\",\"teryt\":\"120305\",\"simc\":\"0944149\",\"ulic\":\"13105\",\"code\":\"32-540\",\"jednostka\":\"{Polska,ma\\u0142opolskie,chrzanowski,Trzebinia}\",\"x\":\"19.4810639395696\",\"y\":\"50.1570086544567\",\"geometry_wkt\":\"POINT(19.4810639395696 50.1570086544567)\",\"accuracy\":\"1\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"1\",\"street_accuracy\":\"1\",\"id\":1}},\"request time\":0.0038163503011067706}"
+  },
+  {
+    "id": 1620,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gdynia%2C+kpt.+Antoniego+Led%C3%B3chowskiego+4A&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":2,\"returned objects\":1,\"results\":{\"1\":{\"city\":\"Gdynia\",\"citypart\":null,\"street\":\"kpt. Antoniego Led\\u00f3chowskiego\",\"number\":\"4A\",\"teryt\":\"226201\",\"simc\":\"0934100\",\"ulic\":\"37431\",\"code\":\"81-189\",\"jednostka\":\"{Polska,pomorskie,Gdynia,Gdynia}\",\"x\":\"18.5084903727645\",\"y\":\"54.5588760894194\",\"geometry_wkt\":\"POINT(18.5084903727645 54.5588760894194)\",\"accuracy\":\"1\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"1\",\"street_accuracy\":\"1\",\"id\":1}},\"request time\":0.0053593834241231287}"
+  },
+  {
+    "id": 7292,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lus%C3%B3wko%2C+Tarnowska+39&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":15,\"returned objects\":1,\"results\":{\"1\":{\"city\":\"Lus\\u00f3wko\",\"citypart\":null,\"street\":\"Tarnowska\",\"number\":\"39\",\"teryt\":\"302117\",\"simc\":\"0597363\",\"ulic\":\"22681\",\"code\":\"62-080\",\"jednostka\":\"{Polska,wielkopolskie,pozna\\u0144ski,\\\"Tarnowo Podg\\u00f3rne\\\"}\",\"x\":\"16.6444066108307\",\"y\":\"52.4342950348294\",\"geometry_wkt\":\"POINT(16.6444066108307 52.4342950348294)\",\"accuracy\":\"1\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"1\",\"street_accuracy\":\"1\",\"id\":1}},\"request time\":0.003286314010620117}"
+  },
+  {
+    "id": 1789,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kruszwica%2C+Tadeusza+Ko%C5%9Bciuszki+31%2F34&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":15,\"returned objects\":0,\"results\":null,\"request time\":0.0072437842686971033}"
+  },
+  {
+    "id": 7601,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Toru%C5%84%2C+Forteczna+10&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":15,\"returned objects\":4,\"results\":{\"1\":{\"city\":\"Toru\\u0144\",\"citypart\":null,\"street\":\"Forteczna\",\"number\":\"10\",\"teryt\":\"046301\",\"simc\":\"0982724\",\"ulic\":\"05133\",\"code\":\"87-100\",\"jednostka\":\"{Polska,kujawsko-pomorskie,Toru\\u0144,Toru\\u0144}\",\"x\":\"18.6131753016941\",\"y\":\"53.0426210320445\",\"geometry_wkt\":\"POINT(18.6131753016941 53.0426210320445)\",\"accuracy\":\"1\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"1\",\"street_accuracy\":\"1\",\"id\":1},\"2\":{\"city\":\"Toru\\u0144\",\"citypart\":null,\"street\":\"Bajeczna\",\"number\":\"10\",\"teryt\":\"046301\",\"simc\":\"0982724\",\"ulic\":\"00605\",\"code\":\"87-100\",\"jednostka\":\"{Polska,kujawsko-pomorskie,Toru\\u0144,Toru\\u0144}\",\"x\":\"18.707177212103\",\"y\":\"53.0502900291494\",\"geometry_wkt\":\"POINT(18.707177212103 53.0502900291494)\",\"accuracy\":\"0.541667\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"0.266667\",\"street_accuracy\":\"0.266667\",\"id\":2},\"3\":{\"city\":\"Toru\\u0144\",\"citypart\":null,\"street\":\"Serdeczna\",\"number\":\"10\",\"teryt\":\"046301\",\"simc\":\"0982724\",\"ulic\":\"19692\",\"code\":\"87-100\",\"jednostka\":\"{Polska,kujawsko-pomorskie,Toru\\u0144,Toru\\u0144}\",\"x\":\"18.7033139477611\",\"y\":\"53.0110259173299\",\"geometry_wkt\":\"POINT(18.7033139477611 53.0110259173299)\",\"accuracy\":\"0.52\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"0.25\",\"street_accuracy\":\"0.25\",\"id\":3},\"4\":{\"city\":\"Toru\\u0144\",\"citypart\":null,\"street\":\"Fabryczna\",\"number\":\"10\",\"teryt\":\"046301\",\"simc\":\"0982724\",\"ulic\":\"04863\",\"code\":\"87-100\",\"jednostka\":\"{Polska,kujawsko-pomorskie,Toru\\u0144,Toru\\u0144}\",\"x\":\"18.6316942782105\",\"y\":\"53.0282630882748\",\"geometry_wkt\":\"POINT(18.6316942782105 53.0282630882748)\",\"accuracy\":\"0.52\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"0.25\",\"street_accuracy\":\"0.25\",\"id\":4}},\"request time\":0.0019112507502237956}"
+  },
+  {
+    "id": 2753,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Modlnica%2C+Cz%C4%99stochowska+32&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":15,\"returned objects\":0,\"results\":null,\"request time\":0.0042278687159220379}"
+  },
+  {
+    "id": 2743,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sosnowiec%2C+Teofila+Lenartowicza+39C&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":15,\"returned objects\":1,\"results\":{\"1\":{\"city\":\"Sosnowiec\",\"citypart\":null,\"street\":\"Teofila Lenartowicza\",\"number\":\"39C\",\"teryt\":\"247501\",\"simc\":\"0943428\",\"ulic\":\"28474\",\"code\":\"41-200\",\"jednostka\":\"{Polska,\\u015bl\\u0105skie,Sosnowiec,Sosnowiec}\",\"x\":\"19.1915935561225\",\"y\":\"50.2949894735013\",\"geometry_wkt\":\"POINT(19.1915935561225 50.2949894735013)\",\"accuracy\":\"1\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"1\",\"street_accuracy\":\"1\",\"id\":1}},\"request time\":0.0032293200492858887}"
+  },
+  {
+    "id": 3657,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Soko%C5%82y%2C+Szosa+Mazowiecka+16&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":15,\"returned objects\":2,\"results\":{\"1\":{\"city\":\"Soko\\u0142y\",\"citypart\":null,\"street\":\"Szosa Mazowiecka\",\"number\":\"16\",\"teryt\":\"201308\",\"simc\":\"0406200\",\"ulic\":\"22045\",\"code\":\"18-218\",\"jednostka\":\"{Polska,podlaskie,wysokomazowiecki,Soko\\u0142y}\",\"x\":\"22.6983010100219\",\"y\":\"52.9875103413406\",\"geometry_wkt\":\"POINT(22.6983010100219 52.9875103413406)\",\"accuracy\":\"1\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"1\",\"street_accuracy\":\"1\",\"id\":1},\"2\":{\"city\":\"Soko\\u0142y\",\"citypart\":null,\"street\":\"Mazowiecka\",\"number\":\"16\",\"teryt\":\"201308\",\"simc\":\"0406200\",\"ulic\":\"12540\",\"code\":\"18-218\",\"jednostka\":\"{Polska,podlaskie,wysokomazowiecki,Soko\\u0142y}\",\"x\":\"22.7013356796739\",\"y\":\"52.9899676920534\",\"geometry_wkt\":\"POINT(22.7013356796739 52.9899676920534)\",\"accuracy\":\"0.807692\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"0.647059\",\"street_accuracy\":\"0.647059\",\"id\":2}},\"request time\":0.0041557669639587401}"
+  },
+  {
+    "id": 7772,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wojciech%C3%B3w+1D&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":15,\"returned objects\":1,\"results\":{\"1\":{\"city\":\"Wojciech\\u00f3w\",\"citypart\":null,\"street\":null,\"number\":\"1D\",\"teryt\":\"142504\",\"simc\":\"0624433\",\"ulic\":null,\"code\":\"26-631\",\"jednostka\":\"{Polska,mazowieckie,radomski,Jastrz\\u0119bia}\",\"x\":\"21.2293954164743\",\"y\":\"51.4932855575013\",\"geometry_wkt\":\"POINT(21.2293954164743 51.4932855575013)\",\"accuracy\":\"1\",\"city_accuracy\":\"1\",\"id\":1}},\"request time\":0.0030058503150939943}"
+  },
+  {
+    "id": 7465,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Pociskowa+4B&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":1,\"returned objects\":0,\"results\":null,\"request time\":0.0045920650164286295}"
+  }
+]

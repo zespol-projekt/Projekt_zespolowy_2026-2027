@@ -2,39 +2,109 @@ import { expect, test } from '@playwright/test';
 import { tree } from '../fixtures/catalog-v1';
 import { AUTH_URL, changeSession, mockMap, testSession } from './map-fixture';
 
-test('Home ma pięć kafelków we właściwych rzędach i pięć zakładek', async ({ page }, info) => {
+test('logo jest po lewej stronie nagłówka, a menu po prawej', async ({ page }) => {
+  await mockMap(page);
+  await page.goto('/');
+  const logo = page.getByRole('link', { name: 'SMARTCART — ekran startowy' });
+  const menu = page.getByRole('button', { name: 'Otwórz menu' });
+  await expect(logo).toBeVisible();
+  for (const width of [280, 320, 1024]) {
+    await page.setViewportSize({ width, height: 740 });
+    const box = (await logo.boundingBox())!;
+    const header = (await logo.locator('..').boundingBox())!;
+    const menuBox = (await menu.boundingBox())!;
+    expect(box.x - header.x).toBeCloseTo(16);
+    expect(header.x + header.width - menuBox.x - menuBox.width).toBeCloseTo(16);
+    expect(box.width).toBeLessThanOrEqual(220);
+    expect(box.x + box.width).toBeLessThan(menuBox.x);
+  }
+});
+
+test('wystająca część przycisku Koszyk otwiera koszyk', async ({ page }) => {
+  await mockMap(page);
+  await page.goto('/');
+  for (const width of [320, 390, 1024]) {
+    await page.setViewportSize({ width, height: 740 });
+    const cart = page.getByRole('tab', { name: 'Koszyk', exact: true });
+    const home = page.getByRole('tab', { name: 'Start', exact: true });
+    await expect(cart).toBeVisible();
+    const cartBox = (await cart.boundingBox())!;
+    const homeBox = (await home.boundingBox())!;
+    const bar = (await page.getByTestId('bottom-bar-background').boundingBox())!;
+    const content = (await page.getByTestId('home-grid').boundingBox())!;
+    expect(content.y + content.height).toBeCloseTo(bar.y, 0);
+    expect(homeBox.y - cartBox.y).toBeGreaterThanOrEqual(15);
+    const cartLabel = (await cart.getByText('Koszyk').boundingBox())!;
+    const homeLabel = (await home.getByText('Start').boundingBox())!;
+    expect(Math.abs(cartLabel.y - homeLabel.y)).toBeLessThan(2);
+    await page.mouse.click(cartBox.x + cartBox.width / 2, cartBox.y + 5);
+    await expect(page).toHaveURL(/\/cart$/);
+    await home.click();
+  }
+});
+
+test('Start mieści skróty i gazetki bez pionowego przewijania', async ({ page }, info) => {
   await mockMap(page); await page.goto('/');
   await expect(page.getByRole('tab')).toHaveCount(5);
-  expect(await page.getByRole('tab').evaluateAll(tabs => tabs.map(tab => tab.getAttribute('aria-label')))).toEqual(['Home', 'Ulubione', 'Koszyk', 'Szukaj', 'Mapa']);
+  expect(await page.getByRole('tab').evaluateAll(tabs => tabs.map(tab => tab.getAttribute('aria-label')))).toEqual(['Start', 'Ulubione', 'Koszyk', 'Szukaj', 'Mapa']);
   const grid = page.getByTestId('home-grid');
-  await expect(grid.getByRole('link')).toHaveCount(5);
-  const names = ['Listy zakupów', 'Ulubione', 'Gazetki', 'Mapa sklepów', 'Produkty'];
-  const targets = ['/cart', '/favorites', '/leaflets', '/stores', '/products'];
-  for (const size of [390, 320]) {
-    await page.setViewportSize({ width: size, height: 740 });
-    const boxes = await Promise.all(names.map(name => grid.getByRole('link', { name, exact: true }).boundingBox()));
-    expect(Math.abs(boxes[0]!.y - boxes[1]!.y)).toBeLessThan(2);
-    expect(boxes[2]!.width).toBeGreaterThan(boxes[0]!.width * 1.9);
-    expect(Math.abs(boxes[3]!.y - boxes[4]!.y)).toBeLessThan(2);
-    expect(boxes[2]!.y).toBeGreaterThan(boxes[0]!.y);
-    expect(boxes[3]!.y).toBeGreaterThan(boxes[2]!.y);
+  const lidlTile = grid.getByRole('link', { name: 'Gazetki: Lidl' }).getByTestId('leaflet-chain-tile');
+  await expect(lidlTile).toHaveCSS('background-color', 'rgb(10, 80, 161)');
+  await expect(lidlTile).toHaveCSS('border-radius', '6px');
+  const biedronkaTile = grid.getByRole('link', { name: 'Gazetki: Biedronka' }).getByTestId('leaflet-chain-tile');
+  await expect(biedronkaTile).toHaveCSS('background-color', 'rgb(253, 237, 20)');
+  await expect(biedronkaTile).toHaveCSS('border-color', 'rgb(0, 0, 0)');
+  const names = ['Listy zakupów', 'Ulubione', 'Produkty', 'Gazetki'];
+  const targets = ['/shopping-lists', '/favorites', '/products', '/leaflets'];
+  for (const [width, height] of [[1024, 768], [820, 390], [390, 740], [360, 640], [320, 480]]) {
+    await page.setViewportSize({ width, height });
+    await expect(async () => {
+      const boxes = await Promise.all(names.map(name => grid.getByRole('link', { name, exact: true }).boundingBox()));
+      expect(boxes[1]!.y).toBeCloseTo(boxes[2]!.y);
+      expect(boxes[0]!.width).toBeGreaterThan(boxes[1]!.width * 1.9);
+      expect(boxes[1]!.y).toBeGreaterThan(boxes[0]!.y);
+      if (width !== 820) expect(boxes[3]!.y).toBeGreaterThan(boxes[1]!.y + boxes[1]!.height);
+      expect(await grid.evaluate(element => element.scrollHeight)).toBe(await grid.evaluate(element => element.clientHeight));
+      const leaflet = (await grid.getByRole('link', { name: 'Gazetki: Lidl' }).boundingBox())!;
+      const cartTab = (await page.getByRole('tab', { name: 'Koszyk' }).boundingBox())!;
+      expect(leaflet.y + leaflet.height).toBeLessThanOrEqual(cartTab.y);
+    }).toPass({ timeout: 3500 });
+    expect(await page.evaluate(() => document.documentElement.scrollHeight)).toBe(height);
   }
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(grid.getByText('Wszystkie Twoje zapisane listy')).toBeVisible();
   await page.screenshot({ path: info.outputPath('home-light.png'), fullPage: true });
+  await page.setViewportSize({ width: 320, height: 480 });
   for (let i = 0; i < names.length; i++) {
     await grid.getByRole('link', { name: names[i], exact: true }).click();
     await expect(page).toHaveURL(new RegExp(`${targets[i]}$`));
-    await page.getByRole('tab', { name: 'Home', exact: true }).click();
+    await page.getByRole('tab', { name: 'Start', exact: true }).click();
   }
+  await page.getByRole('button', { name: 'Następne sieci' }).click();
+  await expect(page.getByRole('button', { name: 'Poprzednie sieci' })).toBeEnabled();
+  await grid.getByRole('link', { name: 'Gazetki: Carrefour' }).click();
+  await expect(page).toHaveURL(/\/leaflets\?chain=carrefour$/);
+  await expect(page.getByText('Brak dostępnych gazetek tej sieci.')).toBeVisible();
 });
 
 test('wyszukiwanie Home przekazuje znaki specjalne, katalog ma jedno pole', async ({ page }) => {
   await mockMap(page); let query = '';
+  await page.emulateMedia({ colorScheme: 'light' });
   await page.route(`${AUTH_URL}/rest/v1/rpc/catalog_tree`, route => route.fulfill({ json: tree }));
   await page.route(`${AUTH_URL}/rest/v1/rpc/catalog_search`, route => { query = route.request().postDataJSON().p_query; return route.fulfill({ json: { version: 1, total: 0, limit: 30, offset: 0, items: [] } }); });
   await page.goto('/');
   const value = 'Mleko 3,2% & Łódź + / ?';
-  await page.getByRole('textbox', { name: 'Szukaj produktów', exact: true }).fill(value);
-  await page.getByRole('textbox', { name: 'Szukaj produktów', exact: true }).press('Enter');
+  const search = page.getByRole('textbox', { name: 'Szukaj produktów', exact: true });
+  const searchFrame = search.locator('..');
+  await expect(searchFrame).toHaveCSS('background-color', 'rgb(255, 255, 255)');
+  await expect(searchFrame).toHaveCSS('border-radius', '16px');
+  await expect(searchFrame).toHaveCSS('min-height', '52px');
+  await expect(search).toHaveCSS('font-size', '16px');
+  await search.fill(value);
+  await expect(search).toHaveCSS('outline-style', 'none');
+  await expect(searchFrame).toHaveCSS('border-top-width', '1px');
+  await expect(searchFrame).toHaveCSS('box-shadow', 'none');
+  await search.press('Enter');
   await expect(page.getByRole('textbox', { name: 'Szukaj w całym katalogu' })).toHaveValue(value);
   await expect(page.getByRole('textbox')).toHaveCount(1);
   await expect.poll(() => query).toBe(value);
@@ -49,27 +119,33 @@ test('wyszukiwanie Home przekazuje znaki specjalne, katalog ma jedno pole', asyn
 test('menu zamyka się Escape i tłem, zachowuje trasę i focus; motyw działa po restarcie', async ({ page }, info) => {
   await mockMap(page); await page.goto('/cart');
   const open = page.getByRole('button', { name: 'Otwórz menu' });
+  const panel = page.getByLabel('Menu SMARTCART', { exact: true });
   await open.click();
-  await expect(page.getByRole('button', { name: 'Zamknij menu', exact: true })).toBeFocused();
+  await expect(panel).toBeFocused();
+  await expect(panel.getByRole('button', { name: 'Zamknij menu', exact: true })).toHaveCount(0);
   await page.getByRole('radio', { name: 'Ciemny' }).click();
   await expect(page.getByRole('radio', { name: 'Ciemny' })).toBeChecked();
   await expect(page.getByText('SMARTCART · wersja 1.0.0')).toBeVisible();
   await expect(page.getByRole('button', { name: /wersja/ })).toHaveCount(0);
   await page.screenshot({ path: info.outputPath('menu-dark.png'), fullPage: true });
   await page.keyboard.press('Escape');
-  await expect(page.getByRole('button', { name: 'Zamknij menu', exact: true })).toBeHidden();
+  await expect(panel).toBeHidden();
   await expect(page).toHaveURL(/\/cart$/); await expect(open).toBeFocused();
   await open.click(); await page.getByRole('button', { name: 'Zamknij menu przez tło' }).click();
   await expect(page).toHaveURL(/\/cart$/);
   await page.reload(); await open.click();
+  await expect(panel).toBeFocused();
   await expect(page.getByRole('radio', { name: 'Ciemny' })).toBeChecked();
   await page.getByRole('radio', { name: 'Systemowy' }).click();
-  await page.getByRole('button', { name: 'Zamknij menu', exact: true }).click();
+  await expect(page.getByRole('radio', { name: 'Systemowy' })).toBeChecked();
+  await page.keyboard.press('Escape');
+  await expect(panel).toBeHidden();
   await page.emulateMedia({ colorScheme: 'light' });
-  await expect(page.getByText('Listy zakupów', { exact: true })).toHaveCSS('color', 'rgb(21, 45, 67)');
+  const cartHeading = page.getByRole('heading', { name: 'Koszyk', exact: true });
+  await expect(cartHeading).toHaveCSS('color', 'rgb(21, 45, 67)');
   await page.emulateMedia({ colorScheme: 'dark' });
-  await expect(page.getByText('Listy zakupów', { exact: true })).toHaveCSS('color', 'rgb(237, 244, 239)');
-  await page.getByRole('tab', { name: 'Home' }).click();
+  await expect(cartHeading).toHaveCSS('color', 'rgb(237, 244, 239)');
+  await page.getByRole('tab', { name: 'Start', exact: true }).click();
   await expect(page.getByTestId('home-grid')).toBeVisible();
   await expect(page.getByLabel('Menu SMARTCART', { exact: true })).toHaveCount(0);
   await page.screenshot({ path: info.outputPath('home-dark.png'), fullPage: true });
@@ -169,16 +245,45 @@ test('ciemna mapa i małe menu zachowują czytelność oraz focus wewnątrz moda
   await page.setViewportSize({ width: 320, height: 568 }); await page.goto('/stores');
   const chain = page.getByRole('checkbox', { name: 'Lidl, 1 sklepów', exact: true });
   await expect(chain).toBeVisible();
-  await expect(chain.getByText('Lidl', { exact: true })).toHaveCSS('color', 'rgb(237, 244, 239)');
+  await expect(chain.locator('img')).toBeVisible();
+  await expect(chain).toHaveCSS('background-color', 'rgb(10, 80, 161)');
   await page.screenshot({ path: info.outputPath('map-dark.png'), fullPage: true });
   await page.getByRole('button', { name: 'Otwórz menu' }).click();
-  await expect(page.getByRole('button', { name: 'Zamknij menu', exact: true })).toBeFocused();
+  const panel = page.getByLabel('Menu SMARTCART', { exact: true });
+  await expect(panel).toBeFocused();
   await expect(page.getByRole('link', { name: 'SMARTCART — ekran startowy' })).toBeHidden();
+  const logo = panel.getByRole('img', { name: 'SmartCart', exact: true });
+  const themes = panel.getByRole('radio');
+  const version = panel.getByText('SMARTCART · wersja 1.0.0');
+  await expect(themes).toHaveCount(3);
+  for (const radio of await themes.all()) {
+    await expect(radio).toHaveText(/\S/);
+    await expect(radio).not.toContainText(/Jasny|Ciemny|Systemowy/);
+  }
+  for (const width of [280, 1024, 320]) {
+    await page.setViewportSize({ width, height: 568 });
+    const panelBox = (await panel.boundingBox())!;
+    const logoBox = (await logo.boundingBox())!;
+    const title = (await panel.getByRole('heading', { name: 'Motyw' }).boundingBox())!;
+    const rules = (await panel.getByRole('button', { name: 'Zasady porównywania' }).boundingBox())!;
+    const versionBox = (await version.boundingBox())!;
+    const logout = (await panel.getByRole('button', { name: 'Wyloguj się' }).boundingBox())!;
+    const boxes = await Promise.all((await themes.all()).map(radio => radio.boundingBox()));
+    expect(panelBox.width).toBeCloseTo(Math.min(width * 0.6, 252), 0);
+    for (const box of boxes) {
+      expect(box!.y).toBeCloseTo(boxes[0]!.y, 0);
+      expect(box!.x + box!.width).toBeLessThan(panelBox.x + panelBox.width);
+    }
+    expect(versionBox.y - logout.y - logout.height).toBeCloseTo(32, 0);
+    expect(panelBox.y + panelBox.height - versionBox.y - versionBox.height).toBeCloseTo(0, 0);
+    expect((title.y + rules.y + rules.height) / 2).toBeCloseTo((panelBox.y + logout.y - 8) / 2, 0);
+    expect(logoBox.y + logoBox.height / 2).toBeCloseTo((panelBox.y + title.y) / 2, 0);
+  }
   for (let i = 0; i < 12; i++) {
     await page.keyboard.press('Tab');
     expect(await page.evaluate(() => !!document.activeElement?.closest('[aria-label="Menu SMARTCART"]')
       || document.activeElement?.getAttribute('aria-label') === 'Zamknij menu przez tło')).toBe(true);
   }
-  await page.getByText('SMARTCART · wersja 1.0.0').scrollIntoViewIfNeeded();
-  await expect(page.getByText('SMARTCART · wersja 1.0.0')).toBeVisible();
+  await expect(version).toBeVisible();
+  await expect(version).toHaveCSS('font-size', '10px');
 });

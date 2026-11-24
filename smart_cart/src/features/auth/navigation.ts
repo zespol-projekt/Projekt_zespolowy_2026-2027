@@ -1,5 +1,5 @@
 import { validLeafletId } from '../leaflets/model.ts';
-const routes = ['/', '/stores', '/products', '/cart', '/favorites', '/profile', '/settings', '/help', '/rules', '/leaflets'] as const;
+const routes = ['/', '/stores', '/products', '/cart', '/cart/list', '/cart/comparison', '/shopping-lists', '/favorites', '/profile', '/settings', '/help', '/rules', '/leaflets'] as const;
 export type AppRoute = typeof routes[number] | `/leaflets/${string}`;
 let intended: AppRoute | null = null;
 let logoutRevision = 0;

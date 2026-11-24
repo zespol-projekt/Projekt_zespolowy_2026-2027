@@ -8,6 +8,47 @@
       "Auchan Hiper"
     ]
   },
+  "biedronka_lomnica_audit": "weryfikacja-biedronki/przeglad-lomnicy/raport.json",
+  "biedronka_registry_audit": "weryfikacja-biedronki/przeglad-2/raport.json",
+  "biedronka_site_audit": "weryfikacja-biedronki/przeglad-5/raport.json",
+  "biedronka_building_audit": "weryfikacja-biedronki/przeglad-10/raport.json",
+  "biedronka_location_audit": "weryfikacja-biedronki/przeglad-19/raport.json",
+  "biedronka_recheck_audit": "weryfikacja-biedronki/przeglad-34/raport.json",
+  "biedronka_remaining_audit": "weryfikacja-biedronki/przeglad-43/raport.json",
+  "biedronka_individual_audit": "weryfikacja-biedronki/przeglad-66/raport.json",
+  "biedronka_corrected_address_audit": "weryfikacja-biedronki/przeglad-78/raport.json",
+  "biedronka_overture_audit": "weryfikacja-biedronki/przeglad-240/raport.json",
+  "biedronka_osm_address_audit": "weryfikacja-biedronki/przeglad-267/raport.json",
+  "biedronka_postcode_audit": "weryfikacja-biedronki/przeglad-278/raport.json",
+  "biedronka_targeted_audit": "weryfikacja-biedronki/przeglad-303/raport.json",
+  "biedronka_followup_audit": "weryfikacja-biedronki/przeglad-396/raport.json",
+  "biedronka_address_audit": "weryfikacja-biedronki/przeglad-582/raport.json",
+  "biedronka_audit": "weryfikacja-biedronki/przeglad-586/raport.json",
+  "biedronka_address_updates": ["780", "3695", "7796", "2459"],
+  "additional_sources": [
+    {
+      "chain": "biedronka",
+      "url": "https://alltheplaces-data.openaddresses.io/runs/2026-11-14-13-32-33/output/biedronka_pl.geojson",
+      "file": "surowe/biedronka_pl-2026-11-14.geojson",
+      "downloaded_at": "2026-11-23",
+      "sha256": "1059639d4ce66dbd4e74d2f423b143a7eded995989ecb987fc9a3022dd5bec02"
+    },
+    {
+      "chain": "kaufland",
+      "provider": "kaufland",
+      "url": "https://sklep.kaufland.pl/.klstorefinder.json",
+      "file": "surowe/kaufland_pl.json",
+      "downloaded_at": "2026-11-23",
+      "sha256": "011a325341f897ba9408effab1887a0c33e83f0124fef499d2130af76e9c5842"
+    },
+    {
+      "chain": "carrefour",
+      "url": "https://alltheplaces-data.openaddresses.io/runs/2026-11-14-13-32-33/output/carrefour_pl.geojson",
+      "file": "surowe/carrefour_pl.geojson",
+      "downloaded_at": "2026-11-23",
+      "sha256": "8a022e427d5256dd3087b07b326aad6fb76abc8cacdf00d6cc70b7d02955ec68"
+    }
+  ],
   "sources": [
     {
       "chain": "lidl",

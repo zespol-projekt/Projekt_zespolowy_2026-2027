@@ -1,0 +1,5627 @@
+{
+  "input_fingerprint": "521868d553607da20b9bef8ffe6c01d3ebbff32aee782ef8b259337996ee92cc",
+  "reviewed": 396,
+  "provider": "GUGiK UUG",
+  "retrieved_on": "2026-11-23",
+  "precision": "official_address_point",
+  "accepted": 93,
+  "totals": {
+    "no_exact_address": 267,
+    "confirmed_address_point": 93,
+    "error": 4,
+    "incomplete": 9,
+    "catalogue_address_conflict": 19,
+    "unresolved_store_conflict": 2,
+    "address_not_unique": 1,
+    "address_already_claimed": 1
+  },
+  "decisions": [
+    {
+      "id": "biedronka:1069",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1172",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1187",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1189",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Łódź",
+        "citypart": null,
+        "street": "Mikołaja Gogola",
+        "number": "10",
+        "teryt": "106101",
+        "simc": "0957650",
+        "ulic": "05706",
+        "code": "92-513",
+        "jednostka": "{Polska,łódzkie,Łódź,Łódź}",
+        "x": "537522.72",
+        "y": "432508.08",
+        "geometry_wkt": "POINT(537522.72 432508.08)",
+        "accuracy": "0.625",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.4375",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.757697,
+        "longitude": 19.5438106
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.757697,
+          "longitude": 19.5438106
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81%C3%B3d%C5%BA%2C+Gogola+10",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lodz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1190",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1218",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1221",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1224",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "ulica Zygmunta Modzelewskiego",
+        "number": "27",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "13192",
+        "code": "02-679",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "637628.13",
+        "y": "481052.06",
+        "geometry_wkt": "POINT(637628.13 481052.06)",
+        "accuracy": "0.642857",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.5",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.1783619,
+        "longitude": 21.0134798
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.1783619,
+          "longitude": 21.0134798
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Modzelewskiego+27",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1229",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1251",
+      "status": "error"
+    },
+    {
+      "id": "biedronka:1257",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1270",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1279",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1282",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1284",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1305",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1311",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1314",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1340",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1341",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Dąbrowa Górnicza",
+        "citypart": null,
+        "street": "Karola Adamieckiego",
+        "number": "11A",
+        "teryt": "246501",
+        "simc": "0939473",
+        "ulic": "00105",
+        "code": "41-300",
+        "jednostka": "{Polska,śląskie,\"Dąbrowa Górnicza\",\"Dąbrowa Górnicza\"}",
+        "x": "514028.49",
+        "y": "272736.39",
+        "geometry_wkt": "POINT(514028.49 272736.39)",
+        "accuracy": "0.829268",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.65",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.3216193,
+        "longitude": 19.1971222
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.3216193,
+          "longitude": 19.1971222
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%85browa+G%C3%B3rnicza%2C+Adamieckiego+11a",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dabrowa-gornicza",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1369",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1380",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1382",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Lubin",
+        "citypart": null,
+        "street": "Tadeusza Kościuszki",
+        "number": "12",
+        "teryt": "021101",
+        "simc": "0954142",
+        "ulic": "09582",
+        "code": "59-300",
+        "jednostka": "{Polska,dolnośląskie,lubiński,Lubin}",
+        "x": "305980.25",
+        "y": "396341.51",
+        "geometry_wkt": "POINT(305980.25 396341.51)",
+        "accuracy": "0.714286",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.578947",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.4004426,
+        "longitude": 16.2098311
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.4004426,
+          "longitude": 16.2098311
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lubin%2C+Ko%C5%9Bciuszki+12",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lubin",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1390",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1395",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Janów Lubelski",
+        "citypart": null,
+        "street": "Jana Zamoyskiego",
+        "number": "26",
+        "teryt": "060505",
+        "simc": "0980493",
+        "ulic": "25579",
+        "code": "23-300",
+        "jednostka": "{Polska,lubelskie,janowski,\"Janów Lubelski\"}",
+        "x": "740876.45",
+        "y": "320940.62",
+        "geometry_wkt": "POINT(740876.45 320940.62)",
+        "accuracy": "0.935484",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.705882",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.7054608,
+        "longitude": 22.4126454
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.7054608,
+          "longitude": 22.4126454
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jan%C3%B3w+Lubelski%2C+Zamoyskiego+26",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=janow-lubelski",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1401",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1403",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1420",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1421",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1422",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Gorzów Wielkopolski",
+        "citypart": null,
+        "street": "Ignacego Mościckiego",
+        "number": "13",
+        "teryt": "086101",
+        "simc": "0935140",
+        "ulic": "13390",
+        "code": "66-400",
+        "jednostka": "{Polska,lubuskie,\"Gorzów Wielkopolski\",\"Gorzów Wielkopolski\"}",
+        "x": "244990.25",
+        "y": "548213.26",
+        "geometry_wkt": "POINT(244990.25 548213.26)",
+        "accuracy": "0.833333",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.631579",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.7392916,
+        "longitude": 15.220992
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.7392916,
+          "longitude": 15.220992
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gorz%C3%B3w+Wielkopolski%2C+Mo%C5%9Bcickiego+13",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gorzow-wlkp",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1432",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1439",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1444",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1449",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1453",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1462",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Gorzów Wielkopolski",
+        "citypart": null,
+        "street": "Pionierów",
+        "number": "3",
+        "teryt": "086101",
+        "simc": "0935140",
+        "ulic": "16290",
+        "code": "66-400",
+        "jednostka": "{Polska,lubuskie,\"Gorzów Wielkopolski\",\"Gorzów Wielkopolski\"}",
+        "x": "246332.31",
+        "y": "547254.95",
+        "geometry_wkt": "POINT(246332.31 547254.95)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.7313239,
+        "longitude": 15.2415741
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.7313239,
+          "longitude": 15.2415741
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gorz%C3%B3w+Wielkopolski%2C+Pionier%C3%B3w+3",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gorzow-wlkp",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1488",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1489",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1500",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1514",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1521",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1523",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1536",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1542",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1548",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1553",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1564",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Brzesko",
+        "citypart": null,
+        "street": "Ludwika Solskiego",
+        "number": "14A",
+        "teryt": "120202",
+        "simc": "0981966",
+        "ulic": "20551",
+        "code": "32-800",
+        "jednostka": "{Polska,małopolskie,brzeski,Brzesko}",
+        "x": "615896.52",
+        "y": "235129.13",
+        "geometry_wkt": "POINT(615896.52 235129.13)",
+        "accuracy": "0.733333",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.555556",
+        "id": 1
+      },
+      "location": {
+        "latitude": 49.9721859,
+        "longitude": 20.6167413
+      },
+      "accepted": {
+        "location": {
+          "latitude": 49.9721859,
+          "longitude": 20.6167413
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Brzesko%2C+Solskiego+14A",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=brzesko",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1568",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1571",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1579",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1583",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1585",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Kowary",
+        "citypart": null,
+        "street": "Jana Matejki",
+        "number": "3",
+        "teryt": "020602",
+        "simc": "0936078",
+        "ulic": "12489",
+        "code": "58-530",
+        "jednostka": "{Polska,dolnośląskie,karkonoski,Kowary}",
+        "x": "276776.46",
+        "y": "330012.94",
+        "geometry_wkt": "POINT(276776.46 330012.94)",
+        "accuracy": "0.782609",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.615385",
+        "street_accuracy": "0.642857",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.7939955,
+        "longitude": 15.8315298
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.7939955,
+          "longitude": 15.8315298
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kowary%2C+J.+Matejki+3",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kowary",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1590",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1599",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1601",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1605",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Praszka",
+        "citypart": null,
+        "street": "Józefa Piłsudskiego",
+        "number": "7",
+        "teryt": "160804",
+        "simc": "0932353",
+        "ulic": "16264",
+        "code": "46-320",
+        "jednostka": "{Polska,opolskie,oleski,Praszka}",
+        "x": "461582.96",
+        "y": "354281.15",
+        "geometry_wkt": "POINT(461582.96 354281.15)",
+        "accuracy": "0.758621",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.65",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.0540512,
+        "longitude": 18.4517082
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.0540512,
+          "longitude": 18.4517082
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Praszka%2C+Pi%C5%82sudskiego+7",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=praszka",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1609",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1610",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Przemyśl",
+        "citypart": null,
+        "street": "Adama Mickiewicza",
+        "number": "28",
+        "teryt": "186201",
+        "simc": "0971672",
+        "ulic": "12740",
+        "code": "37-700",
+        "jednostka": "{Polska,podkarpackie,Przemyśl,Przemyśl}",
+        "x": "772161.82",
+        "y": "219651.73",
+        "geometry_wkt": "POINT(772161.82 219651.73)",
+        "accuracy": "0.8",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.666667",
+        "id": 1
+      },
+      "location": {
+        "latitude": 49.7824492,
+        "longitude": 22.782143
+      },
+      "accepted": {
+        "location": {
+          "latitude": 49.7824492,
+          "longitude": 22.782143
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Przemy%C5%9Bl%2C+Mickiewicza+28",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=przemysl",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1612",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Ścinawa",
+        "citypart": null,
+        "street": "Władysława Jagiełły",
+        "number": "69",
+        "teryt": "021104",
+        "simc": "0954202",
+        "ulic": "24494",
+        "code": "59-330",
+        "jednostka": "{Polska,dolnośląskie,lubiński,Ścinawa}",
+        "x": "320655.53",
+        "y": "396973.81",
+        "geometry_wkt": "POINT(320655.53 396973.81)",
+        "accuracy": "0.7",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.5625",
+        "street_accuracy": "0.47619",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.4109564,
+        "longitude": 16.4203151
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.4109564,
+          "longitude": 16.4203151
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%9Acinawa%2C+W.+Jagie%C5%82%C5%82y+69",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=scinawa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1615",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1617",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Bolków",
+        "citypart": null,
+        "street": "Henryka Sienkiewicza",
+        "number": "16",
+        "teryt": "020502",
+        "simc": "0935995",
+        "ulic": "19834",
+        "code": "59-420",
+        "jednostka": "{Polska,dolnośląskie,jaworski,Bolków}",
+        "x": "296515.98",
+        "y": "343814.77",
+        "geometry_wkt": "POINT(296515.98 343814.77)",
+        "accuracy": "0.75",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.722222",
+        "street_accuracy": "0.636364",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.9252603,
+        "longitude": 16.1036386
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.9252603,
+          "longitude": 16.1036386
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bolk%C3%B3w%2C+H.+Sienkiewicza+16",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bolkow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1618",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1620",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1625",
+      "status": "error"
+    },
+    {
+      "id": "biedronka:1629",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Środa Wielkopolska",
+        "citypart": null,
+        "street": "Mieczysława Niedziałkowskiego",
+        "number": "22",
+        "teryt": "302504",
+        "simc": "0971614",
+        "ulic": "14140",
+        "code": "63-000",
+        "jednostka": "{Polska,wielkopolskie,średzki,\"Środa Wielkopolska\"}",
+        "x": "382652.43",
+        "y": "485395.49",
+        "geometry_wkt": "POINT(382652.43 485395.49)",
+        "accuracy": "0.769231",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.6",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.2220959,
+        "longitude": 17.2815593
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.2220959,
+          "longitude": 17.2815593
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%9Aroda+Wielkopolska%2C+Niedzia%C5%82kowskiego+22",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sroda-wielkopolska",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1634",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Kurów",
+        "citypart": null,
+        "street": "Jana Kilińskiego",
+        "number": "8",
+        "teryt": "061406",
+        "simc": "0384443",
+        "ulic": "08435",
+        "code": "24-170",
+        "jednostka": "{Polska,lubelskie,puławski,Kurów}",
+        "x": "721571.7",
+        "y": "396131.64",
+        "geometry_wkt": "POINT(721571.7 396131.64)",
+        "accuracy": "0.791667",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.705882",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.3884629,
+        "longitude": 22.1856412
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.3884629,
+          "longitude": 22.1856412
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kur%C3%B3w%2C+Kili%C5%84skiego+8",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kurow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1635",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Piotrków Trybunalski",
+        "citypart": null,
+        "street": "Henryka Sienkiewicza",
+        "number": "19",
+        "teryt": "106201",
+        "simc": "0967430",
+        "ulic": "19834",
+        "code": "97-300",
+        "jednostka": "{Polska,łódzkie,\"Piotrków Trybunalski\",\"Piotrków Trybunalski\"}",
+        "x": "547875.1",
+        "y": "393404.7",
+        "geometry_wkt": "POINT(547875.1 393404.7)",
+        "accuracy": "0.822222",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.619048",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.4052252,
+        "longitude": 19.6885
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.4052252,
+          "longitude": 19.6885
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Piotrk%C3%B3w+Trybunalski%2C+Sienkiewicza+19",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=piotrkow-trybunalski",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1637",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Gorzów Wielkopolski",
+        "citypart": null,
+        "street": "Przemysłowa",
+        "number": "57",
+        "teryt": "086101",
+        "simc": "0935140",
+        "ulic": "17742",
+        "code": "66-400",
+        "jednostka": "{Polska,lubuskie,\"Gorzów Wielkopolski\",\"Gorzów Wielkopolski\"}",
+        "x": "246240.49",
+        "y": "546805.82",
+        "geometry_wkt": "POINT(246240.49 546805.82)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.7272507,
+        "longitude": 15.240564
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.7272507,
+          "longitude": 15.240564
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gorz%C3%B3w+Wielkopolski%2C+Przemys%C5%82owa+57",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gorzow-wlkp",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1653",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Jawor",
+        "citypart": null,
+        "street": "Józefa Piłsudskiego",
+        "number": "7-8",
+        "teryt": "020501",
+        "simc": "0954120",
+        "ulic": "16264",
+        "code": "59-400",
+        "jednostka": "{Polska,dolnośląskie,jaworski,Jawor}",
+        "x": "303677.76",
+        "y": "357458.53",
+        "geometry_wkt": "POINT(303677.76 357458.53)",
+        "accuracy": "0.793103",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.65",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.0503252,
+        "longitude": 16.1980701
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.0503252,
+          "longitude": 16.1980701
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jawor%2C+Pi%C5%82sudskiego+7-8",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jawor",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1658",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1661",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1677",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Paczków",
+        "citypart": null,
+        "street": "Henryka Sienkiewicza",
+        "number": "13",
+        "teryt": "160707",
+        "simc": "0965855",
+        "ulic": "19834",
+        "code": "48-370",
+        "jednostka": "{Polska,opolskie,nyski,Paczków}",
+        "x": "358710.77",
+        "y": "289978.54",
+        "geometry_wkt": "POINT(358710.77 289978.54)",
+        "accuracy": "0.75",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.619048",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.4598636,
+        "longitude": 17.0088092
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.4598636,
+          "longitude": 17.0088092
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Paczk%C3%B3w%2C+Sienkiewicza+13",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=paczkow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1682",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1683",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1684",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Racibórz",
+        "citypart": null,
+        "street": "Franciszka Siwonia",
+        "number": "38",
+        "teryt": "241101",
+        "simc": "0942469",
+        "ulic": "30238",
+        "code": "47-400",
+        "jednostka": "{Polska,śląskie,raciborski,Racibórz}",
+        "x": "445367.27",
+        "y": "248281.41",
+        "geometry_wkt": "POINT(445367.27 248281.41)",
+        "accuracy": "0.645161",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.421053",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.0992646,
+        "longitude": 18.2358799
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.0992646,
+          "longitude": 18.2358799
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Racib%C3%B3rz%2C+Siwonia+38",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=raciborz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1688",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1692",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Mogilno",
+        "citypart": null,
+        "street": "Józefa Hallera",
+        "number": "22b",
+        "teryt": "040903",
+        "simc": "0929428",
+        "ulic": "06487",
+        "code": "88-300",
+        "jednostka": "{Polska,kujawsko-pomorskie,mogileński,Mogilno}",
+        "x": "429034.84",
+        "y": "533278.6",
+        "geometry_wkt": "POINT(429034.84 533278.6)",
+        "accuracy": "0.740741",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.533333",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.6605703,
+        "longitude": 17.9504399
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.6605703,
+          "longitude": 17.9504399
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Mogilno%2C+Hallera+22b",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mogilno",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1695",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1701",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1715",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1719",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Biłgoraj",
+        "citypart": null,
+        "street": "Tadeusza Kościuszki",
+        "number": "156",
+        "teryt": "060201",
+        "simc": "0987673",
+        "ulic": "09582",
+        "code": "23-400",
+        "jednostka": "{Polska,lubelskie,biłgorajski,Biłgoraj}",
+        "x": "762998.99",
+        "y": "301843.01",
+        "geometry_wkt": "POINT(762998.99 301843.01)",
+        "accuracy": "0.757576",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.647059",
+        "street_accuracy": "0.6",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.5244378,
+        "longitude": 22.7118592
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.5244378,
+          "longitude": 22.7118592
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bi%C5%82goraj%2C+T.+Ko%C5%9Bciuszki+156",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bilgoraj",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1721",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1725",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1727",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1729",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1737",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Nysa",
+        "citypart": null,
+        "street": "Wincentego Kadłubka",
+        "number": "5",
+        "teryt": "160705",
+        "simc": "0965789",
+        "ulic": "07759",
+        "code": "48-300",
+        "jednostka": "{Polska,opolskie,nyski,Nysa}",
+        "x": "381966.68",
+        "y": "291836.23",
+        "geometry_wkt": "POINT(381966.68 291836.23)",
+        "accuracy": "0.592593",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.45",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.4817134,
+        "longitude": 17.3358071
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.4817134,
+          "longitude": 17.3358071
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Nysa%2C+Kad%C5%82ubka+5",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nysa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1757",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1758",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Rawicz",
+        "citypart": null,
+        "street": "Henryka Sienkiewicza",
+        "number": "22",
+        "teryt": "302205",
+        "simc": "0954604",
+        "ulic": "19834",
+        "code": "63-900",
+        "jednostka": "{Polska,wielkopolskie,rawicki,Rawicz}",
+        "x": "351613.81",
+        "y": "417422.72",
+        "geometry_wkt": "POINT(351613.81 417422.72)",
+        "accuracy": "0.724138",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.619048",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.6037065,
+        "longitude": 16.8566395
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.6037065,
+          "longitude": 16.8566395
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rawicz%2C+Sienkiewicza+22",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rawicz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1762",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1768",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1771",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1786",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Łańcut",
+        "citypart": null,
+        "street": "Józefa Piłsudskiego",
+        "number": "64",
+        "teryt": "181001",
+        "simc": "0974529",
+        "ulic": "16264",
+        "code": "37-100",
+        "jednostka": "{Polska,podkarpackie,łańcucki,Łańcut}",
+        "x": "730655.44",
+        "y": "249146.94",
+        "geometry_wkt": "POINT(730655.44 249146.94)",
+        "accuracy": "0.774194",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.684211",
+        "street_accuracy": "0.666667",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.0647775,
+        "longitude": 22.2240276
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.0647775,
+          "longitude": 22.2240276
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81a%C5%84cut%2C+J.+Pi%C5%82sudskiego+64",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lancut",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1787",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1789",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1791",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Głogów Małopolski",
+        "citypart": null,
+        "street": "Józefa Piłsudskiego",
+        "number": "24",
+        "teryt": "181606",
+        "simc": "0974328",
+        "ulic": "16264",
+        "code": "36-060",
+        "jednostka": "{Polska,podkarpackie,rzeszowski,\"Głogów Małopolski\"}",
+        "x": "712120.1",
+        "y": "257153.19",
+        "geometry_wkt": "POINT(712120.1 257153.19)",
+        "accuracy": "0.829268",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.684211",
+        "street_accuracy": "0.666667",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.143613,
+        "longitude": 21.9697788
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.143613,
+          "longitude": 21.9697788
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=G%C5%82og%C3%B3w+Ma%C5%82opolski%2C+J.+Pi%C5%82sudskiego+24",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=glogow-malopolski",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1807",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1808",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Pruszcz Gdański",
+        "citypart": null,
+        "street": "Jana Kasprowicza",
+        "number": "40",
+        "teryt": "220401",
+        "simc": "0934620",
+        "ulic": "08153",
+        "code": "83-000",
+        "jednostka": "{Polska,pomorskie,gdański,\"Pruszcz Gdański\"}",
+        "x": "477590.18",
+        "y": "711292.37",
+        "geometry_wkt": "POINT(477590.18 711292.37)",
+        "accuracy": "0.861111",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.705882",
+        "id": 1
+      },
+      "location": {
+        "latitude": 54.2653238,
+        "longitude": 18.6558284
+      },
+      "accepted": {
+        "location": {
+          "latitude": 54.2653238,
+          "longitude": 18.6558284
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pruszcz+Gda%C5%84ski%2C+Kasprowicza+40",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pruszcz-gdanski",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1809",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Suwałki",
+        "citypart": null,
+        "street": "Ignacego Daszyńskiego",
+        "number": "8",
+        "teryt": "206301",
+        "simc": "0977456",
+        "ulic": "03639",
+        "code": "16-400",
+        "jednostka": "{Polska,podlaskie,Suwałki,Suwałki}",
+        "x": "756556.65",
+        "y": "702825.54",
+        "geometry_wkt": "POINT(756556.65 702825.54)",
+        "accuracy": "0.766667",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.65",
+        "id": 1
+      },
+      "location": {
+        "latitude": 54.1255889,
+        "longitude": 22.9279027
+      },
+      "accepted": {
+        "location": {
+          "latitude": 54.1255889,
+          "longitude": 22.9279027
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Suwa%C5%82ki%2C+Daszy%C5%84skiego+8",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=suwalki",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1816",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Słupsk",
+        "citypart": null,
+        "street": "Franciszka Szafranka",
+        "number": "2",
+        "teryt": "226301",
+        "simc": "0977278",
+        "ulic": "31140",
+        "code": "76-200",
+        "jednostka": "{Polska,pomorskie,Słupsk,Słupsk}",
+        "x": "374351.26",
+        "y": "734379.08",
+        "geometry_wkt": "POINT(374351.26 734379.08)",
+        "accuracy": "0.692308",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.555556",
+        "id": 1
+      },
+      "location": {
+        "latitude": 54.457812,
+        "longitude": 17.0611185
+      },
+      "accepted": {
+        "location": {
+          "latitude": 54.457812,
+          "longitude": 17.0611185
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=S%C5%82upsk%2C+Szafranka+2",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=slupsk",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1819",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1827",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1829",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1839",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1843",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1868",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1875",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1878",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1885",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1887",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Dębno",
+        "citypart": null,
+        "street": "Adama Mickiewicza",
+        "number": "63",
+        "teryt": "321003",
+        "simc": "0935305",
+        "ulic": "12740",
+        "code": "74-400",
+        "jednostka": "{Polska,zachodniopomorskie,myśliborski,Dębno}",
+        "x": "210484.18",
+        "y": "550297.21",
+        "geometry_wkt": "POINT(210484.18 550297.21)",
+        "accuracy": "0.777778",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.666667",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.7406077,
+        "longitude": 14.7092739
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.7406077,
+          "longitude": 14.7092739
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%99bno%2C+Mickiewicza+63",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=debno",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1907",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1910",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Bydgoszcz",
+        "citypart": null,
+        "street": "Juliusza Kossaka",
+        "number": "17",
+        "teryt": "046101",
+        "simc": "0928363",
+        "ulic": "09463",
+        "code": "85-307",
+        "jednostka": "{Polska,kujawsko-pomorskie,Bydgoszcz,Bydgoszcz}",
+        "x": "432076.75",
+        "y": "583641.45",
+        "geometry_wkt": "POINT(432076.75 583641.45)",
+        "accuracy": "0.7",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.470588",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.1137676,
+        "longitude": 17.9848985
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.1137676,
+          "longitude": 17.9848985
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bydgoszcz%2C+Kossaka+17",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bydgoszcz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1912",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Świdnica",
+        "citypart": null,
+        "street": "Bartosza Głowackiego",
+        "number": "28",
+        "teryt": "021901",
+        "simc": "0984657",
+        "ulic": "05627",
+        "code": "58-100",
+        "jednostka": "{Polska,dolnośląskie,świdnicki,Świdnica}",
+        "x": "322113.43",
+        "y": "333312.1",
+        "geometry_wkt": "POINT(322113.43 333312.1)",
+        "accuracy": "0.727273",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.571429",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.8393429,
+        "longitude": 16.4726963
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.8393429,
+          "longitude": 16.4726963
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%9Awidnica%2C+G%C5%82owackiego+28",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=swidnica",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1917",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1924",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1925",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1932",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1942",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1945",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Gliwice",
+        "citypart": null,
+        "street": "Stanisława Dubois",
+        "number": "16",
+        "teryt": "246601",
+        "simc": "0940000",
+        "ulic": "04337",
+        "code": "44-100",
+        "jednostka": "{Polska,śląskie,Gliwice,Gliwice}",
+        "x": "476719.08",
+        "y": "270345.68",
+        "geometry_wkt": "POINT(476719.08 270345.68)",
+        "accuracy": "0.62069",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.388889",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.2998191,
+        "longitude": 18.673016
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.2998191,
+          "longitude": 18.673016
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gliwice%2C+Dubois+16",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gliwice",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1957",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Racibórz",
+        "citypart": null,
+        "street": "Władysława Reymonta",
+        "number": "16",
+        "teryt": "241101",
+        "simc": "0942469",
+        "ulic": "18648",
+        "code": "47-400",
+        "jednostka": "{Polska,śląskie,raciborski,Racibórz}",
+        "x": "443835.24",
+        "y": "247951.53",
+        "geometry_wkt": "POINT(443835.24 247951.53)",
+        "accuracy": "0.645161",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.45",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.0961541,
+        "longitude": 18.2145028
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.0961541,
+          "longitude": 18.2145028
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Racib%C3%B3rz%2C+Reymonta+16",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=raciborz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:1963",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1971",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1973",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1978",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1986",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:1998",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2004",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2006",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2011",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2012",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Olesno",
+        "citypart": null,
+        "street": "Tadeusza Kościuszki",
+        "number": "25",
+        "teryt": "160803",
+        "simc": "0932293",
+        "ulic": "09582",
+        "code": "46-300",
+        "jednostka": "{Polska,opolskie,oleski,Olesno}",
+        "x": "459968.39",
+        "y": "334628.42",
+        "geometry_wkt": "POINT(459968.39 334628.42)",
+        "accuracy": "0.724138",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.578947",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.8771683,
+        "longitude": 18.4308304
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.8771683,
+          "longitude": 18.4308304
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Olesno%2C+Ko%C5%9Bciuszki+25",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=olesno",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2017",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2021",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Wałbrzych",
+        "citypart": null,
+        "street": "Henryka Wieniawskiego",
+        "number": "70",
+        "teryt": "026501",
+        "simc": "0983681",
+        "ulic": "24123",
+        "code": "58-316",
+        "jednostka": "{Polska,dolnośląskie,Wałbrzych,Wałbrzych}",
+        "x": "308438.58",
+        "y": "331662.43",
+        "geometry_wkt": "POINT(308438.58 331662.43)",
+        "accuracy": "0.771429",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.736842",
+        "street_accuracy": "0.652174",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.820153,
+        "longitude": 16.2795004
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.820153,
+          "longitude": 16.2795004
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wa%C5%82brzych%2C+H.+Wieniawskiego+70",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=walbrzych",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2024",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2026",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Ruda Śląska",
+        "citypart": null,
+        "street": "Karola Goduli",
+        "number": "13",
+        "teryt": "247201",
+        "simc": "0942630",
+        "ulic": "05695",
+        "code": "41-712",
+        "jednostka": "{Polska,śląskie,\"Ruda Śląska\",\"Ruda Śląska\"}",
+        "x": "491914.76",
+        "y": "271786.38",
+        "geometry_wkt": "POINT(491914.76 271786.38)",
+        "accuracy": "0.758621",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.5",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.3131844,
+        "longitude": 18.8864099
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.3131844,
+          "longitude": 18.8864099
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ruda+%C5%9Al%C4%85ska%2C+Goduli+13",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ruda-slaska",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2033",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2038",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2043",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2046",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Myszyniec",
+        "citypart": null,
+        "street": "Kazimierza Stefanowicza",
+        "number": "47",
+        "teryt": "141508",
+        "simc": "0514928",
+        "ulic": "21115",
+        "code": "07-430",
+        "jednostka": "{Polska,mazowieckie,ostrołęcki,Myszyniec}",
+        "x": "656866.1",
+        "y": "614800.97",
+        "geometry_wkt": "POINT(656866.1 614800.97)",
+        "accuracy": "0.722222",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.565217",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.3749665,
+        "longitude": 21.3588128
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.3749665,
+          "longitude": 21.3588128
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Myszyniec%2C+Stefanowicza+47",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=myszyniec",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2047",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2058",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2062",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Węgrów",
+        "citypart": null,
+        "street": "Karola Szamoty",
+        "number": "42",
+        "teryt": "143301",
+        "simc": "0975871",
+        "ulic": "21754",
+        "code": "07-100",
+        "jednostka": "{Polska,mazowieckie,węgrowski,Węgrów}",
+        "x": "705534.94",
+        "y": "508462.78",
+        "geometry_wkt": "POINT(705534.94 508462.78)",
+        "accuracy": "0.730769",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.615385",
+        "street_accuracy": "0.5625",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.4034104,
+        "longitude": 22.0224271
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.4034104,
+          "longitude": 22.0224271
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=W%C4%99gr%C3%B3w%2C+K.+Szamoty+42",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wegrow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2063",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Łódź",
+        "citypart": null,
+        "street": "Stanisława Przybyszewskiego",
+        "number": "28",
+        "teryt": "106101",
+        "simc": "0957650",
+        "ulic": "17892",
+        "code": "93-189",
+        "jednostka": "{Polska,łódzkie,Łódź,Łódź}",
+        "x": "532458.97",
+        "y": "431010.55",
+        "geometry_wkt": "POINT(532458.97 431010.55)",
+        "accuracy": "0.694444",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.607143",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.7445452,
+        "longitude": 19.4702854
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.7445452,
+          "longitude": 19.4702854
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81%C3%B3d%C5%BA%2C+Przybyszewskiego+28",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lodz",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2067",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2068",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Bytom",
+        "citypart": null,
+        "street": "Stanisława Witczaka",
+        "number": "4",
+        "teryt": "246201",
+        "simc": "0938670",
+        "ulic": "24426",
+        "code": "41-902",
+        "jednostka": "{Polska,śląskie,Bytom,Bytom}",
+        "x": "495076.08",
+        "y": "275362.77",
+        "geometry_wkt": "POINT(495076.08 275362.77)",
+        "accuracy": "0.607143",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.45",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.3453933,
+        "longitude": 18.9307767
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.3453933,
+          "longitude": 18.9307767
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bytom%2C+Witczaka+4",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=bytom",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2069",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2080",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2095",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2100",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2114",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2122",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2126",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Kraków",
+        "citypart": null,
+        "street": "Józefa Łepkowskiego",
+        "number": "3",
+        "teryt": "126101",
+        "simc": "0950463",
+        "ulic": "11602",
+        "code": "31-423",
+        "jednostka": "{Polska,małopolskie,Kraków,Kraków}",
+        "x": "568827.63",
+        "y": "247355.7",
+        "geometry_wkt": "POINT(568827.63 247355.7)",
+        "accuracy": "0.758621",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.65",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.0894613,
+        "longitude": 19.9624635
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.0894613,
+          "longitude": 19.9624635
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Krak%C3%B3w%2C+%C5%81epkowskiego+3",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krakow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2134",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Ostrowiec Świętokrzyski",
+        "citypart": null,
+        "street": "Ludwika Waryńskiego",
+        "number": "32",
+        "teryt": "260701",
+        "simc": "0947308",
+        "ulic": "23707",
+        "code": "27-400",
+        "jednostka": "{Polska,świętokrzyskie,ostrowiecki,\"Ostrowiec Świętokrzyski\"}",
+        "x": "667174.48",
+        "y": "345130.85",
+        "geometry_wkt": "POINT(667174.48 345130.85)",
+        "accuracy": "0.826087",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.6",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.9487608,
+        "longitude": 21.3806695
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.9487608,
+          "longitude": 21.3806695
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ostrowiec+%C5%9Awi%C4%99tokrzyski%2C+Wary%C5%84skiego+32",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ostrowiec-swietokrzyski",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2136",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2137",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Maków Mazowiecki",
+        "citypart": null,
+        "street": "Stanisława Moniuszki",
+        "number": "32",
+        "teryt": "141101",
+        "simc": "0966300",
+        "ulic": "13246",
+        "code": "06-200",
+        "jednostka": "{Polska,mazowieckie,makowski,\"Maków Mazowiecki\"}",
+        "x": "641264.98",
+        "y": "557159.92",
+        "geometry_wkt": "POINT(641264.98 557159.92)",
+        "accuracy": "0.702703",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.47619",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.8614171,
+        "longitude": 21.0990095
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.8614171,
+          "longitude": 21.0990095
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Mak%C3%B3w+Mazowiecki%2C+Moniuszki+32",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=makow-mazowiecki",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2149",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2157",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2162",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2163",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Zielona Góra",
+        "citypart": null,
+        "street": "Franciszka Rzeźniczaka",
+        "number": "1",
+        "teryt": "086201",
+        "simc": "0988313",
+        "ulic": "29493",
+        "code": "65-119",
+        "jednostka": "{Polska,lubuskie,\"Zielona Góra\",\"Zielona Góra\"}",
+        "x": "260146.01",
+        "y": "460563.47",
+        "geometry_wkt": "POINT(260146.01 460563.47)",
+        "accuracy": "0.72973",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.545455",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.9594759,
+        "longitude": 15.5077443
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.9594759,
+          "longitude": 15.5077443
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zielona+G%C3%B3ra%2C+Rze%C5%BAniczaka+1",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zielona-gora",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2188",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2202",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2203",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Gorzów Wielkopolski",
+        "citypart": null,
+        "street": "Londyńska",
+        "number": "4",
+        "teryt": "086101",
+        "simc": "0935140",
+        "ulic": "11251",
+        "code": "66-400",
+        "jednostka": "{Polska,lubuskie,\"Gorzów Wielkopolski\",\"Gorzów Wielkopolski\"}",
+        "x": "243451.81",
+        "y": "547900.92",
+        "geometry_wkt": "POINT(243451.81 547900.92)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.7357612,
+        "longitude": 15.1984924
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.7357612,
+          "longitude": 15.1984924
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gorz%C3%B3w+Wielkopolski%2C+Londy%C5%84ska+4",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gorzow-wlkp",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2211",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2213",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Sławno",
+        "citypart": null,
+        "street": "Józefa Mireckiego",
+        "number": "1A",
+        "teryt": "321302",
+        "simc": "0977410",
+        "ulic": "13004",
+        "code": "76-100",
+        "jednostka": "{Polska,zachodniopomorskie,sławieński,Sławno}",
+        "x": "349022.58",
+        "y": "723421.45",
+        "geometry_wkt": "POINT(349022.58 723421.45)",
+        "accuracy": "0.75",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.611111",
+        "id": 1
+      },
+      "location": {
+        "latitude": 54.3524846,
+        "longitude": 16.676174
+      },
+      "accepted": {
+        "location": {
+          "latitude": 54.3524846,
+          "longitude": 16.676174
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=S%C5%82awno%2C+Mireckiego+1A",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=slawno",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2216",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Ciechanów",
+        "citypart": null,
+        "street": "Henryka Sienkiewicza",
+        "number": "79",
+        "teryt": "140201",
+        "simc": "0930414",
+        "ulic": "19834",
+        "code": "06-400",
+        "jednostka": "{Polska,mazowieckie,ciechanowski,Ciechanów}",
+        "x": "606848.29",
+        "y": "559051.13",
+        "geometry_wkt": "POINT(606848.29 559051.13)",
+        "accuracy": "0.764706",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.619048",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.8863539,
+        "longitude": 20.5884932
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.8863539,
+          "longitude": 20.5884932
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ciechan%C3%B3w%2C+Sienkiewicza+79",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ciechanow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2220",
+      "status": "incomplete"
+    },
+    {
+      "id": "biedronka:2230",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2247",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2248",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Poznań",
+        "citypart": null,
+        "street": "Józefa Strusia",
+        "number": "12",
+        "teryt": "306401",
+        "simc": "0969400",
+        "ulic": "21330",
+        "code": "60-711",
+        "jednostka": "{Polska,wielkopolskie,Poznań,Poznań}",
+        "x": "357340.42",
+        "y": "505519.37",
+        "geometry_wkt": "POINT(357340.42 505519.37)",
+        "accuracy": "0.72",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.533333",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.3969762,
+        "longitude": 16.9026
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.3969762,
+          "longitude": 16.9026
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pozna%C5%84%2C+Strusia+12",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=poznan",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2256",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2267",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Głogówek",
+        "citypart": null,
+        "street": "Piotra Skargi",
+        "number": "15",
+        "teryt": "161002",
+        "simc": "0965281",
+        "ulic": "20012",
+        "code": "48-250",
+        "jednostka": "{Polska,opolskie,prudnicki,Głogówek}",
+        "x": "419231.89",
+        "y": "276667.52",
+        "geometry_wkt": "POINT(419231.89 276667.52)",
+        "accuracy": "0.730769",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.5",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.3516068,
+        "longitude": 17.8643536
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.3516068,
+          "longitude": 17.8643536
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=G%C5%82og%C3%B3wek%2C+Skargi+15",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=glogowek",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2279",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2282",
+      "status": "error"
+    },
+    {
+      "id": "biedronka:2287",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2295",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2313",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2316",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2323",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Elbląg",
+        "citypart": null,
+        "street": "Stefana Żeromskiego",
+        "number": "1",
+        "teryt": "286101",
+        "simc": "0932703",
+        "ulic": "26469",
+        "code": "82-300",
+        "jednostka": "{Polska,warmińsko-mazurskie,Elbląg,Elbląg}",
+        "x": "527309.14",
+        "y": "698849.86",
+        "geometry_wkt": "POINT(527309.14 698849.86)",
+        "accuracy": "0.724138",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.6",
+        "id": 1
+      },
+      "location": {
+        "latitude": 54.1532266,
+        "longitude": 19.4182821
+      },
+      "accepted": {
+        "location": {
+          "latitude": 54.1532266,
+          "longitude": 19.4182821
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Elbl%C4%85g%2C+%C5%BBeromskiego+1",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=elblag",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2325",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2327",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2328",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Łomża",
+        "citypart": null,
+        "street": "Aleja Józefa Piłsudskiego",
+        "number": "121",
+        "teryt": "206201",
+        "simc": "0957241",
+        "ulic": "43602",
+        "code": "18-400",
+        "jednostka": "{Polska,podlaskie,Łomża,Łomża}",
+        "x": "704057.24",
+        "y": "593474.81",
+        "geometry_wkt": "POINT(704057.24 593474.81)",
+        "accuracy": "0.684211",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.583333",
+        "street_accuracy": "0.571429",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.1673629,
+        "longitude": 22.0537605
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.1673629,
+          "longitude": 22.0537605
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81om%C5%BCa%2C+al.+J.+Pi%C5%82sudskiego+121",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lomza",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2332",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Gorzów Wielkopolski",
+        "citypart": null,
+        "street": "Aleja Konstytucji 3 Maja",
+        "number": "102",
+        "teryt": "086101",
+        "simc": "0935140",
+        "ulic": "41128",
+        "code": "66-400",
+        "jednostka": "{Polska,lubuskie,\"Gorzów Wielkopolski\",\"Gorzów Wielkopolski\"}",
+        "x": "245233.49",
+        "y": "547262.13",
+        "geometry_wkt": "POINT(245233.49 547262.13)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.7308718,
+        "longitude": 15.2253264
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.7308718,
+          "longitude": 15.2253264
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gorz%C3%B3w+Wielkopolski%2C+Aleja+Konstytucji+3+Maja+102",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gorzow-wlkp",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2335",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2338",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2344",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2353",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Ostróda",
+        "citypart": null,
+        "street": "Adama Mickiewicza",
+        "number": "34A",
+        "teryt": "281501",
+        "simc": "0964927",
+        "ulic": "12740",
+        "code": "14-100",
+        "jednostka": "{Polska,warmińsko-mazurskie,ostródzki,Ostróda}",
+        "x": "563298.92",
+        "y": "649567.65",
+        "geometry_wkt": "POINT(563298.92 649567.65)",
+        "accuracy": "0.8",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.666667",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.7070306,
+        "longitude": 19.9592461
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.7070306,
+          "longitude": 19.9592461
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ostr%C3%B3da%2C+Mickiewicza+34a",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ostroda",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2355",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2358",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2359",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2376",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Stepnica",
+        "citypart": null,
+        "street": "Bolesława Krzywoustego",
+        "number": "1D",
+        "teryt": "320407",
+        "simc": "0783864",
+        "ulic": "01749",
+        "code": "72-112",
+        "jednostka": "{Polska,zachodniopomorskie,goleniowski,Stepnica}",
+        "x": "211015.79",
+        "y": "651849",
+        "geometry_wkt": "POINT(211015.79 651849)",
+        "accuracy": "0.705882",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.565217",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.6514219,
+        "longitude": 14.6252291
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.6514219,
+          "longitude": 14.6252291
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Stepnica%2C+Krzywoustego+1d",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stepnica",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2377",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Jastarnia",
+        "citypart": null,
+        "street": "Adama Mickiewicza",
+        "number": "125",
+        "teryt": "221102",
+        "simc": "0934518",
+        "ulic": "12740",
+        "code": "84-140",
+        "jednostka": "{Polska,pomorskie,pucki,Jastarnia}",
+        "x": "477651.09",
+        "y": "760450.45",
+        "geometry_wkt": "POINT(477651.09 760450.45)",
+        "accuracy": "0.818182",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.75",
+        "street_accuracy": "0.684211",
+        "id": 1
+      },
+      "location": {
+        "latitude": 54.707244,
+        "longitude": 18.6530425
+      },
+      "accepted": {
+        "location": {
+          "latitude": 54.707244,
+          "longitude": 18.6530425
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jastarnia%2C+A.+Mickiewicza+125",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jastarnia",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2378",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2393",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2398",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2407",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Pszczew",
+        "citypart": null,
+        "street": "Władysława Sikorskiego",
+        "number": "22",
+        "teryt": "080304",
+        "simc": "0186097",
+        "ulic": "19914",
+        "code": "66-330",
+        "jednostka": "{Polska,lubuskie,międzyrzecki,Pszczew}",
+        "x": "281097.5",
+        "y": "518000.54",
+        "geometry_wkt": "POINT(281097.5 518000.54)",
+        "accuracy": "0.676471",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.521739",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.4838627,
+        "longitude": 15.7750738
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.4838627,
+          "longitude": 15.7750738
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pszczew%2C+Sikorskiego+22",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pszczew",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2411",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2413",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Poznań",
+        "citypart": null,
+        "street": "Józefa Hallera",
+        "number": "2A",
+        "teryt": "306401",
+        "simc": "0969400",
+        "ulic": "06487",
+        "code": "60-104",
+        "jednostka": "{Polska,wielkopolskie,Poznań,Poznań}",
+        "x": "355208.08",
+        "y": "503421.52",
+        "geometry_wkt": "POINT(355208.08 503421.52)",
+        "accuracy": "0.730769",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.615385",
+        "street_accuracy": "0.5625",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.3775629,
+        "longitude": 16.8721805
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.3775629,
+          "longitude": 16.8721805
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pozna%C5%84%2C+J.+Hallera+2a",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=poznan",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2421",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2426",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Prabuty",
+        "citypart": null,
+        "street": "Władysława Jagiełły",
+        "number": "10A",
+        "teryt": "220704",
+        "simc": "0932962",
+        "ulic": "24494",
+        "code": "82-550",
+        "jednostka": "{Polska,pomorskie,kwidzyński,Prabuty}",
+        "x": "513647.45",
+        "y": "654438.14",
+        "geometry_wkt": "POINT(513647.45 654438.14)",
+        "accuracy": "0.666667",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.5625",
+        "street_accuracy": "0.47619",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.7544825,
+        "longitude": 19.2070468
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.7544825,
+          "longitude": 19.2070468
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Prabuty%2C+W.+Jagie%C5%82%C5%82y+10A",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=prabuty",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2437",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2439",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Toruń",
+        "citypart": null,
+        "street": "Juliana Fałata",
+        "number": "21",
+        "teryt": "046301",
+        "simc": "0982724",
+        "ulic": "04889",
+        "code": "87-100",
+        "jednostka": "{Polska,kujawsko-pomorskie,Toruń,Toruń}",
+        "x": "471466.53",
+        "y": "572264.56",
+        "geometry_wkt": "POINT(471466.53 572264.56)",
+        "accuracy": "0.666667",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.466667",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.015033,
+        "longitude": 18.5745512
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.015033,
+          "longitude": 18.5745512
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Toru%C5%84%2C+Fa%C5%82ata+21",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=torun",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2443",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2444",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2456",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2461",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Słupsk",
+        "citypart": null,
+        "street": "Jana Kilińskiego",
+        "number": "26",
+        "teryt": "226301",
+        "simc": "0977278",
+        "ulic": "08435",
+        "code": "76-200",
+        "jednostka": "{Polska,pomorskie,Słupsk,Słupsk}",
+        "x": "372948.28",
+        "y": "735917.23",
+        "geometry_wkt": "POINT(372948.28 735917.23)",
+        "accuracy": "0.814815",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.705882",
+        "id": 1
+      },
+      "location": {
+        "latitude": 54.4712825,
+        "longitude": 17.0388222
+      },
+      "accepted": {
+        "location": {
+          "latitude": 54.4712825,
+          "longitude": 17.0388222
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=S%C5%82upsk%2C+Kili%C5%84skiego+26",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=slupsk",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2474",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2477",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2478",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2479",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2496",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2497",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Gryfino",
+        "citypart": null,
+        "street": "Adama Asnyka",
+        "number": "57",
+        "teryt": "320604",
+        "simc": "0979076",
+        "ulic": "00470",
+        "code": "74-100",
+        "jednostka": "{Polska,zachodniopomorskie,gryfiński,Gryfino}",
+        "x": "199965.58",
+        "y": "607963.24",
+        "geometry_wkt": "POINT(199965.58 607963.24)",
+        "accuracy": "0.75",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.636364",
+        "street_accuracy": "0.538462",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.251834,
+        "longitude": 14.5003649
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.251834,
+          "longitude": 14.5003649
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gryfino%2C+A.+Asnyka+57",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gryfino",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2498",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2500",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Poznań",
+        "citypart": null,
+        "street": "Karola Libelta",
+        "number": "5",
+        "teryt": "306401",
+        "simc": "0969400",
+        "ulic": "11021",
+        "code": "61-706",
+        "jednostka": "{Polska,wielkopolskie,Poznań,Poznań}",
+        "x": "358765.45",
+        "y": "506995.87",
+        "geometry_wkt": "POINT(358765.45 506995.87)",
+        "accuracy": "0.708333",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.533333",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.4106154,
+        "longitude": 16.9229126
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.4106154,
+          "longitude": 16.9229126
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pozna%C5%84%2C+Libelta+5",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=poznan",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2501",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "ulica Stanisława Żółkiewskiego",
+        "number": "36",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "26529",
+        "code": "04-305",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "643978.68",
+        "y": "488700.48",
+        "geometry_wkt": "POINT(643978.68 488700.48)",
+        "accuracy": "0.625",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.8125",
+        "street_accuracy": "0.433333",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.2454785,
+        "longitude": 21.1095757
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.2454785,
+          "longitude": 21.1095757
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+%C5%BB%C3%B3%C5%82kiewskiego+36",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2508",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2510",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Wielbark",
+        "citypart": null,
+        "street": "Mikołaja Kopernika",
+        "number": "27B",
+        "teryt": "281708",
+        "simc": "0490470",
+        "ulic": "09282",
+        "code": "12-160",
+        "jednostka": "{Polska,warmińsko-mazurskie,szczycieński,Wielbark}",
+        "x": "629124.37",
+        "y": "617294.97",
+        "geometry_wkt": "POINT(629124.37 617294.97)",
+        "accuracy": "0.727273",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.666667",
+        "street_accuracy": "0.55",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.4048905,
+        "longitude": 20.9429691
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.4048905,
+          "longitude": 20.9429691
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wielbark%2C+M.+Kopernika+27b",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wielbark",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2519",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2522",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2527",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Świnoujście",
+        "citypart": null,
+        "street": "Bolesława Chrobrego",
+        "number": "9",
+        "teryt": "326301",
+        "simc": "0979722",
+        "ulic": "01742",
+        "code": "72-600",
+        "jednostka": "{Polska,zachodniopomorskie,Świnoujście,Świnoujście}",
+        "x": "188531.08",
+        "y": "681974.93",
+        "geometry_wkt": "POINT(188531.08 681974.93)",
+        "accuracy": "0.705882",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.5",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.9084601,
+        "longitude": 14.2556555
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.9084601,
+          "longitude": 14.2556555
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%9Awinouj%C5%9Bcie%2C+Chrobrego+9",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=swinoujscie",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2545",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2550",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2562",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "ulica Ludwika Rydygiera",
+        "number": "7",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "19216",
+        "code": "01-793",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "635426.63",
+        "y": "490081.95",
+        "geometry_wkt": "POINT(635426.63 490081.95)",
+        "accuracy": "0.6",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.416667",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.260067,
+        "longitude": 20.9849095
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.260067,
+          "longitude": 20.9849095
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Rydygiera+7",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2577",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2610",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "ulica Wincentego Rzymowskiego",
+        "number": "28",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "19385",
+        "code": "02-697",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "636943.71",
+        "y": "480564.47",
+        "geometry_wkt": "POINT(636943.71 480564.47)",
+        "accuracy": "0.641026",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.464286",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.1741499,
+        "longitude": 21.0032765
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.1741499,
+          "longitude": 21.0032765
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Rzymowskiego+28",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2641",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2643",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2682",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2694",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Kraków",
+        "citypart": null,
+        "street": "Bolesława Limanowskiego",
+        "number": "3",
+        "teryt": "126101",
+        "simc": "0950463",
+        "ulic": "11074",
+        "code": "30-551",
+        "jednostka": "{Polska,małopolskie,Kraków,Kraków}",
+        "x": "568044.59",
+        "y": "242411.88",
+        "geometry_wkt": "POINT(568044.59 242411.88)",
+        "accuracy": "0.69697",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.583333",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.0450799,
+        "longitude": 19.9506358
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.0450799,
+          "longitude": 19.9506358
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Krak%C3%B3w%2C+Limanowskiego+3",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krakow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2695",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "ulica Władysława Broniewskiego",
+        "number": "58A",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "02125",
+        "code": "01-716",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "632963.4",
+        "y": "491221.2",
+        "geometry_wkt": "POINT(632963.4 491221.2)",
+        "accuracy": "0.658537",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.451613",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.2709079,
+        "longitude": 20.9492786
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.2709079,
+          "longitude": 20.9492786
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Broniewskiego+58a",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2698",
+      "status": "incomplete"
+    },
+    {
+      "id": "biedronka:2700",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2710",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2713",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2743",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2753",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2764",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2769",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:282",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Lubaczów",
+        "citypart": null,
+        "street": "Adama Mickiewicza",
+        "number": "103",
+        "teryt": "180901",
+        "simc": "0972447",
+        "ulic": "12740",
+        "code": "37-600",
+        "jednostka": "{Polska,podkarpackie,lubaczowski,Lubaczów}",
+        "x": "794245.3",
+        "y": "263405.98",
+        "geometry_wkt": "POINT(794245.3 263405.98)",
+        "accuracy": "0.806452",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.666667",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.1646753,
+        "longitude": 23.1216875
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.1646753,
+          "longitude": 23.1216875
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lubacz%C3%B3w%2C+Mickiewicza+103",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lubaczow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2822",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Kraków",
+        "citypart": null,
+        "street": "Władysława Łokietka",
+        "number": "5",
+        "teryt": "126101",
+        "simc": "0950463",
+        "ulic": "11653",
+        "code": "30-010",
+        "jednostka": "{Polska,małopolskie,Kraków,Kraków}",
+        "x": "566562.84",
+        "y": "245914.82",
+        "geometry_wkt": "POINT(566562.84 245914.82)",
+        "accuracy": "0.62069",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.45",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.0767582,
+        "longitude": 19.9305469
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.0767582,
+          "longitude": 19.9305469
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Krak%C3%B3w%2C+%C5%81okietka+5",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krakow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:2845",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2981",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:2991",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Toruń",
+        "citypart": null,
+        "street": "Ludwika Waryńskiego",
+        "number": "13",
+        "teryt": "046301",
+        "simc": "0982724",
+        "ulic": "23707",
+        "code": "87-100",
+        "jednostka": "{Polska,kujawsko-pomorskie,Toruń,Toruń}",
+        "x": "474697.22",
+        "y": "572316.8",
+        "geometry_wkt": "POINT(474697.22 572316.8)",
+        "accuracy": "0.733333",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.666667",
+        "street_accuracy": "0.619048",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.0156653,
+        "longitude": 18.6227172
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.0156653,
+          "longitude": 18.6227172
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Toru%C5%84%2C+L.+Wary%C5%84skiego+13",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=torun",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:3002",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3018",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3032",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3037",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Jaworzno",
+        "citypart": null,
+        "street": "Karola Olszewskiego",
+        "number": "5",
+        "teryt": "246801",
+        "simc": "0940335",
+        "ulic": "15008",
+        "code": "43-600",
+        "jednostka": "{Polska,śląskie,Jaworzno,Jaworzno}",
+        "x": "519798.51",
+        "y": "258980.2",
+        "geometry_wkt": "POINT(519798.51 258980.2)",
+        "accuracy": "0.774194",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.65",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.1976996,
+        "longitude": 19.2774794
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.1976996,
+          "longitude": 19.2774794
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jaworzno%2C+Olszewskiego+5",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jaworzno",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:3039",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3041",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Tarnobrzeg",
+        "citypart": null,
+        "street": "Adama Mickiewicza",
+        "number": "40",
+        "teryt": "186401",
+        "simc": "0980085",
+        "ulic": "12740",
+        "code": "39-400",
+        "jednostka": "{Polska,podkarpackie,Tarnobrzeg,Tarnobrzeg}",
+        "x": "688834.46",
+        "y": "303231.81",
+        "geometry_wkt": "POINT(688834.46 303231.81)",
+        "accuracy": "0.8125",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.666667",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.5655754,
+        "longitude": 21.6672798
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.5655754,
+          "longitude": 21.6672798
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Tarnobrzeg%2C+Mickiewicza+40",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=tarnobrzeg",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:3042",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "ulica Stanisława Wojciechowskiego",
+        "number": "41",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "24589",
+        "code": "02-495",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "627662.04",
+        "y": "482557.11",
+        "geometry_wkt": "POINT(627662.04 482557.11)",
+        "accuracy": "0.651163",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.5",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.1942878,
+        "longitude": 20.8683316
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.1942878,
+          "longitude": 20.8683316
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Wojciechowskiego+41",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=warszawa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:3057",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3062",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3074",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3076",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Gniezno",
+        "citypart": null,
+        "street": "Adama Mickiewicza",
+        "number": "2",
+        "teryt": "300301",
+        "simc": "0970632",
+        "ulic": "12740",
+        "code": "62-200",
+        "jednostka": "{Polska,wielkopolskie,gnieźnieński,Gniezno}",
+        "x": "405174.03",
+        "y": "519472.74",
+        "geometry_wkt": "POINT(405174.03 519472.74)",
+        "accuracy": "0.793103",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.75",
+        "street_accuracy": "0.684211",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.5328049,
+        "longitude": 17.601602
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.5328049,
+          "longitude": 17.601602
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gniezno%2C+A.+Mickiewicza+2",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gniezno",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:3078",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3080",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3081",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3083",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3090",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3096",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Mława",
+        "citypart": null,
+        "street": "Henryka Sienkiewicza",
+        "number": "12",
+        "teryt": "141301",
+        "simc": "0930696",
+        "ulic": "19834",
+        "code": "06-500",
+        "jednostka": "{Polska,mazowieckie,mławski,Mława}",
+        "x": "591958.5",
+        "y": "583861.3",
+        "geometry_wkt": "POINT(591958.5 583861.3)",
+        "accuracy": "0.741935",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.722222",
+        "street_accuracy": "0.636364",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.11214,
+        "longitude": 20.374269
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.11214,
+          "longitude": 20.374269
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=M%C5%82awa%2C+H.+Sienkiewicza+12",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mlawa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:3098",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Brzezna",
+        "citypart": null,
+        "street": null,
+        "number": "645",
+        "teryt": "121014",
+        "simc": "0459891",
+        "ulic": null,
+        "code": "33-386",
+        "jednostka": "{Polska,małopolskie,nowosądecki,Podegrodzie}",
+        "x": "617756.03",
+        "y": "192901.81",
+        "geometry_wkt": "POINT(617756.03 192901.81)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:3106",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3116",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3191",
+      "status": "incomplete"
+    },
+    {
+      "id": "biedronka:3353",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Hrubieszów",
+        "citypart": null,
+        "street": "Józefa Piłsudskiego",
+        "number": "57",
+        "teryt": "060401",
+        "simc": "0987800",
+        "ulic": "16264",
+        "code": "22-500",
+        "jednostka": "{Polska,lubelskie,hrubieszowski,Hrubieszów}",
+        "x": "845139.71",
+        "y": "337709.66",
+        "geometry_wkt": "POINT(845139.71 337709.66)",
+        "accuracy": "0.8",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.684211",
+        "street_accuracy": "0.666667",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.8032613,
+        "longitude": 23.9006389
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.8032613,
+          "longitude": 23.9006389
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Hrubiesz%C3%B3w%2C+J.+Pi%C5%82sudskiego+57",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=hrubieszow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:3357",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3359",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Gdynia",
+        "citypart": null,
+        "street": "Mikołaja Kopernika",
+        "number": "36",
+        "teryt": "226201",
+        "simc": "0934100",
+        "ulic": "09282",
+        "code": "81-411",
+        "jednostka": "{Polska,pomorskie,Gdynia,Gdynia}",
+        "x": "470357.18",
+        "y": "737731.13",
+        "geometry_wkt": "POINT(470357.18 737731.13)",
+        "accuracy": "0.7",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.666667",
+        "street_accuracy": "0.55",
+        "id": 1
+      },
+      "location": {
+        "latitude": 54.5026335,
+        "longitude": 18.5421089
+      },
+      "accepted": {
+        "location": {
+          "latitude": 54.5026335,
+          "longitude": 18.5421089
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gdynia%2C+M.+Kopernika+36",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gdynia",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:3376",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Zieleniec",
+        "citypart": null,
+        "street": null,
+        "number": "69A",
+        "teryt": "160603",
+        "simc": "0502061",
+        "ulic": null,
+        "code": "46-034",
+        "jednostka": "{Polska,opolskie,namysłowski,Pokój}",
+        "x": "417919.88",
+        "y": "339393.34",
+        "geometry_wkt": "POINT(417919.88 339393.34)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:3382",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Głubczyce",
+        "citypart": null,
+        "street": "Stefana Żeromskiego",
+        "number": "12",
+        "teryt": "160203",
+        "simc": "0965329",
+        "ulic": "26469",
+        "code": "48-100",
+        "jednostka": "{Polska,opolskie,głubczycki,Głubczyce}",
+        "x": "415661.28",
+        "y": "260454.65",
+        "geometry_wkt": "POINT(415661.28 260454.65)",
+        "accuracy": "0.764706",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.666667",
+        "street_accuracy": "0.619048",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.2052808,
+        "longitude": 17.8177775
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.2052808,
+          "longitude": 17.8177775
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=G%C5%82ubczyce%2C+S.+%C5%BBeromskiego+12",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=glubczyce",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:3404",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3435",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3453",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3462",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3486",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3489",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Korzenna",
+        "citypart": null,
+        "street": null,
+        "number": "251",
+        "teryt": "121006",
+        "simc": "0435880",
+        "ulic": null,
+        "code": "33-322",
+        "jednostka": "{Polska,małopolskie,nowosądecki,Korzenna}",
+        "x": "633374.75",
+        "y": "203838.82",
+        "geometry_wkt": "POINT(633374.75 203838.82)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:3492",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Jędrzychowice",
+        "citypart": null,
+        "street": null,
+        "number": "125A",
+        "teryt": "022507",
+        "simc": "0193269",
+        "ulic": null,
+        "code": "59-900",
+        "jednostka": "{Polska,dolnośląskie,zgorzelecki,Zgorzelec}",
+        "x": "222877.71",
+        "y": "375669",
+        "geometry_wkt": "POINT(222877.71 375669)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:3514",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3566",
+      "status": "incomplete"
+    },
+    {
+      "id": "biedronka:3588",
+      "status": "incomplete"
+    },
+    {
+      "id": "biedronka:3599",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3649",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3657",
+      "status": "error"
+    },
+    {
+      "id": "biedronka:3659",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Dobra",
+        "citypart": null,
+        "street": "Józefa Piłsudskiego",
+        "number": "6A",
+        "teryt": "321801",
+        "simc": "0978852",
+        "ulic": "16264",
+        "code": "72-210",
+        "jednostka": "{Polska,zachodniopomorskie,łobeski,Dobra}",
+        "x": "255551.66",
+        "y": "641413.54",
+        "geometry_wkt": "POINT(255551.66 641413.54)",
+        "accuracy": "0.758621",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.65",
+        "id": 1
+      },
+      "location": {
+        "latitude": 53.5805078,
+        "longitude": 15.3059422
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.5805078,
+          "longitude": 15.3059422
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Dobra%2C+Pi%C5%82sudskiego+6a",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dobra",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:3660",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3664",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Zabrze",
+        "citypart": null,
+        "street": "Jana Matejki",
+        "number": "48",
+        "teryt": "247801",
+        "simc": "0945380",
+        "ulic": "12489",
+        "code": "41-800",
+        "jednostka": "{Polska,śląskie,Zabrze,Zabrze}",
+        "x": "484419.82",
+        "y": "269319",
+        "geometry_wkt": "POINT(484419.82 269319)",
+        "accuracy": "0.782609",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.615385",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.2908367,
+        "longitude": 18.7812153
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.2908367,
+          "longitude": 18.7812153
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zabrze%2C+Matejki+48",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zabrze",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:3710",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3712",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Dąbrowa Rzeczycka",
+        "citypart": null,
+        "street": null,
+        "number": "107",
+        "teryt": "181804",
+        "simc": "0804804",
+        "ulic": null,
+        "code": "37-455",
+        "jednostka": "{Polska,podkarpackie,stalowowolski,\"Radomyśl nad Sanem\"}",
+        "x": "714607.83",
+        "y": "314253.37",
+        "geometry_wkt": "POINT(714607.83 314253.37)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:3715",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3718",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3730",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3734",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:3797",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:459",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:561",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:583",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Posmykowizna",
+        "citypart": null,
+        "street": null,
+        "number": "43",
+        "teryt": "100901",
+        "simc": "0703285",
+        "ulic": null,
+        "code": "98-355",
+        "jednostka": "{Polska,łódzkie,pajęczański,Działoszyn}",
+        "x": "492184.8",
+        "y": "361612.01",
+        "geometry_wkt": "POINT(492184.8 361612.01)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.1212254,
+        "longitude": 18.8882994
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.1212254,
+          "longitude": 18.8882994
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Posmykowizna+43",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dzialoszyn",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "address": {
+          "formatted": "Posmykowizna 43, 98-355 Posmykowizna",
+          "street_address": "Posmykowizna 43",
+          "street": null,
+          "house_number": "43",
+          "city": "Posmykowizna",
+          "postal_code": "98-355",
+          "country": "PL"
+        }
+      }
+    },
+    {
+      "id": "biedronka:664",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:6955",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:6961",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:6975",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:6987",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Otfinów",
+        "citypart": null,
+        "street": null,
+        "number": "66",
+        "teryt": "121615",
+        "simc": "0838097",
+        "ulic": null,
+        "code": "33-250",
+        "jednostka": "{Polska,małopolskie,tarnowski,Żabno}",
+        "x": "629318.2",
+        "y": "258920.68",
+        "geometry_wkt": "POINT(629318.2 258920.68)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:6991",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7014",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Katowice",
+        "citypart": null,
+        "street": "Adama Szebesty",
+        "number": "2",
+        "teryt": "246901",
+        "simc": "0937474",
+        "ulic": "21888",
+        "code": "40-749",
+        "jednostka": "{Polska,śląskie,Katowice,Katowice}",
+        "x": "503327.81",
+        "y": "259630.63",
+        "geometry_wkt": "POINT(503327.81 259630.63)",
+        "accuracy": "0.769231",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.6",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.2038731,
+        "longitude": 19.0466458
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.2038731,
+          "longitude": 19.0466458
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Katowice%2C+Szebesty+2",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=katowice",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:7017",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7022",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7027",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7031",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7033",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7039",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7048",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7050",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Markowa",
+        "citypart": null,
+        "street": null,
+        "number": "164",
+        "teryt": "181005",
+        "simc": "0655391",
+        "ulic": null,
+        "code": "37-120",
+        "jednostka": "{Polska,podkarpackie,łańcucki,Markowa}",
+        "x": "738583.39",
+        "y": "245027.66",
+        "geometry_wkt": "POINT(738583.39 245027.66)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7055",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Bolesławiec",
+        "citypart": null,
+        "street": "Adama Asnyka",
+        "number": "1",
+        "teryt": "020101",
+        "simc": "0935989",
+        "ulic": "00470",
+        "code": "59-700",
+        "jednostka": "{Polska,dolnośląskie,bolesławiecki,Bolesławiec}",
+        "x": "260700.99",
+        "y": "382927.01",
+        "geometry_wkt": "POINT(260700.99 382927.01)",
+        "accuracy": "0.807692",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.583333",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.2627052,
+        "longitude": 15.568828
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.2627052,
+          "longitude": 15.568828
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Boles%C5%82awiec%2C+Asnyka+1",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=boleslawiec",
+        "resolves": [
+          "shared_coordinates_different_cities"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:7071",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7078",
+      "status": "unresolved_store_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Grąbków",
+        "citypart": null,
+        "street": null,
+        "number": "57",
+        "teryt": "302705",
+        "simc": "0289822",
+        "ulic": null,
+        "code": "62-709",
+        "jednostka": "{Polska,wielkopolskie,turecki,Malanów}",
+        "x": "459458.24",
+        "y": "454815.77",
+        "geometry_wkt": "POINT(459458.24 454815.77)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7081",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Jabłonna-Majątek",
+        "citypart": null,
+        "street": null,
+        "number": "1",
+        "teryt": "060906",
+        "simc": "1062859",
+        "ulic": null,
+        "code": "23-114",
+        "jednostka": "{Polska,lubelskie,lubelski,Jabłonna}",
+        "x": "750738.69",
+        "y": "364538.82",
+        "geometry_wkt": "POINT(750738.69 364538.82)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7097",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7099",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7100",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7143",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7173",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7278",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7280",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7292",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7305",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7318",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7325",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Stara Wieś",
+        "citypart": null,
+        "street": null,
+        "number": "621",
+        "teryt": "120707",
+        "simc": "0440325",
+        "ulic": null,
+        "code": "34-600",
+        "jednostka": "{Polska,małopolskie,limanowski,Limanowa}",
+        "x": "602861.6",
+        "y": "202454.78",
+        "geometry_wkt": "POINT(602861.6 202454.78)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7339",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7340",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7341",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7343",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Łąkta Górna",
+        "citypart": null,
+        "street": null,
+        "number": "407",
+        "teryt": "120109",
+        "simc": "0838973",
+        "ulic": null,
+        "code": "32-731",
+        "jednostka": "{Polska,małopolskie,bocheński,Żegocina}",
+        "x": "602545.42",
+        "y": "218979.86",
+        "geometry_wkt": "POINT(602545.42 218979.86)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7348",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7354",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7355",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7359",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7366",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7371",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7375",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7377",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7388",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Rajbrot",
+        "citypart": null,
+        "street": null,
+        "number": "53",
+        "teryt": "120104",
+        "simc": "0822080",
+        "ulic": null,
+        "code": "32-725",
+        "jednostka": "{Polska,małopolskie,bocheński,\"Lipnica Murowana\"}",
+        "x": "607722.09",
+        "y": "218136.23",
+        "geometry_wkt": "POINT(607722.09 218136.23)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7411",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7412",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7414",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7415",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Gościszów",
+        "citypart": null,
+        "street": null,
+        "number": "129B",
+        "teryt": "020104",
+        "simc": "0191520",
+        "ulic": null,
+        "code": "59-730",
+        "jednostka": "{Polska,dolnośląskie,bolesławiecki,Nowogrodziec}",
+        "x": "252477.42",
+        "y": "371556.29",
+        "geometry_wkt": "POINT(252477.42 371556.29)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7419",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Mucharz",
+        "citypart": null,
+        "street": null,
+        "number": "272",
+        "teryt": "121805",
+        "simc": "0062969",
+        "ulic": null,
+        "code": "34-106",
+        "jednostka": "{Polska,małopolskie,wadowicki,Mucharz}",
+        "x": "539889.53",
+        "y": "214849.85",
+        "geometry_wkt": "POINT(539889.53 214849.85)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7422",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7429",
+      "status": "incomplete"
+    },
+    {
+      "id": "biedronka:7440",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7449",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7456",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Ogrodzieniec",
+        "citypart": null,
+        "street": "Kościuszki",
+        "number": "133",
+        "teryt": "241606",
+        "simc": "0941748",
+        "ulic": "09572",
+        "code": "42-440",
+        "jednostka": "{Polska,śląskie,zawierciański,Ogrodzieniec}",
+        "x": "534724.55",
+        "y": "288701.13",
+        "geometry_wkt": "POINT(534724.55 288701.13)",
+        "accuracy": "0.777778",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.578947",
+        "street_accuracy": "0.578947",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.4643785,
+        "longitude": 19.4894026
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.4643785,
+          "longitude": 19.4894026
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ogrodzieniec%2C+Tadeusza+Ko%C5%9Bciuszki+133",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ogrodzieniec",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:7465",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7466",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7505",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7515",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7518",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7521",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Limanowa",
+        "citypart": null,
+        "street": "Tadeusza Kościuszki",
+        "number": "50",
+        "teryt": "120701",
+        "simc": "0960510",
+        "ulic": "09582",
+        "code": "34-600",
+        "jednostka": "{Polska,małopolskie,limanowski,Limanowa}",
+        "x": "602737.84",
+        "y": "204622.97",
+        "geometry_wkt": "POINT(602737.84 204622.97)",
+        "accuracy": "0.741935",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.578947",
+        "id": 1
+      },
+      "location": {
+        "latitude": 49.7002198,
+        "longitude": 20.4251554
+      },
+      "accepted": {
+        "location": {
+          "latitude": 49.7002198,
+          "longitude": 20.4251554
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Limanowa%2C+Ko%C5%9Bciuszki+50",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=limanowa",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:7530",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Pniewy",
+        "citypart": null,
+        "street": null,
+        "number": "4",
+        "teryt": "140609",
+        "simc": "0631580",
+        "ulic": null,
+        "code": "05-652",
+        "jednostka": "{Polska,mazowieckie,grójecki,Pniewy}",
+        "x": "619479.95",
+        "y": "450609.04",
+        "geometry_wkt": "POINT(619479.95 450609.04)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7548",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7561",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7582",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7583",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7594",
+      "status": "address_not_unique",
+      "exact_matches": 2
+    },
+    {
+      "id": "biedronka:7601",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7604",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7609",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7620",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7621",
+      "status": "incomplete"
+    },
+    {
+      "id": "biedronka:7629",
+      "status": "incomplete"
+    },
+    {
+      "id": "biedronka:7637",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7649",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7709",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Konarzynki",
+        "citypart": null,
+        "street": null,
+        "number": "42D",
+        "teryt": "220205",
+        "simc": "0746372",
+        "ulic": null,
+        "code": "89-607",
+        "jednostka": "{Polska,pomorskie,chojnicki,Konarzyny}",
+        "x": "394994.46",
+        "y": "662858.51",
+        "geometry_wkt": "POINT(394994.46 662858.51)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7715",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7716",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7733",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Biesiekierz",
+        "citypart": null,
+        "street": null,
+        "number": "114C",
+        "teryt": "320902",
+        "simc": "0303657",
+        "ulic": null,
+        "code": "76-039",
+        "jednostka": "{Polska,zachodniopomorskie,koszaliński,Biesiekierz}",
+        "x": "306349.5",
+        "y": "700478.71",
+        "geometry_wkt": "POINT(306349.5 700478.71)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7734",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7736",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Zwoleń",
+        "citypart": null,
+        "street": "Kochanowskiego",
+        "number": "72",
+        "teryt": "143605",
+        "simc": "0974096",
+        "ulic": "08725",
+        "code": "26-700",
+        "jednostka": "{Polska,mazowieckie,zwoleński,Zwoleń}",
+        "x": "679949.97",
+        "y": "389845.99",
+        "geometry_wkt": "POINT(679949.97 389845.99)",
+        "accuracy": "0.833333",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.75",
+        "street_accuracy": "0.75",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.3467179,
+        "longitude": 21.5847728
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.3467179,
+          "longitude": 21.5847728
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zwole%C5%84%2C+Jana+Kochanowskiego+72",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zwolen",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:7772",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7802",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7807",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7808",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7813",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Kraków",
+        "citypart": null,
+        "street": "Tadeusza Romanowicza",
+        "number": "4B",
+        "teryt": "126101",
+        "simc": "0950463",
+        "ulic": "18829",
+        "code": "30-702",
+        "jednostka": "{Polska,małopolskie,Kraków,Kraków}",
+        "x": "569067.52",
+        "y": "242743.37",
+        "geometry_wkt": "POINT(569067.52 242743.37)",
+        "accuracy": "0.733333",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.6",
+        "id": 1
+      },
+      "location": {
+        "latitude": 50.0479439,
+        "longitude": 19.9649846
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.0479439,
+          "longitude": 19.9649846
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Krak%C3%B3w%2C+Romanowicza+4b",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krakow",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:7836",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7848",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7856",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7859",
+      "status": "incomplete"
+    },
+    {
+      "id": "biedronka:7865",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Kończewice",
+        "citypart": null,
+        "street": null,
+        "number": "3A",
+        "teryt": "041502",
+        "simc": "0841998",
+        "ulic": null,
+        "code": "87-140",
+        "jednostka": "{Polska,kujawsko-pomorskie,toruński,Chełmża}",
+        "x": "471958.1",
+        "y": "590941.91",
+        "geometry_wkt": "POINT(471958.1 590941.91)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7866",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7894",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7902",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7906",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7912",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7926",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Lublin",
+        "citypart": null,
+        "street": "Mariana Smoluchowskiego",
+        "number": "2",
+        "teryt": "066301",
+        "simc": "0954700",
+        "ulic": "20372",
+        "code": "20-474",
+        "jednostka": "{Polska,lubelskie,Lublin,Lublin}",
+        "x": "748533.21",
+        "y": "378548.07",
+        "geometry_wkt": "POINT(748533.21 378548.07)",
+        "accuracy": "0.757576",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.666667",
+        "id": 1
+      },
+      "location": {
+        "latitude": 51.2194415,
+        "longitude": 22.5602668
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.2194415,
+          "longitude": 22.5602668
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lublin%2C+Smoluchowskiego+2",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lublin",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:7927",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7928",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Grodzisko Dolne",
+        "citypart": null,
+        "street": null,
+        "number": "263A",
+        "teryt": "180802",
+        "simc": "0650590",
+        "ulic": null,
+        "code": "37-306",
+        "jednostka": "{Polska,podkarpackie,leżajski,\"Grodzisko Dolne\"}",
+        "x": "746144.42",
+        "y": "261875.19",
+        "geometry_wkt": "POINT(746144.42 261875.19)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7935",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:7949",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Dawidy Bankowe",
+        "citypart": null,
+        "street": "Starzyńskiego",
+        "number": "99",
+        "teryt": "142106",
+        "simc": "0007947",
+        "ulic": "21043",
+        "code": "05-090",
+        "jednostka": "{Polska,mazowieckie,pruszkowski,Raszyn}",
+        "x": "635506.55",
+        "y": "474268.68",
+        "geometry_wkt": "POINT(635506.55 474268.68)",
+        "accuracy": "0.842105",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.7",
+        "street_accuracy": "0.7",
+        "id": 1
+      },
+      "location": {
+        "latitude": 52.117918,
+        "longitude": 20.9797547
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.117918,
+          "longitude": 20.9797547
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Dawidy+Bankowe%2C+Stefana+Starzy%C5%84skiego+99",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dawidy-bankowe",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:814",
+      "status": "no_exact_address",
+      "exact_matches": 0
+    },
+    {
+      "id": "biedronka:910",
+      "status": "confirmed_address_point",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Kartuzy",
+        "citypart": null,
+        "street": "Adama Mickiewicza",
+        "number": "2",
+        "teryt": "220502",
+        "simc": "0934547",
+        "ulic": "12740",
+        "code": "83-300",
+        "jednostka": "{Polska,pomorskie,kartuski,Kartuzy}",
+        "x": "447243.14",
+        "y": "719383.69",
+        "geometry_wkt": "POINT(447243.14 719383.69)",
+        "accuracy": "0.793103",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.75",
+        "street_accuracy": "0.684211",
+        "id": 1
+      },
+      "location": {
+        "latitude": 54.3358279,
+        "longitude": 18.1883637
+      },
+      "accepted": {
+        "location": {
+          "latitude": 54.3358279,
+          "longitude": 18.1883637
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kartuzy%2C+A.+Mickiewicza+2",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kartuzy",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point"
+      }
+    },
+    {
+      "id": "biedronka:7958",
+      "status": "catalogue_address_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Borowa",
+        "citypart": null,
+        "street": null,
+        "number": "385A",
+        "teryt": "181102",
+        "simc": "0645458",
+        "ulic": null,
+        "code": "39-305",
+        "jednostka": "{Polska,podkarpackie,mielecki,Borowa}",
+        "x": "666230.12",
+        "y": "282424.87",
+        "geometry_wkt": "POINT(666230.12 282424.87)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7962",
+      "status": "address_already_claimed",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Andrychów",
+        "citypart": null,
+        "street": "Krakowska",
+        "number": "83",
+        "teryt": "121801",
+        "simc": "0924023",
+        "ulic": "09796",
+        "code": "34-120",
+        "jednostka": "{Polska,małopolskie,wadowicki,Andrychów}",
+        "x": "524025.08",
+        "y": "220988.94",
+        "geometry_wkt": "POINT(524025.08 220988.94)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    },
+    {
+      "id": "biedronka:7953",
+      "status": "unresolved_store_conflict",
+      "exact_matches": 1,
+      "candidate": {
+        "city": "Lubin",
+        "citypart": null,
+        "street": "Leszczynowa",
+        "number": "27C",
+        "teryt": "021101",
+        "simc": "0954142",
+        "ulic": "10870",
+        "code": "59-300",
+        "jednostka": "{Polska,dolnośląskie,lubiński,Lubin}",
+        "x": "304467.44",
+        "y": "396352.18",
+        "geometry_wkt": "POINT(304467.44 396352.18)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    }
+  ]
+}

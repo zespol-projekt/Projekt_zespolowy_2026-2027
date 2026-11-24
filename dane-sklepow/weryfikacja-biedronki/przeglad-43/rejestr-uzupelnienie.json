@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1729,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%9Awiebodzin%2C+Sukiennicza+20&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":15,\"returned objects\":1,\"results\":{\"1\":{\"city\":\"\\u015awiebodzin\",\"citypart\":null,\"street\":\"Sukiennicza\",\"number\":\"20\",\"teryt\":\"080805\",\"simc\":\"0988626\",\"ulic\":\"21541\",\"code\":\"66-200\",\"jednostka\":\"{Polska,lubuskie,\\u015bwiebodzi\\u0144ski,\\u015awiebodzin}\",\"x\":\"15.5311452017416\",\"y\":\"52.2531966170646\",\"geometry_wkt\":\"POINT(15.5311452017416 52.2531966170646)\",\"accuracy\":\"1\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"1\",\"street_accuracy\":\"1\",\"id\":1}},\"request time\":0.0038692315419514975}"
+  },
+  {
+    "id": 3657,
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Soko%C5%82y%2C+Mazowiecka+16&exact_number=1&srid=4326",
+    "response": "{\"type\":\"address\",\"max results limit\":15,\"min accuracy limit\":0.40000000000000002,\"only exact numbers\":1,\"found objects\":15,\"returned objects\":2,\"results\":{\"1\":{\"city\":\"Soko\\u0142y\",\"citypart\":null,\"street\":\"Mazowiecka\",\"number\":\"16\",\"teryt\":\"201308\",\"simc\":\"0406200\",\"ulic\":\"12540\",\"code\":\"18-218\",\"jednostka\":\"{Polska,podlaskie,wysokomazowiecki,Soko\\u0142y}\",\"x\":\"22.7013356796739\",\"y\":\"52.9899676920534\",\"geometry_wkt\":\"POINT(22.7013356796739 52.9899676920534)\",\"accuracy\":\"1\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"1\",\"street_accuracy\":\"1\",\"id\":1},\"2\":{\"city\":\"Soko\\u0142y\",\"citypart\":null,\"street\":\"Szosa Mazowiecka\",\"number\":\"16\",\"teryt\":\"201308\",\"simc\":\"0406200\",\"ulic\":\"22045\",\"code\":\"18-218\",\"jednostka\":\"{Polska,podlaskie,wysokomazowiecki,Soko\\u0142y}\",\"x\":\"22.6983010100219\",\"y\":\"52.9875103413406\",\"geometry_wkt\":\"POINT(22.6983010100219 52.9875103413406)\",\"accuracy\":\"0.807692\",\"city_accuracy\":\"1\",\"street_part_accuracy\":\"1\",\"street_accuracy\":\"0.647059\",\"id\":2}},\"request time\":0.0059563318888346357}"
+  }
+]

@@ -1,16 +1,71 @@
+import { CHAIN_LOGOS, CHAIN_TILE_COLORS, CHAIN_TILE_RADIUS } from '../chainLogos.js';
+import { POLAND_BOUNDARY } from './polandBoundary.js';
+
 // One browser runtime for Android/iOS WebView and the web map.
 // A literal string also works in Hermes, which does not preserve function source.
-const runtime = String.raw`function startMap(ML, channel) {
+const runtime = String.raw`function startMap(ML, channel, logos, tileColors, boundary) {
   const send = message => {
     const body = { ...message, channel };
     if (window.ReactNativeWebView) window.ReactNativeWebView.postMessage(JSON.stringify(body));
     else window.parent.postMessage(body, '*');
   };
   const empty = () => ({ type: 'FeatureCollection', features: [] });
+  const poland = { type: 'Polygon', coordinates: [boundary] };
+  const nameField = /^name(?:[:_][a-z_-]+)?$/i;
+  const polishName = ['coalesce', ['get', 'name:pl'], ['get', 'name_pl'], ['get', 'name'], ['get', 'name:latin']];
+  const polishText = field => {
+    if (Array.isArray(field)) {
+      if (field[0] === 'literal') return field;
+      if (field[0] === 'get' && field.length === 2 && nameField.test(field[1])) return polishName;
+      return field.map(polishText);
+    }
+    if (typeof field !== 'string') return field;
+    const parts = field.split(/(\{[^{}]+\})/);
+    if (!parts.some(part => part.startsWith('{') && nameField.test(part.slice(1, -1)))) return field;
+    return ['concat', ...parts.map(part => {
+      if (!part.startsWith('{') || !part.endsWith('}')) return part;
+      const property = part.slice(1, -1);
+      return ['to-string', nameField.test(property) ? polishName : ['get', property]];
+    })];
+  };
+  const expressionFilter = filter => {
+    const [op, property, ...values] = filter;
+    if (op === 'all' || op === 'any') return [op, ...filter.slice(1).map(expressionFilter)];
+    if (op === 'none') return ['!', ['any', ...filter.slice(1).map(expressionFilter)]];
+    if (typeof property !== 'string' || values.some(Array.isArray)) return filter;
+    const value = property === '$type' ? ['geometry-type'] : property === '$id' ? ['id'] : ['get', property];
+    if (op === 'in' || op === '!in') {
+      const expression = ['in', value, ['literal', values]];
+      return op === 'in' ? expression : ['!', expression];
+    }
+    if (op === 'has' || op === '!has') {
+      const expression = property === '$id' ? ['!=', value, null] : property === '$type' ? true : ['has', property];
+      return op === 'has' ? expression : ['!', expression];
+    }
+    return ['==', '!=', '>', '<', '>=', '<='].includes(op) ? [op, value, values[0]] : filter;
+  };
+  const transformStyle = (_previous, style) => ({
+    ...style,
+    layers: style.layers.map(layer => {
+      const field = layer.layout?.['text-field'];
+      if (layer.type === 'symbol' && field) {
+        layer = { ...layer, layout: { ...layer.layout, 'text-field': polishText(field) } };
+      }
+      const sourceLayer = layer['source-layer'];
+      let coverage;
+      if (sourceLayer === 'transportation' || sourceLayer === 'transportation_name' || sourceLayer === 'place') {
+        coverage = ['within', poland];
+      } else if (sourceLayer === 'building') {
+        coverage = ['==', ['distance', poland], 0];
+      } else {
+        return layer;
+      }
+      return { ...layer, filter: layer.filter ? ['all', expressionFilter(layer.filter), coverage] : coverage };
+    }),
+  });
   let map, loaded = false, state = null, updating = false;
   let lastStores = null, lastFocus = null, dataTimer;
   let attributionStarted = false, attributionTimer, attributionPanel, attributionButton;
-  const colors = { lidl: '#0050AA', biedronka: '#D62828', auchan: '#AA1B51', dino: '#267B35' };
   const palette = { land: '#F7F7F2', water: '#C3DEE1', green: '#D8E7D0', residential: '#EDEEE5', building: '#D9DFD5',
     road: '#FFFFFF', casing: '#CDD6CD', text: '#304B43', halo: '#F7F7F2', cluster: '#152D43', border: '#FFFFFF' };
   const showAttribution = expanded => {
@@ -32,6 +87,31 @@ const runtime = String.raw`function startMap(ML, channel) {
     }, 5000);
   };
   const fail = (message, fatal = false) => send({ type: 'error', message, fatal });
+  const addLogo = async ([chain, uri]) => {
+    const image = new Image();
+    await new Promise((resolve, reject) => {
+      image.onload = resolve;
+      image.onerror = reject;
+      image.src = uri;
+    });
+    const canvas = document.createElement('canvas');
+    const pixelRatio = 2;
+    const size = 32 * pixelRatio;
+    canvas.width = canvas.height = size;
+    const ctx = canvas.getContext('2d');
+    const { backgroundColor, borderColor } = tileColors[chain];
+    ctx.beginPath();
+    ctx.roundRect(1, 1, size - 2, size - 2, ${CHAIN_TILE_RADIUS} * pixelRatio);
+    ctx.fillStyle = backgroundColor;
+    ctx.fill();
+    ctx.strokeStyle = borderColor;
+    ctx.lineWidth = pixelRatio;
+    ctx.stroke();
+    const scale = 50 / Math.max(image.naturalWidth, image.naturalHeight);
+    const width = image.naturalWidth * scale, height = image.naturalHeight * scale;
+    ctx.drawImage(image, (size - width) / 2, (size - height) / 2, width, height);
+    map.addImage(chain, ctx.getImageData(0, 0, size, size), { pixelRatio });
+  };
   const applyPalette = () => {
     const c = palette;
     for (const layer of map.getStyle().layers) {
@@ -108,6 +188,12 @@ const runtime = String.raw`function startMap(ML, channel) {
     ML.setWorkerCount(2);
     map = new ML.Map({ container: 'map', style: 'https://tiles.openfreemap.org/styles/positron',
       bounds: [[14.1, 49], [24.2, 54.9]], fitBoundsOptions: { padding: 20 }, minZoom: 4, maxZoom: 19,
+      maxBounds: [[8, 44], [31, 60]], renderWorldCopies: false, transformStyle,
+      locale: {
+        'Map.Title': 'Mapa',
+        'NavigationControl.ZoomIn': 'Przybliż',
+        'NavigationControl.ZoomOut': 'Oddal',
+      },
       attributionControl: false, dragRotate: false, pitchWithRotate: false, maxPitch: 0,
       canvasContextAttributes: { preserveDrawingBuffer: false },
     });
@@ -120,7 +206,7 @@ const runtime = String.raw`function startMap(ML, channel) {
         attributionPanel = document.createElement('div');
         attributionPanel.id = 'map-attribution';
         attributionPanel.hidden = true;
-        attributionPanel.innerHTML = '<a href="https://openmaptiles.org/" target="_blank" rel="noopener noreferrer">© OpenMapTiles</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</a>';
+        attributionPanel.innerHTML = '<a href="https://openmaptiles.org/" target="_blank" rel="noopener noreferrer">© OpenMapTiles</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</a> · <a href="https://services.gugik.gov.pl/uug/" target="_blank" rel="noopener noreferrer">GUGiK</a> · <a href="https://docs.overturemaps.org/attribution/" target="_blank" rel="noopener noreferrer">Overture Maps</a>';
         attributionButton = document.createElement('button');
         attributionButton.type = 'button';
         attributionButton.textContent = 'i';
@@ -139,7 +225,6 @@ const runtime = String.raw`function startMap(ML, channel) {
     }, 'bottom-right');
     map.touchZoomRotate.disableRotation();
     map.on('movestart', () => document.getElementById('map').setAttribute('aria-busy', 'true'));
-    map.on('moveend', () => document.getElementById('map').setAttribute('aria-busy', 'false'));
     map.on('error', event => {
       const detail = String(event.error?.message ?? '');
       if (/worker/i.test(detail)) {
@@ -151,7 +236,13 @@ const runtime = String.raw`function startMap(ML, channel) {
         : 'Nie udało się pobrać części podkładu. Sprawdź połączenie z internetem.', fatal);
     });
     map.on('webglcontextlost', () => fail('Telefon wstrzymał wyświetlanie mapy. Uruchom ją ponownie.', true));
-    map.on('load', () => {
+    map.on('load', async () => {
+      try {
+        await Promise.all(Object.entries(logos).map(addLogo));
+      } catch {
+        fail('Nie udało się wczytać logotypów sklepów. Spróbuj ponownie.', true);
+        return;
+      }
       map.addSource('smartcart-stores', { type: 'geojson', data: empty(), cluster: true, clusterMaxZoom: 16, clusterRadius: 48 });
       map.addSource('smartcart-location', { type: 'geojson', data: empty() });
       map.addLayer({ id: 'smartcart-clusters', type: 'circle', source: 'smartcart-stores', filter: ['has', 'point_count'], paint: {
@@ -162,12 +253,11 @@ const runtime = String.raw`function startMap(ML, channel) {
         'text-field': ['get', 'point_count_abbreviated'], 'text-font': ['Noto Sans Bold'], 'text-size': 13,
         'text-allow-overlap': true, 'text-ignore-placement': true,
       }, paint: { 'text-color': '#FFFFFF' } });
-      map.addLayer({ id: 'smartcart-points', type: 'circle', source: 'smartcart-stores', filter: ['!', ['has', 'point_count']], paint: {
-        'circle-color': ['match', ['get', 'chain'], ...Object.entries(colors).flat(), '#152D43'],
-        'circle-radius': 13, 'circle-stroke-color': '#FFFFFF', 'circle-stroke-width': 3,
+      map.addLayer({ id: 'smartcart-points', type: 'symbol', source: 'smartcart-stores', filter: ['!', ['has', 'point_count']], layout: {
+        'icon-image': ['get', 'chain'], 'icon-allow-overlap': true, 'icon-ignore-placement': true,
       } });
       map.addLayer({ id: 'smartcart-selected', type: 'circle', source: 'smartcart-stores', filter: ['==', ['get', 'storeId'], ''], paint: {
-        'circle-color': 'transparent', 'circle-radius': 18, 'circle-stroke-color': '#07966D', 'circle-stroke-width': 3,
+        'circle-color': 'transparent', 'circle-radius': 22, 'circle-stroke-color': '#07966D', 'circle-stroke-width': 3,
       } });
       map.addLayer({ id: 'smartcart-user', type: 'circle', source: 'smartcart-location', paint: {
         'circle-radius': 8, 'circle-color': '#1479F2', 'circle-stroke-color': '#FFFFFF', 'circle-stroke-width': 3,
@@ -190,7 +280,10 @@ const runtime = String.raw`function startMap(ML, channel) {
       send({ type: 'ready' });
     });
     map.on('sourcedata', event => { if (event.sourceId === 'smartcart-stores') finishData(); });
-    map.on('idle', finishData);
+    map.on('idle', () => {
+      document.getElementById('map').setAttribute('aria-busy', 'false');
+      finishData();
+    });
     send({ type: 'bridge-ready' });
   } catch {
     fail('Nie udało się uruchomić mapy na tym urządzeniu. Spróbuj ponownie.', true);
@@ -221,7 +314,7 @@ export function createMapDocument(channel) {
     .smartcart-attribution button:focus-visible{outline:2px solid #07966D;outline-offset:1px}</style></head>
     <body><div id="map" role="region" aria-label="Wektorowa mapa sklepów"></div>
     <script type="module">
-    import('${MAPLIBRE_ASSETS}maplibre-gl.mjs').then(ML=>(${runtime})(ML,${encoded})).catch(()=>{
+    import('${MAPLIBRE_ASSETS}maplibre-gl.mjs').then(ML=>(${runtime})(ML,${encoded},${JSON.stringify(CHAIN_LOGOS)},${JSON.stringify(CHAIN_TILE_COLORS)},${JSON.stringify(POLAND_BOUNDARY)})).catch(()=>{
       const message={channel:${encoded},type:'error',fatal:true,message:'Nie udało się uruchomić mapy. Sprawdź połączenie i spróbuj ponownie.'};
       if(window.ReactNativeWebView)window.ReactNativeWebView.postMessage(JSON.stringify(message));else window.parent.postMessage(message,'*');
     });</script></body></html>`;

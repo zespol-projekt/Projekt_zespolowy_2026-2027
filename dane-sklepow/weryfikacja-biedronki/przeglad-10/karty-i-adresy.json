@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1789,
+    "registry": [],
+    "directory": "https://mapa.targeo.pl/biedronka-supermarket-kosciuszki-31-34-kruszwica~4608894/biedronka-supermarket/adres",
+    "directions": [
+      "https://mapa.targeo.pl/jak_dojechac,biedronka%20supermarket,18.33295,52.67392;p%5B2130%5D"
+    ],
+    "coordinates": []
+  },
+  {
+    "id": 3191,
+    "registry": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jaros%C5%82aw%2C+Pruchnicka+1&exact_number=1&srid=4326",
+        "matches": [
+          {
+            "city": "Jarosław",
+            "citypart": null,
+            "street": "Pruchnicka",
+            "number": "1",
+            "teryt": "180401",
+            "simc": "0972192",
+            "ulic": "17569",
+            "code": "37-500",
+            "jednostka": "{Polska,podkarpackie,jarosławski,Jarosław}",
+            "x": "22.6743864424549",
+            "y": "50.0103290309497",
+            "geometry_wkt": "POINT(22.6743864424549 50.0103290309497)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "street_part_accuracy": "1",
+            "street_accuracy": "1",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jaros%C5%82aw%2C+Pruchnicka+1BA&exact_number=1&srid=4326",
+        "matches": [
+          {
+            "city": "Jarosław",
+            "citypart": null,
+            "street": "Pruchnicka",
+            "number": "1BA",
+            "teryt": "180401",
+            "simc": "0972192",
+            "ulic": "17569",
+            "code": "37-500",
+            "jednostka": "{Polska,podkarpackie,jarosławski,Jarosław}",
+            "x": "22.6761732036281",
+            "y": "50.011351098662",
+            "geometry_wkt": "POINT(22.6761732036281 50.011351098662)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "street_part_accuracy": "1",
+            "street_accuracy": "1",
+            "id": 1
+          }
+        ]
+      }
+    ],
+    "directory": "https://mapa.targeo.pl/biedronka-supermarket-pruchnicka-1ba-37-500-jaroslaw~23072552/biedronka-supermarket/adres",
+    "directions": [
+      "https://mapa.targeo.pl/jak_dojechac,biedronka%20supermarket,22.67605,50.01137;p%5B2130%5D"
+    ],
+    "coordinates": []
+  },
+  {
+    "id": 3599,
+    "registry": [],
+    "directory": "https://www.cylex-polska.pl/firmy/biedronka-tuszyn-11384118.html",
+    "directory_error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": 7348,
+    "registry": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Nowe+Grodziczno+3A&exact_number=1&srid=4326",
+        "matches": [
+          {
+            "city": "Nowe Grodziczno",
+            "citypart": null,
+            "street": null,
+            "number": "3A",
+            "teryt": "281203",
+            "simc": "0844070",
+            "ulic": null,
+            "code": "13-324",
+            "jednostka": "{Polska,warmińsko-mazurskie,nowomiejski,Grodziczno}",
+            "x": "19.7627035278917",
+            "y": "53.4129109156996",
+            "geometry_wkt": "POINT(19.7627035278917 53.4129109156996)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Nowe+Grodziczno+91&exact_number=1&srid=4326",
+        "matches": [
+          {
+            "city": "Nowe Grodziczno",
+            "citypart": null,
+            "street": null,
+            "number": "91",
+            "teryt": "281203",
+            "simc": "0844070",
+            "ulic": null,
+            "code": "13-324",
+            "jednostka": "{Polska,warmińsko-mazurskie,nowomiejski,Grodziczno}",
+            "x": "19.7631252007144",
+            "y": "53.4128510345094",
+            "geometry_wkt": "POINT(19.7631252007144 53.4128510345094)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7377,
+    "registry": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Z%C5%82ot%C3%B3w%2C+Chojnicka+20&exact_number=1&srid=4326",
+        "matches": [
+          {
+            "city": "Złotów",
+            "citypart": null,
+            "street": "Chojnicka",
+            "number": "20",
+            "teryt": "303101",
+            "simc": "0967423",
+            "ulic": "02826",
+            "code": "77-400",
+            "jednostka": "{Polska,wielkopolskie,złotowski,Złotów}",
+            "x": "17.049560168343",
+            "y": "53.3712107930109",
+            "geometry_wkt": "POINT(17.049560168343 53.3712107930109)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "street_part_accuracy": "1",
+            "street_accuracy": "1",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Z%C5%82ot%C3%B3w%2C+Chojnicka+22&exact_number=1&srid=4326",
+        "matches": [
+          {
+            "city": "Złotów",
+            "citypart": null,
+            "street": "Chojnicka",
+            "number": "22",
+            "teryt": "303101",
+            "simc": "0967423",
+            "ulic": "02826",
+            "code": "77-400",
+            "jednostka": "{Polska,wielkopolskie,złotowski,Złotów}",
+            "x": "17.0499481249606",
+            "y": "53.3712799049965",
+            "geometry_wkt": "POINT(17.0499481249606 53.3712799049965)",
+            "accuracy": "1",
+            "city_accuracy": "1",
+            "street_part_accuracy": "1",
+            "street_accuracy": "1",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7505,
+    "registry": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gorz%C3%B3w+Wielkopolski%2C+Szczeci%C5%84ska+5A&exact_number=1&srid=4326",
+        "matches": []
+      }
+    ]
+  },
+  {
+    "id": 7856,
+    "registry": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Papro%C4%87%2C+Wypoczynkowa+89&exact_number=1&srid=4326",
+        "matches": []
+      },
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Papro%C4%87+89%2C+Nowy+Tomy%C5%9Bl&exact_number=1&srid=4326",
+        "matches": []
+      }
+    ]
+  },
+  {
+    "id": 7906,
+    "registry": [
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81omnica%2C+Widokowa+2&exact_number=1&srid=4326",
+        "matches": []
+      },
+      {
+        "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81omnica%2C+Widokowa+2A&exact_number=1&srid=4326",
+        "matches": []
+      }
+    ]
+  }
+]

@@ -21,18 +21,18 @@ test('odświeżenie tokenu tej samej sesji zachowuje mapę i katalog', async ({ 
   });
   page.on('request', request => { if (request.url().endsWith('/v1/stores')) requests++; });
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
-  await waitForStores(page, 4);
+  await waitForStores(page, stores.length);
   const before = verifications;
   await changeSession(page, testSession(undefined, 2), 'TOKEN_REFRESHED');
   await expect.poll(() => verifications).toBeGreaterThan(before);
-  await waitForStores(page, 4);
+  await waitForStores(page, stores.length);
   expect(requests).toBe(1);
 });
 
 test('wylogowanie w innej karcie usuwa widoczną mapę', async ({ page }) => {
   await mockMap(page);
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
-  await waitForStores(page, 4);
+  await waitForStores(page, stores.length);
   await changeSession(page, null);
   await expect(page.getByTestId('stores-map')).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'Zaloguj się', exact: true })).toBeVisible();
@@ -85,7 +85,7 @@ test('401 odświeża token i ponawia pobranie jeden raz', async ({ page }) => {
     return tokens.length === 1 ? route.fulfill({ status: 401, json: {} }) : route.fulfill({ json: catalog() });
   });
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
-  await waitForStores(page, 4);
+  await waitForStores(page, stores.length);
   expect(refreshes).toBe(1);
   expect(tokens).toEqual([`Bearer ${testSession().access_token}`, `Bearer ${refreshed.access_token}`]);
 });
