@@ -21,7 +21,8 @@ export default defineConfig({
     timeout: 120_000,
     env: {
       CI: '1', EXPO_NO_TELEMETRY: '1', EXPO_NO_DOTENV: '1', SMARTCART_E2E: '1',
-      EXPO_PUBLIC_LEAFLETS_API_URL: 'https://smartcart-test.supabase.invalid/functions/v1/leaflets',
+      // Exercise automatic /functions/v1/leaflets resolution from the project's URL.
+      EXPO_PUBLIC_LEAFLETS_API_URL: '',
       EXPO_PUBLIC_SUPABASE_URL: 'https://smartcart-test.supabase.invalid',
       EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_browser_test_only',
     },

@@ -48,11 +48,12 @@ function AppShell() {
   }, [state.status, pathname]);
   const signedIn = state.status === "signedIn";
   const menuOpen = signedIn && menu?.path === pathname && menu?.key === sessionKey;
+  const readerOpen = signedIn && /^\/leaflets\/[^/]+$/.test(pathname);
   return <SafeAreaView style={styles.screen}>
     <StatusBar style={dark ? "light" : "dark"} />
     {controlsAndroidNavigationBar && <NavigationBar style={dark ? "light" : "dark"} />}
     <View style={[isWeb ? styles.webLayout : styles.mobileLayout, (!signedIn || !ready) && styles.hidden]}
-      aria-hidden={!signedIn || menuOpen} pointerEvents={menuOpen ? "none" : "auto"} accessibilityElementsHidden={!signedIn || menuOpen} importantForAccessibility={signedIn && !menuOpen ? "auto" : "no-hide-descendants"}>
+      aria-hidden={!signedIn || menuOpen || readerOpen} pointerEvents={menuOpen ? "none" : "auto"} accessibilityElementsHidden={!signedIn || menuOpen || readerOpen} importantForAccessibility={signedIn && !menuOpen && !readerOpen ? "auto" : "no-hide-descendants"}>
       <View style={isWeb ? styles.webMain : styles.mobileMain}>
         <View style={styles.header}>
           <Link href="/" asChild><Pressable accessibilityRole="link" accessibilityLabel="SMARTCART — ekran startowy" style={styles.homeButton}>

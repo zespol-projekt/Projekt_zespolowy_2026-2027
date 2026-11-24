@@ -84,7 +84,7 @@ test('Start mieści skróty i gazetki bez pionowego przewijania', async ({ page 
   await expect(page.getByRole('button', { name: 'Poprzednie sieci' })).toBeEnabled();
   await grid.getByRole('link', { name: 'Gazetki: Carrefour' }).click();
   await expect(page).toHaveURL(/\/leaflets\?chain=carrefour$/);
-  await expect(page.getByText('Brak dostępnych gazetek tej sieci.')).toBeVisible();
+  await expect(page.getByText('Brak aktualnych gazetek tej sieci.')).toBeVisible();
 });
 
 test('wyszukiwanie Home przekazuje znaki specjalne, katalog ma jedno pole', async ({ page }) => {

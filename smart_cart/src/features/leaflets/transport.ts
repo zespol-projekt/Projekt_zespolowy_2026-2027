@@ -50,8 +50,8 @@ async function withTimeout<T>(signal: AbortSignal, action: (signal: AbortSignal)
   } finally { clearTimeout(timer); signal.removeEventListener('abort', abort); controller.signal.removeEventListener('abort', rejectAbort); }
 }
 export async function fetchLeaflets(endpoint: string | undefined, projectUrl: string | undefined, auth: AuthSessionAccess, signal: AbortSignal, request = fetch) {
-  if (!endpoint) throw new LeafletError('Gazetki nie są jeszcze dostępne. Czekamy na udostępnienie materiałów.');
-  const url = resourceUrl(endpoint);
+  if (!endpoint?.trim() && !projectUrl) throw new LeafletError('Gazetki nie są jeszcze dostępne. Czekamy na udostępnienie materiałów.');
+  const url = resourceUrl(endpoint?.trim() || new URL('/functions/v1/leaflets', resourceUrl(projectUrl)).href);
   if (!projectUrl || new URL(url).origin !== new URL(projectUrl).origin) throw new LeafletError('Źródło gazetek wymaga konfiguracji przez zespół projektu.');
   const key = auth.getSessionKey();
   if (!key) throw new LeafletError('Zaloguj się, aby przeglądać gazetki.');

@@ -52,6 +52,14 @@ export function pageIndex(value: unknown, count: number): number {
   return Math.max(0, Math.min(count - 1, n - 1));
 }
 const displayDate = (value: string) => value.split('-').reverse().join('.');
+export function leafletToday(now = new Date()): string {
+  const parts = new Intl.DateTimeFormat('en', { timeZone: 'Europe/Warsaw', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(now);
+  const part = (type: string) => parts.find(item => item.type === type)!.value;
+  return `${part('year')}-${part('month')}-${part('day')}`;
+}
+export function isCurrentLeaflet(leaflet: Leaflet, today = leafletToday()): boolean {
+  return leaflet.validFrom <= today && today <= leaflet.validTo;
+}
 export function displayValidity({ validFrom, validTo, validToEstimated }: Leaflet): string {
   return `${displayDate(validFrom)} – ${displayDate(validTo)}${validToEstimated ? ' (koniec szacowany)' : ''}`;
 }
