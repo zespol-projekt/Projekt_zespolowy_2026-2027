@@ -4,6 +4,9 @@
 -- Smaki wygenerowane skryptem Dane_sklepy_current/rodzaje_produktow/generuj_smaki.py (smaki.py): 152 podrodzajów
 -- w 33 rodzajach. Reguła smaku = reguła rodzaju nadrzędnego + wzorzec smaku, ustawiona tuż przed nią.
 
+-- Przeliczenie rodzajów trwa na wspólnej bazie dłużej niż jej domyślny limit czasu polecenia (db push zgłosił „statement timeout”).
+SET statement_timeout = '15min';
+
 -- 1. Podrodzaje: rodzaj nadrzędny („dowolny smak”) obejmuje swoje produkty i produkty podrodzajów. Jeden poziom.
 ALTER TABLE public.product_types ADD COLUMN parent_id bigint REFERENCES public.product_types(id) ON DELETE RESTRICT;
 CREATE INDEX product_types_parent ON public.product_types(parent_id) WHERE parent_id IS NOT NULL;

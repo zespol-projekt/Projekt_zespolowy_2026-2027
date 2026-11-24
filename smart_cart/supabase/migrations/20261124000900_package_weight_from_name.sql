@@ -5,6 +5,9 @@
 -- Wyjątki zostają w sztukach: jaja, słodzik w tabletkach, bulion / rosół w kostkach (tak samo jak w importerze).
 -- Pozycje list z takim produktem (w sztukach) są przeliczane na gramy: 2 szt z 15 w 450 g -> 60 g.
 
+-- Przeliczenie rodzajów trwa na wspólnej bazie dłużej niż jej domyślny limit czasu polecenia (db push zgłosił „statement timeout”).
+SET statement_timeout = '15min';
+
 CREATE TEMP TABLE gramatura_z_nazwy ON COMMIT DROP AS
 SELECT p.id, p.quantity_value AS stara, x.wartosc * CASE x.j WHEN 'kg' THEN 1000 WHEN 'dag' THEN 10 WHEN 'l' THEN 1000 WHEN 'cl' THEN 10 ELSE 1 END AS nowa,
   CASE WHEN x.j IN ('kg', 'dag', 'g') THEN 'g' ELSE 'ml' END AS jednostka
