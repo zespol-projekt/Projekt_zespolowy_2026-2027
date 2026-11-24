@@ -3,6 +3,8 @@
 Stan po wdrożeniu pięciu migracji **14 listopada 2026**. Źródła definicji: [migracje](../supabase/migrations) i ponowiony [eksport schematu](../supabase-schema.sql). Eksport zawiera 10 tabel, 2 widoki i 15 funkcji w `public`, a także triggery, indeksy, ograniczenia, RLS i uprawnienia.
 SHA-256: `ce5ba072d51496ca5dcd2db0bba7fa587c3d48211a7ed5fec679f578c7c87872`.
 
+**Aktualizacja 24.11.2026:** we wspólnej bazie są też migracje `20261124000100` – `20261124000900` (rodzaje produktów, wyszukiwanie). Eksport schematu odświeżono po ich wdrożeniu. Zmiany struktury opisuje sekcja „Rodzaje produktów” niżej. Szczegóły: [rodzaje produktów](rodzaje-produktow.md), kontrakt RPC: [API katalogu](api-katalogu.md).
+
 Opis starej struktury i potwierdzonych przed naprawą błędów zachowano w [audycie bazy przed zmianami](database-audit-before-fixes.md). Rozmowa Gemini jest źródłem historycznym, nie aktualnym kontraktem.
 
 ## Model
@@ -61,6 +63,23 @@ Wynik ma `version:2`, czas obliczenia i `stores` ze wszystkimi aktywnymi sieciam
 Każda pozycja zwraca `priced/missing`, wymaganą/kupowaną ilość, nadwyżkę, koszt i faktycznie dobrane oferty `picks`. Propozycja większego zakupu znajduje się w `alternative`; `extra_store_ids` określa, dla których sieci ją zaakceptowano. Wynik podaje wymaganie aktywacji/karty, okres promocji i datę obserwacji ceny regularnej.
 
 Dobór opakowań używa ograniczonego programowania dynamicznego: może mieszać rozmiary, liczy pełny zakup i preferuje mniejszą nadwyżkę przy tej samej cenie. Limity obliczeń to m.in. 1000 opakowań danego wariantu i 10000 stanów; przekroczenie zwraca kontrolowany błąd z prośbą o mniejszą ilość lub konkretny produkt. Masy luzem wyceniane są proporcjonalnie z zaokrągleniem do groszy.
+
+## Rodzaje produktów (od 24.11.2026)
+
+Rodzaj produktu (np. „Pomidory krojone w puszce”, „Paluszki rybne”) łączy produkty różnych marek, które można porównać po cenie za kg / l / szt. Porównanie wybiera w każdej sieci najtańszy produkt rodzaju. Grupy zamienników (`comparison_groups`) zostają bez zmian.
+
+| Tabela / kolumna | Przeznaczenie |
+| --- | --- |
+| `product_types` | Rodzaj: slug, nazwa, podkategoria, jednostka (`g` / `ml` / `szt`), `g_ml_equal`, typowe opakowanie, `parent_id` (smak, np. „Chipsy ziemniaczane paprykowe” pod „Chipsy ziemniaczane”) |
+| `product_type_rules` | Reguły przypisania: priorytet, produkty bazowe, wzorzec i wykluczenie (wyrażenia regularne); notatka `korekta` oznacza poprawki błędnych przypisań |
+| `product_type_reviews` | Ręczna decyzja dla produktu (ma pierwszeństwo przed regułami) |
+| `favorite_types` | Prywatne ulubione rodzaje (RLS jak `favorite_groups`) |
+| `products.product_type_id`, `product_type_source` | Przypisany rodzaj i jego źródło (`rule` / `review`) |
+| `shopping_list_items.product_type_id`, `store_choices` | Pozycja listy wskazuje grupę **albo** rodzaj (`group_id` może być NULL); wybory produktu w sieciach |
+
+Nowe i zmienione RPC: `catalog_search` i `catalog_branch` z parametrem `p_with_types` (domyślnie `false`, czyli wyniki bez rodzajów jak dotąd), `catalog_type`, `catalog_type_item`, `add_shopping_type_item`, `basket_type_options`, `set_item_store_choice`, `compare_basket` (obsługuje pozycje z rodzajem). Funkcje pomocnicze: `refresh_product_types`, `product_type_match`, `catalog_search_name_match`, `catalog_search_primary` i inne opisane w [API katalogu](api-katalogu.md).
+
+Rodzaj przypisuje wyzwalacz `products_product_type` (nowe produkty z importu dostają rodzaj same). Po zmianie reguł: `refresh_product_types()`. Na danych z 23.11.2026 rodzaj ma ok. 97% produktów z gramaturą i ofertą (961 rodzajów, ok. 1 970 reguł).
 
 ## Dostęp
 

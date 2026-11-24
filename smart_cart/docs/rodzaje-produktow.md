@@ -1,6 +1,6 @@
 # Rodzaje produktów
 
-Stan: 24 listopada 2026. Migracje `20261124000100_product_types.sql` (model, API), `20261124000200_product_types_pilot.sql` (pilot) `20261124000300_product_types_all.sql` (pozostałe działy, szybsze przypisywanie) `20261124000400_product_type_flavors.sql` (smaki), `20261124000500_search_relevance.sql` (wyszukiwanie) `20261124000600_product_types_more.sql` (kolejne rodzaje, pokrycie 97%) `20261124000700_product_types_quality.sql` (korekty przypisań, nowe nazwy, wyszukiwanie) `20261124000800_search_primary.sql` (wyszukiwanie: trafienie główne, bez dodatków typu „w sosie pomidorowym”) i `20261124000900_package_weight_from_name.sql` (gramatura zamiast liczby sztuk, np. „450 g (15 sztuk)”). Testy: `tests/database-product-types.sql`. Kontrakt API: `docs/api-katalogu.md`, sekcja „Rodzaje produktów”.
+Stan: 24 listopada 2026, wdrożone do wspólnej bazy. Migracje `20261124000100_product_types.sql` (model, API), `20261124000200_product_types_pilot.sql` (pilot) `20261124000300_product_types_all.sql` (pozostałe działy, szybsze przypisywanie) `20261124000400_product_type_flavors.sql` (smaki), `20261124000500_search_relevance.sql` (wyszukiwanie) `20261124000600_product_types_more.sql` (kolejne rodzaje, pokrycie 97%) `20261124000700_product_types_quality.sql` (korekty przypisań, nowe nazwy, wyszukiwanie) `20261124000800_search_primary.sql` (wyszukiwanie: trafienie główne, bez dodatków typu „w sosie pomidorowym”) i `20261124000900_package_weight_from_name.sql` (gramatura zamiast liczby sztuk, np. „450 g (15 sztuk)”). Testy: `tests/database-product-types.sql`. Kontrakt API: `docs/api-katalogu.md`, sekcja „Rodzaje produktów”.
 
 ## Po co
 
@@ -40,7 +40,7 @@ Produktów bazowych nie zmieniamy, bo stoi na nich importer: dopasowanie, limit 
   - jednostka pasuje (albo `g_ml_equal` i g/ml);
   - ma gramaturę;
   - nazwa pasuje do `include_pattern` i nie pasuje do `exclude_pattern`.
-- Przypisuje wyzwalacz `products_product_type` przy dodaniu produktu i zmianie nazwy, produktu bazowego albo gramatury. Importer się nie zmienia.
+- Przypisuje wyzwalacz `products_product_type` przy dodaniu produktu i zmianie nazwy, produktu bazowego albo gramatury. Importer nie musi nic robić; zmienił się tylko odczyt gramatury „450 g (15 sztuk)” (migracja `…000900`).
 - Po zmianie reguł lub decyzji: `SELECT public.refresh_product_types();` (polecenie w `docs/polecenia.md`, punkt 11). Zwraca liczbę zmienionych przypisań i przelicza `typical_package`. Sprawdza reguły po kolei (każde wyrażenie kompilowane raz): ok. 7 s dla ~13 tys. produktów i ~1 970 reguł (po migracji `…000900`). Wynik jest taki sam jak wyzwalacza (sprawdza to test).
 - Produkt bez rodzaju zostaje pojedynczym produktem w wyszukiwarce i na liście.
 
