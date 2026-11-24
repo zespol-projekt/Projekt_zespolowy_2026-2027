@@ -22,9 +22,9 @@ Naprawiono zmianę adresu, wyniki ponownej wysyłki, odliczanie, blokowanie dupl
 
 1. `npm.cmd ci` w `smart_cart`.
 2. Uzupełnij `.env.local` publiczną konfiguracją wspólnego projektu. Klient i serwer mapy muszą wskazywać ten sam projekt.
-3. Uruchom `npm.cmd run server` oraz `npm.cmd start` w osobnych terminalach.
-4. Zaloguj się i sprawdź produkty, listy oraz mapę. Ręczne otwarcie `/v1/stores` bez tokenu powinno zwracać 401.
-5. Po zmianie konfiguracji/dependencji zrestartuj odpowiednie procesy. Telefon wymaga dostępu do portu 8787 komputera.
+3. Uruchom `npm.cmd start`.
+4. Zaloguj się i sprawdź produkty, listy oraz mapę. Ręczne otwarcie `/functions/v1/store-catalog` bez tokenu powinno zwracać 401.
+5. Po zmianie konfiguracji/dependencji zrestartuj odpowiednie procesy.
 6. Nie wdrażaj ponownie pięciu migracji do istniejącego projektu i nie nadpisuj konfiguracji chmury lokalnym TOML.
 
 ## Weryfikacja
@@ -35,7 +35,7 @@ Naprawiono zmianę adresu, wyniki ponownej wysyłki, odliczanie, blokowanie dupl
 npm.cmd test
 npm.cmd run typecheck
 npm.cmd run lint
-npm.cmd run server:check
+npm.cmd run stores:check
 npm.cmd run test:e2e
 ```
 

@@ -24,7 +24,6 @@ export default defineConfig({
       EXPO_PUBLIC_LEAFLETS_API_URL: 'https://smartcart-test.supabase.invalid/functions/v1/leaflets',
       EXPO_PUBLIC_SUPABASE_URL: 'https://smartcart-test.supabase.invalid',
       EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_browser_test_only',
-      EXPO_PUBLIC_STORES_API_URL: 'http://localhost:8787/v1/stores',
     },
   },
 });

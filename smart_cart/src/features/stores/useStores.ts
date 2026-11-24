@@ -1,27 +1,18 @@
-import Constants from 'expo-constants';
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { authService } from '../auth/instance';
-import { CatalogError, fetchCatalog } from './fetchCatalog';
+import { CatalogError, fetchCatalog, type CatalogCache } from './fetchCatalog';
 import type { Catalog } from './model';
 
 function storesUrl() {
-  const configured = process.env.EXPO_PUBLIC_STORES_API_URL;
-  if (configured) {
-    const url = new URL(configured);
-    if (url.protocol !== 'https:' && !(__DEV__ && url.protocol === 'http:')) {
-      throw new Error('API sklepów wymaga HTTPS poza trybem deweloperskim.');
-    }
-    return url.toString();
-  }
-  if (__DEV__) {
-    // Expo Go zna adres komputera z Metro; przeglądarka korzysta ze swojego hosta.
-    const host = typeof window !== 'undefined' && window.location?.hostname
-      ? window.location.hostname
-      : new URL(`http://${Constants.expoConfig?.hostUri ?? 'localhost:8081'}`).hostname;
-    return `http://${host.includes(':') ? `[${host}]` : host}:8787/v1/stores`;
-  }
+  const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL;
+  if (supabaseUrl) return new URL('/functions/v1/store-catalog', supabaseUrl).toString();
   throw new Error('Nie skonfigurowano źródła danych.');
 }
+
+// Keep the parsed catalog between visits within the same authenticated session.
+const catalogCache: { sessionKey: string | null; value: CatalogCache } = {
+  sessionKey: null, value: null,
+};
 
 export function useStores() {
   const authState = useSyncExternalStore(authService.subscribe, authService.getState, authService.getState);
@@ -32,6 +23,9 @@ export function useStores() {
   const [attempt, setAttempt] = useState(0);
   // Wspólna, zliczana subskrypcja działa również przed podłączeniem AuthProvider przez UI.
   useEffect(() => authService.start(), []);
+  useEffect(() => authService.subscribe(() => {
+    if (catalogCache.sessionKey !== authService.getSessionKey()) catalogCache.value = null;
+  }), []);
   useEffect(() => {
     if (!sessionKey) {
       // Clear cached catalog on logout; render also guards the session key.
@@ -44,7 +38,14 @@ export function useStores() {
     setResult({ sessionKey, catalog: null, loading: true, error: null });
     (async () => {
       try {
-        const catalog = await fetchCatalog(storesUrl(), authService, controller.signal);
+        const url = storesUrl();
+        const publishCache = (value: CatalogCache) => {
+          if (!active || authService.getSessionKey() !== sessionKey) return;
+          catalogCache.sessionKey = sessionKey;
+          catalogCache.value = value;
+        };
+        const cached = catalogCache.sessionKey === sessionKey ? catalogCache.value : null;
+        const catalog = await fetchCatalog(url, authService, controller.signal, fetch, cached, publishCache);
         if (active) setResult({ sessionKey, catalog, loading: false, error: null });
       } catch (error) {
         if (active) setResult({ sessionKey, catalog: null, loading: false,

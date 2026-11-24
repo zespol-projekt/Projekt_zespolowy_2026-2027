@@ -4,7 +4,7 @@ import { AUTH_STORAGE_KEY, AUTH_URL, catalog, changeSession, mockMap, stores, te
 test('bez sesji katalog nie jest pobierany', async ({ page }) => {
   await mockMap(page, null);
   let requests = 0;
-  page.on('request', request => { if (request.url().endsWith('/v1/stores')) requests++; });
+  page.on('request', request => { if (request.url().endsWith('/functions/v1/store-catalog')) requests++; });
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
   await expect(page.getByRole('button', { name: 'Zaloguj się', exact: true })).toBeVisible();
   await expect(page.getByTestId('stores-map')).toHaveCount(0);
@@ -19,7 +19,7 @@ test('odświeżenie tokenu tej samej sesji zachowuje mapę i katalog', async ({ 
     verifications++;
     return route.fulfill({ json: testSession().user });
   });
-  page.on('request', request => { if (request.url().endsWith('/v1/stores')) requests++; });
+  page.on('request', request => { if (request.url().endsWith('/functions/v1/store-catalog')) requests++; });
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
   await waitForStores(page, stores.length);
   const before = verifications;
@@ -48,7 +48,7 @@ test('nowa sesja tej samej osoby anuluje stary katalog i ignoruje jego odpowied�
   const firstFinished = new Promise<void>(resolve => { finished = resolve; });
   const firstToken = testSession().access_token;
   let requests = 0;
-  await page.route('**/v1/stores', async route => {
+  await page.route('**/functions/v1/store-catalog', async route => {
     requests++;
     if (route.request().headers().authorization !== `Bearer ${firstToken}`) {
       return route.fulfill({ json: catalog(stores.slice(1, 3)) });
@@ -61,7 +61,7 @@ test('nowa sesja tej samej osoby anuluje stary katalog i ignoruje jego odpowied�
   });
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
   await firstStarted;
-  const aborted = page.waitForEvent('requestfailed', request => request.url().endsWith('/v1/stores'));
+  const aborted = page.waitForEvent('requestfailed', request => request.url().endsWith('/functions/v1/store-catalog'));
   await changeSession(page, testSession('33333333-3333-4333-8333-333333333333'));
   await aborted;
   await waitForStores(page, 2);
@@ -80,7 +80,7 @@ test('401 odświeża token i ponawia pobranie jeden raz', async ({ page }) => {
     refreshes++;
     return route.fulfill({ json: refreshed });
   });
-  await page.route('**/v1/stores', route => {
+  await page.route('**/functions/v1/store-catalog', route => {
     tokens.push(route.request().headers().authorization);
     return tokens.length === 1 ? route.fulfill({ status: 401, json: {} }) : route.fulfill({ json: catalog() });
   });
@@ -98,7 +98,7 @@ test('drugie 401 kończy bieżącą sesję bez pętli ponowień', async ({ page 
     refreshes++;
     return route.fulfill({ json: testSession(undefined, 2) });
   });
-  await page.route('**/v1/stores', route => {
+  await page.route('**/functions/v1/store-catalog', route => {
     requests++;
     return route.fulfill({ status: 401, json: {} });
   });
