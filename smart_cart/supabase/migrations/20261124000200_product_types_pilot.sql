@@ -5,6 +5,9 @@
 -- interpunkcja -> spacja, \y = granica wyrazu). Poprawki przypisań: nowa reguła albo product_type_reviews, potem
 -- SELECT public.refresh_product_types();
 
+-- Przeliczenie rodzajów trwa na wspólnej bazie dłużej niż jej domyślny limit czasu polecenia (db push zgłosił „statement timeout”).
+SET statement_timeout = '15min';
+
 INSERT INTO public.product_types(slug, name, subcategory_id, unit, g_ml_equal, display_order)
 SELECT v.slug, v.name, s.id, v.unit, v.g_ml_equal, v.display_order
 FROM (VALUES

@@ -149,6 +149,7 @@ Migracje `20261124000100` – `20261124000900` (9 plików) wdrażamy razem, w ko
 2. Kopia bazy przed wdrożeniem (punkt 6).
 3. `migration list --remote` i `db push --remote --dry-run`: lista nowych migracji to dokładnie te 9 plików. Jeśli któraś z nich jest już wdrożona (zwłaszcza `…000400` w starszej wersji), nie wdrażamy dalej i sprawdzamy różnice.
 4. `db push --remote`. Na kopii danych z 23.11.2026 trwa to ok. 2 min, z czego `…000200` (pilot) ok. 1,5 min, a pozostałe po kilka sekund.
+   Wspólna baza ma limit czasu polecenia, który przerwał przeliczenie w `…000200` (24.11.2026). Dlatego migracje z przeliczeniem (`…000200`, `…000300`, `…000400`, `…000600`, `…000700`, `…000900`) zaczynają się od `SET statement_timeout = '15min'`. Generatory dopisują tę linię same (`limit_czasu.py`); w `…000200` i `…000400` jest dopisana ręcznie.
 5. Sprawdzenie: ok. 960 rodzajów, ok. 97% produktów z gramaturą i ofertą ma rodzaj, `catalog_search('paluszki rybne', 5, 0, true)` zwraca jeden rodzaj „Paluszki rybne”.
 6. `db dump --remote --file supabase-schema.sql` i commit eksportu.
 

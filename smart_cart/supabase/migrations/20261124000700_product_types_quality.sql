@@ -7,6 +7,9 @@
 -- 3. 17 rodzajów dostaje nazwy ze słowami, którymi klienci szukają (slug bez zmian), np. „Napój mleczny smakowy” -> „Mleko smakowe (napój mleczny)”.
 -- Wygenerowane skryptem Dane_sklepy_current/rodzaje_produktow/generuj_korekty.py (korekty.py, korekty_bazy.py, wyszukiwanie_700.sql).
 
+-- Przeliczenie rodzajów trwa na wspólnej bazie dłużej niż jej domyślny limit czasu polecenia (db push zgłosił „statement timeout”).
+SET statement_timeout = '15min';
+
 -- Dopasowanie całych słów z prostą odmianą: słowo zapytania bez końcówki (co najmniej 5 liter) może być początkiem słowa w nazwie
 -- („cytryna” -> „cytrynowa”, „jablka” -> „jablkowy”, „pomidory” -> „pomidorowym”). Krótsze słowa jak dotąd („kawa” nie trafia w „kawałki”).
 CREATE OR REPLACE FUNCTION public.catalog_search_name_match(p_text text, p_tokens text[])

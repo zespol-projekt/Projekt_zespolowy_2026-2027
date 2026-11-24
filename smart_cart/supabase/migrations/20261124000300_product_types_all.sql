@@ -5,6 +5,9 @@
 -- Wzorce: wyrażenia regularne PostgreSQL na catalog_search_norm(nazwa produktu) (małe litery, bez polskich znaków,
 -- interpunkcja -> spacja, \y = granica wyrazu). Kolejność reguł = priorytet (pilot 10-860, te od 1010).
 
+-- Przeliczenie rodzajów trwa na wspólnej bazie dłużej niż jej domyślny limit czasu polecenia (db push zgłosił „statement timeout”).
+SET statement_timeout = '15min';
+
 -- 1. Dopasowanie jednego produktu (trigger): wzorce sprawdzane tylko dla reguł jego produktu bazowego.
 CREATE OR REPLACE FUNCTION public.product_type_match(p_name text, p_base_product_id integer, p_unit text, p_quantity numeric) RETURNS bigint
 LANGUAGE sql STABLE SET search_path = '' AS $$
