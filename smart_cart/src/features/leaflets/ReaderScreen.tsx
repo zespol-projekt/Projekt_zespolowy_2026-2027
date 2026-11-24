@@ -9,11 +9,11 @@ import { displayValidity, pageIndex, validLeafletId, type LeafletImage } from '.
 import { fetchPage, LeafletPageAccessError } from './transport';
 
 export default function ReaderScreen() {
-  const params = useLocalSearchParams<{ id: string; page?: string }>();
+  const params = useLocalSearchParams<{ id: string; page?: string; chain?: string }>();
   const key = useSessionKey();
-  return key ? <Reader key={`${key}:${params.id}`} id={params.id} page={params.page} /> : null;
+  return key ? <Reader key={`${key}:${params.id}`} id={params.id} page={params.page} chain={params.chain} /> : null;
 }
-function Reader({ id, page }: { id: string; page?: string }) {
+function Reader({ id, page, chain }: { id: string; page?: string; chain?: string }) {
   const ui = useUI();
   const focused = useIsFocused();
   const query = useSessionQuery(loadLeaflets, []);
@@ -21,7 +21,9 @@ function Reader({ id, page }: { id: string; page?: string }) {
   const [width, setWidth] = useState(320);
   const leaflet = query.data?.leaflets.find(item => item.id === id);
   const index = pageIndex(page, leaflet?.pages.length ?? 1);
-  const back = <Button secondary title="Wróć do gazetek" onPress={() => router.replace('/leaflets')} />;
+  const returnChain = typeof chain === 'string' && validLeafletId(chain) && (!leaflet || leaflet.chain.id === chain) ? chain : undefined;
+  const back = <Button secondary title="Wróć do gazetek"
+    onPress={() => router.replace(returnChain ? { pathname: '/leaflets', params: { chain: returnChain } } : '/leaflets')} />;
   if (!validLeafletId(id)) return <View style={ui.screen}>{back}<Notice>Nieprawidłowy identyfikator gazetki.</Notice></View>;
   return <View style={{ flex: 1, padding: 14, gap: 10 }} onLayout={event => setWidth(Math.max(200, event.nativeEvent.layout.width - 28))}>
     <ScrollView style={{ maxHeight: '46%' }} contentContainerStyle={{ gap: 10 }}>
