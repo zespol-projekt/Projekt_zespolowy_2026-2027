@@ -44,8 +44,7 @@
   },
   "scripts": {
     "start": "expo start",
-    "server": "node server/serwer-mapy.mjs",
-    "server:check": "node server/serwer-mapy.mjs --check",
+    "stores:check": "node scripts/store-catalog.mjs",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",

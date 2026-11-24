@@ -182,7 +182,7 @@ test('podpowiedź i wpisana nazwa miejscowości pomijają ulicę o podobnej nazw
   await page.emulateMedia({ colorScheme: 'light' });
   const bytow = { ...stores[0], city: 'Bytów', address: 'ul. Długa 1, 77-100 Bytów' };
   const lebork = { ...stores[1], city: 'Lębork', address: 'ul. Bytowska 2, 84-300 Lębork' };
-  await page.route('**/v1/stores', route => route.fulfill({ json: catalog([bytow, lebork]) }));
+  await page.route('**/functions/v1/store-catalog', route => route.fulfill({ json: catalog([bytow, lebork]) }));
   await page.setViewportSize({ width: 320, height: 568 });
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
   await waitForStores(page, 2);
@@ -223,7 +223,7 @@ test('podpowiedź i wpisana nazwa miejscowości pomijają ulicę o podobnej nazw
 
 test('karta sklepu rośnie i mieści długi adres bez przewijania', async ({ page }) => {
   const address = 'ul. Prezydenta Gabriela Narutowicza 21, pawilon handlowy przy skrzyżowaniu z ulicą Łódzką, 95-050 Konstantynów Łódzki';
-  await page.route('**/v1/stores', route => route.fulfill({ json: catalog([{ ...stores[0], address }]) }));
+  await page.route('**/functions/v1/store-catalog', route => route.fulfill({ json: catalog([{ ...stores[0], address }]) }));
   await page.setViewportSize({ width: 320, height: 568 });
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
   await waitForStores(page, 1);
@@ -306,13 +306,14 @@ test('lokalizacja jest pobierana po kliknięciu i centruje mapę', async ({ page
   await page.getByRole('button', { name: 'Moja lokalizacja' }).click();
   await expect(embedded(page).locator('#map')).toHaveAttribute('data-focus-request', '1');
   expect(await page.evaluate(() => (window as unknown as { locationRequests: number }).locationRequests)).toBeGreaterThan(0);
+  await expect(embedded(page).locator('#map')).toHaveAttribute('aria-busy', 'false');
   await embedded(page).locator('canvas').click();
   await expect(page.getByTestId('store-card')).toContainText('0 m w linii prostej');
 });
 
 test('błąd katalogu można ponowić', async ({ page }) => {
   let failed = true;
-  await page.route('**/v1/stores', route => failed ? route.fulfill({ status: 503, json: {} }) : route.fulfill({ json: catalog() }));
+  await page.route('**/functions/v1/store-catalog', route => failed ? route.fulfill({ status: 503, json: {} }) : route.fulfill({ json: catalog() }));
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
   await expect(page.getByText('Sklepy są chwilowo niedostępne')).toBeVisible();
   failed = false;
@@ -333,7 +334,7 @@ test('błąd silnika daje ponowienie bez zmiany ekranu', async ({ page }) => {
 test('8545 punkty pozostają jedną warstwą, filtry nie przeładowują ramki', async ({ page }) => {
   const points = Array.from({ length: 8545 }, (_, i) => ({ ...stores[i % stores.length], id: stores[i % stores.length].chain + ':' + i,
     latitude: 49.2 + (i % 80) * 0.065, longitude: 14.5 + Math.floor(i / 80) * 0.09 }));
-  await page.route('**/v1/stores', route => route.fulfill({ json: catalog(points) }));
+  await page.route('**/functions/v1/store-catalog', route => route.fulfill({ json: catalog(points) }));
   let modules = 0;
   page.on('request', request => { if (request.url() === MAPLIBRE_ASSETS + 'maplibre-gl.mjs') modules++; });
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
@@ -348,7 +349,7 @@ test('8545 punkty pozostają jedną warstwą, filtry nie przeładowują ramki', 
 
 test('kliknięcie grupy przybliża mapę, a kolejne otwiera sklep', async ({ page }) => {
   const points = [stores[0], { ...stores[3], address: 'Łódź, Żółta 2', latitude: 51.75001, longitude: 19.45001 }];
-  await page.route('**/v1/stores', route => route.fulfill({ json: catalog(points) }));
+  await page.route('**/functions/v1/store-catalog', route => route.fulfill({ json: catalog(points) }));
   await page.goto('/stores', { waitUntil: 'domcontentloaded' });
   await waitForStores(page, 2);
   await page.getByRole('button', { name: 'Pokaż wyniki na mapie' }).click();

@@ -42,7 +42,7 @@ Metadane są pobierane z ochroną sesji, limitem czasu i jedną próbą odnowien
 
 ## Kontrole i uruchomienie
 
-Standardowe polecenia z `smart_cart`: `npm run typecheck`, `npm run lint`, `npm test`, `npm run test:e2e`, `npm run server:check`. Eksport: `npx expo export --platform all --max-workers 2 --output-dir .expo/filip-export`.
+Standardowe polecenia z `smart_cart`: `npm run typecheck`, `npm run lint`, `npm test`, `npm run test:e2e`, `npm run stores:check`. Eksport: `npx expo export --platform all --max-workers 2 --output-dir .expo/filip-export`.
 
 Playwright uruchamia własny Metro i Chrome, nie używa prawdziwych kont. `SMARTCART_E2E=1` wraz z `metro.config.cjs` wyklucza pliki `.env*` wyłącznie z testowego Metro. Jest to konieczne w zainstalowanym SDK 58: `expo/virtual/env` importuje pliki przez `require.context` i potrafi nadpisać zmienne procesu nawet przy `EXPO_NO_DOTENV=1`. Zwykłe uruchomienie nadal korzysta z `.env.local`. Konfiguracja testowa nie dotyka plików użytkownika. Zewnętrzne Auth/REST są blokowane przez fixturę, aby przypadkowy niewłaściwy adres nie dotknął rzeczywistych kont.
 

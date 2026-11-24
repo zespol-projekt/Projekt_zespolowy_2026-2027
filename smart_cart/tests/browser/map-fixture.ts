@@ -84,5 +84,5 @@ export async function mockMap(page: Page, session: TestSession | null = testSess
   const stack = Buffer.concat([Buffer.from([10, 14]), Buffer.from('Noto Sans Bold'), Buffer.from([18, 5]), Buffer.from('0-255')]);
   await page.route('https://fonts.example.invalid/**', route => route.fulfill({ body: Buffer.concat([Buffer.from([10, stack.length]), stack]),
     contentType: 'application/x-protobuf', headers: { 'Access-Control-Allow-Origin': '*' } }));
-  await page.route('**/v1/stores', route => route.fulfill({ json: catalog() }));
+  await page.route('**/functions/v1/store-catalog', route => route.fulfill({ json: catalog() }));
 }

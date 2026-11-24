@@ -158,59 +158,44 @@ npm.cmd ci
 ```
 
 Przed pierwszym uruchomieniem skopiuj `.env.example` do `.env.local` i uzupełnij
-`EXPO_PUBLIC_SUPABASE_URL`, `EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY` oraz `SUPABASE_URL`.
-Oba adresy muszą wskazywać ten sam projekt. Publiczny klucz ma postać `sb_publishable_…`.
+`EXPO_PUBLIC_SUPABASE_URL` i `EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
+Publiczny klucz ma postać `sb_publishable_…`.
 Dla czytnika ustaw `EXPO_PUBLIC_LEAFLETS_API_URL` na ten sam adres projektu z dopisaną ścieżką `/functions/v1/leaflets`.
 `.env.local` jest ignorowany przez Git.
 
-W terminalu 1, w katalogu `smart_cart`, uruchom serwer danych:
-
-```powershell
-npm.cmd run server
-```
-
-Kod serwera znajduje się w `server/serwer-mapy.mjs`. Serwer czyta przygotowane dane z `../dane-sklepow/gotowe/sklepy.json` i udostępnia `http://localhost:8787/v1/stores` oraz `/health`. Cały katalog `dane-sklepow` jest w repozytorium, obok `smart_cart`: zawiera gotowy zbiór, oryginalne GeoJSON, poprawki, raporty, archiwum weryfikacji i narzędzia przygotowania danych. Po sklonowaniu repo zespół otrzymuje kod i dane.
-
-Dane są odczytywane przez serwer; aplikacja Expo nadal pobiera sklepy przez API. Pliki źródłowe i raporty nie są importowane do pakietu aplikacji. Reguła w głównym `.gitattributes` wyłącza zmianę końców linii w `dane-sklepow`, aby zachować sumy SHA-256 źródeł i dowodów również po pobraniu repo na Windows.
-
-W terminalu 2, również w katalogu `smart_cart`, uruchom aplikację:
+W katalogu `smart_cart` uruchom aplikację:
 
 ```powershell
 npm.cmd start
 ```
 
-Otwórz projekt w Expo Go kodem QR albo naciśnij `w`, aby uruchomić przeglądarkę. Mapa jest w zakładce **Sklepy**. Telefon i komputer powinny być w tej samej sieci; port 8787 komputera musi być dostępny dla telefonu.
+Mapa pobiera katalog z `/functions/v1/store-catalog` pod adresem
+`EXPO_PUBLIC_SUPABASE_URL`. Zalogowany użytkownik otrzymuje skompresowany katalog.
+Przy kolejnym otwarciu mapy w tej samej sesji aplikacja sprawdza jego wersję.
 
-W trybie deweloperskim aplikacja używa hosta przeglądarki lub komputera z Expo, z portem 8787. Opcjonalnie ustaw pełny adres endpointu w `.env.local` i uruchom Expo ponownie:
+### Publikacja katalogu z Supabase
 
-```dotenv
-EXPO_PUBLIC_STORES_API_URL=http://ADRES_IP_KOMPUTERA:8787/v1/stores
+Po imporcie aktywnych placówek do `public.store_locations` zapisz odpowiedź
+JSON poniższego zapytania w ignorowanym przez Git katalogu `../.audit-local`.
+Polecenia wykonuj z katalogu `smart_cart` po połączeniu CLI z właściwym projektem.
+
+```powershell
+$sql = "SELECT jsonb_agg(jsonb_build_object('id', id, 'chain', chain_slug, 'name', name, 'address', address, 'city', city, 'latitude', latitude, 'longitude', longitude) ORDER BY id) AS stores FROM public.store_locations WHERE is_active"
+New-Item -ItemType Directory -Force ../.audit-local | Out-Null
+$result = npx.cmd supabase db query --remote --read-only $sql
+if ($LASTEXITCODE -ne 0) { throw 'Nie udało się odczytać katalogu z bazy.' }
+$result | Set-Content ../.audit-local/store-catalog-export.json -Encoding UTF8
+$version = node scripts/publish-store-catalog.mjs ../.audit-local/store-catalog-export.json ../.audit-local
+if ($LASTEXITCODE -ne 0) { throw 'Nie udało się zweryfikować katalogu.' }
+$object = "$version.json.gz"
+npx.cmd supabase storage cp --experimental --remote --content-type application/gzip "../.audit-local/$object" "ss:///store-catalog/$object"
+if ($LASTEXITCODE -ne 0) { throw 'Nie udało się wysłać katalogu.' }
+npx.cmd supabase db query --remote --file ../.audit-local/activate-store-catalog.sql
 ```
 
-`localhost` na telefonie oznacza telefon. Tunel Expo nie udostępnia automatycznie serwera danych — potrzebny jest wtedy osobno dostępny adres API.
-
-### Konfiguracja serwera danych
-
-`npm.cmd run server` automatycznie wczytuje `.env.local` z katalogu `smart_cart`. Możesz skopiować `.env.example` jako szablon. Serwer korzysta z zainstalowanego SDK Supabase.
-
-Po zmianie adresu lub klucza Supabase zrestartuj **serwer danych i Expo**.
-Serwer Node nie przeładowuje `.env.local` automatycznie. Gdy logowanie działa,
-a sklepy są niedostępne, sprawdź, czy na porcie 8787 nie działa starszy proces ze starą konfiguracją.
-`/health` potwierdza dane i działanie HTTP, ale nie poprawność połączenia z Supabase.
-
-- `SUPABASE_URL` i `SUPABASE_PUBLISHABLE_KEY` — adres i publiczny klucz wspólnego projektu. Jeśli ich nie podasz, serwer użyje odpowiadających zmiennych `EXPO_PUBLIC_SUPABASE_*`. Brak konfiguracji blokuje start. Nie potrzeba klucza `service_role`.
-
-- `SMARTCART_DATA_DIR` — katalog zawierający `gotowe/sklepy.json`. Domyślnie `../dane-sklepow` względem `smart_cart`, czyli w katalogu głównym repozytorium. Ścieżka względna jest zawsze liczona od katalogu aplikacji, także przy uruchomieniu skryptu z innego miejsca. Standardowy układ po sklonowaniu repo nie wymaga ustawiania tej zmiennej.
-- `SMARTCART_DATA_PORT` — domyślnie `8787`. Jeśli zmienisz port, dostosuj również `EXPO_PUBLIC_STORES_API_URL` i uruchom Expo ponownie.
-
-Przykład własnej lokalizacji danych w `.env.local`:
-
-```dotenv
-SMARTCART_DATA_DIR=C:/dane-smartcart
-SMARTCART_DATA_PORT=8787
-```
-
-Serwer udostępnia przygotowany katalog po sprawdzeniu tokenu `Authorization: Bearer …`; wejście bez tokenu na `/v1/stores` zwróci `401`. Publiczny `/health` udostępnia wyłącznie informacje techniczne. Przy braku lub błędnych danych serwer kończy start, zanim otworzy port. `npm.cmd run server:check` sprawdza plik bez uruchamiania serwera, konfiguracji auth ani połączenia z Supabase. Samo importowanie modułu nie uruchamia serwera.
+Skrypt porównuje zawartość bazy z gotowym katalogiem w repozytorium przed
+wygenerowaniem pliku. Aktywacja zmienia wersję podawaną przez funkcję
+`store-catalog` po udanym wysłaniu pliku do prywatnego bucketa.
 
 ## Mapa sklepów
 
@@ -238,7 +223,7 @@ Silnik został sprawdzony przez użytkownika na Androidzie i komputerze. iOS ora
 
 ## Publikacja i WWW
 
-Do wersji produkcyjnej ustaw `EXPO_PUBLIC_STORES_API_URL` na rzeczywisty publiczny endpoint HTTPS, zwracający katalog w formacie z `model.ts`. Lokalny serwer służy do pracy deweloperskiej; projekt nie wdraża hostingu. Poza trybem deweloperskim nie ma automatycznego adresu zastępczego.
+Wersja produkcyjna pobiera katalog z funkcji Supabase `store-catalog`.
 
 WWW używa `web.output: "single"`: ekrany działają w przeglądarce, a dane pobierają z osobnego API. Projekt nie korzysta z API Routes ani loaderów Expo. Ten tryb omija odtworzony błąd renderowania serwerowego SDK 58 przy zmianie tras i przeładowaniu. Hosting musi przekierowywać adresy ekranów do `dist/index.html`. Jeśli dodacie serwerowe funkcje Expo, trzeba ponownie dobrać tryb WWW.
 
@@ -255,7 +240,7 @@ Z katalogu aplikacji:
 
 ```powershell
 npm.cmd test
-npm.cmd run server:check
+npm.cmd run stores:check
 npm.cmd run typecheck
 npm.cmd run lint
 npm.cmd run test:e2e
@@ -273,7 +258,7 @@ Przed publikacją dodano cztery testy kontroli sekretów: aktualny zestaw Node m
 
 `npm.cmd run test:db` sprawdza migracje i RLS w wyłącznie testowym kontenerze Postgres. [Instrukcja](docs/utrzymanie-katalogu.md). Nieistniejący skrypt `reset-project` usunięto.
 
-`npm.cmd test` obejmuje również `tests/server.test.mjs`: konfigurację ścieżki danych i działanie API na fikcyjnych rekordach. `server:check` odczytuje prawdziwy plik danych z repozytorium. Instrukcje kontroli i ponownego przygotowania całego zbioru są w `../dane-sklepow/README.md`.
+Testy katalogu sprawdzają ścieżkę danych i walidację rekordów. Polecenie `npm.cmd run stores:check` sprawdza cały lokalny zbiór.
 
 Eksport sprawdza pakowanie kodu na trzy platformy; test przeglądarkowy nie zastępuje testowania gestów, uprawnień i płynności na fizycznych telefonach.
 

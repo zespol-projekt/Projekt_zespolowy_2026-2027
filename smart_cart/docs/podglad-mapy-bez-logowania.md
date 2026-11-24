@@ -10,15 +10,15 @@ Nie należy traktować wcześniejszego fragmentu instrukcji jako dostępnej funk
 ## Podgląd rzeczywistego katalogu
 
 1. Przygotuj konfigurację według [README](../README.md).
-2. Uruchom `npm.cmd run server` oraz `npm.cmd start` w osobnych terminalach.
+2. Uruchom `npm.cmd start`.
 3. Zaloguj się istniejącym, potwierdzonym kontem.
 4. Otwórz zakładkę **Sklepy**.
 
-Katalog ma 7753 gotowe placówki. API wymaga tokenu; ręczne otwarcie `/v1/stores` bez niego zwraca oczekiwane 401.
+API wymaga tokenu; ręczne otwarcie `/functions/v1/store-catalog` bez niego zwraca oczekiwane 401.
 Do kontroli samego pliku danych bez logowania i bez sieci służy:
 
 ```powershell
-npm.cmd run server:check
+npm.cmd run stores:check
 ```
 
 To kontrola danych, nie wizualny podgląd mapy.

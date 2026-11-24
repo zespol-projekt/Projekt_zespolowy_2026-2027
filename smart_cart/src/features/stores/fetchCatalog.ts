@@ -1,6 +1,7 @@
 import type { AuthSessionAccess } from '../auth/types.ts';
 import { parseCatalog, type Catalog } from './model.ts';
 export class CatalogError extends Error {}
+export type CatalogCache = { etag: string; catalog: Catalog } | null;
 
 /** Jeden katalog, maksymalnie jedno ponowienie po 401, wyłącznie w tej samej sesji. */
 export async function fetchCatalog(
@@ -8,6 +9,8 @@ export async function fetchCatalog(
   auth: AuthSessionAccess,
   signal: AbortSignal,
   request: typeof fetch = fetch,
+  cached: CatalogCache = null,
+  onCache?: (value: CatalogCache) => void,
 ): Promise<Catalog> {
   const sessionKey = auth.getSessionKey();
   if (!sessionKey) throw new Error('Zaloguj się, aby pobrać sklepy.');
@@ -37,7 +40,10 @@ export async function fetchCatalog(
       if (!initial.ok) throw new Error(initial.error.message);
       let token = initial.data;
       const send = () => request(url, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: {
+          Authorization: `Bearer ${token}`,
+          ...(cached ? { 'If-None-Match': cached.etag } : {}),
+        },
         signal: controller.signal,
         cache: 'no-store',
         redirect: 'error',
@@ -58,11 +64,14 @@ export async function fetchCatalog(
       }
       if (response.status === 403) throw new CatalogError('To konto nie ma dostępu do sklepów. Zaloguj się potwierdzonym kontem.');
       if (response.status >= 500) throw new CatalogError('Serwer sklepów jest chwilowo niedostępny. Spróbuj ponownie za chwilę.');
+      if (response.status === 304 && cached) return cached.catalog;
       if (!response.ok) throw new CatalogError('Nie udało się pobrać sklepów. Spróbuj ponownie.');
       let catalog: Catalog;
       try { catalog = parseCatalog(await response.json()); }
       catch { throw new CatalogError('Serwer zwrócił nieprawidłowe dane sklepów. Zgłoś problem zespołowi projektu.'); }
       guard();
+      const etag = response.headers.get('ETag');
+      onCache?.(etag ? { etag, catalog } : null);
       return catalog;
     };
     // Timeout i wylogowanie przerywają także oczekiwanie na odnowienie sesji.

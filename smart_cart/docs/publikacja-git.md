@@ -71,7 +71,7 @@ Do ponowienia w kopii przygotowywanej do publikacji:
 npm.cmd test
 npm.cmd run typecheck
 npm.cmd run lint
-npm.cmd run server:check
+npm.cmd run stores:check
 node --test ../dane-sklepow/*.test.mjs
 node ../dane-sklepow/przygotuj-dane.mjs --check
 ```
