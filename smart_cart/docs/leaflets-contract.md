@@ -4,7 +4,7 @@ Czytnik wyświetla strony gazetek w aplikacji. Funkcja Edge `leaflets` we wspól
 
 ## Żądanie i dostęp
 
-Ustaw `EXPO_PUBLIC_LEAFLETS_API_URL` w `.env.local` na adres `EXPO_PUBLIC_SUPABASE_URL` z dopisaną ścieżką `/functions/v1/leaflets`. Użyj tej samej wartości w środowisku budowania aplikacji. Klient wysyła żądanie GET i sprawdza zgodność originu z `EXPO_PUBLIC_SUPABASE_URL`.
+Aplikacja domyślnie wywołuje `/functions/v1/leaflets` we wspólnym projekcie wskazanym przez `EXPO_PUBLIC_SUPABASE_URL`. Nie trzeba ustawiać osobnego adresu gazetek w `.env.local` ani podczas budowania. Opcjonalna zmienna `EXPO_PUBLIC_LEAFLETS_API_URL` pozwala nadpisać endpoint, ale nadal musi on należeć do tego samego projektu. Klient wysyła żądanie GET i sprawdza zgodność originu z `EXPO_PUBLIC_SUPABASE_URL`.
 
 Klient wysyła `Accept: application/json` i `Authorization: Bearer <bieżąca sesja użytkownika>`. Wspólny serwis Auth jednokrotnie odświeża sesję po 401. Funkcja wymaga zalogowanego konta z potwierdzonym adresem e-mail. Zwraca 403 dla niepotwierdzonego adresu i 503 przy chwilowej niedostępności danych. CORS dopuszcza GET, OPTIONS i nagłówek Authorization. Odpowiedź katalogu ma `Cache-Control: no-store`.
 
@@ -32,9 +32,9 @@ Klient wysyła `Accept: application/json` i `Authorization: Bearer <bieżąca se
 ```
 
 - `id` i `chain.id`: stabilne małe ASCII `[a-z0-9][a-z0-9_-]{0,79}`. ID gazetki jest unikalne i nie zmienia się przy odświeżeniu URL. Nazwy i tytuły: niepuste, do 200 znaków.
-- Daty mają format `YYYY-MM-DD`. Katalog zawiera opublikowane gazetki aktualne i przyszłe, których `validTo` przypada dziś lub później według czasu polskiego. Jeśli API zwróci opcjonalne `validToEstimated: true`, aplikacja oznaczy datę końcową jako szacowaną.
+- Daty mają format `YYYY-MM-DD`. Katalog API zawiera opublikowane gazetki aktualne i przyszłe, których `validTo` przypada dziś lub później według czasu polskiego. Kafelki w aplikacji pokazują tylko gazetki aktualnie obowiązujące (łącznie z pierwszym i ostatnim dniem). Jeśli API zwróci opcjonalne `validToEstimated: true`, aplikacja oznaczy datę końcową jako szacowaną.
 - `pages`: 1–200 stron w **kolejności czytania**. Nie sortujemy URL leksykograficznie.
-- `cover` opisuje pierwszą stronę. Klient akceptuje też `null`. Lista pokazuje tytuł, sieć, daty i liczbę stron.
+- `cover` opisuje pierwszą stronę. Klient akceptuje też `null` i wtedy używa `pages[0]`. Kafelek pokazuje miniaturę, tytuł, sieć, daty i liczbę stron. Kliknięcie otwiera pełnoekranowe okno z samą gazetką i przyciskiem „×” w prawym górnym rogu; nagłówek i dolna nawigacja aplikacji są zasłonięte. Dotknięcie obrazu pokazuje lub ukrywa sterowanie stronami i powiększeniem. Przy powiększeniu 100% działa gest zmiany strony; na WWW również strzałki klawiatury. Przycisk „×”, Escape na WWW i systemowy przycisk Wstecz na Androidzie wracają do listy gazetek z zachowaniem filtra sieci.
 - Obrazy: PNG, JPEG lub WebP, zgodny `Content-Type` i faktyczne bajty. Do 8 MiB na stronę, boki do 8192 px, maksymalnie 30 mln pikseli. Zalecane mniejsze obrazy (np. 1200×1800), aby działały na słabszym telefonie.
 - PDF i HTML nie są obsługiwane. PDF wymaga przygotowania stron przez właściciela danych lub nowego uzgodnienia integracji; klient nie wysyła dokumentów do usług konwersji.
 

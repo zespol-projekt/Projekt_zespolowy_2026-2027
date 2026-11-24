@@ -1,12 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { displayValidity, parseLeaflets, pageIndex, validLeafletId } from '../src/features/leaflets/model.ts';
+import { displayValidity, isCurrentLeaflet, leafletToday, parseLeaflets, pageIndex, validLeafletId } from '../src/features/leaflets/model.ts';
 import { fetchPage, fetchLeaflets, LeafletPageAccessError } from '../src/features/leaflets/transport.ts';
 const page = { url: 'https://assets.example.invalid/1.png', width: 100, height: 200, mimeType: 'image/png' };
 const manifest = () => ({ version: 1, leaflets: [{ id: 'test-1', chain: { id: 'test', name: 'Sieć' }, title: 'Żółta gazetka', validFrom: '2026-11-01', validTo: '2026-11-20', format: 'images', cover: null, pages: [page, { ...page, url: 'https://assets.example.invalid/2.png' }] }] });
 const png = Uint8Array.from([137,80,78,71,13,10,26,10]);
 const signal = () => new AbortController().signal;
 const auth = () => ({ getSessionKey: () => 'one', getAccessToken: async () => ({ ok: true, data: 'fixture' }), subscribe: () => () => {} });
+
+test('aktualne gazetki obejmują oba dni graniczne według czasu w Polsce', () => {
+  const leaflet = parseLeaflets(manifest()).leaflets[0];
+  assert.equal(isCurrentLeaflet(leaflet, '2026-10-31'), false);
+  assert.equal(isCurrentLeaflet(leaflet, '2026-11-01'), true);
+  assert.equal(isCurrentLeaflet(leaflet, '2026-11-20'), true);
+  assert.equal(isCurrentLeaflet(leaflet, '2026-11-21'), false);
+  assert.equal(leafletToday(new Date('2026-11-20T23:30:00Z')), '2026-11-21');
+  assert.equal(leafletToday(new Date('2026-06-01T22:30:00Z')), '2026-06-02');
+});
 test('kontrakt zachowuje kolejność stron, daty i polskie znaki; waliduje identyfikatory', () => {
   const parsed = parseLeaflets(manifest());
   assert.equal(parsed.leaflets[0].title, 'Żółta gazetka'); assert.equal(parsed.leaflets[0].pages[1].url, 'https://assets.example.invalid/2.png');
@@ -43,6 +53,18 @@ test('brak endpointu, obcy host lub brak sesji nie wysyła żądania', async () 
   await assert.rejects(fetchLeaflets(undefined, undefined, auth(), signal(), request), /nie są jeszcze dostępne/);
   await assert.rejects(fetchLeaflets(page.url, 'https://project.example.invalid', auth(), signal(), request), /konfiguracji/);
   await assert.rejects(fetchLeaflets('https://project.example.invalid/leaflets', 'https://project.example.invalid', { ...auth(), getSessionKey: () => null }, signal(), request), /Zaloguj/);
+});
+
+test('gazetki domyślnie korzystają z funkcji leaflets skonfigurowanego projektu Supabase', async () => {
+  for (const endpoint of [undefined, '', '   ']) {
+    const result = await fetchLeaflets(endpoint, 'https://project.example.invalid/', auth(), signal(), async (url, options) => {
+      assert.equal(url, 'https://project.example.invalid/functions/v1/leaflets');
+      assert.equal(options.headers.Authorization, 'Bearer fixture');
+      return Response.json(manifest());
+    });
+    assert.equal(result.leaflets.length, 1);
+  }
+  await assert.rejects(fetchLeaflets(undefined, 'http://project.example.invalid', auth(), signal(), () => assert.fail('network request')), /HTTPS/);
 });
 test('manifest wymaga JSON, pobiera tylko metadane i ponawia 401 raz', async () => {
   let calls = 0, refreshes = 0;

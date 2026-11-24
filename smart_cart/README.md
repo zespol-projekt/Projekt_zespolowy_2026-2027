@@ -160,7 +160,7 @@ npm.cmd ci
 Przed pierwszym uruchomieniem skopiuj `.env.example` do `.env.local` i uzupełnij
 `EXPO_PUBLIC_SUPABASE_URL`, `EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY` oraz `SUPABASE_URL`.
 Oba adresy muszą wskazywać ten sam projekt. Publiczny klucz ma postać `sb_publishable_…`.
-Dla czytnika ustaw `EXPO_PUBLIC_LEAFLETS_API_URL` na ten sam adres projektu z dopisaną ścieżką `/functions/v1/leaflets`.
+Czytnik automatycznie korzysta z `/functions/v1/leaflets` w projekcie wskazanym przez `EXPO_PUBLIC_SUPABASE_URL`. `EXPO_PUBLIC_LEAFLETS_API_URL` jest opcjonalnym nadpisaniem adresu w tym samym projekcie.
 `.env.local` jest ignorowany przez Git.
 
 W terminalu 1, w katalogu `smart_cart`, uruchom serwer danych:
