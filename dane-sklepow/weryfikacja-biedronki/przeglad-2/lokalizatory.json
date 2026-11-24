@@ -1,0 +1,135 @@
+[
+  {
+    "key": "polo",
+    "url": "https://polomarket.pl/sklepy",
+    "matches": {
+      "loading": [
+        "><img src=\"/images/logo-min.svg\" alt=\"Logo POLOmarket\" loading=\"lazy\" data-v-9c1ebd40></div> <!----></div> <div class=\"company-name\" data-v-9c",
+        "a_cta.svg\" alt=\"Przejdź do certyfikatu Rzetelna Firma\" loading=\"lazy\" data-v-9c1ebd40></a></div> <a href=\"https://polomarket.wideotlumacz.pl/\""
+      ],
+      "window.__NUXT__": [
+        "> <!----><!----><!----></div></div></div></div><script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I"
+      ],
+      "godziny otwarcia": [
+        "n\" content=\"Zobacz jak dojechać do POLOmarket, sprawdź godziny otwarcia naszych sklepów na terenie całej Polski.\"><meta data-n-head=\"ssr\" data-hid=\"i18",
+        "t=\"pl_PL\"><title>Sieć Sklepów Supermarketów POLOmarket Godziny Otwarcia Dojazd | POLOmarket</title><link data-n-head=\"ssr\" rel=\"icon\" type=\"image/x-ico"
+      ]
+    },
+    "scripts": [
+      "https://cdn-polomarket.appchance.shop/_nuxt/96ab5a3.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/ad13f43.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/72ee0bd.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/4bb797f.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/8968d37.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/95ff272.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/1cec227.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/c949b0d.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/ab18c42.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/9068ea1.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/83dbb62.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/2ebad25.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/e52af76.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/65c1bcc.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/94b57a5.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/d2fa26c.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/14f2139.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/a8daf29.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/76025dd.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/19a39a7.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/96fe397.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/189003d.modern.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/0be4355.modern.js"
+    ]
+  },
+  {
+    "key": "biedronka",
+    "url": "https://www.biedronka.pl/pl/sklepy/shop,id,7906",
+    "matches": {
+      "widokowa": [
+        "js\" lang=\"pl\">\n<!--<![endif]-->\n\n<head>\n    <title>ul. Widokowa 2, ,Łomnica - strona sklepu - Biedronka.pl</title>\n    <meta property=\"fb:pages",
+        "n class=\"shopAddress\">\n                            ul. Widokowa 2, <br />\n                            58-531                        </span>\n   "
+      ],
+      "łomnica": [
+        ">\n<!--<![endif]-->\n\n<head>\n    <title>ul. Widokowa 2, ,Łomnica - strona sklepu - Biedronka.pl</title>\n    <meta property=\"fb:pages\" content=\"1",
+        " c0\">\n                <hgroup>\n                    <h4>Łomnica</h4>\n                    <span class=\"shopFullAddress\">\n                       "
+      ],
+      "/shops": [
+        "ext/css\" />\n<link href=\"https://static.biedronka.pl/css/shops.css?v=1106129\" media=\"screen\" rel=\"stylesheet\" type=\"text/css\" />\n<link href=\"h"
+      ],
+      "godziny otwarcia": [
+        ">\n            <div class=\"col c1\">\n                <h4>Godziny otwarcia:</h4>\n                <ul>\n                    <li>Poniedziałek: <span class=\"h",
+        "an class=\"ico\"></span></a>\n            <p class=\"lead\">Godziny otwarcia sklepów podane na stronie internetowej mają charakter orientacyjny. Informacja "
+      ]
+    },
+    "scripts": [
+      "https://code.createjs.com/1.0.0/createjs.min.js",
+      "https://static.biedronka.pl/js/vendor/html5shiv.js?v=1106129",
+      "https://static.biedronka.pl/js/jquery-3.5.0.min.js?v=1106129",
+      "https://static.biedronka.pl/js/jquery-ui-1.13.2.custom.js?v=1106129",
+      "/front/index/translate/language/pl",
+      "https://static.biedronka.pl/js/plugins.js?v=1106129",
+      "https://static.biedronka.pl/js/biedronka_cookie_configure.js?v=1106129",
+      "https://static.biedronka.pl/js/biedronka.js?v=1106129",
+      "https://static.biedronka.pl/js/shop.js?v=1106129",
+      "https://static.biedronka.pl/js/jquery.inputmask.bundle.min.js?v=1106129",
+      "https://static.biedronka.pl/js/jquery.countdown.min.js?v=1106129",
+      "https://static.biedronka.pl/js/mustache.min.js?v=1106129",
+      "https://static.biedronka.pl/js/main.js?v=1106129",
+      "https://static.biedronka.pl/js/vote.min.js?v=1106129",
+      "https://static.biedronka.pl/js/swfobject/swfobject.js?v=1106129",
+      "https://static.biedronka.pl/js/jwplayer/jwplayer.js?v=1106129",
+      "https://static.biedronka.pl/js/jwplayer/jwplayer.html5.js?v=1106129",
+      "https://static.biedronka.pl/js/media/video/jwplayer.js?v=1106129",
+      "https://static.biedronka.pl/js/sanitizeUrl.js?v=1106129",
+      "https://static.biedronka.pl/js/placeholderfix.js?v=1106129",
+      "//d3c3cq33003psk.cloudfront.net/opentag-91878-1160998.js",
+      "https://static.biedronka.pl/js/otcustom.js?v=1106129"
+    ]
+  },
+  {
+    "key": "polo_search",
+    "url": "https://polomarket.pl/sklepy?search=%C5%81omnica",
+    "matches": {
+      "loading": [
+        "><img src=\"/images/logo-min.svg\" alt=\"Logo POLOmarket\" loading=\"lazy\" data-v-9c1ebd40></div> <!----></div> <div class=\"company-name\" data-v-9c",
+        "a_cta.svg\" alt=\"Przejdź do certyfikatu Rzetelna Firma\" loading=\"lazy\" data-v-9c1ebd40></a></div> <a href=\"https://polomarket.wideotlumacz.pl/\""
+      ],
+      "sklepy?": [
+        "ad=\"ssr\" data-hid=\"i18n-alt-pl\" rel=\"alternate\" href=\"/sklepy?search=%C5%81omnica\" hreflang=\"pl\"><link data-n-head=\"ssr\" data-hid=\"i18n-alt-pl",
+        "\"ssr\" data-hid=\"i18n-alt-pl-PL\" rel=\"alternate\" href=\"/sklepy?search=%C5%81omnica\" hreflang=\"pl-PL\"><link data-n-head=\"ssr\" data-hid=\"i18n-xd\""
+      ],
+      "window.__NUXT__": [
+        "> <!----><!----><!----></div></div></div></div><script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I"
+      ],
+      "godziny otwarcia": [
+        "n\" content=\"Zobacz jak dojechać do POLOmarket, sprawdź godziny otwarcia naszych sklepów na terenie całej Polski.\"><meta data-n-head=\"ssr\" data-hid=\"i18",
+        "t=\"pl_PL\"><title>Sieć Sklepów Supermarketów POLOmarket Godziny Otwarcia Dojazd | POLOmarket</title><link data-n-head=\"ssr\" rel=\"icon\" type=\"image/x-ico"
+      ]
+    },
+    "scripts": [
+      "https://cdn-polomarket.appchance.shop/_nuxt/e3b202f.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/7c7229b.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/5a683c7.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/24beaf6.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/36f7216.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/9135ae7.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/af4b2be.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/51ff63e.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/2e3fcee.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/9d2799e.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/c7c5e4c.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/d3a8fd8.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/1c54c6b.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/2bba109.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/406c8da.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/f6f7625.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/7ac9ddc.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/be43b7d.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/bfea368.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/26eff68.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/b749fa9.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/dd12392.js",
+      "https://cdn-polomarket.appchance.shop/_nuxt/073aaa8.js"
+    ]
+  }
+]

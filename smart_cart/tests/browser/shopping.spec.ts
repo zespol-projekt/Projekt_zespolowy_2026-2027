@@ -40,6 +40,7 @@ test('koszyk rozpoznaje daty cen w wycenie i propozycji, zachowując zgodność 
     },
   ] } }));
   await page.goto('/cart');
+  await page.getByRole('link', { name: 'Porównaj ceny w sklepach' }).click();
   await expect(page.getByText('48,00 zł · Najtańszy pełny koszyk', { exact: true })).toBeVisible();
   for (const date of ['21.11.2026', '10.11.2026', '20.11.2026', '09.11.2026']) {
     await expect(page.getByText(`Cena widziana ${date}`, { exact: true })).toHaveCount(1);
@@ -99,6 +100,37 @@ test('zmiana frazy od razu ukrywa stare wyniki i czeka na odpowiedź nowego wysz
   await expect(previousResult).not.toBeVisible();
 });
 
+test('zapisane listy z ekranu startowego zmieniają aktualny koszyk', async ({ page }, info) => {
+  await mockMap(page);
+  const saved = [
+    { id: listId, name: 'Zakupy na tydzień', updated_at: '2026-11-22T10:00:00Z' },
+    { id: 'cccccccc-cccc-4ccc-8ccc-cccccccccccc', name: 'Na weekend', updated_at: '2026-11-21T10:00:00Z' },
+  ];
+  await page.route(`${AUTH_URL}/rest/v1/shopping_lists?**`, route => route.fulfill({ json: saved }));
+  await page.route(`${AUTH_URL}/rest/v1/shopping_lists`, route => {
+    const list = { id: 'dddddddd-dddd-4ddd-8ddd-dddddddddddd', name: route.request().postDataJSON().name, updated_at: '2026-11-23T10:00:00Z' };
+    saved.unshift(list);
+    return route.fulfill({ json: [list] });
+  });
+  await page.goto('/');
+  await page.getByRole('link', { name: 'Listy zakupów', exact: true }).click();
+  await expect(page).toHaveURL(/\/shopping-lists$/);
+  await expect(page.getByRole('link', { name: 'Otwórz koszyk: Zakupy na tydzień' })).toBeVisible();
+  await page.screenshot({ path: info.outputPath('shopping-lists.png'), fullPage: true });
+  await page.getByRole('button', { name: 'Ustaw jako aktualną: Na weekend' }).click();
+  await page.getByRole('link', { name: 'Otwórz koszyk: Na weekend' }).click();
+  await expect(page.getByRole('heading', { name: 'Koszyk', exact: true })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Edytuj aktualną listę: Na weekend' })).toBeVisible();
+  await page.screenshot({ path: info.outputPath('cart.png'), fullPage: true });
+  await page.getByRole('link', { name: 'Wróć na główną' }).click();
+  await expect(page).toHaveURL(/\/$/);
+  await page.getByRole('link', { name: 'Listy zakupów', exact: true }).click();
+  await page.getByRole('button', { name: 'Nowa lista' }).click();
+  await page.getByRole('textbox', { name: 'Nazwa nowej listy' }).fill('Zakupy na jutro');
+  await page.getByRole('button', { name: 'Utwórz listę' }).click();
+  await expect(page.getByRole('link', { name: 'Otwórz koszyk: Zakupy na jutro' })).toBeVisible();
+});
+
 test('grupy, oferty, prywatne listy i edycja przeliczają koszyk, niepełna sieć nie ma sumy', async ({ page }) => {
   await mockMap(page);
   const errors: string[] = [];
@@ -147,11 +179,14 @@ test('grupy, oferty, prywatne listy i edycja przeliczają koszyk, niepełna sie�
   await page.getByRole('button', { name: 'Dodaj do listy — najtańszy odpowiednik', exact: true }).click();
   await expect(page.getByText('Dodano do listy zakupów.')).toBeVisible();
   await page.goto('/cart');
+  await page.getByRole('link', { name: 'Porównaj ceny w sklepach' }).click();
   await expect(page.getByText('6,00 zł · Najtańszy pełny koszyk')).toBeVisible();
   await expect(page.getByText(/Brak pełnej wyceny — 0\/1/)).toBeVisible();
+  await page.getByRole('link', { name: 'Wróć do koszyka' }).click();
+  await page.getByRole('link', { name: 'Edytuj aktualną listę: Zakupy' }).click();
   await page.getByRole('textbox', { name: `Ilość dla ${group.name} (ml)` }).fill('2000');
   await page.getByRole('button', { name: 'Zapisz ilość', exact: true }).click();
-  await expect(page.getByText('12,00 zł · Najtańszy pełny koszyk')).toBeVisible();
+  await expect.poll(() => quantity).toBe(2000);
   await page.getByRole('button', { name: 'Zmień produkt', exact: true }).click();
   await page.getByRole('button', { name: 'Wybierz: Marka Test 1 l', exact: true }).click();
   await expect(page.getByText('Wybrany produkt: Marka Test 1 l')).toBeVisible();
@@ -160,6 +195,8 @@ test('grupy, oferty, prywatne listy i edycja przeliczają koszyk, niepełna sie�
   await expect.poll(() => name).toBe('Na tydzień');
   await page.reload();
   await expect(page.getByRole('textbox', { name: 'Zmień nazwę listy' })).toHaveValue('Na tydzień');
+  await page.getByRole('link', { name: 'Wróć do koszyka' }).click();
+  await page.getByRole('link', { name: 'Porównaj ceny w sklepach' }).click();
   await expect(page.getByText('12,00 zł · Najtańszy pełny koszyk')).toBeVisible();
   await changeSession(page, null);
   await expect(page.getByRole('button', { name: 'Zaloguj się', exact: true })).toBeVisible();

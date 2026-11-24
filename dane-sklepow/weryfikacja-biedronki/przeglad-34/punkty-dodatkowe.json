@@ -1,0 +1,318 @@
+[
+  {
+    "id": 7318,
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=22.713501400000002%2C50.0291629%2C22.7171014%2C50.0315629",
+    "elements": [
+      {
+        "type": "node",
+        "id": 11245580655,
+        "lat": 50.0305312,
+        "lon": 22.7150313,
+        "timestamp": "2026-07-07T12:08:53Z"
+      },
+      {
+        "type": "node",
+        "id": 11247053915,
+        "lat": 50.0302244,
+        "lon": 22.7152968,
+        "timestamp": "2026-07-07T12:08:53Z"
+      },
+      {
+        "type": "node",
+        "id": 11247053916,
+        "lat": 50.0302685,
+        "lon": 22.7153089,
+        "timestamp": "2026-07-07T12:08:53Z"
+      },
+      {
+        "type": "node",
+        "id": 11247053917,
+        "lat": 50.0301946,
+        "lon": 22.7155594,
+        "timestamp": "2026-07-07T12:08:53Z"
+      },
+      {
+        "type": "node",
+        "id": 11247053918,
+        "lat": 50.030307,
+        "lon": 22.7149697,
+        "timestamp": "2026-07-07T12:08:53Z"
+      },
+      {
+        "type": "node",
+        "id": 11247053919,
+        "lat": 50.0304629,
+        "lon": 22.7156331,
+        "timestamp": "2026-07-07T12:08:53Z"
+      },
+      {
+        "type": "way",
+        "id": 1213951693,
+        "timestamp": "2025-06-24T06:30:31Z",
+        "nodes": [
+          11247053919,
+          11247053917,
+          11247053915,
+          11247053916,
+          11247053918,
+          11245580655,
+          11247053919
+        ],
+        "tags": {
+          "addr:city": "Szówsko",
+          "addr:city:simc": "0612795",
+          "addr:housenumber": "27A",
+          "addr:postcode": "37-522",
+          "addr:street": "Książąt Czartoryskich",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "retail",
+          "name": "Biedronka",
+          "shop": "supermarket"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3566,
+    "directory_url": "https://mapa.targeo.pl/biedronka-supermarket-szosowa-33c-18-411-sniadowo~23072550/biedronka-supermarket/adres",
+    "direction_urls": [
+      "https://mapa.targeo.pl/jak_dojechac,biedronka%20supermarket,21.98854,53.04527;p%5B2130%5D"
+    ],
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=21.9867387%2C53.044065100000005%2C21.9903387%2C53.0464651",
+    "elements": [
+      {
+        "type": "node",
+        "id": 9026995699,
+        "lat": 53.0463627,
+        "lon": 21.9896594,
+        "timestamp": "2021-08-22T20:16:03Z"
+      },
+      {
+        "type": "node",
+        "id": 9026995700,
+        "lat": 53.0462971,
+        "lon": 21.9897283,
+        "timestamp": "2021-08-22T20:16:03Z"
+      },
+      {
+        "type": "node",
+        "id": 9026995701,
+        "lat": 53.0463185,
+        "lon": 21.9897846,
+        "timestamp": "2021-08-22T20:16:03Z"
+      },
+      {
+        "type": "node",
+        "id": 9026995702,
+        "lat": 53.0462655,
+        "lon": 21.9898403,
+        "timestamp": "2021-08-22T20:16:03Z"
+      },
+      {
+        "type": "node",
+        "id": 9026995703,
+        "lat": 53.0464522,
+        "lon": 21.9903323,
+        "timestamp": "2021-08-22T20:16:03Z"
+      },
+      {
+        "type": "node",
+        "id": 9026995704,
+        "lat": 53.0465708,
+        "lon": 21.9902077,
+        "timestamp": "2021-08-22T20:16:03Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285472,
+        "lat": 53.0453188,
+        "lon": 21.9880692,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285473,
+        "lat": 53.0453222,
+        "lon": 21.9880729,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285474,
+        "lat": 53.0453211,
+        "lon": 21.9880755,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285475,
+        "lat": 53.0453993,
+        "lon": 21.9881597,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285476,
+        "lat": 53.0454068,
+        "lon": 21.9881411,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285477,
+        "lat": 53.0454396,
+        "lon": 21.9881776,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285478,
+        "lat": 53.0454321,
+        "lon": 21.9881962,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285479,
+        "lat": 53.045474,
+        "lon": 21.9882419,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285480,
+        "lat": 53.0454729,
+        "lon": 21.9882448,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285481,
+        "lat": 53.0452368,
+        "lon": 21.9888288,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285482,
+        "lat": 53.0452336,
+        "lon": 21.9888253,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285483,
+        "lat": 53.0452389,
+        "lon": 21.9888122,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285484,
+        "lat": 53.0451289,
+        "lon": 21.9886897,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285485,
+        "lat": 53.0451237,
+        "lon": 21.9887029,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 11584285486,
+        "lat": 53.0450818,
+        "lon": 21.9886563,
+        "timestamp": "2024-02-04T13:35:07Z"
+      },
+      {
+        "type": "node",
+        "id": 12248794155,
+        "lat": 53.0454599,
+        "lon": 21.9882741,
+        "timestamp": "2024-10-13T17:48:32Z"
+      },
+      {
+        "type": "way",
+        "id": 975473600,
+        "timestamp": "2023-11-03T21:17:06Z",
+        "nodes": [
+          9026995704,
+          9026995703,
+          9026995702,
+          9026995701,
+          9026995700,
+          9026995699,
+          9026995704
+        ],
+        "tags": {
+          "addr:city": "Śniadowo",
+          "addr:city:simc": "0408600",
+          "addr:housenumber": "33A",
+          "addr:postcode": "18-411",
+          "addr:street": "Szosowa",
+          "addr:street:sym_ul": "22050",
+          "brand": "Dino",
+          "brand:wikidata": "Q11694239",
+          "brand:wikipedia": "pl:Dino Polska",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Dino",
+          "opening_hours": "Mo-Sa 06:00-23:00; Su 08:00-22:00",
+          "payment:cash": "yes",
+          "payment:mastercard": "yes",
+          "payment:visa": "yes",
+          "roof:shape": "gabled",
+          "shop": "supermarket",
+          "source:addr": "sniadowo.e-mapa.net",
+          "website": "https://www.marketdino.pl/"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1246057084,
+        "timestamp": "2024-10-13T17:48:32Z",
+        "nodes": [
+          11584285472,
+          11584285473,
+          11584285474,
+          11584285475,
+          11584285476,
+          11584285477,
+          11584285478,
+          11584285479,
+          11584285480,
+          12248794155,
+          11584285481,
+          11584285482,
+          11584285483,
+          11584285484,
+          11584285485,
+          11584285486,
+          11584285472
+        ],
+        "tags": {
+          "addr:city": "Śniadowo",
+          "addr:city:simc": "0408600",
+          "addr:housenumber": "33c",
+          "addr:postcode": "18-411",
+          "addr:street": "Szosowa",
+          "building": "retail",
+          "building:levels": "1",
+          "source:addr": "gugik.gov.pl",
+          "source:building": "BDOT"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7912,
+    "directory_url": "https://mapa.targeo.pl/biedronka-supermarket-gliwicka-26-kleszczow~25243401/biedronka-supermarket/adres",
+    "direction_urls": [
+      "https://mapa.targeo.pl/jak_dojechac,biedronka%20supermarket,18.53350,50.34385;p%5B2130%5D"
+    ]
+  }
+]

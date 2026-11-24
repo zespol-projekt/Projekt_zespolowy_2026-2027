@@ -84,9 +84,10 @@ write(verification + "mozliwe-duplikaty.json", { generated_at: new Date().toISOS
 // Odtworzenie i kontrola obejmuje również dowody OSM oraz wszystkie surowe źródła.
 const checked = run(root, true);
 const ready = read("gotowe/sklepy.json"), review = read("do-weryfikacji/sklepy.json");
-const all = [...ready.stores, ...review.stores];
-assert.equal(new Set(all.map((s) => s.id)).size, baseline.ready.length + baseline.review.length);
-assert.deepEqual(all.map((s) => s.id).sort(), [...baseline.ready, ...baseline.review].map((s) => s.id).sort());
+const all = [...ready.stores, ...review.stores, ...(review.duplicate_records ?? [])];
+const baselineBiedronka = [...baseline.ready, ...baseline.review].filter((store) => store.chain === "biedronka" && !manifest.biedronka_address_updates.includes(store.source.store_id));
+const publishedBiedronka = all.filter((store) => store.source.dataset_file === "surowe/biedronka_pl.geojson");
+assert.deepEqual(publishedBiedronka.map((store) => store.id).sort(), baselineBiedronka.map((store) => store.id).sort());
 const patches = loadCorrections(root);
 const matching = read(verification + "raport-dopasowania.json");
 const osm = read(verification + "pelny-przebieg/osm-polaczone.json");
@@ -94,16 +95,16 @@ const previous = read(verification + "pelny-przebieg/poprawki-przed-scaleniem.js
 const previousIds = new Set(previous.corrections.map((p) => p.id));
 const oldPatchCount = patches.corrections.filter((p) => previousIds.has(p.id)).length;
 assert.equal(oldPatchCount, previousIds.size, "Utracono poprzednią poprawkę.");
-const baselineById = new Map([...baseline.ready, ...baseline.review].map((s) => [s.id, s]));
+const baselineById = new Map(baselineBiedronka.map((s) => [s.id, s]));
 const patchesById = new Map(patches.corrections.map((p) => [p.id, p]));
-for (const store of all) {
+for (const store of publishedBiedronka) {
   const original = baselineById.get(store.id), patch = patchesById.get(store.id);
   if (!patch) {
-    assert.deepEqual(store.address, original.address);
-    assert.deepEqual(store.location, original.location);
+    if (!["address_point", "official_shop_point"].includes(store.location_verification?.precision)) assert.deepEqual(store.address, original.address);
+    if (!store.location_verification) assert.deepEqual(store.location, original.location);
   } else {
-    assert.deepEqual(store.address, patch.replacement.address ?? original.address);
-    assert.deepEqual(store.location, patch.replacement.location ?? original.location);
+    if (!["address_point", "official_shop_point"].includes(store.location_verification?.precision)) assert.deepEqual(store.address, patch.replacement.address ?? original.address);
+    if (!store.location_verification) assert.deepEqual(store.location, patch.replacement.location ?? original.location);
     assert.equal(store.quality.status, store.source_review?.status === "requires_review" ? "needs_review" : "ready");
   }
 }
@@ -154,7 +155,7 @@ const summary = { generated_at: new Date().toISOString(), verified_outputs_gener
   osm: { unique_elements: osm.elements.length, saved_responses: osm.provenance.sources.length,
     covered_regions: osm.provenance.coverage.filter((r) => r.complete).length,
     total_regions: osm.provenance.coverage.length, scope: osm.provenance.scope },
-  dataset: { total: all.length, ready: ready.count, review: review.count, chains: checked.sources,
+  dataset: { total: all.length, ready: ready.count, review: review.count, duplicates: review.duplicate_count ?? 0, chains: checked.sources,
     remaining_issue_counts: checked.issue_counts },
   unresolved_with_suggestions: matching.decisions.filter((d) => !patchesById.has(d.id) && d.suggestions?.length).length,
   checks: { source_hashes_and_evidence: "passed", output_reproduction: "passed",
@@ -186,4 +187,4 @@ if (proposalReports.length) {
       .map(d => [d.id, d.address, Math.max(...d.suggestions.map(s => s.score)), d.suggestions[0].osm_url])]);
 }
 write(verification + "podsumowanie.json", summary);
-console.log(JSON.stringify({ ...summary, dataset: { total: all.length, ready: ready.count, review: review.count } }, null, 2));
+console.log(JSON.stringify({ ...summary, dataset: { total: all.length, ready: ready.count, review: review.count, duplicates: review.duplicate_count ?? 0 } }, null, 2));

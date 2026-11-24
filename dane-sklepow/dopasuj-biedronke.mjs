@@ -8,7 +8,7 @@ import { loadSources, prepareData } from "./przygotuj-dane.mjs";
 const hash = (value) => createHash("sha256").update(value).digest("hex");
 const normalized = (value) => String(value ?? "").normalize("NFC").toLocaleLowerCase("pl-PL").replace(/\s+/gu, " ").trim();
 const streetKey = (value) => normalized(value).replace(/^(?:ulica\s+|ul\.?\s+)/u, "")
-  .replace(/^al\.\s*/u, "aleja ").replace(/^pl\.\s*/u, "plac ").replace(/^os\.\s*/u, "osiedle ");
+  .replace(/^(?:al\.|aleja)\s*/u, "aleje ").replace(/^pl\.\s*/u, "plac ").replace(/^os\.\s*/u, "osiedle ");
 const numberKey = (value) => normalized(value).replace(/\s+/gu, "").replace(/[–—]/gu, "-");
 const isRoadNumber = (value) => /^(?:dw|dk)\s*\d+$/u.test(normalized(value));
 const distanceMeters = (a, b) => {
@@ -34,7 +34,7 @@ function osmStore(element) {
   const latitude = element.lat ?? element.center?.lat;
   const longitude = element.lon ?? element.center?.lon;
   if (!Number.isFinite(latitude) || !Number.isFinite(longitude) || latitude < 48.9 || latitude > 55 || longitude < 14 || longitude > 24.3) return null;
-  const websiteId = String(t.website ?? t["contact:website"] ?? "").match(/https?:\/\/(?:www\.)?biedronka\.pl\/pl\/shop,id,(\d+)/iu)?.[1] ?? null;
+  const websiteId = String(t.website ?? t["contact:website"] ?? "").match(/https?:\/\/(?:www\.)?biedronka\.pl\/pl\/(?:sklepy\/)?shop,id,(\d+)/iu)?.[1] ?? null;
   return { element, location: { latitude, longitude }, website_id: websiteId,
     address: { city: t["addr:city"] ?? t["addr:place"] ?? null, street: t["addr:street"] ?? t["addr:place"] ?? null,
       house_number: t["addr:housenumber"] ?? null, postal_code: t["addr:postcode"] ?? null } };

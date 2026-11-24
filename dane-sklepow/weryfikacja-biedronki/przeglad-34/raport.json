@@ -1,0 +1,763 @@
+{
+  "input_fingerprint": "f8a671a057b67a24212bb7a6d4e2a4104cb99e2a9a82016b877a9096cd45d434",
+  "reviewed": 34,
+  "retrieved_on": "2026-11-23",
+  "accepted": 15,
+  "totals": {
+    "confirmed": 15,
+    "held": 19
+  },
+  "decisions": [
+    {
+      "id": "biedronka:1229",
+      "status": "confirmed",
+      "previous_address": "Kordeckiego 56 58, 04-355 Warszawa",
+      "reason": "Rejestr i oznaczony punkt sklepu OSM potwierdzają łączony numer 56/58 zapisany na karcie ze spacją.",
+      "accepted": {
+        "address": {
+          "formatted": "Augustyna Kordeckiego 56/58, 04-355 Warszawa",
+          "street_address": "Augustyna Kordeckiego 56/58",
+          "street": "Augustyna Kordeckiego",
+          "house_number": "56/58",
+          "city": "Warszawa",
+          "postal_code": "04-355",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.2448251,
+          "longitude": 21.0960624
+        },
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "evidence": "https://www.openstreetmap.org/node/282141267",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,1229",
+        "osm_observed_at": "2026-11-23T14:25:48.471Z",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Augustyna+Kordeckiego+56%2F58&exact_number=1&srid=4326"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1789",
+      "status": "held",
+      "address": "Kościuszki 31 34, 88-150 Kruszwica",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,1789",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kruszwica%2C+Tadeusza+Ko%C5%9Bciuszki+31&exact_number=1&srid=4326",
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kruszwica%2C+Tadeusza+Ko%C5%9Bciuszki+34&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Brak dokładnego punktu dla zapisu 31/34 w rejestrze."
+    },
+    {
+      "id": "biedronka:1932",
+      "status": "confirmed",
+      "previous_address": "Armii WP 12, 84-300 Lębork",
+      "reason": "Rejestr i budynek Biedronki w OSM potwierdzają obowiązującą nazwę Wojska Polskiego i numer 12.",
+      "accepted": {
+        "address": {
+          "formatted": "Wojska Polskiego 12, 84-300 Lębork",
+          "street_address": "Wojska Polskiego 12",
+          "street": "Wojska Polskiego",
+          "house_number": "12",
+          "city": "Lębork",
+          "postal_code": "84-300",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.5330127,
+          "longitude": 17.7442035
+        },
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "evidence": "https://www.openstreetmap.org/way/302942825",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,1932",
+        "osm_observed_at": "2026-11-23T14:25:48.471Z",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=L%C4%99bork%2C+Wojska+Polskiego+12&exact_number=1&srid=4326"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:2220",
+      "status": "held",
+      "address": "68-100 Żagań",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,2220",
+      "issues": [
+        "missing_street_address",
+        "cross_source_address_conflict"
+      ],
+      "registry_queries": [],
+      "osm_queries": [
+        "https://api.openstreetmap.org/api/0.6/map.json?bbox=15.3032183%2C51.6151937%2C15.3062183%2C51.6171937"
+      ],
+      "reason": "Budynek sklepu OSM z właściwym ID. Nadal rozbieżne numery budynku przy Plater."
+    },
+    {
+      "id": "biedronka:2753",
+      "status": "held",
+      "address": "Częstochowska 32-085, 32-085 Modlnica",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,2753",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Modlnica%2C+Cz%C4%99stochowska+32&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Numer domu w karcie zastąpiony kodem pocztowym. Rejestr nie potwierdził także wariantu 32."
+    },
+    {
+      "id": "biedronka:3191",
+      "status": "held",
+      "address": "76-200 Jarosław",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,3191",
+      "issues": [
+        "missing_street_address"
+      ],
+      "registry_queries": [],
+      "osm_queries": [
+        "https://api.openstreetmap.org/api/0.6/map.json?bbox=22.6745509%2C50.0103743%2C22.6775509%2C50.0123743"
+      ],
+      "reason": "W pobliżu punktu źródłowego jest Biedronka i outlet. Brak potwierdzonej ulicy i numeru dla tego ID."
+    },
+    {
+      "id": "biedronka:3435",
+      "status": "held",
+      "address": "Łyskowskiego 41, 86-300 Grudziądz",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,3435",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grudzi%C4%85dz%2C+%C5%81yskowskiego+41&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Wynik rejestrowy dla Jackowskiego 41 nie odpowiada Łyskowskiego 41."
+    },
+    {
+      "id": "biedronka:3566",
+      "status": "confirmed",
+      "reason": "Punkt z API sieci odpowiada dokładnie punktowi sklepu w Targeo. Obrys 33C w OSM i Targeo potwierdzają adres oraz kod 18-411. Sąsiedni market Dino ma numer 33A.",
+      "previous_address": "05-180 Śniadowo",
+      "accepted": {
+        "address": {
+          "formatted": "Szosowa 33C, 18-411 Śniadowo",
+          "street_address": "Szosowa 33C",
+          "street": "Szosowa",
+          "house_number": "33C",
+          "city": "Śniadowo",
+          "postal_code": "18-411",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.0452651,
+          "longitude": 21.9885387
+        },
+        "resolves": [
+          "missing_street_address"
+        ],
+        "precision": "official_shop_point",
+        "evidence": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=sniadowo",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,3566",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-szosowa-33c-18-411-sniadowo~23072550/biedronka-supermarket/adres",
+          "https://www.openstreetmap.org/way/1246057084"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:3599",
+      "status": "held",
+      "address": "Tysiąclecia 17, 95-080 Tuszyn",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,3599",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Tuszynek+Majoracki%2C+Tysi%C4%85clecia+17&exact_number=1&srid=4326",
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Tuszyn%2C+Tysi%C4%85clecia+17&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [
+        "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.5443553%2C51.5987890%2C19.5473553%2C51.6007890"
+      ],
+      "reason": "Rejestr rozpoznaje 17 w Tuszynku Majorackim, ale brak potwierdzenia sklepu przy tym punkcie. Przy 17A OSM wskazuje Stokrotkę."
+    },
+    {
+      "id": "biedronka:7039",
+      "status": "held",
+      "address": "Księcia Janusza I 21, 07-437 Kolno",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7039",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kolno%2C+Ksi%C4%99cia+Janusza+I+21&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [
+        "https://api.openstreetmap.org/api/0.6/map.json?bbox=21.9374244%2C53.4019550%2C21.9404244%2C53.4039550",
+        "https://api.openstreetmap.org/api/0.6/map.json?bbox=21.9359244%2C53.4009550%2C21.9419244%2C53.4049550"
+      ],
+      "reason": "Aktualna karta i komunikat otwarcia podają 21. OSM wskazuje sklep przy 1, a rejestr zwraca oddzielny punkt 21. Brak mocnego powiązania punktu z kartą."
+    },
+    {
+      "id": "biedronka:7078",
+      "status": "confirmed",
+      "previous_address": "Grąbków 57, 62-709 Grąbków",
+      "reason": "Aktualna karta, Targeo i obiekt sklepu OSM podają Grąbków 57. Starsza lista przypisuje 57A innemu identyfikatorowi (7027). Dla 7078 zachowano aktualny numer 57 i punkt budynku sklepu.",
+      "accepted": {
+        "address": {
+          "formatted": "Grąbków 57, 62-709 Grąbków",
+          "street_address": "Grąbków 57",
+          "street": "Grąbków",
+          "house_number": "57",
+          "city": "Grąbków",
+          "postal_code": "62-709",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.9597469,
+          "longitude": 18.4099144
+        },
+        "resolves": [
+          "cross_source_address_conflict"
+        ],
+        "precision": "osm_shop_point",
+        "evidence": "https://www.openstreetmap.org/way/1264104158",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7078",
+        "osm_observed_at": "2026-11-23T14:25:48.471Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-grabkow-57-grabkow~23164633/biedronka-supermarket/adres",
+          "https://cdn.biedronka.pl/__2024/T09A/promocja_lista/T09A_lista_promo.pdf"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7173",
+      "status": "held",
+      "address": "Generała Józefa Wybckiego 1, 77-200 Bytów",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7173",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Byt%C3%B3w%2C+gen.+J%C3%B3zefa+Wybickiego+1&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [
+        "https://api.openstreetmap.org/api/0.6/map.json?bbox=17.4861786%2C54.1869243%2C17.4891786%2C54.1889243",
+        "https://api.openstreetmap.org/api/0.6/map.json?bbox=17.4846786%2C54.1859243%2C17.4906786%2C54.1899243"
+      ],
+      "reason": "Rejestr potwierdza pisownię Wybickiego i numer 1. W przeszukanym obszarze brak oznaczonej Biedronki w OSM. Źródła różnią się też kodem pocztowym."
+    },
+    {
+      "id": "biedronka:7280",
+      "status": "held",
+      "address": "Ciechanowska 65, 06-406 Władysławowo",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7280",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=W%C5%82adys%C5%82awowo%2C+Ciechanowska+65&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Targeo wskazuje sklep, a rejestr i OSM nadal nie potwierdzają jego dokładnego punktu."
+    },
+    {
+      "id": "biedronka:7318",
+      "status": "confirmed",
+      "reason": "OSM identyfikuje budynek sklepu pod numerem 27A. CityOn potwierdza punkt, a ZYN potwierdza adres i kod 37-522, zgodny z oznaczeniem w OSM.",
+      "previous_address": "Książąt Czartoryskich 27A, 37-500 Szówsko",
+      "accepted": {
+        "address": {
+          "formatted": "Książąt Czartoryskich 27A, 37-522 Szówsko",
+          "street_address": "Książąt Czartoryskich 27A",
+          "street": "Książąt Czartoryskich",
+          "house_number": "27A",
+          "city": "Szówsko",
+          "postal_code": "37-522",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.0303314,
+          "longitude": 22.7152999
+        },
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "evidence": "https://www.openstreetmap.org/way/1213951693",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7318",
+        "osm_observed_at": "2026-11-23T14:27:22.793Z",
+        "address_evidence": [
+          "https://cityon.pl/miejsce/biedronka-szowsko-ksiazat-czartoryskich-27a",
+          "https://www.zyn.com/pl/pl/storedetails?path=sz%C3%B3wsko.html"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7348",
+      "status": "held",
+      "address": "Grodziczno 3a, 13-324 Grodziczno",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7348",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grodziczno%2C+Grodziczno+3a&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Brak wyniku rejestrowego i oznaczonego punktu, które łączyłyby adres z tym sklepem."
+    },
+    {
+      "id": "biedronka:7354",
+      "status": "confirmed",
+      "previous_address": "Zawadzkiego 20, 82-440 Dzierzgoń",
+      "reason": "Punkt Biedronki OSM leży około 16 m od rejestrowego numeru 20. Karta i Targeo potwierdzają sklep przy Zawadzkiego 20.",
+      "accepted": {
+        "address": {
+          "formatted": "Tadeusza Zawadzkiego „Zośki” 20, 82-440 Dzierzgoń",
+          "street_address": "Tadeusza Zawadzkiego „Zośki” 20",
+          "street": "Tadeusza Zawadzkiego „Zośki”",
+          "house_number": "20",
+          "city": "Dzierzgoń",
+          "postal_code": "82-440",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.9173504,
+          "longitude": 19.3456686
+        },
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "evidence": "https://www.openstreetmap.org/node/12344419382",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7354",
+        "osm_observed_at": "2026-11-23T14:25:48.471Z",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Dzierzgo%C5%84%2C+Aleksandra+Zawadzkiego+20&exact_number=1&srid=4326",
+          "https://mapa.targeo.pl/biedronka-supermarket-zawadzkiego-20-dzierzgon~23538521/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7375",
+      "status": "held",
+      "address": "Lubanów 12, 97-306 Błaszki",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7375",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=B%C5%82aszki%2C+Luban%C3%B3w+12&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Brak wyniku rejestrowego i oznaczonego punktu, które łączyłyby adres z tym sklepem."
+    },
+    {
+      "id": "biedronka:7377",
+      "status": "held",
+      "address": "Chojnicka 1, 77-400 Złotów",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7377",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Z%C5%82ot%C3%B3w%2C+Chojnicka+1&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Brak wyniku rejestrowego i oznaczonego punktu, które łączyłyby adres z tym sklepem."
+    },
+    {
+      "id": "biedronka:7411",
+      "status": "confirmed",
+      "previous_address": "Z. Nałkowskiej 2, 41-922 Radzionków",
+      "reason": "Karta i katalogi potwierdzają pełną ulicę i numer. Użyto oznaczonego budynku Biedronki o dokładnie tym adresie. Punkt rejestrowy leży około 290 m dalej.",
+      "accepted": {
+        "address": {
+          "formatted": "Zofii Nałkowskiej 2, 41-922 Radzionków",
+          "street_address": "Zofii Nałkowskiej 2",
+          "street": "Zofii Nałkowskiej",
+          "house_number": "2",
+          "city": "Radzionków",
+          "postal_code": "41-922",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.3826951,
+          "longitude": 18.9029767
+        },
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "evidence": "https://www.openstreetmap.org/way/563326106",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7411",
+        "osm_observed_at": "2026-11-23T14:25:48.471Z",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Radzionk%C3%B3w%2C+Z.+Na%C5%82kowskiej+2&exact_number=1&srid=4326",
+          "https://mojagazetka.com/lokalizacje-sklepow/radzionkow/biedronka/3081-zofii-nalkowskiej-2",
+          "https://cityon.pl/miejsce/biedronka-radzionkow-zofii-nalkowskiej-2"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7414",
+      "status": "held",
+      "address": "Trzebieszów Drugi 62B, 21-404 Trzebieszów Drugi",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7414",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Trzebiesz%C3%B3w+Drugi%2C+Trzebiesz%C3%B3w+Drugi+62B&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Brak wyniku rejestrowego i oznaczonego punktu, które łączyłyby adres z tym sklepem."
+    },
+    {
+      "id": "biedronka:7429",
+      "status": "confirmed",
+      "previous_address": "64-050 Wielichowo",
+      "reason": "Zachowano punkt z API Biedronki, oddalony o około 7 m od automatu DHL opisanego jako znajdujący się przy sklepie. Adres potwierdza także lista sklepów objętych promocją.",
+      "accepted": {
+        "address": {
+          "formatted": "Podgórna 6A, 64-050 Wielichowo",
+          "street_address": "Podgórna 6A",
+          "street": "Podgórna",
+          "house_number": "6A",
+          "city": "Wielichowo",
+          "postal_code": "64-050",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.12293,
+          "longitude": 16.3575509
+        },
+        "resolves": [
+          "missing_street_address"
+        ],
+        "precision": "official_shop_point",
+        "evidence": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wielichowo",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7429",
+        "address_evidence": [
+          "https://automaty.alipaczka.pl/automaty-paczkowe/automat/dhl-wielichowo-podgorna-6a-236862",
+          "https://alternatywadlapapierosow.pl/wp-content/uploads/2025/04/VOUCHER-50-NA-DOWOLNY-PRODUKT-ZYN.pdf"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7465",
+      "status": "held",
+      "address": "Pociskowa 4B, 04-471 Warszawa",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7465",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Pociskowa+4B&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Karta sieci podaje 4B, punkt i budynek OSM oznaczono 4, a punkt 4B z Targeo wypada poza obrysem."
+    },
+    {
+      "id": "biedronka:7505",
+      "status": "held",
+      "address": "Szczecińska 5, 66-400 Gorzów Wielkopolski",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7505",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gorz%C3%B3w+Wielkopolski%2C+Szczeci%C5%84ska+5&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Wynik dla Sulęcińskiej 5 nie odpowiada Szczecińskiej 5."
+    },
+    {
+      "id": "biedronka:7582",
+      "status": "held",
+      "address": "Lubachowy 68B, 29-130 Moskorzew",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7582",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Moskorzew%2C+Lubachowy+68B&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Brak wyniku rejestrowego i oznaczonego punktu, które łączyłyby adres z tym sklepem."
+    },
+    {
+      "id": "biedronka:7594",
+      "status": "confirmed",
+      "previous_address": "Mickiewicza 9, 98-170 Widawa",
+      "reason": "Karta i katalog punktów sprzedaży potwierdzają numer 9. Punkt budynku oznaczonego w OSM jako Biedronka leży w pobliżu obu punktów rejestrowych tego adresu.",
+      "accepted": {
+        "address": {
+          "formatted": "Adama Mickiewicza 9, 98-170 Widawa",
+          "street_address": "Adama Mickiewicza 9",
+          "street": "Adama Mickiewicza",
+          "house_number": "9",
+          "city": "Widawa",
+          "postal_code": "98-170",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.4385862,
+          "longitude": 18.9492064
+        },
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "evidence": "https://www.openstreetmap.org/way/1376556273",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7594",
+        "osm_observed_at": "2026-11-23T14:25:48.471Z",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Widawa%2C+Adama+Mickiewicza+9&exact_number=1&srid=4326",
+          "https://www.zyn.com/pl/pl/storedetails?path=widawa.html"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7620",
+      "status": "confirmed",
+      "previous_address": "ul. Gen. Sikorskiego 41A, 87-300 Brodnica",
+      "reason": "Karta sieci ma skróconą nazwę ulicy. Budynek Biedronki i rejestr potwierdzają rozwinięcie oraz numer 41A.",
+      "accepted": {
+        "address": {
+          "formatted": "Generała Władysława Sikorskiego 41A, 87-300 Brodnica",
+          "street_address": "Generała Władysława Sikorskiego 41A",
+          "street": "Generała Władysława Sikorskiego",
+          "house_number": "41A",
+          "city": "Brodnica",
+          "postal_code": "87-300",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.277029,
+          "longitude": 19.436055
+        },
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "evidence": "https://www.openstreetmap.org/way/1337925390",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7620",
+        "osm_observed_at": "2026-11-23T14:25:48.471Z",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Brodnica%2C+Genera%C5%82a+W%C5%82adys%C5%82awa+Sikorskiego+41A&exact_number=1&srid=4326"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7621",
+      "status": "confirmed",
+      "previous_address": "95-070 Aleksandrów Łódzki",
+      "reason": "Pismo starostwa wiąże nowy sklep z ul. Głowackiego. Punkt automatu przy wjeździe potwierdza numer 1 i odpowiada oznaczonemu budynkowi Biedronki w OSM.",
+      "accepted": {
+        "address": {
+          "formatted": "Bartosza Głowackiego 1, 95-070 Aleksandrów Łódzki",
+          "street_address": "Bartosza Głowackiego 1",
+          "street": "Bartosza Głowackiego",
+          "house_number": "1",
+          "city": "Aleksandrów Łódzki",
+          "postal_code": "95-070",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.8275323,
+          "longitude": 19.321426
+        },
+        "resolves": [
+          "missing_street_address"
+        ],
+        "precision": "osm_shop_point",
+        "evidence": "https://www.openstreetmap.org/way/1335932338",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7621",
+        "osm_observed_at": "2026-11-23T14:25:48.471Z",
+        "address_evidence": [
+          "https://automaty.alipaczka.pl/automaty-paczkowe/automat/allegro-aleksandrow-lodzki-bartosza-glowackiego-1-al044ezg",
+          "https://powiatzgierski.bip.net.pl/?action=save&bar_id=23636&id=47315&p=document"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7802",
+      "status": "confirmed",
+      "previous_address": "księdza Biskupa Władysława Bandurskiego 90, 70-382 Szczecin",
+      "reason": "Rejestr i obiekt sklepu OSM są zgodne co do ulicy, numeru i kodu 71-685. Użyto dokładnego punktu adresowego. Karta sklepu podaje inny kod.",
+      "accepted": {
+        "address": {
+          "formatted": "Księdza Biskupa Władysława Bandurskiego 90, 71-685 Szczecin",
+          "street_address": "Księdza Biskupa Władysława Bandurskiego 90",
+          "street": "Księdza Biskupa Władysława Bandurskiego",
+          "house_number": "90",
+          "city": "Szczecin",
+          "postal_code": "71-685",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.4552910712277,
+          "longitude": 14.5598961234376
+        },
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szczecin%2C+ks.+bp.+W%C5%82adys%C5%82awa+Bandurskiego+90&exact_number=1&srid=4326",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7802",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szczecin%2C+ks.+bp.+W%C5%82adys%C5%82awa+Bandurskiego+90&exact_number=1&srid=4326",
+          "https://www.openstreetmap.org/relation/7631099"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7808",
+      "status": "confirmed",
+      "previous_address": "Wólczyńska 121, 01-919 Warszawa",
+      "reason": "Karta i ogłoszenie sieci wskazują dokładny adres, a mapa otwarcia sąsiedniego sklepu oznacza Biedronkę w tym kompleksie. Użyto punktu adresowego GUGiK, zachowując kod z karty.",
+      "accepted": {
+        "address": {
+          "formatted": "Wólczyńska 121, 01-919 Warszawa",
+          "street_address": "Wólczyńska 121",
+          "street": "Wólczyńska",
+          "house_number": "121",
+          "city": "Warszawa",
+          "postal_code": "01-919",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.2824405942077,
+          "longitude": 20.9169777562924
+        },
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+W%C3%B3lczy%C5%84ska+121&exact_number=1&srid=4326",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7808",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+W%C3%B3lczy%C5%84ska+121&exact_number=1&srid=4326",
+          "https://www.pracuj.pl/praca/sprzedawca-kasjer-i-wolczynska-121-bielany-i-nowy-sklep-warszawa-wolczynska-121%2Coferta%2C1004264286",
+          "https://media.os.fressnapf.com/cms/2025/10/251014-MZoo-Opening-WarszawaWolczynska-Flyer-A4-210x297-preview.pdf"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7856",
+      "status": "held",
+      "address": "Paproć 89, 64-300 Paproć",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7856",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Papro%C4%87%2C+Papro%C4%87+89&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Komunikat sieci potwierdza Paproć 89. Brak punktu w rejestrze dla tej kwerendy."
+    },
+    {
+      "id": "biedronka:7902",
+      "status": "held",
+      "address": "Jana Pawła II 1A, 09-304 Lubowidz",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7902",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lubowidz%2C+Jana+Paw%C5%82a+II+1A&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Komunikat otwarcia potwierdza Jana Pawła II 1A. Brak punktu w rejestrze dla tej kwerendy."
+    },
+    {
+      "id": "biedronka:7906",
+      "status": "held",
+      "address": "ul. Widokowa 2, 58-531 Łomnica",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7906",
+      "issues": [
+        "missing_geometry"
+      ],
+      "registry_queries": [
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81omnica%2C+ul.+Widokowa+2&exact_number=1&srid=4326"
+      ],
+      "osm_queries": [],
+      "reason": "Źródła dla tego adresu wskazują też POLOmarket. Nie rozstrzygnięto statusu placówki i współrzędnych."
+    },
+    {
+      "id": "biedronka:7912",
+      "status": "confirmed",
+      "reason": "Punkt dojazdu Targeo dla sklepu dubluje położenie budynku OSM z dokładnym ID placówki. Rejestr i obiekt OSM wskazują numer 32. Karta sieci i opis Targeo nadal używają numeru 26.",
+      "previous_address": "Gliwicka 26, 44-164 Kleszczów",
+      "accepted": {
+        "address": {
+          "formatted": "Gliwicka 32, 44-164 Kleszczów",
+          "street_address": "Gliwicka 32",
+          "street": "Gliwicka",
+          "house_number": "32",
+          "city": "Kleszczów",
+          "postal_code": "44-164",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.343791,
+          "longitude": 18.5335107
+        },
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "evidence": "https://www.openstreetmap.org/way/1502438511",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7912",
+        "osm_observed_at": "2026-11-23T14:27:22.797Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-gliwicka-26-kleszczow~25243401/biedronka-supermarket/adres",
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kleszcz%C3%B3w%2C+Gliwicka+32&exact_number=1&srid=4326"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7935",
+      "status": "confirmed",
+      "previous_address": "Grobelno 68A, 82-200 Malbork",
+      "reason": "Operator parku handlowego potwierdza Biedronkę i adres Grobelno 68A. Rejestr potwierdza dokładny punkt adresowy i miejscowość Grobelno.",
+      "accepted": {
+        "address": {
+          "formatted": "Grobelno 68A, 82-200",
+          "street_address": "Grobelno 68A",
+          "street": "Grobelno",
+          "house_number": "68A",
+          "city": "Grobelno",
+          "postal_code": "82-200",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 54.0373022340132,
+          "longitude": 19.0094233696308
+        },
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grobelno+68A&exact_number=1&srid=4326",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7935",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grobelno+68A&exact_number=1&srid=4326",
+          "https://aripark.pl/malbork/"
+        ]
+      }
+    }
+  ]
+}

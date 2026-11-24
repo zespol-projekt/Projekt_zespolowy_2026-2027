@@ -39,7 +39,9 @@ test('chronione API tylko do odczytu: JSON, gzip, CORS, ETag i zmiana danych', a
   assert.equal(first.status, 200); assert.equal(first.headers.get('access-control-allow-origin'), '*');
   assert.equal(first.headers.get('cache-control'), 'no-store');
   assert.equal(first.headers.get('content-encoding'), 'gzip');
-  assert.equal((await first.json()).count, 1);
+  const received = await first.json();
+  assert.equal(received.count, 1);
+  assert.equal(received.stores[0].city, 'Łódź');
   const etag = first.headers.get('etag');
   const unchanged = await fetch(base + '/v1/stores', { headers: { ...headers, 'If-None-Match': etag } });
   assert.equal(unchanged.status, 304); assert.equal(unchanged.headers.get('cache-control'), 'no-store');

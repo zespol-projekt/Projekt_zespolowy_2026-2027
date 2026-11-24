@@ -1,0 +1,914 @@
+[
+  {
+    "city": "Aleksandrów Łódzki",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Aleksandr%C3%B3w+%C5%81%C3%B3dzki&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Andrychów",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Andrych%C3%B3w&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "AND01A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/AND01A",
+        "location": {
+          "longitude": 19.33405,
+          "latitude": 49.85558
+        },
+        "address": {
+          "city": "Andrychów",
+          "province": "małopolskie",
+          "post_code": "34-120",
+          "street": "Krakowska",
+          "building_number": "83",
+          "flat_number": null
+        },
+        "description": "Przy markecie Biedronka  Biedronka"
+      }
+    ]
+  },
+  {
+    "city": "Brodnica",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Brodnica&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "BRO01A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/BRO01A",
+        "location": {
+          "longitude": 19.40132,
+          "latitude": 53.25296
+        },
+        "address": {
+          "city": "Brodnica",
+          "province": "kujawsko-pomorskie",
+          "post_code": "87-300",
+          "street": "Mazurska",
+          "building_number": "5",
+          "flat_number": null
+        },
+        "description": "Przy markecie Biedronka  Biedronka"
+      }
+    ]
+  },
+  {
+    "city": "Bytów",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Byt%C3%B3w&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Błaszki",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=B%C5%82aszki&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Ciche",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Ciche&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Dzierzgoń",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Dzierzgo%C5%84&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Gdynia",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Gdynia&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "GDY03N",
+        "url": "https://api-pl-points.easypack24.net/v1/points/GDY03N",
+        "location": {
+          "longitude": 18.43578,
+          "latitude": 54.48214
+        },
+        "address": {
+          "city": "Gdynia",
+          "province": "pomorskie",
+          "post_code": "81-578",
+          "street": "Wiczlińska",
+          "building_number": "67",
+          "flat_number": null
+        },
+        "description": "Przy markecie Biedronka  Biedronka"
+      },
+      {
+        "id": "GDY12A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/GDY12A",
+        "location": {
+          "longitude": 18.51547,
+          "latitude": 54.47051
+        },
+        "address": {
+          "city": "Gdynia",
+          "province": "pomorskie",
+          "post_code": "81-583",
+          "street": "Wzgórze Bernadowo",
+          "building_number": "304",
+          "flat_number": null
+        },
+        "description": "Przy markecie Biedronka"
+      },
+      {
+        "id": "GDY16A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/GDY16A",
+        "location": {
+          "longitude": 18.46128,
+          "latitude": 54.54559
+        },
+        "address": {
+          "city": "Gdynia",
+          "province": "pomorskie",
+          "post_code": "81-033",
+          "street": "Chylońska",
+          "building_number": "126",
+          "flat_number": null
+        },
+        "description": "Przy Dworcu PKP Chylonia i markecie Biedronka  Biedronka"
+      }
+    ]
+  },
+  {
+    "city": "Gniezno",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Gniezno&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Gorzów Wielkopolski",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Gorz%C3%B3w+Wielkopolski&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "GWI25M",
+        "url": "https://api-pl-points.easypack24.net/v1/points/GWI25M",
+        "location": {
+          "longitude": 15.19925,
+          "latitude": 52.736
+        },
+        "address": {
+          "city": "Gorzów Wielkopolski",
+          "province": "lubuskie",
+          "post_code": "66-400",
+          "street": "Londyńska",
+          "building_number": "4",
+          "flat_number": null
+        },
+        "description": "Na parkingu sklepu Biedronka"
+      },
+      {
+        "id": "GWI41M",
+        "url": "https://api-pl-points.easypack24.net/v1/points/GWI41M",
+        "location": {
+          "longitude": 15.22135,
+          "latitude": 52.73935
+        },
+        "address": {
+          "city": "Gorzów Wielkopolski",
+          "province": "lubuskie",
+          "post_code": "66-400",
+          "street": "Mościckiego",
+          "building_number": "13",
+          "flat_number": null
+        },
+        "description": "Przy sklepie Biedronka"
+      },
+      {
+        "id": "GWI56M",
+        "url": "https://api-pl-points.easypack24.net/v1/points/GWI56M",
+        "location": {
+          "longitude": 15.20998,
+          "latitude": 52.73545
+        },
+        "address": {
+          "city": "Gorzów Wielkopolski",
+          "province": "lubuskie",
+          "post_code": "66-400",
+          "street": "Matejki",
+          "building_number": "46a",
+          "flat_number": null
+        },
+        "description": "przy sklepie od strony Biedronki"
+      }
+    ]
+  },
+  {
+    "city": "Grodziczno",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Grodziczno&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Grudziądz",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Grudzi%C4%85dz&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "GRU08A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/GRU08A",
+        "location": {
+          "longitude": 18.80046,
+          "latitude": 53.50321
+        },
+        "address": {
+          "city": "Grudziądz",
+          "province": "kujawsko-pomorskie",
+          "post_code": "86-300",
+          "street": "Astrowa",
+          "building_number": "3",
+          "flat_number": null
+        },
+        "description": "Na parkingu sklepu Biedronka"
+      },
+      {
+        "id": "GRU33M",
+        "url": "https://api-pl-points.easypack24.net/v1/points/GRU33M",
+        "location": {
+          "longitude": 18.83115,
+          "latitude": 53.50569
+        },
+        "address": {
+          "city": "Grudziądz",
+          "province": "kujawsko-pomorskie",
+          "post_code": "86-300",
+          "street": "Wierzbowa",
+          "building_number": "2",
+          "flat_number": null
+        },
+        "description": "Przy sklepie Biedronka"
+      }
+    ]
+  },
+  {
+    "city": "Grąbków",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Gr%C4%85bk%C3%B3w&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Jarosław",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Jaros%C5%82aw&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "JAR02A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/JAR02A",
+        "location": {
+          "longitude": 22.70629,
+          "latitude": 50.00869
+        },
+        "address": {
+          "city": "Jarosław",
+          "province": "podkarpackie",
+          "post_code": "37-500",
+          "street": "Spółdzielcza",
+          "building_number": "3",
+          "flat_number": null
+        },
+        "description": "Przy sklepie Biedronka"
+      }
+    ]
+  },
+  {
+    "city": "Jasieniec Iłżecki",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Jasieniec+I%C5%82%C5%BCecki&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Kalisz",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Kalisz&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Kamionka",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Kamionka&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Kleszczów",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Kleszcz%C3%B3w&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Kolno",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Kolno&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Kramsk",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Kramsk&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Kruszwica",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Kruszwica&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Kryspinów",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Kryspin%C3%B3w&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Kurzętnik",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Kurz%C4%99tnik&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Lubin",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Lubin&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Lubowidz",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Lubowidz&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Lębork",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=L%C4%99bork&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "LEB02M",
+        "url": "https://api-pl-points.easypack24.net/v1/points/LEB02M",
+        "location": {
+          "longitude": 17.75232,
+          "latitude": 54.54347
+        },
+        "address": {
+          "city": "Lębork",
+          "province": "pomorskie",
+          "post_code": "84-300",
+          "street": "Przyzamcze",
+          "building_number": "1",
+          "flat_number": null
+        },
+        "description": "Przy Młynie -wejscie od parkingu Biedronki"
+      }
+    ]
+  },
+  {
+    "city": "Malbork",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Malbork&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "MAL03N",
+        "url": "https://api-pl-points.easypack24.net/v1/points/MAL03N",
+        "location": {
+          "longitude": 19.06205,
+          "latitude": 54.0364
+        },
+        "address": {
+          "city": "Malbork",
+          "province": "pomorskie",
+          "post_code": "82-200",
+          "street": "Wojska Polskiego",
+          "building_number": "54",
+          "flat_number": null
+        },
+        "description": "Przy markecie Biedronka  Biedronka"
+      }
+    ]
+  },
+  {
+    "city": "Miastkowo",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Miastkowo&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Mirsk",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Mirsk&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Modlnica",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Modlnica&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Moskorzew",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Moskorzew&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Paproć",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Papro%C4%87&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Pawłów",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Paw%C5%82%C3%B3w&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Radzionków",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Radzionk%C3%B3w&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Rzeszów",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Rzesz%C3%B3w&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "RZE05A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/RZE05A",
+        "location": {
+          "longitude": 22.01531,
+          "latitude": 50.00236
+        },
+        "address": {
+          "city": "Rzeszów",
+          "province": "podkarpackie",
+          "post_code": "35-312",
+          "street": "Strażacka",
+          "building_number": "27E",
+          "flat_number": null
+        },
+        "description": "Przy markecie Biedronka  Biedronka"
+      }
+    ]
+  },
+  {
+    "city": "Sokoły",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Soko%C5%82y&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Sosnowiec",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Sosnowiec&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Szczecin",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Szczecin&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "SZC18L",
+        "url": "https://api-pl-points.easypack24.net/v1/points/SZC18L",
+        "location": {
+          "longitude": 14.52625,
+          "latitude": 53.42868
+        },
+        "address": {
+          "city": "Szczecin",
+          "province": "zachodniopomorskie",
+          "post_code": "71-126",
+          "street": "26 Kwietnia",
+          "building_number": "91",
+          "flat_number": null
+        },
+        "description": "Przy markecie Biedronka  Biedronka"
+      },
+      {
+        "id": "SZC19N",
+        "url": "https://api-pl-points.easypack24.net/v1/points/SZC19N",
+        "location": {
+          "longitude": 14.48536,
+          "latitude": 53.42542
+        },
+        "address": {
+          "city": "Szczecin",
+          "province": "zachodniopomorskie",
+          "post_code": "71-047",
+          "street": "Ku Słońcu",
+          "building_number": "68D",
+          "flat_number": null
+        },
+        "description": "Przy sklepie Biedronka  Meble Sosna"
+      },
+      {
+        "id": "SZC21A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/SZC21A",
+        "location": {
+          "longitude": 14.56968,
+          "latitude": 53.45717
+        },
+        "address": {
+          "city": "Szczecin",
+          "province": "zachodniopomorskie",
+          "post_code": "71-688",
+          "street": "Obotrycka",
+          "building_number": "6",
+          "flat_number": null
+        },
+        "description": "Przy markecie Biedronka  Biedronka"
+      },
+      {
+        "id": "SZC24N",
+        "url": "https://api-pl-points.easypack24.net/v1/points/SZC24N",
+        "location": {
+          "longitude": 14.76439,
+          "latitude": 53.39034
+        },
+        "address": {
+          "city": "Szczecin",
+          "province": "zachodniopomorskie",
+          "post_code": "70-880",
+          "street": "Bałtycka",
+          "building_number": "27",
+          "flat_number": null
+        },
+        "description": "Przy sklepie Biedronka"
+      }
+    ]
+  },
+  {
+    "city": "Szówsko",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Sz%C3%B3wsko&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Tarnowo Podgórne",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Tarnowo+Podg%C3%B3rne&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Toruń",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Toru%C5%84&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "TOR07A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/TOR07A",
+        "location": {
+          "longitude": 18.57388,
+          "latitude": 52.98262
+        },
+        "address": {
+          "city": "Toruń",
+          "province": "kujawsko-pomorskie",
+          "post_code": "87-100",
+          "street": "Poznańska",
+          "building_number": "178",
+          "flat_number": null
+        },
+        "description": "Przy markecie Biedronka"
+      },
+      {
+        "id": "TOR11A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/TOR11A",
+        "location": {
+          "longitude": 18.61564,
+          "latitude": 53.02106
+        },
+        "address": {
+          "city": "Toruń",
+          "province": "kujawsko-pomorskie",
+          "post_code": "87-100",
+          "street": "Bażyńskich",
+          "building_number": "20",
+          "flat_number": null
+        },
+        "description": "Przy markecie Biedronka"
+      },
+      {
+        "id": "TOR12A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/TOR12A",
+        "location": {
+          "longitude": 18.57474,
+          "latitude": 53.01499
+        },
+        "address": {
+          "city": "Toruń",
+          "province": "kujawsko-pomorskie",
+          "post_code": "87-100",
+          "street": "Fałata",
+          "building_number": "21",
+          "flat_number": null
+        },
+        "description": "Przy markecie Biedronka  Biedronka"
+      }
+    ]
+  },
+  {
+    "city": "Trzebieszów Drugi",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Trzebiesz%C3%B3w+Drugi&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Trzebinia",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Trzebinia&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Tuszyn",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Tuszyn&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Udanin",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Udanin&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Warszawa",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Warszawa&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "WAW01HO",
+        "url": "https://api-pl-points.easypack24.net/v1/points/WAW01HO",
+        "location": {
+          "longitude": 21.07469,
+          "latitude": 52.16713
+        },
+        "address": {
+          "city": "Warszawa",
+          "province": "mazowieckie",
+          "post_code": "02-972",
+          "street": "Sarmacka",
+          "building_number": "4",
+          "flat_number": null
+        },
+        "description": "Przy schodach ruchomych na parking podziemny przy sklepie Biedronka PN-ND 6:00 - 22:00  Przy schodach ruchomych na parking podziemny przy sklepie Biedronka PN-ND 6:00-22:00"
+      },
+      {
+        "id": "WAW160A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/WAW160A",
+        "location": {
+          "longitude": 21.09813,
+          "latitude": 52.24967
+        },
+        "address": {
+          "city": "Warszawa",
+          "province": "mazowieckie",
+          "post_code": "04-345",
+          "street": "Wspólna Droga",
+          "building_number": "27",
+          "flat_number": null
+        },
+        "description": "Na parkingu przy sklepie Biedronka"
+      },
+      {
+        "id": "WAW161A",
+        "url": "https://api-pl-points.easypack24.net/v1/points/WAW161A",
+        "location": {
+          "longitude": 21.06356,
+          "latitude": 52.17489
+        },
+        "address": {
+          "city": "Warszawa",
+          "province": "mazowieckie",
+          "post_code": "02-957",
+          "street": "Sobieskiego",
+          "building_number": "18",
+          "flat_number": null
+        },
+        "description": "Od frontu budynku przy ul. Sobieskiego 18 (Biedronka)"
+      },
+      {
+        "id": "WAW251M",
+        "url": "https://api-pl-points.easypack24.net/v1/points/WAW251M",
+        "location": {
+          "longitude": 21.04862,
+          "latitude": 52.2117
+        },
+        "address": {
+          "city": "Warszawa",
+          "province": "mazowieckie",
+          "post_code": "00-719",
+          "street": "Zwierzyniecka",
+          "building_number": "16-18",
+          "flat_number": null
+        },
+        "description": "Przy parkingu vis a vis Biedronki"
+      },
+      {
+        "id": "WAW40M",
+        "url": "https://api-pl-points.easypack24.net/v1/points/WAW40M",
+        "location": {
+          "longitude": 20.96349,
+          "latitude": 52.33567
+        },
+        "address": {
+          "city": "Warszawa",
+          "province": "mazowieckie",
+          "post_code": "03-116",
+          "street": "Czarodzieja",
+          "building_number": "28",
+          "flat_number": null
+        },
+        "description": "Przy sklepie Biedronka"
+      },
+      {
+        "id": "WAW41M",
+        "url": "https://api-pl-points.easypack24.net/v1/points/WAW41M",
+        "location": {
+          "longitude": 21.06734,
+          "latitude": 52.31985
+        },
+        "address": {
+          "city": "Warszawa",
+          "province": "mazowieckie",
+          "post_code": "03-287",
+          "street": "Głębocka",
+          "building_number": "110",
+          "flat_number": null
+        },
+        "description": "Przy sklepie Biedronka"
+      },
+      {
+        "id": "WAW540M",
+        "url": "https://api-pl-points.easypack24.net/v1/points/WAW540M",
+        "location": {
+          "longitude": 21.10911,
+          "latitude": 52.23912
+        },
+        "address": {
+          "city": "Warszawa",
+          "province": "mazowieckie",
+          "post_code": "04-185",
+          "street": "Witolińska",
+          "building_number": "7",
+          "flat_number": null
+        },
+        "description": "Przy Biedronce"
+      },
+      {
+        "id": "WAW79N",
+        "url": "https://api-pl-points.easypack24.net/v1/points/WAW79N",
+        "location": {
+          "longitude": 21.05736,
+          "latitude": 52.26869
+        },
+        "address": {
+          "city": "Warszawa",
+          "province": "mazowieckie",
+          "post_code": "03-543",
+          "street": "Barkocińska",
+          "building_number": "6",
+          "flat_number": null
+        },
+        "description": "Przy sklepie Biedronka"
+      }
+    ]
+  },
+  {
+    "city": "Widawa",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Widawa&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Wielichowo",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Wielichowo&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Wojciechów",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Wojciech%C3%B3w&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Wąbrzeźno",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=W%C4%85brze%C5%BAno&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Władysławowo",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=W%C5%82adys%C5%82awowo&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Zabrze",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Zabrze&limit=200",
+    "status": "ok",
+    "points": [
+      {
+        "id": "ZAB28M",
+        "url": "https://api-pl-points.easypack24.net/v1/points/ZAB28M",
+        "location": {
+          "longitude": 18.78451,
+          "latitude": 50.30381
+        },
+        "address": {
+          "city": "Zabrze",
+          "province": "śląskie",
+          "post_code": "41-800",
+          "street": "Szczęść Boże",
+          "building_number": "6",
+          "flat_number": null
+        },
+        "description": "Biedronka Szczęść Boże"
+      },
+      {
+        "id": "ZAB33M",
+        "url": "https://api-pl-points.easypack24.net/v1/points/ZAB33M",
+        "location": {
+          "longitude": 18.77602,
+          "latitude": 50.31829
+        },
+        "address": {
+          "city": "Zabrze",
+          "province": "śląskie",
+          "post_code": "41-819",
+          "street": "Karola Hermisza",
+          "building_number": "16",
+          "flat_number": null
+        },
+        "description": "Biedronka Zabrze Hermisza"
+      }
+    ]
+  },
+  {
+    "city": "Złotokłos",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Z%C5%82otok%C5%82os&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Złotów",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=Z%C5%82ot%C3%B3w&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Ćmielów",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=%C4%86miel%C3%B3w&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Łazy",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=%C5%81azy&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Łańcut",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=%C5%81a%C5%84cut&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Łomnica",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=%C5%81omnica&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Śniadowo",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=%C5%9Aniadowo&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Świebodzin",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=%C5%9Awiebodzin&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Żagań",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=%C5%BBaga%C5%84&limit=200",
+    "status": "ok",
+    "points": []
+  },
+  {
+    "city": "Żyrardów",
+    "url": "https://api-pl-points.easypack24.net/v1/points?city=%C5%BByrard%C3%B3w&limit=200",
+    "status": "ok",
+    "points": []
+  }
+]

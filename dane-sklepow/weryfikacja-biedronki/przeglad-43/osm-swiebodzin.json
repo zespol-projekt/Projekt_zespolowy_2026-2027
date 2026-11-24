@@ -1,0 +1,107 @@
+{
+  "id": 1729,
+  "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=15.5299452%2C52.2523966%2C15.5323452%2C52.2539966",
+  "elements": [
+    {
+      "type": "node",
+      "id": 2420978466,
+      "lat": 52.2530756,
+      "lon": 15.5310428,
+      "timestamp": "2021-03-23T19:15:16Z"
+    },
+    {
+      "type": "node",
+      "id": 2420978468,
+      "lat": 52.2531194,
+      "lon": 15.5317435,
+      "timestamp": "2021-03-23T19:15:16Z"
+    },
+    {
+      "type": "node",
+      "id": 2420978493,
+      "lat": 52.2533421,
+      "lon": 15.531605,
+      "timestamp": "2021-03-23T19:15:16Z"
+    },
+    {
+      "type": "node",
+      "id": 2420978494,
+      "lat": 52.2532949,
+      "lon": 15.5310069,
+      "timestamp": "2021-03-23T19:15:16Z"
+    },
+    {
+      "type": "node",
+      "id": 3354587993,
+      "lat": 52.2532016,
+      "lon": 15.5316277,
+      "timestamp": "2021-03-23T19:15:16Z"
+    },
+    {
+      "type": "node",
+      "id": 3354587994,
+      "lat": 52.253208,
+      "lon": 15.5317296,
+      "timestamp": "2021-03-23T19:15:16Z"
+    },
+    {
+      "type": "node",
+      "id": 8554882864,
+      "lat": 52.2533008,
+      "lon": 15.5311013,
+      "timestamp": "2021-03-23T19:15:16Z"
+    },
+    {
+      "type": "node",
+      "id": 8554882865,
+      "lat": 52.253311,
+      "lon": 15.5310995,
+      "timestamp": "2021-03-23T19:15:16Z"
+    },
+    {
+      "type": "way",
+      "id": 233760077,
+      "timestamp": "2024-08-28T09:07:45Z",
+      "nodes": [
+        2420978494,
+        2420978466,
+        2420978468,
+        3354587994,
+        3354587993,
+        2420978493,
+        8554882865,
+        8554882864,
+        2420978494
+      ],
+      "tags": {
+        "addr:city": "Świebodzin",
+        "addr:housenumber": "20",
+        "addr:postcode": "66-200",
+        "addr:street": "Sukiennicza",
+        "brand": "Biedronka",
+        "brand:wikidata": "Q857182",
+        "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+        "building": "retail",
+        "email": "bok@biedronka.eu",
+        "name": "Biedronka",
+        "name:ru": "Бедронка",
+        "operator": "Jeronimo Martins Polska S.A.",
+        "payment:blik": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:diners_club": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:sodexo": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "payment:visa_electron": "yes",
+        "payment:v_pay": "yes",
+        "phone": "+48 22 205 33 00",
+        "shop": "supermarket",
+        "source": "EMUiA UMiG Świebodzin",
+        "website": "https://www.biedronka.pl"
+      }
+    }
+  ]
+}

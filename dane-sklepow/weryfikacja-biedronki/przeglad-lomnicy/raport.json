@@ -1,0 +1,45 @@
+{
+  "input_fingerprint": "1c696b091e24ae8265240b1603dd54f3c8802e0c08522e9f96445631cd54729f",
+  "reviewed": 1,
+  "retrieved_on": "2026-11-23",
+  "accepted": 1,
+  "totals": {
+    "confirmed": 1,
+    "held": 0
+  },
+  "decisions": [
+    {
+      "id": "biedronka:7906",
+      "status": "confirmed",
+      "previous_address": "ul. Widokowa 2, 58-531 Łomnica",
+      "reason": "Aktualna karta Biedronki i obrys oznaczony jako Biedronka w OSM są zgodne dla Widokowej 2 w Łomnicy. Aktualna lista 252 placówek POLOmarketu nie zawiera Łomnicy ani tego adresu. Oficjalny punkt InPost potwierdza wejście do sklepu pod tym adresem; starsza karta Targeo zachowuje nazwę POLOmarket.",
+      "accepted": {
+        "address": {
+          "formatted": "Widokowa 2, 58-531 Łomnica",
+          "street_address": "Widokowa 2",
+          "street": "Widokowa",
+          "house_number": "2",
+          "city": "Łomnica",
+          "postal_code": "58-531",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.8568583,
+          "longitude": 15.7751124
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/311638326",
+        "official_address": "https://www.biedronka.pl/pl/sklepy/shop,id,7906",
+        "osm_observed_at": "2026-11-23T16:53:03.395Z",
+        "address_evidence": [
+          "https://api.polo.appchance.shop/api/v1/stores/",
+          "https://api-shipx-pl.easypack24.net/v1/points/LMC01M",
+          "https://mapa.targeo.pl/polomarket-sklep-widokowa-2-lomnica~10352698/polomarket-sklep/adres"
+        ]
+      }
+    }
+  ]
+}

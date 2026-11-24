@@ -1,0 +1,3977 @@
+{
+  "reviewed_on": "2026-11-23",
+  "catalogue_fingerprint": "9f0dc95f6feaabc153350ce0bd55666eddd4fcb7aef50981c278e6ab3b128baa",
+  "company_reference": {
+    "as_of": "2026-09-30",
+    "shops_in_poland": 3907,
+    "source": "https://earningsreport.io/app/event/PT/JMT/2026-q3-975876846ab1/presentation"
+  },
+  "catalogue_biedronka": 3859,
+  "public_locator": {
+    "places": 1713,
+    "stores": 3865,
+    "known_aliases": 3,
+    "catalogue_absent_from_locator": 0,
+    "index_url": "https://www.biedronka.pl/api/shop/shippingcenter",
+    "snapshot": "lokalizator.jsonl"
+  },
+  "osm_scan": {
+    "snapshot": "2026-11-02T18:14:35Z",
+    "minimum_distance_m": 125,
+    "source_file": "../pelny-przebieg/osm-polaczone.json",
+    "remarks": "Odległość służy do wyszukania kandydatów. Bliskie sklepy mogą pozostać poza tą metodą, a dalsze punkty mogą reprezentować źle umieszczony rekord lub nieaktualny obiekt."
+  },
+  "missing_from_catalogue_official_locator": [
+    {
+      "id": "biedronka:2746",
+      "shop_number": "5296",
+      "city": "Nowe Skalmierzyce",
+      "street": "Kaliska",
+      "number": "16B",
+      "postal_code": "63-460",
+      "location": {
+        "latitude": 51.715926,
+        "longitude": 17.9979451
+      },
+      "precision": "osm_shop_point",
+      "evidence": [
+        "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=nowe-skalmierzyce%0D%0A",
+        "https://www.biedronka.pl/pl/shop,id,2746",
+        "https://www.openstreetmap.org/way/490734637"
+      ],
+      "nearest_map_store": {
+        "id": "biedronka:694",
+        "address": "Skłodowskiej Curie 12-14, 62-800 Kalisz",
+        "distance_m": 4765
+      }
+    },
+    {
+      "id": "biedronka:2750",
+      "shop_number": "5316",
+      "city": "Wojsławice",
+      "street": "Krasnystawska",
+      "number": "4a",
+      "postal_code": "22-120",
+      "location": {
+        "latitude": 50.9198373,
+        "longitude": 23.5463745
+      },
+      "precision": "osm_shop_point",
+      "evidence": [
+        "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wojslawice%0D%0A",
+        "https://www.biedronka.pl/pl/shop,id,2750",
+        "https://www.openstreetmap.org/way/509695571"
+      ],
+      "nearest_map_store": {
+        "id": "biedronka:7406",
+        "address": "Lwowska 105, 22-100 Chełm",
+        "distance_m": 22927
+      }
+    },
+    {
+      "id": "biedronka:7959",
+      "shop_number": "6632",
+      "city": "Wolanów",
+      "street": "Radomska",
+      "number": "1A",
+      "postal_code": "26-625",
+      "location": {
+        "latitude": 51.3805146344056,
+        "longitude": 20.9769225647615
+      },
+      "precision": "address_point",
+      "evidence": [
+        "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wolanow",
+        "https://www.biedronka.pl/pl/shop,id,7959",
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wolan%C3%B3w%2C+Radomska+1A&exact_number=1&srid=4326"
+      ],
+      "nearest_map_store": {
+        "id": "biedronka:3794",
+        "address": "Natalin 46B, 26-652 Natalin",
+        "distance_m": 6657
+      }
+    }
+  ],
+  "additional_candidates_with_external_support": [
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1328230032",
+      "city": "Berezka",
+      "street": "Bieszczadzka",
+      "number": "1",
+      "postal_code": "38-610",
+      "location": {
+        "latitude": 49.3836887,
+        "longitude": 22.4061529
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1614",
+        "address": "Stawowa 16, 38-600 Lesko",
+        "distance_m": 12308
+      },
+      "status": "additional_source_support",
+      "evidence": [
+        "https://wbieszczady.pl/aktualnosci/w-bieszczadach-otwarta-zostanie-nowa-biedronka-kiedy-klienci-zrobia-tam-zakupy/p54usgKn7E3i4WBxpksT",
+        "https://mapa.targeo.pl/biedronka-supermarket-berezka-28-berezka~24333794/biedronka-supermarket/adres"
+      ]
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1302193268",
+      "city": "Dragany",
+      "street": null,
+      "number": "21",
+      "postal_code": "23-145",
+      "location": {
+        "latitude": 50.9010876,
+        "longitude": 22.668081
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2865",
+        "address": "Żółkiewskiego 23, 22-335 Żółkiewka-Osada",
+        "distance_m": 11932
+      },
+      "status": "additional_source_support",
+      "evidence": [
+        "https://media.biedronka.pl/308864-biedronka-otwiera-sie-na-wiosne"
+      ]
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/551085277",
+      "city": "Kąkolewnica",
+      "street": "Lubelska",
+      "number": "54",
+      "postal_code": "21-302",
+      "location": {
+        "latitude": 51.9044631,
+        "longitude": 22.7076121
+      },
+      "nearest_map_store": {
+        "id": "biedronka:629",
+        "address": "Partyzantów 6b, 21-560 Międzyrzec Podlaski",
+        "distance_m": 9793
+      },
+      "status": "additional_source_support",
+      "evidence": [
+        "https://www.zyn.com/pl/pl/storedetails?path=k%C4%85kolewnica.html",
+        "https://www.alipaczka.pl/automaty-paczkowe/automat/allegro-kakolewnica-lubelska-54-al002lra"
+      ]
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1521409508",
+      "city": "Narol",
+      "street": "Warszawska",
+      "number": "44",
+      "postal_code": "37-610",
+      "location": {
+        "latitude": 50.3552574,
+        "longitude": 23.3299066
+      },
+      "nearest_map_store": {
+        "id": "biedronka:611",
+        "address": "Lwowska 126a, 22-600 Tomaszów Lubelski",
+        "distance_m": 10882
+      },
+      "status": "additional_source_support",
+      "evidence": [
+        "https://alipaczka.pl/automaty-paczkowe/automat/dhl-narol-warszawska-44-357483",
+        "https://cityon.pl/miejsce/biedronka-narol-warszawska-44"
+      ]
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1362329075",
+      "city": "Nowe Miasto nad Wartą",
+      "street": "Słoneczna",
+      "number": "44",
+      "postal_code": "63-040",
+      "location": {
+        "latitude": 52.0835299,
+        "longitude": 17.4039771
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3808",
+        "address": "Średzka 41, 62-322 Orzechowo",
+        "distance_m": 6381
+      },
+      "status": "additional_source_support",
+      "evidence": [
+        "https://www.zyn.com/pl/pl/storedetails?path=nowe-miasto-nad-wart%C4%85.html",
+        "https://mapa.targeo.pl/biedronka-supermarket-sloneczna-44-nowe-miasto-nad-warta~24333790/biedronka-supermarket/adres"
+      ]
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1196598771",
+      "city": "Radziłów",
+      "street": "Bargłówek",
+      "number": "2B",
+      "postal_code": "19-213",
+      "location": {
+        "latitude": 53.4115609,
+        "longitude": 22.4141359
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3537",
+        "address": "Wojska Polskiego 26, 18-420 Jedwabne",
+        "distance_m": 16016
+      },
+      "status": "additional_source_support",
+      "evidence": [
+        "https://media.biedronka.pl/250757-gorace-otwarcie-lata-w-nowych-i-przebudowanych-sklepach-sieci-biedronka",
+        "https://www.pracuj.pl/praca/osoba-do-wsparcia-pracy-sklepu-i-barglowek-2b-radzilow-pow-grajewski-barglowek-2%2Coferta%2C1003018957"
+      ]
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1186171485",
+      "city": "Rytro",
+      "street": null,
+      "number": "659",
+      "postal_code": "33-343",
+      "location": {
+        "latitude": 49.4870906,
+        "longitude": 20.6818026
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2830",
+        "address": "Zagrody 2, 33-350 Piwniczna-Zdrój",
+        "distance_m": 7423
+      },
+      "status": "additional_source_support",
+      "evidence": [
+        "https://media.biedronka.pl/250757-gorace-otwarcie-lata-w-nowych-i-przebudowanych-sklepach-sieci-biedronka"
+      ]
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1352494688",
+      "city": "Łukowa",
+      "street": null,
+      "number": "553B",
+      "postal_code": "23-412",
+      "location": {
+        "latitude": 50.3777903,
+        "longitude": 22.9461803
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3031",
+        "address": "Armii Krajowej 3, 23-460 Józefów",
+        "distance_m": 14019
+      },
+      "status": "additional_source_support",
+      "evidence": [
+        "https://automaty.alipaczka.pl/automaty-paczkowe/automat/dhl-lukowa-553b-283257",
+        "https://mapa.targeo.pl/Biedronka-Supermarket-lukowa/kategoria/2130/0894316"
+      ]
+    }
+  ],
+  "existing_pins_to_correct": [
+    {
+      "osm_url": "https://www.openstreetmap.org/way/188720942",
+      "city": "Oborniki Śląskie",
+      "street": "Wrocławska",
+      "number": "29/31",
+      "postal_code": "55-120",
+      "location": {
+        "latitude": 51.2953548,
+        "longitude": 16.9089677
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1609",
+        "address": "Wrocławska 29-31, 55-120 Oborniki Śląskie",
+        "distance_m": 6403
+      },
+      "status": "misplaced_existing_pin",
+      "existing_id": "biedronka:1609",
+      "existing_address": "Wrocławska 29-31, 55-120 Oborniki Śląskie",
+      "existing_location": {
+        "latitude": 51.2442791,
+        "longitude": 16.8664552
+      },
+      "official_address": "https://www.biedronka.pl/pl/shop,id,1609"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/388506051",
+      "city": "Krzeszyce",
+      "street": "Ogrodowa",
+      "number": "1",
+      "postal_code": "66-435",
+      "location": {
+        "latitude": 52.583471,
+        "longitude": 15.0047416
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2023",
+        "address": "Żwirowa 1, 66-460 Witnica",
+        "distance_m": 12537
+      },
+      "status": "misplaced_existing_pin",
+      "existing_id": "biedronka:7077",
+      "existing_address": "Ogrodowa 1, 66-435 Krzeszyce",
+      "existing_location": {
+        "latitude": 51.9126615,
+        "longitude": 19.1341497
+      },
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7077"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1124283657",
+      "city": "Książ Wielki",
+      "street": "Stawowa",
+      "number": "2A",
+      "postal_code": "32-210",
+      "location": {
+        "latitude": 50.4496109,
+        "longitude": 20.1437945
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7413",
+        "address": "Brzezie 14, 28-330 Wodzisław",
+        "distance_m": 9157
+      },
+      "status": "misplaced_existing_pin",
+      "existing_id": "biedronka:7079",
+      "existing_address": "Stawowa 2A, 32-210 Książ Wielki",
+      "existing_location": {
+        "latitude": 51.9587217,
+        "longitude": 19.1899054
+      },
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7079"
+    }
+  ],
+  "remaining_osm_candidates": [
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1351158344",
+      "city": "Golczewo",
+      "street": "Wincentego Witosa",
+      "number": "31G",
+      "postal_code": "72-410",
+      "location": {
+        "latitude": 53.8195697,
+        "longitude": 14.9912806
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1915",
+        "address": "3 Maja 11, 72-300 Gryfice",
+        "distance_m": 16857
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/10954549930",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 53.0175671,
+        "longitude": 20.1131699
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1527",
+        "address": "Warszawska 10, 09-300 Żuromin",
+        "distance_m": 14460
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1482118683",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.7857903,
+        "longitude": 14.7802961
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2730",
+        "address": "Wrocławska 3A, 68-300 Lubsko",
+        "distance_m": 13009
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/11727161673",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.2108807,
+        "longitude": 22.5254059
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1675",
+        "address": "Powstania Styczniowego 6, 08-200 Łosice",
+        "distance_m": 12421
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/14120166830",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.7231148,
+        "longitude": 19.4312542
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2646",
+        "address": "Myszkowska 21a, 42-310 Żarki",
+        "distance_m": 12307
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1410844516",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.0849393,
+        "longitude": 22.4518233
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3491",
+        "address": "Łukowska 111, 08-110 Siedlce",
+        "distance_m": 12255
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1447394446",
+      "city": "Gózd",
+      "street": "Szkolna",
+      "number": "2A",
+      "postal_code": "26-634",
+      "location": {
+        "latitude": 51.378121,
+        "longitude": 21.3780342
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2339",
+        "address": "Radomska 4, 26-670 Pionki",
+        "distance_m": 11094
+      },
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,3794",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/762104075",
+      "city": "Czemierniki",
+      "street": "Radzyńska",
+      "number": "81",
+      "postal_code": "21-306",
+      "location": {
+        "latitude": 51.6799291,
+        "longitude": 22.6357867
+      },
+      "nearest_map_store": {
+        "id": "biedronka:252",
+        "address": "Lubelska 3a, 21-300 Radzyń Podlaski",
+        "distance_m": 10956
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/12304209220",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.1900892,
+        "longitude": 23.1624739
+      },
+      "nearest_map_store": {
+        "id": "biedronka:631",
+        "address": "Lubelska 10, 22-170 Rejowiec Fabryczny",
+        "distance_m": 9962
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1200702065",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.9761752,
+        "longitude": 20.6561678
+      },
+      "nearest_map_store": {
+        "id": "biedronka:220",
+        "address": "Jana Nowaka Jeziorańskiego 71, 25-408 Kielce",
+        "distance_m": 9632
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1490515226",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.8608677,
+        "longitude": 20.7906852
+      },
+      "nearest_map_store": {
+        "id": "biedronka:220",
+        "address": "Jana Nowaka Jeziorańskiego 71, 25-408 Kielce",
+        "distance_m": 9215
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/11744712995",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.4045572,
+        "longitude": 20.3179712
+      },
+      "nearest_map_store": {
+        "id": "biedronka:554",
+        "address": "Mickiewicza 16, 09-450 Wyszogród",
+        "distance_m": 9086
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1349928804",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 49.6620807,
+        "longitude": 19.5660688
+      },
+      "nearest_map_store": {
+        "id": "biedronka:692",
+        "address": "Mickiewicza 21, 34-200 Sucha Beskidzka",
+        "distance_m": 9086
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13682796450",
+      "city": "Kozłów",
+      "street": null,
+      "number": "195",
+      "postal_code": "32-241",
+      "location": {
+        "latitude": 50.4831622,
+        "longitude": 20.0246708
+      },
+      "nearest_map_store": {
+        "id": "biedronka:669",
+        "address": "Majowa 9, 28-340 Sędziszów",
+        "distance_m": 8695
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1389325760",
+      "city": "Dobiesławice",
+      "street": null,
+      "number": "89",
+      "postal_code": "28-512",
+      "location": {
+        "latitude": 50.2237587,
+        "longitude": 20.5729212
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1793",
+        "address": "Kolejowa 27B, 28-500 Kazimierza Wielka",
+        "distance_m": 8526
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1367345450",
+      "city": "Charsznica",
+      "street": null,
+      "number": "23A",
+      "postal_code": "32-250",
+      "location": {
+        "latitude": 50.403649,
+        "longitude": 19.9323343
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1615",
+        "address": "Daneckiej 2, 32-200 Miechów",
+        "distance_m": 8222
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1349122888",
+      "city": "Nowy Sielec",
+      "street": null,
+      "number": "47",
+      "postal_code": "63-930",
+      "location": {
+        "latitude": 51.6439708,
+        "longitude": 17.1625579
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3471",
+        "address": "Kolejowa 23, 63-920 Pakosław",
+        "distance_m": 8172
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1501172329",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.3413834,
+        "longitude": 19.2408924
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1424",
+        "address": "Osiedle Dolnośląskie 341a, 97-400 Bełchatów",
+        "distance_m": 8119
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13323181869",
+      "city": "Baboszewo",
+      "street": "Warszawska",
+      "number": "1b",
+      "postal_code": "09-130",
+      "location": {
+        "latitude": 52.675187,
+        "longitude": 20.2676508
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7293",
+        "address": "Świętego Jana Pawła II 22, 09-100 Płońsk",
+        "distance_m": 7633
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1383296163",
+      "city": "Męcina",
+      "street": null,
+      "number": "1142",
+      "postal_code": "34-654",
+      "location": {
+        "latitude": 49.6810035,
+        "longitude": 20.5318735
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7325",
+        "address": "Stara Wieś 621, 34-600 Stara Wieś",
+        "distance_m": 7596
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13127515701",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 53.3533879,
+        "longitude": 18.3197462
+      },
+      "nearest_map_store": {
+        "id": "biedronka:210",
+        "address": "Grudziądzka 6, 86-200 Chełmno",
+        "distance_m": 6999
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1495496666",
+      "city": "Wola Zarczycka",
+      "street": null,
+      "number": "1038A",
+      "postal_code": "37-311",
+      "location": {
+        "latitude": 50.2880649,
+        "longitude": 22.2639851
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1885",
+        "address": "J. Korczaka 5, 37-310 Nowa Sarzyna",
+        "distance_m": 6861
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1449262121",
+      "city": "Kamyk",
+      "street": "Jana Brzechwy",
+      "number": "1",
+      "postal_code": "42-125",
+      "location": {
+        "latitude": 50.8976244,
+        "longitude": 19.0285483
+      },
+      "nearest_map_store": {
+        "id": "biedronka:448",
+        "address": "Różana 10, 42-100 Kłobuck",
+        "distance_m": 6308
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1534799913",
+      "city": "Mirosławice",
+      "street": "Wrocławska",
+      "number": null,
+      "postal_code": "55-050",
+      "location": {
+        "latitude": 50.9517961,
+        "longitude": 16.7787672
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1162",
+        "address": "Warszawska 4A, 55-050 Sobótka",
+        "distance_m": 6298
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13056625361",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.0161282,
+        "longitude": 21.8747591
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1050",
+        "address": "Przemysłowa 3B, 36-040 Boguchwała",
+        "distance_m": 5731
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1541088014",
+      "city": "Rudziniec",
+      "street": "Gliwicka",
+      "number": "4C",
+      "postal_code": "44-160",
+      "location": {
+        "latitude": 50.359385,
+        "longitude": 18.4081208
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3815",
+        "address": "Powstańców Śląskich 23B, 47-143 Ujazd",
+        "distance_m": 5692
+      },
+      "osm_website": "https://www.biedronka.pl/pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1362039914",
+      "city": "Bielany",
+      "street": "Kęcka",
+      "number": "67",
+      "postal_code": "32-651",
+      "location": {
+        "latitude": 49.9379279,
+        "longitude": 19.2106306
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1117",
+        "address": "I. Paderewskiego 17C, 43-330 Wilamowice",
+        "distance_m": 5278
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1411634375",
+      "city": null,
+      "street": "Sokołowice",
+      "number": "46b",
+      "postal_code": "32-130",
+      "location": {
+        "latitude": 50.1661606,
+        "longitude": 20.5928057
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3787",
+        "address": "Krakowska 136B, 32-820 Szczurowa",
+        "distance_m": 5260
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1425512724",
+      "city": "Skołyszyn",
+      "street": null,
+      "number": "550",
+      "postal_code": "38-242",
+      "location": {
+        "latitude": 49.749488,
+        "longitude": 21.332493
+      },
+      "nearest_map_store": {
+        "id": "biedronka:569",
+        "address": "Kazimierza Wielkiego 26, 38-340 Biecz",
+        "distance_m": 5244
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1544618362",
+      "city": null,
+      "street": "Kopytowa",
+      "number": "13",
+      "postal_code": "38-459",
+      "location": {
+        "latitude": 49.6667802,
+        "longitude": 21.6108456
+      },
+      "nearest_map_store": {
+        "id": "biedronka:522",
+        "address": "Sienkiewicza 19, 38-460 Jedlicze",
+        "distance_m": 5211
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1548683375",
+      "city": "Świerczyniec",
+      "street": "Kręta",
+      "number": "1B",
+      "postal_code": "43-220",
+      "location": {
+        "latitude": 50.0562502,
+        "longitude": 19.0454434
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3109",
+        "address": "Towarowa 2C, 43-100 Tychy",
+        "distance_m": 5107
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1347410587",
+      "city": "Dopiewo",
+      "street": "Poznańska",
+      "number": "40",
+      "postal_code": "62-070",
+      "location": {
+        "latitude": 52.3586244,
+        "longitude": 16.6889285
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2092",
+        "address": "Poznańska 31, 62-069 Dąbrówka",
+        "distance_m": 4564
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1385720319",
+      "city": "Bogucice Drugie",
+      "street": "Szosa",
+      "number": "14a",
+      "postal_code": null,
+      "location": {
+        "latitude": 50.4898765,
+        "longitude": 20.5823934
+      },
+      "nearest_map_store": {
+        "id": "biedronka:789",
+        "address": "Batalionów Chłopskich 52, 28-400 Pińczów",
+        "distance_m": 4562
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1161142859",
+      "city": "Dywity",
+      "street": "Jeżynowa",
+      "number": "1B",
+      "postal_code": "11-001",
+      "location": {
+        "latitude": 53.834296,
+        "longitude": 20.4747805
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2849",
+        "address": "Hozjusza 11, 11-041 Olsztyn",
+        "distance_m": 4493
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7030",
+          "address": "Jeżynowa 1B, 11-001 Dywity"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1416155342",
+      "city": "Świeszyno",
+      "street": null,
+      "number": "2G",
+      "postal_code": "76-024",
+      "location": {
+        "latitude": 54.1249545,
+        "longitude": 16.1697995
+      },
+      "nearest_map_store": {
+        "id": "biedronka:6975",
+        "address": "Połczyńska 146, 75-950 Koszalin",
+        "distance_m": 4493
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1433432672",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.3429574,
+        "longitude": 22.9043625
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1587",
+        "address": "Szkolna 8, 21-010 Łęczna",
+        "distance_m": 4331
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/12335035578",
+      "city": "Studzionka",
+      "street": "Wodzisławska",
+      "number": "35",
+      "postal_code": "43-245",
+      "location": {
+        "latitude": 49.9627772,
+        "longitude": 18.7691004
+      },
+      "nearest_map_store": {
+        "id": "biedronka:475",
+        "address": "Prosta 10, 43-250 Pawłowice",
+        "distance_m": 4272
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1385328262",
+      "city": "Jakubowice Konińskie-Kolonia",
+      "street": "Nad Ciemięgą",
+      "number": "1",
+      "postal_code": "21-003",
+      "location": {
+        "latitude": 51.315751,
+        "longitude": 22.5364607
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3629",
+        "address": "Aleja Spółdzielczości Pracy 88, 20-147 Lublin",
+        "distance_m": 4267
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1320937686",
+      "city": "Liszki",
+      "street": "Oświęcimska",
+      "number": "19",
+      "postal_code": "32-060",
+      "location": {
+        "latitude": 50.0355855,
+        "longitude": 19.748978
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1040",
+        "address": "Kryspinów 428, 32-060 Kryspinów",
+        "distance_m": 3184
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/470016872",
+      "city": "Żychlin",
+      "street": "Osiedle Słoneczne",
+      "number": null,
+      "postal_code": "62-571",
+      "location": {
+        "latitude": 52.1780337,
+        "longitude": 18.2715804
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1917",
+        "address": "Piłsudskiego 2, 62-504 Konin",
+        "distance_m": 3110
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1373145941",
+      "city": "Nowy Konik",
+      "street": "Terespolska",
+      "number": "4A",
+      "postal_code": "05-074",
+      "location": {
+        "latitude": 52.2163115,
+        "longitude": 21.3150435
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2378",
+        "address": "Z. Nałkowskiej 2, 05-071 Sulejówek",
+        "distance_m": 2955
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/11476443297",
+      "city": "Bytom",
+      "street": "Witolda Gombrowicza",
+      "number": "105",
+      "postal_code": "41-936",
+      "location": {
+        "latitude": 50.4035923,
+        "longitude": 18.8109317
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2239",
+        "address": "Jordana 61, 41-813 Zabrze",
+        "distance_m": 2948
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1354867084",
+      "city": "Tarnobrzeg",
+      "street": "Henryka Sienkiewicza",
+      "number": "228",
+      "postal_code": "39-400",
+      "location": {
+        "latitude": 50.5642756,
+        "longitude": 21.7297869
+      },
+      "nearest_map_store": {
+        "id": "biedronka:792",
+        "address": "Kwiatkowskiego 1, 39-400 Tarnobrzeg",
+        "distance_m": 2894
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/392330849",
+      "city": "Redzikowo",
+      "street": "Lotnicza",
+      "number": "1",
+      "postal_code": "76-200",
+      "location": {
+        "latitude": 54.4700761,
+        "longitude": 17.100599
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1816",
+        "address": "Szafranka 2, 76-200 Słupsk",
+        "distance_m": 2893
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/relation/19409543",
+      "city": "Koszyce Małe",
+      "street": "Główna",
+      "number": "48",
+      "postal_code": "33-111",
+      "location": {
+        "latitude": 49.963567,
+        "longitude": 20.9430221
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3691",
+        "address": "Krakowska 43, 33-113 Zbylitowska Góra",
+        "distance_m": 2839
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1387346686",
+      "city": "Paterek",
+      "street": "Kcyńska",
+      "number": "13A",
+      "postal_code": "89-100",
+      "location": {
+        "latitude": 53.1132479,
+        "longitude": 17.5991087
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1596",
+        "address": "Gimnazjalna 4, 89-100 Nakło nad Notecią",
+        "distance_m": 2774
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1376399662",
+      "city": "Turkowice",
+      "street": null,
+      "number": "138A",
+      "postal_code": "62-700",
+      "location": {
+        "latitude": 51.9869131,
+        "longitude": 18.5098855
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1606",
+        "address": "Nowa 22, 62-700 Turek",
+        "distance_m": 2744
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13657021816",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.0752958,
+        "longitude": 16.6683143
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1580",
+        "address": "Poznańska 4, 64-000 Kiełczewo",
+        "distance_m": 2519
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1358979039",
+      "city": "Wodzisław Śląski",
+      "street": "Czyżowicka",
+      "number": "130",
+      "postal_code": "44-300",
+      "location": {
+        "latitude": 49.9871016,
+        "longitude": 18.4270922
+      },
+      "nearest_map_store": {
+        "id": "biedronka:447",
+        "address": "Bogumińska 13, 44-300 Wodzisław Śląski",
+        "distance_m": 2494
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/12889631701",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.7221822,
+        "longitude": 19.5379894
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2393",
+        "address": "P. Gojawiczyńskiej 20, 93-253 Łódź",
+        "distance_m": 2413
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1228592626",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.6820765,
+        "longitude": 17.7578388
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7382",
+        "address": "Wiejska 2, 63-440 Radłów",
+        "distance_m": 2329
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/239297998",
+      "city": "Strzyżewice",
+      "street": "Lotnicza",
+      "number": "2",
+      "postal_code": "64-100",
+      "location": {
+        "latitude": 51.831786,
+        "longitude": 16.5366284
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1142",
+        "address": "Kasprowicza 4, 64-100 Leszno",
+        "distance_m": 2250
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7082",
+          "address": "Lotnicza 2, 64-100 Strzyżewice"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1135844519",
+      "city": "Skawina",
+      "street": "Radziszowska",
+      "number": "24",
+      "postal_code": "32-050",
+      "location": {
+        "latitude": 49.9652747,
+        "longitude": 19.8175867
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1689",
+        "address": "Przemysłowa 6, 32-050 Skawina",
+        "distance_m": 2223
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/443343822",
+      "city": "Mirzec",
+      "street": "Mariana Langiewicza",
+      "number": "4",
+      "postal_code": "27-220",
+      "location": {
+        "latitude": 51.1343074,
+        "longitude": 21.0563629
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2162",
+        "address": "Mirzec 3b, 27-220 Mirzec",
+        "distance_m": 2120
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/12224141477",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 54.3612153,
+        "longitude": 18.2607423
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7295",
+        "address": "Kartuska 46, 83-304 Przodkowo",
+        "distance_m": 2022
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1120860714",
+      "city": "Grębocin",
+      "street": "Nad Strugą",
+      "number": "2",
+      "postal_code": "87-162",
+      "location": {
+        "latitude": 53.0603421,
+        "longitude": 18.7229768
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2755",
+        "address": "Olsztyńska 117, 87-100 Toruń",
+        "distance_m": 1994
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7041",
+          "address": "Nad Strugą 2, 87-162 Grębocin"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1345110184",
+      "city": "Zawiercie",
+      "street": "Łośnicka",
+      "number": "49",
+      "postal_code": "42-400",
+      "location": {
+        "latitude": 50.4977208,
+        "longitude": 19.4588507
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1339",
+        "address": "Bohaterów Westerplatte 33, 42-400 Zawiercie",
+        "distance_m": 1993
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1341631659",
+      "city": "Luboń",
+      "street": "Jana III Sobieskiego",
+      "number": "76",
+      "postal_code": "62-030",
+      "location": {
+        "latitude": 52.3316716,
+        "longitude": 16.8754953
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2984",
+        "address": "Poznańska 37, 62-051 Łęczyca",
+        "distance_m": 1904
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/9153826956",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.8811978,
+        "longitude": 20.6586774
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7280",
+        "address": "Ciechanowska 65, 06-406 Władysławowo",
+        "distance_m": 1835
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1348479708",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.48126,
+        "longitude": 21.4665589
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3034",
+        "address": "Niepodległości 4a, 26-670 Pionki",
+        "distance_m": 1776
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/101201935",
+      "city": "Wrocław",
+      "street": "Miłoszycka",
+      "number": "50",
+      "postal_code": "51-502",
+      "location": {
+        "latitude": 51.117827,
+        "longitude": 17.123302
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1164",
+        "address": "Marcellego Bacciarellego 56, 51-649 Wrocław",
+        "distance_m": 1766
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/11204977442",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.8490894,
+        "longitude": 17.7437097
+      },
+      "nearest_map_store": {
+        "id": "biedronka:445",
+        "address": "Szpitalna 2, 88-400 Żnin",
+        "distance_m": 1673
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1433032291",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.6042062,
+        "longitude": 16.5065635
+      },
+      "nearest_map_store": {
+        "id": "biedronka:704",
+        "address": "Marsz. J. Piłsudskiego 33a, 57-400 Nowa Ruda",
+        "distance_m": 1627
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1367335848",
+      "city": "Koźminek",
+      "street": "Słowiki Pierwsze",
+      "number": "3H",
+      "postal_code": "62-840",
+      "location": {
+        "latitude": 51.792453,
+        "longitude": 18.3331197
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7072",
+        "address": "Słowiki Pierwsze 3H, 62-840 Koźminek",
+        "distance_m": 1582
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7072",
+          "address": "Słowiki Pierwsze 3H, 62-840 Koźminek"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1339220960",
+      "city": "Warszawa",
+      "street": "Kadetów",
+      "number": "18",
+      "postal_code": "03-987",
+      "location": {
+        "latitude": 52.2126009,
+        "longitude": 21.1106723
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2561",
+        "address": "Brygady Pościgowej 2a, 03-984 Warszawa",
+        "distance_m": 1505
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1446755682",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.0862876,
+        "longitude": 17.6959199
+      },
+      "nearest_map_store": {
+        "id": "biedronka:947",
+        "address": "Oławska 30a, 46-100 Namysłów",
+        "distance_m": 1501
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1035353585",
+      "city": "Milejów",
+      "street": null,
+      "number": "123A",
+      "postal_code": "21-020",
+      "location": {
+        "latitude": 51.2308914,
+        "longitude": 22.923688
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3734",
+        "address": "Partyzancka 123A, 21-020 Milejów",
+        "distance_m": 1476
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1249913224",
+      "city": "Święciechowa",
+      "street": "Leszczyńska",
+      "number": "36A",
+      "postal_code": "64-115",
+      "location": {
+        "latitude": 51.8506444,
+        "longitude": 16.5220313
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7417",
+        "address": "Leszczyńska 1, 64-115 Święciechowa",
+        "distance_m": 1463
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1117618673",
+      "city": "Nysa",
+      "street": "Zygmunta Krasińskiego",
+      "number": "29",
+      "postal_code": "48-303",
+      "location": {
+        "latitude": 50.4513912,
+        "longitude": 17.3422996
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1568",
+        "address": "B. Prusa 9A, 48-303 Nysa",
+        "distance_m": 1437
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7095",
+          "address": "Krasińskiego 29, 48-303 Nysa"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1368108141",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.8917704,
+        "longitude": 20.6178065
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2053",
+        "address": "17 Stycznia 64, 06-400 Ciechanów",
+        "distance_m": 1427
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1264025842",
+      "city": "Parkoczewo",
+      "street": null,
+      "number": "13",
+      "postal_code": null,
+      "location": {
+        "latitude": 52.492669,
+        "longitude": 20.04486
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7478",
+        "address": "Parkoczewo 13, 09-470 Bodzanów",
+        "distance_m": 1387
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1236411550",
+      "city": "Gościeradów-Folwark",
+      "street": null,
+      "number": "36",
+      "postal_code": "23-275",
+      "location": {
+        "latitude": 50.8637518,
+        "longitude": 21.9851715
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7327",
+        "address": "Gościeradów-Folwark 36, 23-275 Gościeradów",
+        "distance_m": 1379
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1354747855",
+      "city": "Sochaczew",
+      "street": "Warszawska",
+      "number": "122B",
+      "postal_code": "96-500",
+      "location": {
+        "latitude": 52.2257631,
+        "longitude": 20.2635489
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1825",
+        "address": "600-lecia 40, 96-500 Sochaczew",
+        "distance_m": 1378
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1157194550",
+      "city": "Mierzwin",
+      "street": null,
+      "number": "2B",
+      "postal_code": "88-180",
+      "location": {
+        "latitude": 52.8912772,
+        "longitude": 18.1535682
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7033",
+        "address": "Szosa Bydgoska 1, 88-180 Złotniki Kujawskie",
+        "distance_m": 1358
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/608660639",
+      "city": "Mińsk Mazowiecki",
+      "street": "Przemysłowa",
+      "number": "12",
+      "postal_code": "05-300",
+      "location": {
+        "latitude": 52.1874375,
+        "longitude": 21.5835045
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1565",
+        "address": "Dąbrówki 30, 05-300 Mińsk Mazowiecki",
+        "distance_m": 1345
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1352922677",
+      "city": "Bydgoszcz",
+      "street": "Wojska Polskiego",
+      "number": "50",
+      "postal_code": "85-825",
+      "location": {
+        "latitude": 53.1008222,
+        "longitude": 18.0642237
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1411",
+        "address": "Kąkolowa 1, 85-811 Bydgoszcz",
+        "distance_m": 1342
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1137062659",
+      "city": "Szczecinek",
+      "street": "Ludwika Waryńskiego",
+      "number": "2C",
+      "postal_code": "78-400",
+      "location": {
+        "latitude": 53.6865862,
+        "longitude": 16.7065297
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1577",
+        "address": "Przemysłowa 4, 78-400 Szczecinek",
+        "distance_m": 1327
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1502209810",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.2005401,
+        "longitude": 20.3025151
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1864",
+        "address": "Kolejowa 13, 32-100 Proszowice",
+        "distance_m": 1315
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1331726919",
+      "city": "Przasnysz",
+      "street": "Żwirki i Wigury",
+      "number": "19",
+      "postal_code": "06-300",
+      "location": {
+        "latitude": 53.0199564,
+        "longitude": 20.9065046
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1408",
+        "address": "Sosnowa 7, 06-300 Przasnysz",
+        "distance_m": 1285
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13266852004",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 49.7519283,
+        "longitude": 18.6608117
+      },
+      "nearest_map_store": {
+        "id": "biedronka:681",
+        "address": "Kossak Szatkowskiej 2, 43-400 Cieszyn",
+        "distance_m": 1281
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/14316219120",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.8414843,
+        "longitude": 19.962763
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2980",
+        "address": "Partyzantów 9, 29-100 Włoszczowa",
+        "distance_m": 1281
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13367121149",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.2766733,
+        "longitude": 22.5256259
+      },
+      "nearest_map_store": {
+        "id": "biedronka:869",
+        "address": "Sławinkowska 49b, 20-810 Lublin",
+        "distance_m": 1243
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1377406044",
+      "city": "Dobre Miasto",
+      "street": "Jeziorańska",
+      "number": "27",
+      "postal_code": "11-040",
+      "location": {
+        "latitude": 53.9845836,
+        "longitude": 20.4124636
+      },
+      "nearest_map_store": {
+        "id": "biedronka:430",
+        "address": "Wojska Polskiego 20e 20f, 11-040 Dobre Miasto",
+        "distance_m": 1218
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1551290884",
+      "city": "Gliwice",
+      "street": "Józefa Uszczyka",
+      "number": "2B",
+      "postal_code": "44-102",
+      "location": {
+        "latitude": 50.3113835,
+        "longitude": 18.6681795
+      },
+      "nearest_map_store": {
+        "id": "biedronka:577",
+        "address": "O. Kolberga 41, 44-102 Gliwice",
+        "distance_m": 1201
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/283131672",
+      "city": "Gdynia",
+      "street": "2 Morskiego Pułku Strzelców",
+      "number": "2",
+      "postal_code": null,
+      "location": {
+        "latitude": 54.4916245,
+        "longitude": 18.5086655
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2846",
+        "address": "Strażacka 2, 81-616 Gdynia",
+        "distance_m": 1146
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1205877104",
+      "city": "Dźwierzuty",
+      "street": "Szczycieńska",
+      "number": "32A",
+      "postal_code": "12-120",
+      "location": {
+        "latitude": 53.6943025,
+        "longitude": 20.9615102
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7007",
+        "address": "Szczycieńska 32a, 12-120 Dźwierzuty",
+        "distance_m": 1146
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7007",
+          "address": "Szczycieńska 32a, 12-120 Dźwierzuty"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1418862202",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.0188127,
+        "longitude": 18.4788109
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1552",
+        "address": "Marklowicka 38, 44-300 Wodzisław Śląski",
+        "distance_m": 1143
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1336434608",
+      "city": "Rzeszów",
+      "street": "Przemysłowa",
+      "number": "26",
+      "postal_code": "35-105",
+      "location": {
+        "latitude": 50.0166414,
+        "longitude": 21.9606236
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1137",
+        "address": "Podkarpacka 8A, 35-082 Rzeszów",
+        "distance_m": 1139
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1323697034",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.4365375,
+        "longitude": 16.7800149
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2819",
+        "address": "Rynkowa 73b/U1, 62-081 Przeźmierowo",
+        "distance_m": 1138
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1454636280",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.0448908,
+        "longitude": 16.2114704
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1653",
+        "address": "Piłsudskiego 7-8, 59-400 Jawor",
+        "distance_m": 1115
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/12393265592",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 49.8203568,
+        "longitude": 20.4826811
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7388",
+        "address": "Rajbrot 53, 32-725 Rajbrot",
+        "distance_m": 1101
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/10229467842",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.9100382,
+        "longitude": 21.6003246
+      },
+      "nearest_map_store": {
+        "id": "biedronka:221",
+        "address": "J. Korczaka 7, 08-400 Garwolin",
+        "distance_m": 1099
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/443950838",
+      "city": "Katowice",
+      "street": "Armii Krajowej",
+      "number": "188",
+      "postal_code": "40-750",
+      "location": {
+        "latitude": 50.1997345,
+        "longitude": 18.9753346
+      },
+      "nearest_map_store": {
+        "id": "biedronka:140",
+        "address": "Radockiego 150, 40-645 Katowice",
+        "distance_m": 1097
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1249195053",
+      "city": "Świecie",
+      "street": "Jana III Sobieskiego",
+      "number": "1",
+      "postal_code": "86-105",
+      "location": {
+        "latitude": 53.4116583,
+        "longitude": 18.422855
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3390",
+        "address": "Armii Krajowej 5a, 86-100 Świecie",
+        "distance_m": 1089
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7053",
+          "address": "Jana III Sobieskiego 1, 86-100 Świecie"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/14216332716",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 54.5715601,
+        "longitude": 18.4986448
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1542",
+        "address": "W. Sikorskiego 2A, 81-175 Gdynia",
+        "distance_m": 1069
+      },
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,963",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1353983423",
+      "city": "Rzeszów",
+      "street": "Strażacka",
+      "number": "10",
+      "postal_code": "35-312",
+      "location": {
+        "latitude": 50.0079416,
+        "longitude": 22.0036146
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2613",
+        "address": "Strażacka 27e, 35-312 Rzeszów",
+        "distance_m": 1055
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1351764194",
+      "city": "Syców",
+      "street": "Kolejowa",
+      "number": "20",
+      "postal_code": "56-500",
+      "location": {
+        "latitude": 51.2989972,
+        "longitude": 17.7136858
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7448",
+        "address": "Kolejowa 30, 56-500 Syców",
+        "distance_m": 1010
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1452586558",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.7340683,
+        "longitude": 19.4024004
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3030",
+        "address": "Maratońska 93, 94-007 Łódź",
+        "distance_m": 946
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13449324338",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.7950576,
+        "longitude": 15.7172832
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1597",
+        "address": "Głowackiego 1B, 67-100 Nowa Sól",
+        "distance_m": 944
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13419138277",
+      "city": "Kołobrzeg",
+      "street": "Portowa",
+      "number": "45",
+      "postal_code": "78-100",
+      "location": {
+        "latitude": 54.1836262,
+        "longitude": 15.5553251
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1360",
+        "address": "Wojska Polskiego 15, 78-100 Kołobrzeg",
+        "distance_m": 935
+      },
+      "osm_website": "https://www.biedronka.pl/pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/3217001649",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 54.1598588,
+        "longitude": 15.5650633
+      },
+      "nearest_map_store": {
+        "id": "biedronka:748",
+        "address": "Trzebiatowska 29, 78-100 Kołobrzeg",
+        "distance_m": 914
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1135166814",
+      "city": "Międzychód",
+      "street": "św. Jana Pawła II",
+      "number": "40A",
+      "postal_code": "64-400",
+      "location": {
+        "latitude": 52.5993346,
+        "longitude": 15.908227
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1826",
+        "address": "17 Stycznia 143, 64-400 Międzychód",
+        "distance_m": 895
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7086",
+          "address": "Św. Jana Pawła II 40A, 64-400 Międzychód"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/10543100146",
+      "city": "Miękinia",
+      "street": "Wrocławska",
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.1797324,
+        "longitude": 16.7442304
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7080",
+        "address": "Wrocławska 1, 55-330 Miękinia",
+        "distance_m": 874
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/722949574",
+      "city": "Swarzędz",
+      "street": "Dworcowa",
+      "number": "7",
+      "postal_code": "62-020",
+      "location": {
+        "latitude": 52.4057986,
+        "longitude": 17.0744008
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1473",
+        "address": "Cieszkowskiego 5 7, 62-020 Swarzędz",
+        "distance_m": 872
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1450698733",
+      "city": "Szamotuły",
+      "street": "Bolesława Chrobrego",
+      "number": "1",
+      "postal_code": "64-500",
+      "location": {
+        "latitude": 52.6000501,
+        "longitude": 16.5897604
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1431",
+        "address": "3-Maja 1, 64-500 Szamotuły",
+        "distance_m": 846
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1125496235",
+      "city": "Warka",
+      "street": "Puławska",
+      "number": "30",
+      "postal_code": "05-660",
+      "location": {
+        "latitude": 51.791915,
+        "longitude": 21.1852347
+      },
+      "nearest_map_store": {
+        "id": "biedronka:215",
+        "address": "Warszawska 19, 05-660 Warka",
+        "distance_m": 840
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7018",
+          "address": "Puławska 30, 05-660 Warka"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/892409144",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.0857263,
+        "longitude": 16.1236168
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7501",
+        "address": "Stary Widzim 254B, 64-200 Stary Widzim",
+        "distance_m": 833
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1558533032",
+      "city": "Jarocin",
+      "street": "Księdza Ignacego Niedźwiedzińskiego",
+      "number": "11",
+      "postal_code": "63-200",
+      "location": {
+        "latitude": 51.969003,
+        "longitude": 17.5142301
+      },
+      "nearest_map_store": {
+        "id": "biedronka:376",
+        "address": "Śródmiejska 17A, 63-200 Jarocin",
+        "distance_m": 829
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1017534950",
+      "city": "Ustronie Morskie",
+      "street": "Kolejowa",
+      "number": "77",
+      "postal_code": "78-111",
+      "location": {
+        "latitude": 54.2033737,
+        "longitude": 15.7498378
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3816",
+        "address": "Kolejowa 1, 78-111 Ustronie Morskie",
+        "distance_m": 828
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1548211320",
+      "city": "Kożuchów",
+      "street": "Parkowa",
+      "number": "11",
+      "postal_code": "67-120",
+      "location": {
+        "latitude": 51.7468105,
+        "longitude": 15.5864375
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1628",
+        "address": "Nowosolna 47, 67-120 Kożuchów",
+        "distance_m": 789
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/111841783",
+      "city": "Kórnik",
+      "street": "Osiedle Ignacego Krasickiego",
+      "number": "1",
+      "postal_code": "62-035",
+      "location": {
+        "latitude": 52.2555684,
+        "longitude": 17.0904895
+      },
+      "nearest_map_store": {
+        "id": "biedronka:811",
+        "address": "Woźniaka 1, 62-035 Kórnik",
+        "distance_m": 786
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1482959439",
+      "city": "Bielsko-Biała",
+      "street": "Katowicka",
+      "number": "51",
+      "postal_code": "43-300",
+      "location": {
+        "latitude": 49.855027,
+        "longitude": 19.034511
+      },
+      "nearest_map_store": {
+        "id": "biedronka:171",
+        "address": "Komorowicka 336b, 43-346 Bielsko-Biała",
+        "distance_m": 785
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/445567859",
+      "city": "Lubartów",
+      "street": "Generała Franciszka Kleeberga",
+      "number": "28",
+      "postal_code": "21-100",
+      "location": {
+        "latitude": 51.478034,
+        "longitude": 22.5946856
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2011",
+        "address": "Gen. Kleberga 2, 21-100 Lubartów",
+        "distance_m": 773
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/665431611",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 49.9690961,
+        "longitude": 21.1204246
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7627",
+        "address": "Szynwałd 426D, 33-158 Szynwałd",
+        "distance_m": 770
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13764752216",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.9097722,
+        "longitude": 14.9699707
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2107",
+        "address": "Matejki 64, 59-920 Bogatynia",
+        "distance_m": 766
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/12323674453",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.9449489,
+        "longitude": 20.2535788
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7374",
+        "address": "Konecka 9B, 26-070 Łopuszno",
+        "distance_m": 761
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/168426876",
+      "city": "Błonie",
+      "street": "Powstańców",
+      "number": "18A",
+      "postal_code": "05-870",
+      "location": {
+        "latitude": 52.198477,
+        "longitude": 20.62326
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3045",
+        "address": "Romualda Traugutta 14, 05-870 Błonie",
+        "distance_m": 744
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/333470454",
+      "city": "Sławoborze",
+      "street": "Świdwińska",
+      "number": "9",
+      "postal_code": "78-314",
+      "location": {
+        "latitude": 53.8901028,
+        "longitude": 15.7140759
+      },
+      "nearest_map_store": {
+        "id": "biedronka:818",
+        "address": "Świdwińska 31, 78-314 Sławoborze",
+        "distance_m": 742
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1213674180",
+      "city": "Bystrzyca",
+      "street": null,
+      "number": "262",
+      "postal_code": "21-411",
+      "location": {
+        "latitude": 51.7770797,
+        "longitude": 22.3143452
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7349",
+        "address": "Bystrzyca 262, 21-411 Wojcieszków",
+        "distance_m": 735
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1378900292",
+      "city": "Gliwice",
+      "street": "Łabędzka",
+      "number": "26",
+      "postal_code": "44-121",
+      "location": {
+        "latitude": 50.3108736,
+        "longitude": 18.6276414
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1314",
+        "address": "Gomułki 1, 44-121 Gliwice",
+        "distance_m": 716
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/431568776",
+      "city": "Myślibórz",
+      "street": "Mieczysława Niedziałkowskiego",
+      "number": null,
+      "postal_code": "74-300",
+      "location": {
+        "latitude": 52.9234393,
+        "longitude": 14.8650994
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3622",
+        "address": "Królewiecka 1B, 74-300 Myślibórz",
+        "distance_m": 704
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1387071437",
+      "city": "Lublin",
+      "street": "Królowej Jadwigi",
+      "number": "12",
+      "postal_code": "20-282",
+      "location": {
+        "latitude": 51.2189971,
+        "longitude": 22.6397496
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3768",
+        "address": "Piasecka 8, 21-040 Świdnik",
+        "distance_m": 686
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1390091583",
+      "city": "Kętrzyn",
+      "street": "Budowlana",
+      "number": "13B",
+      "postal_code": "11-400",
+      "location": {
+        "latitude": 54.0787836,
+        "longitude": 21.3901637
+      },
+      "nearest_map_store": {
+        "id": "biedronka:323",
+        "address": "Pl. Słowiański 3, 11-400 Kętrzyn",
+        "distance_m": 676
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1126430327",
+      "city": "Krośnice",
+      "street": "Szkolna",
+      "number": "46",
+      "postal_code": "56-320",
+      "location": {
+        "latitude": 51.470172,
+        "longitude": 17.3627651
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7073",
+        "address": "Szkolna 1, 56-320 Krośnice",
+        "distance_m": 672
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1422228998",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.6271218,
+        "longitude": 18.1634222
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1525",
+        "address": "Św. Ducha 26A, 88-320 Strzelno",
+        "distance_m": 644
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/299542510",
+      "city": "Dębica",
+      "street": "Józefa Piłsudskiego",
+      "number": "28",
+      "postal_code": "39-200",
+      "location": {
+        "latitude": 50.0619445,
+        "longitude": 21.3991268
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2700",
+        "address": "Jana Pawła II 56, 39-200 Dębica",
+        "distance_m": 625
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1535486483",
+      "city": "Darłowo",
+      "street": null,
+      "number": null,
+      "postal_code": "76-150",
+      "location": {
+        "latitude": 54.4282975,
+        "longitude": 16.4138559
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1701",
+        "address": "Powstańców Warszawskich 1-3, 76-150 Darłowo",
+        "distance_m": 617
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1376399511",
+      "city": null,
+      "street": "Lęborska",
+      "number": "29C",
+      "postal_code": null,
+      "location": {
+        "latitude": 54.3511237,
+        "longitude": 17.887336
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7684",
+        "address": "Lęborska 4a, 83-340 Sierakowice",
+        "distance_m": 613
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1453182701",
+      "city": "Tomaszów Lubelski",
+      "street": "Józefa Piłsudskiego",
+      "number": "18",
+      "postal_code": "22-600",
+      "location": {
+        "latitude": 50.4549511,
+        "longitude": 23.4145746
+      },
+      "nearest_map_store": {
+        "id": "biedronka:280",
+        "address": "Jana Pawła II 21, 22-600 Tomaszów Lubelski",
+        "distance_m": 598
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/12696403812",
+      "city": "Bytów",
+      "street": "Generała Juzefa Wybickiego",
+      "number": "1",
+      "postal_code": "77-100",
+      "location": {
+        "latitude": 54.1871094,
+        "longitude": 17.4966271
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7173",
+        "address": "Generała Józefa Wybickiego 1, 77-100 Bytów",
+        "distance_m": 589
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1419606887",
+      "city": "Zator",
+      "street": "Aleja 1 Maja",
+      "number": "6",
+      "postal_code": "32-640",
+      "location": {
+        "latitude": 49.9975725,
+        "longitude": 19.423463
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2051",
+        "address": "Juliusza Słowackiego 1, 32-640 Zator",
+        "distance_m": 574
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/10138307997",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 54.1951573,
+        "longitude": 18.3186903
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3083",
+        "address": "Gdańska 22, 83-047 Przywidz",
+        "distance_m": 560
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/147714764",
+      "city": "Wejherowo",
+      "street": null,
+      "number": "46",
+      "postal_code": "84-200",
+      "location": {
+        "latitude": 54.6053199,
+        "longitude": 18.2520362
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1374",
+        "address": "Obrońców Helu 3, 84-200 Wejherowo",
+        "distance_m": 466
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1338953191",
+      "city": "Wymysły",
+      "street": null,
+      "number": "5",
+      "postal_code": "06-212",
+      "location": {
+        "latitude": 53.0344137,
+        "longitude": 21.1750171
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7534",
+        "address": "Wymysły 5, 06-212 Krasnosielc",
+        "distance_m": 459
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/11701895235",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.2191982,
+        "longitude": 22.7186911
+      },
+      "nearest_map_store": {
+        "id": "biedronka:205",
+        "address": "Kosynierów 2, 21-040 Świdnik",
+        "distance_m": 445
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1385046591",
+      "city": "Zielona Wieś",
+      "street": null,
+      "number": "15D",
+      "postal_code": "83-404",
+      "location": {
+        "latitude": 54.1297685,
+        "longitude": 18.1901636
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7721",
+        "address": "Zielona Wieś 15D, 83-404 Zielona Wieś",
+        "distance_m": 444
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1415612932",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 53.2425251,
+        "longitude": 21.8004146
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7514",
+        "address": "Łomżyńska 17, 18-416 Zbójna",
+        "distance_m": 430
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/169859618",
+      "city": "Rybnik",
+      "street": "Józefa Lompy",
+      "number": "8",
+      "postal_code": "44-253",
+      "location": {
+        "latitude": 50.0491723,
+        "longitude": 18.6055341
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3371",
+        "address": "Patriotów 17, 44-253 Rybnik",
+        "distance_m": 394
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1279051863",
+      "city": "Nowa Wieś Ełcka",
+      "street": "Ełcka",
+      "number": "11D",
+      "postal_code": "19-321",
+      "location": {
+        "latitude": 53.7750869,
+        "longitude": 22.3416178
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7516",
+        "address": "Ełcka 11D, 19-321 Nowa Wieś Ełcka",
+        "distance_m": 388
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7516",
+          "address": "Ełcka 11D, 19-321 Nowa Wieś Ełcka"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/366804166",
+      "city": "Góra Kalwaria",
+      "street": "Kardynała Stefana Wyszyńskiego",
+      "number": "17",
+      "postal_code": "05-530",
+      "location": {
+        "latitude": 51.993868,
+        "longitude": 21.2084119
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3811",
+        "address": "Kardynała Stefana Wyszyńskiego 18, 05-530 Góra Kalwaria",
+        "distance_m": 372
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/3773877280",
+      "city": "Zielona Góra",
+      "street": "Franciszka Rzeźniczaka",
+      "number": "3A",
+      "postal_code": "65-119",
+      "location": {
+        "latitude": 51.9573398,
+        "longitude": 15.5039747
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2163",
+        "address": "Rzeźniczaka 1, 65-119 Zielona Góra",
+        "distance_m": 351
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/352587693",
+      "city": "Piekoszów",
+      "street": "Czarnowska",
+      "number": "54E",
+      "postal_code": "26-065",
+      "location": {
+        "latitude": 50.8802631,
+        "longitude": 20.4864077
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2219",
+        "address": "Czarnowska 54, 26-065 Piekoszów",
+        "distance_m": 351
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/14233812655",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.6418709,
+        "longitude": 16.8137034
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1311",
+        "address": "Powstańców Wlkp. 20, 64-600 Oborniki Wielkopolskie",
+        "distance_m": 329
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/719058494",
+      "city": "Zwoleń",
+      "street": "Kardynała Stefana Wyszyńskiego",
+      "number": null,
+      "postal_code": "26-700",
+      "location": {
+        "latitude": 51.3563208,
+        "longitude": 21.5894795
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1754",
+        "address": "Karynała Wyszyńskiego 8, 26-700 Zwoleń",
+        "distance_m": 309
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13410289087",
+      "city": "Tarnów",
+      "street": "Lwowska",
+      "number": "223",
+      "postal_code": "33-100",
+      "location": {
+        "latitude": 50.0112521,
+        "longitude": 21.0395983
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7172",
+        "address": "Lwowska 223, 33-100 Tarnów",
+        "distance_m": 305
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7172",
+          "address": "Lwowska 223, 33-100 Tarnów"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl/pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1018348560",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 54.7555362,
+        "longitude": 18.2634438
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3777",
+        "address": "Pucka 5, 84-107 Starzyno",
+        "distance_m": 297
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1123871319",
+      "city": "Ogrodniczki",
+      "street": "Białostocka",
+      "number": "3",
+      "postal_code": "16-030",
+      "location": {
+        "latitude": 53.1846742,
+        "longitude": 23.2535207
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7028",
+        "address": "Białostocka 3, 16-030 Ogrodniczki",
+        "distance_m": 292
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7028",
+          "address": "Białostocka 3, 16-030 Ogrodniczki"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl/pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1192706207",
+      "city": "Zambrów",
+      "street": "Białostocka",
+      "number": "28B",
+      "postal_code": "18-300",
+      "location": {
+        "latitude": 52.991762,
+        "longitude": 22.2556555
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7089",
+        "address": "Białostocka 28, 18-300 Zambrów",
+        "distance_m": 286
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/14306834431",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.3998657,
+        "longitude": 16.1840134
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2518",
+        "address": "Leszczynowa 27c, 59-300 Lubin",
+        "distance_m": 279
+      },
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,2245",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1326347889",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.3948939,
+        "longitude": 19.1699833
+      },
+      "nearest_map_store": {
+        "id": "biedronka:6955",
+        "address": "Kaliska 141, 87-840 Lubień Kujawski",
+        "distance_m": 275
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1537575627",
+      "city": "Białystok",
+      "street": "Generała Władysława Andersa",
+      "number": "36",
+      "postal_code": null,
+      "location": {
+        "latitude": 53.1520364,
+        "longitude": 23.1695648
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7916",
+        "address": "Generała Władysława Andersa 36, 15-124 Białystok",
+        "distance_m": 272
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7916",
+          "address": "Generała Władysława Andersa 36, 15-124 Białystok"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1363804868",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.0021792,
+        "longitude": 18.4718551
+      },
+      "nearest_map_store": {
+        "id": "biedronka:837",
+        "address": "Jastrzębska 1, 44-300 Wodzisław Śląski",
+        "distance_m": 271
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/4317377587",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 54.3905061,
+        "longitude": 18.6126678
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2327",
+        "address": "Rzeczypospolitej 33, 80-463 Gdańsk",
+        "distance_m": 264
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1054245412",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.9022437,
+        "longitude": 16.6663731
+      },
+      "nearest_map_store": {
+        "id": "biedronka:6981",
+        "address": "Drzeczkowska 1, 64-113 Osieczna",
+        "distance_m": 264
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1169552089",
+      "city": "Zabłudów",
+      "street": "Białostocka",
+      "number": "69",
+      "postal_code": null,
+      "location": {
+        "latitude": 53.0190671,
+        "longitude": 23.3243705
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7069",
+        "address": "Białostocka 69, 16-060 Zabłudów",
+        "distance_m": 250
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7069",
+          "address": "Białostocka 69, 16-060 Zabłudów"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/114448191",
+      "city": null,
+      "street": "Dzieci Polskich",
+      "number": "11",
+      "postal_code": null,
+      "location": {
+        "latitude": 53.0830153,
+        "longitude": 21.586251
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2383",
+        "address": "Hallera 15, 07-410 Ostrołęka",
+        "distance_m": 248
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/231626662",
+      "city": "Konin",
+      "street": "Jaspisowa",
+      "number": "2",
+      "postal_code": "62-504",
+      "location": {
+        "latitude": 52.1979479,
+        "longitude": 18.2360367
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1917",
+        "address": "Piłsudskiego 2, 62-504 Konin",
+        "distance_m": 226
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/196292479",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.7041705,
+        "longitude": 19.4120719
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3631",
+        "address": "Pabianicka 245, 93-457 Łódź",
+        "distance_m": 225
+      },
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,3631",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/612282988",
+      "city": "Stalowa Wola",
+      "street": "Aleje Jana Pawła II",
+      "number": "13",
+      "postal_code": "37-450",
+      "location": {
+        "latitude": 50.5698862,
+        "longitude": 22.0645781
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1428",
+        "address": "Aleje Jana Pawła II 3, 37-450 Stalowa Wola",
+        "distance_m": 222
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1373174892",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.5752367,
+        "longitude": 19.8999091
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7504",
+        "address": "Begno 3, 09-451 Radzanowo",
+        "distance_m": 218
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/231347055",
+      "city": "Kraków",
+      "street": "Jasnogórska",
+      "number": "60a",
+      "postal_code": null,
+      "location": {
+        "latitude": 50.1000664,
+        "longitude": 19.8903322
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3533",
+        "address": "Chełmońskiego 255, 31-348 Kraków",
+        "distance_m": 209
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1231381594",
+      "city": "Jabłonna-Majątek",
+      "street": null,
+      "number": "6A",
+      "postal_code": "23-114",
+      "location": {
+        "latitude": 51.0932861,
+        "longitude": 22.5793424
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7081",
+        "address": "Jabłonna-Majątek 1, 23-114 Jabłonna-Majątek",
+        "distance_m": 198
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/9590008923",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.3836147,
+        "longitude": 20.2883475
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3703",
+        "address": "Inowłodzka 22, 26-300 Opoczno",
+        "distance_m": 192
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1221369191",
+      "city": "Branice",
+      "street": "Młyńska",
+      "number": "19A",
+      "postal_code": "48-140",
+      "location": {
+        "latitude": 50.0521081,
+        "longitude": 17.7763688
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7003",
+        "address": "Młyńska 1, 48-140 Branice",
+        "distance_m": 191
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/13703861123",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.2523078,
+        "longitude": 21.2817774
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3404",
+        "address": "Okuniewska 9 25, 05-071 Sulejówek",
+        "distance_m": 189
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/6102567099",
+      "city": "Tychy",
+      "street": "Towarowa",
+      "number": "2c",
+      "postal_code": "43-100",
+      "location": {
+        "latitude": 50.0962587,
+        "longitude": 19.0114013
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3109",
+        "address": "Towarowa 2C, 43-100 Tychy",
+        "distance_m": 184
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:3109",
+          "address": "Towarowa 2C, 43-100 Tychy"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,3109",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1453055098",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.6490862,
+        "longitude": 21.5580257
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7851",
+        "address": "Trzcianka 87b, 07-221 Trzcianka 87B",
+        "distance_m": 184
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/11371574772",
+      "city": "Olkusz",
+      "street": "Wspólna",
+      "number": "1",
+      "postal_code": "32-300",
+      "location": {
+        "latitude": 50.2868967,
+        "longitude": 19.5413118
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7372",
+        "address": "Wspólna 1, 32-300 Olkusz",
+        "distance_m": 183
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7372",
+          "address": "Wspólna 1, 32-300 Olkusz"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,7372",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/3652312782",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 49.8381548,
+        "longitude": 21.6119263
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2258",
+        "address": "Rzeszowska 11A, 38-130 Frysztak",
+        "distance_m": 177
+      },
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,2258",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1244013668",
+      "city": "Walce",
+      "street": "Eichendorffa",
+      "number": "4",
+      "postal_code": "47-344",
+      "location": {
+        "latitude": 50.3810875,
+        "longitude": 17.9969791
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7059",
+        "address": "J. Eichendorffa 1, 47-344 Walce",
+        "distance_m": 177
+      },
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,7059",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1423077695",
+      "city": "Parznice",
+      "street": "Szlachecka",
+      "number": "3",
+      "postal_code": "26-624",
+      "location": {
+        "latitude": 51.3218583,
+        "longitude": 21.1227395
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7878",
+        "address": "Szlachecka 3, 26-624 Parznice",
+        "distance_m": 176
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7878",
+          "address": "Szlachecka 3, 26-624 Parznice"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1262211729",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 49.6796795,
+        "longitude": 20.4280967
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7325",
+        "address": "Stara Wieś 621, 34-600 Stara Wieś",
+        "distance_m": 172
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1262189712",
+      "city": "Moczadła",
+      "street": null,
+      "number": "1Z",
+      "postal_code": "87-300",
+      "location": {
+        "latitude": 53.2287346,
+        "longitude": 19.3889238
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7048",
+        "address": "Moczadła 1z, 87-300 Brodnica",
+        "distance_m": 166
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1458153475",
+      "city": "Bartoszyce",
+      "street": "Rotmistrza Witolda Pileckiego",
+      "number": "8",
+      "postal_code": "11-200",
+      "location": {
+        "latitude": 54.2545072,
+        "longitude": 20.7928764
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7839",
+        "address": "Pileckiego 8, 11-200 Bartoszyce",
+        "distance_m": 164
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7839",
+          "address": "Pileckiego 8, 11-200 Bartoszyce"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,7839",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/11378533409",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 51.5347508,
+        "longitude": 20.0058394
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3593",
+        "address": "Warszawska 1, 97-200 Tomaszów Mazowiecki",
+        "distance_m": 162
+      },
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,3593",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/246615875",
+      "city": "Białystok",
+      "street": "Ogrodniczki",
+      "number": "2",
+      "postal_code": "15-763",
+      "location": {
+        "latitude": 53.1406503,
+        "longitude": 23.109947
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1046",
+        "address": "Ogrodniczki 2, 15-763 Białystok",
+        "distance_m": 162
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:1046",
+          "address": "Ogrodniczki 2, 15-763 Białystok"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,1046",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/215469067",
+      "city": null,
+      "street": "Ogrodowa",
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.0905729,
+        "longitude": 18.2107211
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3150",
+        "address": "Pracy 18, 47-400 Racibórz",
+        "distance_m": 161
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/116238875",
+      "city": "Luboń",
+      "street": "Generała Władysława Sikorskiego",
+      "number": "44",
+      "postal_code": "62-030",
+      "location": {
+        "latitude": 52.35209,
+        "longitude": 16.8683102
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1683",
+        "address": "W. Sikorskiego 44, 62-031 Luboń",
+        "distance_m": 159
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/10683413564",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 49.83892,
+        "longitude": 19.9640706
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7024",
+        "address": "Słowackiego 112c, 32-400 Myślenice",
+        "distance_m": 158
+      },
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,7024",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/158670480",
+      "city": "Gliwice",
+      "street": "Beskidzka",
+      "number": "6",
+      "postal_code": "44-103",
+      "location": {
+        "latitude": 50.2928381,
+        "longitude": 18.7347051
+      },
+      "nearest_map_store": {
+        "id": "biedronka:1944",
+        "address": "Beskidzka 22, 44-103 Gliwice",
+        "distance_m": 158
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1274597830",
+      "city": "Orły",
+      "street": "Krakowska",
+      "number": "15",
+      "postal_code": "37-716",
+      "location": {
+        "latitude": 49.8771662,
+        "longitude": 22.8123
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7445",
+        "address": "Krakowska 15, 37-716 Orły",
+        "distance_m": 156
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7445",
+          "address": "Krakowska 15, 37-716 Orły"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,7445",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/682502776",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.6448781,
+        "longitude": 20.2781586
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2335",
+        "address": "Reymonta 24, 28-300 Jędrzejów",
+        "distance_m": 153
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/706612308",
+      "city": "Grudziądz",
+      "street": "Ignacego Łyskowskiego",
+      "number": null,
+      "postal_code": "86-300",
+      "location": {
+        "latitude": 53.4908985,
+        "longitude": 18.7817521
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3435",
+        "address": "Łyskowskiego 41 null, 86-300 Grudziądz",
+        "distance_m": 152
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/4115245094",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 54.4725579,
+        "longitude": 17.0381888
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2461",
+        "address": "Kilińskiego 26, 76-200 Słupsk",
+        "distance_m": 148
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/980115906",
+      "city": "Zawidów",
+      "street": "Mikołaja Kopernika",
+      "number": "1",
+      "postal_code": "59-970",
+      "location": {
+        "latitude": 51.0249337,
+        "longitude": 15.0612148
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3074",
+        "address": "M .Kopernika 1, 59-970 Zawidów",
+        "distance_m": 148
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1069656542",
+      "city": "Mysiadło",
+      "street": "Kuropatwy",
+      "number": "43",
+      "postal_code": "05-500",
+      "location": {
+        "latitude": 52.1045436,
+        "longitude": 21.0221153
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7335",
+        "address": "Kuropatwy 41, 05-500 Mysiadło",
+        "distance_m": 148
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1278511800",
+      "city": "Bratian",
+      "street": "Grunwaldzka",
+      "number": "60",
+      "postal_code": "13-300",
+      "location": {
+        "latitude": 53.4633575,
+        "longitude": 19.6148017
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7508",
+        "address": "Grunwaldzka 56, 13-300 Bratian",
+        "distance_m": 146
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1134635743",
+      "city": "Kikół",
+      "street": "Rypińska",
+      "number": "4A",
+      "postal_code": "87-620",
+      "location": {
+        "latitude": 52.9134741,
+        "longitude": 19.118413
+      },
+      "nearest_map_store": {
+        "id": "biedronka:6956",
+        "address": "Rypińska 11, 87-620 Kikół",
+        "distance_m": 144
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1213847164",
+      "city": "Kraków",
+      "street": "Igołomska",
+      "number": "22C",
+      "postal_code": "31-983",
+      "location": {
+        "latitude": 50.0712867,
+        "longitude": 20.1187486
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7328",
+        "address": "Igołomska 22C, 31-983 Kraków",
+        "distance_m": 143
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7328",
+          "address": "Igołomska 22C, 31-983 Kraków"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,7328",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/14096890310",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 52.0920454,
+        "longitude": 21.1232466
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2870",
+        "address": "Wojska Polskiego 2, 05-520 Konstancin-Jeziorna",
+        "distance_m": 142
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/361498348",
+      "city": "Lipusz",
+      "street": "Józefa Wybickiego",
+      "number": "22",
+      "postal_code": "83-424",
+      "location": {
+        "latitude": 54.0991937,
+        "longitude": 17.7836063
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7511",
+        "address": "Młyńska 1, 83-424 Lipusz",
+        "distance_m": 141
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1262186353",
+      "city": "Mochowo",
+      "street": "Płocka",
+      "number": "3",
+      "postal_code": null,
+      "location": {
+        "latitude": 52.7634815,
+        "longitude": 19.562385
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7432",
+        "address": "Płocka 3, 09-214 Mochowo",
+        "distance_m": 141
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7432",
+          "address": "Płocka 3, 09-214 Mochowo"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,7432",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1383048030",
+      "city": "Węgrów",
+      "street": "Różana",
+      "number": "2a",
+      "postal_code": "07-100",
+      "location": {
+        "latitude": 52.3890933,
+        "longitude": 22.0127517
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7643",
+        "address": "Różana 2a, 07-100 Węgrów",
+        "distance_m": 138
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7643",
+          "address": "Różana 2a, 07-100 Węgrów"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,7643",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1571050049",
+      "city": "Włocławek",
+      "street": "Dobrzyńska",
+      "number": "72",
+      "postal_code": "87-800",
+      "location": {
+        "latitude": 52.6685191,
+        "longitude": 19.1318803
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7957",
+        "address": "ul. Dobrzyńska 72, 87-800 Włocławek",
+        "distance_m": 137
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:7957",
+          "address": "ul. Dobrzyńska 72, 87-800 Włocławek"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1163670517",
+      "city": "Choczewo",
+      "street": "Pucka",
+      "number": "26",
+      "postal_code": "84-210",
+      "location": {
+        "latitude": 54.7454589,
+        "longitude": 17.9019158
+      },
+      "nearest_map_store": {
+        "id": "biedronka:6952",
+        "address": "Pucka 26, 84-210 Choczewo",
+        "distance_m": 134
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:6952",
+          "address": "Pucka 26, 84-210 Choczewo"
+        }
+      ],
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,6952",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1360974935",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.2240981,
+        "longitude": 18.985579
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3120",
+        "address": "T. Kościuszki 229, 40-706 Katowice",
+        "distance_m": 134
+      },
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,3120",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1134056023",
+      "city": "Goworówek",
+      "street": null,
+      "number": "43",
+      "postal_code": "07-440",
+      "location": {
+        "latitude": 52.9054538,
+        "longitude": 21.5639661
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3779",
+        "address": "Ostrołęcka 43, 07-440 Goworówek",
+        "distance_m": 133
+      },
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,3779",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/903339909",
+      "city": "Piekary Śląskie",
+      "street": "Bytomska",
+      "number": "54",
+      "postal_code": "41-940",
+      "location": {
+        "latitude": 50.3705968,
+        "longitude": 18.9472336
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3638",
+        "address": "Bytomska 54, 41-940 Piekary Śląskie",
+        "distance_m": 132
+      },
+      "possible_existing_address": [
+        {
+          "id": "biedronka:3638",
+          "address": "Bytomska 54, 41-940 Piekary Śląskie"
+        }
+      ],
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/715300813",
+      "city": null,
+      "street": null,
+      "number": null,
+      "postal_code": null,
+      "location": {
+        "latitude": 50.7097984,
+        "longitude": 22.4073852
+      },
+      "nearest_map_store": {
+        "id": "biedronka:3194",
+        "address": "Lubelska 2, 23-300 Janów Lubelski",
+        "distance_m": 130
+      },
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1413418351",
+      "city": "Skierdy",
+      "street": null,
+      "number": null,
+      "postal_code": "05-101",
+      "location": {
+        "latitude": 52.4022128,
+        "longitude": 20.8227081
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7740",
+        "address": "Trzcińska Droga 3, 05-101 Skierdy",
+        "distance_m": 128
+      },
+      "osm_website": "https://www.biedronka.pl/pl/shop,id,7740",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/node/3967861405",
+      "city": "Rypin",
+      "street": "Toruńska",
+      "number": "2c",
+      "postal_code": null,
+      "location": {
+        "latitude": 53.0724799,
+        "longitude": 19.3961547
+      },
+      "nearest_map_store": {
+        "id": "biedronka:2444",
+        "address": "Toruńska 2B - 2C, 87-500 Rypin",
+        "distance_m": 126
+      },
+      "osm_website": "https://www.biedronka.pl",
+      "status": "requires_independent_verification"
+    },
+    {
+      "osm_url": "https://www.openstreetmap.org/way/1228262225",
+      "city": "Opole",
+      "street": "Nyska",
+      "number": "25D",
+      "postal_code": "45-940",
+      "location": {
+        "latitude": 50.6451388,
+        "longitude": 17.8592344
+      },
+      "nearest_map_store": {
+        "id": "biedronka:7358",
+        "address": "Nyska 25, 45-940 Opole",
+        "distance_m": 126
+      },
+      "status": "requires_independent_verification"
+    }
+  ]
+}

@@ -1,0 +1,535 @@
+[
+  {
+    "id": "biedronka:7280",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-ciechanowska-65-wladyslawowo~23551917/biedronka-supermarket/adres",
+    "title": "Biedronka - Supermarket, Ciechanowska 65, Władysławowo, godziny otwarcia",
+    "point": {
+      "latitude": 52.88414,
+      "longitude": 20.68558
+    },
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=20.684380%2C52.883340%2C20.686780%2C52.884940",
+    "elements": [],
+    "status": "ok"
+  },
+  {
+    "id": "biedronka:3599",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-tysiaclecia-17-tuszyn~23185763/biedronka-supermarket/adres",
+    "title": "Biedronka - Supermarket, Tysiąclecia 17, Tuszyn, godziny otwarcia",
+    "point": {
+      "latitude": 51.60002,
+      "longitude": 19.54415
+    },
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.542950%2C51.599220%2C19.545350%2C51.600820",
+    "elements": [
+      {
+        "type": "node",
+        "id": 2603761716,
+        "lat": 51.6003897,
+        "lon": 19.5444269,
+        "timestamp": "2021-12-07T17:00:41Z"
+      },
+      {
+        "type": "node",
+        "id": 3666326364,
+        "lat": 51.6002533,
+        "lon": 19.5442826,
+        "timestamp": "2021-12-07T17:00:41Z"
+      },
+      {
+        "type": "node",
+        "id": 9318724440,
+        "lat": 51.6001536,
+        "lon": 19.5450021,
+        "timestamp": "2021-12-07T17:00:41Z"
+      },
+      {
+        "type": "node",
+        "id": 9318724441,
+        "lat": 51.6000172,
+        "lon": 19.5448577,
+        "timestamp": "2021-12-07T17:00:41Z"
+      },
+      {
+        "type": "node",
+        "id": 11626500926,
+        "lat": 51.6003938,
+        "lon": 19.5434932,
+        "timestamp": "2024-02-15T10:54:14Z"
+      },
+      {
+        "type": "node",
+        "id": 11626500927,
+        "lat": 51.6003844,
+        "lon": 19.5435725,
+        "timestamp": "2024-02-15T10:54:14Z"
+      },
+      {
+        "type": "node",
+        "id": 11626500928,
+        "lat": 51.6003471,
+        "lon": 19.5435616,
+        "timestamp": "2024-02-15T10:54:14Z"
+      },
+      {
+        "type": "node",
+        "id": 11626500929,
+        "lat": 51.6003566,
+        "lon": 19.5434818,
+        "timestamp": "2024-02-15T10:54:14Z"
+      },
+      {
+        "type": "way",
+        "id": 362299837,
+        "timestamp": "2021-12-07T17:00:41Z",
+        "nodes": [
+          2603761716,
+          3666326364,
+          9318724441,
+          9318724440,
+          2603761716
+        ],
+        "tags": {
+          "addr:city": "Tuszynek Majoracki",
+          "addr:housenumber": "17A",
+          "addr:postcode": "95-080",
+          "addr:street": "Tysiąclecia",
+          "brand": "Stokrotka",
+          "brand:wikidata": "Q9345945",
+          "brand:wikipedia": "pl:Stokrotka (sieć handlowa)",
+          "building": "yes",
+          "name": "Stokrotka",
+          "opening_hours": "Mo-Sa 06:00-22:00; Su 08:00-20:00",
+          "shop": "supermarket",
+          "source:addr": "EMUiA@iMPA (tuszyn.e-mapa.net)"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1250750473,
+        "timestamp": "2024-02-15T10:54:14Z",
+        "nodes": [
+          11626500926,
+          11626500927,
+          11626500928,
+          11626500929,
+          11626500926
+        ],
+        "tags": {
+          "building": "retail",
+          "building:levels": "1"
+        }
+      }
+    ],
+    "status": "ok"
+  },
+  {
+    "id": "biedronka:7772",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-jastrzebia-1d-wojciechow~24333795/biedronka-supermarket/adres",
+    "title": "Biedronka - Supermarket, Jastrzębia 1D, Wojciechów, godziny otwarcia",
+    "point": {
+      "latitude": 51.49332,
+      "longitude": 21.2291
+    },
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=21.227900%2C51.492520%2C21.230300%2C51.494120",
+    "elements": [
+      {
+        "type": "node",
+        "id": 13114868206,
+        "lat": 51.4932524,
+        "lon": 21.2288419,
+        "timestamp": "2025-09-02T15:56:16Z"
+      },
+      {
+        "type": "node",
+        "id": 13114868207,
+        "lat": 51.4931598,
+        "lon": 21.2295059,
+        "timestamp": "2025-09-02T15:56:16Z"
+      },
+      {
+        "type": "node",
+        "id": 13114868208,
+        "lat": 51.4931648,
+        "lon": 21.2295077,
+        "timestamp": "2025-09-02T15:56:16Z"
+      },
+      {
+        "type": "node",
+        "id": 13114868209,
+        "lat": 51.493168,
+        "lon": 21.2294849,
+        "timestamp": "2025-09-02T15:56:16Z"
+      },
+      {
+        "type": "node",
+        "id": 13114868210,
+        "lat": 51.4933438,
+        "lon": 21.2295482,
+        "timestamp": "2025-09-02T15:56:16Z"
+      },
+      {
+        "type": "node",
+        "id": 13114868211,
+        "lat": 51.4933399,
+        "lon": 21.229576,
+        "timestamp": "2025-09-02T15:56:16Z"
+      },
+      {
+        "type": "node",
+        "id": 13114868212,
+        "lat": 51.493344,
+        "lon": 21.2295775,
+        "timestamp": "2025-09-02T15:56:16Z"
+      },
+      {
+        "type": "node",
+        "id": 13114868213,
+        "lat": 51.4934374,
+        "lon": 21.2289085,
+        "timestamp": "2025-09-02T15:56:16Z"
+      },
+      {
+        "type": "way",
+        "id": 1426668746,
+        "timestamp": "2025-09-02T15:56:16Z",
+        "nodes": [
+          13114868213,
+          13114868212,
+          13114868211,
+          13114868210,
+          13114868209,
+          13114868208,
+          13114868207,
+          13114868206,
+          13114868213
+        ],
+        "tags": {
+          "addr:city:simc": "0624433",
+          "addr:housenumber": "1D",
+          "addr:place": "Wojciechów",
+          "addr:postcode": "26-631",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "supermarket",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "opening_hours": "Mo-Sa 06:00-22:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "payment:blik": "yes",
+          "payment:cash": "yes",
+          "payment:contactless": "yes",
+          "payment:diners_club": "yes",
+          "payment:maestro": "yes",
+          "payment:mastercard": "yes",
+          "payment:sodexo": "yes",
+          "payment:visa": "yes",
+          "payment:visa_debit": "yes",
+          "payment:visa_electron": "yes",
+          "payment:v_pay": "yes",
+          "phone": "+48 22 205 33 00",
+          "shop": "supermarket",
+          "start_date": "2025-06",
+          "website": "https://www.biedronka.pl/pl/shop,id,3794"
+        }
+      }
+    ],
+    "status": "ok"
+  },
+  {
+    "id": "biedronka:7465",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-pociskowa-4b-warszawa~23629649/biedronka-supermarket/adres",
+    "title": "Biedronka - Supermarket, Pociskowa 4B, Warszawa, godziny otwarcia",
+    "point": {
+      "latitude": 52.25634,
+      "longitude": 21.15813
+    },
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=21.156930%2C52.255540%2C21.159330%2C52.257140",
+    "elements": [
+      {
+        "type": "node",
+        "id": 5377324677,
+        "lat": 52.2561455,
+        "lon": 21.1586484,
+        "timestamp": "2019-03-23T20:41:12Z"
+      },
+      {
+        "type": "node",
+        "id": 5377324678,
+        "lat": 52.2561663,
+        "lon": 21.1582199,
+        "timestamp": "2019-03-23T20:41:12Z"
+      },
+      {
+        "type": "node",
+        "id": 5377324679,
+        "lat": 52.2557892,
+        "lon": 21.1581716,
+        "timestamp": "2019-03-23T20:41:12Z"
+      },
+      {
+        "type": "node",
+        "id": 5377324680,
+        "lat": 52.2557712,
+        "lon": 21.1585581,
+        "timestamp": "2019-03-23T20:41:12Z"
+      },
+      {
+        "type": "node",
+        "id": 5377324681,
+        "lat": 52.2559813,
+        "lon": 21.1587817,
+        "timestamp": "2025-05-23T21:15:24Z"
+      },
+      {
+        "type": "node",
+        "id": 5377324682,
+        "lat": 52.2560404,
+        "lon": 21.1587921,
+        "timestamp": "2019-03-23T20:41:12Z"
+      },
+      {
+        "type": "node",
+        "id": 5377324683,
+        "lat": 52.2560382,
+        "lon": 21.1588483,
+        "timestamp": "2019-03-23T20:41:12Z"
+      },
+      {
+        "type": "node",
+        "id": 5377324684,
+        "lat": 52.2561326,
+        "lon": 21.1589499,
+        "timestamp": "2019-03-23T20:41:12Z"
+      },
+      {
+        "type": "node",
+        "id": 5377324685,
+        "lat": 52.2564647,
+        "lon": 21.1589938,
+        "timestamp": "2019-03-23T20:41:12Z"
+      },
+      {
+        "type": "node",
+        "id": 5377324686,
+        "lat": 52.2564615,
+        "lon": 21.1590581,
+        "timestamp": "2019-03-23T20:41:12Z"
+      },
+      {
+        "type": "node",
+        "id": 5377324687,
+        "lat": 52.2566825,
+        "lon": 21.1590843,
+        "timestamp": "2019-03-23T20:41:12Z"
+      },
+      {
+        "type": "node",
+        "id": 5377324688,
+        "lat": 52.256701,
+        "lon": 21.1587226,
+        "timestamp": "2019-03-23T20:41:12Z"
+      },
+      {
+        "type": "node",
+        "id": 5388233668,
+        "lat": 52.2561303,
+        "lon": 21.1585112,
+        "timestamp": "2024-01-08T14:31:53Z",
+        "tags": {
+          "addr:city": "Warszawa",
+          "addr:housenumber": "4",
+          "addr:postcode": "04-471",
+          "addr:street": "Pociskowa",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-22:00",
+          "payment:cash": "yes",
+          "payment:credit_cards": "yes",
+          "payment:debit_cards": "yes",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl",
+          "wheelchair": "yes"
+        }
+      },
+      {
+        "type": "way",
+        "id": 557561900,
+        "timestamp": "2026-03-16T00:16:03Z",
+        "nodes": [
+          5377324688,
+          5377324687,
+          5377324686,
+          5377324685,
+          5377324684,
+          5377324683,
+          5377324682,
+          5377324681,
+          5377324680,
+          5377324679,
+          5377324678,
+          5377324677,
+          5377324688
+        ],
+        "tags": {
+          "addr:city": "Warszawa",
+          "addr:housenumber": "4",
+          "addr:postcode": "04-471",
+          "addr:street": "Pociskowa",
+          "building": "retail",
+          "building:levels": "2",
+          "height": "8",
+          "source:addr": "gugik.gov.pl"
+        }
+      }
+    ],
+    "status": "ok"
+  },
+  {
+    "id": "biedronka:7505",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-szczecinska-5-gorzow-wielkopolski~23766613/biedronka-supermarket/adres",
+    "title": "Biedronka - Supermarket, Szczecińska 5, Gorzów Wielkopolski, godziny otwarcia",
+    "point": {
+      "latitude": 52.74878,
+      "longitude": 15.15591
+    },
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=15.154710%2C52.747980%2C15.157110%2C52.749580",
+    "elements": [],
+    "status": "ok"
+  },
+  {
+    "id": "biedronka:3435",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-lyskowskiego-41-grudziadz~23789027/biedronka-supermarket/adres",
+    "title": "Biedronka - Supermarket, Łyskowskiego 41, Grudziądz, godziny otwarcia",
+    "point": {
+      "latitude": 53.49136,
+      "longitude": 18.77955
+    },
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=18.778350%2C53.490560%2C18.780750%2C53.492160",
+    "elements": [],
+    "status": "ok"
+  },
+  {
+    "id": "biedronka:7583",
+    "url": "https://mapa.targeo.pl/biedronka-supermarket-icchoka-lejba-pereca-13-19-warszawa~24333722/biedronka-supermarket/adres",
+    "title": "Biedronka - Supermarket, Icchoka Lejba Pereca 13 19, Warszawa, godziny otwarcia",
+    "point": {
+      "latitude": 52.23314,
+      "longitude": 20.99406
+    },
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=20.992860%2C52.232340%2C20.995260%2C52.233940",
+    "elements": [
+      {
+        "type": "node",
+        "id": 4462459789,
+        "lat": 52.2335956,
+        "lon": 20.9942732,
+        "timestamp": "2021-04-27T06:12:22Z"
+      },
+      {
+        "type": "node",
+        "id": 5806858366,
+        "lat": 52.2335573,
+        "lon": 20.9944345,
+        "timestamp": "2021-10-16T07:04:33Z"
+      },
+      {
+        "type": "node",
+        "id": 8608090108,
+        "lat": 52.2335292,
+        "lon": 20.993875,
+        "timestamp": "2026-07-31T17:45:22Z",
+        "tags": {
+          "addr:housenumber": "13/19",
+          "addr:street": "Icchoka Lejba Pereca",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "check_date": "2026-07-31",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-23:00; Su 06:00-23:00 \"tylko niedziele handlowe\"",
+          "shop": "supermarket",
+          "wheelchair": "yes"
+        }
+      },
+      {
+        "type": "node",
+        "id": 9175958158,
+        "lat": 52.2336131,
+        "lon": 20.9943804,
+        "timestamp": "2021-10-16T07:04:33Z",
+        "tags": {
+          "entrance": "yes"
+        }
+      },
+      {
+        "type": "node",
+        "id": 9175958159,
+        "lat": 52.233545,
+        "lon": 20.9944399,
+        "timestamp": "2021-10-16T07:04:33Z"
+      },
+      {
+        "type": "node",
+        "id": 9175958160,
+        "lat": 52.2335628,
+        "lon": 20.9944681,
+        "timestamp": "2021-10-16T07:04:33Z"
+      },
+      {
+        "type": "node",
+        "id": 9175958164,
+        "lat": 52.2336232,
+        "lon": 20.9944418,
+        "timestamp": "2021-10-16T07:04:33Z"
+      },
+      {
+        "type": "node",
+        "id": 9175958165,
+        "lat": 52.2335229,
+        "lon": 20.9943049,
+        "timestamp": "2021-10-16T07:04:33Z"
+      },
+      {
+        "type": "way",
+        "id": 993208611,
+        "timestamp": "2026-07-31T17:45:22Z",
+        "nodes": [
+          5806858366,
+          9175958159,
+          9175958165,
+          4462459789,
+          9175958158,
+          9175958164,
+          9175958160,
+          5806858366
+        ],
+        "tags": {
+          "addr:city": "Warszawa",
+          "addr:housenumber": "11",
+          "addr:postcode": "00-849",
+          "addr:street": "Icchoka Lejba Pereca",
+          "brand": "Żabka",
+          "brand:wikidata": "Q2589061",
+          "brand:wikipedia": "pl:Żabka (sieć sklepów)",
+          "check_date": "2026-07-31",
+          "check_date:opening_hours": "2025-09-16",
+          "indoor": "room",
+          "level": "0",
+          "name": "Żabka",
+          "name:pl": "Żabka",
+          "name:uk": "Жабка",
+          "opening_hours": "Mo-Sa 06:00-23:00; Su 09:00-23:00",
+          "payment:cards": "yes",
+          "payment:cash": "yes",
+          "payment:contactless": "yes",
+          "shop": "convenience",
+          "website": "https://www.zabka.pl/znajdz-sklep/ID06399-warszawa-ul-pereca-11/",
+          "wheelchair": "yes"
+        }
+      }
+    ],
+    "status": "ok"
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "elements": [
+    {
+      "type": "node",
+      "id": 2619617861,
+      "lat": 50.0378101,
+      "lon": 22.1588588,
+      "timestamp": "2025-12-16T12:08:10Z",
+      "version": 3
+    },
+    {
+      "type": "node",
+      "id": 2619617862,
+      "lat": 50.0378068,
+      "lon": 22.1594013,
+      "timestamp": "2025-12-16T12:08:10Z",
+      "version": 3
+    },
+    {
+      "type": "node",
+      "id": 2619617863,
+      "lat": 50.0379591,
+      "lon": 22.158861,
+      "timestamp": "2025-12-16T12:08:10Z",
+      "version": 3
+    },
+    {
+      "type": "node",
+      "id": 2619617865,
+      "lat": 50.0379558,
+      "lon": 22.1594035,
+      "timestamp": "2025-12-16T12:08:10Z",
+      "version": 3
+    },
+    {
+      "type": "way",
+      "id": 256289347,
+      "timestamp": "2024-08-06T07:44:38Z",
+      "version": 5,
+      "nodes": [
+        2619617863,
+        2619617865,
+        2619617862,
+        2619617861,
+        2619617863
+      ],
+      "tags": {
+        "addr:housenumber": "323",
+        "addr:place": "Kraczkowa",
+        "addr:postcode": "37-124",
+        "building": "yes",
+        "name": "Biedronka",
+        "shop": "convenience",
+        "source:geometry": "Bing, geoportal.gov.pl:ortofoto"
+      }
+    }
+  ]
+}

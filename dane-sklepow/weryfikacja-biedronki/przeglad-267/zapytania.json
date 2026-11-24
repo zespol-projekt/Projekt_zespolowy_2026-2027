@@ -1,0 +1,2906 @@
+[
+  {
+    "id": "biedronka:1218",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/59421803",
+      "location": {
+        "latitude": 52.2513234,
+        "longitude": 20.9186988
+      },
+      "address": {
+        "city": "Warszawa",
+        "street": "Podpułkownika Wacława Szadkowskiego",
+        "house_number": "1A",
+        "postal_code": "01-493"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Podpu%C5%82kownika+Wac%C5%82awa+Szadkowskiego+1A",
+    "city": "Warszawa",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "ulica ppłk. Wacława Szadkowskiego",
+        "number": "1A",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "44365",
+        "code": "01-493",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "630940.59",
+        "y": "488979.03",
+        "geometry_wkt": "POINT(630940.59 488979.03)",
+        "accuracy": "0.576923",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.511111",
+        "street_accuracy": "0.511111",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1380",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/302763232",
+      "location": {
+        "latitude": 50.5772939,
+        "longitude": 19.3404251
+      },
+      "address": {
+        "city": "Myszków",
+        "street": "Generała Władysława Sikorskiego",
+        "house_number": "18a",
+        "postal_code": "42-300"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Myszk%C3%B3w%2C+Genera%C5%82a+W%C5%82adys%C5%82awa+Sikorskiego+18a",
+    "city": "Myszków",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Myszków",
+        "citypart": null,
+        "street": "Sikorskiego",
+        "number": "18a",
+        "teryt": "240901",
+        "simc": "0932057",
+        "ulic": "19900",
+        "code": "42-300",
+        "jednostka": "{Polska,śląskie,myszkowski,Myszków}",
+        "x": "524110.08",
+        "y": "301205.98",
+        "geometry_wkt": "POINT(524110.08 301205.98)",
+        "accuracy": "0.545455",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.375",
+        "street_accuracy": "0.375",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1421",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/375772088",
+      "location": {
+        "latitude": 52.4320189,
+        "longitude": 19.4654812
+      },
+      "address": {
+        "city": "Gostynin",
+        "street": "Generała Józefa Bema",
+        "house_number": "9",
+        "postal_code": "09-500"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gostynin%2C+Genera%C5%82a+J%C3%B3zefa+Bema+9",
+    "city": "Gostynin",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Gostynin",
+        "citypart": null,
+        "street": "Generała Józefa Bema",
+        "number": "9",
+        "teryt": "140401",
+        "simc": "0968977",
+        "ulic": "37883",
+        "code": "09-500",
+        "jednostka": "{Polska,mazowieckie,gostyniński,Gostynin}",
+        "x": "531651.9",
+        "y": "507446.92",
+        "geometry_wkt": "POINT(531651.9 507446.92)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1444",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/152329236",
+      "location": {
+        "latitude": 50.2368496,
+        "longitude": 18.6586714
+      },
+      "address": {
+        "city": "Knurów",
+        "street": "Wincentego Witosa",
+        "house_number": "4",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": 0
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Knur%C3%B3w%2C+Wincentego+Witosa+4",
+    "city": "Knurów",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Knurów",
+        "citypart": null,
+        "street": "Wincentego Witosa",
+        "number": "4",
+        "teryt": "240501",
+        "simc": "0940849",
+        "ulic": "24459",
+        "code": "44-196",
+        "jednostka": "{Polska,śląskie,gliwicki,Knurów}",
+        "x": "475670.2",
+        "y": "263336.4",
+        "geometry_wkt": "POINT(475670.2 263336.4)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1449",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/114995405",
+      "location": {
+        "latitude": 53.0736297,
+        "longitude": 21.5641501
+      },
+      "address": {
+        "city": "Ostrołęka",
+        "street": "Henryka Sienkiewicza",
+        "house_number": "53",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": 0
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ostro%C5%82%C4%99ka%2C+Henryka+Sienkiewicza+53",
+    "city": "Ostrołęka",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Ostrołęka",
+        "citypart": null,
+        "street": "Henryka Sienkiewicza",
+        "number": "53",
+        "teryt": "146101",
+        "simc": "0966079",
+        "ulic": "19834",
+        "code": "07-410",
+        "jednostka": "{Polska,mazowieckie,Ostrołęka,Ostrołęka}",
+        "x": "671709.81",
+        "y": "581774.46",
+        "geometry_wkt": "POINT(671709.81 581774.46)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1521",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/node/6815230904",
+      "location": {
+        "latitude": 54.0339695,
+        "longitude": 19.0345847
+      },
+      "address": {
+        "city": "Malbork",
+        "street": "Henryka Sienkiewicza",
+        "house_number": "20A",
+        "postal_code": "82-200"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Malbork%2C+Henryka+Sienkiewicza+20A",
+    "city": "Malbork",
+    "status": "ok",
+    "candidates": []
+  },
+  {
+    "id": "biedronka:1536",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/194159686",
+      "location": {
+        "latitude": 50.3508135,
+        "longitude": 18.2312298
+      },
+      "address": {
+        "city": "Kędzierzyn-Koźle",
+        "street": "Aleja Jana Pawła II",
+        "house_number": "50A",
+        "postal_code": "47-232"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=K%C4%99dzierzyn-Ko%C5%BAle%2C+Aleja+Jana+Paw%C5%82a+II+50A",
+    "city": "Kędzierzyn-Koźle",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Kędzierzyn-Koźle",
+        "citypart": null,
+        "street": "Aleja Jana Pawła II",
+        "number": "50A",
+        "teryt": "160301",
+        "simc": "0965424",
+        "ulic": "33262",
+        "code": "47-232",
+        "jednostka": "{Polska,opolskie,kędzierzyńsko-kozielski,Kędzierzyn-Koźle}",
+        "x": "445319.06",
+        "y": "276256.13",
+        "geometry_wkt": "POINT(445319.06 276256.13)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1548",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/68337621",
+      "location": {
+        "latitude": 53.690777,
+        "longitude": 17.5693554
+      },
+      "address": {
+        "city": "Chojnice",
+        "street": "Marszałka Józefa Piłsudskiego",
+        "house_number": "38",
+        "postal_code": "89-600"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Chojnice%2C+Marsza%C5%82ka+J%C3%B3zefa+Pi%C5%82sudskiego+38",
+    "city": "Chojnice",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Chojnice",
+        "citypart": null,
+        "street": "Marszałka Józefa Piłsudskiego",
+        "number": "38",
+        "teryt": "220201",
+        "simc": "0928854",
+        "ulic": "36029",
+        "code": "89-600",
+        "jednostka": "{Polska,pomorskie,chojnicki,Chojnice}",
+        "x": "405569.55",
+        "y": "648297.9",
+        "geometry_wkt": "POINT(405569.55 648297.9)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1571",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/286295322",
+      "location": {
+        "latitude": 50.0399646,
+        "longitude": 18.3973924
+      },
+      "address": {
+        "city": "Pszów",
+        "street": "Romualda Traugutta",
+        "house_number": "6",
+        "postal_code": "44-370"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Psz%C3%B3w%2C+Romualda+Traugutta+6",
+    "city": "Pszów",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Pszów",
+        "citypart": null,
+        "street": "Romualda Traugutta",
+        "number": "6",
+        "teryt": "241501",
+        "simc": "0945083",
+        "ulic": "22965",
+        "code": "44-370",
+        "jednostka": "{Polska,śląskie,wodzisławski,Pszów}",
+        "x": "456858.47",
+        "y": "241600.67",
+        "geometry_wkt": "POINT(456858.47 241600.67)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1590",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/113666626",
+      "location": {
+        "latitude": 54.2579332,
+        "longitude": 18.6481865
+      },
+      "address": {
+        "city": "Pruszcz Gdański",
+        "street": "Generała Stanisława Skalskiego",
+        "house_number": "1",
+        "postal_code": "83-000"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pruszcz+Gda%C5%84ski%2C+Genera%C5%82a+Stanis%C5%82awa+Skalskiego+1",
+    "city": "Pruszcz Gdański",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Pruszcz Gdański",
+        "citypart": null,
+        "street": "gen. Stanisława Skalskiego",
+        "number": "1",
+        "teryt": "220401",
+        "simc": "0934620",
+        "ulic": "29578",
+        "code": "83-000",
+        "jednostka": "{Polska,pomorskie,gdański,\"Pruszcz Gdański\"}",
+        "x": "477096.91",
+        "y": "710467.49",
+        "geometry_wkt": "POINT(477096.91 710467.49)",
+        "accuracy": "0.851064",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.774194",
+        "street_accuracy": "0.774194",
+        "id": 1
+      },
+      {
+        "city": "Pruszcz Gdański",
+        "citypart": null,
+        "street": "Generała Stanisława Maczka",
+        "number": "1",
+        "teryt": "220401",
+        "simc": "0934620",
+        "ulic": "39356",
+        "code": "83-000",
+        "jednostka": "{Polska,pomorskie,gdański,\"Pruszcz Gdański\"}",
+        "x": "477232.46",
+        "y": "709931.75",
+        "geometry_wkt": "POINT(477232.46 709931.75)",
+        "accuracy": "0.698113",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.540541",
+        "street_accuracy": "0.540541",
+        "id": 2
+      },
+      {
+        "city": "Pruszcz Gdański",
+        "citypart": null,
+        "street": "Stanisława Konarskiego",
+        "number": "1",
+        "teryt": "220401",
+        "simc": "0934620",
+        "ulic": "09111",
+        "code": "83-000",
+        "jednostka": "{Polska,pomorskie,gdański,\"Pruszcz Gdański\"}",
+        "x": "477544.38",
+        "y": "710831.53",
+        "geometry_wkt": "POINT(477544.38 710831.53)",
+        "accuracy": "0.622642",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.432432",
+        "street_accuracy": "0.432432",
+        "id": 3
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1599",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/node/1237711418",
+      "location": {
+        "latitude": 51.400922,
+        "longitude": 16.2000039
+      },
+      "address": {
+        "city": "Lubin",
+        "street": "Generała Józefa Bema",
+        "house_number": "1",
+        "postal_code": "59-300"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lubin%2C+Genera%C5%82a+J%C3%B3zefa+Bema+1",
+    "city": "Lubin",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Lubin",
+        "citypart": null,
+        "street": "Gen. Józefa Bema",
+        "number": "1",
+        "teryt": "021101",
+        "simc": "0954142",
+        "ulic": "48208",
+        "code": "59-300",
+        "jednostka": "{Polska,dolnośląskie,lubiński,Lubin}",
+        "x": "305297.76",
+        "y": "396443.32",
+        "geometry_wkt": "POINT(305297.76 396443.32)",
+        "accuracy": "0.766667",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.681818",
+        "street_accuracy": "0.681818",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1615",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/272626067",
+      "location": {
+        "latitude": 50.3558288,
+        "longitude": 20.0208211
+      },
+      "address": {
+        "city": "Miechów",
+        "street": "Stanisławy Daneckiej",
+        "house_number": "2",
+        "postal_code": "32-200"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Miech%C3%B3w%2C+Stanis%C5%82awy+Daneckiej+2",
+    "city": "Miechów",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Miechów",
+        "citypart": null,
+        "street": "Stanisławy Daneckiej",
+        "number": "2",
+        "teryt": "120805",
+        "simc": "0947225",
+        "ulic": "03583",
+        "code": "32-200",
+        "jednostka": "{Polska,małopolskie,miechowski,Miechów}",
+        "x": "572616.67",
+        "y": "277014.61",
+        "geometry_wkt": "POINT(572616.67 277014.61)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1620",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/137292059",
+      "location": {
+        "latitude": 54.5589524,
+        "longitude": 18.5086962
+      },
+      "address": {
+        "city": "Gdynia",
+        "street": "Kapitana Antoniego Ledóchowskiego",
+        "house_number": "4A",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gdynia%2C+Kapitana+Antoniego+Led%C3%B3chowskiego+4A",
+    "city": "Gdynia",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Gdynia",
+        "citypart": null,
+        "street": "kpt. Antoniego Ledóchowskiego",
+        "number": "4A",
+        "teryt": "226201",
+        "simc": "0934100",
+        "ulic": "37431",
+        "code": "81-189",
+        "jednostka": "{Polska,pomorskie,Gdynia,Gdynia}",
+        "x": "468224.52",
+        "y": "744001.99",
+        "geometry_wkt": "POINT(468224.52 744001.99)",
+        "accuracy": "0.75",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.676471",
+        "street_accuracy": "0.676471",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1658",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/318750843",
+      "location": {
+        "latitude": 51.6102663,
+        "longitude": 16.8512822
+      },
+      "address": {
+        "city": "Rawicz",
+        "street": "Marszałka Józefa Piłsudskiego",
+        "house_number": "8",
+        "postal_code": "63-900"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rawicz%2C+Marsza%C5%82ka+J%C3%B3zefa+Pi%C5%82sudskiego+8",
+    "city": "Rawicz",
+    "status": "ok",
+    "candidates": []
+  },
+  {
+    "id": "biedronka:1682",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/205271898",
+      "location": {
+        "latitude": 50.268405,
+        "longitude": 18.8333118
+      },
+      "address": {
+        "city": "Ruda Śląska",
+        "street": "Księdza Józefa Niedzieli",
+        "house_number": "7",
+        "postal_code": "41-711"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ruda+%C5%9Al%C4%85ska%2C+Ksi%C4%99dza+J%C3%B3zefa+Niedzieli+7",
+    "city": "Ruda Śląska",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Ruda Śląska",
+        "citypart": null,
+        "street": "ks. Józefa Niedzieli",
+        "number": "7",
+        "teryt": "247201",
+        "simc": "0942630",
+        "ulic": "14143",
+        "code": "41-711",
+        "jednostka": "{Polska,śląskie,\"Ruda Śląska\",\"Ruda Śląska\"}",
+        "x": "488138.16",
+        "y": "266818.44",
+        "geometry_wkt": "POINT(488138.16 266818.44)",
+        "accuracy": "0.825",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.730769",
+        "street_accuracy": "0.730769",
+        "id": 1
+      },
+      {
+        "city": "Ruda Śląska",
+        "citypart": null,
+        "street": "ks. Józefa Czempiela",
+        "number": "7",
+        "teryt": "247201",
+        "simc": "0942630",
+        "ulic": "03366",
+        "code": "41-700",
+        "jednostka": "{Polska,śląskie,\"Ruda Śląska\",\"Ruda Śląska\"}",
+        "x": "489368.9",
+        "y": "272269.44",
+        "geometry_wkt": "POINT(489368.9 272269.44)",
+        "accuracy": "0.489796",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.285714",
+        "street_accuracy": "0.285714",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1721",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/294344286",
+      "location": {
+        "latitude": 52.6932183,
+        "longitude": 22.0497349
+      },
+      "address": {
+        "city": "Małkinia Górna",
+        "street": "Biegańskiego",
+        "house_number": "7",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ma%C5%82kinia+G%C3%B3rna%2C+Biega%C5%84skiego+7",
+    "city": "Małkinia Górna",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Małkinia Górna",
+        "citypart": null,
+        "street": "Biegańskiego",
+        "number": "7",
+        "teryt": "141605",
+        "simc": "0514408",
+        "ulic": "01230",
+        "code": "07-320",
+        "jednostka": "{Polska,mazowieckie,ostrowski,\"Małkinia Górna\"}",
+        "x": "706049.01",
+        "y": "540757.18",
+        "geometry_wkt": "POINT(706049.01 540757.18)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      {
+        "city": "Małkinia Górna",
+        "citypart": null,
+        "street": "Wyspiańskiego",
+        "number": "7",
+        "teryt": "141605",
+        "simc": "0514408",
+        "ulic": "25081",
+        "code": "07-320",
+        "jednostka": "{Polska,mazowieckie,ostrowski,\"Małkinia Górna\"}",
+        "x": "707152.39",
+        "y": "540909.06",
+        "geometry_wkt": "POINT(707152.39 540909.06)",
+        "accuracy": "0.666667",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.368421",
+        "street_accuracy": "0.368421",
+        "id": 2
+      },
+      {
+        "city": "Małkinia Górna",
+        "citypart": null,
+        "street": "Wyszyńskiego",
+        "number": "7",
+        "teryt": "141605",
+        "simc": "0514408",
+        "ulic": "25100",
+        "code": "07-320",
+        "jednostka": "{Polska,mazowieckie,ostrowski,\"Małkinia Górna\"}",
+        "x": "707029.84",
+        "y": "540865.62",
+        "geometry_wkt": "POINT(707029.84 540865.62)",
+        "accuracy": "0.638889",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.315789",
+        "street_accuracy": "0.315789",
+        "id": 3
+      },
+      {
+        "city": "Małkinia Górna",
+        "citypart": null,
+        "street": "Wilczyńskiego",
+        "number": "7",
+        "teryt": "141605",
+        "simc": "0514408",
+        "ulic": "24279",
+        "code": "07-320",
+        "jednostka": "{Polska,mazowieckie,ostrowski,\"Małkinia Górna\"}",
+        "x": "706456.82",
+        "y": "540397.98",
+        "geometry_wkt": "POINT(706456.82 540397.98)",
+        "accuracy": "0.621622",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.3",
+        "street_accuracy": "0.3",
+        "id": 4
+      },
+      {
+        "city": "Małkinia Górna",
+        "citypart": null,
+        "street": "Żeromskiego",
+        "number": "7",
+        "teryt": "141605",
+        "simc": "0514408",
+        "ulic": "26464",
+        "code": "07-320",
+        "jednostka": "{Polska,mazowieckie,ostrowski,\"Małkinia Górna\"}",
+        "x": "707148.9",
+        "y": "541180.19",
+        "geometry_wkt": "POINT(707148.9 541180.19)",
+        "accuracy": "0.611111",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.263158",
+        "street_accuracy": "0.263158",
+        "id": 5
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1727",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/237723966",
+      "location": {
+        "latitude": 53.4129972,
+        "longitude": 18.4527348
+      },
+      "address": {
+        "city": "Świecie",
+        "street": "Generała Władysława Sikorskiego",
+        "house_number": "2",
+        "postal_code": "86-100"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%9Awiecie%2C+Genera%C5%82a+W%C5%82adys%C5%82awa+Sikorskiego+2",
+    "city": "Świecie",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Świecie",
+        "citypart": null,
+        "street": "Gen. Władysława Sikorskiego",
+        "number": "2",
+        "teryt": "041409",
+        "simc": "0929664",
+        "ulic": "48859",
+        "code": "86-100",
+        "jednostka": "{Polska,kujawsko-pomorskie,świecki,Świecie}",
+        "x": "463602.45",
+        "y": "616636.37",
+        "geometry_wkt": "POINT(463602.45 616636.37)",
+        "accuracy": "0.837209",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.787879",
+        "street_accuracy": "0.787879",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1787",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/426601993",
+      "location": {
+        "latitude": 51.7597224,
+        "longitude": 20.2423181
+      },
+      "address": {
+        "city": "Rawa Mazowiecka",
+        "street": "Juliusza Słowackiego",
+        "house_number": "68",
+        "postal_code": "96-200"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rawa+Mazowiecka%2C+Juliusza+S%C5%82owackiego+68",
+    "city": "Rawa Mazowiecka",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Rawa Mazowiecka",
+        "citypart": null,
+        "street": "Słowackiego",
+        "number": "68",
+        "teryt": "101301",
+        "simc": "0977077",
+        "ulic": "20286",
+        "code": "96-200",
+        "jednostka": "{Polska,łódzkie,rawski,\"Rawa Mazowiecka\"}",
+        "x": "585720.54",
+        "y": "433318.27",
+        "geometry_wkt": "POINT(585720.54 433318.27)",
+        "accuracy": "0.775",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.571429",
+        "street_accuracy": "0.571429",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1819",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/180721317",
+      "location": {
+        "latitude": 50.2850937,
+        "longitude": 19.1268501
+      },
+      "address": {
+        "city": "Sosnowiec",
+        "street": "Generała Stefana Grota-Roweckiego",
+        "house_number": "20A",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sosnowiec%2C+Genera%C5%82a+Stefana+Grota-Roweckiego+20A",
+    "city": "Sosnowiec",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Sosnowiec",
+        "citypart": null,
+        "street": "gen. Stefana Grota-Roweckiego",
+        "number": "20a",
+        "teryt": "247501",
+        "simc": "0943428",
+        "ulic": "06191",
+        "code": "41-200",
+        "jednostka": "{Polska,śląskie,Sosnowiec,Sosnowiec}",
+        "x": "509064.02",
+        "y": "268740.56",
+        "geometry_wkt": "POINT(509064.02 268740.56)",
+        "accuracy": "0.851064",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.794118",
+        "street_accuracy": "0.794118",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1839",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/relation/19915945",
+      "location": {
+        "latitude": 53.9530401,
+        "longitude": 16.5874212
+      },
+      "address": {
+        "city": "Bobolice",
+        "street": "Plac Zwycięstwa",
+        "house_number": "7",
+        "postal_code": "76-020"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bobolice%2C+Plac+Zwyci%C4%99stwa+7",
+    "city": "Bobolice",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Bobolice",
+        "citypart": null,
+        "street": "Plac Zwycięstwa",
+        "number": "7",
+        "teryt": "320903",
+        "simc": "0949804",
+        "ulic": "41645",
+        "code": "76-020",
+        "jednostka": "{Polska,zachodniopomorskie,koszaliński,Bobolice}",
+        "x": "341732.05",
+        "y": "679208.1",
+        "geometry_wkt": "POINT(341732.05 679208.1)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1843",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/node/1792414253",
+      "location": {
+        "latitude": 51.7527805,
+        "longitude": 18.0496549
+      },
+      "address": {
+        "city": "Kalisz",
+        "street": "Prymasa Stefana Wyszyńskiego",
+        "house_number": "42a",
+        "postal_code": "62-800"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kalisz%2C+Prymasa+Stefana+Wyszy%C5%84skiego+42a",
+    "city": "Kalisz",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Kalisz",
+        "citypart": null,
+        "street": "Prymasa  Stefana Wyszyńskiego",
+        "number": "42A",
+        "teryt": "306101",
+        "simc": "0936569",
+        "ulic": "25119",
+        "code": "62-800",
+        "jednostka": "{Polska,wielkopolskie,Kalisz,Kalisz}",
+        "x": "434444.54",
+        "y": "432122.72",
+        "geometry_wkt": "POINT(434444.54 432122.72)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1875",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/180841320",
+      "location": {
+        "latitude": 50.2833916,
+        "longitude": 19.1472614
+      },
+      "address": {
+        "city": "Sosnowiec",
+        "street": "Gabriela Narutowicza",
+        "house_number": "56",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sosnowiec%2C+Gabriela+Narutowicza+56",
+    "city": "Sosnowiec",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Sosnowiec",
+        "citypart": null,
+        "street": "Gabriela Narutowicza",
+        "number": "56",
+        "teryt": "247501",
+        "simc": "0943428",
+        "ulic": "14018",
+        "code": "41-200",
+        "jednostka": "{Polska,śląskie,Sosnowiec,Sosnowiec}",
+        "x": "510510.76",
+        "y": "268475.55",
+        "geometry_wkt": "POINT(510510.76 268475.55)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1885",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/234868817",
+      "location": {
+        "latitude": 50.3192242,
+        "longitude": 22.3473393
+      },
+      "address": {
+        "city": "Nowa Sarzyna",
+        "street": "Janusza Korczaka",
+        "house_number": "5",
+        "postal_code": "37-310"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Nowa+Sarzyna%2C+Janusza+Korczaka+5",
+    "city": "Nowa Sarzyna",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Nowa Sarzyna",
+        "citypart": null,
+        "street": "Janusza Korczaka",
+        "number": "5",
+        "teryt": "180805",
+        "simc": "0974788",
+        "ulic": "09329",
+        "code": "37-310",
+        "jednostka": "{Polska,podkarpackie,leżajski,\"Nowa Sarzyna\"}",
+        "x": "738190.11",
+        "y": "277825.29",
+        "geometry_wkt": "POINT(738190.11 277825.29)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1924",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/256336046",
+      "location": {
+        "latitude": 54.0467718,
+        "longitude": 21.7787734
+      },
+      "address": {
+        "city": "Giżycko",
+        "street": "Aleja 1 Maja",
+        "house_number": "38",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gi%C5%BCycko%2C+Aleja+1+Maja+38",
+    "city": "Giżycko",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Giżycko",
+        "citypart": null,
+        "street": "Aleja 1 Maja",
+        "number": "38",
+        "teryt": "280601",
+        "simc": "0977692",
+        "ulic": "40237",
+        "code": "11-500",
+        "jednostka": "{Polska,warmińsko-mazurskie,giżycki,Giżycko}",
+        "x": "681857.36",
+        "y": "690507.06",
+        "geometry_wkt": "POINT(681857.36 690507.06)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      {
+        "city": "Giżycko",
+        "citypart": null,
+        "street": "3 Maja",
+        "number": "38",
+        "teryt": "280601",
+        "simc": "0977692",
+        "ulic": "11937",
+        "code": "11-500",
+        "jednostka": "{Polska,warmińsko-mazurskie,giżycki,Giżycko}",
+        "x": "680681",
+        "y": "689468.92",
+        "geometry_wkt": "POINT(680681 689468.92)",
+        "accuracy": "0.666667",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.357143",
+        "street_accuracy": "0.357143",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1925",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/97808100",
+      "location": {
+        "latitude": 53.0778302,
+        "longitude": 21.583597
+      },
+      "address": {
+        "city": "Ostrołęka",
+        "street": "Kontradmirała Włodzimierza Steyera",
+        "house_number": "2D",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ostro%C5%82%C4%99ka%2C+Kontradmira%C5%82a+W%C5%82odzimierza+Steyera+2D",
+    "city": "Ostrołęka",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Ostrołęka",
+        "citypart": null,
+        "street": "kadm. Włodzimierza Steyera",
+        "number": "2D",
+        "teryt": "146101",
+        "simc": "0966079",
+        "ulic": "21156",
+        "code": "07-410",
+        "jednostka": "{Polska,mazowieckie,Ostrołęka,Ostrołęka}",
+        "x": "673016",
+        "y": "582275.75",
+        "geometry_wkt": "POINT(673016 582275.75)",
+        "accuracy": "0.705882",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.605263",
+        "street_accuracy": "0.605263",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1963",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/193768493",
+      "location": {
+        "latitude": 50.2777471,
+        "longitude": 19.1318276
+      },
+      "address": {
+        "city": "Sosnowiec",
+        "street": "Aleja Zwycięstwa",
+        "house_number": "21a",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sosnowiec%2C+Aleja+Zwyci%C4%99stwa+21a",
+    "city": "Sosnowiec",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Sosnowiec",
+        "citypart": null,
+        "street": "Aleja Zwycięstwa",
+        "number": "21a",
+        "teryt": "247501",
+        "simc": "0943428",
+        "ulic": "00209",
+        "code": "41-200",
+        "jednostka": "{Polska,śląskie,Sosnowiec,Sosnowiec}",
+        "x": "509399.4",
+        "y": "267857.56",
+        "geometry_wkt": "POINT(509399.4 267857.56)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1971",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/290763297",
+      "location": {
+        "latitude": 49.5896941,
+        "longitude": 20.725629
+      },
+      "address": {
+        "city": "Nowy Sącz",
+        "street": "Aleje Józefa Piłsudskiego",
+        "house_number": "106",
+        "postal_code": "33-300"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Nowy+S%C4%85cz%2C+Aleje+J%C3%B3zefa+Pi%C5%82sudskiego+106",
+    "city": "Nowy Sącz",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Nowy Sącz",
+        "citypart": null,
+        "street": "Aleje Józefa Piłsudskiego",
+        "number": "106",
+        "teryt": "126201",
+        "simc": "0959435",
+        "ulic": "42515",
+        "code": "33-300",
+        "jednostka": "{Polska,małopolskie,\"Nowy Sącz\",\"Nowy Sącz\"}",
+        "x": "624687.45",
+        "y": "192766.4",
+        "geometry_wkt": "POINT(624687.45 192766.4)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1978",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/166535219",
+      "location": {
+        "latitude": 50.7145007,
+        "longitude": 23.2723315
+      },
+      "address": {
+        "city": "Zamość",
+        "street": "Prymasa Stefana Wyszyńskiego",
+        "house_number": "26",
+        "postal_code": "22-400"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zamo%C5%9B%C4%87%2C+Prymasa+Stefana+Wyszy%C5%84skiego+26",
+    "city": "Zamość",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Zamość",
+        "citypart": null,
+        "street": "Prymasa Stefana Wyszyńskiego",
+        "number": "26",
+        "teryt": "066401",
+        "simc": "0987510",
+        "ulic": "25119",
+        "code": "22-400",
+        "jednostka": "{Polska,lubelskie,Zamość,Zamość}",
+        "x": "801485.58",
+        "y": "325121.63",
+        "geometry_wkt": "POINT(801485.58 325121.63)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      {
+        "city": "Zamość",
+        "citypart": null,
+        "street": "Stefana Żeromskiego",
+        "number": "26",
+        "teryt": "066401",
+        "simc": "0987510",
+        "ulic": "26469",
+        "code": "22-400",
+        "jednostka": "{Polska,lubelskie,Zamość,Zamość}",
+        "x": "800029.3",
+        "y": "325222.65",
+        "geometry_wkt": "POINT(800029.3 325222.65)",
+        "accuracy": "0.5",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.361111",
+        "street_accuracy": "0.361111",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": "biedronka:1986",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/161757055",
+      "location": {
+        "latitude": 50.9613605,
+        "longitude": 16.3471607
+      },
+      "address": {
+        "city": "Strzegom",
+        "street": "Ignacego Jana Paderewskiego",
+        "house_number": "26",
+        "postal_code": "58-150"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Strzegom%2C+Ignacego+Jana+Paderewskiego+26",
+    "city": "Strzegom",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Strzegom",
+        "citypart": null,
+        "street": "Ignacego Jana Paderewskiego",
+        "number": "26",
+        "teryt": "021906",
+        "simc": "0984551",
+        "ulic": "15532",
+        "code": "58-150",
+        "jednostka": "{Polska,dolnośląskie,świdnicki,Strzegom}",
+        "x": "313757.47",
+        "y": "347175.51",
+        "geometry_wkt": "POINT(313757.47 347175.51)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2006",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/393931235",
+      "location": {
+        "latitude": 49.7163927,
+        "longitude": 18.8011465
+      },
+      "address": {
+        "city": "Ustroń",
+        "street": "Katowicka II",
+        "house_number": "30",
+        "postal_code": "43-450"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ustro%C5%84%2C+Katowicka+II+30",
+    "city": "Ustroń",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Ustroń",
+        "citypart": null,
+        "street": "Katowicka II",
+        "number": "30",
+        "teryt": "240302",
+        "simc": "0926677",
+        "ulic": "31438",
+        "code": "43-450",
+        "jednostka": "{Polska,śląskie,cieszyński,Ustroń}",
+        "x": "485670.54",
+        "y": "205470.97",
+        "geometry_wkt": "POINT(485670.54 205470.97)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2024",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/104410017",
+      "location": {
+        "latitude": 51.7526798,
+        "longitude": 19.5384582
+      },
+      "address": {
+        "city": "Łódź",
+        "street": "Fiodora Dostojewskiego",
+        "house_number": "2",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81%C3%B3d%C5%BA%2C+Fiodora+Dostojewskiego+2",
+    "city": "Łódź",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Łódź",
+        "citypart": null,
+        "street": "Fiodora Dostojewskiego",
+        "number": "2",
+        "teryt": "106101",
+        "simc": "0957650",
+        "ulic": "04140",
+        "code": "92-507",
+        "jednostka": "{Polska,łódzkie,Łódź,Łódź}",
+        "x": "537170.16",
+        "y": "431944.78",
+        "geometry_wkt": "POINT(537170.16 431944.78)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2033",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/796678295",
+      "location": {
+        "latitude": 54.1348465,
+        "longitude": 19.0142635
+      },
+      "address": {
+        "city": "Nowy Staw",
+        "street": "Obrońców Westerplatte",
+        "house_number": "23",
+        "postal_code": "82-230"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Nowy+Staw%2C+Obro%C5%84c%C3%B3w+Westerplatte+23",
+    "city": "Nowy Staw",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Nowy Staw",
+        "citypart": null,
+        "street": "Obrońców Westerplatte",
+        "number": "23",
+        "teryt": "220907",
+        "simc": "0932904",
+        "ulic": "14655",
+        "code": "82-230",
+        "jednostka": "{Polska,pomorskie,malborski,\"Nowy Staw\"}",
+        "x": "500924.9",
+        "y": "696718.96",
+        "geometry_wkt": "POINT(500924.9 696718.96)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2047",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/node/869318222",
+      "location": {
+        "latitude": 52.5413711,
+        "longitude": 17.6254659
+      },
+      "address": {
+        "city": "Gniezno",
+        "street": "Franklina Roosevelta",
+        "house_number": "83",
+        "postal_code": "62-200"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gniezno%2C+Franklina+Roosevelta+83",
+    "city": "Gniezno",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Gniezno",
+        "citypart": null,
+        "street": "Franklina Roosevelta",
+        "number": "83",
+        "teryt": "300301",
+        "simc": "0970632",
+        "ulic": "18855",
+        "code": "62-200",
+        "jednostka": "{Polska,wielkopolskie,gnieźnieński,Gniezno}",
+        "x": "406736.06",
+        "y": "520505.65",
+        "geometry_wkt": "POINT(406736.06 520505.65)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2114",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/187219674",
+      "location": {
+        "latitude": 51.4137176,
+        "longitude": 21.9726853
+      },
+      "address": {
+        "city": "Puławy",
+        "street": "Generała Fieldorfa \"Nila\"",
+        "house_number": "12",
+        "postal_code": "24-100"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pu%C5%82awy%2C+Genera%C5%82a+Fieldorfa+%22Nila%22+12",
+    "city": "Puławy",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Puławy",
+        "citypart": null,
+        "street": "gen. Fieldorfa \"Nila\"",
+        "number": "12",
+        "teryt": "061401",
+        "simc": "0956810",
+        "ulic": "35668",
+        "code": "24-100",
+        "jednostka": "{Polska,lubelskie,puławski,Puławy}",
+        "x": "706651.99",
+        "y": "398333.61",
+        "geometry_wkt": "POINT(706651.99 398333.61)",
+        "accuracy": "0.8",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.72",
+        "street_accuracy": "0.72",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2122",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/node/1882228784",
+      "location": {
+        "latitude": 53.4837972,
+        "longitude": 18.7515332
+      },
+      "address": {
+        "city": "Grudziądz",
+        "street": "Józefa Włodka",
+        "house_number": "16",
+        "postal_code": "86-300"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grudzi%C4%85dz%2C+J%C3%B3zefa+W%C5%82odka+16",
+    "city": "Grudziądz",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Grudziądz",
+        "citypart": null,
+        "street": "gen. Józefa Kustronia",
+        "number": "16",
+        "teryt": "046201",
+        "simc": "0983333",
+        "ulic": "10495",
+        "code": "86-300",
+        "jednostka": "{Polska,kujawsko-pomorskie,Grudziądz,Grudziądz}",
+        "x": "485005.91",
+        "y": "622224.23",
+        "geometry_wkt": "POINT(485005.91 622224.23)",
+        "accuracy": "0.5",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.153846",
+        "street_accuracy": "0.25",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2136",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/226112274",
+      "location": {
+        "latitude": 54.5483668,
+        "longitude": 18.5143307
+      },
+      "address": {
+        "city": "Gdynia",
+        "street": "Admirała Józefa Unruga",
+        "house_number": "5A",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gdynia%2C+Admira%C5%82a+J%C3%B3zefa+Unruga+5A",
+    "city": "Gdynia",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Gdynia",
+        "citypart": null,
+        "street": "adm. J. Unruga",
+        "number": "5A",
+        "teryt": "226201",
+        "simc": "0934100",
+        "ulic": "38484",
+        "code": "81-181",
+        "jednostka": "{Polska,pomorskie,Gdynia,Gdynia}",
+        "x": "468601.95",
+        "y": "742840.58",
+        "geometry_wkt": "POINT(468601.95 742840.58)",
+        "accuracy": "0.6",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.44",
+        "street_accuracy": "0.44",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2188",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/203384507",
+      "location": {
+        "latitude": 53.8457882,
+        "longitude": 19.6113946
+      },
+      "address": {
+        "city": "Zalewo",
+        "street": "Romualda Traugutta",
+        "house_number": "7",
+        "postal_code": "14-230"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zalewo%2C+Romualda+Traugutta+7",
+    "city": "Zalewo",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Zalewo",
+        "citypart": null,
+        "street": "Traugutta",
+        "number": "7",
+        "teryt": "280707",
+        "simc": "0965000",
+        "ulic": "22961",
+        "code": "14-230",
+        "jednostka": "{Polska,warmińsko-mazurskie,iławski,Zalewo}",
+        "x": "540174.56",
+        "y": "664725.64",
+        "geometry_wkt": "POINT(540174.56 664725.64)",
+        "accuracy": "0.678571",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.526316",
+        "street_accuracy": "0.526316",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2256",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/343979396",
+      "location": {
+        "latitude": 50.3605092,
+        "longitude": 19.0490767
+      },
+      "address": {
+        "city": null,
+        "street": "Gustawa Morcinka",
+        "house_number": "4",
+        "postal_code": "42-580"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wojkowice%2C+Gustawa+Morcinka+4",
+    "city": "Wojkowice",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Wojkowice",
+        "citypart": null,
+        "street": "Morcinka",
+        "number": "4",
+        "teryt": "240103",
+        "simc": "0945232",
+        "ulic": "13278",
+        "code": "42-580",
+        "jednostka": "{Polska,śląskie,będziński,Wojkowice}",
+        "x": "503500.26",
+        "y": "277020.87",
+        "geometry_wkt": "POINT(503500.26 277020.87)",
+        "accuracy": "0.724138",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.529412",
+        "street_accuracy": "0.529412",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2279",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/438212841",
+      "location": {
+        "latitude": 50.0477083,
+        "longitude": 21.3994382
+      },
+      "address": {
+        "city": "Dębica",
+        "street": "Józefa Ignacego Kraszewskiego",
+        "house_number": "59",
+        "postal_code": "39-200"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%99bica%2C+J%C3%B3zefa+Ignacego+Kraszewskiego+59",
+    "city": "Dębica",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Dębica",
+        "citypart": null,
+        "street": "Kraszewskiego",
+        "number": "59",
+        "teryt": "180301",
+        "simc": "0982233",
+        "ulic": "09869",
+        "code": "39-200",
+        "jednostka": "{Polska,podkarpackie,dębicki,Dębica}",
+        "x": "671726.69",
+        "y": "245039.87",
+        "geometry_wkt": "POINT(671726.69 245039.87)",
+        "accuracy": "0.631579",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.5",
+        "street_accuracy": "0.5",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2355",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/319943350",
+      "location": {
+        "latitude": 50.3313044,
+        "longitude": 19.1956359
+      },
+      "address": {
+        "city": "Dąbrowa Górnicza",
+        "street": "Marii Konopnickiej",
+        "house_number": "50",
+        "postal_code": "41-300"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%85browa+G%C3%B3rnicza%2C+Marii+Konopnickiej+50",
+    "city": "Dąbrowa Górnicza",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Dąbrowa Górnicza",
+        "citypart": null,
+        "street": "Konopnickiej",
+        "number": "50",
+        "teryt": "246501",
+        "simc": "0939473",
+        "ulic": "09182",
+        "code": "41-300",
+        "jednostka": "{Polska,śląskie,\"Dąbrowa Górnicza\",\"Dąbrowa Górnicza\"}",
+        "x": "513902.22",
+        "y": "273803.55",
+        "geometry_wkt": "POINT(513902.22 273803.55)",
+        "accuracy": "0.842105",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.684211",
+        "street_accuracy": "0.684211",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2359",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/681217131",
+      "location": {
+        "latitude": 53.4581302,
+        "longitude": 17.5450712
+      },
+      "address": {
+        "city": "Sępólno Krajeńskie",
+        "street": "Tadeusza Kościuszki",
+        "house_number": "24B",
+        "postal_code": "89-400"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=S%C4%99p%C3%B3lno+Kraje%C5%84skie%2C+Tadeusza+Ko%C5%9Bciuszki+24B",
+    "city": "Sępólno Krajeńskie",
+    "status": "ok",
+    "candidates": []
+  },
+  {
+    "id": "biedronka:2378",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/node/3423354994",
+      "location": {
+        "latitude": 52.24102,
+        "longitude": 21.29913
+      },
+      "address": {
+        "city": "Sulejówek",
+        "street": "Zofii Nałkowskiej",
+        "house_number": "2",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sulej%C3%B3wek%2C+Zofii+Na%C5%82kowskiej+2",
+    "city": "Sulejówek",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Sulejówek",
+        "citypart": null,
+        "street": "Nałkowskiej",
+        "number": "2",
+        "teryt": "141215",
+        "simc": "0921668",
+        "ulic": "13966",
+        "code": "05-071",
+        "jednostka": "{Polska,mazowieckie,miński,Sulejówek}",
+        "x": "656937.78",
+        "y": "488602.34",
+        "geometry_wkt": "POINT(656937.78 488602.34)",
+        "accuracy": "0.8",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.666667",
+        "street_accuracy": "0.666667",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2393",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/125744173",
+      "location": {
+        "latitude": 51.7297214,
+        "longitude": 19.5051439
+      },
+      "address": {
+        "city": "Łódź",
+        "street": "Poli Gojawiczyńskiej",
+        "house_number": "20",
+        "postal_code": "93-253"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81%C3%B3d%C5%BA%2C+Poli+Gojawiczy%C5%84skiej+20",
+    "city": "Łódź",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Łódź",
+        "citypart": null,
+        "street": "Poli Gojawiczyńskiej",
+        "number": "20",
+        "teryt": "106101",
+        "simc": "0957650",
+        "ulic": "05713",
+        "code": "93-253",
+        "jednostka": "{Polska,łódzkie,Łódź,Łódź}",
+        "x": "534864.84",
+        "y": "429383.31",
+        "geometry_wkt": "POINT(534864.84 429383.31)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2411",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/413600326",
+      "location": {
+        "latitude": 51.7184664,
+        "longitude": 19.4960219
+      },
+      "address": {
+        "city": "Łódź",
+        "street": "Ary Sternfelda",
+        "house_number": "24",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81%C3%B3d%C5%BA%2C+Ary+Sternfelda+24",
+    "city": "Łódź",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Łódź",
+        "citypart": null,
+        "street": "Ary Sternfelda",
+        "number": "24",
+        "teryt": "106101",
+        "simc": "0957650",
+        "ulic": "21148",
+        "code": "93-325",
+        "jednostka": "{Polska,łódzkie,Łódź,Łódź}",
+        "x": "534230.41",
+        "y": "428117.76",
+        "geometry_wkt": "POINT(534230.41 428117.76)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2444",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/node/3967861405",
+      "location": {
+        "latitude": 53.0724799,
+        "longitude": 19.3961547
+      },
+      "address": {
+        "city": "Rypin",
+        "street": "Toruńska",
+        "house_number": "2c",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rypin%2C+Toru%C5%84ska+2c",
+    "city": "Rypin",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Rypin",
+        "citypart": null,
+        "street": "Toruńska",
+        "number": "2C",
+        "teryt": "041201",
+        "simc": "0986136",
+        "ulic": "22902",
+        "code": "87-500",
+        "jednostka": "{Polska,kujawsko-pomorskie,rypiński,Rypin}",
+        "x": "526532.93",
+        "y": "578631.38",
+        "geometry_wkt": "POINT(526532.93 578631.38)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2456",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/244741898",
+      "location": {
+        "latitude": 51.2504632,
+        "longitude": 21.0705817
+      },
+      "address": {
+        "city": null,
+        "street": "Tadeusza Kościuszki",
+        "house_number": "82",
+        "postal_code": "26-680"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wierzbica%2C+Tadeusza+Ko%C5%9Bciuszki+82",
+    "city": "Wierzbica",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Wierzbica",
+        "citypart": null,
+        "street": "Kościuszki",
+        "number": "82",
+        "teryt": "142511",
+        "simc": "0641182",
+        "ulic": "09572",
+        "code": "26-680",
+        "jednostka": "{Polska,mazowieckie,radomski,Wierzbica}",
+        "x": "644476.21",
+        "y": "377983.13",
+        "geometry_wkt": "POINT(644476.21 377983.13)",
+        "accuracy": "0.75",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.578947",
+        "street_accuracy": "0.578947",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2498",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/233015694",
+      "location": {
+        "latitude": 54.1601265,
+        "longitude": 19.420918
+      },
+      "address": {
+        "city": "Elbląg",
+        "street": "Kazimierza Pułaskiego",
+        "house_number": "2A",
+        "postal_code": "82-300"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Elbl%C4%85g%2C+Kazimierza+Pu%C5%82askiego+2A",
+    "city": "Elbląg",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Elbląg",
+        "citypart": null,
+        "street": "Generała Kazimierza Pułaskiego",
+        "number": "2A",
+        "teryt": "286101",
+        "simc": "0932703",
+        "ulic": "37885",
+        "code": "82-300",
+        "jednostka": "{Polska,warmińsko-mazurskie,Elbląg,Elbląg}",
+        "x": "527506.78",
+        "y": "699612.78",
+        "geometry_wkt": "POINT(527506.78 699612.78)",
+        "accuracy": "0.780488",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "0.709677",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2545",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/235823352",
+      "location": {
+        "latitude": 52.3387764,
+        "longitude": 15.2999384
+      },
+      "address": {
+        "city": "Łagów",
+        "street": "Fryderyka Chopina",
+        "house_number": "2A",
+        "postal_code": "66-220"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81ag%C3%B3w%2C+Fryderyka+Chopina+2A",
+    "city": "Łagów",
+    "status": "ok",
+    "candidates": []
+  },
+  {
+    "id": "biedronka:2682",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/361248703",
+      "location": {
+        "latitude": 51.7925779,
+        "longitude": 19.408366
+      },
+      "address": {
+        "city": "Łódź",
+        "street": "Jana Woronicza",
+        "house_number": "1",
+        "postal_code": "91-030"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81%C3%B3d%C5%BA%2C+Jana+Woronicza+1",
+    "city": "Łódź",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Łódź",
+        "citypart": null,
+        "street": "Ks. Abp Jana Pawła Woronicza",
+        "number": "1",
+        "teryt": "106101",
+        "simc": "0957650",
+        "ulic": "53909",
+        "code": "91-030",
+        "jednostka": "{Polska,łódzkie,Łódź,Łódź}",
+        "x": "528172.9",
+        "y": "436321.33",
+        "geometry_wkt": "POINT(528172.9 436321.33)",
+        "accuracy": "0.628571",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.5",
+        "street_accuracy": "0.535714",
+        "id": 1
+      },
+      {
+        "city": "Łódź",
+        "citypart": null,
+        "street": "Jana",
+        "number": "1",
+        "teryt": "106101",
+        "simc": "0957650",
+        "ulic": "07109",
+        "code": "91-350",
+        "jednostka": "{Polska,łódzkie,Łódź,Łódź}",
+        "x": "530419.62",
+        "y": "437082.63",
+        "geometry_wkt": "POINT(530419.62 437082.63)",
+        "accuracy": "0.545455",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.333333",
+        "street_accuracy": "0.333333",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2698",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/454687632",
+      "location": {
+        "latitude": 50.1568491,
+        "longitude": 19.4812752
+      },
+      "address": {
+        "city": "Trzebinia",
+        "street": "Młoszowska",
+        "house_number": "46",
+        "postal_code": "32-540"
+      },
+      "reason": "official_store_id",
+      "score": 1,
+      "distance_from_original_m": 3
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Trzebinia%2C+M%C5%82oszowska+46",
+    "city": "Trzebinia",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Trzebinia",
+        "citypart": null,
+        "street": "Młoszowska",
+        "number": "46",
+        "teryt": "120305",
+        "simc": "0944149",
+        "ulic": "13105",
+        "code": "32-540",
+        "jednostka": "{Polska,małopolskie,chrzanowski,Trzebinia}",
+        "x": "534353.65",
+        "y": "254531.12",
+        "geometry_wkt": "POINT(534353.65 254531.12)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2769",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/30957351",
+      "location": {
+        "latitude": 52.2267304,
+        "longitude": 21.0830861
+      },
+      "address": {
+        "city": "Warszawa",
+        "street": "Generała Romana Abrahama",
+        "house_number": "1",
+        "postal_code": "03-982"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Genera%C5%82a+Romana+Abrahama+1",
+    "city": "Warszawa",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "ulica gen. Romana Abrahama",
+        "number": "1",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "00091",
+        "code": "03-982",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "642247.3",
+        "y": "486564.63",
+        "geometry_wkt": "POINT(642247.3 486564.63)",
+        "accuracy": "0.697674",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.612903",
+        "street_accuracy": "0.59375",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2845",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/node/5455197921",
+      "location": {
+        "latitude": 52.2598887,
+        "longitude": 21.0287977
+      },
+      "address": {
+        "city": "Warszawa",
+        "street": "Plac generała Józefa Hallera",
+        "house_number": "6",
+        "postal_code": "03-464"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Warszawa%2C+Plac+genera%C5%82a+J%C3%B3zefa+Hallera+6",
+    "city": "Warszawa",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Warszawa",
+        "citypart": null,
+        "street": "Plac gen. Józefa Hallera",
+        "number": "6",
+        "teryt": "146501",
+        "simc": "0918123",
+        "ulic": "45386",
+        "code": "03-464",
+        "jednostka": "{Polska,mazowieckie,Warszawa,Warszawa}",
+        "x": "638431.31",
+        "y": "490155.96",
+        "geometry_wkt": "POINT(638431.31 490155.96)",
+        "accuracy": "0.85",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.793103",
+        "street_accuracy": "0.793103",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:2981",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/node/4556855743",
+      "location": {
+        "latitude": 53.125594,
+        "longitude": 23.150326
+      },
+      "address": {
+        "city": "Białystok",
+        "street": "Prezydenta Ryszarda Kaczorowskiego",
+        "house_number": "7",
+        "postal_code": "15-375"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bia%C5%82ystok%2C+Prezydenta+Ryszarda+Kaczorowskiego+7",
+    "city": "Białystok",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Białystok",
+        "citypart": null,
+        "street": "Prezydenta Ryszarda Kaczorowskiego",
+        "number": "7",
+        "teryt": "206101",
+        "simc": "0922410",
+        "ulic": "43071",
+        "code": "15-375",
+        "jednostka": "{Polska,podlaskie,Białystok,Białystok}",
+        "x": "777559.84",
+        "y": "592509.58",
+        "geometry_wkt": "POINT(777559.84 592509.58)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:3002",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/692322628",
+      "location": {
+        "latitude": 50.6976655,
+        "longitude": 21.7378354
+      },
+      "address": {
+        "city": "Sandomierz",
+        "street": "Eugeniusza Kwiatkowskiego",
+        "house_number": "67",
+        "postal_code": "27-600"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sandomierz%2C+Eugeniusza+Kwiatkowskiego+67",
+    "city": "Sandomierz",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Sandomierz",
+        "citypart": null,
+        "street": "Eugeniusza Kwiatkowskiego",
+        "number": "67",
+        "teryt": "260901",
+        "simc": "0980926",
+        "ulic": "10559",
+        "code": "27-600",
+        "jednostka": "{Polska,świętokrzyskie,sandomierski,Sandomierz}",
+        "x": "693275.5",
+        "y": "318074.01",
+        "geometry_wkt": "POINT(693275.5 318074.01)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:3018",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/node/3241816960",
+      "location": {
+        "latitude": 52.8973846,
+        "longitude": 16.5542987
+      },
+      "address": {
+        "city": "Czarnków",
+        "street": "Tadeusza Kościuszki",
+        "house_number": "93",
+        "postal_code": "64-700"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Czarnk%C3%B3w%2C+Tadeusza+Ko%C5%9Bciuszki+93",
+    "city": "Czarnków",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Czarnków",
+        "citypart": null,
+        "street": "Kościuszki",
+        "number": "93",
+        "teryt": "300201",
+        "simc": "0966777",
+        "ulic": "09572",
+        "code": "64-700",
+        "jednostka": "{Polska,wielkopolskie,czarnkowsko-trzcianecki,Czarnków}",
+        "x": "335512.27",
+        "y": "561845.4",
+        "geometry_wkt": "POINT(335512.27 561845.4)",
+        "accuracy": "0.741935",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.578947",
+        "street_accuracy": "0.578947",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:3062",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/108487741",
+      "location": {
+        "latitude": 51.716664,
+        "longitude": 19.4744081
+      },
+      "address": {
+        "city": "Łódź",
+        "street": "Klaudiusza Łazowskiego",
+        "house_number": "44",
+        "postal_code": null
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81%C3%B3d%C5%BA%2C+Klaudiusza+%C5%81azowskiego+44",
+    "city": "Łódź",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Łódź",
+        "citypart": null,
+        "street": "Klaudiusza Łazowskiego",
+        "number": "44",
+        "teryt": "106101",
+        "simc": "0957650",
+        "ulic": "11566",
+        "code": "93-310",
+        "jednostka": "{Polska,łódzkie,Łódź,Łódź}",
+        "x": "532750",
+        "y": "427933.31",
+        "geometry_wkt": "POINT(532750 427933.31)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:3074",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/980115906",
+      "location": {
+        "latitude": 51.0249337,
+        "longitude": 15.0612148
+      },
+      "address": {
+        "city": "Zawidów",
+        "street": "Mikołaja Kopernika",
+        "house_number": "1",
+        "postal_code": "59-970"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zawid%C3%B3w%2C+Miko%C5%82aja+Kopernika+1",
+    "city": "Zawidów",
+    "status": "ok",
+    "candidates": []
+  },
+  {
+    "id": "biedronka:3081",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/91561252",
+      "location": {
+        "latitude": 51.7439241,
+        "longitude": 19.8054559
+      },
+      "address": {
+        "city": "Koluszki",
+        "street": "Juliusza Słowackiego",
+        "house_number": "22",
+        "postal_code": "95-040"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Koluszki%2C+Juliusza+S%C5%82owackiego+22",
+    "city": "Koluszki",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Koluszki",
+        "citypart": null,
+        "street": "Głowackiego",
+        "number": "22",
+        "teryt": "100607",
+        "simc": "0967831",
+        "ulic": "05623",
+        "code": "95-040",
+        "jednostka": "{Polska,łódzkie,\"łódzki wschodni\",Koluszki}",
+        "x": "556653.66",
+        "y": "430946.65",
+        "geometry_wkt": "POINT(556653.66 430946.65)",
+        "accuracy": "0.6",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.375",
+        "street_accuracy": "0.375",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:3357",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/586102390",
+      "location": {
+        "latitude": 52.4777104,
+        "longitude": 21.6251887
+      },
+      "address": {
+        "city": "Jadów",
+        "street": "Stanisława Augusta Poniatowskiego",
+        "house_number": "27B",
+        "postal_code": "05-280"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jad%C3%B3w%2C+Stanis%C5%82awa+Augusta+Poniatowskiego+27B",
+    "city": "Jadów",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Jadów",
+        "citypart": null,
+        "street": "Stanisława Augusta Poniatowskiego",
+        "number": "27b",
+        "teryt": "143406",
+        "simc": "0673220",
+        "ulic": "17116",
+        "code": "05-280",
+        "jednostka": "{Polska,mazowieckie,wołomiński,Jadów}",
+        "x": "678222.63",
+        "y": "515682.73",
+        "geometry_wkt": "POINT(678222.63 515682.73)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:3462",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/177242291",
+      "location": {
+        "latitude": 53.0182552,
+        "longitude": 20.8770862
+      },
+      "address": {
+        "city": "Przasnysz",
+        "street": "Marszałka Józefa Piłsudskiego",
+        "house_number": "89",
+        "postal_code": "06-300"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Przasnysz%2C+Marsza%C5%82ka+J%C3%B3zefa+Pi%C5%82sudskiego+89",
+    "city": "Przasnysz",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Przasnysz",
+        "citypart": null,
+        "street": "Marszałka Józefa Piłsudskiego",
+        "number": "89",
+        "teryt": "142201",
+        "simc": "0966398",
+        "ulic": "36029",
+        "code": "06-300",
+        "jednostka": "{Polska,mazowieckie,przasnyski,Przasnysz}",
+        "x": "625881.31",
+        "y": "574209.51",
+        "geometry_wkt": "POINT(625881.31 574209.51)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:561",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/179970308",
+      "location": {
+        "latitude": 50.3633119,
+        "longitude": 18.989505
+      },
+      "address": {
+        "city": "Piekary Śląskie",
+        "street": "Marii Skłodowskiej-Curie",
+        "house_number": "65A",
+        "postal_code": "41-949"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Piekary+%C5%9Al%C4%85skie%2C+Marii+Sk%C5%82odowskiej-Curie+65A",
+    "city": "Piekary Śląskie",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Piekary Śląskie",
+        "citypart": null,
+        "street": "Marii Curie-Skłodowskiej",
+        "number": "65a",
+        "teryt": "247101",
+        "simc": "0942104",
+        "ulic": "03148",
+        "code": "41-949",
+        "jednostka": "{Polska,śląskie,\"Piekary Śląskie\",\"Piekary Śląskie\"}",
+        "x": "499272.26",
+        "y": "277355.67",
+        "geometry_wkt": "POINT(499272.26 277355.67)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7466",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/1235601970",
+      "location": {
+        "latitude": 50.3228877,
+        "longitude": 18.7660525
+      },
+      "address": {
+        "city": "Zabrze",
+        "street": "Macieja Mielżyńskiego",
+        "house_number": "4",
+        "postal_code": "41-800"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zabrze%2C+Macieja+Miel%C5%BCy%C5%84skiego+4",
+    "city": "Zabrze",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Zabrze",
+        "citypart": null,
+        "street": "Macieja Wilczka",
+        "number": "4",
+        "teryt": "247801",
+        "simc": "0945380",
+        "ulic": "49926",
+        "code": "41-807",
+        "jednostka": "{Polska,śląskie,Zabrze,Zabrze}",
+        "x": "485107.43",
+        "y": "275699.53",
+        "geometry_wkt": "POINT(485107.43 275699.53)",
+        "accuracy": "0.447368",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.275862",
+        "street_accuracy": "0.275862",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7594",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/1376556273",
+      "location": {
+        "latitude": 51.4385606,
+        "longitude": 18.9492647
+      },
+      "address": {
+        "city": "Widawa",
+        "street": "Adama Mickiewicza",
+        "house_number": "9",
+        "postal_code": "98-170"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.675,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Widawa%2C+Adama+Mickiewicza+9",
+    "city": "Widawa",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Widawa",
+        "citypart": null,
+        "street": "Mickiewicza",
+        "number": "9",
+        "teryt": "100304",
+        "simc": "0717689",
+        "ulic": "12734",
+        "code": "98-170",
+        "jednostka": "{Polska,łódzkie,łaski,Widawa}",
+        "x": "496461.42",
+        "y": "396876.88",
+        "geometry_wkt": "POINT(496461.42 396876.88)",
+        "accuracy": "0.777778",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.666667",
+        "street_accuracy": "0.666667",
+        "id": 1
+      },
+      {
+        "city": "Widawa",
+        "citypart": null,
+        "street": "Mickiewicza",
+        "number": "9",
+        "teryt": "100304",
+        "simc": "0717689",
+        "ulic": "12734",
+        "code": "98-170",
+        "jednostka": "{Polska,łódzkie,łaski,Widawa}",
+        "x": "496490.79",
+        "y": "396887.16",
+        "geometry_wkt": "POINT(496490.79 396887.16)",
+        "accuracy": "0.777778",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.666667",
+        "street_accuracy": "0.666667",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7894",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/1469238601",
+      "location": {
+        "latitude": 51.665333,
+        "longitude": 16.0671013
+      },
+      "address": {
+        "city": "Głogów",
+        "street": "Generała Władysława Sikorskiego",
+        "house_number": "46",
+        "postal_code": "67-200"
+      },
+      "reason": "similar_street_same_number_locality",
+      "score": 0.617,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=G%C5%82og%C3%B3w%2C+Genera%C5%82a+W%C5%82adys%C5%82awa+Sikorskiego+46",
+    "city": "Głogów",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Głogów",
+        "citypart": null,
+        "street": "Generała Władysława Sikorskiego",
+        "number": "46",
+        "teryt": "020301",
+        "simc": "0954082",
+        "ulic": "38378",
+        "code": "67-200",
+        "jednostka": "{Polska,dolnośląskie,głogowski,Głogów}",
+        "x": "297245.72",
+        "y": "426157.41",
+        "geometry_wkt": "POINT(297245.72 426157.41)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7912",
+    "osm": {
+      "osm_url": "https://www.openstreetmap.org/way/1502438511",
+      "location": {
+        "latitude": 50.3438295,
+        "longitude": 18.533459
+      },
+      "address": {
+        "city": "Kleszczów",
+        "street": "Gliwicka",
+        "house_number": "32",
+        "postal_code": "44-164"
+      },
+      "reason": "official_store_id",
+      "score": 1,
+      "distance_from_original_m": null
+    },
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Kleszcz%C3%B3w%2C+Gliwicka+32",
+    "city": "Kleszczów",
+    "status": "ok",
+    "candidates": [
+      {
+        "city": "Kleszczów",
+        "citypart": null,
+        "street": "Gliwicka",
+        "number": "32",
+        "teryt": "240505",
+        "simc": "0221095",
+        "ulic": "05583",
+        "code": "44-164",
+        "jednostka": "{Polska,śląskie,gliwicki,Rudziniec}",
+        "x": "466822.51",
+        "y": "275289.58",
+        "geometry_wkt": "POINT(466822.51 275289.58)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  }
+]

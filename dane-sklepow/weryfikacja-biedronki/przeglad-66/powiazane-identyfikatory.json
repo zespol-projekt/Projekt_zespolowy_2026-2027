@@ -1,0 +1,101 @@
+{
+  "lazy": {
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lazy",
+    "stores": [
+      {
+        "id": "7305",
+        "shop_number": "6553",
+        "location_id": "10489344943628720549",
+        "city": "Łazy",
+        "street": "Targowa",
+        "street_number": "8",
+        "zip_code": "42-450",
+        "latitude": "50.4269047",
+        "longitude": "19.3923745",
+        "created": "2023-07-26 05:12:45",
+        "date_closed": null,
+        "hours_monday": "06:00-22:00"
+      },
+      {
+        "id": "7339",
+        "shop_number": "6533",
+        "location_id": "10489344943628720549",
+        "city": "Łazy",
+        "street": "Targowa",
+        "street_number": "8",
+        "zip_code": "42-450",
+        "latitude": "50.4269047",
+        "longitude": "19.3923745",
+        "created": "2023-09-27 05:50:28",
+        "date_closed": null,
+        "hours_monday": "06:00-23:00"
+      }
+    ]
+  },
+  "andrychow": {
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=andrychow",
+    "stores": [
+      {
+        "id": "7962",
+        "shop_number": "3731",
+        "location_id": "1457033434989868864",
+        "city": "Andrychów",
+        "street": "Krakowska",
+        "street_number": "83",
+        "zip_code": "34-120",
+        "latitude": null,
+        "longitude": null,
+        "created": "2026-10-30 16:20:22",
+        "date_closed": null,
+        "hours_monday": "06:00-23:00"
+      },
+      {
+        "id": "673",
+        "shop_number": "3063",
+        "location_id": "7479827140173485883",
+        "city": "Andrychów",
+        "street": "Krakowska",
+        "street_number": "83",
+        "zip_code": "34-120",
+        "latitude": "49.8553929",
+        "longitude": "19.3354258",
+        "created": "0000-00-00 00:00:00",
+        "date_closed": null,
+        "hours_monday": "Zamknięte"
+      }
+    ]
+  },
+  "lubin": {
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lubin",
+    "stores": [
+      {
+        "id": "7953",
+        "shop_number": "7549",
+        "location_id": "11764286309736839485",
+        "city": "Lubin",
+        "street": "Leszczynowa",
+        "street_number": "27c",
+        "zip_code": "59-300",
+        "latitude": "51.4001917",
+        "longitude": "16.1880066",
+        "created": "2026-10-20 14:51:31",
+        "date_closed": null,
+        "hours_monday": "06:00-22:00"
+      },
+      {
+        "id": "2518",
+        "shop_number": "4733",
+        "location_id": "11764286309736839485",
+        "city": "Lubin",
+        "street": "Leszczynowa",
+        "street_number": "27c",
+        "zip_code": "59-300",
+        "latitude": "51.4001917",
+        "longitude": "16.1880066",
+        "created": "0000-00-00 00:00:00",
+        "date_closed": null,
+        "hours_monday": "06:00-22:30"
+      }
+    ]
+  }
+}

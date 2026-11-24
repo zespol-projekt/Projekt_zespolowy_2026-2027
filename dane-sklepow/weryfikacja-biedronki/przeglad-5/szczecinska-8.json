@@ -1,0 +1,275 @@
+{
+  "bbox": "15.1477615,52.7460017,15.1519615,52.7486017",
+  "ortho": {
+    "StandardResolution": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=15.1477615%2C52.7460017%2C15.1519615%2C52.7486017&width=650&height=650&format=image%2Fjpeg&styles=",
+    "HighResolution": "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/HighResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=15.1477615%2C52.7460017%2C15.1519615%2C52.7486017&width=650&height=650&format=image%2Fjpeg&styles="
+  },
+  "osm": "https://api.openstreetmap.org/api/0.6/map.json?bbox=15.1477615%2C52.7460017%2C15.1519615%2C52.7486017",
+  "elements": [
+    {
+      "type": "node",
+      "id": 13048647613,
+      "lat": 52.7474413,
+      "lon": 15.1502181,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647614,
+      "lat": 52.7473732,
+      "lon": 15.1509077,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647697,
+      "lat": 52.7473696,
+      "lon": 15.1503001,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647701,
+      "lat": 52.7473749,
+      "lon": 15.150278,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647702,
+      "lat": 52.7473918,
+      "lon": 15.1502069,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647736,
+      "lat": 52.7474176,
+      "lon": 15.1509537,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647737,
+      "lat": 52.7474134,
+      "lon": 15.1509515,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647738,
+      "lat": 52.7474169,
+      "lon": 15.150936,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647739,
+      "lat": 52.7472474,
+      "lon": 15.1508264,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647740,
+      "lat": 52.7472438,
+      "lon": 15.1508409,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647741,
+      "lat": 52.7472391,
+      "lon": 15.1508384,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647742,
+      "lat": 52.7472441,
+      "lon": 15.1508165,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647743,
+      "lat": 52.7472463,
+      "lon": 15.1508178,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647744,
+      "lat": 52.7473961,
+      "lon": 15.1501888,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647745,
+      "lat": 52.7475705,
+      "lon": 15.1503017,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647746,
+      "lat": 52.7474208,
+      "lon": 15.1509294,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13048647747,
+      "lat": 52.7474229,
+      "lon": 15.1509309,
+      "timestamp": "2025-08-04T16:39:13Z"
+    },
+    {
+      "type": "node",
+      "id": 13433120770,
+      "lat": 52.7479408,
+      "lon": 15.1490464,
+      "timestamp": "2026-01-05T19:12:09Z"
+    },
+    {
+      "type": "node",
+      "id": 13433120771,
+      "lat": 52.7478135,
+      "lon": 15.1489654,
+      "timestamp": "2026-01-05T19:12:09Z"
+    },
+    {
+      "type": "node",
+      "id": 13433120772,
+      "lat": 52.7479286,
+      "lon": 15.148476,
+      "timestamp": "2026-01-05T19:12:09Z"
+    },
+    {
+      "type": "node",
+      "id": 13433120773,
+      "lat": 52.7480559,
+      "lon": 15.1485571,
+      "timestamp": "2026-01-05T19:12:09Z"
+    },
+    {
+      "type": "node",
+      "id": 13556472074,
+      "lat": 52.7474034,
+      "lon": 15.1482239,
+      "timestamp": "2026-02-13T18:29:20Z"
+    },
+    {
+      "type": "node",
+      "id": 13556472075,
+      "lat": 52.7473904,
+      "lon": 15.1482157,
+      "timestamp": "2026-02-13T18:29:20Z"
+    },
+    {
+      "type": "node",
+      "id": 13556472076,
+      "lat": 52.7473765,
+      "lon": 15.1482751,
+      "timestamp": "2026-02-13T18:29:20Z"
+    },
+    {
+      "type": "node",
+      "id": 13556472077,
+      "lat": 52.7473894,
+      "lon": 15.1482834,
+      "timestamp": "2026-02-13T18:29:20Z"
+    },
+    {
+      "type": "node",
+      "id": 13752734231,
+      "lat": 52.7479514,
+      "lon": 15.1484905,
+      "timestamp": "2026-04-22T14:09:51Z"
+    },
+    {
+      "type": "way",
+      "id": 1420011095,
+      "timestamp": "2025-09-16T18:15:16Z",
+      "nodes": [
+        13048647747,
+        13048647746,
+        13048647745,
+        13048647613,
+        13048647744,
+        13048647702,
+        13048647701,
+        13048647697,
+        13048647743,
+        13048647742,
+        13048647741,
+        13048647740,
+        13048647739,
+        13048647614,
+        13048647738,
+        13048647737,
+        13048647736,
+        13048647747
+      ],
+      "tags": {
+        "addr:city": "Gorzów Wielkopolski",
+        "addr:city:simc": "0935140",
+        "addr:housenumber": "8",
+        "addr:postcode": "66-400",
+        "addr:street": "Szczecińska",
+        "brand": "Biedronka",
+        "brand:wikidata": "Q857182",
+        "building": "retail",
+        "building:levels": "1",
+        "name": "Biedronka",
+        "operator": "Jeronimo Martins Polska S.A.",
+        "roof:shape": "gabled",
+        "shop": "supermarket",
+        "source:addr": "gugik.gov.pl",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1464430127,
+      "timestamp": "2026-04-22T14:09:51Z",
+      "nodes": [
+        13433120773,
+        13752734231,
+        13433120772,
+        13433120771,
+        13433120770,
+        13433120773
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "source:building": "BDOT",
+        "source:geometry": "EGiB"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1477857208,
+      "timestamp": "2026-02-13T18:29:20Z",
+      "nodes": [
+        13556472074,
+        13556472075,
+        13556472076,
+        13556472077,
+        13556472074
+      ],
+      "tags": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "bin": "yes",
+        "building": "yes",
+        "layer": "1",
+        "lit": "yes",
+        "operator": "MZK Gorzów",
+        "shelter_type": "public_transport"
+      }
+    }
+  ]
+}

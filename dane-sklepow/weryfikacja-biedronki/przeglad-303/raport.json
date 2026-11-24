@@ -1,0 +1,1894 @@
+{
+  "input_fingerprint": "5ffd9442b00b469f58c5ebb307bf733345ffb40e5c8f707dddaf25babed732c8",
+  "reviewed": 303,
+  "retrieved_on": "2026-11-23",
+  "osm_observed_at": "2026-11-23T01:14:58Z",
+  "accepted": 25,
+  "totals": {
+    "no_new_confirmation": 270,
+    "existing_conflict_remains": 8,
+    "confirmed": 25
+  },
+  "confirmed_by_rule": {
+    "corrected_number_spacing": 1,
+    "village_numbering": 19,
+    "postcode_discrepancy_with_osm_shop": 5
+  },
+  "decisions": [
+    {
+      "id": "biedronka:1069",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1172",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1187",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1190",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1218",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1221",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1229",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1251",
+      "previous_status": "error",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1257",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1270",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1279",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1282",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1284",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1305",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1311",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1314",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1340",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1369",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1380",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1390",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1401",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1403",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1420",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1421",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1432",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1439",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1444",
+      "previous_status": "no_exact_address",
+      "status": "existing_conflict_remains"
+    },
+    {
+      "id": "biedronka:1449",
+      "previous_status": "no_exact_address",
+      "status": "existing_conflict_remains"
+    },
+    {
+      "id": "biedronka:1453",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1488",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1489",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1500",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1514",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1521",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1523",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1536",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1542",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1548",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1553",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1568",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1571",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1579",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1583",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1590",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1599",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1601",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1609",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1615",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1618",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1620",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1625",
+      "previous_status": "error",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1658",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1661",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1682",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1683",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1688",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1695",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1701",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1715",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1721",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1725",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1727",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1729",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1757",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1762",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1768",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1771",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1787",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1789",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1807",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1819",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1827",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1829",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1839",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1843",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1868",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1875",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1878",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1885",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1907",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1917",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1924",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1925",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1932",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1942",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1963",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1971",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1973",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1978",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1986",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:1998",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2004",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2006",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2011",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2017",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2024",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2033",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2038",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2043",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2047",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2058",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2067",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2069",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2080",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2095",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2100",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2114",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2122",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2136",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2149",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2157",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2162",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2188",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2202",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2211",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2220",
+      "previous_status": "incomplete",
+      "status": "existing_conflict_remains"
+    },
+    {
+      "id": "biedronka:2230",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2247",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2256",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2279",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2282",
+      "previous_status": "error",
+      "status": "confirmed",
+      "rule": "corrected_number_spacing",
+      "accepted": {
+        "location": {
+          "latitude": 49.9719872,
+          "longitude": 18.9836326
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C4%86wiklice%2C+M%C4%99czennik%C3%B3w+O%C5%9Bwi%C4%99cimskich+72",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,2282"
+      }
+    },
+    {
+      "id": "biedronka:2287",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2295",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2313",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2316",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2325",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2327",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2335",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2338",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2344",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2355",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2358",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2359",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2378",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2393",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2398",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2411",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2421",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2437",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2443",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2444",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2456",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2474",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2477",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2478",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2479",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2496",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2498",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2508",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2519",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2522",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2545",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2550",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2577",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2641",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2643",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2682",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2698",
+      "previous_status": "incomplete",
+      "status": "existing_conflict_remains"
+    },
+    {
+      "id": "biedronka:2700",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2710",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2713",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2743",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2753",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2764",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2769",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2845",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:2981",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3002",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3018",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3032",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3039",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3057",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3062",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3074",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3078",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3080",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3081",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3083",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3090",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3098",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 49.5920535,
+          "longitude": 20.6298767
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Brzezna+645",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=brzezna"
+      }
+    },
+    {
+      "id": "biedronka:3106",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3116",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3191",
+      "previous_status": "incomplete",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3357",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3376",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 50.9155762,
+          "longitude": 17.8320116
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Zieleniec+69A",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zieleniec"
+      }
+    },
+    {
+      "id": "biedronka:3404",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3435",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3453",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3462",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3486",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3489",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 49.6871609,
+          "longitude": 20.8496688
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Korzenna+251",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=korzenna"
+      }
+    },
+    {
+      "id": "biedronka:3492",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 51.180446,
+          "longitude": 15.0334129
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=J%C4%99drzychowice+125a",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jedrzychowice"
+      }
+    },
+    {
+      "id": "biedronka:3514",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3566",
+      "previous_status": "incomplete",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3588",
+      "previous_status": "incomplete",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3599",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3649",
+      "previous_status": "no_exact_address",
+      "status": "confirmed",
+      "rule": "postcode_discrepancy_with_osm_shop",
+      "source_postcodes": [
+        "05-500",
+        "05-520"
+      ],
+      "accepted": {
+        "location": {
+          "latitude": 52.1063095,
+          "longitude": 21.1120632
+        },
+        "evidence": "https://www.openstreetmap.org/way/775325120",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Konstancin-Jeziorna%2C+Warszawska+101"
+        ],
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=konstancin-jeziorna"
+      }
+    },
+    {
+      "id": "biedronka:3657",
+      "previous_status": "error",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3660",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3710",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3712",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 50.6556839,
+          "longitude": 22.0371907
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%85browa+Rzeczycka+107",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dabrowa-rzeczycka"
+      }
+    },
+    {
+      "id": "biedronka:3715",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3718",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3730",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3734",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:3797",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:459",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:561",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:664",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:6955",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:6961",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:6975",
+      "previous_status": "no_exact_address",
+      "status": "confirmed",
+      "rule": "postcode_discrepancy_with_osm_shop",
+      "source_postcodes": [
+        "75-950",
+        "75-816"
+      ],
+      "accepted": {
+        "location": {
+          "latitude": 54.1644798,
+          "longitude": 16.1840999
+        },
+        "evidence": "https://www.openstreetmap.org/way/1136455730",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Koszalin%2C+Po%C5%82czy%C5%84ska+146"
+        ],
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=koszalin"
+      }
+    },
+    {
+      "id": "biedronka:6987",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 50.1833635,
+          "longitude": 20.8119261
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Otfin%C3%B3w+66",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=otfinow"
+      }
+    },
+    {
+      "id": "biedronka:6991",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7017",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7022",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7027",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7031",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7033",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7039",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7048",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7050",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 50.024652,
+          "longitude": 22.3320816
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Markowa+164",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=markowa"
+      }
+    },
+    {
+      "id": "biedronka:7071",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7078",
+      "previous_status": "unresolved_store_conflict",
+      "status": "existing_conflict_remains"
+    },
+    {
+      "id": "biedronka:7081",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 51.0927114,
+          "longitude": 22.5820303
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jab%C5%82onna-Maj%C4%85tek+1",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jablonna-majatek"
+      }
+    },
+    {
+      "id": "biedronka:7097",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7099",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7100",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7143",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7173",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7278",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7280",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7292",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7305",
+      "previous_status": "no_exact_address",
+      "status": "existing_conflict_remains"
+    },
+    {
+      "id": "biedronka:7318",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7325",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 49.680697,
+          "longitude": 20.4263007
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Stara+Wie%C5%9B+621",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stara-wies"
+      }
+    },
+    {
+      "id": "biedronka:7339",
+      "previous_status": "no_exact_address",
+      "status": "existing_conflict_remains"
+    },
+    {
+      "id": "biedronka:7340",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7341",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7343",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 49.8293833,
+          "longitude": 20.4262712
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81%C4%85kta+G%C3%B3rna+407",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lakta-gorna"
+      }
+    },
+    {
+      "id": "biedronka:7348",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7354",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7355",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7359",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7366",
+      "previous_status": "no_exact_address",
+      "status": "confirmed",
+      "rule": "postcode_discrepancy_with_osm_shop",
+      "source_postcodes": [
+        "44-102",
+        "44-105"
+      ],
+      "accepted": {
+        "location": {
+          "latitude": 50.3165579,
+          "longitude": 18.6941303
+        },
+        "evidence": "https://www.openstreetmap.org/way/1115944072",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gliwice%2C+Tarnog%C3%B3rska+171"
+        ],
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gliwice"
+      }
+    },
+    {
+      "id": "biedronka:7371",
+      "previous_status": "no_exact_address",
+      "status": "confirmed",
+      "rule": "postcode_discrepancy_with_osm_shop",
+      "source_postcodes": [
+        "44-230",
+        "44-237"
+      ],
+      "accepted": {
+        "location": {
+          "latitude": 50.1289018,
+          "longitude": 18.6682876
+        },
+        "evidence": "https://www.openstreetmap.org/way/1240173676",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Stanowice%2C+Zwyci%C4%99stwa+62"
+        ],
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=stanowice"
+      }
+    },
+    {
+      "id": "biedronka:7375",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7377",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7388",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 49.8208876,
+          "longitude": 20.4980121
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rajbrot+53",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rajbrot"
+      }
+    },
+    {
+      "id": "biedronka:7411",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7412",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7414",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7415",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 51.1571106,
+          "longitude": 15.4590005
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Go%C5%9Bcisz%C3%B3w+129B",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gosciszow"
+      }
+    },
+    {
+      "id": "biedronka:7419",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 49.7996746,
+          "longitude": 19.554463
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Mucharz+272",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mucharz"
+      }
+    },
+    {
+      "id": "biedronka:7422",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7429",
+      "previous_status": "incomplete",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7440",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7449",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7465",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7466",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7505",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7515",
+      "previous_status": "no_exact_address",
+      "status": "confirmed",
+      "rule": "postcode_discrepancy_with_osm_shop",
+      "source_postcodes": [
+        "89-620",
+        "89-606"
+      ],
+      "accepted": {
+        "location": {
+          "latitude": 53.7330144,
+          "longitude": 17.5447064
+        },
+        "evidence": "https://www.openstreetmap.org/way/1267911439",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Chojniczki%2C+Bukowa+1"
+        ],
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "osm_shop_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=chojniczki"
+      }
+    },
+    {
+      "id": "biedronka:7518",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7530",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 51.9089283,
+          "longitude": 20.7374703
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pniewy+4",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pniewy"
+      }
+    },
+    {
+      "id": "biedronka:7548",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7561",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7582",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7583",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7594",
+      "previous_status": "address_not_unique",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7601",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7604",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7609",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7620",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7621",
+      "previous_status": "incomplete",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7629",
+      "previous_status": "incomplete",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7637",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7649",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7709",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 53.8197564,
+          "longitude": 17.4044148
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Konarzynki+42D",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=konarzynki"
+      }
+    },
+    {
+      "id": "biedronka:7715",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7716",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7733",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 54.1320788,
+          "longitude": 16.0350451
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Biesiekierz+114C",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=biesiekierz"
+      }
+    },
+    {
+      "id": "biedronka:7734",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7772",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7802",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7807",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7808",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7836",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7848",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7856",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7859",
+      "previous_status": "incomplete",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7865",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 53.1830008,
+          "longitude": 18.5802491
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ko%C5%84czewice+3a",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=konczewice"
+      }
+    },
+    {
+      "id": "biedronka:7866",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7894",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7902",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7906",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7912",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7927",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7928",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 50.172871,
+          "longitude": 22.4483368
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grodzisko+Dolne+263A",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=grodzisko-dolne"
+      }
+    },
+    {
+      "id": "biedronka:7935",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:814",
+      "previous_status": "no_exact_address",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7958",
+      "previous_status": "catalogue_address_conflict",
+      "status": "confirmed",
+      "rule": "village_numbering",
+      "accepted": {
+        "location": {
+          "latitude": 50.385425,
+          "longitude": 21.339046
+        },
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Borowa+385A",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "precision": "address_point",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=borowa"
+      }
+    },
+    {
+      "id": "biedronka:7962",
+      "previous_status": "address_already_claimed",
+      "status": "no_new_confirmation"
+    },
+    {
+      "id": "biedronka:7953",
+      "previous_status": "unresolved_store_conflict",
+      "status": "existing_conflict_remains"
+    }
+  ]
+}

@@ -1,0 +1,885 @@
+{
+  "input_fingerprint": "64133bc27125db5cd7ebf8ef0d382b8da36ca13d63385988f517d739825c5b0d",
+  "reviewed": 66,
+  "retrieved_on": "2026-11-23",
+  "accepted": 20,
+  "aliases": 3,
+  "totals": {
+    "no_new_evidence": 30,
+    "confirmed": 20,
+    "no_verified_osm_point": 7,
+    "no_verified_address_point": 5,
+    "alias_confirmed": 3,
+    "conflicting_independent_point": 1
+  },
+  "decisions": [
+    {
+      "id": "biedronka:1229",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:1432",
+      "status": "confirmed",
+      "rule": "store_page_and_osm",
+      "accepted": {
+        "location": {
+          "latitude": 53.2852891,
+          "longitude": 18.943361
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/node/587584995",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wabrzezno",
+        "osm_observed_at": "2026-11-23T01:14:58Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-tysiaclecia-11-11a-wabrzezno~4426242/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1620",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:1729",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:1789",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:1827",
+      "status": "confirmed",
+      "rule": "store_page_and_osm",
+      "accepted": {
+        "location": {
+          "latitude": 52.0466133,
+          "longitude": 20.4469019
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/176224790",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zyrardow",
+        "osm_observed_at": "2026-11-23T01:14:58Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-mickiewicza-59-zyrardow~5390270/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:1932",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:2017",
+      "status": "confirmed",
+      "rule": "store_page_and_osm",
+      "accepted": {
+        "location": {
+          "latitude": 50.9713796,
+          "longitude": 15.3814299
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/397439462",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=mirsk",
+        "osm_observed_at": "2026-11-02T18:14:35Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-w-sikorskiego-3a-mirsk~20412335/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:2220",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:2478",
+      "status": "confirmed",
+      "rule": "store_page_and_osm",
+      "accepted": {
+        "location": {
+          "latitude": 50.0714957,
+          "longitude": 22.2403465
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/node/4337423534",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lancut",
+        "osm_observed_at": "2026-11-23T01:14:58Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-kosciuszki-19-lancut~16551775/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:2698",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:2743",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:2753",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:3039",
+      "status": "confirmed",
+      "evidence": "https://mapa.targeo.pl/biedronka-supermarket-stojalowskiego-stanislawa-ks-6-35-120-rzeszow~18259330/biedronka-supermarket/adres",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rzesz%C3%B3w%2C+Stanis%C5%82awa+Stoja%C5%82owskiego+6",
+      "registry": {
+        "city": "Rzeszów",
+        "citypart": null,
+        "street": "Stanisława Stojałowskiego",
+        "number": "6",
+        "teryt": "186301",
+        "simc": "0974133",
+        "ulic": "21215",
+        "code": "35-120",
+        "jednostka": "{Polska,podkarpackie,Rzeszów,Rzeszów}",
+        "x": "712791.27",
+        "y": "245905.33",
+        "geometry_wkt": "POINT(712791.27 245905.33)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.0423165,
+          "longitude": 21.9728976
+        },
+        "address": {
+          "formatted": "Stanisława Stojałowskiego 6, 35-120 Rzeszów",
+          "street_address": "Stanisława Stojałowskiego 6",
+          "street": "Stanisława Stojałowskiego",
+          "house_number": "6",
+          "city": "Rzeszów",
+          "postal_code": "35-120",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rzesz%C3%B3w%2C+Stanis%C5%82awa+Stoja%C5%82owskiego+6",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=rzeszow",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-stojalowskiego-stanislawa-ks-6-35-120-rzeszow~18259330/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:3191",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:3435",
+      "status": "no_verified_osm_point"
+    },
+    {
+      "id": "biedronka:3566",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:3599",
+      "status": "no_verified_osm_point"
+    },
+    {
+      "id": "biedronka:3657",
+      "status": "no_verified_address_point",
+      "evidence": "https://cityon.pl/miejsce/biedronka-sokoly-mazowiecka-16",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Soko%C5%82y%2C+Mazowiecka+16"
+    },
+    {
+      "id": "biedronka:7039",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7078",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7143",
+      "status": "confirmed",
+      "rule": "store_page_and_osm",
+      "accepted": {
+        "location": {
+          "latitude": 51.7699062,
+          "longitude": 18.1058256
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/1213601914",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kalisz",
+        "osm_observed_at": "2026-11-23T01:14:58Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-warszawska-80-kalisz~23887764/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7173",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7278",
+      "status": "confirmed",
+      "evidence": "https://mapa.targeo.pl/biedronka-supermarket-piekary-614-kryspinow~23527083/biedronka-supermarket/adres",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Piekary+614",
+      "registry": {
+        "city": "Piekary",
+        "citypart": null,
+        "street": null,
+        "number": "614",
+        "teryt": "120607",
+        "simc": "0325699",
+        "ulic": null,
+        "code": "32-060",
+        "jednostka": "{Polska,małopolskie,krakowski,Liszki}",
+        "x": "558076.47",
+        "y": "240796.03",
+        "geometry_wkt": "POINT(558076.47 240796.03)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.0316011,
+          "longitude": 19.8111445
+        },
+        "address": {
+          "formatted": "Piekary 614, 32-060 Piekary",
+          "street_address": "Piekary 614",
+          "street": null,
+          "house_number": "614",
+          "city": "Piekary",
+          "postal_code": "32-060",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Piekary+614",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kryspinow",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-piekary-614-kryspinow~23527083/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7280",
+      "status": "no_verified_address_point",
+      "evidence": "https://mapa.targeo.pl/biedronka-supermarket-ciechanowska-65-wladyslawowo~23551917/biedronka-supermarket/adres",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=W%C5%82adys%C5%82awowo%2C+Ciechanowska+65"
+    },
+    {
+      "id": "biedronka:7292",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7318",
+      "status": "no_verified_address_point",
+      "evidence": "https://cityon.pl/miejsce/biedronka-szowsko-ksiazat-czartoryskich-27a",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Sz%C3%B3wsko%2C+Ksi%C4%85%C5%BC%C4%85t+Czartoryskich+27A"
+    },
+    {
+      "id": "biedronka:7339",
+      "status": "alias_confirmed",
+      "alias_of": "biedronka:7305",
+      "evidence": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lazy",
+      "reason": "same_location_id_and_coordinates"
+    },
+    {
+      "id": "biedronka:7340",
+      "status": "confirmed",
+      "evidence": "https://mojagazetka.com/lokalizacje-sklepow/siedliska/biedronka/5664-brak-adresu",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Siedliska+4",
+      "registry": {
+        "city": "Siedliska",
+        "citypart": null,
+        "street": null,
+        "number": "4",
+        "teryt": "060805",
+        "simc": "0382680",
+        "ulic": null,
+        "code": "21-132",
+        "jednostka": "{Polska,lubelskie,lubartowski,Kamionka}",
+        "x": "741576.51",
+        "y": "405193.88",
+        "geometry_wkt": "POINT(741576.51 405193.88)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.461659,
+          "longitude": 22.4788947
+        },
+        "address": {
+          "formatted": "Siedliska 4, 21-132 Siedliska",
+          "street_address": "Siedliska 4",
+          "street": null,
+          "house_number": "4",
+          "city": "Siedliska",
+          "postal_code": "21-132",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Siedliska+4",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kamionka",
+        "address_evidence": [
+          "https://mojagazetka.com/lokalizacje-sklepow/siedliska/biedronka/5664-brak-adresu"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7341",
+      "status": "confirmed",
+      "rule": "store_page_and_osm",
+      "accepted": {
+        "location": {
+          "latitude": 50.8885241,
+          "longitude": 21.5239562
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/365470621",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=cmielow",
+        "osm_observed_at": "2026-11-23T01:14:58Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-sandomierska-171-cmielow~23568666/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7348",
+      "status": "no_verified_address_point",
+      "evidence": "https://mojagazetka.com/lokalizacje-sklepow/grodziczno/biedronka/4226-brak-adresu",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grodziczno+3A"
+    },
+    {
+      "id": "biedronka:7354",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7355",
+      "status": "confirmed",
+      "evidence": "https://mapa.targeo.pl/biedronka-supermarket-rzepin-kolonia-85-pawlow~23568665/biedronka-supermarket/adres",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rzepin-Kolonia+85",
+      "registry": {
+        "city": "Rzepin-Kolonia",
+        "citypart": null,
+        "street": null,
+        "number": "85",
+        "teryt": "261104",
+        "simc": "0260824",
+        "ulic": null,
+        "code": "27-225",
+        "jednostka": "{Polska,świętokrzyskie,starachowicki,Pawłów}",
+        "x": "646788.01",
+        "y": "346994.25",
+        "geometry_wkt": "POINT(646788.01 346994.25)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.971067,
+          "longitude": 21.0913266
+        },
+        "address": {
+          "formatted": "Rzepin-Kolonia 85, 27-225 Rzepin-Kolonia",
+          "street_address": "Rzepin-Kolonia 85",
+          "street": null,
+          "house_number": "85",
+          "city": "Rzepin-Kolonia",
+          "postal_code": "27-225",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Rzepin-Kolonia+85",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=pawlow",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-rzepin-kolonia-85-pawlow~23568665/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7359",
+      "status": "confirmed",
+      "evidence": "https://cityon.pl/miejsce/biedronka-miastkowo-lomzynska-71",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Miastkowo%2C+%C5%81om%C5%BCy%C5%84ska+71",
+      "registry": {
+        "city": "Miastkowo",
+        "citypart": null,
+        "street": "Łomżyńska",
+        "number": "71",
+        "teryt": "200703",
+        "simc": "0401785",
+        "ulic": "11659",
+        "code": "18-413",
+        "jednostka": "{Polska,podlaskie,łomżyński,Miastkowo}",
+        "x": "688029.83",
+        "y": "590843.71",
+        "geometry_wkt": "POINT(688029.83 590843.71)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.1496374,
+          "longitude": 21.8126906
+        },
+        "address": {
+          "formatted": "Łomżyńska 71, 18-413 Miastkowo",
+          "street_address": "Łomżyńska 71",
+          "street": "Łomżyńska",
+          "house_number": "71",
+          "city": "Miastkowo",
+          "postal_code": "18-413",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Miastkowo%2C+%C5%81om%C5%BCy%C5%84ska+71",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=miastkowo",
+        "address_evidence": [
+          "https://cityon.pl/miejsce/biedronka-miastkowo-lomzynska-71"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7375",
+      "status": "conflicting_independent_point",
+      "evidence": "https://cityon.pl/miejsce/biedronka-lubanow-12",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Luban%C3%B3w+12"
+    },
+    {
+      "id": "biedronka:7377",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7411",
+      "status": "no_verified_osm_point"
+    },
+    {
+      "id": "biedronka:7412",
+      "status": "confirmed",
+      "evidence": "https://mapa.targeo.pl/biedronka-supermarket-piekary-48c-udanin~23629627/biedronka-supermarket/adres",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Piekary+48C",
+      "registry": {
+        "city": "Piekary",
+        "citypart": null,
+        "street": null,
+        "number": "48C",
+        "teryt": "021805",
+        "simc": "0367953",
+        "ulic": null,
+        "code": "55-340",
+        "jednostka": "{Polska,dolnośląskie,średzki,Udanin}",
+        "x": "320372.8",
+        "y": "355382.25",
+        "geometry_wkt": "POINT(320372.8 355382.25)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.0371345,
+          "longitude": 16.4371065
+        },
+        "address": {
+          "formatted": "Piekary 48C, 55-340 Piekary",
+          "street_address": "Piekary 48C",
+          "street": null,
+          "house_number": "48C",
+          "city": "Piekary",
+          "postal_code": "55-340",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Piekary+48C",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=udanin",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-piekary-48c-udanin~23629627/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7414",
+      "status": "no_verified_address_point",
+      "evidence": "https://mojagazetka.com/lokalizacje-sklepow/trzebieszow-drugi/biedronka/5693-brak-adresu",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Trzebiesz%C3%B3w+Drugi+62B"
+    },
+    {
+      "id": "biedronka:7422",
+      "status": "confirmed",
+      "evidence": "https://mapa.targeo.pl/biedronka-supermarket-jasieniec-ilzecki-gorny-233-jasieniec-ilzecki~23646320/biedronka-supermarket/adres",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jasieniec+I%C5%82%C5%BCecki+G%C3%B3rny+233",
+      "registry": {
+        "city": "Jasieniec Iłżecki Górny",
+        "citypart": null,
+        "street": null,
+        "number": "233",
+        "teryt": "142503",
+        "simc": "0622718",
+        "ulic": null,
+        "code": "27-100",
+        "jednostka": "{Polska,mazowieckie,radomski,Iłża}",
+        "x": "651595.96",
+        "y": "363566.15",
+        "geometry_wkt": "POINT(651595.96 363566.15)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.118781,
+          "longitude": 21.1667165
+        },
+        "address": {
+          "formatted": "Jasieniec Iłżecki Górny 233, 27-100 Jasieniec Iłżecki Górny",
+          "street_address": "Jasieniec Iłżecki Górny 233",
+          "street": null,
+          "house_number": "233",
+          "city": "Jasieniec Iłżecki Górny",
+          "postal_code": "27-100",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jasieniec+I%C5%82%C5%BCecki+G%C3%B3rny+233",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=jasieniec-ilzecki",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-jasieniec-ilzecki-gorny-233-jasieniec-ilzecki~23646320/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7429",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7465",
+      "status": "no_verified_osm_point"
+    },
+    {
+      "id": "biedronka:7466",
+      "status": "confirmed",
+      "rule": "store_page_and_osm",
+      "accepted": {
+        "location": {
+          "latitude": 50.3228877,
+          "longitude": 18.7660525
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/1235601970",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zabrze",
+        "osm_observed_at": "2026-11-23T01:14:58Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-mielzynskiego-4-zabrze~23629657/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7505",
+      "status": "no_verified_osm_point"
+    },
+    {
+      "id": "biedronka:7518",
+      "status": "confirmed",
+      "evidence": "https://cityon.pl/miejsce/biedronka-grudziadz-dr-ludwika-rydygiera-2",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grudzi%C4%85dz%2C+dr.+Ludwika+Rydygiera+2",
+      "registry": {
+        "city": "Grudziądz",
+        "citypart": null,
+        "street": "dr. Ludwika Rydygiera",
+        "number": "2",
+        "teryt": "046201",
+        "simc": "0983333",
+        "ulic": "19214",
+        "code": "86-300",
+        "jednostka": "{Polska,kujawsko-pomorskie,Grudziądz,Grudziądz}",
+        "x": "485586.61",
+        "y": "621334.8",
+        "geometry_wkt": "POINT(485586.61 621334.8)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.4568249,
+          "longitude": 18.7828652
+        },
+        "address": {
+          "formatted": "dr. Ludwika Rydygiera 2, 86-300 Grudziądz",
+          "street_address": "dr. Ludwika Rydygiera 2",
+          "street": "dr. Ludwika Rydygiera",
+          "house_number": "2",
+          "city": "Grudziądz",
+          "postal_code": "86-300",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Grudzi%C4%85dz%2C+dr.+Ludwika+Rydygiera+2",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=grudziadz",
+        "address_evidence": [
+          "https://cityon.pl/miejsce/biedronka-grudziadz-dr-ludwika-rydygiera-2"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7561",
+      "status": "confirmed",
+      "rule": "store_page_and_osm",
+      "accepted": {
+        "location": {
+          "latitude": 52.5578332,
+          "longitude": 17.6082233
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/node/12875190108",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=gniezno",
+        "osm_observed_at": "2026-11-23T01:14:58Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-gdanska-108-gniezno~24097026/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7582",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7583",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7594",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7601",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7604",
+      "status": "confirmed",
+      "rule": "store_page_and_osm",
+      "accepted": {
+        "location": {
+          "latitude": 53.404004,
+          "longitude": 19.566152
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/1376659776",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kurzetnik",
+        "osm_observed_at": "2026-11-23T01:14:58Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-dworcowa-9a-kurzetnik~24333650/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7609",
+      "status": "confirmed",
+      "rule": "store_page_and_osm",
+      "accepted": {
+        "location": {
+          "latitude": 49.4009066,
+          "longitude": 19.8796916
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/1527770224",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ciche",
+        "osm_observed_at": "2026-11-23T01:14:58Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-ciche-38b-ciche~24333804/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7620",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7621",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7637",
+      "status": "confirmed",
+      "rule": "store_page_and_osm",
+      "accepted": {
+        "location": {
+          "latitude": 52.0139004,
+          "longitude": 20.8878032
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/1370115982",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=zlotoklos",
+        "osm_observed_at": "2026-11-23T01:14:58Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-mrokowska-41a-zlotoklos~24333802/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7772",
+      "status": "no_verified_osm_point"
+    },
+    {
+      "id": "biedronka:7802",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7808",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7856",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7866",
+      "status": "confirmed",
+      "evidence": "https://mapa.targeo.pl/biedronka-supermarket-debicz-49-kramsk~25214811/biedronka-supermarket/adres",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%99bicz+49",
+      "registry": {
+        "city": "Dębicz",
+        "citypart": null,
+        "street": null,
+        "number": "49",
+        "teryt": "301005",
+        "simc": "0288366",
+        "ulic": null,
+        "code": "62-511",
+        "jednostka": "{Polska,wielkopolskie,koniński,Kramsk}",
+        "x": "460512.03",
+        "y": "488455.03",
+        "geometry_wkt": "POINT(460512.03 488455.03)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 52.2607033,
+          "longitude": 18.4212543
+        },
+        "address": {
+          "formatted": "Dębicz 49, 62-511 Dębicz",
+          "street_address": "Dębicz 49",
+          "street": null,
+          "house_number": "49",
+          "city": "Dębicz",
+          "postal_code": "62-511",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%99bicz+49",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kramsk",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-debicz-49-kramsk~25214811/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7902",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7906",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7912",
+      "status": "no_verified_osm_point"
+    },
+    {
+      "id": "biedronka:7935",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7962",
+      "status": "alias_confirmed",
+      "inpost_evidence": [
+        "https://api-pl-points.easypack24.net/v1/points/AND01A"
+      ],
+      "alias_of": "biedronka:673",
+      "evidence": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=andrychow",
+      "reason": "same_store_address_confirmed_by_inpost"
+    },
+    {
+      "id": "biedronka:7953",
+      "status": "alias_confirmed",
+      "alias_of": "biedronka:2518",
+      "evidence": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lubin",
+      "reason": "same_location_id_and_coordinates"
+    }
+  ]
+}

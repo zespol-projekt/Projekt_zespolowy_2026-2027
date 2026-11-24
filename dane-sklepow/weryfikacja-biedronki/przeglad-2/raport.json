@@ -1,0 +1,47 @@
+{
+  "input_fingerprint": "bd3facc285474e01d65d026f5139375a770d76f87cc9742fd16805be7d13d382",
+  "reviewed": 2,
+  "retrieved_on": "2026-11-23",
+  "accepted": 1,
+  "totals": {
+    "confirmed": 1,
+    "held": 1
+  },
+  "decisions": [
+    {
+      "id": "biedronka:7902",
+      "status": "confirmed",
+      "reason": "Powiat żuromiński udostępnia obrys budynku handlowego 143703_4.0001.1097_BUD. Cały budynek i potwierdzony punkt automatu DHL przy Biedronce leżą na działce 864/5. Środek obrysu dzieli od automatu 32 m. Adres i działanie sklepu potwierdza karta sieci oraz komunikat otwarcia.",
+      "accepted": {
+        "location": {
+          "latitude": 53.1150511,
+          "longitude": 19.8458644
+        },
+        "precision": "building_footprint",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://zuromin-powiat.geoportal2.pl/map/geoportal/wfse.php?service=WFS&request=GetFeature&version=2.0.0&typeNames=ewns%3Abudynki&bbox=53.1131%2C19.8435%2C53.1165%2C19.849%2CEPSG%3A4326&srsName=EPSG%3A4326",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7902",
+        "address_evidence": [
+          "https://uldk.gugik.gov.pl/?request=GetParcelByXY&xy=19.8460687%2C53.1147953%2C4326&result=teryt%2Cparcel%2Cregion%2Cgeom_wkt&srid=4326",
+          "https://media.biedronka.pl/453144-wiosenne-przyspieszenie-biedronki",
+          "https://www.alipaczka.pl/automaty-paczkowe/automat/dhl-lubowidz-jana-pawla-ii-1a-320535"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7906",
+      "status": "held",
+      "address": "ul. Widokowa 2, 58-531 Łomnica",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7906",
+      "reason": "Aktualna publiczna karta Biedronki pokazuje Widokową 2 i godziny otwarcia. Materiały POLOmarketu oraz nowsze katalogi nadal wiążą ten sam adres z POLOmarketem. Brak niezależnego potwierdzenia, że placówka pod tym adresem działa już pod szyldem Biedronki.",
+      "evidence": [
+        "https://polomarket.pl/sklepy",
+        "https://polomarket.pl/files/file/Regulamin-Promocji-happy-hours-g25.pdf",
+        "https://mapa.targeo.pl/polomarket-sklep-widokowa-2-lomnica~10352698/polomarket-sklep/adres",
+        "https://inpost.pl/paczkomat-lomnica-lmc01m-widokowa-paczkomaty-dolnoslaskie"
+      ]
+    }
+  ]
+}

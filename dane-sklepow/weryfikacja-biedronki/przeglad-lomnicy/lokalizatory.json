@@ -1,0 +1,86 @@
+[
+  {
+    "key": "polo",
+    "url": "https://api.polo.appchance.shop/api/v1/stores/",
+    "http_date": "Mon, 23 Nov 2026 16:52:00 GMT",
+    "total": 252,
+    "response_keys": [],
+    "payload_count": null,
+    "next": null,
+    "possible_matches": [],
+    "regional_examples": [
+      {
+        "number": 8112,
+        "longitude": "15.74841000",
+        "latitude": "50.91855000",
+        "street": "Jana Kiepury 21",
+        "city": "Jelenia Góra"
+      }
+    ]
+  },
+  {
+    "key": "inpost",
+    "url": "https://api-shipx-pl.easypack24.net/v1/points/LMC01M",
+    "http_date": "Mon, 23 Nov 2026 16:52:00 GMT",
+    "name": "LMC01M",
+    "status": "Operating",
+    "location": {
+      "longitude": 15.775,
+      "latitude": 50.8566
+    },
+    "address_details": {
+      "city": "Łomnica",
+      "province": "dolnośląskie",
+      "post_code": "58-531",
+      "street": "Widokowa",
+      "building_number": "2",
+      "flat_number": null
+    },
+    "location_description": "Po prawej stronie od wejścia do sklepu."
+  },
+  {
+    "key": "targeo",
+    "url": "https://mapa.targeo.pl/polomarket-sklep-widokowa-2-lomnica~10352698/polomarket-sklep/adres",
+    "http_date": "Mon, 23 Nov 2026 16:51:59 GMT",
+    "directions": [
+      "https://mapa.targeo.pl/jak_dojechac,polomarket%20sklep,15.77501,50.85695;p%5B2126%5D"
+    ]
+  },
+  {
+    "key": "biedronka",
+    "url": "https://www.biedronka.pl/pl/sklepy/shop,id,7906",
+    "http_date": "Mon, 23 Nov 2026 16:52:00 GMT",
+    "title": "ul. Widokowa 2, ,Łomnica - strona sklepu - Biedronka.pl",
+    "opening_hours": [
+      [
+        "Poniedziałek",
+        "06:00-22:00"
+      ],
+      [
+        "Wtorek",
+        "06:00-22:00"
+      ],
+      [
+        "Środa",
+        "06:00-22:00"
+      ],
+      [
+        "Czwartek",
+        "06:00-22:00"
+      ],
+      [
+        "Piątek",
+        "06:00-22:00"
+      ]
+    ],
+    "observed_hours": [
+      "06:00-22:00",
+      "06:00-22:00",
+      "06:00-22:00",
+      "06:00-22:00",
+      "06:00-22:00",
+      "06:00-22:00",
+      "Zamknięte"
+    ]
+  }
+]

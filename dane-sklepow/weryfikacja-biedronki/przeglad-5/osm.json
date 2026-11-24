@@ -1,0 +1,167 @@
+[
+  {
+    "id": 7505,
+    "anchor": [
+      52.74882,
+      15.1442318
+    ],
+    "osm": "https://api.openstreetmap.org/api/0.6/map.json?bbox=15.1392318%2C52.7458200%2C15.1492318%2C52.7518200",
+    "elements": [
+      {
+        "type": "node",
+        "id": 13433120786,
+        "lat": 52.7489533,
+        "lon": 15.1441824,
+        "timestamp": "2026-01-05T19:12:09Z"
+      },
+      {
+        "type": "node",
+        "id": 13433120787,
+        "lat": 52.7488385,
+        "lon": 15.1447203,
+        "timestamp": "2026-01-05T19:12:09Z"
+      },
+      {
+        "type": "node",
+        "id": 13433120788,
+        "lat": 52.7487098,
+        "lon": 15.1446453,
+        "timestamp": "2026-01-05T19:12:09Z"
+      },
+      {
+        "type": "node",
+        "id": 13433120789,
+        "lat": 52.748825,
+        "lon": 15.1441078,
+        "timestamp": "2026-01-05T19:12:09Z"
+      },
+      {
+        "type": "way",
+        "id": 1464430131,
+        "timestamp": "2026-09-03T08:26:43Z",
+        "nodes": [
+          13433120789,
+          13433120788,
+          13433120787,
+          13433120786,
+          13433120789
+        ],
+        "tags": {
+          "brand": "Dino",
+          "brand:wikidata": "Q11694239",
+          "building": "retail",
+          "name": "Dino",
+          "shop": "supermarket",
+          "source:building": "EGiB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7856,
+    "directory": "https://cityon.pl/miejsce/biedronka-paproc-handlowa-1",
+    "anchor": [
+      52.3058707,
+      16.1396558
+    ],
+    "osm": "https://api.openstreetmap.org/api/0.6/map.json?bbox=16.1376558%2C52.3046707%2C16.1416558%2C52.3070707",
+    "elements": [
+      {
+        "type": "node",
+        "id": 13351879866,
+        "lat": 52.3056687,
+        "lon": 16.140044,
+        "timestamp": "2026-05-25T12:38:22Z"
+      },
+      {
+        "type": "node",
+        "id": 13351879867,
+        "lat": 52.305298,
+        "lon": 16.1400312,
+        "timestamp": "2026-05-25T12:38:22Z"
+      },
+      {
+        "type": "node",
+        "id": 13351879868,
+        "lat": 52.3056696,
+        "lon": 16.139963,
+        "timestamp": "2026-05-25T12:38:22Z"
+      },
+      {
+        "type": "node",
+        "id": 13351879869,
+        "lat": 52.3059588,
+        "lon": 16.1399729,
+        "timestamp": "2026-05-25T12:38:22Z"
+      },
+      {
+        "type": "node",
+        "id": 13351879870,
+        "lat": 52.305304,
+        "lon": 16.1395505,
+        "timestamp": "2026-05-25T12:38:22Z"
+      },
+      {
+        "type": "node",
+        "id": 13351879871,
+        "lat": 52.305964,
+        "lon": 16.1395727,
+        "timestamp": "2026-05-25T12:38:22Z"
+      },
+      {
+        "type": "node",
+        "id": 13351879875,
+        "lat": 52.3056691,
+        "lon": 16.1400038,
+        "timestamp": "2026-05-25T12:38:22Z",
+        "tags": {
+          "access": "delivery",
+          "door": "loadingdock",
+          "entrance": "garage"
+        }
+      },
+      {
+        "type": "node",
+        "id": 13827940332,
+        "lat": 52.3058707,
+        "lon": 16.1396558,
+        "timestamp": "2026-05-14T14:48:00Z",
+        "tags": {
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "name": "Biedronka",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1455832475,
+        "timestamp": "2026-05-14T14:48:00Z",
+        "nodes": [
+          13351879871,
+          13351879869,
+          13351879868,
+          13351879875,
+          13351879866,
+          13351879867,
+          13351879870,
+          13351879871
+        ],
+        "tags": {
+          "building": "supermarket",
+          "building:levels": "1"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7902,
+    "anchor": [
+      53.1147953,
+      19.8460687
+    ],
+    "osm": "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.8440687%2C53.1135953%2C19.8480687%2C53.1159953",
+    "elements": []
+  }
+]

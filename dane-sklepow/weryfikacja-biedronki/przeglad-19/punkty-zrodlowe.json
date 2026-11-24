@@ -1,0 +1,1563 @@
+[
+  {
+    "id": 7375,
+    "source": "https://cityon.pl/miejsce/biedronka-lubanow-12",
+    "point": [
+      51.6496921,
+      18.4472012
+    ],
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=18.4452012%2C51.6482921%2C18.4492012%2C51.6510921",
+    "elements": [
+      {
+        "type": "node",
+        "id": 8645061551,
+        "lat": 51.651404,
+        "lon": 18.448657,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 8645061552,
+        "lat": 51.651017,
+        "lon": 18.448481,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 8645061553,
+        "lat": 51.651068,
+        "lon": 18.44819,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 8645061554,
+        "lat": 51.651447,
+        "lon": 18.448411,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692242825,
+        "lat": 51.6494488,
+        "lon": 18.4472236,
+        "timestamp": "2026-03-30T19:01:51Z",
+        "tags": {
+          "brand": "Rossmann",
+          "brand:wikidata": "Q316004",
+          "name": "Rossmann",
+          "shop": "chemist"
+        }
+      },
+      {
+        "type": "node",
+        "id": 13692242826,
+        "lat": 51.6493434,
+        "lon": 18.4474032,
+        "timestamp": "2026-03-30T19:01:51Z",
+        "tags": {
+          "brand": "Świat Prasy",
+          "brand:wikidata": "Q127769965",
+          "name": "Świat Prasy",
+          "shop": "newsagent"
+        }
+      },
+      {
+        "type": "node",
+        "id": 13692242827,
+        "lat": 51.6492671,
+        "lon": 18.4471997,
+        "timestamp": "2026-03-30T19:01:51Z",
+        "tags": {
+          "brand": "Pepco",
+          "brand:wikidata": "Q11815580",
+          "name": "Pepco",
+          "shop": "clothes"
+        }
+      },
+      {
+        "type": "node",
+        "id": 13692247730,
+        "lat": 51.651437,
+        "lon": 18.448407,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247731,
+        "lat": 51.651375,
+        "lon": 18.448379,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247732,
+        "lat": 51.651194,
+        "lon": 18.448296,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247733,
+        "lat": 51.651202,
+        "lon": 18.44825,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247760,
+        "lat": 51.6494821,
+        "lon": 18.4474548,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247761,
+        "lat": 51.6491845,
+        "lon": 18.4474062,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247762,
+        "lat": 51.6492125,
+        "lon": 18.4469748,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247763,
+        "lat": 51.6496788,
+        "lon": 18.4470546,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247764,
+        "lat": 51.6498973,
+        "lon": 18.4470911,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247765,
+        "lat": 51.649874,
+        "lon": 18.4474515,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247766,
+        "lat": 51.649487,
+        "lon": 18.4473856,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247767,
+        "lat": 51.6495102,
+        "lon": 18.447024,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247768,
+        "lat": 51.6495149,
+        "lon": 18.4469509,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "node",
+        "id": 13692247769,
+        "lat": 51.6496837,
+        "lon": 18.4469793,
+        "timestamp": "2026-03-30T18:59:11Z"
+      },
+      {
+        "type": "way",
+        "id": 932618346,
+        "timestamp": "2026-03-30T18:59:11Z",
+        "nodes": [
+          8645061554,
+          8645061551,
+          8645061552,
+          8645061553,
+          13692247733,
+          13692247732,
+          13692247731,
+          13692247730,
+          8645061554
+        ],
+        "tags": {
+          "addr:housenumber": "13a",
+          "addr:street": "Sportowa",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Ogrodowczyk",
+          "roof:levels": "0",
+          "roof:shape": "flat",
+          "shop": "supermarket",
+          "source:building": "BDOT"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1494408808,
+        "timestamp": "2026-03-30T18:59:11Z",
+        "nodes": [
+          13692247767,
+          13692247762,
+          13692247761,
+          13692247760,
+          13692247766,
+          13692247767
+        ],
+        "tags": {
+          "building": "retail",
+          "building:levels": "1",
+          "source:building": "EGiB"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1494408809,
+        "timestamp": "2026-03-30T19:01:51Z",
+        "nodes": [
+          13692247769,
+          13692247768,
+          13692247767,
+          13692247766,
+          13692247765,
+          13692247764,
+          13692247763,
+          13692247769
+        ],
+        "tags": {
+          "addr:city:simc": "0698259",
+          "addr:housenumber": "12",
+          "addr:place": "Lubanów",
+          "addr:postcode": "98-235",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Biedronka",
+          "shop": "supermarket",
+          "source:addr": "gugik.gov.pl",
+          "source:building": "EGiB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7039,
+    "source": null,
+    "point": [
+      53.4029550383,
+      21.9389244416
+    ],
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=21.9369244%2C53.4015550%2C21.9409244%2C53.4043550",
+    "elements": [
+      {
+        "type": "node",
+        "id": 6774808571,
+        "lat": 53.4028314,
+        "lon": 21.9389482,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 6774808572,
+        "lat": 53.402648,
+        "lon": 21.9391772,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 6774808573,
+        "lat": 53.402956,
+        "lon": 21.9398712,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 6774808574,
+        "lat": 53.4031681,
+        "lon": 21.9396208,
+        "timestamp": "2024-09-06T11:43:58Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025586,
+        "lat": 53.4034006,
+        "lon": 21.9393022,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025587,
+        "lat": 53.4033575,
+        "lon": 21.9392051,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025588,
+        "lat": 53.4034974,
+        "lon": 21.9390304,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025589,
+        "lat": 53.4032411,
+        "lon": 21.9384527,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025590,
+        "lat": 53.4032421,
+        "lon": 21.9384514,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025591,
+        "lat": 53.4032342,
+        "lon": 21.9384335,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025592,
+        "lat": 53.4032298,
+        "lon": 21.938439,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025593,
+        "lat": 53.4032343,
+        "lon": 21.938449,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025594,
+        "lat": 53.4030592,
+        "lon": 21.9386675,
+        "timestamp": "2023-03-24T20:40:33Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025598,
+        "lat": 53.4030577,
+        "lon": 21.9386814,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025599,
+        "lat": 53.4033593,
+        "lon": 21.9393537,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 11936861290,
+        "lat": 53.4028624,
+        "lon": 21.9389215,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 11936861291,
+        "lat": 53.4033633,
+        "lon": 21.9393807,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 12159943661,
+        "lat": 53.4030878,
+        "lon": 21.9394371,
+        "timestamp": "2024-09-06T11:43:58Z"
+      },
+      {
+        "type": "node",
+        "id": 12159943662,
+        "lat": 53.4030626,
+        "lon": 21.9394691,
+        "timestamp": "2024-09-06T11:43:58Z"
+      },
+      {
+        "type": "way",
+        "id": 722246076,
+        "timestamp": "2025-08-02T07:38:43Z",
+        "nodes": [
+          6774808571,
+          6774808572,
+          6774808573,
+          6774808574,
+          12159943661,
+          12159943662,
+          6774808571
+        ],
+        "tags": {
+          "brand": "Media Expert",
+          "brand:wikidata": "Q11776794",
+          "building": "yes",
+          "name": "Media Expert",
+          "shop": "electronics",
+          "website": "https://sklepy.mediaexpert.pl/kolno_ksieciajanusza"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1157058590,
+        "timestamp": "2024-05-27T10:34:27Z",
+        "nodes": [
+          10760025599,
+          10760025598,
+          10760025594,
+          10760025593,
+          10760025592,
+          10760025591,
+          10760025590,
+          10760025589,
+          10760025588,
+          10760025587,
+          10760025586,
+          10760025599
+        ],
+        "tags": {
+          "addr:city": "Kolno",
+          "addr:city:simc": "0957420",
+          "addr:housenumber": "1",
+          "addr:postcode": "18-500",
+          "addr:street": "Księcia Janusza I",
+          "addr:street:sym_ul": "07226",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "supermarket",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "opening_hours": "Mo-Sa 06:00-21:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1287031456,
+        "timestamp": "2024-09-29T12:35:26Z",
+        "nodes": [
+          10760025598,
+          11936861290,
+          12159943661,
+          6774808574,
+          11936861291,
+          10760025598
+        ],
+        "tags": {
+          "building": "yes",
+          "name": "TOTHU Fashion",
+          "shop": "yes"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7173,
+    "source": null,
+    "point": [
+      54.1879242921,
+      17.4876785585
+    ],
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=17.4856786%2C54.1865243%2C17.4896786%2C54.1893243",
+    "elements": [
+      {
+        "type": "node",
+        "id": 3622193873,
+        "lat": 54.1859129,
+        "lon": 17.4899575,
+        "timestamp": "2015-06-27T17:51:47Z"
+      },
+      {
+        "type": "node",
+        "id": 3622193874,
+        "lat": 54.185914,
+        "lon": 17.4895295,
+        "timestamp": "2015-06-27T17:51:47Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194074,
+        "lat": 54.1862657,
+        "lon": 17.4895306,
+        "timestamp": "2015-06-27T17:51:52Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194132,
+        "lat": 54.1863594,
+        "lon": 17.4895311,
+        "timestamp": "2015-06-27T17:51:54Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194304,
+        "lat": 54.1866608,
+        "lon": 17.4899614,
+        "timestamp": "2015-06-27T17:52:00Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194305,
+        "lat": 54.1866624,
+        "lon": 17.489532,
+        "timestamp": "2015-06-27T17:52:00Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194668,
+        "lat": 54.187606,
+        "lon": 17.4866915,
+        "timestamp": "2015-06-27T17:52:07Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194670,
+        "lat": 54.1876069,
+        "lon": 17.4869547,
+        "timestamp": "2015-06-27T17:52:07Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194697,
+        "lat": 54.1877141,
+        "lon": 17.4865064,
+        "timestamp": "2015-06-27T17:52:08Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194703,
+        "lat": 54.1877487,
+        "lon": 17.4869529,
+        "timestamp": "2015-06-27T17:52:08Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194704,
+        "lat": 54.1877493,
+        "lon": 17.4867938,
+        "timestamp": "2015-06-27T17:52:08Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194713,
+        "lat": 54.1877734,
+        "lon": 17.4867487,
+        "timestamp": "2015-06-27T17:52:08Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194746,
+        "lat": 54.1878683,
+        "lon": 17.486507,
+        "timestamp": "2015-06-27T17:52:11Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194747,
+        "lat": 54.1878685,
+        "lon": 17.4867479,
+        "timestamp": "2015-06-27T17:52:11Z"
+      },
+      {
+        "type": "way",
+        "id": 356817317,
+        "timestamp": "2025-09-08T21:39:14Z",
+        "nodes": [
+          3622194305,
+          3622194132,
+          3622194074,
+          3622193874,
+          3622193873,
+          3622194304,
+          3622194305
+        ],
+        "tags": {
+          "building": "yes",
+          "name": "Stacja obsługi PKS Bytów",
+          "shop": "car_repair"
+        }
+      },
+      {
+        "type": "way",
+        "id": 356818373,
+        "timestamp": "2025-12-15T14:28:41Z",
+        "nodes": [
+          3622194713,
+          3622194747,
+          3622194746,
+          3622194697,
+          3622194668,
+          3622194670,
+          3622194703,
+          3622194704,
+          3622194713
+        ],
+        "tags": {
+          "addr:city": "Bytów",
+          "addr:city:simc": "0977290",
+          "addr:housenumber": "1A",
+          "addr:postcode": "77-100",
+          "addr:street": "Generała Józefa Wybickiego",
+          "addr:street:sym_ul": "11008",
+          "building": "yes",
+          "name": "WICA",
+          "shop": "car_repair",
+          "source:addr": "bytow.e-mapa.net"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3191,
+    "source": null,
+    "point": [
+      50.0113743,
+      22.6760509
+    ],
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=22.6740509%2C50.0099743%2C22.6780509%2C50.0127743",
+    "elements": [
+      {
+        "type": "node",
+        "id": 3202154613,
+        "lat": 50.0112284,
+        "lon": 22.6769981,
+        "timestamp": "2014-11-23T20:05:58Z"
+      },
+      {
+        "type": "node",
+        "id": 3202154614,
+        "lat": 50.0112457,
+        "lon": 22.6769279,
+        "timestamp": "2014-11-23T20:05:58Z"
+      },
+      {
+        "type": "node",
+        "id": 3202154623,
+        "lat": 50.0114245,
+        "lon": 22.6771156,
+        "timestamp": "2014-11-23T20:05:58Z"
+      },
+      {
+        "type": "node",
+        "id": 3202154625,
+        "lat": 50.0114419,
+        "lon": 22.6770455,
+        "timestamp": "2014-11-23T20:05:58Z"
+      },
+      {
+        "type": "node",
+        "id": 4303253505,
+        "lat": 50.012271,
+        "lon": 22.6779549,
+        "timestamp": "2023-09-04T05:53:05Z",
+        "tags": {
+          "shop": "garden_centre"
+        }
+      },
+      {
+        "type": "node",
+        "id": 4411392777,
+        "lat": 50.0095989,
+        "lon": 22.6770217,
+        "timestamp": "2022-11-04T09:44:00Z"
+      },
+      {
+        "type": "node",
+        "id": 4411392778,
+        "lat": 50.0096413,
+        "lon": 22.6767182,
+        "timestamp": "2022-11-04T09:44:00Z"
+      },
+      {
+        "type": "node",
+        "id": 4411392779,
+        "lat": 50.0097363,
+        "lon": 22.6767278,
+        "timestamp": "2022-11-04T09:44:00Z"
+      },
+      {
+        "type": "node",
+        "id": 4411392783,
+        "lat": 50.0100122,
+        "lon": 22.6771915,
+        "timestamp": "2016-09-21T10:57:52Z"
+      },
+      {
+        "type": "node",
+        "id": 4411392785,
+        "lat": 50.0100343,
+        "lon": 22.6770571,
+        "timestamp": "2016-09-21T10:57:52Z"
+      },
+      {
+        "type": "node",
+        "id": 8582744725,
+        "lat": 50.0115084,
+        "lon": 22.6754936,
+        "timestamp": "2022-12-28T15:56:11Z"
+      },
+      {
+        "type": "node",
+        "id": 8582744726,
+        "lat": 50.0112529,
+        "lon": 22.6753532,
+        "timestamp": "2022-12-28T15:56:11Z"
+      },
+      {
+        "type": "node",
+        "id": 8582744727,
+        "lat": 50.0110555,
+        "lon": 22.6767445,
+        "timestamp": "2022-12-28T15:56:11Z"
+      },
+      {
+        "type": "node",
+        "id": 8582744728,
+        "lat": 50.0112107,
+        "lon": 22.6768299,
+        "timestamp": "2022-12-28T15:56:11Z"
+      },
+      {
+        "type": "node",
+        "id": 8582744730,
+        "lat": 50.0114422,
+        "lon": 22.6769517,
+        "timestamp": "2022-12-28T15:56:11Z"
+      },
+      {
+        "type": "node",
+        "id": 8582744731,
+        "lat": 50.0112765,
+        "lon": 22.6768545,
+        "timestamp": "2022-12-28T15:56:11Z"
+      },
+      {
+        "type": "node",
+        "id": 8582744732,
+        "lat": 50.0113025,
+        "lon": 22.676727,
+        "timestamp": "2022-12-28T15:56:11Z"
+      },
+      {
+        "type": "node",
+        "id": 10155216831,
+        "lat": 50.0120388,
+        "lon": 22.6779176,
+        "timestamp": "2022-11-03T18:08:57Z"
+      },
+      {
+        "type": "node",
+        "id": 10155216832,
+        "lat": 50.0120364,
+        "lon": 22.6779301,
+        "timestamp": "2022-11-03T18:08:57Z"
+      },
+      {
+        "type": "node",
+        "id": 10155216833,
+        "lat": 50.0121211,
+        "lon": 22.6779679,
+        "timestamp": "2022-11-03T18:08:57Z"
+      },
+      {
+        "type": "node",
+        "id": 10155216834,
+        "lat": 50.0121348,
+        "lon": 22.6778935,
+        "timestamp": "2022-11-03T18:08:57Z"
+      },
+      {
+        "type": "node",
+        "id": 10155216835,
+        "lat": 50.0120501,
+        "lon": 22.6778557,
+        "timestamp": "2022-11-03T18:08:57Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288272,
+        "lat": 50.0110263,
+        "lon": 22.6774387,
+        "timestamp": "2022-11-05T13:11:02Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288282,
+        "lat": 50.0109856,
+        "lon": 22.6774241,
+        "timestamp": "2022-11-05T13:11:02Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288283,
+        "lat": 50.0109787,
+        "lon": 22.6774708,
+        "timestamp": "2022-11-05T13:11:02Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288284,
+        "lat": 50.0110193,
+        "lon": 22.6774854,
+        "timestamp": "2022-11-05T13:11:02Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288287,
+        "lat": 50.0108397,
+        "lon": 22.6775284,
+        "timestamp": "2022-11-05T13:11:02Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288288,
+        "lat": 50.0108952,
+        "lon": 22.6775484,
+        "timestamp": "2022-11-05T00:48:28Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288289,
+        "lat": 50.0108852,
+        "lon": 22.6776151,
+        "timestamp": "2022-11-05T00:48:28Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288290,
+        "lat": 50.0108298,
+        "lon": 22.6775951,
+        "timestamp": "2022-11-05T13:11:02Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288291,
+        "lat": 50.0108757,
+        "lon": 22.6776785,
+        "timestamp": "2022-11-05T00:48:28Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288292,
+        "lat": 50.0108204,
+        "lon": 22.6776585,
+        "timestamp": "2022-11-05T13:11:02Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288293,
+        "lat": 50.0108658,
+        "lon": 22.677745,
+        "timestamp": "2022-11-05T00:48:28Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288294,
+        "lat": 50.0108105,
+        "lon": 22.6777251,
+        "timestamp": "2022-11-05T13:11:02Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288295,
+        "lat": 50.010849,
+        "lon": 22.6778575,
+        "timestamp": "2022-11-05T00:48:28Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288296,
+        "lat": 50.0107937,
+        "lon": 22.6778376,
+        "timestamp": "2022-11-05T13:11:02Z"
+      },
+      {
+        "type": "node",
+        "id": 10158288297,
+        "lat": 50.010829,
+        "lon": 22.6778503,
+        "timestamp": "2022-11-05T00:48:28Z"
+      },
+      {
+        "type": "node",
+        "id": 10159298209,
+        "lat": 50.0110059,
+        "lon": 22.6774806,
+        "timestamp": "2022-11-05T13:11:02Z"
+      },
+      {
+        "type": "node",
+        "id": 10159298210,
+        "lat": 50.0109924,
+        "lon": 22.6774757,
+        "timestamp": "2022-11-05T13:11:02Z"
+      },
+      {
+        "type": "node",
+        "id": 10187253252,
+        "lat": 50.0110613,
+        "lon": 22.6770253,
+        "timestamp": "2022-12-22T15:40:08Z",
+        "tags": {
+          "male": "yes",
+          "name": "Hubert Kurpiel",
+          "shop": "hairdresser"
+        }
+      },
+      {
+        "type": "node",
+        "id": 10291623714,
+        "lat": 50.0113026,
+        "lon": 22.6753805,
+        "timestamp": "2022-12-28T15:56:11Z"
+      },
+      {
+        "type": "node",
+        "id": 10291623724,
+        "lat": 50.0113922,
+        "lon": 22.6764658,
+        "timestamp": "2022-12-28T15:56:11Z"
+      },
+      {
+        "type": "node",
+        "id": 10291623726,
+        "lat": 50.0115053,
+        "lon": 22.6765245,
+        "timestamp": "2022-12-28T15:56:11Z"
+      },
+      {
+        "type": "node",
+        "id": 10784911980,
+        "lat": 50.0117864,
+        "lon": 22.677263,
+        "timestamp": "2023-04-04T18:14:56Z",
+        "tags": {
+          "craft": "photographer",
+          "shop": "copyshop"
+        }
+      },
+      {
+        "type": "node",
+        "id": 10858001259,
+        "lat": 50.0111208,
+        "lon": 22.6767804,
+        "timestamp": "2023-04-30T14:09:24Z"
+      },
+      {
+        "type": "node",
+        "id": 13103556625,
+        "lat": 50.0112218,
+        "lon": 22.6755723,
+        "timestamp": "2025-08-28T12:00:51Z"
+      },
+      {
+        "type": "node",
+        "id": 13103556626,
+        "lat": 50.0113272,
+        "lon": 22.6756297,
+        "timestamp": "2025-08-28T12:00:51Z"
+      },
+      {
+        "type": "node",
+        "id": 13103556627,
+        "lat": 50.0113682,
+        "lon": 22.6754166,
+        "timestamp": "2025-08-28T12:00:51Z"
+      },
+      {
+        "type": "node",
+        "id": 13103556628,
+        "lat": 50.0114597,
+        "lon": 22.6757122,
+        "timestamp": "2025-08-28T12:00:51Z"
+      },
+      {
+        "type": "node",
+        "id": 13103556629,
+        "lat": 50.0113303,
+        "lon": 22.6762931,
+        "timestamp": "2025-08-28T12:00:51Z"
+      },
+      {
+        "type": "node",
+        "id": 13103556630,
+        "lat": 50.0111315,
+        "lon": 22.6762086,
+        "timestamp": "2025-08-28T12:00:51Z"
+      },
+      {
+        "type": "node",
+        "id": 13103662712,
+        "lat": 50.0111129,
+        "lon": 22.6763399,
+        "timestamp": "2025-08-28T12:45:01Z"
+      },
+      {
+        "type": "node",
+        "id": 13103662713,
+        "lat": 50.0113009,
+        "lon": 22.6764252,
+        "timestamp": "2025-08-28T12:45:01Z"
+      },
+      {
+        "type": "node",
+        "id": 13103662714,
+        "lat": 50.0110971,
+        "lon": 22.6764514,
+        "timestamp": "2025-08-28T12:45:01Z"
+      },
+      {
+        "type": "node",
+        "id": 13103662715,
+        "lat": 50.0112766,
+        "lon": 22.6765342,
+        "timestamp": "2025-08-28T12:45:01Z"
+      },
+      {
+        "type": "node",
+        "id": 13103662716,
+        "lat": 50.0113539,
+        "lon": 22.6765774,
+        "timestamp": "2025-08-28T12:45:01Z"
+      },
+      {
+        "type": "node",
+        "id": 13103662717,
+        "lat": 50.0114875,
+        "lon": 22.676645,
+        "timestamp": "2025-08-28T12:45:01Z"
+      },
+      {
+        "type": "node",
+        "id": 13103662718,
+        "lat": 50.0114269,
+        "lon": 22.6766144,
+        "timestamp": "2025-08-28T12:45:01Z"
+      },
+      {
+        "type": "node",
+        "id": 13103662719,
+        "lat": 50.011399,
+        "lon": 22.676761,
+        "timestamp": "2025-08-28T12:45:01Z"
+      },
+      {
+        "type": "node",
+        "id": 13103662720,
+        "lat": 50.011465,
+        "lon": 22.6767976,
+        "timestamp": "2025-08-28T12:45:01Z"
+      },
+      {
+        "type": "node",
+        "id": 13103662721,
+        "lat": 50.0113715,
+        "lon": 22.6769102,
+        "timestamp": "2025-08-28T12:45:01Z"
+      },
+      {
+        "type": "way",
+        "id": 314168135,
+        "timestamp": "2018-11-02T05:15:30Z",
+        "nodes": [
+          3202154625,
+          3202154623,
+          3202154613,
+          3202154614,
+          3202154625
+        ],
+        "tags": {
+          "building": "retail",
+          "building:levels": "1",
+          "roof:levels": "0"
+        }
+      },
+      {
+        "type": "way",
+        "id": 443581421,
+        "timestamp": "2017-12-27T18:12:07Z",
+        "nodes": [
+          4411392785,
+          4411392783,
+          4411392777,
+          4411392778,
+          4411392779,
+          4411392785
+        ],
+        "tags": {
+          "building": "yes",
+          "shop": "department_store"
+        }
+      },
+      {
+        "type": "way",
+        "id": 924791723,
+        "timestamp": "2025-08-28T12:45:01Z",
+        "nodes": [
+          8582744725,
+          13103556627,
+          10291623714,
+          8582744726,
+          13103556625,
+          13103556630,
+          13103662712,
+          13103662714,
+          8582744727,
+          10858001259,
+          8582744728,
+          13103662715,
+          13103662713,
+          13103556629,
+          13103556628,
+          8582744725
+        ],
+        "tags": {
+          "addr:city": "Jarosław",
+          "addr:city:simc": "0972192",
+          "addr:postcode": "37-500",
+          "addr:street": "Pruchnicka",
+          "building": "retail",
+          "source:addr": "gugik.gov.pl"
+        }
+      },
+      {
+        "type": "way",
+        "id": 924791724,
+        "timestamp": "2025-08-28T12:45:01Z",
+        "nodes": [
+          8582744730,
+          13103662721,
+          8582744731,
+          8582744732,
+          13103662716,
+          10291623724,
+          10291623726,
+          13103662717,
+          13103662720,
+          8582744730
+        ],
+        "tags": {
+          "addr:city": "Jarosław",
+          "addr:city:simc": "0972192",
+          "addr:housenumber": "1BB",
+          "addr:postcode": "37-500",
+          "addr:street": "Pruchnicka",
+          "building": "retail",
+          "building:levels": "1",
+          "roof:levels": "0",
+          "source:addr": "gugik.gov.pl"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1110071620,
+        "timestamp": "2022-11-03T18:08:58Z",
+        "nodes": [
+          10155216835,
+          10155216834,
+          10155216833,
+          10155216832,
+          10155216831,
+          10155216835
+        ],
+        "tags": {
+          "building": "retail",
+          "building:levels": "1",
+          "source": "www.geoportal.gov.pl"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1110429555,
+        "timestamp": "2024-06-23T12:00:38Z",
+        "nodes": [
+          10158288272,
+          10158288282,
+          10158288283,
+          10159298210,
+          10159298209,
+          10158288284,
+          10158288272
+        ],
+        "tags": {
+          "branch": "Punkt-1",
+          "check_date": "2024-06-23",
+          "contact:city": "Jarosław",
+          "contact:facebook": "https://www.facebook.com/profile.php?id=100054592412457",
+          "contact:housenumber": "34",
+          "contact:postcode": "37-500",
+          "contact:street": "Juliusza Słowackiego",
+          "email": "agatagladysz1@gmail.com",
+          "indoor": "room",
+          "level": "0",
+          "mobile_phone:repair": "yes",
+          "name": "Tel-Tech",
+          "opening_hours": "Mo-Fr 08:00-17:00; Sa 09:00-13:00",
+          "phone": "+48 791 145100",
+          "shop": "mobile_phone",
+          "website": "https://telefonyjaroslaw.pl/"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1110429557,
+        "timestamp": "2024-06-23T12:00:38Z",
+        "nodes": [
+          10158288288,
+          10158288289,
+          10158288290,
+          10158288287,
+          10158288288
+        ],
+        "tags": {
+          "check_date": "2024-06-23",
+          "indoor": "room",
+          "level": "0",
+          "name": "Bilety kolejowe",
+          "name:en": "Train tickets",
+          "name:pl": "Bilety kolejowe",
+          "opening_hours": "Mo-Fr 06:45-09:15, 09:30-12:50, 13:05-18:10",
+          "shop": "ticket",
+          "tickets:public_transport": "yes",
+          "wheelchair": "yes"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1110429559,
+        "timestamp": "2024-06-23T12:00:38Z",
+        "nodes": [
+          10158288291,
+          10158288293,
+          10158288294,
+          10158288292,
+          10158288291
+        ],
+        "tags": {
+          "check_date": "2024-06-23",
+          "contact:city": "Jarosław",
+          "contact:facebook": "https://www.facebook.com/jubiler.infinity",
+          "contact:housenumber": "34",
+          "contact:postcode": "37-500",
+          "contact:street": "Juliusza Słowackiego",
+          "email": "bizuteria.infinity@o2.pl",
+          "indoor": "room",
+          "level": "0",
+          "name": "Jubiler Infinity",
+          "opening_hours": "Mo-Fr 09:00-17:00; Sa 09:00-13:00; Su off",
+          "phone": "+48 694 255526",
+          "shop": "jewelry"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1110429560,
+        "timestamp": "2024-06-23T12:00:38Z",
+        "nodes": [
+          10158288293,
+          10158288295,
+          10158288297,
+          10158288296,
+          10158288294,
+          10158288293
+        ],
+        "tags": {
+          "brand": "Relay",
+          "brand:wikidata": "Q3424298",
+          "check_date": "2024-06-23",
+          "check_date:opening_hours": "2023-03-18",
+          "indoor": "room",
+          "level": "0",
+          "name": "Relay",
+          "opening_hours:signed": "no",
+          "shop": "newsagent",
+          "wheelchair": "yes"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1425566712,
+        "timestamp": "2025-10-18T22:51:18Z",
+        "nodes": [
+          8582744726,
+          13103556625,
+          13103556626,
+          13103556627,
+          10291623714,
+          8582744726
+        ],
+        "tags": {
+          "building:part": "yes",
+          "name": "Hair Dream",
+          "shop": "hairdresser"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1425566714,
+        "timestamp": "2025-10-18T22:51:18Z",
+        "nodes": [
+          13103556629,
+          13103556630,
+          13103556625,
+          13103556626,
+          13103556628,
+          13103556629
+        ],
+        "tags": {
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building:part": "yes",
+          "name": "Biedronka",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1425574831,
+        "timestamp": "2025-10-18T22:51:18Z",
+        "nodes": [
+          13103556629,
+          13103556630,
+          13103662712,
+          13103662713,
+          13103556629
+        ],
+        "tags": {
+          "brand": "Rossmann",
+          "brand:wikidata": "Q316004",
+          "building:part": "yes",
+          "name": "Rossmann",
+          "shop": "chemist"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1425574832,
+        "timestamp": "2025-10-18T22:51:18Z",
+        "nodes": [
+          13103662712,
+          13103662714,
+          13103662715,
+          13103662713,
+          13103662712
+        ],
+        "tags": {
+          "building:part": "yes",
+          "name": "Prymus-AGD",
+          "shop": "appliance"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1425574833,
+        "timestamp": "2025-10-18T22:51:18Z",
+        "nodes": [
+          13103662715,
+          13103662714,
+          8582744727,
+          10858001259,
+          8582744728,
+          13103662715
+        ],
+        "tags": {
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building:part": "yes",
+          "name": "Biedronka Outlet",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1425574834,
+        "timestamp": "2025-10-18T22:51:18Z",
+        "nodes": [
+          13103662716,
+          13103662718,
+          13103662717,
+          10291623726,
+          10291623724,
+          13103662716
+        ],
+        "tags": {
+          "brand": "Drogeria Natura",
+          "brand:wikidata": "Q9212032",
+          "building:part": "yes",
+          "name": "Drogeria Natura",
+          "shop": "chemist"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1425574837,
+        "timestamp": "2025-10-18T22:51:18Z",
+        "nodes": [
+          13103662718,
+          13103662716,
+          8582744732,
+          8582744731,
+          13103662721,
+          13103662719,
+          13103662718
+        ],
+        "tags": {
+          "building:part": "yes",
+          "name": "Jaś i Małgosia - sklep z zabawkami",
+          "shop": "toys"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7902,
+    "source": null,
+    "point": [
+      53.1160008088,
+      19.846075008
+    ],
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.8440750%2C53.1146008%2C19.8480750%2C53.1174008",
+    "elements": []
+  },
+  {
+    "id": 7856,
+    "source": null,
+    "point": [
+      52.59255,
+      17.25531
+    ],
+    "osm_url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=17.2533100%2C52.5911500%2C17.2573100%2C52.5939500",
+    "elements": [
+      {
+        "type": "node",
+        "id": 11151773270,
+        "lat": 52.5923554,
+        "lon": 17.2553739,
+        "timestamp": "2023-08-28T21:40:30Z"
+      },
+      {
+        "type": "node",
+        "id": 11151773271,
+        "lat": 52.5923869,
+        "lon": 17.2555837,
+        "timestamp": "2023-08-28T21:40:30Z"
+      },
+      {
+        "type": "node",
+        "id": 11151773272,
+        "lat": 52.5923774,
+        "lon": 17.2555876,
+        "timestamp": "2023-08-28T21:40:30Z"
+      },
+      {
+        "type": "node",
+        "id": 11151773273,
+        "lat": 52.592346,
+        "lon": 17.2553777,
+        "timestamp": "2023-08-28T21:40:30Z"
+      },
+      {
+        "type": "node",
+        "id": 11151773274,
+        "lat": 52.5927466,
+        "lon": 17.2551278,
+        "timestamp": "2023-08-28T21:40:30Z"
+      },
+      {
+        "type": "node",
+        "id": 11151773275,
+        "lat": 52.5923337,
+        "lon": 17.2552955,
+        "timestamp": "2023-08-28T21:40:30Z"
+      },
+      {
+        "type": "node",
+        "id": 11151773276,
+        "lat": 52.5923788,
+        "lon": 17.2555967,
+        "timestamp": "2023-08-28T21:40:30Z"
+      },
+      {
+        "type": "node",
+        "id": 11151773277,
+        "lat": 52.5927917,
+        "lon": 17.2554291,
+        "timestamp": "2023-08-28T21:40:30Z"
+      },
+      {
+        "type": "node",
+        "id": 11210791115,
+        "lat": 52.5924028,
+        "lon": 17.2554219,
+        "timestamp": "2025-08-18T16:52:04Z",
+        "tags": {
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "payment:blik": "yes",
+          "payment:cash": "yes",
+          "payment:contactless": "yes",
+          "payment:diners_club": "yes",
+          "payment:maestro": "yes",
+          "payment:mastercard": "yes",
+          "payment:sodexo": "yes",
+          "payment:visa": "yes",
+          "payment:visa_debit": "yes",
+          "payment:visa_electron": "yes",
+          "payment:v_pay": "yes",
+          "phone": "+48 22 205 33 00",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl/pl/shop,id,3683"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1202972344,
+        "timestamp": "2023-09-22T18:52:13Z",
+        "nodes": [
+          11151773277,
+          11151773276,
+          11151773272,
+          11151773271,
+          11151773270,
+          11151773273,
+          11151773275,
+          11151773274,
+          11151773277
+        ],
+        "tags": {
+          "addr:city": "Kiszkowo",
+          "addr:city:simc": "0584892",
+          "addr:housenumber": "30",
+          "addr:postcode": "62-280",
+          "addr:street": "Dworcowa",
+          "building": "retail",
+          "source:addr": "EMUiA (kiszkowo.e-mapa.net)"
+        }
+      }
+    ]
+  }
+]

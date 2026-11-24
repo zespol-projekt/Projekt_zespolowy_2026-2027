@@ -1,0 +1,1217 @@
+[
+  {
+    "id": 7039,
+    "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=21.9359244%2C53.4009550%2C21.9419244%2C53.4049550",
+    "elements": [
+      {
+        "type": "node",
+        "id": 10760025586,
+        "lat": 53.4034006,
+        "lon": 21.9393022,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025587,
+        "lat": 53.4033575,
+        "lon": 21.9392051,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025588,
+        "lat": 53.4034974,
+        "lon": 21.9390304,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025589,
+        "lat": 53.4032411,
+        "lon": 21.9384527,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025590,
+        "lat": 53.4032421,
+        "lon": 21.9384514,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025591,
+        "lat": 53.4032342,
+        "lon": 21.9384335,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025592,
+        "lat": 53.4032298,
+        "lon": 21.938439,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025593,
+        "lat": 53.4032343,
+        "lon": 21.938449,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025594,
+        "lat": 53.4030592,
+        "lon": 21.9386675,
+        "timestamp": "2023-03-24T20:40:33Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025598,
+        "lat": 53.4030577,
+        "lon": 21.9386814,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "node",
+        "id": 10760025599,
+        "lat": 53.4033593,
+        "lon": 21.9393537,
+        "timestamp": "2024-05-27T10:34:27Z"
+      },
+      {
+        "type": "way",
+        "id": 1157058590,
+        "timestamp": "2024-05-27T10:34:27Z",
+        "nodes": [
+          10760025599,
+          10760025598,
+          10760025594,
+          10760025593,
+          10760025592,
+          10760025591,
+          10760025590,
+          10760025589,
+          10760025588,
+          10760025587,
+          10760025586,
+          10760025599
+        ],
+        "tags": {
+          "addr:city": "Kolno",
+          "addr:city:simc": "0957420",
+          "addr:housenumber": "1",
+          "addr:postcode": "18-500",
+          "addr:street": "Księcia Janusza I",
+          "addr:street:sym_ul": "07226",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+          "building": "supermarket",
+          "email": "bok@biedronka.eu",
+          "name": "Biedronka",
+          "name:ru": "Бедронка",
+          "opening_hours": "Mo-Sa 06:00-21:00",
+          "operator": "Jeronimo Martins Polska S.A.",
+          "shop": "supermarket",
+          "website": "https://www.biedronka.pl"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7173,
+    "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=17.4846786%2C54.1859243%2C17.4906786%2C54.1899243",
+    "elements": [
+      {
+        "type": "node",
+        "id": 3622194402,
+        "lat": 54.1868833,
+        "lon": 17.4855905,
+        "timestamp": "2023-12-30T17:58:28Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194403,
+        "lat": 54.1868841,
+        "lon": 17.4853597,
+        "timestamp": "2023-12-30T17:58:28Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194429,
+        "lat": 54.1869744,
+        "lon": 17.4855915,
+        "timestamp": "2023-12-30T17:58:28Z"
+      },
+      {
+        "type": "node",
+        "id": 3622194431,
+        "lat": 54.1869753,
+        "lon": 17.4853607,
+        "timestamp": "2023-12-30T17:58:28Z"
+      },
+      {
+        "type": "way",
+        "id": 356816967,
+        "timestamp": "2024-02-25T18:02:48Z",
+        "nodes": [
+          3622194429,
+          3622194431,
+          3622194403,
+          3622194402,
+          3622194429
+        ],
+        "tags": {
+          "addr:city": "Bytów",
+          "addr:housenumber": "37",
+          "addr:postcode": "77-100",
+          "addr:street": "Lęborska",
+          "brand": "Orlen",
+          "brand:wikidata": "Q971649",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Orlen",
+          "shop": "convenience",
+          "source:building": "BDOT"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7354,
+    "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.3429025%2C53.9153282%2C19.3489025%2C53.9193282",
+    "elements": [
+      {
+        "type": "node",
+        "id": 2628477779,
+        "lat": 53.9189411,
+        "lon": 19.3472675,
+        "timestamp": "2021-10-17T05:40:56Z"
+      },
+      {
+        "type": "node",
+        "id": 2628477790,
+        "lat": 53.919134,
+        "lon": 19.3474616,
+        "timestamp": "2021-10-17T05:40:56Z"
+      },
+      {
+        "type": "node",
+        "id": 2628477801,
+        "lat": 53.9191154,
+        "lon": 19.3468133,
+        "timestamp": "2021-10-17T05:40:56Z"
+      },
+      {
+        "type": "node",
+        "id": 2628477832,
+        "lat": 53.9193005,
+        "lon": 19.3470047,
+        "timestamp": "2021-10-17T05:40:56Z"
+      },
+      {
+        "type": "node",
+        "id": 8336201208,
+        "lat": 53.918069,
+        "lon": 19.3462939,
+        "timestamp": "2021-01-19T00:03:35Z"
+      },
+      {
+        "type": "node",
+        "id": 8336201209,
+        "lat": 53.9180336,
+        "lon": 19.3464056,
+        "timestamp": "2021-01-19T00:03:35Z"
+      },
+      {
+        "type": "node",
+        "id": 8336201210,
+        "lat": 53.9181119,
+        "lon": 19.3462934,
+        "timestamp": "2021-01-19T00:03:35Z"
+      },
+      {
+        "type": "node",
+        "id": 8336201211,
+        "lat": 53.9180788,
+        "lon": 19.3462631,
+        "timestamp": "2021-01-19T00:03:35Z"
+      },
+      {
+        "type": "node",
+        "id": 8336203129,
+        "lat": 53.9180659,
+        "lon": 19.3464351,
+        "timestamp": "2021-01-19T00:03:36Z"
+      },
+      {
+        "type": "node",
+        "id": 8336203133,
+        "lat": 53.9181015,
+        "lon": 19.3463236,
+        "timestamp": "2021-01-19T00:03:36Z"
+      },
+      {
+        "type": "node",
+        "id": 12344419382,
+        "lat": 53.9173504,
+        "lon": 19.3456686,
+        "timestamp": "2024-11-15T17:44:34Z",
+        "tags": {
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "name": "Biedronka",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "type": "way",
+        "id": 257254195,
+        "timestamp": "2022-02-19T12:37:04Z",
+        "nodes": [
+          2628477779,
+          2628477801,
+          2628477832,
+          2628477790,
+          2628477779
+        ],
+        "tags": {
+          "brand": "Netto",
+          "brand:wikidata": "Q552652",
+          "brand:wikipedia": "da:Netto (supermarkedskæde)",
+          "building": "retail",
+          "contact:website": "https://netto.pl/sklepy/dzierzgon/ul-zawadzkiego-12/5baaaf921021459fa87a970ba83fe6c5/",
+          "name": "Netto",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "type": "way",
+        "id": 896812509,
+        "timestamp": "2021-01-19T00:03:42Z",
+        "nodes": [
+          8336201211,
+          8336201210,
+          8336203133,
+          8336203129,
+          8336201209,
+          8336201208,
+          8336201211
+        ],
+        "tags": {
+          "building": "retail",
+          "building:levels": "1",
+          "source": "www.geoportal.gov.pl"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7411,
+    "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=18.8968364%2C50.3823751%2C18.9028364%2C50.3863751",
+    "elements": [
+      {
+        "type": "node",
+        "id": 4956332149,
+        "lat": 50.3831622,
+        "lon": 18.902319,
+        "timestamp": "2022-11-05T10:55:56Z"
+      },
+      {
+        "type": "node",
+        "id": 4956332150,
+        "lat": 50.3829293,
+        "lon": 18.9024955,
+        "timestamp": "2019-05-02T06:51:41Z"
+      },
+      {
+        "type": "node",
+        "id": 4956332151,
+        "lat": 50.3828702,
+        "lon": 18.9023057,
+        "timestamp": "2019-05-02T06:51:41Z"
+      },
+      {
+        "type": "node",
+        "id": 4956332152,
+        "lat": 50.3831033,
+        "lon": 18.9021296,
+        "timestamp": "2022-11-05T10:55:56Z"
+      },
+      {
+        "type": "node",
+        "id": 5428841924,
+        "lat": 50.3829305,
+        "lon": 18.9033473,
+        "timestamp": "2019-05-02T06:51:41Z"
+      },
+      {
+        "type": "node",
+        "id": 5428841925,
+        "lat": 50.3827031,
+        "lon": 18.9034994,
+        "timestamp": "2019-05-02T06:51:41Z"
+      },
+      {
+        "type": "node",
+        "id": 5428841926,
+        "lat": 50.3824776,
+        "lon": 18.9026717,
+        "timestamp": "2019-05-02T06:51:41Z"
+      },
+      {
+        "type": "node",
+        "id": 5428841927,
+        "lat": 50.3827051,
+        "lon": 18.9025187,
+        "timestamp": "2019-05-02T06:51:41Z"
+      },
+      {
+        "type": "node",
+        "id": 6442139346,
+        "lat": 50.3825105,
+        "lon": 18.9027929,
+        "timestamp": "2019-05-02T06:51:40Z"
+      },
+      {
+        "type": "node",
+        "id": 6442139348,
+        "lat": 50.3828441,
+        "lon": 18.9030299,
+        "timestamp": "2019-05-02T06:51:40Z"
+      },
+      {
+        "type": "node",
+        "id": 6442139350,
+        "lat": 50.382879,
+        "lon": 18.9023357,
+        "timestamp": "2019-05-02T06:51:40Z"
+      },
+      {
+        "type": "node",
+        "id": 6442139352,
+        "lat": 50.3829902,
+        "lon": 18.9024496,
+        "timestamp": "2019-05-02T06:51:40Z"
+      },
+      {
+        "type": "node",
+        "id": 6442139353,
+        "lat": 50.3830202,
+        "lon": 18.9025445,
+        "timestamp": "2022-11-05T10:55:56Z"
+      },
+      {
+        "type": "node",
+        "id": 6442139354,
+        "lat": 50.3831408,
+        "lon": 18.9024493,
+        "timestamp": "2022-11-05T10:55:56Z"
+      },
+      {
+        "type": "node",
+        "id": 6442139355,
+        "lat": 50.3831124,
+        "lon": 18.9023574,
+        "timestamp": "2019-05-02T06:51:40Z"
+      },
+      {
+        "type": "node",
+        "id": 10159146330,
+        "lat": 50.3831646,
+        "lon": 18.902431,
+        "timestamp": "2022-11-05T10:55:56Z"
+      },
+      {
+        "type": "node",
+        "id": 10159146331,
+        "lat": 50.3831548,
+        "lon": 18.9023993,
+        "timestamp": "2022-11-05T10:55:56Z"
+      },
+      {
+        "type": "node",
+        "id": 10159146332,
+        "lat": 50.383131,
+        "lon": 18.9024171,
+        "timestamp": "2022-11-05T10:55:56Z"
+      },
+      {
+        "type": "node",
+        "id": 11136211570,
+        "lat": 50.3858002,
+        "lon": 18.9006675,
+        "timestamp": "2023-08-22T13:02:56Z"
+      },
+      {
+        "type": "node",
+        "id": 11136211571,
+        "lat": 50.3857131,
+        "lon": 18.900673,
+        "timestamp": "2023-08-22T13:02:56Z"
+      },
+      {
+        "type": "node",
+        "id": 11136211572,
+        "lat": 50.3857108,
+        "lon": 18.9003979,
+        "timestamp": "2023-08-22T13:02:56Z"
+      },
+      {
+        "type": "node",
+        "id": 11136211573,
+        "lat": 50.3857964,
+        "lon": 18.9003934,
+        "timestamp": "2023-08-22T13:02:56Z"
+      },
+      {
+        "type": "way",
+        "id": 505776510,
+        "timestamp": "2024-01-16T13:20:33Z",
+        "nodes": [
+          4956332152,
+          4956332151,
+          6442139350,
+          4956332150,
+          6442139352,
+          6442139353,
+          6442139354,
+          10159146330,
+          10159146331,
+          10159146332,
+          6442139355,
+          4956332149,
+          4956332152
+        ],
+        "tags": {
+          "addr:city": "Radzionków",
+          "addr:housenumber": "7",
+          "addr:postcode": "41-922",
+          "addr:street": "Zofii Nałkowskiej",
+          "brand": "Dino",
+          "brand:wikidata": "Q11694239",
+          "brand:wikipedia": "pl:Dino Polska",
+          "building": "supermarket",
+          "building:levels": "1",
+          "name": "Dino",
+          "opening_hours": "Mo-Sa 06:00-22:30; Su 08:30-20:00",
+          "operator": "Dino",
+          "payment:cash": "yes",
+          "payment:mastercard": "yes",
+          "payment:visa": "yes",
+          "roof:shape": "gabled",
+          "shop": "supermarket",
+          "source:addr": "gugik.gov.pl",
+          "source:geometry": "geoportal.gov.pl, GPS",
+          "website": "https://www.marketdino.pl/"
+        }
+      },
+      {
+        "type": "way",
+        "id": 563326106,
+        "timestamp": "2024-02-28T14:51:58Z",
+        "nodes": [
+          5428841927,
+          5428841926,
+          6442139346,
+          5428841925,
+          5428841924,
+          6442139348,
+          5428841927
+        ],
+        "tags": {
+          "addr:city": "Radzionków",
+          "addr:housenumber": "2",
+          "addr:postcode": "41-922",
+          "addr:street": "Zofii Nałkowskiej",
+          "brand": "Biedronka",
+          "building": "commercial",
+          "name": "Biedronka",
+          "shop": "supermarket",
+          "source:geometry": "geoportal.gov.pl/isok"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1201079711,
+        "timestamp": "2023-08-22T13:02:56Z",
+        "nodes": [
+          11136211570,
+          11136211571,
+          11136211572,
+          11136211573,
+          11136211570
+        ],
+        "tags": {
+          "building": "retail",
+          "building:levels": "1",
+          "source:building": "BDOT"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7808,
+    "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=20.9139778%2C52.2804406%2C20.9199778%2C52.2844406",
+    "elements": [
+      {
+        "type": "node",
+        "id": 7862208216,
+        "lat": 52.2838172,
+        "lon": 20.9162081,
+        "timestamp": "2020-08-31T15:42:30Z"
+      },
+      {
+        "type": "node",
+        "id": 7862208217,
+        "lat": 52.2838155,
+        "lon": 20.9162656,
+        "timestamp": "2020-08-31T15:42:30Z"
+      },
+      {
+        "type": "node",
+        "id": 7862208218,
+        "lat": 52.2838589,
+        "lon": 20.916269,
+        "timestamp": "2020-08-31T15:42:30Z"
+      },
+      {
+        "type": "node",
+        "id": 7862208219,
+        "lat": 52.2838605,
+        "lon": 20.9162115,
+        "timestamp": "2020-08-31T15:42:30Z"
+      },
+      {
+        "type": "node",
+        "id": 7862208220,
+        "lat": 52.2841819,
+        "lon": 20.9160377,
+        "timestamp": "2020-08-31T15:42:30Z"
+      },
+      {
+        "type": "node",
+        "id": 7862208221,
+        "lat": 52.284184,
+        "lon": 20.9159683,
+        "timestamp": "2020-08-31T15:42:30Z"
+      },
+      {
+        "type": "node",
+        "id": 7862208222,
+        "lat": 52.2842601,
+        "lon": 20.9159743,
+        "timestamp": "2020-08-31T15:42:30Z"
+      },
+      {
+        "type": "node",
+        "id": 7862208223,
+        "lat": 52.2838664,
+        "lon": 20.9160129,
+        "timestamp": "2020-08-31T15:42:30Z"
+      },
+      {
+        "type": "node",
+        "id": 7862208224,
+        "lat": 52.2838553,
+        "lon": 20.9163921,
+        "timestamp": "2020-08-31T15:42:30Z"
+      },
+      {
+        "type": "node",
+        "id": 7862208225,
+        "lat": 52.2842438,
+        "lon": 20.916428,
+        "timestamp": "2021-09-07T00:56:26Z"
+      },
+      {
+        "type": "node",
+        "id": 9068832421,
+        "lat": 52.2837538,
+        "lon": 20.9149325,
+        "timestamp": "2021-09-07T00:56:25Z"
+      },
+      {
+        "type": "node",
+        "id": 9068832469,
+        "lat": 52.2837013,
+        "lon": 20.9150439,
+        "timestamp": "2021-09-07T00:56:25Z"
+      },
+      {
+        "type": "node",
+        "id": 9068832524,
+        "lat": 52.2837374,
+        "lon": 20.9151143,
+        "timestamp": "2021-09-07T00:56:25Z"
+      },
+      {
+        "type": "node",
+        "id": 9068832547,
+        "lat": 52.2836668,
+        "lon": 20.915038,
+        "timestamp": "2021-09-07T00:56:25Z"
+      },
+      {
+        "type": "node",
+        "id": 9068832570,
+        "lat": 52.2837424,
+        "lon": 20.9150423,
+        "timestamp": "2021-09-07T00:56:25Z"
+      },
+      {
+        "type": "node",
+        "id": 9068832592,
+        "lat": 52.2836102,
+        "lon": 20.9150894,
+        "timestamp": "2021-09-07T00:56:25Z"
+      },
+      {
+        "type": "node",
+        "id": 9068832686,
+        "lat": 52.2837116,
+        "lon": 20.9149219,
+        "timestamp": "2021-09-07T00:56:25Z"
+      },
+      {
+        "type": "node",
+        "id": 9068832790,
+        "lat": 52.2837412,
+        "lon": 20.9150593,
+        "timestamp": "2021-09-07T00:56:25Z"
+      },
+      {
+        "type": "node",
+        "id": 9068832812,
+        "lat": 52.283615,
+        "lon": 20.9150288,
+        "timestamp": "2021-09-07T00:56:25Z"
+      },
+      {
+        "type": "node",
+        "id": 9068832858,
+        "lat": 52.283663,
+        "lon": 20.9150998,
+        "timestamp": "2021-09-07T00:56:25Z"
+      },
+      {
+        "type": "node",
+        "id": 9070993802,
+        "lat": 52.2820895,
+        "lon": 20.9188603,
+        "timestamp": "2021-09-07T15:54:48Z"
+      },
+      {
+        "type": "node",
+        "id": 9070993805,
+        "lat": 52.282275,
+        "lon": 20.9188743,
+        "timestamp": "2021-09-07T15:54:48Z"
+      },
+      {
+        "type": "node",
+        "id": 9070993806,
+        "lat": 52.2822374,
+        "lon": 20.918862,
+        "timestamp": "2021-09-07T15:54:48Z"
+      },
+      {
+        "type": "node",
+        "id": 9070993811,
+        "lat": 52.2820769,
+        "lon": 20.9189645,
+        "timestamp": "2021-09-07T15:54:48Z"
+      },
+      {
+        "type": "node",
+        "id": 9070993813,
+        "lat": 52.2822565,
+        "lon": 20.9190231,
+        "timestamp": "2021-09-07T15:54:48Z"
+      },
+      {
+        "type": "node",
+        "id": 9070993815,
+        "lat": 52.282232,
+        "lon": 20.9189058,
+        "timestamp": "2021-09-07T15:54:48Z"
+      },
+      {
+        "type": "node",
+        "id": 13645941191,
+        "lat": 52.2842124,
+        "lon": 20.9190987,
+        "timestamp": "2026-03-13T19:31:45Z"
+      },
+      {
+        "type": "node",
+        "id": 13645941192,
+        "lat": 52.2842024,
+        "lon": 20.9194733,
+        "timestamp": "2026-03-13T19:31:45Z"
+      },
+      {
+        "type": "node",
+        "id": 13645941193,
+        "lat": 52.2840716,
+        "lon": 20.9194644,
+        "timestamp": "2026-03-13T19:31:45Z"
+      },
+      {
+        "type": "node",
+        "id": 13645941194,
+        "lat": 52.284081,
+        "lon": 20.9190899,
+        "timestamp": "2026-03-13T19:31:45Z"
+      },
+      {
+        "type": "way",
+        "id": 842782846,
+        "timestamp": "2022-08-17T18:29:57Z",
+        "nodes": [
+          7862208225,
+          7862208224,
+          7862208218,
+          7862208217,
+          7862208216,
+          7862208219,
+          7862208223,
+          7862208220,
+          7862208221,
+          7862208222,
+          7862208225
+        ],
+        "tags": {
+          "addr:city": "Warszawa",
+          "addr:city:simc": "0918123",
+          "addr:housenumber": "10",
+          "addr:postcode": "01-921",
+          "addr:street": "Swarożyca",
+          "brand": "Netto",
+          "brand:wikidata": "Q552652",
+          "building": "retail",
+          "building:levels": "1",
+          "name": "Netto",
+          "opening_hours": "Mo-Sa 06:00-22:00",
+          "roof:levels": "0",
+          "roof:shape": "pyramidal",
+          "shop": "supermarket",
+          "source:addr": "gugik.gov.pl"
+        }
+      },
+      {
+        "type": "way",
+        "id": 980383399,
+        "timestamp": "2021-09-07T00:56:26Z",
+        "nodes": [
+          9068832570,
+          9068832790,
+          9068832524,
+          9068832858,
+          9068832592,
+          9068832812,
+          9068832547,
+          9068832469,
+          9068832686,
+          9068832421,
+          9068832570
+        ],
+        "tags": {
+          "addr:city": "Warszawa",
+          "addr:city:simc": "0918123",
+          "addr:housenumber": "15",
+          "addr:postcode": "01-920",
+          "addr:street": "Tytułowa",
+          "building": "retail",
+          "building:levels": "1",
+          "source": "www.geoportal.gov.pl",
+          "source:addr": "gugik.gov.pl"
+        }
+      },
+      {
+        "type": "way",
+        "id": 980621384,
+        "timestamp": "2021-09-07T15:54:48Z",
+        "nodes": [
+          9070993813,
+          9070993811,
+          9070993802,
+          9070993815,
+          9070993806,
+          9070993805,
+          9070993813
+        ],
+        "tags": {
+          "addr:city": "Warszawa",
+          "addr:city:simc": "0918123",
+          "addr:housenumber": "107",
+          "addr:postcode": "01-931",
+          "addr:street": "Wólczyńska",
+          "building": "retail",
+          "building:levels": "1",
+          "source": "www.geoportal.gov.pl",
+          "source:addr": "gugik.gov.pl"
+        }
+      },
+      {
+        "type": "way",
+        "id": 1488667799,
+        "timestamp": "2026-03-13T19:31:45Z",
+        "nodes": [
+          13645941194,
+          13645941193,
+          13645941192,
+          13645941191,
+          13645941194
+        ],
+        "tags": {
+          "addr:city": "Warszawa",
+          "addr:city:simc": "0918123",
+          "addr:housenumber": "10",
+          "addr:postcode": "01-921",
+          "addr:street": "Popiela",
+          "building": "retail",
+          "building:levels": "1",
+          "source:addr": "gugik.gov.pl",
+          "source:building": "EGiB"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7935,
+    "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.0064234%2C54.0353022%2C19.0124234%2C54.0393022",
+    "elements": [
+      {
+        "type": "node",
+        "id": 2640047582,
+        "lat": 54.0367721,
+        "lon": 19.0102561,
+        "timestamp": "2014-01-27T19:50:27Z"
+      },
+      {
+        "type": "node",
+        "id": 2640047652,
+        "lat": 54.0370266,
+        "lon": 19.0091253,
+        "timestamp": "2014-01-27T19:50:28Z"
+      },
+      {
+        "type": "node",
+        "id": 2640047662,
+        "lat": 54.0372823,
+        "lon": 19.0105891,
+        "timestamp": "2014-01-27T19:50:28Z"
+      },
+      {
+        "type": "node",
+        "id": 2640047720,
+        "lat": 54.0378467,
+        "lon": 19.0096825,
+        "timestamp": "2026-09-22T19:34:09Z"
+      },
+      {
+        "type": "node",
+        "id": 3891549060,
+        "lat": 54.0386829,
+        "lon": 19.0115224,
+        "timestamp": "2016-12-06T15:27:54Z"
+      },
+      {
+        "type": "node",
+        "id": 3891549105,
+        "lat": 54.0387582,
+        "lon": 19.0115694,
+        "timestamp": "2016-12-06T15:27:54Z"
+      },
+      {
+        "type": "node",
+        "id": 4541458827,
+        "lat": 54.0386352,
+        "lon": 19.0117444,
+        "timestamp": "2016-12-06T15:27:53Z"
+      },
+      {
+        "type": "node",
+        "id": 4541458828,
+        "lat": 54.0387105,
+        "lon": 19.0117913,
+        "timestamp": "2016-12-06T15:27:53Z"
+      },
+      {
+        "type": "node",
+        "id": 14207222683,
+        "lat": 54.0375001,
+        "lon": 19.0096212,
+        "timestamp": "2026-09-22T19:34:09Z"
+      },
+      {
+        "type": "node",
+        "id": 14207222684,
+        "lat": 54.03763,
+        "lon": 19.0097044,
+        "timestamp": "2026-09-22T19:34:09Z"
+      },
+      {
+        "type": "node",
+        "id": 14207222685,
+        "lat": 54.0378369,
+        "lon": 19.009744,
+        "timestamp": "2026-09-22T19:34:09Z"
+      },
+      {
+        "type": "node",
+        "id": 14207222686,
+        "lat": 54.0375696,
+        "lon": 19.0099825,
+        "timestamp": "2026-09-22T19:34:09Z"
+      },
+      {
+        "type": "node",
+        "id": 14207222687,
+        "lat": 54.0380425,
+        "lon": 19.0102914,
+        "timestamp": "2026-09-22T19:34:09Z"
+      },
+      {
+        "type": "node",
+        "id": 14207222688,
+        "lat": 54.0381244,
+        "lon": 19.0099335,
+        "timestamp": "2026-09-22T19:34:09Z"
+      },
+      {
+        "type": "way",
+        "id": 258677108,
+        "timestamp": "2026-09-22T19:34:09Z",
+        "nodes": [
+          2640047582,
+          2640047652,
+          2640047720,
+          14207222685,
+          14207222688,
+          14207222687,
+          14207222686,
+          14207222684,
+          14207222683,
+          2640047662,
+          2640047582
+        ],
+        "tags": {
+          "addr:housenumber": "68A",
+          "addr:place": "Grobelno",
+          "addr:postcode": "82-200",
+          "building": "retail",
+          "disused:shop": "supermarket",
+          "source:geometry": "geoportal.gov.pl:ortofoto"
+        }
+      },
+      {
+        "type": "way",
+        "id": 385822837,
+        "timestamp": "2026-04-20T06:20:29Z",
+        "nodes": [
+          3891549105,
+          3891549060,
+          4541458827,
+          4541458828,
+          3891549105
+        ],
+        "tags": {
+          "addr:city": "Malbork",
+          "addr:housenumber": "9",
+          "addr:postcode": "82-200",
+          "addr:street": "Boczna",
+          "amenity": "fuel",
+          "brand": "BP",
+          "brand:wikidata": "Q152057",
+          "brand:wikipedia": "en:BP",
+          "building": "retail",
+          "fuel:diesel": "yes",
+          "fuel:e10": "yes",
+          "fuel:e5": "yes",
+          "fuel:octane_95": "yes",
+          "fuel:octane_98": "yes",
+          "name": "BP",
+          "opening_hours": "24/7"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7594,
+    "url": "https://api.openstreetmap.org/api/0.6/way/1376556273/full.json",
+    "elements": [
+      {
+        "type": "node",
+        "id": 12745369171,
+        "lat": 51.4386216,
+        "lon": 18.9490289,
+        "timestamp": "2025-04-10T20:18:05Z"
+      },
+      {
+        "type": "node",
+        "id": 12745369172,
+        "lat": 51.4386001,
+        "lon": 18.9490289,
+        "timestamp": "2025-04-10T20:18:05Z"
+      },
+      {
+        "type": "node",
+        "id": 12745369173,
+        "lat": 51.4386002,
+        "lon": 18.9490474,
+        "timestamp": "2025-04-10T20:18:05Z"
+      },
+      {
+        "type": "node",
+        "id": 12745369174,
+        "lat": 51.4384264,
+        "lon": 18.9490475,
+        "timestamp": "2025-04-10T20:18:05Z"
+      },
+      {
+        "type": "node",
+        "id": 12745369175,
+        "lat": 51.4384265,
+        "lon": 18.9494806,
+        "timestamp": "2025-04-10T20:18:05Z"
+      },
+      {
+        "type": "node",
+        "id": 12745369176,
+        "lat": 51.4384687,
+        "lon": 18.9495006,
+        "timestamp": "2025-04-10T20:18:05Z"
+      },
+      {
+        "type": "node",
+        "id": 12745369177,
+        "lat": 51.4386947,
+        "lon": 18.9494995,
+        "timestamp": "2025-04-10T20:18:05Z"
+      },
+      {
+        "type": "node",
+        "id": 12745369178,
+        "lat": 51.4386941,
+        "lon": 18.9491914,
+        "timestamp": "2025-04-10T20:18:05Z"
+      },
+      {
+        "type": "node",
+        "id": 12745369179,
+        "lat": 51.4386469,
+        "lon": 18.9491916,
+        "timestamp": "2025-04-10T20:18:05Z"
+      },
+      {
+        "type": "node",
+        "id": 12745369180,
+        "lat": 51.4386468,
+        "lon": 18.9491271,
+        "timestamp": "2025-04-10T20:18:05Z"
+      },
+      {
+        "type": "node",
+        "id": 12745369181,
+        "lat": 51.4386217,
+        "lon": 18.9491272,
+        "timestamp": "2025-04-10T20:18:05Z"
+      },
+      {
+        "type": "way",
+        "id": 1376556273,
+        "timestamp": "2025-04-10T20:18:05Z",
+        "nodes": [
+          12745369171,
+          12745369172,
+          12745369173,
+          12745369174,
+          12745369175,
+          12745369176,
+          12745369177,
+          12745369178,
+          12745369179,
+          12745369180,
+          12745369181,
+          12745369171
+        ],
+        "tags": {
+          "addr:city": "Widawa",
+          "addr:housenumber": "9",
+          "addr:postcode": "98-170",
+          "addr:street": "Adama Mickiewicza",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "yes",
+          "name": "Biedronka",
+          "shop": "supermarket"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7802,
+    "url": "https://api.openstreetmap.org/api/0.6/relation/7631099/full.json",
+    "elements": [
+      {
+        "type": "relation",
+        "id": 7631099,
+        "timestamp": "2026-11-09T02:14:49Z",
+        "members": [
+          {
+            "type": "way",
+            "ref": 530789938,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 56446896,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 530789935,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 530422233,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 530422232,
+            "role": "outer"
+          }
+        ],
+        "tags": {
+          "addr:city": "Szczecin",
+          "addr:housenumber": "90",
+          "addr:postcode": "71-685",
+          "addr:street": "Księdza biskupa Władysława Bandurskiego",
+          "brand": "Biedronka",
+          "brand:wikidata": "Q857182",
+          "building": "retail",
+          "building:levels": "1",
+          "building:usage:pl": "Handlowo-usługowy",
+          "height": "5.4",
+          "name": "Biedronka",
+          "opening_hours": "Mo-Sa 06:00-22:00",
+          "operator": "Biedronka",
+          "payment:cards": "yes",
+          "payment:cash": "yes",
+          "payment:qr_code": "no",
+          "self_checkout": "yes",
+          "self_checkout:handheld": "no",
+          "self_checkout:self_scan": "yes",
+          "shop": "supermarket",
+          "type": "multipolygon"
+        }
+      }
+    ]
+  }
+]

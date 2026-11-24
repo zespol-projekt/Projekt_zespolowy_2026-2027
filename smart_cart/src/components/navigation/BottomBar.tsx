@@ -2,12 +2,16 @@ import { useTheme } from '@/features/theme/ThemeProvider';
 import type { ThemeColors } from '@/features/theme/palette';
 import type { BottomTabBarProps } from "expo-router/js-tabs";
 import { SymbolView } from "expo-symbols";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+
+const TAB_ICON_AREA = 44;
+const CART_ICON_AREA = 60;
+export const CART_TAB_RISE = CART_ICON_AREA - TAB_ICON_AREA;
 
 const items = [
   {
     name: "index",
-    label: "Home",
+    label: "Start",
     icon: { ios: "house", android: "home", web: "home" },
   },
   {
@@ -18,7 +22,6 @@ const items = [
   {
     name: "cart",
     label: "Koszyk",
-    icon: { ios: "cart", android: "shopping_cart", web: "shopping_cart" },
   },
   {
     name: "products",
@@ -39,8 +42,10 @@ export default function BottomBar({
 }: BottomTabBarProps) {
   const { colors } = useTheme();
   const styles = createStyles(colors);
+  const overMap = state.routes[state.index].name === "stores";
   return (
-    <View style={styles.bar}>
+    <View pointerEvents="box-none" style={[styles.bar, overMap && styles.overMap]}>
+      <View testID="bottom-bar-background" pointerEvents="none" style={styles.barBackground} />
       {items.map((item) => {
         const route = state.routes.find(
           (screen) => screen.name === item.name
@@ -81,11 +86,9 @@ export default function BottomBar({
             }
           >
             <View style={[styles.iconArea, isCart && styles.cartCircle]}>
-              <SymbolView
-                name={item.icon}
-                size={isCart ? 28 : 24}
-                tintColor={isCart ? colors.onPrimary : color}
-              />
+              {isCart
+                ? <Image source={require("@/assets/images/cart-tab.png")} resizeMode="contain" accessible={false} style={styles.cartLogo} />
+                : <SymbolView name={item.icon} size={32} tintColor={color} />}
             </View>
 
             <Text
@@ -107,34 +110,50 @@ export default function BottomBar({
 const createStyles = (colors: ThemeColors) => StyleSheet.create({
   bar: {
     flexDirection: "row",
-    alignItems: "center",
-    marginHorizontal: 12,
-    marginBottom: 0,
-    paddingTop: 5,
-    paddingBottom: 4,
-    paddingHorizontal: 4,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 28,
+    alignItems: "flex-end",
+    paddingBottom: 8,
+    marginTop: -CART_TAB_RISE,
+    zIndex: 1,
+  },
+  overMap: {
+    marginTop: -12,
+  },
+  barBackground: {
+    position: "absolute",
+    left: 0,
+    right: 0,
+    bottom: 0,
+    top: CART_TAB_RISE,
     backgroundColor: colors.background,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: colors.border,
   },
   item: {
     flex: 1,
     alignItems: "center",
   },
   iconArea: {
-    width: 44,
-    height: 44,
+    width: TAB_ICON_AREA,
+    height: TAB_ICON_AREA,
     alignItems: "center",
     justifyContent: "center",
   },
   cartCircle: {
-    borderRadius: 22,
-    backgroundColor: colors.cart,
+    width: CART_ICON_AREA,
+    height: CART_ICON_AREA,
+    borderRadius: CART_ICON_AREA / 2,
+    borderWidth: 2,
+    borderColor: colors.border,
+    backgroundColor: "#FFFFFF",
+    boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.16)",
+  },
+  cartLogo: {
+    width: 50,
+    height: 50,
   },
   label: {
     marginTop: 2,
-    fontSize: 10,
+    fontSize: 12,
   },
   activeLabel: {
     fontWeight: "700",

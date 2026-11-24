@@ -1,0 +1,94 @@
+[
+  {
+    "id": "biedronka:3588",
+    "city": "Gnojnik",
+    "street": "",
+    "number": "528",
+    "address_evidence": "https://mapa.targeo.pl/biedronka-supermarket-gnojnik-528-32-864-gnojnik~23072546/biedronka-supermarket/adres",
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gnojnik+528",
+    "candidates": [
+      {
+        "city": "Gnojnik",
+        "citypart": null,
+        "street": null,
+        "number": "528",
+        "teryt": "120205",
+        "simc": "0819616",
+        "ulic": null,
+        "code": "32-864",
+        "jednostka": "{Polska,małopolskie,brzeski,Gnojnik}",
+        "x": "615291.66",
+        "y": "227682.72",
+        "geometry_wkt": "POINT(615291.66 227682.72)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7859",
+    "city": "Krasne",
+    "street": "",
+    "number": "512J",
+    "address_evidence": "https://media.biedronka.pl/440267-swieta-z-biedronka-34-inwestycje-by-byc-blizej-klientow",
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Krasne+512J",
+    "candidates": [
+      {
+        "city": "Krasne",
+        "citypart": null,
+        "street": null,
+        "number": "512J",
+        "teryt": "181609",
+        "simc": "0652688",
+        "ulic": null,
+        "code": "36-007",
+        "jednostka": "{Polska,podkarpackie,rzeszowski,Krasne}",
+        "x": "719790.04",
+        "y": "248349.36",
+        "geometry_wkt": "POINT(719790.04 248349.36)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": "biedronka:7429",
+    "city": "Wielichowo",
+    "street": "Podgórna",
+    "number": "6A",
+    "address_evidence": "https://media.biedronka.pl/277328-spektakularne-zakonczenie-roku-w-biedronce-siec-zamyka-rok-otwarciami-nowych-sklepow",
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Wielichowo%2C+Podg%C3%B3rna+6A",
+    "candidates": []
+  },
+  {
+    "id": "biedronka:7629",
+    "city": "Bierawa",
+    "street": "Mickiewicza",
+    "number": "36",
+    "address_evidence": "https://media.biedronka.pl/369834-mikolajkowy-prezent-od-biedronki-nowe-sklepy-i-modernizacje-we-wszystkich-wojewodztwach",
+    "url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bierawa%2C+Mickiewicza+36",
+    "candidates": [
+      {
+        "city": "Bierawa",
+        "citypart": null,
+        "street": "Mickiewicza",
+        "number": "36",
+        "teryt": "160302",
+        "simc": "0491593",
+        "ulic": "12734",
+        "code": "47-240",
+        "jednostka": "{Polska,opolskie,kędzierzyńsko-kozielski,Bierawa}",
+        "x": "445616.69",
+        "y": "269650.46",
+        "geometry_wkt": "POINT(445616.69 269650.46)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      }
+    ]
+  }
+]

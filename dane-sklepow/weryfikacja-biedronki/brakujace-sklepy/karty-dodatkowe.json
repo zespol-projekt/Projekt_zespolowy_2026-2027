@@ -1,0 +1,157 @@
+[
+  {
+    "key": "2746",
+    "url": "https://www.biedronka.pl/pl/shop,id,2746",
+    "title": "Kaliska 16B,Nowe Skalmierzyce - Biedronka.pl"
+  },
+  {
+    "key": "2750",
+    "url": "https://www.biedronka.pl/pl/shop,id,2750",
+    "title": "Krasnystawska 4a,Wojsławice - Biedronka.pl"
+  },
+  {
+    "key": "7959",
+    "url": "https://www.biedronka.pl/pl/shop,id,7959",
+    "title": "Radomska 1A,Wolanów - Biedronka.pl"
+  },
+  {
+    "key": "7077",
+    "url": "https://www.biedronka.pl/pl/shop,id,7077",
+    "title": "Ogrodowa 1,Krzeszyce - Biedronka.pl"
+  },
+  {
+    "key": "7079",
+    "url": "https://www.biedronka.pl/pl/shop,id,7079",
+    "title": "Stawowa 2A,Książ Wielki - Biedronka.pl"
+  },
+  {
+    "key": "7506",
+    "url": "https://www.biedronka.pl/pl/shop,id,7506",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "key": "3794",
+    "url": "https://www.biedronka.pl/pl/shop,id,3794",
+    "title": "Natalin 46B,Natalin - Biedronka.pl"
+  },
+  {
+    "key": "krzeszyce",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=krzeszyce",
+    "items": [
+      {
+        "id": "7077",
+        "city": "Krzeszyce",
+        "name": "Krzeszyce Ogrodowa 1",
+        "street": "Ogrodowa",
+        "street_number": "1",
+        "zip_code": "66-435",
+        "latitude": "51.9126615",
+        "longitude": "19.1341497",
+        "date_closed": null
+      }
+    ],
+    "result": 0
+  },
+  {
+    "key": "ksiaz-wielki",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ksiaz-wielki",
+    "items": [
+      {
+        "id": "7079",
+        "city": "Książ Wielki",
+        "name": "Książ Wielki Stawowa 2A",
+        "street": "Stawowa",
+        "street_number": "2A",
+        "zip_code": "32-210",
+        "latitude": "51.9587217",
+        "longitude": "19.1899054",
+        "date_closed": null
+      }
+    ],
+    "result": 0
+  },
+  {
+    "key": "dragany",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dragany",
+    "items": [],
+    "result": 0
+  },
+  {
+    "key": "radzilow",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=radzilow",
+    "items": [],
+    "result": 0
+  },
+  {
+    "key": "golczewo",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=golczewo",
+    "items": [],
+    "result": 0
+  },
+  {
+    "key": "lukowa",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lukowa",
+    "items": [],
+    "result": 0
+  },
+  {
+    "key": "berezka",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=berezka",
+    "items": [],
+    "result": 0
+  },
+  {
+    "key": "czemierniki",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=czemierniki",
+    "items": [],
+    "result": 0
+  },
+  {
+    "key": "narol",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=narol",
+    "items": [],
+    "result": 0
+  },
+  {
+    "key": "kakolewnica",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kakolewnica",
+    "items": [],
+    "result": 0
+  },
+  {
+    "key": "kozlow",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=kozlow",
+    "items": [],
+    "result": 0
+  },
+  {
+    "key": "dobieslawice",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dobieslawice",
+    "items": [],
+    "result": 0
+  },
+  {
+    "key": "charsznica",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=charsznica",
+    "items": [],
+    "result": 0
+  },
+  {
+    "key": "wolanow",
+    "url": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=wolanow",
+    "items": [
+      {
+        "id": "7959",
+        "city": "Wolanów",
+        "name": "Wolanów Radomska 1A",
+        "street": "Radomska",
+        "street_number": "1A",
+        "zip_code": "26-625",
+        "latitude": null,
+        "longitude": null,
+        "date_closed": null
+      }
+    ],
+    "result": 0
+  }
+]

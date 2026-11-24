@@ -1,0 +1,588 @@
+{
+  "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.9527494%2C50.6460503%2C19.9557494%2C50.6480503",
+  "point": [
+    50.6470503,
+    19.9542494
+  ],
+  "elements": [
+    {
+      "type": "node",
+      "id": 3039486883,
+      "lat": 50.6472114,
+      "lon": 19.9534571,
+      "timestamp": "2023-06-05T21:51:12Z"
+    },
+    {
+      "type": "node",
+      "id": 3039488082,
+      "lat": 50.6471791,
+      "lon": 19.9539325,
+      "timestamp": "2023-06-05T21:51:12Z"
+    },
+    {
+      "type": "node",
+      "id": 3598481143,
+      "lat": 50.6458516,
+      "lon": 19.9528995,
+      "timestamp": "2015-06-16T12:22:43Z"
+    },
+    {
+      "type": "node",
+      "id": 3598481170,
+      "lat": 50.646995,
+      "lon": 19.9539631,
+      "timestamp": "2015-06-16T12:23:59Z"
+    },
+    {
+      "type": "node",
+      "id": 3598481171,
+      "lat": 50.6470006,
+      "lon": 19.9539436,
+      "timestamp": "2015-06-16T12:23:59Z"
+    },
+    {
+      "type": "node",
+      "id": 3598481177,
+      "lat": 50.6471808,
+      "lon": 19.9540247,
+      "timestamp": "2015-06-16T12:24:14Z"
+    },
+    {
+      "type": "node",
+      "id": 3598481363,
+      "lat": 50.6469934,
+      "lon": 19.9538697,
+      "timestamp": "2015-06-16T12:23:59Z"
+    },
+    {
+      "type": "node",
+      "id": 3598481929,
+      "lat": 50.6462654,
+      "lon": 19.9531852,
+      "timestamp": "2015-06-16T12:23:08Z"
+    },
+    {
+      "type": "node",
+      "id": 3598481931,
+      "lat": 50.6462856,
+      "lon": 19.953319,
+      "timestamp": "2015-06-16T12:23:09Z"
+    },
+    {
+      "type": "node",
+      "id": 3598481946,
+      "lat": 50.6471007,
+      "lon": 19.9537994,
+      "timestamp": "2015-06-16T12:24:07Z"
+    },
+    {
+      "type": "node",
+      "id": 3598482013,
+      "lat": 50.6464472,
+      "lon": 19.953398,
+      "timestamp": "2015-06-16T12:23:21Z"
+    },
+    {
+      "type": "node",
+      "id": 3598483136,
+      "lat": 50.6470006,
+      "lon": 19.9539591,
+      "timestamp": "2015-06-16T12:23:59Z"
+    },
+    {
+      "type": "node",
+      "id": 3598483875,
+      "lat": 50.6462171,
+      "lon": 19.9531518,
+      "timestamp": "2015-06-16T12:23:05Z"
+    },
+    {
+      "type": "node",
+      "id": 3598483877,
+      "lat": 50.6462287,
+      "lon": 19.9533166,
+      "timestamp": "2015-06-16T12:23:06Z"
+    },
+    {
+      "type": "node",
+      "id": 3598484087,
+      "lat": 50.6464,
+      "lon": 19.9527404,
+      "timestamp": "2015-06-16T12:23:18Z"
+    },
+    {
+      "type": "node",
+      "id": 3598484337,
+      "lat": 50.6460524,
+      "lon": 19.9530382,
+      "timestamp": "2015-06-16T12:22:51Z"
+    },
+    {
+      "type": "node",
+      "id": 3598484381,
+      "lat": 50.6470571,
+      "lon": 19.9538233,
+      "timestamp": "2015-06-16T12:24:03Z"
+    },
+    {
+      "type": "node",
+      "id": 3598484382,
+      "lat": 50.6470731,
+      "lon": 19.9537966,
+      "timestamp": "2015-06-16T12:24:05Z"
+    },
+    {
+      "type": "node",
+      "id": 3598484529,
+      "lat": 50.6458149,
+      "lon": 19.9530309,
+      "timestamp": "2015-06-16T12:22:41Z"
+    },
+    {
+      "type": "node",
+      "id": 3598484619,
+      "lat": 50.6460157,
+      "lon": 19.9531696,
+      "timestamp": "2015-06-16T12:22:50Z"
+    },
+    {
+      "type": "node",
+      "id": 3598484626,
+      "lat": 50.6461804,
+      "lon": 19.9532832,
+      "timestamp": "2015-06-16T12:23:00Z"
+    },
+    {
+      "type": "node",
+      "id": 3598484655,
+      "lat": 50.6471003,
+      "lon": 19.9537713,
+      "timestamp": "2015-06-16T12:24:07Z"
+    },
+    {
+      "type": "node",
+      "id": 3598484667,
+      "lat": 50.6472798,
+      "lon": 19.9538383,
+      "timestamp": "2015-06-16T12:24:23Z"
+    },
+    {
+      "type": "node",
+      "id": 3598485149,
+      "lat": 50.6469963,
+      "lon": 19.9540325,
+      "timestamp": "2015-06-16T12:23:59Z"
+    },
+    {
+      "type": "node",
+      "id": 3598485159,
+      "lat": 50.647282,
+      "lon": 19.9538355,
+      "timestamp": "2015-06-16T12:24:24Z"
+    },
+    {
+      "type": "node",
+      "id": 3598485160,
+      "lat": 50.647286,
+      "lon": 19.9538587,
+      "timestamp": "2015-06-16T12:24:25Z"
+    },
+    {
+      "type": "node",
+      "id": 3598485703,
+      "lat": 50.646562,
+      "lon": 19.9528196,
+      "timestamp": "2015-06-16T12:23:30Z"
+    },
+    {
+      "type": "node",
+      "id": 3598485719,
+      "lat": 50.6469947,
+      "lon": 19.9539399,
+      "timestamp": "2015-06-16T12:23:59Z"
+    },
+    {
+      "type": "node",
+      "id": 3598485745,
+      "lat": 50.6472857,
+      "lon": 19.9538344,
+      "timestamp": "2015-06-16T12:24:25Z"
+    },
+    {
+      "type": "node",
+      "id": 3598486323,
+      "lat": 50.6472801,
+      "lon": 19.9538547,
+      "timestamp": "2015-06-16T12:24:23Z"
+    },
+    {
+      "type": "node",
+      "id": 3598486326,
+      "lat": 50.6472847,
+      "lon": 19.9537642,
+      "timestamp": "2015-06-16T12:24:24Z"
+    },
+    {
+      "type": "node",
+      "id": 3598486526,
+      "lat": 50.6469985,
+      "lon": 19.9539407,
+      "timestamp": "2015-06-16T12:23:59Z"
+    },
+    {
+      "type": "node",
+      "id": 3598486532,
+      "lat": 50.6470599,
+      "lon": 19.953827,
+      "timestamp": "2015-06-16T12:24:04Z"
+    },
+    {
+      "type": "node",
+      "id": 3598486533,
+      "lat": 50.6470605,
+      "lon": 19.9538667,
+      "timestamp": "2015-06-16T12:24:04Z"
+    },
+    {
+      "type": "node",
+      "id": 3598486600,
+      "lat": 50.6470757,
+      "lon": 19.9538005,
+      "timestamp": "2015-06-16T12:24:05Z"
+    },
+    {
+      "type": "node",
+      "id": 3598486615,
+      "lat": 50.647287,
+      "lon": 19.953928,
+      "timestamp": "2015-06-16T12:24:25Z"
+    },
+    {
+      "type": "node",
+      "id": 7730644205,
+      "lat": 50.647245,
+      "lon": 19.9524527,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 7730644206,
+      "lat": 50.6469297,
+      "lon": 19.9523151,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 7730644207,
+      "lat": 50.6467925,
+      "lon": 19.9529561,
+      "timestamp": "2020-07-20T09:33:47Z"
+    },
+    {
+      "type": "node",
+      "id": 7730644208,
+      "lat": 50.646943,
+      "lon": 19.9530393,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 7730644209,
+      "lat": 50.6470134,
+      "lon": 19.9529548,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 7730644210,
+      "lat": 50.6470359,
+      "lon": 19.9529653,
+      "timestamp": "2020-07-20T09:33:47Z"
+    },
+    {
+      "type": "node",
+      "id": 7730644211,
+      "lat": 50.6470743,
+      "lon": 19.9527602,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 7730644212,
+      "lat": 50.6471683,
+      "lon": 19.9527587,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 9876551069,
+      "lat": 50.6472143,
+      "lon": 19.953673,
+      "timestamp": "2022-07-09T14:09:35Z"
+    },
+    {
+      "type": "node",
+      "id": 9876551070,
+      "lat": 50.6470716,
+      "lon": 19.9536787,
+      "timestamp": "2022-07-09T14:09:35Z"
+    },
+    {
+      "type": "node",
+      "id": 9876551071,
+      "lat": 50.6470716,
+      "lon": 19.9534617,
+      "timestamp": "2022-07-09T14:09:35Z"
+    },
+    {
+      "type": "node",
+      "id": 9898259967,
+      "lat": 50.6469574,
+      "lon": 19.9529758,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 9898259968,
+      "lat": 50.6470039,
+      "lon": 19.952998,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 9898259969,
+      "lat": 50.6471398,
+      "lon": 19.9527453,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 9898259970,
+      "lat": 50.6471876,
+      "lon": 19.9526641,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 9898259971,
+      "lat": 50.6471978,
+      "lon": 19.9526699,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 9898259972,
+      "lat": 50.6471138,
+      "lon": 19.9527793,
+      "timestamp": "2022-07-19T20:19:57Z"
+    },
+    {
+      "type": "node",
+      "id": 9898259973,
+      "lat": 50.6470493,
+      "lon": 19.9528936,
+      "timestamp": "2022-07-19T20:19:57Z",
+      "tags": {
+        "entrance": "main"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12450298755,
+      "lat": 50.6473301,
+      "lon": 19.9543814,
+      "timestamp": "2024-12-25T00:27:52Z",
+      "tags": {
+        "addr:city": "Lubachowy",
+        "addr:housenumber": "68B",
+        "addr:postcode": "29-130",
+        "addr:street": "Lubachowy",
+        "brand": "Biedronka",
+        "brand:wikidata": "Q857182",
+        "brand:wikipedia": "pl:Biedronka (sieć handlowa)",
+        "email": "bok@biedronka.eu",
+        "fixme": "Określić dokładną lokalizacje sklepu/dodać budynek, zaktualizować drogi dojazdowe.",
+        "name": "Biedronka",
+        "name:ru": "Бедронка",
+        "operator": "Jeronimo Martins Polska S.A.",
+        "payment:blik": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:diners_club": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:sodexo": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "payment:visa_electron": "yes",
+        "payment:v_pay": "yes",
+        "phone": "+48 22 205 33 00",
+        "shop": "supermarket",
+        "source": "https://www.biedronka.pl/pl/sklepy/shop,id,7582",
+        "website": "https://www.biedronka.pl"
+      }
+    },
+    {
+      "type": "way",
+      "id": 354071293,
+      "timestamp": "2023-06-05T21:51:12Z",
+      "nodes": [
+        3039488082,
+        3598486615,
+        3598485160,
+        3598486323,
+        3598484667,
+        3598485159,
+        3598485745,
+        3598486326,
+        3598484655,
+        3598481946,
+        3598486600,
+        3598484382,
+        3598484381,
+        3598486532,
+        3598486533,
+        3598481363,
+        3598485719,
+        3598486526,
+        3598481171,
+        3598483136,
+        3598481170,
+        3598485149,
+        3598481177,
+        3039488082
+      ],
+      "tags": {
+        "addr:city:simc": "0138402",
+        "addr:housenumber": "68A",
+        "addr:place": "Lubachowy",
+        "addr:postcode": "29-130",
+        "building": "yes",
+        "name": "Żmuda",
+        "source:addr": "moskorzew.e-mapa.net",
+        "tourism": "motel",
+        "website": "http://www.hotelzmuda.pl"
+      }
+    },
+    {
+      "type": "way",
+      "id": 354071518,
+      "timestamp": "2015-06-16T12:27:24Z",
+      "nodes": [
+        3598485703,
+        3598484087,
+        3598481931,
+        3598482013,
+        3598485703
+      ],
+      "tags": {
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 354071521,
+      "timestamp": "2015-06-16T12:27:24Z",
+      "nodes": [
+        3598484337,
+        3598481143,
+        3598484529,
+        3598484619,
+        3598484337
+      ],
+      "tags": {
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 354071564,
+      "timestamp": "2015-06-16T12:27:30Z",
+      "nodes": [
+        3598484337,
+        3598484619,
+        3598484626,
+        3598483875,
+        3598484337
+      ],
+      "tags": {
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 354071586,
+      "timestamp": "2015-06-16T12:27:31Z",
+      "nodes": [
+        3598481929,
+        3598483875,
+        3598484626,
+        3598483877,
+        3598481929
+      ],
+      "tags": {
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 828081803,
+      "timestamp": "2024-10-03T22:46:01Z",
+      "nodes": [
+        7730644205,
+        9898259971,
+        9898259970,
+        7730644212,
+        9898259969,
+        9898259972,
+        7730644211,
+        9898259973,
+        7730644210,
+        7730644209,
+        9898259968,
+        9898259967,
+        7730644208,
+        7730644207,
+        7730644206,
+        7730644205
+      ],
+      "tags": {
+        "addr:city": "Lubachowy",
+        "addr:housenumber": "68a",
+        "addr:place": "Lubachowy",
+        "addr:postcode": "29-130",
+        "amenity": "restaurant",
+        "building": "yes",
+        "email": "biuro_camelia@wp.pl",
+        "name": "Camelia",
+        "phone": "+48 60 459 08 58",
+        "website": "http://camelia.net.pl/kontakt/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1077131516,
+      "timestamp": "2023-06-05T21:51:12Z",
+      "nodes": [
+        3039486883,
+        9876551069,
+        9876551070,
+        9876551071,
+        3039486883
+      ],
+      "tags": {
+        "addr:city:simc": "0138402",
+        "addr:housenumber": "68",
+        "addr:place": "Lubachowy",
+        "addr:postcode": "29-130",
+        "amenity": "fuel",
+        "brand": "Circle K",
+        "brand:wikidata": "Q3268010",
+        "building": "roof",
+        "layer": "1",
+        "name": "Circle K",
+        "source:addr": "gugik.gov.pl"
+      }
+    }
+  ]
+}

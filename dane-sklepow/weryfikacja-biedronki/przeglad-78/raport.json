@@ -1,0 +1,697 @@
+{
+  "input_fingerprint": "bc3ac5784b9200249f4e7bed48fca8104f4face6a8c13e7ca307e90e18d6f8c3",
+  "reviewed": 78,
+  "retrieved_on": "2026-11-23",
+  "accepted": 12,
+  "totals": {
+    "confirmed": 12,
+    "no_new_evidence": 60,
+    "no_registry_point": 3,
+    "address_already_published": 3
+  },
+  "decisions": [
+    {
+      "id": "biedronka:1190",
+      "status": "confirmed",
+      "rule": "overture_and_registry",
+      "accepted": {
+        "location": {
+          "latitude": 53.42903087,
+          "longitude": 14.53169234
+        },
+        "precision": "overture_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=szczecin",
+        "evidence": "https://explore.overturemaps.org/#53.42903087/14.53169234/18",
+        "overture_id": "caf13f95-a64a-4966-9d02-273085ada8d3",
+        "overture_release": "2026-11-18.0",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szczecin%2C+Al.+Bohater%C3%B3w+Warszawy+34+35"
+        ],
+        "registry_distance_m": 6
+      }
+    },
+    {
+      "id": "biedronka:1229",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:1270",
+      "status": "confirmed",
+      "rule": "overture_and_registry",
+      "accepted": {
+        "location": {
+          "latitude": 52.39032601,
+          "longitude": 16.90282619
+        },
+        "precision": "overture_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=poznan",
+        "evidence": "https://explore.overturemaps.org/#52.39032601/16.90282619/18",
+        "overture_id": "e75d13c6-b1a9-4269-b7a0-d357fe88f657",
+        "overture_release": "2026-11-18.0",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Pozna%C5%84%2C+I.+%C5%81ukaszewicza+43"
+        ],
+        "registry_distance_m": 4
+      }
+    },
+    {
+      "id": "biedronka:1380",
+      "status": "confirmed",
+      "rule": "overture_and_registry",
+      "accepted": {
+        "location": {
+          "latitude": 50.57739125,
+          "longitude": 19.34054742
+        },
+        "precision": "overture_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=myszkow",
+        "evidence": "https://explore.overturemaps.org/#50.57739125/19.34054742/18",
+        "overture_id": "41af833d-39ec-40b4-9597-5b66e50a08e9",
+        "overture_release": "2026-11-18.0",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Myszk%C3%B3w%2C+W.+Sikorskiego+18A",
+          "https://www.openstreetmap.org/way/302763232"
+        ],
+        "registry_distance_m": 5
+      }
+    },
+    {
+      "id": "biedronka:1432",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:1620",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:1625",
+      "status": "confirmed",
+      "evidence": "https://sprawdzadres.pl/zachodniopomorskie/lobez/mostowa/7",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81obez%2C+Mostowa+7",
+      "registry": {
+        "city": "Łobez",
+        "citypart": null,
+        "street": "Mostowa",
+        "number": "7",
+        "teryt": "321802",
+        "simc": "0979136",
+        "ulic": "13379",
+        "code": "73-150",
+        "jednostka": "{Polska,zachodniopomorskie,łobeski,Łobez}",
+        "x": "276538.09",
+        "y": "646347.08",
+        "geometry_wkt": "POINT(276538.09 646347.08)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.634154,
+          "longitude": 15.6189117
+        },
+        "address": {
+          "formatted": "Mostowa 7, 73-150 Łobez",
+          "street_address": "Mostowa 7",
+          "street": "Mostowa",
+          "house_number": "7",
+          "city": "Łobez",
+          "postal_code": "73-150",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81obez%2C+Mostowa+7",
+        "official_address": "https://sprawdzadres.pl/zachodniopomorskie/lobez/mostowa/7"
+      }
+    },
+    {
+      "id": "biedronka:1729",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:1789",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:1827",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:1829",
+      "status": "confirmed",
+      "rule": "overture_and_registry",
+      "accepted": {
+        "location": {
+          "latitude": 51.20405129,
+          "longitude": 16.1801909
+        },
+        "precision": "overture_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=legnica",
+        "evidence": "https://explore.overturemaps.org/#51.20405129/16.1801909/18",
+        "overture_id": "7aa17e42-7a8c-46ab-88fe-6362d756f920",
+        "overture_release": "2026-11-18.0",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Legnica%2C+Rzeczpospolitej+14"
+        ],
+        "registry_distance_m": 1
+      }
+    },
+    {
+      "id": "biedronka:1932",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:2006",
+      "status": "confirmed",
+      "rule": "overture_and_registry",
+      "accepted": {
+        "location": {
+          "latitude": 49.71649134,
+          "longitude": 18.80108181
+        },
+        "precision": "overture_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=ustron",
+        "evidence": "https://explore.overturemaps.org/#49.71649134/18.80108181/18",
+        "overture_id": "03d505c3-11c1-47f0-bbba-b5005cc774fa",
+        "overture_release": "2026-11-18.0",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Ustro%C5%84%2C+Katowicka+II+nr+30",
+          "https://www.openstreetmap.org/way/393931235"
+        ],
+        "registry_distance_m": 8
+      }
+    },
+    {
+      "id": "biedronka:2017",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:2220",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:2355",
+      "status": "confirmed",
+      "rule": "overture_and_registry",
+      "accepted": {
+        "location": {
+          "latitude": 50.33121834,
+          "longitude": 19.19547074
+        },
+        "precision": "overture_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=dabrowa-gornicza",
+        "evidence": "https://explore.overturemaps.org/#50.33121834/19.19547074/18",
+        "overture_id": "3ac79b6e-65c5-4e1d-b3a8-fc4115fa23bc",
+        "overture_release": "2026-11-18.0",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=D%C4%85browa+G%C3%B3rnicza%2C+M.+Konopnickiej+50",
+          "https://www.openstreetmap.org/way/319943350"
+        ],
+        "registry_distance_m": 6
+      }
+    },
+    {
+      "id": "biedronka:2478",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:2698",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:2743",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:2753",
+      "status": "no_registry_point",
+      "evidence": "https://mojagazetka.com/lokalizacje-sklepow/modlnica/biedronka/5607-czestochowska-32",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Modlnica%2C+Cz%C4%99stochowska+32"
+    },
+    {
+      "id": "biedronka:3039",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:3191",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:3435",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:3566",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:3599",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:3657",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:3718",
+      "status": "confirmed",
+      "evidence": "https://media.biedronka.pl/166579-biedronka-z-koncem-miesiaca-otwiera-i-modernizuje-kilkanascie-placowek",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Niemcz%2C+Janusza+Kusoci%C5%84skiego+1",
+      "registry": {
+        "city": "Niemcz",
+        "citypart": null,
+        "street": "Janusza Kusocińskiego",
+        "number": "1",
+        "teryt": "040306",
+        "simc": "0093562",
+        "ulic": "10493",
+        "code": "86-032",
+        "jednostka": "{Polska,kujawsko-pomorskie,bydgoski,Osielsko}",
+        "x": "435762.64",
+        "y": "592180.05",
+        "geometry_wkt": "POINT(435762.64 592180.05)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 53.1909919,
+          "longitude": 18.0382608
+        },
+        "address": {
+          "formatted": "Janusza Kusocińskiego 1, 86-032 Niemcz",
+          "street_address": "Janusza Kusocińskiego 1",
+          "street": "Janusza Kusocińskiego",
+          "house_number": "1",
+          "city": "Niemcz",
+          "postal_code": "86-032",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Niemcz%2C+Janusza+Kusoci%C5%84skiego+1",
+        "official_address": "https://media.biedronka.pl/166579-biedronka-z-koncem-miesiaca-otwiera-i-modernizuje-kilkanascie-placowek"
+      }
+    },
+    {
+      "id": "biedronka:7039",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7078",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7143",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7173",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7278",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7280",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7292",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7305",
+      "status": "confirmed",
+      "rule": "one_physical_location_two_records",
+      "alias_ids": [
+        "biedronka:7339"
+      ],
+      "accepted": {
+        "location": {
+          "latitude": 50.4269047,
+          "longitude": 19.3923745
+        },
+        "evidence": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lazy",
+        "official_address": "https://www.biedronka.pl/api/shop/cityshopsbyslug?slug=lazy",
+        "precision": "official_shop_point",
+        "alias_ids": [
+          "biedronka:7339"
+        ],
+        "resolves": [
+          "possible_duplicate_address",
+          "shared_coordinates"
+        ],
+        "address_evidence": [
+          "https://explore.overturemaps.org/#50.42705452/19.39244189/18"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7318",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7339",
+      "status": "address_already_published",
+      "same_address": [
+        "biedronka:7305"
+      ]
+    },
+    {
+      "id": "biedronka:7340",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7341",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7348",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7354",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7355",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7359",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7375",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7377",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7411",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7412",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7414",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7422",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7429",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7465",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7466",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7505",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7518",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7561",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7582",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7583",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7594",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7601",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7604",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7609",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7620",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7621",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7629",
+      "status": "confirmed",
+      "evidence": "https://media.biedronka.pl/369834-mikolajkowy-prezent-od-biedronki-nowe-sklepy-i-modernizacje-we-wszystkich-wojewodztwach",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bierawa%2C+Mickiewicza+36",
+      "secondary_evidence": "https://automaty.alipaczka.pl/automaty-paczkowe/automat/dhl-bierawa-adama-mickiewicza-36-293657",
+      "registry": {
+        "city": "Bierawa",
+        "citypart": null,
+        "street": "Mickiewicza",
+        "number": "36",
+        "teryt": "160302",
+        "simc": "0491593",
+        "ulic": "12734",
+        "code": "47-240",
+        "jednostka": "{Polska,opolskie,kędzierzyńsko-kozielski,Bierawa}",
+        "x": "445616.69",
+        "y": "269650.46",
+        "geometry_wkt": "POINT(445616.69 269650.46)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "street_part_accuracy": "1",
+        "street_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.2915161,
+          "longitude": 18.2363078
+        },
+        "address": {
+          "formatted": "Mickiewicza 36, 47-240 Bierawa",
+          "street_address": "Mickiewicza 36",
+          "street": "Mickiewicza",
+          "house_number": "36",
+          "city": "Bierawa",
+          "postal_code": "47-240",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_street_address"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Bierawa%2C+Mickiewicza+36",
+        "official_address": "https://media.biedronka.pl/369834-mikolajkowy-prezent-od-biedronki-nowe-sklepy-i-modernizacje-we-wszystkich-wojewodztwach",
+        "address_evidence": [
+          "https://automaty.alipaczka.pl/automaty-paczkowe/automat/dhl-bierawa-adama-mickiewicza-36-293657"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7637",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7772",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7802",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7808",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7848",
+      "status": "confirmed",
+      "evidence": "https://media.biedronka.pl/440267-swieta-z-biedronka-34-inwestycje-by-byc-blizej-klientow",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szprotawa%2C+Jana+III+Sobieskiego+70A",
+      "registry": {
+        "city": "Szprotawa",
+        "citypart": null,
+        "street": "Sobieskiego",
+        "number": "70A",
+        "teryt": "081007",
+        "simc": "0988603",
+        "ulic": "20421",
+        "code": "67-300",
+        "jednostka": "{Polska,lubuskie,żagański,Szprotawa}",
+        "x": "258939.82",
+        "y": "416394.72",
+        "geometry_wkt": "POINT(258939.82 416394.72)",
+        "accuracy": "0.735294",
+        "city_accuracy": "1",
+        "street_part_accuracy": "0.571429",
+        "street_accuracy": "0.571429",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 51.5624386,
+          "longitude": 15.5208653
+        },
+        "address": {
+          "formatted": "Jana III Sobieskiego 70A, 67-300 Szprotawa",
+          "street_address": "Jana III Sobieskiego 70A",
+          "street": "Jana III Sobieskiego",
+          "house_number": "70A",
+          "city": "Szprotawa",
+          "postal_code": "67-300",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Szprotawa%2C+Jana+III+Sobieskiego+70A",
+        "official_address": "https://media.biedronka.pl/440267-swieta-z-biedronka-34-inwestycje-by-byc-blizej-klientow"
+      }
+    },
+    {
+      "id": "biedronka:7856",
+      "status": "no_registry_point",
+      "evidence": "https://media.biedronka.pl/440267-swieta-z-biedronka-34-inwestycje-by-byc-blizej-klientow",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Papro%C4%87+89"
+    },
+    {
+      "id": "biedronka:7859",
+      "status": "confirmed",
+      "evidence": "https://media.biedronka.pl/440267-swieta-z-biedronka-34-inwestycje-by-byc-blizej-klientow",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Krasne+512J",
+      "secondary_evidence": "https://mapa.targeo.pl/biedronka-supermarket-krasne-512j-krasne~25214818/biedronka-supermarket/adres",
+      "registry": {
+        "city": "Krasne",
+        "citypart": null,
+        "street": null,
+        "number": "512J",
+        "teryt": "181609",
+        "simc": "0652688",
+        "ulic": null,
+        "code": "36-007",
+        "jednostka": "{Polska,podkarpackie,rzeszowski,Krasne}",
+        "x": "719790.04",
+        "y": "248349.36",
+        "geometry_wkt": "POINT(719790.04 248349.36)",
+        "accuracy": "1",
+        "city_accuracy": "1",
+        "id": 1
+      },
+      "accepted": {
+        "location": {
+          "latitude": 50.0617288,
+          "longitude": 22.0719334
+        },
+        "address": {
+          "formatted": "Krasne 512J, 36-007 Krasne",
+          "street_address": "Krasne 512J",
+          "street": null,
+          "house_number": "512J",
+          "city": "Krasne",
+          "postal_code": "36-007",
+          "country": "PL"
+        },
+        "precision": "address_point",
+        "resolves": [
+          "missing_street_address"
+        ],
+        "evidence": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Krasne+512J",
+        "official_address": "https://media.biedronka.pl/440267-swieta-z-biedronka-34-inwestycje-by-byc-blizej-klientow",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-krasne-512j-krasne~25214818/biedronka-supermarket/adres"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7866",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7902",
+      "status": "no_registry_point",
+      "evidence": "https://www.gazetkowo.pl/sieci-handlowe/biedronka/sklepy/lubowidz-jana-pawla-ii-1a",
+      "registry_url": "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Lubowidz%2C+Jana+Paw%C5%82a+II+1A"
+    },
+    {
+      "id": "biedronka:7906",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7912",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7935",
+      "status": "no_new_evidence"
+    },
+    {
+      "id": "biedronka:7962",
+      "status": "address_already_published",
+      "same_address": [
+        "biedronka:673"
+      ]
+    },
+    {
+      "id": "biedronka:7953",
+      "status": "address_already_published",
+      "same_address": [
+        "biedronka:2518"
+      ]
+    }
+  ]
+}

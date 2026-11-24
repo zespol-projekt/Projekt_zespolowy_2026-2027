@@ -1,0 +1,265 @@
+{
+  "input_fingerprint": "3f3a5d83e55dd40a518ffc791f1a8b546929e45d0daa0ee249dbdf6584f7d19f",
+  "reviewed": 10,
+  "retrieved_on": "2026-11-23",
+  "accepted": 5,
+  "totals": {
+    "confirmed": 5,
+    "held": 5
+  },
+  "decisions": [
+    {
+      "id": "biedronka:1789",
+      "status": "confirmed",
+      "previous_address": "Kościuszki 31 34, 88-150 Kruszwica",
+      "reason": "Punkt dojazdu Targeo pod adresem 31/34 leży około 11 m od środka oznaczonego budynku. DHL na parkingu i opis bankomatu potwierdzają numer 31/34. OSM podaje numer 1, zachowano adres sklepu z karty i pozostałych źródeł.",
+      "accepted": {
+        "address": {
+          "formatted": "Tadeusza Kościuszki 31/34, 88-150 Kruszwica",
+          "street_address": "Tadeusza Kościuszki 31/34",
+          "street": "Tadeusza Kościuszki",
+          "house_number": "31/34",
+          "city": "Kruszwica",
+          "postal_code": "88-150",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.6738255,
+          "longitude": 18.3329274
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/419856533",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,1789",
+        "osm_observed_at": "2026-11-23T16:36:55.915Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-kosciuszki-31-34-kruszwica~4608894/biedronka-supermarket/adres",
+          "https://www.alipaczka.pl/automaty-paczkowe/automat/dhl-kruszwica-gen-tadeusza-kosciuszki-31-34-245534",
+          "https://bankomat.com.pl/kruszwica/ul-kosciuszki-31-34",
+          "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=18.3313260%2C52.6732466%2C18.3347260%2C52.6753082&width=650&height=650&format=image%2Fjpeg&styles="
+        ]
+      }
+    },
+    {
+      "id": "biedronka:2220",
+      "status": "confirmed",
+      "previous_address": "68-100 Żagań",
+      "reason": "OSM wiąże budynek sklepu z dokładnym ID 2220. Aktualna karta oferty samego sklepu w Too Good To Go potwierdza adres Emilii Plater 9, zgodny z CityOn i wcześniejszym Targeo. Rejestr nadal nie zwraca punktu dla numeru 9.",
+      "accepted": {
+        "address": {
+          "formatted": "Emilii Plater 9, 68-100 Żagań",
+          "street_address": "Emilii Plater 9",
+          "street": "Emilii Plater",
+          "house_number": "9",
+          "city": "Żagań",
+          "postal_code": "68-100",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.6160387,
+          "longitude": 15.3044598
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "cross_source_address_conflict",
+          "missing_street_address"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/396748904",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,2220",
+        "osm_observed_at": "2026-11-23T16:36:55.921Z",
+        "address_evidence": [
+          "https://www.toogoodtogo.com/pl/find/zagan/biedronka/groceries/paczkawarzywaowoce-702600",
+          "https://cityon.pl/miejsce/biedronka-ul-emilii-plater-9-zagan",
+          "https://biedronka.gazetki-promocyjne.net.pl/sklep/biedronka-zagan-emilii-plater-9/56735/"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:3191",
+      "status": "confirmed",
+      "previous_address": "76-200 Jarosław",
+      "reason": "Punkt dojazdu Targeo dla Pruchnickiej 1BA odpowiada położeniu z API sieci. Dokładny adres potwierdza rejestr. Jako punkt zwykłej Biedronki wybrano jej część budynku oznaczoną w OSM, około 15 m od punktu sieci. Sąsiedni Outlet ma osobny obrys.",
+      "accepted": {
+        "address": {
+          "formatted": "Pruchnicka 1BA, 37-500 Jarosław",
+          "street_address": "Pruchnicka 1BA",
+          "street": "Pruchnicka",
+          "house_number": "1BA",
+          "city": "Jarosław",
+          "postal_code": "37-500",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 50.0112941,
+          "longitude": 22.6758832
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_street_address"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/1425566714",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,3191",
+        "osm_observed_at": "2026-11-23T16:36:55.922Z",
+        "address_evidence": [
+          "https://mapa.targeo.pl/biedronka-supermarket-pruchnicka-1ba-37-500-jaroslaw~23072552/biedronka-supermarket/adres",
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Jaros%C5%82aw%2C+Pruchnicka+1BA&exact_number=1&srid=4326",
+          "https://www.openstreetmap.org/way/1425574833",
+          "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=22.6743509%2C50.0102818%2C22.6777509%2C50.0124668&width=650&height=650&format=image%2Fjpeg&styles="
+        ]
+      }
+    },
+    {
+      "id": "biedronka:3599",
+      "status": "held",
+      "address": "Tysiąclecia 17, 95-080 Tuszyn",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,3599",
+      "issues": [
+        "missing_geometry"
+      ],
+      "reason": "Targeo i katalog gazetek wskazują dwa różne punkty przy sąsiednich budynkach. Zdjęcie potwierdza odrębne obrysy, a jeden z obiektów OSM opisuje jako Stokrotkę. Nie udało się potwierdzić obrysu Biedronki.",
+      "evidence": [
+        "https://biedronka.gazetki-promocyjne.net.pl/sklep/biedronka-tuszyn-tysiaclecia-17/2679/",
+        "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=19.5424500%2C51.5989640%2C19.5458500%2C51.6010760&width=650&height=650&format=image%2Fjpeg&styles=",
+        "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.5424500%2C51.5989640%2C19.5458500%2C51.6010760"
+      ],
+      "previous_reason": "Punkt Targeo leży przy nienazwanym budynku i blisko Stokrotki. Dokładny adres 17 z rejestru wypada w innym miejscu. Brak jednoznacznego potwierdzenia budynku."
+    },
+    {
+      "id": "biedronka:7348",
+      "status": "confirmed",
+      "previous_address": "Grodziczno 3a, 13-324 Grodziczno",
+      "reason": "Rejestr i obrys wskazują Nowe Grodziczno 3A. Zdjęcie lotnicze pokazuje tam budynek handlowy i parking, a punkt DHL opisany jako znajdujący się przy Biedronce leży około 45 m od środka budynku. Numer 91 należy do punktu DHL.",
+      "accepted": {
+        "address": {
+          "formatted": "Nowe Grodziczno 3A, 13-324",
+          "street_address": "Nowe Grodziczno 3A",
+          "street": "Nowe Grodziczno",
+          "house_number": "3A",
+          "city": "Nowe Grodziczno",
+          "postal_code": "13-324",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.4129482,
+          "longitude": 19.7626824
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/545723644",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7348",
+        "osm_observed_at": "2026-11-23T16:36:55.923Z",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Nowe+Grodziczno+3A&exact_number=1&srid=4326",
+          "https://mojagazetka.com/lokalizacje-sklepow/grodziczno/biedronka/4226-brak-adresu",
+          "https://www.alipaczka.pl/automaty-paczkowe/automat/dhl-grodziczno-nowe-grodziczno-91-288681",
+          "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=19.7614306%2C53.4116284%2C19.7648306%2C53.4136550&width=650&height=650&format=image%2Fjpeg&styles="
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7377",
+      "status": "confirmed",
+      "previous_address": "Chojnicka 1, 77-400 Złotów",
+      "reason": "DHL opisuje automat przy Biedronce pod adresem Chojnicka 1, zgodnym z kartą sklepu. InPost potwierdza parking od strony ul. Kocika. Zdjęcie lotnicze i obrys handlowy OSM pozwalają umieścić punkt w budynku. Zachowano numer 1 z karty; pozostałe automaty podają numery 20 i 22.",
+      "accepted": {
+        "address": {
+          "formatted": "Chojnicka 1, 77-400 Złotów",
+          "street_address": "Chojnicka 1",
+          "street": "Chojnicka",
+          "house_number": "1",
+          "city": "Złotów",
+          "postal_code": "77-400",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 53.3713013,
+          "longitude": 17.0501594
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/1138426147",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7377",
+        "osm_observed_at": "2026-11-23T16:36:55.923Z",
+        "address_evidence": [
+          "https://automaty.alipaczka.pl/automaty-paczkowe/automat/dhl-zlotow-chojnicka-1-240171",
+          "https://www.alipaczka.pl/automaty-paczkowe/automat/inpost-zlotow-chojnicka-20-ztw01app",
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Z%C5%82ot%C3%B3w%2C+Chojnicka+22&exact_number=1&srid=4326",
+          "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=17.0483185%2C53.3699970%2C17.0517185%2C53.3720256&width=650&height=650&format=image%2Fjpeg&styles="
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7505",
+      "status": "held",
+      "address": "Szczecińska 5, 66-400 Gorzów Wielkopolski",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7505",
+      "issues": [
+        "missing_geometry"
+      ],
+      "reason": "Punkt Targeo wypada na terenie zabudowy węzła drogowego. Zdjęcie lotnicze i rejestr nie potwierdzają sklepu pod tym punktem.",
+      "evidence": [
+        "https://mapa.targeo.pl/biedronka-supermarket-szczecinska-5-gorzow-wielkopolski~23766613/biedronka-supermarket/adres",
+        "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=15.1542100%2C52.7477510%2C15.1576100%2C52.7498090&width=650&height=650&format=image%2Fjpeg&styles=",
+        "https://api.openstreetmap.org/api/0.6/map.json?bbox=15.1542100%2C52.7477510%2C15.1576100%2C52.7498090",
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gorz%C3%B3w+Wielkopolski%2C+Szczeci%C5%84ska+5A&exact_number=1&srid=4326"
+      ],
+      "previous_reason": "Punkt Targeo jest przy zabudowie bez oznaczenia sklepu. Najbliższe znane adresy OSM należą do innych budynków."
+    },
+    {
+      "id": "biedronka:7856",
+      "status": "held",
+      "address": "Paproć 89, 64-300 Paproć",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7856",
+      "issues": [
+        "missing_geometry"
+      ],
+      "reason": "Komunikat sieci potwierdza Paproć 89. Rejestr nie potwierdził wariantów Paproć 89 i Wypoczynkowa 89, a znane punkty obok Nowego Tomyśla dotyczą innych placówek.",
+      "evidence": [
+        "https://media.biedronka.pl/440267-swieta-z-biedronka-34-inwestycje-by-byc-blizej-klientow",
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Papro%C4%87%2C+Wypoczynkowa+89&exact_number=1&srid=4326",
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Papro%C4%87+89%2C+Nowy+Tomy%C5%9Bl&exact_number=1&srid=4326"
+      ],
+      "previous_reason": "Komunikat sieci potwierdza Paproć 89. Sprawdzone punkty w innych katalogach odpowiadają sklepom przy Komunalnej w Nowym Tomyślu lub innemu ID."
+    },
+    {
+      "id": "biedronka:7902",
+      "status": "held",
+      "address": "Jana Pawła II 1A, 09-304 Lubowidz",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7902",
+      "issues": [
+        "missing_geometry"
+      ],
+      "reason": "Adres i punkt automatu przy sklepie są potwierdzone. W dostępnej ortofotomapie przy automacie nie ma rozpoznawalnego budynku sklepu; nie było podstaw do wskazania jego obrysu.",
+      "evidence": [
+        "https://media.biedronka.pl/453144-wiosenne-przyspieszenie-biedronki",
+        "https://www.alipaczka.pl/automaty-paczkowe/automat/dhl-lubowidz-jana-pawla-ii-1a-320535",
+        "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=19.8443687%2C53.1137749%2C19.8477687%2C53.1158157&width=650&height=650&format=image%2Fjpeg&styles=",
+        "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.8443687%2C53.1137749%2C19.8477687%2C53.1158157"
+      ],
+      "previous_reason": "Otwarcie sklepu przy Jana Pawła II 1A i punkt automatu przy sklepie są potwierdzone. OSM nie pokazuje budynku w bezpośrednim sąsiedztwie automatu, a rejestr zwraca tylko inny numer 1."
+    },
+    {
+      "id": "biedronka:7906",
+      "status": "held",
+      "address": "ul. Widokowa 2, 58-531 Łomnica",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7906",
+      "issues": [
+        "missing_geometry"
+      ],
+      "reason": "Karta Biedronki i materiały POLOmarketu podają Widokową 2. Rejestr nie zwrócił dokładnego punktu, a dowody potwierdzają punkt POLOmarketu i automat InPost, lecz nie rozstrzygają statusu sklepu Biedronki.",
+      "evidence": [
+        "https://mapa.targeo.pl/polomarket-sklep-widokowa-2-lomnica~10352698/polomarket-sklep/adres",
+        "https://inpost.pl/paczkomat-lomnica-lmc01m-widokowa-paczkomaty-dolnoslaskie",
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81omnica%2C+Widokowa+2&exact_number=1&srid=4326",
+        "https://services.gugik.gov.pl/uug/?request=GetAddress&address=%C5%81omnica%2C+Widokowa+2A&exact_number=1&srid=4326"
+      ],
+      "previous_reason": "Biedronka i POLOmarket występują w źródłach pod tym samym adresem. Brak potwierdzenia, że punkt POLOmarketu odpowiada już Biedronce."
+    }
+  ]
+}

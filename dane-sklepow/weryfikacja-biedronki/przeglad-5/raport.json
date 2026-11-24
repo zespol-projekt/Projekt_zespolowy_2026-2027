@@ -1,0 +1,143 @@
+{
+  "input_fingerprint": "02939f6f46276ec08ea21fcbf61b5972606c0fed06ae17da531f44856d750634",
+  "reviewed": 5,
+  "retrieved_on": "2026-11-23",
+  "accepted": 3,
+  "totals": {
+    "confirmed": 3,
+    "held": 2
+  },
+  "decisions": [
+    {
+      "id": "biedronka:3599",
+      "status": "confirmed",
+      "previous_address": "Tysiąclecia 17, 95-080 Tuszyn",
+      "reason": "Automat DHL opisano jako znajdujący się na parkingu za Biedronką, a automat Pocztex obok ma adres Tysiąclecia 17. Zdjęcie lotnicze pozwala powiązać parking z południowym budynkiem 1009985485, około 14 m od punktu dojazdu Targeo. Sąsiednią Stokrotkę potwierdza jej oficjalna karta z numerem 17A. Zachowano adres z karty Biedronki.",
+      "accepted": {
+        "address": {
+          "formatted": "Tysiąclecia 17, 95-080 Tuszyn",
+          "street_address": "Tysiąclecia 17",
+          "street": "Tysiąclecia",
+          "house_number": "17",
+          "city": "Tuszyn",
+          "postal_code": "95-080",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 51.6000063,
+          "longitude": 19.5443576
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/1009985485",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,3599",
+        "osm_observed_at": "2026-11-23T16:43:24.974Z",
+        "address_evidence": [
+          "https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution?service=WMS&request=GetMap&version=1.1.1&layers=Raster&srs=EPSG%3A4326&bbox=19.5424500%2C51.5989640%2C19.5458500%2C51.6010760&width=650&height=650&format=image%2Fjpeg&styles=",
+          "https://www.alipaczka.pl/automaty-paczkowe/automat/dhl-tuszynek-majoracki-wladyslawa-jagielly-45-253051",
+          "https://www.alipaczka.pl/automaty-paczkowe/automat/pocztex-tuszyn-tysiaclecia-17-404882",
+          "https://mapa.targeo.pl/biedronka-supermarket-tysiaclecia-17-tuszyn~23185763/biedronka-supermarket/adres",
+          "https://stokrotka.pl/nasze-sklepy/tuszynek-majoracki-ul-tysiaclecia-17a-1152-5423.html"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7505",
+      "status": "confirmed",
+      "previous_address": "Szczecińska 5, 66-400 Gorzów Wielkopolski",
+      "reason": "Komunikat otwarcia sieci, dokładny adres GUGiK i oznaczony budynek Biedronki w OSM potwierdzają numer 8. Karta sklepu nadal podaje numer 5, dla którego poprzedni punkt dojazdu prowadził w rejon węzła drogowego.",
+      "accepted": {
+        "address": {
+          "formatted": "Szczecińska 8, 66-400 Gorzów Wielkopolski",
+          "street_address": "Szczecińska 8",
+          "street": "Szczecińska",
+          "house_number": "8",
+          "city": "Gorzów Wielkopolski",
+          "postal_code": "66-400",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.7473665,
+          "longitude": 15.1506613
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/way/1420011095",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7505",
+        "osm_observed_at": "2026-11-23T16:43:24.975Z",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Gorz%C3%B3w+Wielkopolski%2C+Szczeci%C5%84ska+8&exact_number=1&srid=4326",
+          "https://media.biedronka.pl/308864-biedronka-otwiera-sie-na-wiosne",
+          "https://gorzow.news/index.php/2025/08/05/market-tuz-obok-strefy-ekonomicznej-powstaje-w-oczach-zobacz-zdjecia-z-drona-w-tekscie/"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7856",
+      "status": "confirmed",
+      "previous_address": "Paproć 89, 64-300 Paproć",
+      "reason": "Komunikat sieci dla Paproć 89 oraz operator N-Parku wskazują tę samą datę otwarcia sklepu, 2 grudnia 2025. Operator potwierdza lokalizację w parku, gdzie CityOn i GUGiK wskazują Handlową 1. Użyto znacznika Biedronki w OSM.",
+      "accepted": {
+        "address": {
+          "formatted": "Handlowa 1, 64-300 Paproć",
+          "street_address": "Handlowa 1",
+          "street": "Handlowa",
+          "house_number": "1",
+          "city": "Paproć",
+          "postal_code": "64-300",
+          "country": "PL"
+        },
+        "location": {
+          "latitude": 52.3058707,
+          "longitude": 16.1396558
+        },
+        "precision": "osm_shop_point",
+        "resolves": [
+          "missing_geometry"
+        ],
+        "evidence": "https://www.openstreetmap.org/node/13827940332",
+        "official_address": "https://www.biedronka.pl/pl/shop,id,7856",
+        "osm_observed_at": "2026-11-23T16:43:24.979Z",
+        "address_evidence": [
+          "https://services.gugik.gov.pl/uug/?request=GetAddress&address=Papro%C4%87%2C+Handlowa+1&exact_number=1&srid=4326",
+          "https://media.biedronka.pl/440267-swieta-z-biedronka-34-inwestycje-by-byc-blizej-klientow",
+          "https://pl.linkedin.com/posts/napollo_napolloretail-activity-7402026073481199617-kyRR",
+          "https://www.npark.pl/n-park-nowy-tomysl",
+          "https://cityon.pl/miejsce/biedronka-paproc-handlowa-1"
+        ]
+      }
+    },
+    {
+      "id": "biedronka:7902",
+      "status": "held",
+      "address": "Jana Pawła II 1A, 09-304 Lubowidz",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7902",
+      "reason": "Biedronka potwierdza otwarcie sklepu przy Jana Pawła II 1A. Źródło punktu DHL identyfikuje automat przy sklepie. Brak bezpośredniego punktu sklepu w OSM i obrysu na dostępnej ortofotomapie. Współrzędne automatu zapisano jako wskazówkę terenową.",
+      "nearby_point": {
+        "latitude": 53.1147953,
+        "longitude": 19.8460687,
+        "kind": "parcel_locker"
+      },
+      "evidence": [
+        "https://media.biedronka.pl/453144-wiosenne-przyspieszenie-biedronki",
+        "https://www.alipaczka.pl/automaty-paczkowe/automat/dhl-lubowidz-jana-pawla-ii-1a-320535",
+        "https://api.openstreetmap.org/api/0.6/map.json?bbox=19.8440687%2C53.1135953%2C19.8480687%2C53.1159953"
+      ]
+    },
+    {
+      "id": "biedronka:7906",
+      "status": "held",
+      "address": "ul. Widokowa 2, 58-531 Łomnica",
+      "official_address": "https://www.biedronka.pl/pl/shop,id,7906",
+      "reason": "Materiały POLOmarketu i karta Biedronki wskazują adres Widokowa 2. Dostępne źródła nie rozstrzygają przemiany szyldu i aktualnego statusu placówki.",
+      "evidence": [
+        "https://polomarket.pl/filer_public/d1/fb/d1fba4e9-63e8-40b3-9fb7-7ae41b4de519/akcja_promocyjna_28032026.pdf",
+        "https://inpost.pl/paczkomat-lomnica-lmc01m-widokowa-paczkomaty-dolnoslaskie"
+      ]
+    }
+  ]
+}
